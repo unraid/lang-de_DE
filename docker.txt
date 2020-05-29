@@ -1,6 +1,6 @@
 Access Mode=
 Add another Path, Port, Variable, Label or Device=
-Add Configuration=
+Add Configuration=Konfiguration hinzufügen
 Add=
 Always=
 App to Host=
