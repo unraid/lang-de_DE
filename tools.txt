@@ -26,7 +26,7 @@ Data slots=Daten Slots
 Delete notification=Benachrichtigung löschen
 Developer=Entwickler
 Diagnostics=Diagnostik
-Disks=Laufwerke
+Disks=Datenträger
 Display Settings=Darstellungseinstellungen
 End-User License Agreement=Endbenutzer-Lizenzvereinbarung
 Enter URL of language pack XML file=URL der XML Datei des Sprachpakets eingeben
@@ -138,7 +138,7 @@ Reboot to take effect=Neustarten, um wirksam zu werden
 SCSI Devices=SCSI Geräte
 The below list doesnt not reflect the way IOMMU would naturally group devices=Die untenstehende Liste spiegelt nicht die Art und Weise wider, wie IOMMU Geräte standardmässig gruppiert
 This controller is bound to vfio, connected USB devices are not visible=Dieser Controller ist an vfio gebunden, angeschlossene USB Geräte sind nicht sichtbar
-This controller is bound to vfio, connected drives are not visible=Dieser Controller ist an vfio gebunden, angeschlossene Laufwerke sind nicht sichtbar
+This controller is bound to vfio, connected drives are not visible=Dieser Controller ist an vfio gebunden, angeschlossene Datenträger sind nicht sichtbar
 To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Um standardmässige IOMMU Gruppen für die Hardware einzusehen, kann man auf der [VM Manager] Seite die **PCIe ACs override** Einstellung auf **Deaktiviert** setzen
 USB Devices=USB Geräte
 Your system has booted with the PCIe ACS Override setting enabled=Das System wurde mit der aktivierten PCIe ACS Override Einstellung gestartet
@@ -165,7 +165,7 @@ und Konfigurationsdateien werden gesammelt:
   <br>Anzeige der Kommandozeile Parameter (z.B. pcie acs override, pci stubbing, etc).
   <br>System Variablen speichern.
 + *SMART Bericht*
-  <br>Ein SMART Bericht von jedem individuellen Laufwerk, die sich im System befindet, speichern.
+  <br>Ein SMART Bericht von jedem individuellen Datenträger, die sich im System befindet, speichern.
 + *Docker*
   <br>*docker.log*, *libvirtd.log* und *libvirt/qemu/\*.log* Dateien speichern.
 :end
@@ -184,29 +184,29 @@ mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informatio
 :end
 
 :newconfig_plug:
-Dies ist ein Dienstprogramm, um die Array Laufwerk Konfiguration zurückzusetzen, sodass alle Laufwerke
-als "Neu"e Laufwerke erscheinen, als wäre es ein neuer Server.
+Dies ist ein Dienstprogramm, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
+als "Neu"e Datenträger erscheinen, als wäre es ein neuer Server.
 
-Dies ist nützlich, wenn mehrere Laufwerke hinzugefügt oder entfernt wurden und Parity 
+Dies ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und Parity 
 Datenwiederherstellung basierend auf der neuen Konfiguration erwünscht ist.
 
-*'Aktuelle Aufgaben aufrechterhalten'* Auswahl benutzen, um gewünschte Laufwerkslots zu populieren, ***nachdem*** das Array zurückgesetzt wurde. 
-Standardmässig werden **keine** Laufwerke populiert.  
+*'Aktuelle Aufgaben aufrechterhalten'* Auswahl benutzen, um gewünschte Datenträgerslots zu populieren, ***nachdem*** das Array zurückgesetzt wurde. 
+Standardmässig werden **keine** Datenträger populiert.  
 
-**BENUTZEn SIE NICHT DIESES DIENSTPROGRAM UNTER DEM EINDRUCK, DASS ES EIN FEHLERHAFTES LAUFWERK WIEDERHERSTELLT** -
-es wird die gegenteilige Wirkung haben, welches es **unmöglich** macht, ein existierendes fehlerhaftes Laufwerk wiederherzustellen - Sie wurden gewarnt!
+**BENUTZEn SIE NICHT DIESES DIENSTPROGRAM UNTER DEM EINDRUCK, DASS ES EIN FEHLERHAFTES DATENTRÄGER WIEDERHERSTELLT** -
+es wird die gegenteilige Wirkung haben, welches es **unmöglich** macht, ein existierendes fehlerhaftes Datenträger wiederherzustellen - Sie wurden gewarnt!
 :end
 
 :newperms_1_plug:
 Dies ist eine notwendige einmalige Aktion, welche nach der Aktualisierung von einer pre-5.0 Unraid Server Version zu Unraid v5 oder 
 einer späteren Version stattfindet.
-Wählen Sie **ALLE LAUFWERKE** aus, wenn diese einmalige Aktion ausgeführt wird.
+Wählen Sie **ALLE DATENTRÄGER** aus, wenn diese einmalige Aktion ausgeführt wird.
 
 Dieses Dienstprogramm ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
 und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer 
 non-Active Directory Integration zurückgewechselt wird.
 
-Dieses Dienstprogramm startet einen Hintergrundprozess, welches über jedes Daten- und Cachelaufwerke und ausgewählten 
+Dieses Dienstprogramm startet einen Hintergrundprozess, welches über jedes Array- und Cachedatenträger und ausgewählten 
 Benutzerfreigaben geht und Verzeichnis Eigentümer zu * nobody/users* (d.h. uid/gid zu 99/100) ändert und setzt Berechtigungen wie folgt:
 :end
 
