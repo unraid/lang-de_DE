@@ -6,7 +6,7 @@ and=und
 Anonymize diagnostics=Diagnostik anonymisieren
 Anytime=Jederzeit
 Archived Notifications=Archivierte Benachrichtigungen
-Are you sure=Bist du sicher
+Are you sure=Sind Sie sicher
 Array has been Reset=Array wurde **Zurückgesetzt**
 Array must be Started to change permissions=Array muss **Gestartet** sein, um Berechtigungen zu ändern
 Array must be Stopped to change=Array muss **Gestoppt** sein, um zu ändern:
@@ -59,7 +59,7 @@ No personal information such as user names, passwords, or any other file content
 normal=normal
 Only ZIP files are allowed=Nur ZIP Dateien sind erlaubt
 Page Map=Seitenbaum
-Parity slots=Parity Slots
+Parity slots=Parität Slots
 Please check your=Bitte prüfen Sie Ihre
 Please select a language before proceeding=Bitte vor dem Fortfahren eine Sprache auswählen
 Please=Bitte
@@ -136,16 +136,16 @@ No changes=Keine Änderungen
 PCI Devices and IOMMU Groups=PCI Geräte und IOMMU Gruppen
 Reboot to take effect=Neustarten, um wirksam zu werden
 SCSI Devices=SCSI Geräte
-The below list doesnt not reflect the way IOMMU would naturally group devices=Die untenstehende Liste spiegelt nicht die Art und Weise wider, wie IOMMU Geräte standardmässig gruppiert
+The below list doesnt not reflect the way IOMMU would naturally group devices=Die untenstehende Liste spiegelt nicht die Art und Weise wider, wie IOMMU Geräte standardmäßig gruppiert
 This controller is bound to vfio, connected USB devices are not visible=Dieser Controller ist an vfio gebunden, angeschlossene USB Geräte sind nicht sichtbar
 This controller is bound to vfio, connected drives are not visible=Dieser Controller ist an vfio gebunden, angeschlossene Datenträger sind nicht sichtbar
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Um standardmässige IOMMU Gruppen für die Hardware einzusehen, kann man auf der [VM Manager] Seite die **PCIe ACs override** Einstellung auf **Deaktiviert** setzen
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Um standardmäßige IOMMU Gruppen für die Hardware einzusehen, kann man auf der [VM Manager] Seite die **PCIe ACs override** Einstellung auf **Deaktiviert** setzen
 USB Devices=USB Geräte
 Your system has booted with the PCIe ACS Override setting enabled=Das System wurde mit der aktivierten PCIe ACS Override Einstellung gestartet
 
 :diagnostics_1_plug:
 Dieses Dienstprogramm wird zur Fehlerbehebung verwendet. Es wird alle Systemhardwareinformationen und Konfigurationsdateien sammeln und diese Dateien in eine einzelne ZIP Datei packen, welche lokal gespeichert werden kann.
-Anschliessend kann die Datei in der Korrespondenz mit Limetech oder dem Unraid forum einbezogen werden.
+Anschließend kann die Datei in der Korrespondenz mit Limetech oder dem Unraid Forum einbezogen werden.
 
 Dies hilft anderen, schnell interne Informationen Ihres Systems zu bekommen und Ihnen besser bei Ihrem Problem zu helfen. Die folgenden Informations-
 und Konfigurationsdateien werden gesammelt:
@@ -161,7 +161,7 @@ und Konfigurationsdateien werden gesammelt:
 + *System*
   <br>Ausgabe der folgenden Befehle speichern:
   <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
-  <br>Anzeige der iommu Gruppen.
+  <br>Anzeige der IOMMU Gruppen.
   <br>Anzeige der Kommandozeile Parameter (z.B. pcie acs override, pci stubbing, etc).
   <br>System Variablen speichern.
 + *SMART Bericht*
@@ -173,11 +173,11 @@ und Konfigurationsdateien werden gesammelt:
 :diagnostics_3_plug:
 Ein Klick auf **Download** wird den Sammelprozess starten und weist den Browser an, die zip Datei lokal zu speichern.
 
-*Keine persönliche Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid OS
+*Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid OS
 einbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *miteinbezogen.*
 
 *Beachten Sie, dass Plugins von Drittanbietern **möglicherweise** persönliche Informationen in pluginspezifischen Konfigurationsdateien
-und/oder System Log gespeichert werden können.*
+und/oder System Protokoll gespeichert werden können.*
 
 *Benutzen Sie* **Diagnosik anonymisieren** *, wenn die Diagnosikdateien in einem öffentlichen Forum publiziert werden. In privater Kommunikation 
 mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
@@ -187,14 +187,14 @@ mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informatio
 Dies ist ein Dienstprogramm, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
 als "Neu"e Datenträger erscheinen, als wäre es ein neuer Server.
 
-Dies ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und Parity 
+Dies ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und Parität 
 Datenwiederherstellung basierend auf der neuen Konfiguration erwünscht ist.
 
 *'Aktuelle Aufgaben aufrechterhalten'* Auswahl benutzen, um gewünschte Datenträgerslots zu populieren, ***nachdem*** das Array zurückgesetzt wurde. 
-Standardmässig werden **keine** Datenträger populiert.  
+Standardmäßig  werden **keine** Datenträger populiert.  
 
-**BENUTZEn SIE NICHT DIESES DIENSTPROGRAM UNTER DEM EINDRUCK, DASS ES EIN FEHLERHAFTES DATENTRÄGER WIEDERHERSTELLT** -
-es wird die gegenteilige Wirkung haben, welches es **unmöglich** macht, ein existierendes fehlerhaftes Datenträger wiederherzustellen - Sie wurden gewarnt!
+**BENUTZEN SIE NICHT DIESES DIENSTPROGRAM UNTER DEM EINDRUCK, DASS ES EIN FEHLERHAFTES DATENTRÄGER WIEDERHERSTELLT** -
+es wird die gegenteilige Wirkung haben, welches es **unmöglich** macht, einen existierenden fehlerhaften Datenträger wiederherzustellen - Sie wurden gewarnt!
 :end
 
 :newperms_1_plug:
@@ -224,7 +224,7 @@ Für schreibgeschützte Dateien:
 :newperms_3_plug:
 Ein Klick auf **Start** öffnet ein neues Fenster und startet den Hintergrundprozess.
 
-Das Schliessen des Fensters bevor Abschluss des Prozesses wird den Hintergrundprozess terminieren - also bitte nicht machen. Der Prozess kann eine lange Zeit
+Das Schließen des Fensters bevor Abschluss des Prozesses wird den Hintergrundprozess terminieren - also bitte nicht machen. Der Prozess kann eine lange Zeit
 in Anspruch nehmen, wenn viele Dateien vorhanden sind.
 
 Beachten Sie, dass dieses Tool möglicherweise Docker container negativ beeinflussen könnte, wenn die appdata Share vom Tool miteinbezogen wird.
@@ -285,13 +285,13 @@ Um weiterhin diese Installation mit dem USB Flash Gerät zu verwenden, können S
 :registration_8_plug:
 Die Registrierungslizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
 Bitte kopieren Sie die korrekte Lizenzdatei in das [config](/Registration/Browse?dir&#61;/boot/config) Verzeichnis
-auf Ihrem USB Flash Bootgerät. Falls Sie keine Backup Kope Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
+auf Ihrem USB Flash Bootgerät. Falls Sie keine Backup Kopie Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
 
 Falls Sie Ihre Registrierungslizenz mit einer neuen Lizenz zu diesem USB Flash Gerät verbinden möchten, klicken Sie unten auf Lizenz Ersetzen.
 Eine Originallizenz kann jederzeit ersetzt werden. Danach kann eine Ersatzlizenz erst nach Ablauf eines Jahres erneut ersetzt werden.
 Wenn Sie eine andere Ersatzlizenz früher benötigen, [Support Kontaktieren](https://lime-technology.com/contact).
 
-**Hinweis:** Das Ersetzen einee Registrierungslizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft auf die *schwarze Liste* gesetzt wird.
+**Hinweis:** Das Ersetzen einer Registrierungslizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft auf die *schwarze Liste* gesetzt wird.
 :end
 
 :registration_9_plug:
