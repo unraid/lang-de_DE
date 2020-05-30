@@ -1,6 +1,6 @@
 A registration replacement key has been created for USB Flash GUID=Eine Ersatzregistrierungslizenz wurde für die USB Flash GUID erstellt
 About=Über
-alert=Warnung
+alert=Alarm
 An email has been sent to=Eine Email wurde gesendet an
 and=und
 Anonymize diagnostics=Diagnostik anonymisieren
@@ -114,7 +114,7 @@ Use this to install official language packs=Dies verwenden, um offizielle Sprach
 User Shares=Benutzerfreigaben
 User=Benutzer
 Vars=Vars
-warning=warnung
+warning=Warnung
 webGUI=WebGUI
 When received, please paste the URL into the Key file URL box and=Wenn erhalten, bitte die URL in die <i>Lizenzdatei</i> URL Box einfügen und
 Wrong File Extension=Falsche Dateierweiterung
@@ -125,7 +125,7 @@ Your Trial key requires an internet connection=Ihre *Probelizenz* benötigt eine
 
 ; Sysdevs text - added May 18, 2020
 A reboot is required to apply changes=Ein Neustart ist erforderlich, um Änderungen anzuwenden
-ALERT=WARNUNG
+ALERT=ALARM
 Bind selected to VFIO at Boot=Bind ausgewählt als VFIO beim Boot
 CPU Thread Pairings=CPU Thread Paarungen
 Changes saved=Änderungen gespeichert
