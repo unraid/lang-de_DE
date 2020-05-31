@@ -362,7 +362,7 @@ reconstruct write=reconstruct write
 Refreshing=Aktualisiere
 Registration key required=Registrations-Key erforderlich
 Remote syslog server=Remote Syslog Server
-Remove Windows VirtIO driver ISO=Entferne Windows VirtIO Treiber ISO=
+Remove Windows VirtIO driver ISO=Entferne Windows VirtIO Treiber ISO
 resolution=Auflösung
 Route=Route
 Routing Table=Routing Table
