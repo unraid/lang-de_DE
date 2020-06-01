@@ -1,301 +1,305 @@
-A registration replacement key has been created for USB Flash GUID=
-About=
-alert=
-An email has been sent to=
-and=
-Anonymize diagnostics=
-Anytime=
-Archived Notifications=
-Are you sure=
-Array has been Reset=Array has been **Reset**
-Array must be Started to change permissions=Array must be **Started** to change permissions
-Array must be Stopped to change=Array must be **Stopped** to change
-Array=
-Author=
-Blacklisted USB Flash GUID=
-Branch=
-By using this software, you agree with our=
-Cache slots=
-Cannot connect to key-server=
-Check for Updates=
-click Install Key=click <i>Install Key</i>
-collecting diagnostic information this may take several minutes=collecting diagnostic information (this may take several minutes)
-Component=
-Credits=
-Data slots=
-Delete notification=
-Developer=
-Diagnostics=
-Disks=
-Display Settings=
-End-User License Agreement=
-Enter URL of language pack XML file=
-Error accessing your physical USB Flash boot device=
-EULA=
-Event=
-Expiration=
-Extend=
-extended=
-Get Trial Key=
-Hardware Profile=
-Hide Details=
-If you do not receive an email, please check your spam or junk-email folder=
-Importance=
-Important=
-Install=
-Installed languages=
-Invalid Trial Installation=Invalid *Trial* Installation
-It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=
-Key file URL=
-Language support added=
-Language support deleted=
-Language=
-Missing Key File=
-Missing Language=
-Network Settings=
-New Config=
-New Permissions=
-No personal information such as user names, passwords, or any other file contents is included in the hardware profile=No personal information such as user names, passwords, or any other file contents is included in the hardware profile
-normal=
-Only ZIP files are allowed=
-Page Map=
-Parity slots=
-Please check your=
-Please select a language before proceeding=
-Please=
-Preserve current assignments=
-previous=
-Privacy Policy=
-Processes=
-Purchase Key=
-Registered GUID=
-Registered on=
-Registered to=
-registering USB Flash GUID=
-Release has been withdrawn=
-Remove the installed language=
-Replaceable=
-Request Extension=
-Request Trial Extension=
-Restore=
-See=
-Select language file=
-Select language=
-Show Details=
-slots=
-Subject=
-System Devices=
-System Update Check=
-Text=
-Thank you for choosing Unraid OS=
-Thank you for registering USB Flash GUID=
-Thank you for trying Unraid OS=
-The registered GUID does not match the USB Flash boot device GUID=
-There is a physical problem accessing your USB Flash boot device=
-this may take several minutes=
-This release has been withdrawn for use with Trial keys=This release has been withdrawn for use with *Trial* keys
-This server has %s attached storage device=
-This server has %s attached storage devices=
-This utility is used for troubleshooting purposes=
-This will delete all notification files=
-This will update folder file permissions=This will update folder & file permissions
-Time=
-To install a registration key, paste the key file URL in the box below and click Install Key=To install a registration key, paste the key file URL in the box below and click **Install Key**
-to select your language=
-To support more storage devices as your server grows, click Upgrade Key below=To support more storage devices as your server grows, click *Upgrade Key* below
-Trial key expires on=***Trial*** key expires on
-Trial=
-Update OS=
-Upgrade Key=
-uploading hardware information=
-Uploading=
-Use this to develop language packs=
-Use this to install official language packs=
-User Shares=
-User=
-Vars=
-warning=
-webGUI=
-When received, please paste the URL into the Key file URL box and=When received, please paste the URL into the <i>Key file</i> URL box and
-Wrong File Extension=
-You havent sent Limetech your hardware profile yet=You haven't sent Limetech your hardware profile yet
-Your hardware profile was last submitted on=
-Your Trial key has expired=Your *Trial* key has expired
-Your Trial key requires an internet connection=Your *Trial* key requires an internet connection
+A registration replacement key has been created for USB Flash GUID=Eine Ersatzregistrierungslizenz wurde für die USB Flash GUID erstellt
+About=Über
+alert=Alarm
+An email has been sent to=Eine Email wurde gesendet an
+and=und
+Anonymize diagnostics=Diagnostik anonymisieren
+Anytime=Jederzeit
+Archived Notifications=Archivierte Benachrichtigungen
+Are you sure=Sind Sie sicher
+Array has been Reset=Array wurde **Zurückgesetzt**
+Array must be Started to change permissions=Array muss **Gestartet** sein, um Berechtigungen zu ändern
+Array must be Stopped to change=Array muss **Gestoppt** sein, um zu ändern:
+Array=Array
+Author=Autor
+Blacklisted USB Flash GUID=Schwarzgelistete USB Flash GUID
+Branch=Zweig
+By using this software, you agree with our=Mit der Nutzung dieser Software stimmen Sie ein mit unseren
+Cache slots=Cache Slots
+Cannot connect to key-server=Es konnte keine Verbindung zum Key-Server hergestellt werden
+Check for Updates=Nach Updates prüfen
+click Install Key=klicke <i>Lizenz Installieren</i>
+collecting diagnostic information this may take several minutes=sammeln von Diagnostik Informationen (dies kann mehrere Minuten dauern)
+Component=Komponente
+Credits=Namensnennungen
+Data slots=Daten Slots
+Delete notification=Benachrichtigung löschen
+Developer=Entwickler
+Diagnostics=Diagnostik
+Disks=Datenträger
+Display Settings=Darstellungseinstellungen
+End-User License Agreement=Endbenutzer-Lizenzvereinbarung
+Enter URL of language pack XML file=URL der XML Datei des Sprachpakets eingeben
+Error accessing your physical USB Flash boot device=Fehler beim Zugriff auf das physischen USB Bootgerät
+EULA=EULA
+Event=Ereignis
+Expiration=Ablauf
+Extend=Verlängern
+extended=verlängert
+Get Trial Key=Probelizenz erhalten
+Hardware Profile=Hardwareprofil
+Hide Details=Details Ausblenden
+If you do not receive an email, please check your spam or junk-email folder=Falls keine Email erhalten wurde, bitte  Spam- oder Junk-Email Ordner überprüfen
+Importance=Wichtigkeit
+Important=Wichtig
+Install=Installieren
+Installed languages=Installierte Sprachen
+Invalid Trial Installation=Invalide *Probeinstallation*
+It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=Es sammelt alle Systemhardwareinformationen, allfällige Seriennummern entfernen und sicher auf LimeTech hochladen
+Key file URL=Lizenzdatei URL
+Language support added=Sprachunterstützung hinzugefügt
+Language support deleted=Sprachunterstützung entfernt
+Language=Sprache
+Missing Key File=Fehlende Lizenzdatei
+Missing Language=Fehlende Sprache
+Network Settings=Netzwerkeinstellungen
+New Config=Neue Config
+New Permissions=Neue Berechtigungen
+No personal information such as user names, passwords, or any other file contents is included in the hardware profile=Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere Dateiinhalte sind im Hardwareprofil enthalten
+normal=normal
+Only ZIP files are allowed=Nur ZIP Dateien sind erlaubt
+Page Map=Seitenbaum
+Parity slots=Parität Slots
+Please check your=Bitte prüfen Sie Ihre
+Please select a language before proceeding=Bitte vor dem Fortfahren eine Sprache auswählen
+Please=Bitte
+Preserve current assignments=Aktuelle Aufgaben aufrechterhalten
+previous=vorherig
+Privacy Policy=Datenschutzerklärung
+Processes=Prozesse
+Purchase Key=Lizenz Erwerben
+Registered GUID=Registrierte GUID
+Registered on=Registriert am
+Registered to=Registriert bei
+registering USB Flash GUID=USB Flash GUID registrieren
+Release has been withdrawn=Version wurde zurückgezogen
+Remove the installed language=Installierte Sprache entfernen
+Replaceable=Ersetzbar
+Request Extension=Erweiterung Beantragen
+Request Trial Extension=Lizenzverlängerung Beantragen
+Restore=Wiederherstellen
+See=Siehe
+Select language file=Sprachdatei auswählen
+Select language=Sprache auswählen
+Show Details=Details anzeigen
+slots=Slots
+Subject=Betreff
+System Devices=Systemgeräte
+System Update Check=System Update Check
+Text=Text
+Thank you for choosing Unraid OS=Vielen Dank, dass Sie sich für Unraid OS entschieden haben
+Thank you for registering USB Flash GUID=Vielen Dank für die Registrierung von USB Flash GUID
+Thank you for trying Unraid OS=Vielen Dank, dass Sie Unraid OS ausprobieren
+The registered GUID does not match the USB Flash boot device GUID=Die registrierte GUID stimmt nicht mit dem USB Flash Bootgerät überein
+There is a physical problem accessing your USB Flash boot device=Es besteht ein physisches Problem beim Zugriff auf Ihr USB Flash Bootgerät
+this may take several minutes=dies kann mehrere Minuten dauern
+This release has been withdrawn for use with Trial keys=Diese Version wurde für die Verwendung mit Probelizenzen zurückgezogen
+This server has %s attached storage device=Dieser Server hat %s angeschlossenes Gerät
+This server has %s attached storage devices=Dieser Server hat %s angeschlossene Geräte
+This utility is used for troubleshooting purposes=Dieses Dienstprogramm dient zur Fehlerbehebung
+This will delete all notification files=Dies wird alle Benachrichtigungsdateien löschen
+This will update folder file permissions=Dies wird Ordner- & Dateienberechtigungen aktualisieren 
+Time=Zeit
+To install a registration key, paste the key file URL in the box below and click Install Key=Um eine Registrierungslizenz zu installieren, die Lizenz URL in die Box unten einfügen und auf **Lizenz Installieren** klicken
+to select your language=um Ihre Sprache auszuwählen
+To support more storage devices as your server grows, click Upgrade Key below=Um mehr Speichergeräte zu unterstützen, wenn der Server wächst, unten auf *Lizenz Upgraden* klicken
+Trial key expires on=***Probelizenz*** läuft aus am
+Trial=Probe
+Update OS=OS aktualisieren
+Upgrade Key=Lizenz Upgraden
+uploading hardware information=Hardware Informationen hochladen
+Uploading=Hochladen von
+Use this to develop language packs=Dies verwenden, um Sprachpakete zu entwickeln
+Use this to install official language packs=Dies verwenden, um offizielle Sprachpakete zu installieren
+User Shares=Benutzerfreigaben
+User=Benutzer
+Vars=Vars
+warning=Warnung
+webGUI=WebGUI
+When received, please paste the URL into the Key file URL box and=Wenn erhalten, bitte die URL in die <i>Lizenzdatei</i> URL Box einfügen und
+Wrong File Extension=Falsche Dateierweiterung
+You havent sent Limetech your hardware profile yet=Sie haben Limetech Ihr Hardwareprofil noch nicht gesendet
+Your hardware profile was last submitted on=Ihr Hardwareprofil wurde zuletzt eingesendet am
+Your Trial key has expired=Ihre *Probelizenz* ist abgelaufen
+Your Trial key requires an internet connection=Ihre *Probelizenz* benötigt eine Internetverbindung
 
 ; Sysdevs text - added May 18, 2020
-A reboot is required to apply changes=
-ALERT=
-Bind selected to VFIO at Boot=
-CPU Thread Pairings=
-Changes saved=
-Function Level Reset FLR supported=Function Level Reset (FLR) supported
-In use by Unraid=
-Kernel driver in use vfio-pci=Kernel driver in use: vfio-pci
-No changes=
-PCI Devices and IOMMU Groups=
-Reboot to take effect=
-SCSI Devices=
-The below list doesnt not reflect the way IOMMU would naturally group devices=The below list doesn't not reflect the way IOMMU would naturally group devices
-This controller is bound to vfio, connected USB devices are not visible=
-This controller is bound to vfio, connected drives are not visible=
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=To see natural IOMMU groups for your hardware, go to the [VM Manager] page and set the **PCIe ACS override** setting to **Disabled**
-USB Devices=
-Your system has booted with the PCIe ACS Override setting enabled=
+A reboot is required to apply changes=Ein Neustart ist erforderlich, um Änderungen anzuwenden
+ALERT=ALARM
+Bind selected to VFIO at Boot=Bind ausgewählt als VFIO beim Boot
+CPU Thread Pairings=CPU Thread Paarungen
+Changes saved=Änderungen gespeichert
+Function Level Reset FLR supported=Function Level Reset (FLR) unterstützt
+In use by Unraid=Von Unraid benutzt
+Kernel driver in use vfio-pci=Benutzter Kernel Treiber: vfio-pci
+No changes=Keine Änderungen
+PCI Devices and IOMMU Groups=PCI Geräte und IOMMU Gruppen
+Reboot to take effect=Neustarten, um wirksam zu werden
+SCSI Devices=SCSI Geräte
+The below list doesnt not reflect the way IOMMU would naturally group devices=Die untenstehende Liste spiegelt nicht die Art und Weise wider, wie IOMMU Geräte standardmäßig gruppiert
+This controller is bound to vfio, connected USB devices are not visible=Dieser Controller ist an vfio gebunden, angeschlossene USB Geräte sind nicht sichtbar
+This controller is bound to vfio, connected drives are not visible=Dieser Controller ist an vfio gebunden, angeschlossene Datenträger sind nicht sichtbar
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Um standardmäßige IOMMU Gruppen für die Hardware einzusehen, kann man auf der [VM Manager] Seite die **PCIe ACs override** Einstellung auf **Deaktiviert** setzen
+USB Devices=USB Geräte
+Your system has booted with the PCIe ACS Override setting enabled=Das System wurde mit der aktivierten PCIe ACS Override Einstellung gestartet
 
 :diagnostics_1_plug:
-This utility is used for troubleshooting purposes. It will collect all of the system information and configuration files, and package these files in a single ZIP file which can be saved locally.
-Subsequently, this file can be included in your correspondence with Limetech or the Unraid forum.
+Dieses Dienstprogramm wird zur Fehlerbehebung verwendet. Es wird alle Systemhardwareinformationen und Konfigurationsdateien sammeln und diese Dateien in eine einzelne ZIP Datei packen, welche lokal gespeichert werden kann.
+Anschließend kann die Datei in der Korrespondenz mit Limetech oder dem Unraid Forum einbezogen werden.
 
-This will help others to quickly get the inside information of your system and provide better support to your problem. The following information
-and configuration files are collected:
+Dies hilft anderen, schnell interne Informationen Ihres Systems zu bekommen und Ihnen besser bei Ihrem Problem zu helfen. Die folgenden Informations-
+und Konfigurationsdateien werden gesammelt:
 :end
 
 :diagnostics_2_plug:
 + */config*
-  <br>copy all *\*.cfg files*, *go* file and the *super.dat* file. These are configuration files.
+  <br>alle *\*.cfg Dateien*, *go* Datei und die *super.dat* Datei speichern. Diese sind Konfigurationsdateien.
 + */config/shares*
-  <br>copy all *\*.cfg* files. These are user share settings files.
-+ *Syslog file(s)*
-  <br>copy the current *syslog* file and any previous existing *syslog* files.
+  <br>alle *\*.cfg* Dateien speichern. Diese sind Benutzerfreigaben Einstellungsdateien.
++ *Syslog Datei(en)*
+  <br>Aktuelle *syslog* Datei und allfällige vorherig existierende *syslog* Dateien speichern.
 + *System*
-  <br>save output of the following commands:
+  <br>Ausgabe der folgenden Befehle speichern:
   <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
-  <br>display of iommu groups.
-  <br>display of command line parameters (e.g. pcie acs override, pci stubbing, etc).
-  <br>save system variables.
-+ *SMART reports*
-  <br>save a SMART report of each individual disk present in your system.
+  <br>Anzeige der IOMMU Gruppen.
+  <br>Anzeige der Kommandozeile Parameter (z.B. pcie acs override, pci stubbing, etc).
+  <br>System Variablen speichern.
++ *SMART Bericht*
+  <br>Ein SMART Bericht von jedem individuellen Datenträger, die sich im System befindet, speichern.
 + *Docker*
-  <br>save files *docker.log*, *libvirtd.log* and *libvirt/qemu/\*.log*.
+  <br>*docker.log*, *libvirtd.log* und *libvirt/qemu/\*.log* Dateien speichern.
 :end
 
 :diagnostics_3_plug:
-Clicking **Download** will start the collection process and then instruct your browser to save the zip file locally.
+Ein Klick auf **Download** wird den Sammelprozess starten und weist den Browser an, die zip Datei lokal zu speichern.
 
-*No personal information such as user names, passwords, or any other file contents not specified above is included
-by Unraid OS; however, your server name, IP address, and user share names* **will** *be included.*
+*Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid OS
+einbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *miteinbezogen.*
 
-*Note that 3rd-party plugins **may** or may not store personal information in plugin-specific configuration files and/or output
-to the system log.*
+*Beachten Sie, dass Plugins von Drittanbietern **möglicherweise** persönliche Informationen in pluginspezifischen Konfigurationsdateien
+und/oder System Protokoll gespeichert werden können.*
 
-*Use* **Anonymize diagnostics** *when publishing the diagnostics file in the public forum. In private communication with Limetech it is recommended to uncheck this setting and capture all information unaltered.*
+*Benutzen Sie* **Diagnosik anonymisieren** *, wenn die Diagnosikdateien in einem öffentlichen Forum publiziert werden. In privater Kommunikation 
+mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
 :end
 
 :newconfig_plug:
-This is a utility to reset the array disk configuration so that all disks appear as "New" disks, as
-if it were a fresh new server.
+Dies ist ein Dienstprogramm, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
+als "Neu"e Datenträger erscheinen, als wäre es ein neuer Server.
 
-This is useful when you have added or removed multiple drives and wish to rebuild parity based on
-the new configuration.
+Dies ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und Parität 
+Datenwiederherstellung basierend auf der neuen Konfiguration erwünscht ist.
 
-Use the *'Preserve current assignments'* selection to populate the desired disk slots ***after*** the array has been reset. By default **no** disk slots are populated.
+*'Aktuelle Aufgaben aufrechterhalten'* Auswahl benutzen, um gewünschte Datenträgerslots zu populieren, ***nachdem*** das Array zurückgesetzt wurde. 
+Standardmäßig  werden **keine** Datenträger populiert.  
 
-**DO NOT USE THIS UTILITY THINKING IT WILL REBUILD A FAILED DRIVE** - it will have the opposite
-effect of making it ***impossible*** to rebuild an existing failed drive - you have been warned!
+**BENUTZEN SIE NICHT DIESES DIENSTPROGRAM UNTER DEM EINDRUCK, DASS ES EIN FEHLERHAFTES DATENTRÄGER WIEDERHERSTELLT** -
+es wird die gegenteilige Wirkung haben, welches es **unmöglich** macht, einen existierenden fehlerhaften Datenträger wiederherzustellen - Sie wurden gewarnt!
 :end
 
 :newperms_1_plug:
-This is a mandatory one-time action to be taken after upgrading from a pre-5.0 Unraid server release to Unraid v5 or a later release.
-Select **ALL DISKS** when performing this one-time action.
+Dies ist eine notwendige einmalige Aktion, welche nach der Aktualisierung von einer pre-5.0 Unraid Server Version zu Unraid v5 oder 
+einer späteren Version stattfindet.
+Wählen Sie **ALLE DATENTRÄGER** aus, wenn diese einmalige Aktion ausgeführt wird.
 
-This utility is also useful for restoring default ownership/permissions on files and
-directories when transitioning back from Active Directory to non-Active Directory integration.
+Dieses Dienstprogramm ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
+und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer 
+non-Active Directory Integration zurückgewechselt wird.
 
-The utility starts a background process that goes to each of your data disks and cache disks and selected user shares
-and changes file and directory ownership to *nobody/users* (i.e., uid/gid to 99/100), and sets permissions
-as follows:
+Dieses Dienstprogramm startet einen Hintergrundprozess, welches über jedes Array- und Cachedatenträger und ausgewählten 
+Benutzerfreigaben geht und Verzeichnis Eigentümer zu * nobody/users* (d.h. uid/gid zu 99/100) ändert und setzt Berechtigungen wie folgt:
 :end
 
 :newperms_2_plug:
-For directories:
+Für Verzeichnisse:
   drwxrwxrwx
 
-For read/write files:
+Für lesen/schreiben Dateien:
   -rw-rw-rw-
 
-For readonly files:
+Für schreibgeschützte Dateien:
   -r--r--r--
 :end
 
 :newperms_3_plug:
-Clicking **Start** will open another window and start the background process.
+Ein Klick auf **Start** öffnet ein neues Fenster und startet den Hintergrundprozess.
 
-Closing the window before completion will terminate the background process - so don't do that. This process can take a long time if you have many files.
+Das Schließen des Fensters bevor Abschluss des Prozesses wird den Hintergrundprozess terminieren - also bitte nicht machen. Der Prozess kann eine lange Zeit
+in Anspruch nehmen, wenn viele Dateien vorhanden sind.
 
-Note that this tool may negatively affect any docker containers if you allow your appdata share to be included.
+Beachten Sie, dass dieses Tool möglicherweise Docker container negativ beeinflussen könnte, wenn die appdata Share vom Tool miteinbezogen wird.
 :end
 
 :registration_1_plug:
-Your server will not be usable until you purchase a Registration key or install a free 30-day *Trial* key. A *Trial*
-key provides all the functionality of a *Pro* Registration key.
+Der Server wird nicht nutzbar sein, bis eine Registrierungslizenz gekauft oder eine kostenlose 30-Tage *Probelizenz* 
+installiert wurde. Eine *Probelizenz* beinhaltet alle Funktionalitäten einer *Pro* Registrierungslizenz.
 
-Registration keys are bound to your USB Flash boot device serial number (GUID).  Please use a high quality name brand device
-at least 1GB in size.
+Registrierungslizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bitte benutzen Sie ein hochwertiges Gerät
+eines reputablen Unternehmens von mindestens 1GB.
 
-Note: USB memory card readers are generally **not** supported because most do not present unique serial numbers.
+Hinweis: USB Kartenlesegeräte sind generell **nicht** unterstützt, weil bei den meisten keine einmalige Seriennummer vorliegt.
 :end
 
 :registration_2_plug:
-+ Please make sure your [server time](DateTime) is accurate to within 5 minutes.
-+ Please make sure there is a [DNS server](NetworkSettings) specified.
++ Bitte stellen Sie sicher, dass Ihre [Serverzeit][DateTime] auf 5 Minuten genau geht.
++ Bitte stellen Sie sicher, dass ein [DNS Server](DateTime) gesetzt ist.
 :end
 
 :registration_3_plug:
-Your *Trial* key includes all the functionality and device support of a *Pro* Registration key.
+Ihre *Probelizenz* beinhaltet alle Funktionalitäten und Gerätunterstützungen einer *Pro* Registrierungslizenz.
 
-After your *Trial* key has reached expiration, your server **still functions normally** until the next time you **Stop** the array.
+Nachdem die *Probelizenz* abgelaufen ist, wird der Server **noch immer normal funktionieren**, bis das Array das nächste Mal **gestoppt** wird.
 
-At that point, you may either purchase a Registration key, or request a *Trial* extension.
+An diesem Punkt können Sie entweder eine Registrierungslizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
 :end
 
 :registration_4_plug:
-To continue using Unraid OS you may purchase a Registration key. Alternately, you may request a *Trial* extension key.
+Um Unraid OS weiterhin benutzen zu können, können Sie eine Registrierungslizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
 
-Most *Trial* extension requests are processed immediately but please allow up to one business day to receive your *Trial* extension key.
+Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
 :end
 
 :registration_5_plug:
-It is not possible to use a *Trial* key with an existing Unraid OS installation.
+Es ist nicht möglich, eine *Probelizenz* mit einer existierenden Unraid OS Installation zu verwenden.
 
-You may purchase a Registration key corresponding to this USB Flash device to continue using this installation.
+Es ist möglich, eine Registrierungslizenz dem USB Flash Gerät entsprechend zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
 
-For more information, please [Contact Support](https://lime-technology.com/contact).
+Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 :end
 
 :registration_6_plug:
-It appears that your Registration key file is corrupted or missing.  The key file should be located in the
-[config](/Registration/Browse?dir&#61;/boot/config) directory on your USB Flash boot device.
+Es scheint als fehle Ihre Registrierungslizenzdatei oder sie ist korrupt. Die Lizenzdatei sollte unter dem
+[config](/Registration/Browse?dir&#61;/boot/config) Verzeichnis auf Ihrem USB Flash Bootgerät zu finden sein.
 
-If you do not have a backup copy of your Registration key file, [Contact Support](https://lime-technology.com/contact).
+Falls Sie keine Backup Kopie Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
 
-If this was a *Trial* installation, you may purchase a Registration key.
+Falls dies eine *Probeinstallation* war, können Sie eine Registrierungslizenz erwerben.
 :end
 
 :registration_7_plug:
-*Trial* installations are only valid with the originally registered USB Flash device.
+*Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät valide.
 
-To continue using this installation with this USB Flash device, you may purchase a Registration key.
+Um weiterhin diese Installation mit dem USB Flash Gerät zu verwenden, können Sie eine Registrierungslizenz erwerben.
 :end
 
 :registration_8_plug:
-The Registration key file does not correspond to the USB Flash boot device.
-Please copy the correct key file to the [config](/Registration/Browse?dir&#61;/boot/config) directory
-on your USB Flash boot device. If you do not have a backup copy of your key file, [Contact Support](https://lime-technology.com/contact).
+Die Registrierungslizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
+Bitte kopieren Sie die korrekte Lizenzdatei in das [config](/Registration/Browse?dir&#61;/boot/config) Verzeichnis
+auf Ihrem USB Flash Bootgerät. Falls Sie keine Backup Kopie Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
 
-If you want to replace your Registration key with a new key bound to this USB Flash device, click Replace Key below. An original key may be
-replaced anytime. Thereafter, a replacement key may be replaced again after one year has passed.  If you require
-another replacement key sooner, [Contact Support](https://lime-technology.com/contact).
+Falls Sie Ihre Registrierungslizenz mit einer neuen Lizenz zu diesem USB Flash Gerät verbinden möchten, klicken Sie unten auf Lizenz Ersetzen.
+Eine Originallizenz kann jederzeit ersetzt werden. Danach kann eine Ersatzlizenz erst nach Ablauf eines Jahres erneut ersetzt werden.
+Wenn Sie eine andere Ersatzlizenz früher benötigen, [Support Kontaktieren](https://lime-technology.com/contact).
 
-**Note:** Replacing a Registration key results in permanently *blacklisting* the previous USB Flash GUID.
+**Hinweis:** Das Ersetzen einer Registrierungslizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft auf die *schwarze Liste* gesetzt wird.
 :end
 
 :registration_9_plug:
-This USB Flash boot device has been *blacklisted*. This can occur as a result of transfering your Registration key to
-a replacement USB Flash device, and you are currently booted from your old USB Flash device.
+Dieses USB Flash Bootgerät wurde auf die *schwarze Liste* gesetzt. Dies kann als Ergebnis der Übertragung Ihrer Registrierungslizenz 
+an ein USB Flash Ersatzgerät auftreten und Sie werden derzeit von Ihrem alten USB Flash Gerät gebootet.
 
-A USB Flash device may also be *blacklisted* if there is no serial number, or if we discover the serial number
-is not unique (this is common with USB card readers).
+Ein USB Flash Gerät kann auch auf die *schwarze Liste* gesetzt werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
+Seriennummer nicht eindeutig ist (dies ist bei USB Kartenlesegeräten üblich).
 
-For more information, please [Contact Support](https://lime-technology.com/contact).
+Für weitere Informationen, bitte [Support Kontaktieren](https://lime-technology.com/contact).
 :end
