@@ -1,124 +1,124 @@
 :main_array_devices_help:
-**Colored Status Indicator** the significance of the color indicator at the beginning of each line in *Array Devices* is as follows:
+**Färbiger Status Indikator** Bedeutung des Farbindikators am Anfang jeder Zeile von *Array Datenträger*:
 
-<i class='fa fa-circle orb green-orb'></i>Normal operation, device is active.
+<i class='fa fa-circle orb green-orb'></i>Normal Betrieb, Datenträger ist aktiv.
 
-<i class='fa fa-circle orb grey-orb'></i>Device is in standby mode (spun-down).
+<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (spun-down).
 
-<i class='fa fa-warning orb yellow-orb'></i>Device contents emulated.
+<i class='fa fa-warning orb yellow-orb'></i>Datenträger Inhalt emuliert.
 
-<i class='fa fa-times orb red-orb'></i>Device is disabled, contents emulated.
+<i class='fa fa-times orb red-orb'></i>Datenträger deaktiviert, Inhalt emuliert.
 
-<i class='fa fa-square orb blue-orb'></i>New device.
+<i class='fa fa-square orb blue-orb'></i>Neuer Datenträger.
 
-<i class='fa fa-square orb grey-orb'></i>No device present, position is empty.
+<i class='fa fa-square orb grey-orb'></i>Kein Datenträger, Slot leer.
 
-**Identification** is the *signature* that uniquely identifies a storage device. The signature
-includes the device model number, serial number, linux device id, and the device size.
+**Identifikation** ist die *Paraphe* die den Datenträger identifiziert. Die Paraphe
+enthält Modell-/Seriennummer, Linux Geräte ID und die Datenträger größe.
 
-**Temp.** (temperature) is read directly from the device. You configure which units to use on
-the [Display Preferences](Settings/DisplaySettings) page.  We do not read the temperature of spun-down hard
-drives since this typically causes them to spin up; instead we display the `*` symbol.  We also
-display the `*` symbol for SSD and Flash devices, though sometimes these devices do report a valid
-temperature, and sometimes they return the value `0`.
+**Temp.** (Temperatur) wird direkt vom Datenträger ausgelesen. Sie konfigurieren die anzuzeigenden Einheiten
+auf der Seite [Display Preferences](Settings/DisplaySettings) konfigurieren.  Es werden keine Temperaturen von Datenträgern im
+Standby Modus ausgelesen da diese ansonsten aufgeweckt werden müssen; anstelle wird das `*` Symbol angezeigt.  Das
+Symbol `*` steht ebenso für Datenträger (SSD/Flashmedien) die keinen korrekten Temperaturwert zurückgeben bzw.
+manchmal den Wert `0` zurückgeben.
 
-**Size, Used, Free** reports the total device size, used space, and remaining space for files.  These
-units are also configured on the [Display Preferences](Settings/DisplaySettings) page.  The
-amount of space used will be non-zero even for an empty disk due to file system overhead.
+**Größe, Benutzt, Frei** gibt die absolute größe, benutzten und verbleibenden Speicher für Dateien an. Diese Einheiten
+werden ebenfalls auf der Seite [Display Preferences](Settings/DisplaySettings) konfiguriert.  Der Wert
+wird nie Null sein, auch bei Neuen/Leeren Datenträgern aufgrund von Dateisystemeinträgen.
 
-*Note: for a multi-device cache pool, this data is for the entire pool as returned by btrfs.*
+*Hinweis: Bei einem Cache-Pool mit mehreren Datenträgern gelten diese Daten für den gesamten Pool, von btrfs zurückgegeben.*
 
-**Reads, Writes** are a count of I/O requests sent to the device I/O drivers.  These statistics may
-be cleared at any time, refer to the Array Status section below.
+**Gelesen, Geschrieben** zählt E/A-Anfragen die vom E/A-Treiber an den Datenträger gesendet werden. Die Statistiken können
+jederzeit gelöscht werden, siehe Array Status Abschnitt weiter unten.
 
-**Errors** counts the number of *unrecoverable* errors reported by the device
-I/O drivers. Missing data due to unrecoverable array read errors is filled in on-the-fly using parity
-reconstruct (and we attempt to write this data back to the sector(s) which failed). Any unrecoverable
-write error results in *disabling* the disk.
+**Fehler** zählt *unkorrigierbare* Fehler die vom Datenträger E/A-Treiber gemeldet werden.
+Fehlende Daten aufgrund unkorrigierbarer Fehler werden On-The-Fly durch die Parität
+rekonstruiert (und wir versuchen die Daten wieder auf die Sektoren zurückzuschreiben die felschlugen). Jeder unkorrigierbarer
+Schreibfehler resultiert darin den Datenträger zu *Deaktivieren*.
 
-**FS** indicates the file system detected in partition 1 of the device.
+**FS** zeigt das Dateisystem der 1. Partition auf dem Datenträger an.
 
-**View** column contains a folder icon indicating the device is *mounted*. Click the icon to
-browse the file system.
+**Ansicht** zeigt ein Ordnersymbol an das den Datenträger als *eingebunden* anzeigt. Klicke auf das Icon
+um das Dateisystem zu druchsuchen.
 
-If "Display array totals" is enable on the [Display Preferences](Settings/DisplaySettings) page, a
-**Total** line is included which provides a tally of the device statistics, including the average temperature
-of your devices.
+Wenn "Ziege Array Werte" auf der Seite [Display Preferences](Settings/DisplaySettings) aktiviert ist, wird in der
+Zeile **Total** eine Übersicht der Datenträgerstatistik sowie der Durchschnittstemperaturen der Datenträger
+angezeigt.
 
-The Array must be Stopped in order to change Array device assignments.
+Das Array muss gestoppt werden um die Datenträgerzuordnung im Array zu ändern.
 
-An Unraid array consists of one or two Parity disks and a number of Data disks. The Data
-disks are exclusively used to store user data, and the Parity disk(s) provides the redundancy necessary
-to recover from disk failures.
+Ein Unraid Array besteht aus Einem oder Zwei Paritätsdatetnrägern und einer beliebigen Anzahl von Daten-Datenträgern. Die
+Daten-Datenträger sind nur für Nutzerdaten und der/die Paritätsdatentäger dient rein der Redundanz die zur 
+Datenwiederherstellung nötig ist falls ein Daten-Datenträger ausfällt.
 
-Since data is not striped across the array, the Parity disk(s) must be as large, or larger than the largest Data
-disk.  Parity should also be your highest performance drive.
+Da die Daten nicht über das Array verteilt sind, muss der größte Datenträger im Array der/die Paritätsdatenträger sein.
+Der Paritätsdatenträger sollte ebenso der mit der Höchsten Leistung/Geschwindigkeit sein.
 
-Each Data disk has its own file system and can be exported as a
-separate share.
+Jeder Datenträger hat sein eigendes Dateisystem und kann somit als
+separate Nutzer-Freigabe freigegeben werden.
 
-Click on the Device name to configure individual device settings and launch certain utilities.
+Klick auf den Datenträgernamen um Datenträgereinstellungen bzw. Tools aufzurufen.
 :end
 
 :main_slots_help:
-**Slots** select the number of device slots in your server designated for Array devices.
-The minimum number of Array slots is 2, and you must have at least one device assigned to the array.
+**Slots** wählen Sie die Nummer der anzuzeigenden Slots für die Array Datenträger.
+Die minimale Anzahl der Array Slots beträgt 2, Sie müssen mindestens einen Datenträger dem Array zuweisen.
 :end
 
 :cache_devices_help:
-**Colored Status Indicator** the significance of the color indicator at the beginning of each line in *Pool Devices* is as follows:
+**Färbige Status Anzeige** Bedeutung des Farbindikators am Anfang jeder Zeile von *Pool Datetnräger*:
 
-<i class='fa fa-circle orb green-orb'></i>Normal operation, device is active.
+<i class='fa fa-circle orb green-orb'></i>Normal Betrieb, Datenträger ist aktiv.
 
-<i class='fa fa-circle orb grey-orb'></i>Device is in standby mode (spun-down).
+<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (spun-down).
 
-<i class='fa fa-square orb blue-orb'></i>New device.
+<i class='fa fa-square orb blue-orb'></i>Neuer Datenträger.
 
-<i class='fa fa-square orb grey-orb'></i>No device present, position is empty.
+<i class='fa fa-square orb grey-orb'></i>Kein Datenträger, Slot leer.
 
-**Pool Devices** is a single device, or pool of multiple devices, *outside* the Unraid array.  It may be exported for network access just
-like an Array device.  Being outside the Unraid array results in significantly faster write access.
+**Pool Datenträger** ist ein einzelner oder ein Pool aus mehreren Datenträgern, *außerhalbe* des Unraid Arrays. Kann für
+den Zugriff über eine Freigabe eingerichtet werden. Außerhalb des Arrays daher wesentlich höhere Schreibgeschwindigkeit.
 
-There are two ways to configure the Pool devices:
+Es gibt zwei möglichkeiten Pool Datenträger zu konfigurieren:
 
-1. As a single device, or
-2. As a multi-device pool.
+1. Als einzelnen Datenträger, oder
+2. Als aus mehreren bestehenden Datenträgern.
 
-When configured as a single device you may format the device using any supported file system (btrfs, reiserfs,
-or xfs).  This configuration offers the highest performance, but at the cost of no data protection - if the
-single pool device fails all data contained on it may be lost.
+Wenn als einzelner Datenträger konfiguriert kann der Datenträger mit jedem unterstützem Dateisystem formatiert (btrfs, reiserfs,
+oder xfs) werden.  Diese Konfiguration ist die Performanteste jedoch auch die Riskanteste - wenn der Datenträger
+ausfällt sind möglicherweise alle Daten verloren.
 
-When configured as a multi-device pool, Unraid OS will automatically select *btrfs-raid1* format (for both data
-and meta-data).  btrfs permits any number of devices to be added to the pool and each copy of data is guaranteed
-to be written to two different devices.  Hence the pool can withstand a single-disk failure without losing data.
+Wenn als aus mehreren bestehenden Datenträger konfiguriert, wird Unraid automatisch *btrfs-raid1* wählen (jeweils für Daten
+und Meta-Daten).  btrfs erlaubt es eine beliebige Anzahl von Datenträgern hinzuzufügen und garantiert das jede Datei auf zwei
+verschiedenen Datenträger geschrieben wird. Der Pool kann somit einem einzelnen Datenträgerausfall wiederstehen.
 
-When [User Shares](/Settings/ShareSettings) are enabled, user shares may be configured to
-automatically make use of the Pool device in order to
-speed up writes.  A special background process called the *mover* can be scheduled to run
-periodically to move user share files off the Cache and onto the Array.
+Wenn [User Shares](/Settings/ShareSettings) aktiviert sind, werden Benutzer-Freigaben am Array autmoatisch mit
+dem Cache-Pool verknüpft um die Schrebigeschwindigkeit zu erhöhen.
+Ein Spezieller Prozess namens *mover* kann für die Ausführung, in regelmäßigen
+Abständen, für die Übertragung vom Cache-Pool zum Array geplant werden.
 :end
 
 :cache_slots_help:
-**Slots** select the number of device slots in your server designated for Cache devices.
+**Slots** wählen Sie die Nummer der anzuzeigenden Slots für die Cache Datenträger.
 :end
 
 :boot_device_help:
-Vital array configuration is maintained on the USB Flash device; for this reason, it must remain
-plugged in to your server.  Click on [Flash](/Main/Flash?name=flash) to see the GUID and registration
-information, and to configure export settings.  Since the USB Flash device is formatted using FAT file system,
-it may only be exported using SMB protocol.
+Die wichtigsten Konfigurationen werden am USB-Flash-Stick gespeichert; aus diesem Grund, muss dieser am Server
+angeschlossen bleiben. Klick auf [Flash](/Main/Flash?name=flash) um die GUID Registrierungsinformationen 
+anzuzeigen und um die Freigebe Einstellungen zu bearbeiten. Da der USB-Flash-Stick im FAT32 Dateisystem formatiert ist,
+kann er nur mit dem SMB Protokoll Freigegeben werden.
 :end
 
 :array_status_help:
-**Colored Status Indicator** the significance of the color indicator of the *Array* is as follows:
+**Färbige Status Anzeige** Bedeutung des Farbindikators von *Array*:
 
-<i class='fa fa-circle orb green-orb'></i>Array is Started and Parity is valid.
+<i class='fa fa-circle orb green-orb'></i>Array ist gestartet und Parität ist gültig.
 
-<i class='fa fa-circle orb grey-orb'></i>Array is Stopped, Parity is valid.
+<i class='fa fa-circle orb grey-orb'></i>Array ist gestoppt, Parität ist gültig.
 
-<i class='fa fa-warning orb yellow-orb'></i>Array is Started, but Parity is invalid.
+<i class='fa fa-warning orb yellow-orb'></i>Array ist gestartet und Parität ist ungültig.
 
-<i class='fa fa-warning orb grey-orb'></i>Array is Stopped, Parity is invalid.
+<i class='fa fa-warning orb grey-orb'></i>Array ist gestoppt, Parität ist ungültig.
 
 :end
 
