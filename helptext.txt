@@ -366,70 +366,70 @@ Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
 :selftest_short_test_help:
 Startet einen *einfachen* SMART Selbsttest, die Voraussichtliche Dauer ist im Abschnitt *Funktionen* ersichtlich. Dauert überlicherweise ein paar Minuten.
 
-Wenn sich der Datenträger im Standby Modus befindet wird jeder Selbsttest abgeborchen.
+Wenn der Datenträger in den Standby Modus versetzt wird, wird jeglicher laufende Selbsttest abgeborchen.
 Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
 :end
 
 :selftest_long_test_help:
-Starts an *extended* SMART self-test, the estimated duration can be viewed under the *Capabilities* section. This is usually several hours.
+Startet einen *erweiterten* SMART Selbsttest, die Voraussichtliche Dauer ist im Abschnitt *Funktionen* ersichtlich. Dauert überlicherweise ein paar Stunden.
 
-When the disk is spun down, it will abort any running self-test. It is advised to disable the spin down timer of the disk
-to avoid interruption of this self-test.
+Wenn der Datenträger in den Standby Modus versetzt wird, wird jeglicher laufende Selbsttest abgeborchen. Es wird empfohlen den
+Spin-Down Timer zu deaktivieren um eine Unterbrechung zu verhindern.
 
-This feature is only available when the disk is in active mode.
+Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
 :end
 
 :selftest_result_help:
-When no test is running it will show here the latest obtained self-test result (if available).
-Otherwise a progress indicator (percentage value) is shown for a running test.
+Wenn kein Selbsttest läuft wird das letzte Ergebnis hier angezeigt (wenn verfügbar).
+Andernfalls wird hier eine Forschrittsanzeige (in Prozent) angezeigt wenn ein Test läuft.
 :end
 
 :smart_attributes_help:
-This list shows the SMART attributes supported by this disk. For more information about each SMART attribute, it is recommended to search online.
+Zeigt die Unterstützten SMART Attribute des Datenträgers. Für Detaillierte Informationen zu den einzelnen SMART Attributen bitte eine online Suche durchführen.
 
-Attributes in *orange* may require your attention. They have a **raw value** greater than zero and may indicate a pending disk failure.
+Attribute in *Orange* bedürfen Ihrer Aufmerksamkeit. **ROHWERTE** größer als Null zeigen eventuell einen bevorstehenden Datenträgerausfall an.
 
-Special attention is required when the particular attribute raw value starts to increase over time. When in doubt, consult the Limetech forum for advice.
+Besondere Aufmerksamkeit ist geboten wenn sich der Rohwert mit der Zeit erhöht. Im Zweifelsfall bitte einen Thread im Limetech Forum erstellen.
 :end
 
 :smart_capabilities_help:
-This list shows the SMART capabilities supported by this disk.
+Zeigt die von diesem Datenträger unterstützten SMART-Funktionen.
 
-Observe here the estimated duration of the SMART short and extended self-tests.
+Hier wird die Vorausichtliche Dauer des einfachen und erweiterten SMART Test angezeigt.
 :end
 
 :smart_identity_help:
-This list shows the SMART identity information of this disk
+Zeigt die SMART Identifiziertungsinformationen von diesem Datenträger
 :end
 
 :open_devices_help:
-These are devices installed in your server but not assigned to either the parity-protected
-array or the cache disk/pool.
+Hierbei handelt es sich um Datenträger die im System installiert sind jedoch weder
+dem Array oder dem Cachepool zugeordnet sind.
 :end
 
 :flash_backup_help:
-Use *Flash backup* to create a single zip file of the current contents of the flash device and store it locally on your computer.
+Benutzen Sie *Flash Backup* um eine zip-Datei mit dem gesamten Inhalt des USB-Flash Datenträgers zu erstellen und lokal auf dem Comptuer zu speichern.
 :end
 
 :syslinux_cfg_help:
-Use this page to make changes to your `syslinux.cfg` file.
-You will need to reboot your server for these changes to take effect.
+Auf dieser seite kann die Datei `syslinux.cfg` bearbeitet werden.
+Der Server muss neu gestartet werden damit die Änderungen aktiv werden.
 :end
 
 :syslinux_button_help:
-Click the **Default** button to initialize the edit box with the
-factory-default contents.  You still need to click **Apply** in order to
-commit the change.
+Klick auf **Standard** um den Editor mit Werkseinstellungen aufzurufen.
+Sie müssen auf **Übernehmen* klicken um die neuen
+Einstellungen zu übernehmen.
 
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+Klick auf **Übernehmen** um die Einstellungen zu übernehmen.  Klick auf **Zurücksetzen** um
+die Änderunge Rückgängig zu machen (vor dem Speichern). Klick auf **Erledigt** um die Seite zu verlassen.
 :end
 
 :info_free_space_help:
-This defines a "floor" for the amount of free space remaining in the volume.
-If the free space becomes less than this value, then new files written via user shares will fail with "not enough space" error.
+Definiert eine "Untergrenze" für den mindest verbleibenden Speicherplatz.
+Wenn der freie Speicherplatz unter diesen Wert fällt und neue Dateien kopiert werden wird die Fehlermeldung "nicht genug freier Speicherpaltz" angezeigt.
 
-Enter a numeric value with one of these suffixes:
+Erlaubt Größeneinheiten sind:
 
 **KB** = 1,000<br>
 **MB** = 1,000,000<br>
@@ -440,223 +440,222 @@ Enter a numeric value with one of these suffixes:
 **G** = 1,073,741,824 (ie, 2^30)<br>
 **T** = 1,099,511,627,776 (ie, 2^40)<br>
 
-If no suffix, a count of 1024-byte blocks is assumed.
+Wenn keine Größeneinheiten angegeben wird, wird standardmäßig der 1024-byte Block angenommen.
 :end
 
 :share_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *User Shares* is as follows:
+**Färbiger Status Indikator** Bedeutung des Farbindikators am Anfang jeder Zeile von *Nutzer-Freigaben*:
 
-<i class='fa fa-circle orb green-orb'></i>All files are on protected storage.
+<i class='fa fa-circle orb green-orb'></i>Alle Dateien befinden sich auf ausfallgeschützten Datenträgern.
 
-<i class='fa fa-warning orb yellow-orb'></i>Some or all files are on unprotected storage.
+<i class='fa fa-warning orb yellow-orb'></i>Einige oder alle Dateien befinden sich auf nicth ausfallgeschützten Datenträgern.
 
-**Security modes:**
+**Freigabe-Einstellungen:**
 
-+ '-' -- user share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- Netzwerk-Freigabe wird nicht exportiert und ist vom Netzwerk nicht erreichbar
++ *Öffentlich* -- Alle Benutzer inklusive Gästen haben Lese-/Schreibrechte (Öffentlich Zugang)
++ *Geschützt* -- Alle Benutzer inklusive Gästen haben Leserechte, Schreibrechte wird per Benutzer vergeben (Limitierter Zugang)
++ *Privat* -- Gäste haben keinen Zugriff, Lese-/Schreib- oder nur Lesenrechte wird per Benutzer vergben (Geschlossener Zugang)
 
-**Special modes:**
+**Spezielle Freigabeeinstellungen:**
 
-+ SMB security mode displayed in *italics* indicates exported hidden user shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine user shares.
-+ NFS does not have special modes for user shares.
++ SMB Freigaben in *Kursiv* zeigen versteckte Nutzer-Freigaben.
++ AFP Freigaben in *Kursiv* zeigen Time-Machine Nutzer-Freigaben.
++ NFS besetzt keine speziellen Berechtigungen für Nutzer-Freigaben.
 :end
 
 :disk_list_help:
-**Colored Status Indicator** -- the significance of the color indicator at the beginning of each line in *Disk Shares* is as follows:
+**Färbiger Status Indikator** Bedeutung des Farbindikators am Anfang jeder Zeile von *Datenträger-Freigaben*:
 
-<i class='fa fa-circle orb green-orb'></i>Mounted, underlying device has redundancy/protection.
+<i class='fa fa-circle orb green-orb'></i>Gemounteter Datenträger unterliegt Redundanz/ist Geschützt.
 
-<i class='fa fa-warning orb yellow-orb'></i>Mounted, underlying device does not have redundancy/protection.
+<i class='fa fa-warning orb yellow-orb'></i>Gemounteter Datenträger unterliegt keiner Redundanz/ist Ungeschützt.
 
-**Security modes:**
+**Sicherheits Einstllungen:**
 
-+ '-' -- disk share is not exported and unavailable on the network
-+ *Public* -- all users including guests have full read/write access (open access)
-+ *Secure* -- all users including guests have read access, write access is set per user (limited access)
-+ *Private* -- no guest access at all, read/write or read-only access is set per user (closed access)
++ '-' -- Datenträger-Freigabe wird nicht exportiert und ist vom Netzwerk nicht erreichbar
++ *Öffentlich* -- Alle Benutzer inklusive Gästen haben Lese-/Schreibrechte (Öffentlich Zugang)
++ *Geschützt* -- Alle Benutzer inklusive Gästen haben Leserechte, Schreibrechte wird per Benutzer vergeben (Limitierter Zugang)
++ *Privat* -- Gäste haben keinen Zugriff, Lese-/Schreib- oder nur Lesenrechte wird per Benutzer vergben (Geschlossener Zugang)
 
-**Special modes:**
+**Spezielle Freigabeeinstellungen:**
 
-+ SMB security mode displayed in *italics* indicates exported hidden disk shares.
-+ AFP security mode displayed in *italics* indicates exported time-machine disk shares.
-+ NFS does not have special modes for disk shares.
++ SMB Freigaben in *Kursiv* zeigen versteckte Datenträger-Freigaben.
++ AFP Freigaben in *Kursiv* zeigen Time-Machine Datenträger-Freigaben.
++ NFS besetzt keine speziellen Berechtigungen für Datenträger-Freigaben.
 :end
 
 :share_edit_global1_help:
-A *Share*, also called a *User Share*, is simply the name of a top-level directory that exists on one or more of your
-storage devices (array and cache).  Each share can be exported for network access.  When browsing a share, we return the
-composite view of all files and subdirectories for which that top-level directory exists on each storage device.
+Eine *Freigabe* auch *Nutzer-Freigabe*, ist der Name eines Ordners im Hauptverzeichnis auf einem Datentäger (Array
+oder Cache). Jede Freigabe kann für den Netzwerkzugriff konfiguriert werden. Wenn eine Freigabe durchsucht wird, wird die
+Zusammengesetzt Ansicht aller Dateien und Unterverzeichnisse für die Freigabe der Dateien auf allen Datenträgern angezeigt.
 
-*Read settings from* is used to preset the settings of the new share with the settings of an existing share.
+*Lese Einstellungen von* wird benutzt um die Einstellungen von einer Bestehenden Freigabe auf eine neue Freigabe zu übernehmen.
 
-Select the desired share name and press **Read** to copy the settings from the selected source.
+Den gewünschten Freigabenamen eingeben und auf **Lesen** klicken um die Einstellungen von der gewählten Freigabe zu übernehmen.
 :end
 
 :share_edit_global2_help:
-*Write settings to* is used to copy the settings of the current share to one or more other existing shares.
+*Übernehme Einstellungen auf* wird benutzt um die Einstellungen auf einen oder mehreren existierenden Freigaben zu übernehmen.
 
-Select the desired destinations and press **Write** to copy the settings to the selected shares.
+Die gewünschten Freigaben auswählen und **Schreiben** klicken um die Einstellungen auf die gewählten Freigaben zu übernehmen.
 :end
 
 :share_edit_name_help:
-The share name can be up to 40 characters, and is case-sensitive with these restrictions:
+Der Freigabenamen kann maximal 40 Zeichen lang sein und unterliegt folgenden Einschränkungen:
 
-* cannot contain a double-quote character (") or the following characters: / \ * < > |
-* cannot be one of the reserved share names: flash, cache, cach2, .., disk1, disk2, ..
+* darf keine Anführungszeichen (") oder einen der folgenden Zeichen enthalten: / \ * < > |
+* darf kein reservierter Freigabename sein zB: flash, cache, cache2, disk1, disk2,...
 
-We highly recommend to make your life easier and avoid special characters.
+Wir empfehlen Ihnen keine Sonderzeichen zu verwenden.
 :end
 
 :share_edit_comments_help:
-Anything you like, up to 256 characters.
+Belibiger Text, maximal 256 Zeichen.
 :end
 
 :share_edit_allocation_method_help:
-This setting determines how Unraid OS will choose which disk to use when creating a new file or directory:
+Diese Einstellung bestimmt wie und auf welchen Datenträgern Unraid neue Dateien/Verzeichnisse erstellt:
 
-**High-water**
-Choose the lowest numbered disk with free space still above the current *high water mark*.  The
-*high water mark* is initialized with the size of the largest data disk divided by 2.  If no disk
-has free space above the current *high water mark*, divide the *high water mark* by 2 and choose again.
+**High-Water**
+Benutzt den ersten Datenträger der noch genug Speicherplatz unter der *High-Water Grenze* besitzt. Die
+*High-Water Grenze* wird durch den Größten Daten-Datenträger geteilt durch zwei festgelegt. Wenn kein Datenträger
+Speicherplatz über der *High-Water Grenze* zur Verfügung hat wird die *High-Water Grenze* durch zwei geteilt und erneut geprüft.
 
-The goal of **High-water** is to write as much data as possible to each disk (in order to minimize
-how often disks need to be spun up), while at the same time, try to keep the same amount of free space on
-each disk (in order to distribute data evenly across the array).
+Das Ziel von **High-Water** ist möglichst viele Daten auf jeden Datenträger zu schreiben (um die Anlaufvorgänge der
+Datenträger zu minimieren) und gleichzeitig die Datenträgerauslastung von allen Datenträgern auf gleichem
+niveaus zu halten (um Daten gleichmäßig auf dem Array zu verteilen).
 
-**Fill-up**
-Choose the lowest numbered disk that still has free space above the current **Minimum free space**
-setting.
+**Fill-Up**
+Benutzt den ersten Datenträger der noch freien Speicherplatz über der **Minimale freier Speicherplatz**
+Einstellung hat.
 
-**Most-free**
-Choose the disk that currently has the most free space.
+**Most-Free**
+Benutzt den Datenträger der am meisten freien Speicherplatz hat.
 :end
 
 :share_edit_free_space_help:
-The *minimum free space* available to allow writing to any disk belonging to the share.<br>
+Der *Minimale freie Speicherplatz* der zum Schreiben, auf einem zur Freigabe gehörendem Datenträger, verfügbar sein muss.<br>
 
-Choose a value which is equal or greater than the biggest single file size you intend to copy to the share.
-Include units KB, MB, GB and TB as appropriate, e.g. 10MB.
+Wert, der gleich oder größer als die größte einzelne Datei ist, die Sie auf die Freigabe kopieren möchten.
+Einheiten in KB, MB, GB und TB angeben, zB. 10MB.
 :end
 
 :share_edit_split_level_help:
-Determines whether a directory is allowed to expand onto multiple disks.
+Gibt an ob ein Verzeichnis über meherer Datenträger aufgeteilt werden darf.
 
-**Automatically split any directory as required**
-When a new file or subdirectory needs to be created in a share, Unraid OS first chooses which disk
-it should be created on, according to the configured *Allocation method*.  If the parent directory containing
-the new file or or subdirectory does not exist on this disk, then Unraid OS will first create all necessary
-parent directories, and then create the new file or subdirectory.
+**Jedes Verzeichnis automatisch Splitten falls erforderlich**
+Wenn eine neue Datei oder ein neues Unterverzeichnis in einer Freigabe erstellt wird, wählt Unraid OS zuerst den Datenträger
+anhand der Konfigurierten *Zuweisungsmethode* aus.  Wenn das übergeordnete Verzeichnis mit der neu zu erstellenden Datei
+oder Verzeichnis nicht auf dem Datenträger existiert, erstellt Unraid zuerst alle erforderlichen übergeordneten Verzeichnisse
+und anschließend die neue Datei bzw. das neue Unterverzeichnis.
 
-**Automatically split only the top level directory as required**
-When a new file or subdirectory is being created in the first level subdirectory of a share, if that first
-level subdirectory does not exist on the disk being written, then the subdirectory will be created first.
-If a new file or subdirectory is being created in the second or lower level subdirectory of a share, the new
-file or subdirectory is created on the same disk as the new file or subdirectory's parent directory.
+**Hauptverzeichnis automatisch Splitten falls erforderlich**
+Wenn eine neue Datei oder ein Unterverzeichnis im Hauptverzeichnis der Freigabe erstellt wird und das Unterverzeichnis
+auf dem Datenträger des Hauptverzeichnises nicht vorhanden ist, wird zuerst das Unterverzeichnis erstellt.
+Wenn eine neue Datei oder ein Unterverzeichnis im zweiten oder weiteren Unterverzeichnisen einer Freigabe erstellt wird, wird
+die neu zu erstellende Datei oder Verzeichnis auf dem selben Datenträger wie das Hauptverzeichnis erstellt.
 
-**Automatically split only the top "N" level directories as required**
-Similar to previous: when a new file or subdirectory is being created, if the parent directory is at level "N",
-and does not exist on the chosen disk, Unraid OS will first create all necessary parent directories.  If the
-parent directory of the new file or subdirectory is beyond level "N", then the new file or subdirectory is
-created on the same disk where the parent directory exists.
+**Verzeichnis nach "N" Ebenen Splitten falls erforderlich**
+Ähnlich wie oberhalb: Wenn eine neue Datei oder ein Unterverzeichnis erstellt wird und das übergeordnete Verzeichnis auf Ebene
+"N" befindet und auf dem ausgewählten Datenträger nicht vorahnden ist, erstellt Unraid alle übergeordneten Verzeichnisse. Wenn
+das übergeordnete Verzeichnis der neuen Datei oder Verzeichnis sich nach der Ebene "N" befindet, dann wird die neue Datei oder
+Verzeichnis auf dem selben Datenträger erstellt auf dem sich das übergeordnete Verzeichnis befindet.
 
-**Manual: do not automatically split directories**
-When a new file or subdirectory needs to be created in a share, Unraid OS will only consider disks where the
-parent directory already exists.
+**Manuell: Verzeichnisse nicht automatisch Splitten**
+Wenn eine neue Datei oder ein Unterverzeichnis auf deinem Datenträger erstellt werden muss erstellt Unraid das Verzeichnis
+nur auf dem Datenträger auf denen das Hauptverzeichnis vorhanden ist.
 :end
 
 :share_edit_included_disks_help:
-Specify the disks which can be used by the share. By default all disks are included; that is, if specific
-disks are not selected here, then the share may expand into *all* array disks.
+Gibt an welcher Datenträger für die Freigabe verwendet werden darf, Standardmäßig werden alle Datenträger verwendet.
+Falls hier keine Auswahl erfolgt kann die Freigabe über *alle* Datenträger erweitert werden.
 :end
 
 :share_edit_excluded_disks_help:
-Specify the disks which can *not* be used by the share. By default no disks are excluded.
+Gibt an welche Datenträger *nicht* von dieser Freigabe benutzt werden dürfen. Standardmäßig sind keine Datenträger ausgenommen.
 :end
 
 :share_edit_cache_pool_help:
-Specify whether new files and directories written on the share can be written onto the Cache disk/pool if present.
-This setting also affects *mover* behavior.
+Gibt an ob neue Dateien und Verzeichnisse auf den Cache-Datenträger/Pool geschrieben werden dürfen falls dieser vorhanden ist.
+Diese Einstellung beeinflusst das verhalten des *Mover*.
 
-**No** prohibits new files and subdirectories from being written onto the Cache disk/pool.
-*Mover* will take no action so any existing files for this share that are on the cache are left there.
+**Nein** verbietet das Schreiben neue Dateien und Verzeichnisse auf den Cache-Datenträger/Pool.
+Keine Aktivität vom *Mover*, ignoriert alle Dateien die sich eventuell noch auf dem Cache-Datenträger/Pool befinden.
 
-**Yes** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the Cache disk/pool and onto the array.
+**Ja** gibt an das neue Dateien und Verzeichnisse auf den Cache-Datenträger/Pool geschrieben werden sollen, vorausgesetzt
+es befindet sich genug freier Speicherplatz auf dem Cache-Datenträger/Pool.
+Wenn nicht genug Speicherplatz auf dem Cache-Datenträger/Pool vorhanden ist werden neue Dateien und Verzeichnisse direkt auf
+das Array geschrieben. Wenn der *Mover* aktiv ist werden die Dateien vom Cache-Datenträger/Pool auf das Array transferiert.
 
-**Only** indicates that all new files and subdirectories must be writen to the Cache disk/pool.
-If there is insufficient free space on the Cache disk/pool, *create* operations will fail with *out of space* status.
-*Mover* will take no action so any existing files for this share that are on the array are left there.
+**Nur** gibt an das neue Dateien und Verzeichnisse auf den Cache-Datenträger/Pool geschrieben werden müssen.
+Wenn nicht genug Speicherplatz auf dem Cache-Datenträger/Pool vorhanden ist werden, schlagen *Schreibvorgänge* mit dem Fehler
+*kein freier Speicherplatz vorhanden* fehl. Keine Aktivität vom *Mover* ignoriert alle Dateien die sich eventuell noch auf dem Array befinden.
 
-**Prefer** indicates that all new files and subdirectories should be written to the Cache disk/pool, provided
-enough free space exists on the Cache disk/pool.
-If there is insufficient space on the Cache disk/pool, then new files and directories are created on the array.
-When the *mover* is invoked, files and subdirectories are transferred off the array and onto the Cache disk/pool.
+**Bevorzugt** gibt an das neue Dateien und Verzeichnisse auf den Cache-Datenträger/Pool geschrieben werden sollen, 
+vorausgesetzt es befindet sich genug freier Speicherplatz auf dem Cache-Datenträger/Pool.
+Wenn nicht genug Speicherplatz auf dem Cache-Datenträger/Pool vorhanden ist werden neue Dateien und Verzeichnisse direkt auf
+das Array geschrieben. Wenn der *Mover* aktiv ist werden die Dateien vom Array auf den Cache-Datenträger/Pool transferiert.
 
-**NOTE:** Mover will never move any files that are currently in use.
-This means if you want to move files associated with system services such as Docker or VMs then you need to
-disable these services while mover is running.
+**HINWEIS:** Der Mover kann nur Dateien verschieben die gerade nicht geöffnet/bentutzt werden.
+Das heißt wenn Sie Dateien von System Anwendungen wie zB Docker oder VMs verschieben wollen müssen diese Anwendungen
+vorher gestoppt werden wenn der Mover läuft.
 :end
 
 :share_edit_copy_on_write_help:
-Set to **No** to cause the *btrfs* NOCOW (No Copy-on-Write) attribute to be set on the share directory
-when created on a device formatted with *btrfs* file system.  Once set, newly created files and
-subdirectories on the device will inherit the NOCOW attribute.  We recommend this setting for shares
-used to store vdisk images, including the Docker loopback image file.  This setting has no effect
-on non-btrfs file systems.
+Auf **Nein** setzen damit *btrfs* das NOCOW (Kein Copy-on-Write) Attribut in der Freigabe setzt, wenn die Freigabe
+auf deinem Dateisystem das mit *btrfs* formatiert ist erstellt wird. Wenn diese Eisntellung aktiviert ist erben neu erstellte
+Dateien und Verzeichnisse das NOCOW Attribut. Wir empfehlen diese Einstellung für Freigaben die zum Speichern von VM-Images
+und Docker-Loopback-Image-Dateien verwendet werden. Diese Einstellung hat keine Auswirkung auf nicht btrfs-Dateisysteme.
 
-Set to **Auto** for normal operation, meaning COW **will** be in effect on devices formatted with *btrfs*.
+Auf **Auto** setzen für Standard Betrieb, COW **aktiviert** für alle Datenträger die mit *btrfs* formatiert sind.
 :end
 
 :share_edit_status_help:
-Share does *not* contain any data and may be deleted if not needed any longer.
+Freigabe enthält *keine* Daten und kann gelöscht werden sollte dieser nicht mehr benötigt werden.
 :end
 
 :share_edit_delete_help:
-Share can *not* be deleted as long as it contains data. Be aware that some data can be hidden. See also [SMB Settings](/Settings/SMB) -> Hide "dot" files.
+Freigabe kann *nicht* gelöscht werden so lange sich Daten darauf befinden. Beachten Sie das auch Versteckte Dateien dazuzählen, siehe [SMB Settings](/Settings/SMB) -> Verstecke "dot" Dateien.
 :end
 
 :smb_security_help:
-*Read settings from* is used to preset the SMB security settings of the current selected share with the settings of an existing share.
+*Lese Einstellungen von* wird verwendet, um die SMB-Sicherheitseinstellungen der ausgewählten Freigabe mit den Einstellungen einer vorhandenen Freigabe zu übernehmen.
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+Wählen Sie den gewünschten Freigabenamen und klicken Sie **Lesen** um die SMB-Sicherheitseinstellungen von der ausgewählten Freigabe zu kopieren.
 
-*Write settings to* is used to copy the SMB security settings of the current selected share to one or more other existing shares.
+*Schreibe Einstellungen zu* wird verwendet, um die SMB-Sicherheitseinstellungen der aktuell ausgewählten Freigabe auf eine oder mehrere vorhandene Freigaben zu übernehmen.
 
-Select the desired destinations and press **Write** to copy the SMB security settings to the selected shares.
+Wählen Sie die gewünschten Freigaben aus und klicken Sie **Schreiben**, um die SMB-Sicherheitseinstellungen auf die ausgewählten Freigaben zu kopieren.
 :end
 
 :smb_export_help:
-This setting determines whether the share is visible and/or accessible.  The 'Yes (hidden)' setting
-will *hide* the share from *browsing* but is still accessible if you know the share name.
+Gibt an ob die Freigabe sichtbar und/oder zugänglich ist. Die Einstellung 'Ja (versteckt)' *verbirgt*
+die Freigabe vor *dem Durchsuchen* ist aber jedoch weiterhin verfügbar wenn der Freigabenamen bekannt ist.
 :end
 
 :smb_time_machine_volume_help:
-This limits the reported volume size, preventing Time Machine from using the entire real disk space
-for backup.  For example, setting this value to "1024" would limit the reported disk space to 1GB.
+Limitiert den angezeigten freien Speicherplatz und verhindert das zB Time-Machine den kompletten freien Speicherplatz für die
+Sicherung verwendet. Wenn der Wert auf "1024" gesetzt wird beträgt der gemeldete Speicherplatz 1GB.
 :end
 
 :smb_case_sensitive_names_help:
-Controls whether filenames are case-sensitive.
+Gibt an ob bei Dateinamen zwischen Groß- und Kleinschreibung unterschieden wird.
 
-The default setting of **auto** allows clients that support case sensitive filenames (Linux CIFSVFS)
-to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX
-case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to **auto** is the same as
-setting it to No for them; however, the case of filenames passed by a Windows client will be preserved.  This setting can result
-in reduced peformance with very large directories because Samba must do a filename search and match on passed names.
+Die Standardeinstellung **Auto** erlaubt Clienten die zwischen Groß- und Kleinschreibung unterschieden können (Linux CIFSVFS)
+dem Samba Server paketweise mitzuteilen,dass sie zwischen Groß- und Kleinschreibung auf das Dateisystem zugreifen möchten (Unterstützung für UNIX
+Groß- und Kleinschreibung). Kein Windows-System unterstützt Dateinamen, die zwischen Groß- und Kleinschreibung unterschieden können daher ist das Festlegen der Option auf **Auto** gleich
+wie Nein, die Dateinamen die von Windows stammen werden aber richtig an den Server übergeben.  Diese Einstellung kann die
+Leistung bei großen Verzeichnissen beeinträchtigen da Samba eine Dateisuche durchführt und mit übergebenen Namen übereinstimmen muss.
 
-A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case.
-This will speed very large directory access, but some Windows applications may not function properly with this setting.  For
-example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+Die Einstellung **Ja** gibt an das die Dateienamen vom Clienten übernommen werden und auch so gespeichert werden und nur so abrufbar sind.
+Dies beschleunigt den Zugriff auf sehr große Verzeichnisse einige Windows-Anwendungen funktionieren mit dieser Einstellung möglicherweise nicht ordnungsgemäß.
+Wenn zum Beispiel "MeineDatei" erstellt wird, eine Windows Anwendung jedoch versucht "MEINEDATEI" zu öffnen (in Windows zulässig), wird diese nicht gefunden.
 
-A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case.
-In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case.  This
-ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
-Note this setting should only be configured for new shares.
+Die Einstellung **Nur Kleinschreibung**gibt an die Dateinamen, nicht nur neuer Datein, werden in Kleinschreibung umgewandelt
+Mit anderen Worten werden alle Dateinamen die von Windows erstellt werden in Kleinbuchstaben gespeichert und abgerufen. Dies
+stellt sicher das alle Windows Anwendungen, unabhängig der Groß- und Kleinschreibung alle Dateien ordnungsgemäß finden, diese Einstellung beinhaltet nicht den jedoch die Ordnerliste.
+Beachte das diese Einstellung nur für neue Freigabe gesetzt werden sollte.
 :end
 
 :smb_security_modes_help:
