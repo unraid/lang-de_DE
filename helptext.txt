@@ -123,13 +123,13 @@ kann er nur mit dem SMB Protokoll Freigegeben werden.
 :end
 
 :array_devices_help:
-#### Assigning Devices
+#### Datenträger zuweisen
 
-An unRAID disk array consists of a single parity disk and a number of data disks. The data
-disks are exclusively used to store user data, and the parity disk provides the redundancy necessary
-to recover from any singe disk failure.
+Ein Unraid Array besteht aus Einem oder Zwei Paritätsdatetnrägern und einer beliebigen Anzahl von Daten-Datenträgern. Die
+Daten-Datenträger sind nur für Nutzerdaten und der/die Paritätsdatentäger dient rein der Redundanz die zur 
+Datenwiederherstellung nötig ist falls ein Daten-Datenträger ausfällt.
 
-Note that we are careful to use the term *disk* when referring to an array storage device.  We
+Note that we are careful to use the term *Datenträger* when referring to an array storage device.  We
 use the term *hard drive* (or sometimes just *drive*) when referring to an actual hard disk drive (HDD)
 device. This is because in a RAID system it is possible to read/write an array disk whose corresponding
 hard drive is disabled or even missing! In addition, it is useful to be able to ask, "which device is
@@ -140,234 +140,234 @@ Main page when the array is stopped. There is a drop-down box for each array dis
 unassigned devices. To assign a device simply select it from the list. Each time a device
 assignment is made, the system updates a configuration file to record the assignment.
 
-#### Requirements
+#### Anforderungen
 
-Unlike traditional RAID systems which stripe data across all the array devices, an unRAID server
-stores files on individual hard drives. Consequently, all file write operations will involve both the
-data disk the file is being written to, and the parity disk. For these reasons,
+Ander als traditionelle RAID Systeme die Daten über mehrer Datenträger aufsplitten speicher der Unraid Server
+die Daten individuell auf den Datenträgern. Folglich müssen bei allen Schrebivorgängen der Datenträger auf den
+eine Datei geschrieben wird und der Paritätsdatenträger aktiv sein. Aus diesen Gründen
 
-* the parity disk size must be as large or larger than any of the data disks,
+* muss der Paritätsdatenträger der größte oder größer als der größte Daten-Datenträger sein
 
-and
+und
 
-* given a choice, the parity disk should be the fastest disk in your collection.
+* sollte wenn möglich der schnellste/performanteste Datenträger sein.
 
-#### Guidelines
+#### Allgemeine Richtlinien
 
-Here are the steps you should follow when designing your unRAID disk array:
+Diese Schritte sollen Ihnen bei der Erstellung eines Unraid Arrays helfen:
 
-1. Decide which hard drive you will use for parity, and which hard drives you will use for
-data disk1, disk2, etc., and label them in some fashion. Also, find the serial number of each hard
-drive and jot it down somewhere; you will need this information later.
+1. Welcher Datenträger soll für die Parität benutzt werden und welche Datenträger sollen als Daten-Datenträger benutzt
+werden. Mit disk1, disk2, usw. beschriften. Notieren sie die Seriennummern der Datenträger,
+Sie werden sie später brauchen.
 
-2. Install your hard drive devices, boot unRAID Server and bring up the webGui. If this is a fresh system
-build, then the Main page will show no disks installed. This doesn't mean the system can't detect your
-hard drives; it just means that none have been assigned yet.
+2. Bauen Sie die Datenträger in den Server ein und Starten Sie Unraid und navigieren Sie zur WebGUI. Sollte dies eine neue
+Installation sein wird die Hauptseite keine installierten Datenträger anzeigen. Dies heißt aber nicht das Ihre Datenträger
+nicht erkannt wurden, Sie wurden lediglich noch nicht zugewiesen.
 
-3. Remember the serial numbers you recored back in step 1? For parity and each data disk, select the
-proper hard drive based on its serial number from the drop down list.
+3. Nun brauchen Sie die Seriennummern aus Schritt 1. Wählen Sie für die Paritäts- und Daten-Datenträger
+den Datentäger, basierend auf der Serienummer, aus dem Drop-Down aus und weisen ihm den dementsprechenden Slot zu.
 
 #### Hot Plug
 
-You may also *hot plug* hard drives into your server if your hardware supports it. For example,
-if you are using hard drive cages, you may simply plug them into your server while powered on and
-with array Stopped. Refresh the Main page to have new unassigned devices appear in the assignment
-dropdown lists.
+Sie können die Datenträger ebenseo mittels *Hot Plug* einsetzen wenn Ihre Hardware dies unterstützt. Wenn Sie zum
+Beispiel Festplatten Wechselrahmen benutzen können Sie diese im Laufenden Betrieb einsetzen wenn das Array gestoppt
+ist. Warten Sie einen kurzen Moment und Aktualisieren sie die Hauptseite von Unraid und der soeben eingesetzte Datenträger
+erscheint im Drop-Down.
 
-#### Next Steps
+#### Weiterführende Schritte
 
-Once you have assigned all of your hard drives, refer to the Array Status section below
-and Start the array.
+Wenn Sie alle Datenträger zugewiesen haben bitte folgen sie dem Array Status Abschnitt
+und starten Sie das Array.
 :end
 
 :encryption_help:
-#### Encryption input
+#### Verschlüsselung
 
-With array Stopped, the user can specify a new encryption key. Note that once a device
-is formatted with a particular key it may only be opened using that same key. Changing the encryption key requires
-encrypted devices to be reformatted **resulting in permanent loss of all existing data on those devices.**
+Wenn das Array gestoppt ist kann ein neuer Verschlüsselungsschlüssel vergeben werden. Bitte beachten Sie wenn ein Datetnträger
+bereits mit einem anderen Schlüssel verschlüsselt wurde das er mit einem neuen nicht starten wird. Die Änderung des Schlüssels
+von bereits verschlüsselten Datenträgern erfordert eine neuerliche formatierung **dies löscht alle bereits vorhanden Daten!**
 
 #### Passphrase
 
-Enter a passphrase of up to 512 characters. It is highly advisable to only use the 95 printable characters from the
-first 128 characters of the [ASCII table](https://en.wikipedia.org/wiki/ASCII), as they will always have the same binary
-representation. Other characters may have different encoding depending on system configuration and your passphrase will
-not work with a different encoding. If you want a longer passphrase or to include binary data, upload a keyfile instead.
+Eine Passphrase besteht aus bis zu 512 Zeichen. Es wird empfohlen nur die 95 druckbaren Zeichen der 128 ersten Zeichen
+der [ASCII table](https://en.wikipedia.org/wiki/ASCII) zu benutzen, da diese immer die gleiche Binäre Bedeutung haben.
+Andere Zeichen können je nach System anders Codiert sein und könnten somit die gültigkeit der Passphrase beeinträchtigen.
+Falls Sie eine längere Passphrase möchen oder Binäre Dateien inkludieren wollen, laden sie bitte ein Schlüssel-Datei hoch.
 
-Please refer to the [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
-for what constitutes a *secure* passphrase.
+Bitte [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
+für die Definition einer *sicheren* Passphrase beachten.
 
-**Memorize** this passphrase. **IF LOST, ENCRYPTED CONTENT CANNOT BE RECOVERED!**
+**Prägen** Sie sich die Passphrase ein. **FALLS SIE VERLOREN WIRD, KANN DER VERSCHLÜSSELTE INHALT NICHT WIEDERHERGESTELLT WERDEN!**
 
-#### Keyfile
+#### Schlüssel-Datei
 
-Select a local keyfile with a stored encryption key or a binary file. The maximum size of the keyfile is 8M (8388608 byte).
+Wählen Sie eine Schlüsseldatei mit einem gespeicherten Schlüssel oder einer Binärdatei aus. Die maximale Größe beträgt 8M (8388608 byte).
 
-**Backup** your local keyfile. **IF LOST, ENCRYPTED CONTENT CANNOT BE RECOVERED!**
+**Sichern** Sie unbedingt Ihre Schlüsseldatei. **FALLS SIE VERLOREN WIRD, KANN DER VERSCHLÜSSELTE INHALT NICHT WIEDERHERGESTELLT WERDEN!**
 :end
 
 :info_warning_temp_help:
-*Warning disk temperature* sets the warning threshold for this hard disk temperature. Exceeding this threshold will result in a warning notification.
+*Datenträgertemperatur Warnung* setzt die Temperatur bei der eine Warnung ausgelöst wird fest. Das Überschreiten löst eine Benachrichtigungs Warnung aus.
 
-A value of zero will disable the warning threshold (including notifications).
+Ein Wert von 0 deaktiviert die Warnung (inklusive der Benachrichtigung).
 :end
 
 :info_critical_temp_help:
-*Critical disk temperature* sets the critical threshold for this hard disk temperature. Exceeding this threshold will result in an alert notification.
+*Kritische Datenträgertemperatur Warnung* setzt die Temperatur bei der eine Kritische Warnung ausgelöst wird fest. Das Überschreiten löst eine Kritische Benachrichtigungs Warnung aus.
 
-A value of zero will disable the critical threshold (including notifications).
+Ein Wert von 0 deaktiviert die Kritische Datenträgertemperatur Warnung (inklusive der Benachrichtigung).
 :end
 
 :info_file_system_help:
-Enter the desired file system type.  Changing the file system type of a device will permit you to reformat
-that device using the new file system.  Be aware that **all existing data on the device will be lost**.
+Gewünschter Dateisystemtyp. Das ändern des Dateisystem lässt eine Formatierung des Datenträger mit dem
+neu gewählten Dateisystem zu. Bitte Beachten **alle existierenden Dateine auf dem Datenträger werden gelöscht**.
 :end
 
 :info_comments_help:
-This text will appear under the *Comments* column for the share in Windows Explorer.
-Enter anything you like, up to 256 characters.
+Dieser Text erscheint im Feld *Kommentar* im Windows Explorer.
+Eingabe nach belieben möglich, maximal 256 Zeichen.
 :end
 
 :info_warning_utilization_help:
-*Warning disk utilization* sets the warning threshold for this hard disk utilization. Exceeding this threshold will result in a warning notification.
+*Datenträgerauslastungs Warnung* setzt die Datenträgerauslastungs Grenze bei der eine Warnung ausgelöst wird. Das Überschreiten löst eine Benachrichtiguns Warnung aus.
 
-When the warning threshold is set equal or greater than the critical threshold, there will be only critical notifications (warnings are not existing).
+Wenn die Warnungsgrenze größer/gleich der Kritischen Warnung gesetzt wird, wird nur die Kritische Warnung ausgelöst (es wird keine Warnung ausgelöst).
 
-A value of zero will disable the warning threshold (including notifications).
+Ein Wert von 0 deaktiviert die Warnung (inklusive der Benachrichtigung).
 :end
 
 :info_critical_utilization_help:
-*Critical disk utilization* sets the critical threshold for this hard disk utilization. Exceeding this threshold will result in an alert notification.
+*Kritische Datenträgerauslastung* setzt die Kritische Datenträgerauslastungs Grenze. Das Überschreiten löst eine Kritische Benachrichtigungs Warnung aus.
 
-A value of zero will disable the critical threshold (including notifications).
+Ein Wert von 0 deaktiviert die Kritische Datenträgerauslastungs Warnung (inklusive der Benachrichtigung).
 :end
 
 :info_btrfs_balance_help:
-**Balance** will run the *btrfs balance* program to restripe the extents across all pool devices, for example,
-to convert the pool from raid1 to raid0 or vice-versa.
+**Balance** löst ein *btrfs balance* aus das die Daten über alle Pool Datenträger Restriped, zum Beispiel,
+um den Pool von raid1 zu raid0 zu konvertieren oder umgekehrt.
 
-When a *full balance* is perfomred, it basically rewrites everything in the current filesystem.
+Wenn ein *full balance* ausgeführt wird, wird Grundsätzlich alles im Dateisystem neu geschrieben.
 
-A *mode conversion* affects the btrfs data extents; metadata always uses raid1 and is converted to raid1 if necessary by any balance operation.
+Eine *mode conversion* wirkt sich auf die Datenbereiche von btrfs aus; Meta-Daten nutzen immer raid1 und werden falls nötig zu raid1 konvertiert im Zuge der Balance.
 
-The run time is potentially very long, depending on the filesystem size and speed of the device.
+Dies kann eine lange Zeit dauern, abhängig von der Größe des Dateisystems und der Geschwindigkeit des Datenträgers.
 
-Unraid uses these default options when creating a multiple-device pool:
+Unraid verwendet die Standardoptionen beim Erstellen eines Pools mit mehreren Geräten:
 
 `-dconvert=raid1 -mconvert=raid1`
 
-For more complete documentation, please refer to the btrfs-balance [Manpage](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
+Eine ausführlichere Dokumentation zu btrfs-balance finden Sie unter [Manpage](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
 
-*Note: raid5 and raid6 are generally still considered **experimental** by the Linux community*
+*Hinweis: raid5 und raid6 sind von der Linux Community immer noch als **experimentell** eingestuft*
 :end
 
 :info_balance_cancel_help:
-**Cancel** will cancel the balance operation in progress.
+**Abbruch** bricht den laufenden Balancierungs Vorgang ab.
 :end
 
 :info_btrfs_scrub_help:
-**Scrub** runs the *btrfs scrub* program which will read all data and metadata blocks from all
-devices and verify checksums.
+**Scrub** startet *btrfs scrub* welches alle Daten und Metadaten von den Datenträgern liest
+und die Prüfsummen vergleicht.
 
-If *Repair corrupted blocks* is checked, *btrfs scrub* will repair corrupted blocks if there’s a correct copy available.
+Wenn *Repariere defekte Blöcke* ausgewähtl ist, repariert *btrfs scrub* alle defekten Blöcke falls eine korrekte Kopie vorhanden ist.
 :end
 
 :info_scrub_cancel_help:
-**Cancel** will cancel the Scrub operation in progress.
+**Abbrechen** bricht den laufenden Scrub Vorgang ab.
 :end
 
 :info_btrfs_check_help:
-**Check** will run the *btrfs check* program to check file system integrity on the device.
+**Prüfe** startet *btrfs check* um die Intigrität des Dateisystems am Datenträger zu Prüfen.
 
-The *Options* field is initialized with *--readonly* which specifies check-only.  If repair is needed, you should run
-a second Check pass, setting the *Options* to *--repair*; this will permit *btrfs check* to fix the file system.
+Das Feld *Optionen* wird mit *--readonly* befüllt womit nur die Prüfung ausgeführt wird. Falls eine Reparatur erforderlich
+ist, ist ein zweiter Durchlauf mit der *Option* *--repair* erforderlich; dies erlaubt *btrfs check* das Dateisystem zu reparieren.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+Nach Start des Checks bitte die Seite Aktualisieren um den Status zu überwachen. Abhängig wie groß das Dateisystem
+ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **lange Zeit** dauern (Stunden).
+Es erfolgt nur eine minimale Ausgabe, jedoch kann anhand des Lese-/Schreibstatus auf der Hauptseite
+geprüft werden ob der Vorgang läuft.
 :end
 
 :info_check_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**Abbruch** bricht den laufenden Check Vorgang ab.
 :end
 
 :info_reiserfs_check_help:
-**Check** will run the *reiserfsck* program to check file system integrity on the device.
+**Check** startet *reiserfsck* um die Intigrität des Dateisystems am Datenträger zu Prüfen.
 
-The *Options* field may be filled in with specific options used to fix problems in the file system. Typically, you
-first run a Check pass leaving *Options* blank.  Upon completion, if *reiserfsck* finds any problems, you must
-run a second Check pass, using a specific option as instructed by the first *reiserfsck* pass.
+Das Feld *Optionen* kann mit Optionen zum reparieren des Dateisystems befüllt werden. Normalerweise wird der erste
+Check mit leerem *Optionen* Feld durchgeführt. Wenn der erste Check ausgeführt wurde und *reiserfsck* Probleme fand, müssen
+Sie einen zweiten Durchlauf starten, mit den vom ersten *reiserfsck* instruierten Optionen.
 
-After starting a Check you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+Nach Start des Checks bitte die Seite Aktualisieren um den Status zu überwachen.  Abhängig wie groß das Dateisystem
+ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **lange Zeit** dauern (Stunden).
+Es erfolgt nur eine minimale Ausgabe, jedoch kann anhand des Lese-/Schreibstatus auf der Hauptseite
+geprüft werden ob der Vorgang läuft.
 :end
 
 :info_reiserfs_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**Abbruch** bricht den laufenden Check Vorgang ab.
 :end
 
 :info_xfs_check_help:
-**Check** will run the *xfs_repair* program to check file system integrity on the device.
+**Check** startet *xfs_repair* um die Intigrität des Dateisystems am Datenträger zu Prüfen.
 
-The *Options* field is initialized with *-n* which specifies check-only.  If repair is needed, you should run
-a second Check pass, setting the *Options* blank; this will permit *xfs_repair* to fix the file system.
+Das Feld *Optionen* wird mit *-n* befüllt womit nur die Prüfung ausgeführt wird.  Falls eine Reparatur erforderlich
+ist, ist ein zweiter Durchlauf mit dem feld *Optionen* leer durchzuführen; dies erlaubt *xfs_repair* das Dateisystem zu reparieren.
 
-After starting a Check, you should Refresh to monitor progress and status.  Depending on
-how large the file system is, and what errors might be present, the operation can take **a long time** to finish (hours).
-Not much info is printed in the window, but you can verify the operation is running by observing the read/write counters
-increasing for the device on the Main page.
+Nach Start des Checks bitte die Seite Aktualisieren um den Status zu überwachen.  Abhängig wie groß das Dateisystem
+ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **lange Zeit** dauern (Stunden).
+Es erfolgt nur eine minimale Ausgabe, jedoch kann anhand des Lese-/Schreibstatus auf der Hauptseite
+geprüft werden ob der Vorgang läuft.
 :end
 
 :info_xfs_cancel_help:
-**Cancel** will cancel the Check operation in progress.
+**Abbruch** bricht den laufenden Check Vorgang ab.
 :end
 
 :info_smart_notifications_help:
-SMART notifications are generated on either an increasing RAW value of the attribute, or a decreasing NORMALIZED value which reaches a predefined threshold set by the manufacturer.
+SMART-Benachrichtigungen werden entweder für einen zunehmenden RAW-Wert des Attributs oder für einen abnehmenden NORMALISIERTEN Schwellenwert der vom Hersteller vorgegeben wird generiert.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
 :end
 
 :info_tolerance_level_help:
-A tolerance level may be given to prevent that small changes result in a notification. Setting a too high tolerance level may result in critical changes without a notification.
+Das Tolleranz level verhindert das kleine Veränderungen eine Benachrichtigung auslösen. Falls dieser Wert zu hoch gesetzt wird kann es bei großen Veränderungen ebenfalls eine Benachrichtigung verhindern.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
 :end
 
 :info_controller_type_help:
-By default automatic controller selection is done by smartctl to read the SMART information. Certain controllers however need specific settings for smartctl to work.
-Use this setting to select your controller type and fill-in the specific disk index and device name for your situation. Use the manufacturer's documentation to find the relevant information.
+Standardmäßig wird die Controller-Auswahl von smartctl durchgeführt um die SMART-Informationen zu lesen. Bestimmte Controller benötigen jedoch spezielle Einstellungen damit smartctl funktioniert.
+Verwenden Sie diese Einstellung um Ihren Controllertyp auszuwählen und den spezifischen Festplattenindex und Gerätenamen an Ihre gegebenheiten anzupassen. Verwenden Sie die Dokumentation des Herstellers um die relevanten Informationen zu finden.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
 :end
 
 :info_attribute_notifications_help:
-The user can enable or disable notifications for the given SMART attributes. It is recommended to keep the default, which is ALL selected attributes,
-when certain attributes are not present on your hard disk or do not provide the correct information, these may be excluded.
-In addition custom SMART attributes can be entered to generate notifications. Be careful in this selection,
-it may cause an avalance of notifcations if inappropriate SMART attributes are chosen.
+Hier können Benachrichtigungen für die angegebenen SMART-Attribute aktivieren oder deaktivieren werden. Es wird empfohlen, die Standardeinstellung beizubehalten bei der es sich um ALLE ausgewählten Attribute handelt.
+Falls Ihr Datenträger Attribute nicht unterstützt/vorhanden sind oder falsch liefert können diese ausgeschlossen werden.
+Ebenso können benutzerdefinierte SMART-Attribute angegeben werden um Benachrichtigungen zu generieren. Bitte Vorsicht bei der
+Auswahl. Sollten falsche SMART-Attribute ausgewählt werden kann dies zu einer Vielzahl von Benachrichtigungen führen.
 
-Each disk may have its own specific setting overruling the 'default' setting (see global SMART settings under Disk Settings).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
 :end
 
 :selftest_history_help:
-Press **Show** to view the self-test history as is kept on the disk itself.
-This feature is only available when the disk is in active mode.
+Klicke **Anzeigen** um den Verlauf der Selbsttest die auf dem Datenträger gespeichert sind anzuzeigen.
+Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
 :end
 
 :selftest_error_log_help:
-Press **Show** to view the error report as is kept on the disk itself.
-This feature is only available when the disk is in active mode.
+Klicke **Anzeigen** um den gespeicherten Fehlerbericht der auf dem Datenträger gespeichert ist anzuzeigen.
+Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
 :end
 
 :selftest_short_test_help:
-Starts a *short* SMART self-test, the estimated duration can be viewed under the *Capabilities* section. This is usually a few minutes.
+Startet einen *einfachen* SMART Selbsttest, die Voraussichtliche Dauer ist im Abschnitt *Funktionen* ersichtlich. Dauert überlicherweise ein paar Minuten.
 
-When the disk is spun down, it will abort any running self-test.
-This feature is only available when the disk is in active mode.
+Wenn sich der Datenträger im Standby Modus befindet wird jeder Selbsttest abgeborchen.
+Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
 :end
 
 :selftest_long_test_help:
