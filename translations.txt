@@ -227,6 +227,7 @@ Please select one file only=Bitte nur eine Datei auswählen
 Please summarize your suggestion here=Bitte Vorschläge hier zusammenfassen
 Please try again later=Bitte später versuchen
 Please wait=Bitte warten
+Plugins=
 Plus=Plus
 Private=Privat
 Pro=Pro
