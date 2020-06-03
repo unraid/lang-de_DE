@@ -11,3 +11,4 @@ Are you sure you want to install %s docker and %s plugin applications=%s Docker 
 Install Application=Installiere Anwendung
 Install Applications=Installiere Anwendungen
 Something really wrong went on during %s=Bei der Installation von %s ging etwas schief
+Are you sure you want to delete %s applications from the previously installed list=Sind Sie sicher das Sie %s Anwendungen von der List der Vorhergehenden Anwendunge löschen wollen
