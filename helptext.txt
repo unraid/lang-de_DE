@@ -129,16 +129,16 @@ Ein Unraid Array besteht aus Einem oder Zwei Paritätsdatetnrägern und einer be
 Daten-Datenträger sind nur für Nutzerdaten und der/die Paritätsdatentäger dient rein der Redundanz die zur 
 Datenwiederherstellung nötig ist falls ein Daten-Datenträger ausfällt.
 
-Note that we are careful to use the term *Datenträger* when referring to an array storage device.  We
-use the term *hard drive* (or sometimes just *drive*) when referring to an actual hard disk drive (HDD)
-device. This is because in a RAID system it is possible to read/write an array disk whose corresponding
-hard drive is disabled or even missing! In addition, it is useful to be able to ask, "which device is
-assigned to be the parity disk?"; or, "which device corresponds to disk2?".
+Beachten Sie, dass wen wir den Begriff *Datenträger* verwenden wenn wir uns auf einen Arrag Datenträger beziehen. Wir
+verwenden auch manchmal *Festplatte* (oder unter Umständen *Laufwerk*) wenn wir uns auf einen Datenträger (HDD) beziehen.
+Dies liegt daran das in RAID Systemen ein Lesen/Schreiben auch bei einem fehlendem bzw. Deaktivieren Datenträger möglich
+ist! Darüber hinaus kann es Hilfreich sein zu Fragen "Welcher Datenträger wird als Parität verwendet?" oder "Welcher
+Datenträger entspricht disk2?".
 
-We therefore need a way to assign hard drives to array disks. This is accomplished here on the
-Main page when the array is stopped. There is a drop-down box for each array disk which lists all the
-unassigned devices. To assign a device simply select it from the list. Each time a device
-assignment is made, the system updates a configuration file to record the assignment.
+Wir brauchen daher eine möglichkeit Datenträger dem Array zuzuteilen. Dies kann auf der Hauptseite wenn das Arry
+gestoppt ist durchgeführt werden. Für jeden Array-Datenträger gibt es ein Drop-Down Feld in dem alle nicht zugewiesenen
+Datenträger angezeigt werden. Um einen Datenträger zuzuweisen, wählen Sie einfach einen Datenträger aus der Liste aus.
+Jedes mal wenn eine Zuweisung durchgeführt wurde aktualisiert das System eine Konfigurationsdatei um die Änderung zu speichern.
 
 #### Anforderungen
 
@@ -454,7 +454,7 @@ Wenn keine Größeneinheiten angegeben wird, wird standardmäßig der 1024-byte 
 
 + '-' -- Netzwerk-Freigabe wird nicht exportiert und ist vom Netzwerk nicht erreichbar
 + *Öffentlich* -- Alle Benutzer inklusive Gästen haben Lese-/Schreibrechte (Öffentlich Zugang)
-+ *Geschützt* -- Alle Benutzer inklusive Gästen haben Leserechte, Schreibrechte wird per Benutzer vergeben (Limitierter Zugang)
++ *Geschützt* -- Alle Benutzer inklusive Gästen haben Leserechte-/Schreibrechte wird per Benutzer vergeben (Limitierter Zugang)
 + *Privat* -- Gäste haben keinen Zugriff, Lese-/Schreib- oder nur Lesenrechte wird per Benutzer vergben (Geschlossener Zugang)
 
 **Spezielle Freigabeeinstellungen:**
@@ -659,15 +659,15 @@ Beachte das diese Einstellung nur für neue Freigabe gesetzt werden sollte.
 :end
 
 :smb_security_modes_help:
-Summary of security modes:
+Übersicht der Sicherheits Einstellungen:
 
-**Public** All users including guests have full read/write access.
+**Öffentlich** Alle Benutzer inklusive Gästen haben Lese-/Schreibrechte.
 
-**Secure** All users including guests have read access, you select which of your users
-have write access.
+**Geschützt** Alle Benutzer inklusive Gästen haben Leserechte-/Schreibrechte werden von Ihnen
+per Benutzer vergeben.
 
-**Private** No guest access at all, you select which of your users have read/write or
-read-only access.
+**Privat** Gäste haben keinen Zugriff, Lese-/Schreib- oder nur Lesenrechte werden von Ihnen
+per Benutzer vergben.
 :end
 
 :smb_secure_access_help:
