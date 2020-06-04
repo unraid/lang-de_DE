@@ -323,7 +323,7 @@ Installed Version=Installierte Version
 ; Help Text
 This chooses how to sort the results=Diese Auswahl bestimmt die Sortierreihenfolge
 These icons respectively will Install or Edit an application=Diese Icons installieren oder ändern eine Anwendung
-Clicking these icons will take you to an application's GUI or settings=Klicken auf diese Icons geht zur GUI der Anwendung oder in die Einstellungen
+Clicking these icons will take you to an applications GUI or settings=Klicken auf diese Icons geht zur GUI der Anwendung oder in die Einstellungen
 This will update an application=Aktualisiert die Anwendung
 This will take you to the appropriate support thread for an application=Geht zum Hilfe-Thread der Anwendung
 This will immediately switch to the language=Ändert die Sprache sofort
