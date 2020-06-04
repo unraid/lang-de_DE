@@ -49,7 +49,7 @@ Install Plugin=Plugin installieren
 Delete Template=Vorlage löschen
 Yes, delete it=Ja, löschen
 
-; Uninstall  popup
+; Uninstall popup
 Uninstall Application=Anwendung deinstallieren
 Yes uninstall it=Ja, deinstallieren
 
@@ -260,7 +260,7 @@ Install Using The Templates Default Tag=Instalieren mit den standard Vorgaben de
 Moderator Comments=Moderator Kommentare
 Note not all authors keep up to date on change logs=Beachte, dass nicht alle Autoren das Changelog regelmäßig aktualisieren
 Note not all maintainers keep up to date on change logs=Beachte, dass nicht alle Betreuer das Changelog regelmäßig aktualisieren
-;the following if using a space you MUST use nbsp  but keep it down to one word if at all possible
+;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
 Donate=Spende
 Currently Installed Version=Aktuelle nbsp installierte nbsp Version
 Install The Update=Update nbsp installieren
