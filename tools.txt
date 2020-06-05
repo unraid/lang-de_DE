@@ -214,7 +214,7 @@ Benutzerfreigaben und Verzeichnissen den Eigentümer zu * nobody/users* (d.h. UI
 Für Verzeichnisse:
   drwxrwxrwx
 
-Für lesen/schreiben Dateien:
+Für Dateien mit lese/schreib Berechtigungen:
   -rw-rw-rw-
 
 Für schreibgeschützte Dateien:
@@ -222,84 +222,84 @@ Für schreibgeschützte Dateien:
 :end
 
 :newperms_3_plug:
-Ein Klick auf **Start** öffnet ein neues Fenster und startet den Hintergrundprozess.
+Klick auf **Start** öffnet ein neues Fenster und startet den Hintergrundprozess.
 
-Das Schließen des Fensters bevor Abschluss des Prozesses wird den Hintergrundprozess terminieren - also bitte nicht machen. Der Prozess kann eine lange Zeit
-in Anspruch nehmen, wenn viele Dateien vorhanden sind.
+Das Schließen des Fensters beendet den Hintergrundprozess - bitte nicht schließen. Der Prozess kann eine lange Zeit
+in Anspruch nehmen, je nachdem wieviele Dateien vorhanden sind.
 
-Beachten Sie, dass dieses Tool möglicherweise Docker container negativ beeinflussen könnte, wenn die appdata Share vom Tool miteinbezogen wird.
+Beachten Sie, dass dieses Tool die Docker Container möglicherweise negativ beeinflussen kann, wenn die appdata Freigabe vom diesem Tool miteinbezogen wird.
 :end
 
 :registration_1_plug:
-Der Server wird nicht nutzbar sein, bis eine Registrierungslizenz gekauft oder eine kostenlose 30-Tage *Probelizenz* 
-installiert wurde. Eine *Probelizenz* beinhaltet alle Funktionalitäten einer *Pro* Registrierungslizenz.
+Der Server ist nur Nutzbar, bis eine Lizenz gekauft oder eine kostenlose 30-Tage *Probelizenz* 
+installiert wurde. Eine *Probelizenz* beinhaltet alle Funktionalitäten einer *Pro* Lizenz.
 
-Registrierungslizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bitte benutzen Sie ein hochwertiges Gerät
-eines reputablen Unternehmens von mindestens 1GB.
+Lizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bitte benutzen Sie ein hochwertiges Gerät
+eines bekannten Herstellers von mindestens 1GB.
 
-Hinweis: USB Kartenlesegeräte sind generell **nicht** unterstützt, weil bei den meisten keine einmalige Seriennummer vorliegt.
+Hinweis: USB Speicherkartenlesegeräte sind generell **nicht** unterstützt, da bei den meisten keine einzigartige Seriennummer vorhanden ist.
 :end
 
 :registration_2_plug:
-+ Bitte stellen Sie sicher, dass Ihre [Serverzeit][DateTime] auf 5 Minuten genau geht.
++ Bitte stellen Sie sicher, dass Ihre [Serverzeit][DateTime] richtig eingestellt ist, Tolleranz 5 Minuten.
 + Bitte stellen Sie sicher, dass ein [DNS Server](DateTime) gesetzt ist.
 :end
 
 :registration_3_plug:
-Ihre *Probelizenz* beinhaltet alle Funktionalitäten und Gerätunterstützungen einer *Pro* Registrierungslizenz.
+Ihre *Probelizenz* beinhaltet alle Funktionalitäten und Datenträgerunterstützungen einer *Pro* Lizenz.
 
-Nachdem die *Probelizenz* abgelaufen ist, wird der Server **noch immer normal funktionieren**, bis das Array das nächste Mal **gestoppt** wird.
+Nachdem die *Probelizenz* abgelaufen ist, funktioniert der Server **normal**, bis das Array das **gestoppt** wird.
 
-An diesem Punkt können Sie entweder eine Registrierungslizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
+An diesem Punkt können Sie entweder eine Lizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
 :end
 
 :registration_4_plug:
-Um Unraid OS weiterhin benutzen zu können, können Sie eine Registrierungslizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
+Um Unraid OS weiterhin benutzen zu können, können Sie eine Lizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
 
-Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
+Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie uns bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
 :end
 
 :registration_5_plug:
 Es ist nicht möglich, eine *Probelizenz* mit einer existierenden Unraid OS Installation zu verwenden.
 
-Es ist möglich, eine Registrierungslizenz dem USB Flash Gerät entsprechend zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
+Es ist möglich, eine Lizenz für das aktuell verwendete USB Flash Gerät zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
 
 Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 :end
 
 :registration_6_plug:
-Es scheint als fehle Ihre Registrierungslizenzdatei oder sie ist korrupt. Die Lizenzdatei sollte unter dem
-[config](/Registration/Browse?dir&#61;/boot/config) Verzeichnis auf Ihrem USB Flash Bootgerät zu finden sein.
+Es scheint als fehle Ihre Lizenzdatei oder sie ist beschädigt. Die Lizenzdatei sollte in dem Verzeichnis
+[config](/Registration/Browse?dir&#61;/boot/config) auf Ihrem USB Flash Bootgerät zu finden sein.
 
-Falls Sie keine Backup Kopie Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
+Falls Sie kein Backup Ihrer Lizenzdatei haben, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-Falls dies eine *Probeinstallation* war, können Sie eine Registrierungslizenz erwerben.
+Falls dies eine *Probeinstallation* war, können Sie eine Lizenz erwerben.
 :end
 
 :registration_7_plug:
-*Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät valide.
+*Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät erlaubt.
 
-Um weiterhin diese Installation mit dem USB Flash Gerät zu verwenden, können Sie eine Registrierungslizenz erwerben.
+Um weiterhin diese Installation mit diesem USB Flash Gerät zu verwenden, können Sie eine Lizenz erwerben.
 :end
 
 :registration_8_plug:
-Die Registrierungslizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
-Bitte kopieren Sie die korrekte Lizenzdatei in das [config](/Registration/Browse?dir&#61;/boot/config) Verzeichnis
-auf Ihrem USB Flash Bootgerät. Falls Sie keine Backup Kopie Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
+Die Lizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
+Bitte kopieren Sie die korrekte Lizenzdatei in das Verzeichnis [config](/Registration/Browse?dir&#61;/boot/config)
+auf Ihrem USB Flash Bootgerät. Falls Sie kein Backup Ihrer Lizenzdatei haben, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-Falls Sie Ihre Registrierungslizenz mit einer neuen Lizenz zu diesem USB Flash Gerät verbinden möchten, klicken Sie unten auf Lizenz Ersetzen.
+Falls Sie Ihre Lizenz mit einer neuen Lizenz für dieses neue USB Flash Gerät ersetzen wollen, klicken Sie unten auf Lizenz Ersetzen.
 Eine Originallizenz kann jederzeit ersetzt werden. Danach kann eine Ersatzlizenz erst nach Ablauf eines Jahres erneut ersetzt werden.
-Wenn Sie eine andere Ersatzlizenz früher benötigen, [Support Kontaktieren](https://lime-technology.com/contact).
+Wenn Sie eine Ersatzlizenz früher benötigen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-**Hinweis:** Das Ersetzen einer Registrierungslizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft auf die *schwarze Liste* gesetzt wird.
+**Hinweis:** Das Ersetzen einer Lizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft *gesperrt* wird.
 :end
 
 :registration_9_plug:
-Dieses USB Flash Bootgerät wurde auf die *schwarze Liste* gesetzt. Dies kann als Ergebnis der Übertragung Ihrer Registrierungslizenz 
-an ein USB Flash Ersatzgerät auftreten und Sie werden derzeit von Ihrem alten USB Flash Gerät gebootet.
+Diese USB Flash Bootgerät GUID ist *gesperrt*. Sie haben möglicherweise Ihrer Lizenz auf ein neus USB Bootgerät übertragen
+und Sie verwenden derzeit Ihr altes USB Bootgerät um den Server zu starten.
 
-Ein USB Flash Gerät kann auch auf die *schwarze Liste* gesetzt werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
-Seriennummer nicht eindeutig ist (dies ist bei USB Kartenlesegeräten üblich).
+Ein USB Flash Gerät kann auch *gesperrt* werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
+Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens üblich).
 
-Für weitere Informationen, bitte [Support Kontaktieren](https://lime-technology.com/contact).
+Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 :end
