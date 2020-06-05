@@ -1,6 +1,6 @@
 12 hours=12 Stunden
 24 hours=24 Stunden
-8023ad=8023ad
+8023ad=802.3ad
 Active Directory Settings=Active Directory Einstellungen
 Active Directory=Active Directory
 active-backup=active-backup
@@ -132,7 +132,7 @@ Disk Settings=Datenträger Einstellungen
 Display array totals=Anzeige Array Gesamt
 Display device name=Anzeige der Datenträgernamen
 Display position=Zeige Position
-Display Settings=Anzeige Einstellungen
+Display Settings=Anzeigeeinstellungen
 Display world-wide-name in device ID=Anzeige des World-Wide-Name in der Geräte-ID
 Docker LOG maximum file size=Maximale Größe der Dockerprotokolldatei
 Docker LOG number of files=Anzahl der Dockerprotokolldateien
