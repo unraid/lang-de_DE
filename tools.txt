@@ -105,7 +105,7 @@ to select your language=um Ihre Sprache auszuwählen
 To support more storage devices as your server grows, click Upgrade Key below=Klicke unten auf *Lizenz Upgraden* um ein Lizenz-Upgrade zu erwerben die mehr Datenträger untestützt
 Trial key expires on=***Probelizenz*** läuft aus am
 Trial=Probe
-Update OS=OS Aktualisieren
+Update OS=OS aktualisieren
 Upgrade Key=Lizenz-Upgraden
 uploading hardware information=Hardware Informationen hochladen
 Uploading=Hochladen von
@@ -144,77 +144,77 @@ USB Devices=USB Geräte
 Your system has booted with the PCIe ACS Override setting enabled=Das System wurde mit der PCIe ACS erzwingen Einstellung gestartet
 
 :diagnostics_1_plug:
-Dieses Dienstprogramm wird zur Fehlerbehebung verwendet. Es wird alle Systemhardwareinformationen und Konfigurationsdateien sammeln und diese Dateien in eine einzelne ZIP Datei packen, welche lokal gespeichert werden kann.
-Anschließend kann die Datei in der Korrespondenz mit Limetech oder dem Unraid Forum einbezogen werden.
+Diese Anwendung wird zur Fehlerbehebung verwendet. Es sammelt alle Hardwareinformationen und Konfigurationsdateien und packt diese Dateien als ZIP Datei, die lokal gespeichert werden kann.
+Anschließend kann die Datei Limetech gesendet werden bzw. im Forum verwendet werden.
 
-Dies hilft anderen, schnell interne Informationen Ihres Systems zu bekommen und Ihnen besser bei Ihrem Problem zu helfen. Die folgenden Informations-
+Dies hilft anderen sich schnell einen Überblick über Ihr System zu verschaffen und Hilfe zu Leisten. Die folgenden Informations-
 und Konfigurationsdateien werden gesammelt:
 :end
 
 :diagnostics_2_plug:
 + */config*
-  <br>alle *\*.cfg Dateien*, *go* Datei und die *super.dat* Datei speichern. Diese sind Konfigurationsdateien.
+  <br>alle *\*.cfg Dateien*, die *go* Datei und die *super.dat* Datei. Diese sind Konfigurationsdateien.
 + */config/shares*
-  <br>alle *\*.cfg* Dateien speichern. Diese sind Benutzerfreigaben Einstellungsdateien.
+  <br>alle *\*.cfg* Dateien. Diese sind die Benutzer Freigabeeinstellungsdateien.
 + *Syslog Datei(en)*
-  <br>Aktuelle *syslog* Datei und allfällige vorherig existierende *syslog* Dateien speichern.
+  <br>Aktuelle *syslog* Datei und alle vorherig existierenden *syslog* Dateien.
 + *System*
-  <br>Ausgabe der folgenden Befehle speichern:
+  <br>Die Ausgabe folgender Befehle:
   <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
   <br>Anzeige der IOMMU Gruppen.
-  <br>Anzeige der Kommandozeile Parameter (z.B. pcie acs override, pci stubbing, etc).
-  <br>System Variablen speichern.
+  <br>Anzeige der Kommandozeile Parameter (z.B. PCIE ACS erzwingen, PCI stubbing, etc).
+  <br>System Variablen.
 + *SMART Bericht*
-  <br>Ein SMART Bericht von jedem individuellen Datenträger, die sich im System befindet, speichern.
+  <br>Ein SMART Bericht von jedem individuellen Datenträger, der sich im System befindet.
 + *Docker*
-  <br>*docker.log*, *libvirtd.log* und *libvirt/qemu/\*.log* Dateien speichern.
+  <br>*docker.log*, *libvirtd.log* und *libvirt/qemu/\*.log* Dateien.
 :end
 
 :diagnostics_3_plug:
-Ein Klick auf **Download** wird den Sammelprozess starten und weist den Browser an, die zip Datei lokal zu speichern.
+Ein Klick auf **Download** wird den Prozess starten und weist den Browser an, die ZIP Datei lokal zu speichern.
 
-*Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid OS
-einbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *miteinbezogen.*
+*Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid
+miteinbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *jedoch* *miteinbezogen.*
 
 *Beachten Sie, dass Plugins von Drittanbietern **möglicherweise** persönliche Informationen in pluginspezifischen Konfigurationsdateien
-und/oder System Protokoll gespeichert werden können.*
+und/oder System Protokollen speichern könnten.*
 
-*Benutzen Sie* **Diagnosik anonymisieren** *, wenn die Diagnosikdateien in einem öffentlichen Forum publiziert werden. In privater Kommunikation 
+*Benutzen Sie* **Diagnose anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum gepostet werden. In privater Kommunikation 
 mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
 :end
 
 :newconfig_plug:
-Dies ist ein Dienstprogramm, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
-als "Neu"e Datenträger erscheinen, als wäre es ein neuer Server.
+Dies ist eine Anwendung, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
+als "Neue" Datenträger erscheinen, als wäre dies ein neuer Server.
 
-Dies ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und Parität 
-Datenwiederherstellung basierend auf der neuen Konfiguration erwünscht ist.
+Nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und eine Paritätsdatenwiederherstellung
+basierend auf der neuen Konfiguration erwünscht ist.
 
-*'Aktuelle Aufgaben aufrechterhalten'* Auswahl benutzen, um gewünschte Datenträgerslots zu populieren, ***nachdem*** das Array zurückgesetzt wurde. 
-Standardmäßig  werden **keine** Datenträger populiert.  
+*'Aktuelle Zuordnung speichern'* benutzen, um die gewählten Datenträgerslots zu behalten, ***nachdem*** das Array zurückgesetzt wurde. 
+Standardmäßig  werden **keine** Datenträger zugewiesen.  
 
-**BENUTZEN SIE NICHT DIESES DIENSTPROGRAM UNTER DEM EINDRUCK, DASS ES EIN FEHLERHAFTES DATENTRÄGER WIEDERHERSTELLT** -
-es wird die gegenteilige Wirkung haben, welches es **unmöglich** macht, einen existierenden fehlerhaften Datenträger wiederherzustellen - Sie wurden gewarnt!
+**BENUTZEN SIE DIESE ANWENDUNG NICHT UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN DA DIES NICHT FUNKTIONIERT** - dies
+hat die gegenteilige Wirkung. Es macht es **unmöglich**, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Sie wurden gewarnt!
 :end
 
 :newperms_1_plug:
-Dies ist eine notwendige einmalige Aktion, welche nach der Aktualisierung von einer pre-5.0 Unraid Server Version zu Unraid v5 oder 
-einer späteren Version stattfindet.
-Wählen Sie **ALLE DATENTRÄGER** aus, wenn diese einmalige Aktion ausgeführt wird.
+Diese Aktion ist einmalig notwendig, falls sie von einer Unraid Server Version von vor 5.0 auf Unraid Version 5.0 oder 
+höher aktualisieren.
+Wählen Sie **ALLE DATENTRÄGER** aus falls diese einmalige Aktion ausgeführt wird.
 
-Dieses Dienstprogramm ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
+Diese Anwendung ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
 und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer 
-non-Active Directory Integration zurückgewechselt wird.
+Nicht-Active Directory Integration zurückgewechselt wird.
 
-Dieses Dienstprogramm startet einen Hintergrundprozess, welches über jedes Array- und Cachedatenträger und ausgewählten 
-Benutzerfreigaben geht und Verzeichnis Eigentümer zu * nobody/users* (d.h. uid/gid zu 99/100) ändert und setzt Berechtigungen wie folgt:
+Diese Anwendung startet einen Hintergrundprozess, welches auf jedem Array- und Cachedatenträger sowie ausgewählter
+Benutzerfreigaben und Verzeichnissen den Eigentümer zu * nobody/users* (d.h. UID/GID gleich 99/100) ändert und setzt folgende Berechtigungen:
 :end
 
 :newperms_2_plug:
 Für Verzeichnisse:
   drwxrwxrwx
 
-Für lesen/schreiben Dateien:
+Für Dateien mit lese/schreib Berechtigungen:
   -rw-rw-rw-
 
 Für schreibgeschützte Dateien:
@@ -222,84 +222,84 @@ Für schreibgeschützte Dateien:
 :end
 
 :newperms_3_plug:
-Ein Klick auf **Start** öffnet ein neues Fenster und startet den Hintergrundprozess.
+Klick auf **Start** öffnet ein neues Fenster und startet den Hintergrundprozess.
 
-Das Schließen des Fensters bevor Abschluss des Prozesses wird den Hintergrundprozess terminieren - also bitte nicht machen. Der Prozess kann eine lange Zeit
-in Anspruch nehmen, wenn viele Dateien vorhanden sind.
+Das Schließen des Fensters beendet den Hintergrundprozess - bitte nicht schließen. Der Prozess kann eine lange Zeit
+in Anspruch nehmen, je nachdem wieviele Dateien vorhanden sind.
 
-Beachten Sie, dass dieses Tool möglicherweise Docker container negativ beeinflussen könnte, wenn die appdata Share vom Tool miteinbezogen wird.
+Beachten Sie, dass dieses Tool die Docker Container möglicherweise negativ beeinflussen kann, wenn die appdata Freigabe vom diesem Tool miteinbezogen wird.
 :end
 
 :registration_1_plug:
-Der Server wird nicht nutzbar sein, bis eine Registrierungslizenz gekauft oder eine kostenlose 30-Tage *Probelizenz* 
-installiert wurde. Eine *Probelizenz* beinhaltet alle Funktionalitäten einer *Pro* Registrierungslizenz.
+Der Server ist nur Nutzbar, bis eine Lizenz gekauft oder eine kostenlose 30-Tage *Probelizenz* 
+installiert wurde. Eine *Probelizenz* beinhaltet alle Funktionalitäten einer *Pro* Lizenz.
 
-Registrierungslizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bitte benutzen Sie ein hochwertiges Gerät
-eines reputablen Unternehmens von mindestens 1GB.
+Lizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bitte benutzen Sie ein hochwertiges Gerät
+eines bekannten Herstellers von mindestens 1GB.
 
-Hinweis: USB Kartenlesegeräte sind generell **nicht** unterstützt, weil bei den meisten keine einmalige Seriennummer vorliegt.
+Hinweis: USB Speicherkartenlesegeräte sind generell **nicht** unterstützt, da bei den meisten keine einzigartige Seriennummer vorhanden ist.
 :end
 
 :registration_2_plug:
-+ Bitte stellen Sie sicher, dass Ihre [Serverzeit][DateTime] auf 5 Minuten genau geht.
++ Bitte stellen Sie sicher, dass Ihre [Serverzeit][DateTime] richtig eingestellt ist, Tolleranz 5 Minuten.
 + Bitte stellen Sie sicher, dass ein [DNS Server](DateTime) gesetzt ist.
 :end
 
 :registration_3_plug:
-Ihre *Probelizenz* beinhaltet alle Funktionalitäten und Gerätunterstützungen einer *Pro* Registrierungslizenz.
+Ihre *Probelizenz* beinhaltet alle Funktionalitäten und Datenträgerunterstützungen einer *Pro* Lizenz.
 
-Nachdem die *Probelizenz* abgelaufen ist, wird der Server **noch immer normal funktionieren**, bis das Array das nächste Mal **gestoppt** wird.
+Nachdem die *Probelizenz* abgelaufen ist, funktioniert der Server **normal**, bis das Array das **gestoppt** wird.
 
-An diesem Punkt können Sie entweder eine Registrierungslizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
+An diesem Punkt können Sie entweder eine Lizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
 :end
 
 :registration_4_plug:
-Um Unraid OS weiterhin benutzen zu können, können Sie eine Registrierungslizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
+Um Unraid OS weiterhin benutzen zu können, können Sie eine Lizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
 
-Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
+Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie uns bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
 :end
 
 :registration_5_plug:
 Es ist nicht möglich, eine *Probelizenz* mit einer existierenden Unraid OS Installation zu verwenden.
 
-Es ist möglich, eine Registrierungslizenz dem USB Flash Gerät entsprechend zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
+Es ist möglich, eine Lizenz für das aktuell verwendete USB Flash Gerät zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
 
 Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 :end
 
 :registration_6_plug:
-Es scheint als fehle Ihre Registrierungslizenzdatei oder sie ist korrupt. Die Lizenzdatei sollte unter dem
-[config](/Registration/Browse?dir&#61;/boot/config) Verzeichnis auf Ihrem USB Flash Bootgerät zu finden sein.
+Es scheint als fehle Ihre Lizenzdatei oder sie ist beschädigt. Die Lizenzdatei sollte in dem Verzeichnis
+[config](/Registration/Browse?dir&#61;/boot/config) auf Ihrem USB Flash Bootgerät zu finden sein.
 
-Falls Sie keine Backup Kopie Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
+Falls Sie kein Backup Ihrer Lizenzdatei haben, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-Falls dies eine *Probeinstallation* war, können Sie eine Registrierungslizenz erwerben.
+Falls dies eine *Probeinstallation* war, können Sie eine Lizenz erwerben.
 :end
 
 :registration_7_plug:
-*Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät valide.
+*Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät erlaubt.
 
-Um weiterhin diese Installation mit dem USB Flash Gerät zu verwenden, können Sie eine Registrierungslizenz erwerben.
+Um weiterhin diese Installation mit diesem USB Flash Gerät zu verwenden, können Sie eine Lizenz erwerben.
 :end
 
 :registration_8_plug:
-Die Registrierungslizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
-Bitte kopieren Sie die korrekte Lizenzdatei in das [config](/Registration/Browse?dir&#61;/boot/config) Verzeichnis
-auf Ihrem USB Flash Bootgerät. Falls Sie keine Backup Kopie Ihrer Registrierungslizenzdatei haben, [Support Kontaktieren](https://lime-technology.com/contact).
+Die Lizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
+Bitte kopieren Sie die korrekte Lizenzdatei in das Verzeichnis [config](/Registration/Browse?dir&#61;/boot/config)
+auf Ihrem USB Flash Bootgerät. Falls Sie kein Backup Ihrer Lizenzdatei haben, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-Falls Sie Ihre Registrierungslizenz mit einer neuen Lizenz zu diesem USB Flash Gerät verbinden möchten, klicken Sie unten auf Lizenz Ersetzen.
+Falls Sie Ihre Lizenz mit einer neuen Lizenz für dieses neue USB Flash Gerät ersetzen wollen, klicken Sie unten auf Lizenz Ersetzen.
 Eine Originallizenz kann jederzeit ersetzt werden. Danach kann eine Ersatzlizenz erst nach Ablauf eines Jahres erneut ersetzt werden.
-Wenn Sie eine andere Ersatzlizenz früher benötigen, [Support Kontaktieren](https://lime-technology.com/contact).
+Wenn Sie eine Ersatzlizenz früher benötigen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-**Hinweis:** Das Ersetzen einer Registrierungslizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft auf die *schwarze Liste* gesetzt wird.
+**Hinweis:** Das Ersetzen einer Lizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft *gesperrt* wird.
 :end
 
 :registration_9_plug:
-Dieses USB Flash Bootgerät wurde auf die *schwarze Liste* gesetzt. Dies kann als Ergebnis der Übertragung Ihrer Registrierungslizenz 
-an ein USB Flash Ersatzgerät auftreten und Sie werden derzeit von Ihrem alten USB Flash Gerät gebootet.
+Diese USB Flash Bootgerät GUID ist *gesperrt*. Sie haben möglicherweise Ihrer Lizenz auf ein neus USB Bootgerät übertragen
+und Sie verwenden derzeit Ihr altes USB Bootgerät um den Server zu starten.
 
-Ein USB Flash Gerät kann auch auf die *schwarze Liste* gesetzt werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
-Seriennummer nicht eindeutig ist (dies ist bei USB Kartenlesegeräten üblich).
+Ein USB Flash Gerät kann auch *gesperrt* werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
+Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens üblich).
 
-Für weitere Informationen, bitte [Support Kontaktieren](https://lime-technology.com/contact).
+Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 :end
