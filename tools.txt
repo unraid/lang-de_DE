@@ -144,70 +144,70 @@ USB Devices=USB Geräte
 Your system has booted with the PCIe ACS Override setting enabled=Das System wurde mit der PCIe ACS erzwingen Einstellung gestartet
 
 :diagnostics_1_plug:
-Dieses Dienstprogramm wird zur Fehlerbehebung verwendet. Es wird alle Systemhardwareinformationen und Konfigurationsdateien sammeln und diese Dateien in eine einzelne ZIP Datei packen, welche lokal gespeichert werden kann.
-Anschließend kann die Datei in der Korrespondenz mit Limetech oder dem Unraid Forum einbezogen werden.
+Diese Anwendung wird zur Fehlerbehebung verwendet. Es sammelt alle Hardwareinformationen und Konfigurationsdateien und packt diese Dateien als ZIP Datei, die lokal gespeichert werden kann.
+Anschließend kann die Datei Limetech gesendet werden bzw. im Forum verwendet werden.
 
-Dies hilft anderen, schnell interne Informationen Ihres Systems zu bekommen und Ihnen besser bei Ihrem Problem zu helfen. Die folgenden Informations-
+Dies hilft anderen sich schnell einen Überblick über Ihr System zu verschaffen und Hilfe zu Leisten. Die folgenden Informations-
 und Konfigurationsdateien werden gesammelt:
 :end
 
 :diagnostics_2_plug:
 + */config*
-  <br>alle *\*.cfg Dateien*, *go* Datei und die *super.dat* Datei speichern. Diese sind Konfigurationsdateien.
+  <br>alle *\*.cfg Dateien*, die *go* Datei und die *super.dat* Datei. Diese sind Konfigurationsdateien.
 + */config/shares*
-  <br>alle *\*.cfg* Dateien speichern. Diese sind Benutzerfreigaben Einstellungsdateien.
+  <br>alle *\*.cfg* Dateien. Diese sind die Benutzer Freigabeeinstellungsdateien.
 + *Syslog Datei(en)*
-  <br>Aktuelle *syslog* Datei und allfällige vorherig existierende *syslog* Dateien speichern.
+  <br>Aktuelle *syslog* Datei und alle vorherig existierenden *syslog* Dateien.
 + *System*
-  <br>Ausgabe der folgenden Befehle speichern:
+  <br>Die Ausgabe folgender Befehle:
   <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
   <br>Anzeige der IOMMU Gruppen.
-  <br>Anzeige der Kommandozeile Parameter (z.B. pcie acs override, pci stubbing, etc).
-  <br>System Variablen speichern.
+  <br>Anzeige der Kommandozeile Parameter (z.B. PCIE ACS erzwingen, PCI stubbing, etc).
+  <br>System Variablen.
 + *SMART Bericht*
-  <br>Ein SMART Bericht von jedem individuellen Datenträger, die sich im System befindet, speichern.
+  <br>Ein SMART Bericht von jedem individuellen Datenträger, der sich im System befindet.
 + *Docker*
-  <br>*docker.log*, *libvirtd.log* und *libvirt/qemu/\*.log* Dateien speichern.
+  <br>*docker.log*, *libvirtd.log* und *libvirt/qemu/\*.log* Dateien.
 :end
 
 :diagnostics_3_plug:
-Ein Klick auf **Download** wird den Sammelprozess starten und weist den Browser an, die zip Datei lokal zu speichern.
+Ein Klick auf **Download** wird den Prozess starten und weist den Browser an, die ZIP Datei lokal zu speichern.
 
-*Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid OS
-einbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *miteinbezogen.*
+*Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid
+miteinbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *jedoch* *miteinbezogen.*
 
 *Beachten Sie, dass Plugins von Drittanbietern **möglicherweise** persönliche Informationen in pluginspezifischen Konfigurationsdateien
-und/oder System Protokoll gespeichert werden können.*
+und/oder System Protokollen speichern könnten.*
 
-*Benutzen Sie* **Diagnosik anonymisieren** *, wenn die Diagnosikdateien in einem öffentlichen Forum publiziert werden. In privater Kommunikation 
+*Benutzen Sie* **Diagnose anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum gepostet werden. In privater Kommunikation 
 mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
 :end
 
 :newconfig_plug:
-Dies ist ein Dienstprogramm, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
-als "Neu"e Datenträger erscheinen, als wäre es ein neuer Server.
+Dies ist eine Anwendung, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
+als "Neue" Datenträger erscheinen, als wäre dies ein neuer Server.
 
-Dies ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und Parität 
-Datenwiederherstellung basierend auf der neuen Konfiguration erwünscht ist.
+Nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und eine Paritätsdatenwiederherstellung
+basierend auf der neuen Konfiguration erwünscht ist.
 
-*'Aktuelle Aufgaben aufrechterhalten'* Auswahl benutzen, um gewünschte Datenträgerslots zu populieren, ***nachdem*** das Array zurückgesetzt wurde. 
-Standardmäßig  werden **keine** Datenträger populiert.  
+*'Aktuelle Zuordnung speichern'* benutzen, um die gewählten Datenträgerslots zu behalten, ***nachdem*** das Array zurückgesetzt wurde. 
+Standardmäßig  werden **keine** Datenträger zugewiesen.  
 
-**BENUTZEN SIE NICHT DIESES DIENSTPROGRAM UNTER DEM EINDRUCK, DASS ES EIN FEHLERHAFTES DATENTRÄGER WIEDERHERSTELLT** -
-es wird die gegenteilige Wirkung haben, welches es **unmöglich** macht, einen existierenden fehlerhaften Datenträger wiederherzustellen - Sie wurden gewarnt!
+**BENUTZEN SIE DIESE ANWENDUNG NICHT UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN DA DIES NICHT FUNKTIONIERT** - dies
+hat die gegenteilige Wirkung. Es macht es **unmöglich**, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Sie wurden gewarnt!
 :end
 
 :newperms_1_plug:
-Dies ist eine notwendige einmalige Aktion, welche nach der Aktualisierung von einer pre-5.0 Unraid Server Version zu Unraid v5 oder 
-einer späteren Version stattfindet.
-Wählen Sie **ALLE DATENTRÄGER** aus, wenn diese einmalige Aktion ausgeführt wird.
+Diese Aktion ist einmalig notwendig, falls sie von einer Unraid Server Version von vor 5.0 auf Unraid Version 5.0 oder 
+höher aktualisieren.
+Wählen Sie **ALLE DATENTRÄGER** aus falls diese einmalige Aktion ausgeführt wird.
 
-Dieses Dienstprogramm ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
+Diese Anwendung ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
 und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer 
-non-Active Directory Integration zurückgewechselt wird.
+Nicht-Active Directory Integration zurückgewechselt wird.
 
-Dieses Dienstprogramm startet einen Hintergrundprozess, welches über jedes Array- und Cachedatenträger und ausgewählten 
-Benutzerfreigaben geht und Verzeichnis Eigentümer zu * nobody/users* (d.h. uid/gid zu 99/100) ändert und setzt Berechtigungen wie folgt:
+Diese Anwendung startet einen Hintergrundprozess, welches auf jedem Array- und Cachedatenträger sowie ausgewählter
+Benutzerfreigaben und Verzeichnissen den Eigentümer zu * nobody/users* (d.h. UID/GID gleich 99/100) ändert und setzt folgende Berechtigungen:
 :end
 
 :newperms_2_plug:
