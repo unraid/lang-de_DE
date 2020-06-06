@@ -16,7 +16,7 @@ Boot system in UEFI mode=Boote System im UEFI Modus
 btrfs balance status=btrfs Balance Status
 btrfs check status=btrfs Check Status
 btrfs filesystem df=btrfs Dateisystem
-BTRFS operation is running=BTRFS Operation läuft 
+BTRFS operation is running=BTRFS Operation läuft
 btrfs scrub status= btrfs Überprüfung Status
 Can not read attributes=Attribute lesen nicht möglich
 Can not read capabilities=Funktionen lesen nicht möglich
@@ -136,7 +136,7 @@ Once copy completes, the array may be Started, to initiate Data-Rebuild of the d
 operation=Aufgrabe
 Options see Help=Optionen (siehe Hilfe)
 Otherwise use the keyfile method for UTF8 input=Andernfalls benutze die **keyfile** Methode für UTF8 Eingabe
-Parity disks content will be overwritten=Der Inhalt von *Paritäts* Datenträgern wird überschrieben 
+Parity disks content will be overwritten=Der Inhalt von *Paritäts* Datenträgern wird überschrieben
 Parity is already valid=Parität ist bereits gültig
 Parity operation is running=Paritätsaufgabe läuft
 Parity valid requires ALL disks to have their original content=Für eine *gültige Parität* müssen **ALLE** Datenträger ihren ursprünglichen Inhalt haben
