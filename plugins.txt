@@ -1,5 +1,5 @@
 %s An update is available=%s: Ein Update ist Verfügbar
-anonymous=anonym 
+anonymous=anonym
 Author=Autor
 Check For Updates=Suche nach Aktualisierungen
 Click here to install version %s=Klicke hier um Version %s zu installieren
