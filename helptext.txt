@@ -1324,220 +1324,220 @@ If set to Auto, only disk shares not participating in User Shares may be exporte
 :end
 
 :shares_enable_shares_help:
-If set to 'Yes' the User Shares feature is activated.
+Wenn "Ja" ist die Funktion "Benutzer Freigaben" aktiviert.
 :end
 
 :shares_included_disks_help:
-This setting defines the set of array disks which are *included* in User Shares.
-Unchecking all disks will allow **all** array disks to be included.
+Diese Einstellung definiert die Liste von Array Datenträger, die in Freigaben *verwendet* werden.
+Wenn Sie alle Datenträger deaktivieren, können **alle** Array Dateinträger verwendet werden.
 :end
 
 :shares_excluded_disks_help:
-This setting defines the set of array disk which are *excluded* from User Shares.
-Uncheck all disks in order to not exclude any disks
+Definiert die Liste der *ausgeschlossenen* Datenträger dieser Freigabe.
+Deaktivieren Sie alle Datenträger um keinen Datenträger auszuschließen.
 
-**Note:** Each separate User Share also includes its own set of Included and Excluded
-disks which represent a subset of the Included/Excluded disks defined here.
+**Hinweis:** Jede Freigabe enthält eine Liste von eingeschlossenen und ausgeschlossenen
+Datenträger, die einen Teil der hier definierten ein-/ausgeschlossenen Datenträger darstellen.
 :end
 
 :shares_tunable_hard_links_help:
-If set to Yes then support the link() operation.
+Wenn JA, wird link() unterstützt.
 
-If set to No then hard links are not supported.
+Wenn Nein, werden Hardlinks nicht unterstützt.
 
-Notes:
+Anmerkung:
 
-* Setting to Yes may cause problems for older media and dvd/bluray players accessing shares using NFS.
-* No matter how this is set, the **mover** will still properly handle any detected hard links.
+* Die Einstellung "Ja" kann Probleme bei ältere Medien und DVD-/Blu-ray-Player verursachen wenn mittels NFS darauf zugegriffen wird.
+* Unabhängig von der Einstellung verarbeitet der **Mover** alle erkannten Hardlinks ordnungsgemäß.
 :end
 
 :shares_tunable_direct_io_help:
-**Experimental**: If set to Yes then mount User Share file system with FUSE *direct_io* mount option.
-This will increase write performance but might possibly decrease read performance.
+**Experimentell**: Falls Ja gewählt wurde wird das Freigabedateisystem mit der Option FUSE *direct_io* eingebunden.
+Dies erhöht die Schreibleistung, kann jedoch möglicherweise die Leseleistung verringern.
 
-*Auto* selects No.
+*Auto* wählt Nein.
 :end
 
 :syslog_local_server_help:
-Let the server act as a central syslog server and collect syslog messages from other systems.
-The server can listen on UDP, TCP or both with a selectable port number.
+Der Server wird als Syslogserver verwendet und kann andere Syslog-Nachrichten empfangen.
+Der Server kann auf UDP, TCP oder beiden Protokollen auf Nachrichten mit einem definierten Port warten.
 
-Syslog information is stored per IP address. That is every system gets its own syslog file.
+Syslog-Informationen werden pro IP-Adresse gespeichert, jedes System erhält eine eigene Syslog-Datei.
 :end
 
 :syslog_local_folder_help:
-Select the share folder where the syslogs will be stored.
-It is recommended that you use a share located on the cache drive to prevent array disk spinups.
+Wählen Sie den Freigabeordner aus, in dem die Syslogs gespeichert werden sollen.
+Es wird empfohlen, eine Freigabe auf dem Cache Datenträger zu verwenden, um ein Hochfahren der Array Datenträger zu vermeiden.
 :end
 
 :syslog_local_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+Standardmäßig ist die Protokoll Rotation deaktiviert und erstellt eine einzelne Protokoll Datei mit unbegrenzter Größe.
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+Aktivieren Sie die  Protokoll Rotation, um die Größe der Protokoll Datei zu begrenzen und die Anzahl der Dateien anzugeben, die im Rotationsschema behalten werden sollen.
 :end
 
 :syslog_local_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+Gibt die maximale Protokoll-Größe an. Bei Überschreitung erfolgt die Protokoll Rotation.
 :end
 
 :syslog_local_file_number_help:
-Specifies the number of additional LOG files to keep in the rotation scheme.
+Definiert die Anzahl der zusätzlichen Protokoll-Dateien, die im Rotationsschema behalten werden sollen.
 :end
 
 :syslog_remote_server_help:
-Enter a name or IP address of a remote syslog server.
-This will send a copy of the syslog messages to the designated server.
+Geben Sie einen Namen oder eine IP-Adresse eines Remote-Syslog-Servers ein.
+Dadurch wird eine Kopie der Syslog-Benachrichtigungen an den angegebenen Server gesendet.
 :end
 
 :syslog_mirror_flash_help:
-This setting is NO by default and must be used with care to avoid unnecessary wear and tear of the USB device.
+Diese Einstellung ist standardmäßig auf NEIN eingestellt und mit Vorsicht zu behandeln um einen vorzeitigen Verschleis vom USB Flash Gerät zu vermeiden.
 
-Change this setting to YES when troubleshooting is required and it is not possible to get the regular diagnostics information.
-A mirror of the syslog file is stored in the **logs** folder of the flash device.
+Ändern Sie diese Einstellung auf JA, wenn eine Fehlerbehebung erforderlich ist und die Diagnoseinformationen auf normalem Weg nicht abgerufen werden können.
+Ein Kopie der Syslog-Datei wird im Ordner **logs** des USB Flash Geräts gespeichert.
 :end
 
 :confirm_reboot_help:
-Choose if rebooting or powering down the server needs a confirmation checkbox.
+Auswählen ob vor dem Herunterfahren oder Neustarten des Servers eine Bestätigung angezeigt werden soll
 :end
 
 :confirm_array_stop_help:
-Choose if stopping the array needs a confirmation checkbox.
+Auswählen ob vor dem Stoppen des Arrays eine Bestätigung angezeigt werden soll
 :end
 
 :display_settings_help:
-The display settings below determine how items are displayed on screen. Use these settings to tweak the visual effects to your likings.
+Diese Einstellung bestimmt wie Elemente auf dem Bildschirm angezeigt werden. Kann benutzt werden um Visuelle Effekte nach Ihren Wünschen anzupassen.
 
-You can experiment with these settings as desired, they only affect visual properties.
+Mit diesen Einstellungen kann beliebig Experimentiert werden da diese nur einfluss auf die visuelle Darstellung haben.
 :end
 
 :display_font_size_help:
-This is a per device setting
+Dies ist eine Gerätespezifische Einstellung
 :end
 
 :display_wwn_device_id_help:
-World Wide Name (WWN) is a unique identifier used for SAS attached devices.
+World Wide Name (WWN) ist die Eindeutige Kennung für Datenträger die mittels SAS angeschlossen sind.
 
-Select *Disabled* to suppress the appending of WWN to the device identification
+Wenn *Deaktiviert* wird der WWN nicht an die Datenträgeridentifikation angehängt
 
-Select "Automatic" to append WWN to the device identification in case of SAS devices
+Wenn "Automatisch" wird der WWN an die Datenträgeridentifikation angehängt
 :end
 
 :display_custom_text_color_help:
-Overrule the default text color in the header. This can be used to match the text color with a background image.
+Überschreibt die Standardfarbe in der Kopfzeile. Kann verwendet werden um die Textfarbe mit dem Hintergrundbild abzugleichen.
 :end
 
 :display_custom_background_color_help:
-Overrule the default background color in the header. This can be used to match the background color with a custom text color.
+Überschreibt die Standardfarbe in der Kopfzeile. Kann verwendet werden um die Hintergrundfarbe mit einer Textfarbe abzugleichen.
 :end
 
 :display_custom_banner_help:
-Image will be scaled to 1920x90 pixels. The maximum image file upload size is 512 kB (524,288 bytes).
+Das Bild wird auf 1920x90 Pixel skaliert. Die maximale Größe zum Hochladen der Bilddatei beträgt 512 kB (524,288 bytes).
 :end
 
 :display_temperature_unit_help:
-Selects the temperature unit for the disk temperature thresholds. Changing the unit will adjust the existing value in the disk temperature thresholds as appropriate.
+Wählt die Temperatureinheit für den Datenträgertemperaturschwellenwert aus. Wenn die Einheit geändert wird der Wert für den Schwellenwert dementsprechend angepasst.
 
-Make sure any newly entered values represent the selected temperature unit.
+Stellen Sie sicher das alle neu eingegebenen Werte den neu gewählten Einheiten entsprechen.
 :end
 
 :vms_enable_help:
-Stopping the VM Manager will first attempt to shutdown all running VMs. After 60 seconds, any remaining VM instances will be terminated.
+Wenn Sie den VM Manager stoppen, wird zunächst versucht alle laufenden VMs herunterzufahren. Nach 60 Sekunden wird bei allen verbleibenden VMs das beenden erzwungen.
 :end
 
 :vms_libvirt_volume_help:
-This is the libvirt volume.
+Dies ist das libvirt Volumen.
 :end
 
 :vms_libvirt_vdisk_size_help:
-If the system needs to create a new libvirt image file, this is the default size to use specified in GB.
-To resize an existing image file, specify the new size here. Next time the Libvirt service is started the file (and file system) will increased to the new size (but never decreased).
+Wenn das System eine neue Libvirt-Abbilddatei erstellen muss, ist dies die zu verwendende Standardgröße, in GB angegeben.
+Um die Größe einer vorhandenen Imagedatei zu ändern, geben Sie hier die neue Größe an. Wenn der Libvirt-Dienst das nächste Mal gestartet wird, wird die Datei (und das Dateisystem) auf die neue Größe erweitert (verkleinern nicht möglich).
 :end
 
 :vms_libvirt_location_help:
-You must specify an image file for Libvirt. The system will automatically create this file when the Libvirt service is first started.
+Sie müssen eine Abilddatei für Libvirt angeben. Das System erstellt diese Datei automatisch, wenn der Libvirt-Dienst zum ersten Mal gestartet wird.
 :end
 
 :vms_libvirt_storage_help:
-Specify a user share that contains all your VM subdirectories with vdisks
+Geben Sie eine Freigabe an, die alle Ihre VM-Unterverzeichnisse mit vDisks enthält
 :end
 
 :vms_libvirt_iso_storage_help:
-Specify a user share that contains all your installation media for operating systems
+Geben Sie eine Freigabe an, die Ihre Installationsmedien für Betriebssysteme enthält
 :end
 
 :vms_virtio_driver_help:
-Specify the virtual CD-ROM (ISO) that contains the VirtIO Windows drivers as provided by the Fedora Project.
-Download the latest ISO from here: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
+Geben Sie das virtuelle CD-ROM-Abbild (ISO) an, das die vom Fedora-Projekt bereitgestellten VirtIO Windows-Treiber enthält.
+Laden Sie die neueste ISO von hier: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
 
-When installing Windows, you will reach a step where no disk devices will be found. There is an option to browse for drivers on that screen.
-Click browse and locate the additional CD-ROM in the menu. Inside there will be various folders for the different versions of Windows.
-Open the folder for the version of Windows you are installing and then select the AMD64 subfolder inside (even if you are on an Intel system, select AMD64).
-Three drivers will be found. Select them all, click next, and the vDisks you have assigned will appear.
+Bei der Installation von Windows erreichen Sie einen Schritt, bei dem keine Festplattengeräte gefunden werden, auf diesem Bildschirm können Sie nach Treibern suchen.
+Klicken Sie auf Durchsuchen und auf das zusätzliche CD-ROM Laufwerk. In Verzeichnis des CD-ROM Laufwerks befinden sich Ordner für die verschiedensten Windows-Versionen.
+Öffenen Sie den Ordner für Ihre Windows Installation und dann den darin enthaltenen AMD64 Unterordner aus (auch wenn Sie ein Intel Basierendes System besitzen).
+Drei Treiber werden danach gefunden, wählen Sie alle aus und klicken Sie auf Weiter und die zugewiesene(n) vDisk(s) wird/werden angezeigt.
 :end
 
 :vms_network_bridge_help:
-Select the name of the network bridge you wish to use as default for your VMs,
-the setting 'virbr0' will let libvirt create a virtual bridge that utilizes NAT (network address translation)
-and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present when virtual bridges are created under network settings.
+Wählen Sie den Namen der Netzwerkbrücke aus, die Sie standardmäßig für Ihre VMs verwenden möchten,
+mit der Einstellung 'virbr0' kann libvirt eine virtuelle Brücke erstellen, die NAT (Network Address Translation) verwendet
+und als DHCP-Server fungiert, um die IP-Adressen direkt an die VM zu übergeben.
+Weitere Auswahlmöglichkeiten sind vorhanden, wenn virtuelle Bridges unter Netzwerkeinstellungen erstellt werden.
 
-NOTE: You can also specify a network bridge on a per-VM basis.
+HINWEIS: Es kann für jede VM eine eigene Netzwerkbrücke angelegt werden.
 :end
 
 :vms_host_shutdown_help:
-When shutting down the server, this defines the action to take upon running VMs. If *Hibernate VMs* is chosen,
-the VM will be instructed to hibernate (if supported) otherwise it will attempt a VM shutdown.
+Legt fest welche Aktion beim Herunterfahren des Servers für die VMs durchgeführt werden soll. Wenn *Ruhezustand* gewählt ist,
+wird die VM angewiesen in den Ruhezustand zu gehen (falls Unterstützt) andernfalls wird versucht die VM herunterzufahren.
 :end
 
 :vms_shutdown_timeout_help:
-When shutting down the server, this defines how long to wait in seconds for *graceful* VM shutdown before forcing shutdown to continue.
-NOTE: It's recommended to shut down guest VMs from within the VM.
+Legt fest wie lange beim Herunterfahren des Servers auf das *ordnungsgemäße* Herunterfahren der VM gewartet wird bevor das beenden erzwungen wird.
+HINWEIS: Es wird empfohlen Gast VMs innerhalb der VM herunterzufahren.
 :end
 
 :vms_acs_override_help:
-*PCIe ACS override* allows various hardware components to expose themselves as isolated devices.
-Typically it is sufficient to isolate *Downstream* ports.
-A hardware component may need the setting *Multi-function* or *Both* to further isolate different hardware functions.<br>
-A reboot is required for changes to this setting to take affect.
+*PCIe ACS erzwingen* erlaubt es Hardwarekomponenten sich als isolierte Geräte erkennen zu geben.
+In Normalfall reicht es aus *Downstream* Ports zu isolieren.
+Eine Hardwarekomponente kann aber auch *Multi-Function* oder *Beide* benötigen um verschiedene Hardwarefunktionen zu isolieren.<br>
+Ein Neustart ist erforderlich um die Einstellung zu übernehmen.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**WARNUNG: Die Verwendung dieser Einstellung kann bei bestimmten Hardwarekonfigurationen zu Datenverlust/beschädigung führen.**
+Bitte [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) für weitere Informationen besuchen.
 :end
 
 :vms_vfio_interupts_help:
-If your system doesn't support interrupt remapping, these can be enabled by allowing unsafe interrupts.<br>
-A reboot will be required for changes to this setting to take affect.
+Wenn Ihr System die Neuzuordnung von Interrupts nicht unterstützt, können Sie diese aktivieren indem unsichere Interrupts zugelassen werden.<br>
+Ein Neustart ist erforderlich um die Einstellung zu übernehmen.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**WARNUNG: Die Verwendung dieser Einstellung kann bei bestimmten Hardwarekonfigurationen zu Datenverlust/beschädigung führen.**
+Bitte [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) für weitere Informationen besuchen.
 :end
 
 :vms_libvirt_log_help:
-View the log for libvirt: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+Protokoll für libvirt anzeigen: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
 :end
 
 :vms_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+**Scrub** führt den Befehl *btrfs scrub* aus, um die Integrität des Dateisystems zu überprüfen.
+Falls eine Reparatur erforderlich ist, wählen Sie *Korrigiere Dateisystemfehler* aus und starten Sie einen zweiten Durchlauf; dies erlaubt *btrfs scrub* das Dateisystem zu Reparieren.
 :end
 
 :vms_cancel_help:
-**Cancel* will cancel the Scrub operation in progress.
+**Abbrechen* bricht den laufenden Scrub Vorgang ab.
 :end
 
 :eth_interface_description_help:
-Use this optional field to provide addditional information about the purpose of the connection.
+Verwenden Sie diese Feld um zusätzliche Informationen zur Schnittstelle einzugeben, Optional.
 :end
 
 :eth_mac_address_help:
-This is the hardware address of the interface.
-When tagging is enabled all VLANs on this interface will share the same hardware address.
+Gibt die Hardwareadresse der Schnittstellte an.
+Wenn Tagging aktiviert ist, haben alle VLANs auf dieser Schnittstelle dieselbe Hardwareadresse.
 :end
 
 :eth_enable_bonding_help:
-Bonding is a feature that combines multiple physical Ethernet interfaces into a single *bonded* interface named **bond0**.
-This can be used to improve the connection redundancy and/or throughput of the system.
-Different bonding modes are supported (see below), but some modes require proper switch support.
+Bonding ist eine Funktion, die mehrere Ethernet-Schnittstellen zu einer einzigen *Bonded* Schnittstelle mit dem Namen **bond0** zusammenfügt.
+Dies kann verwendet werden, um die Verbindungsredundanz und/oder den Durchsatz des Systems zu erhöhen.
+Es werden verschiedene Verbindungsmodi unterstützt (siehe unten), einige Modi erfordern jedoch die Unterstützung vom Netzwerkswitch.
 :end
 
 :eth_bonding_mode_help:
@@ -1575,8 +1575,8 @@ Der Empfangslastausgleich wird durch ARP-Aushandlung erreicht.
 Der Bindungstreiber fängt die vom Server auf dem Weg nach draußen gesendeten ARP-Antworten ab und überschreibt die src-hw-Adresse mit der eindeutigen hw-Adresse eines der Slaves im Bond
 sodass verschiedene Clients unterschiedliche hw-Adressen für den Server verwenden.
 
-*Modus 1 (active-backup) ist die empfohlene Einstellung. Other modes allow you to set up a specific environment, but may require proper switch support.
-Choosing a unsupported mode can result in a disrupted communication.*
+*Modus 1 (active-backup) ist die empfohlene Einstellung. Andere Modi erlauben es Ihnen die Einstellungen an bestimmte Umgebungen anzupassen, erfordern jedoch dementsprechende Netzwerk Switches.
+Die Auswahl eines nicht unterstützten Modus kann zu einer Unterbrechung der Netzwerkommunikation führen.*
 :end
 
 :eth_bonding_members_help:
