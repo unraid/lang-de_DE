@@ -1832,7 +1832,7 @@ Click on the counters to either acknowledge or view the unread notifications.
 :end
 
 :notifications_date_format_help:
-Select the desired date format which is used in the notifications archive. Recommended is YYYY-MM-DD, which makes the date/time column sortable in a sensible way.
+Wählen Sie das gewünschte Datumsformat das bei den Benachrichtigungen verwendet werden soll. Es wird empfohlen YYYY-MM-DD, da dies eine Sortierung nach Datum und Uhrzeit vereinfacht.
 :end
 
 :notifications_time_format_help:
@@ -1840,234 +1840,234 @@ Select the desired time format which is used in the notifications archive. Recom
 :end
 
 :notifications_display_position_help:
-Choose the position of where notifications appear on screen. Multiple notifications are stacked, bottom-to-top or top-to-bottom depending on the selected placement.
+Wählen Sie die Position an der die Benachrichtigung am Bildschirm angezeigt werden soll. Mehrere Benachrichtigungen werden gestapelt, von unten nach oben oder von oben nach unten je nach ausgewählter Position.
 :end
 
 :notifications_store_flash_help:
-By default notifications are stored on RAM disk, which will get lost upon system reboot.
-Notifications may be stored permanently on the flash drive under folder '/boot/config/plugins/dynamix' instead.
+Benachrichtigungen werden standardmäßig im RAM abgelegt, welche nach einem Neustart/Herunterfahren verloren gehen.
+Benachrichtigungen können stattdessen auch in dem Verzeichnis '/boot/config/plugins/dynamix' gespeichert werden.
 :end
 
 :notifications_system_help:
-By default the notifications system is disabled. Enable it here to start receiving notifications.
-The following sections give more options about which and what type of notifications will be sent.
+Das Benachrichtungssystem ist standardmäßig deaktiviert. Bitte hier aktivieren um Benachrichtigungen zu erhalten.
+Im folgenden Abschnitt finden Sie weiter Optionen welche und welche Art von Benachrichtigungen gesendet werden.
 :end
 
 :notifications_os_update_help:
-Start a periodic verification and notify the user when a new version of the Unraid OS system is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+Startet eine regelmäßige Prüfung ob eine Aktualisierung für Unraid OS verfügbar ist und benachrichtigt den Benutzer.
+Benutzen Sie die Auswahlfelder unterhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.
 :end
 
 :notifications_plugins_update_help:
-Start a periodic verification and notify the user when a new version of one or more of the installed plugins is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+Startet eine regelmäßige Prüfung ob Aktualisierungen für ein oder mehrere installierte Plugins verfügbar sind und benachrichtigt den Benutzer.
+Benutzen Sie die Auswahlfelder unterhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.
 :end
 
 :notifications_docker_update_help:
-Start a periodic verification and notify the user when a new version of one or more of the installed dockers is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+Startet eine regelmäßige Prüfung ob Aktualisierungen für einen oder mehrere installierte Docker verfügbar sind und benachrichtigt den Benutzer.
+Benutzen Sie die Auswahlfelder unterhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.
 :end
 
 :notifications_array_status_help:
-Start a periodic array health check (preventive maintenance) and notify the user the result of this check.
+Startet eine regelmäßigen Paritätsüberprüfung (vorbeugende Wartung) und benachrichtigt den Benutzer über das Ergebnis.
 :end
 
 :notifications_agent_selection_help:
-Use the checkboxes above to select what and how notifications need to be given; by browser, by email and/or by a service.<br>
-<b>Tip:</b> you can use custom notification agents; just add them to "/boot/config/plugins/dynamix/notification/agents" directory and check 'Agents'.
+Benutzen Sie die Auswahlfelder oberhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.<br>
+<b>Tip:</b> Sie können auch Benutzerdefinierte Dienste nutzen; Fügen Sie sie dem Verzeichnis "/boot/config/plugins/dynamix/notification/agents" hinzu und aktivieren 'Dienste'.
 :end
 
 :notifications_classification_help:
-Notifications are classified as:
+Arten der Benachichtigungen:
 
-*notice* - these are informative notifications and do not indicate a problem situation, e.g. a new version is available<br>
-*warning* - these are attentive notifications and may indicate future problems, e.g. a hard disk is hotter than usual<br>
-*alert* - these are serious notifications and require immediate attention, e.g. a failing hard disk<br>
+*Hinweis* - Informative Benachrichtigungen die keinen Fehler melden, zB: Neue Unraid Verison verfügbar<br>
+*Warnung* - Weisen auf eventuelle auftrende Fehler hin, zB: Ein Datenträger ist heiß<br>
+*Alarm* - Weisen auf schwerwiegende Fehler hin, zB: Einen defekten Datenträger<br>
 
 Choose for each classification how you want to be notified.
 :end
 
 :smtp_preset_service_help:
-Select a preset service to set the basic service settings.
+Wählen Sie eine Vorlage um die grundlegenden Einstellungen zu übernehmen.
 :end
 
 :smtp_email_address_help:
-Email address of your mail account. This address is used as sender of the notifications.
+E-Mail Adresse vom Absender. Diese Adresse wird zum senden der Benachrichtigungen versendet.
 :end
 
 :smtp_recipients_help:
-Recipients of status and error notifications. Specify one or more email addresses, separate multiple email addresses with a space.
+Empfänger der Status- und Fehlermeldungen. Eine oder mehrere Mailadressen eingeben, mehrere Mailadressen durch ein Leerzeichen trennen.
 :end
 
 :smtp_priority_help:
-Set email header with high importance, when there is a problem with unRaid.
+Definiert den E-Mail Header mit hoher Wichtigkeit falls ein Problem mit Unraid auftritt.
 :end
 
 :smtp_subject_prefix_help:
-Set a prefix for easy recognition of Unraid messages.
+Legen Sie eine Präfix fest um Unraid Nachrichten einfach zu erkennen.
 :end
 
 :smtp_mail_server_help:
-Specify the name of the email server. Use the preset service selection to have this filled-in automatically.
+Definiert den Namen des E-Mail Servers. Benutzen Sie die Vorlagen um diese automatisch auszufüllen.
 :end
 
 :smtp_mail_server_port_help:
-Specify the port of the email server. Use the preset service selection to have this filled-in automatically.
+Definiert den Port des E-Mail Servers. Benutzen Sie die Vorlagen um diese automatisch auszufüllen.
 :end
 
 :smtp_use_ssl_tls_help:
-Specifies whether to use SSL/TLS to talk to the SMTP server.
+Definiert ob SSL/TLS für die Kommunikation mit dem SMTP Server erforderlich ist.
 :end
 
 :smtp_use_starttls_help:
-Specifies whether to use STARTTLS before starting SSL negotiation - See RFC 2487.
+Definiert ob STARTTLS vor dem Starten der SSL Aushandlung verwendet werden soll - Siehe RFC 2487.
 :end
 
 :smtp_define_tls_cert_help:
-Select only when you have a certificate which required for communication.
+Nur Auswählen wenn ein Zertifikat für die Komminikation erforderlich ist.
 :end
 
 :smtp_tls_cert_location_help:
-The file name of an RSA certificate to use for TLS - as required.
+Der Dateiname vom RSA Zertifikat das bei Bedarf für TLS verwendet werden soll.
 :end
 
 :smtp_authentication_method_help:
-Select the correct authentication method for your email server. Use test to verify that access is working properly.
+Wählen Sie die Authentifizierungsmethode für Ihren E-Mail Server. Benutzen Sie Test um zu Prüfen ob ein Zugriff auf den E-Mail Server möglich ist.
 :end
 
 :smtp_username_password_help:
-Enter the username and password to login to your email account. Be aware that the password is stored unencrypted in the email configuration file.
+Bitte den Benutzernamen und das Passwort eingeben um sich bei Ihrem E-Mail Konto anzumelden. Bitte Beachten das das Passwort des E-Mail Kontos unverschlüsselt in der Konfigurationsdatei gespeichert wird.
 :end
 
 :plugin_install_help:
-To download and install a plugin, enter the plg file URL and click **Install**. A window will open
-that displays install progress. Do not close this window until install has completed. You may also specify
-the local file name of an extension.
+Um ein Plugin herunterzuladen und zu installieren, die URL der plg Datei eingeben und **Installieren** klicken.
+Ein neues Fenster zeigt den Installationsfortschritt an. Bitte das Fenster erst nach beendeter Installation
+schließen. Es ist auch möglich eine lokale Datei auszuwählen.
 :end
 
 :plugin_error_help:
-These plugins were not installed because of some kind of installation error.  You should delete these
-plugins and then **reboot** your server.*
+Diese Plugins wurde aufgrund eines Installationsfehlers nicht installiert. Bitte die Plugins löschen und
+den Server **neu starten**.*
 :end
 
 :plugin_stale_help:
-These plugins were not installed because newer code already exists.  It is safe to simply delete these.
+Diese Plugins wurden nicht installiert, da bereits neuerer Code vorhanden ist. Sie können das alte bedenkenlos löschen.
 :end
 
 :docker_client_general_help:
-Templates are a quicker way to setting up Docker Containers on your Unraid server.  There are two types of templates:
+Vorlagen sind ein schneller Weg Docker Container auf Ihrem Unraid Server zu installieren. Es gibt zwei Arten von Vrolagen:
 
-**Default templates**<br>
-When valid repositories are added to your Docker Repositories page, they will appear in a section on this drop down for you to choose (master categorized by author, then by application template).
-After selecting a default template, the page will populate with new information about the application in the Description field, and will typically provide instructions for how to setup the container.
-Select a default template when it is the first time you are configuring this application.
+**Standard Vorlagen**<br>
+Wenn gültige Repositorys zu der Docker Repositoris Seite hinzugefügt werden, erscheinen diese hier im Drop-Down Menü zur Auswahl (Nach Author und dann nach Anwendungsvorlage sortiert).
+Nach Auswahl einer Vorlage, zeigt die Seite Informationen zur Anwendung und zeigt eine Anleitung zur Installation des Containers.
+Wählen Sie eine Standardvorlage wenn Sie diese Anwendung zum ersten mal Konfigurieren.
 
-**User-defined templates**<br>
-Once you've added an application to your system through a Default template,
-the settings you specified are saved to your USB flash device to make it easy to rebuild your applications in the event an upgrade were to fail or if another issue occurred.
-To rebuild, simply select the previously loaded application from the User-defined list and all the settings for the container will appear populated from your previous setup.
-Clicking create will redownload the necessary files for the application and should restore you to a working state.
-To delete a User-defined template, select it from the list above and click the red X to the right of it.
+**Benutzer-Vorlagen**<br>
+Wenn Sie eine Anweundung mittels einer Standard Vorlage hinzugefügt haben,
+werden die angegebenen Einstellungen auf den USB Flash Speicher geschrieben um eine Neuinstallation im Fall eines Fehlers zu vereinfachen.
+Zur Neuinstallation, die bereits angelegte Anwendung aus der Benutzer-Vorlagen Liste auswählen und alle vorherigen Einstellungen werden automatisch ausgefüllt.
+Klick auf Erstellen lädt alle erforderlichen Dateien herunter und sollte der Container sollte wieder lauffähig sein.
+Um eine Benutzer-Vorlage zu löschen, auf das rote X rechts davon klicken.
 :end
 
 :docker_client_name_help:
-Give the container a name or leave it as default.
+Containername oder leer lassen für den Standardnamen.
 :end
 
 :docker_client_overview_help:
-A description for the application container.  Supports basic HTML mark-up.
+Beschreibung des Containers. Unterstütz standard HTML Markup Formatierung.
 :end
 
 :docker_client_repository_help:
-The repository for the application on the Docker Registry.  Format of authorname/appname.
-Optionally you can add a : after appname and request a specific version for the container image.
+Das Repository in der Docker Registry. Format Authorname/Anwendungsname.
+Optional kann ein : hinter dem Anwendungsnamen für eine spezifische Version hinzugefügt werden.
 :end
 
 :docker_client_support_thread_help:
-Link to a support thread on Lime-Technology's forum.
+Link zum Hilfe Thread im Lime-Technology Forum.
 :end
 
 :docker_client_project_page_help:
-Link to the project page (eg: www.plex.tv)
+Link zur Projekt Seite (zB: www.plex.tv)
 :end
 
 :docker_client_donation_text_help:
-Text to appear on Donation Links Within The Apps Tab
+Dieser Text wird im Abschnitt Apps unter Spenden angezeigt
 :end
 
 :docker_client_donation_link_help:
-Link to the donation page.  If using donation's, both the image and link must be set
+Link zur Spenden Seite.  Wenn Spenden benutzt werden muss das Symbol sowie der Link gesetzt sein
 :end
 
 :docker_client_hub_url_help:
-The path to the container's repository location on the Docker Hub.
+Der Pfad zum Containerepository auf Docker Hub.
 :end
 
 :docker_client_template_url_help:
-This URL is used to keep the template updated.
+Diese URL wird verwendet um die Vorlage aktuell zu halten.
 :end
 
 :docker_client_icon_url_help:
-Link to the icon image for your application (only displayed on dashboard if Show Dashboard apps under Display Settings is set to Icons).
+Link zum Anwendungs Symbol (wird nur im Dashboard angezeigt wenn Dashboard-Apps Symbole anzeigen unter den Anzeigeeinstellungen ausgewählt ist).
 :end
 
 :docker_client_webui_help:
-When you click on an application icon from the Docker Containers page, the WebUI option will link to the path in this field.
-Use [IP] to identify the IP of your host and [PORT:####] replacing the #'s for your port.
+Klick auf das Anwendungssymbol auf der Docker Container Seite verknüpft den WebUI Eintrag mit dem in diesem Feld angegeben Pfad.
+Benutzen Sie [IP] um die Host IP zu ermitteln und [PORT:####] um den Port zu setzen, statt #### den Port einsetzen.
 :end
 
 :docker_extra_parameters_help:
-If you wish to append additional commands to your Docker container at run-time, you can specify them here.<br>
-For all possible Docker run-time commands, see here: <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
+Zusätzliche Befehle die beim Containerstart ausgeführt werden sollen hier eingeben.<br>
+Für mögliche Docker start Befehle diesen Link besuchen: <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
 :end
 
 :docker_post_arguments_help:
-If you wish to append additional arguments AFTER the container definition, you can specify them here.
-The content of this field is container specific.
+Zusätzliche Argumente NACH der Containerdefinition hinzufügen hier eingeben.
+Der Inhalt ist Containerspezifisch.
 :end
 
 :docker_cpu_pinning_help:
-Checking a CPU core(s) will limit the container to run on the selected cores only. Selecting no cores lets the container run on all available cores (default)
+Wenn nur einer oder mehrere CPU Kern(e) ausgewählt wird hat der Container nur auf die/den gewählten Kern(e) zugriff. Wenn keine Zuweisung erfolgt hat der Container Zugriff auf alle verfügbaren Kerne (Standard)
 :end
 
 :docker_fixed_ip_help:
-If the Bridge type is selected, the application’s network access will be restricted to only communicating on the ports specified in the port mappings section.
-If the Host type is selected, the application will be given access to communicate using any port on the host that isn’t already mapped to another in-use application/service.
-Generally speaking, it is recommended to leave this setting to its default value as specified per application template.
+Falls der Netzwerkmodus Brücke gewählt wurde, ist die Netzwerkkommunikation der Anwendung nur auf die im Abschnitt Portzuordnung angegeben Ports beschränkt.
+Falls der Netzwerkmodus Host gewählt wurde, erhält die Anwendung Zugriff auf die jeweiligen Ports des Hosts, der nicht bereits von einer anderen Anwendung/Dienst belegt ist.
+Allgemein wird empfohlen den Standardwert der in der Vorlage ausgewählt ist nicht zu ändern.
 
-IMPORTANT NOTE:  If adjusting port mappings, do not modify the settings for the Container port as only the Host port can be adjusted.
+WICHTIGER HINWEIS:  Wenn die Ports geändert werden bitte beachten das nur die Host-Ports geändert werden können und die Container-Ports unveränderbar sind.
 :end
 
 :docker_privileged_help:
-For containers that require the use of host-device access directly or need full exposure to host capabilities, this option will need to be selected.
-For more information, see this link: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
+Muss für Container gewählt werden die direkten Zugriff auf das Hostgerät bzw. Hostfunktionen benötigen um richtig zu funktionieren.
+Für mehr Informationen bitte folgenden Link besuchen: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
 :end
 
 ; sysdevs help - added May 18, 2020
 :sysdevs_iommu_groups_help:
-This displays a list of IOMMU groups available on your system along with the output of the `lspci` command for each IOMMU group.  The numeric identifiers are used to configure PCI pass-through.
+Listet alle IOMMU Gruppen die im System verfügbar sind auf, mittels `lspci` werden zugehörige Informatinen zu den IOMMU Gruppen angezeigt.  Die Identifikationszahlen werden zur Konfiguration von PCI Passthrough verwendet.
 
-Devices you select will be bound to the vfio-pci driver at boot, which makes them available for assignment to a virtual machine, and also prevents the Linux kernel from automatically binding them to any present host driver.
+Geräte die hier ausgewählt werden werden dem VIFO-PCI Treiber beim Booten zugeordnet, dies ermöglicht eine Zuordnung zu einer VM, und verbietet dem Kernel den Treiber automatisch auf dem Host System zu laden.
 
-**Note that selecting a device will bind not only the specified device(s), but *all* other devices in the same IOMMU group as well.**
+**Hinweis: Die Auswahl eines Geräts ordnet eventuell nicht nur dieses Gerät zu, sondern gilt für *alle* anderen Geräte in der IOMMU Gruppe in der sich das Gerät befindet.**
 
-&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;This symbol indicates the device is currently bound to the vfio-pci driver.
+&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;Dieses Symbol zeigt an das das Gerät aktuell dem VIFO-PCI Treiber zugeordner ist.
 
-&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;This symbol indicates the device supports FLR (Function Level Reset).
+&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;Dieses Symbol zeigt an das FLR (Function Level Reset) unterstützt wird.
 
-<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid and can not be passed through.
+<input type="checkbox" value="" disabled>&nbsp;&nbsp;Falls ein Auswahlfeld ausgegraut ist wir dieses Gerät von Unraid verwendet und kann somit nicht zur VM durchgereicht werden.
 :end
 
 :sysdevs_thread_pairings_help:
-This displays a list of CPU thread pairings.
+Zeigt eine Liste der CPU-Thread Gruppierungen an.
 :end
 
 :sysdevs_usb_devices_help:
-This displays the output of the `lsusb` command.  The numeric identifiers are used to configure PCI pass-through.
+Zeigt die Ausgabe von `lsusb` an.  Die Identifikationszahlen werden zur Konfiguration von PCI Passthrough verwendet.
 :end
 
 :sysdevs_scsi_devices_help:
-This displays the output of the `lsscsi` command.  The numeric identifiers are used to configure PCI pass-through.
+Zeigt die Ausgabe von `lsscsi` an. Die Identifikationszahlen werden zur Konfiguration von PCI Passthrough verwendet.
 
-Note that linux groups ATA, SATA and SAS devices with true SCSI devices.
+Hinweis: Linux gruppiert ATA, SATA und SAS Geräte mit SCSI Geräten.
 :end
