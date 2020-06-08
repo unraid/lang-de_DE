@@ -179,7 +179,7 @@ miteinbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *
 *Beachten Sie, dass Plugins von Drittanbietern **möglicherweise** persönliche Informationen in pluginspezifischen Konfigurationsdateien
 und/oder System Protokollen speichern könnten.*
 
-*Benutzen Sie* **Diagnose anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum gepostet werden. In privater Kommunikation 
+*Benutzen Sie* **Diagnose anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum gepostet werden. In privater Kommunikation
 mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
 :end
 
@@ -190,20 +190,20 @@ als "Neue" Datenträger erscheinen, als wäre dies ein neuer Server.
 Nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und eine Paritätsdatenwiederherstellung
 basierend auf der neuen Konfiguration erwünscht ist.
 
-*'Aktuelle Zuordnung speichern'* benutzen, um die gewählten Datenträgerslots zu behalten, ***nachdem*** das Array zurückgesetzt wurde. 
-Standardmäßig  werden **keine** Datenträger zugewiesen.  
+*'Aktuelle Zuordnung speichern'* benutzen, um die gewählten Datenträgerslots zu behalten, ***nachdem*** das Array zurückgesetzt wurde.
+Standardmäßig  werden **keine** Datenträger zugewiesen.
 
 **BENUTZEN SIE DIESE ANWENDUNG NICHT UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN DA DIES NICHT FUNKTIONIERT** - dies
 hat die gegenteilige Wirkung. Es macht es **unmöglich**, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Sie wurden gewarnt!
 :end
 
 :newperms_1_plug:
-Diese Aktion ist einmalig notwendig, falls sie von einer Unraid Server Version von vor 5.0 auf Unraid Version 5.0 oder 
+Diese Aktion ist einmalig notwendig, falls sie von einer Unraid Server Version von vor 5.0 auf Unraid Version 5.0 oder
 höher aktualisieren.
 Wählen Sie **ALLE DATENTRÄGER** aus falls diese einmalige Aktion ausgeführt wird.
 
 Diese Anwendung ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
-und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer 
+und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer
 Nicht-Active Directory Integration zurückgewechselt wird.
 
 Diese Anwendung startet einen Hintergrundprozess, welches auf jedem Array- und Cachedatenträger sowie ausgewählter
@@ -231,7 +231,7 @@ Beachten Sie, dass dieses Tool die Docker Container möglicherweise negativ beei
 :end
 
 :registration_1_plug:
-Der Server ist nur Nutzbar, bis eine Lizenz gekauft oder eine kostenlose 30-Tage *Probelizenz* 
+Der Server ist nur Nutzbar, bis eine Lizenz gekauft oder eine kostenlose 30-Tage *Probelizenz*
 installiert wurde. Eine *Probelizenz* beinhaltet alle Funktionalitäten einer *Pro* Lizenz.
 
 Lizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bitte benutzen Sie ein hochwertiges Gerät
