@@ -1324,400 +1324,400 @@ If set to Auto, only disk shares not participating in User Shares may be exporte
 :end
 
 :shares_enable_shares_help:
-If set to 'Yes' the User Shares feature is activated.
+Wenn "Ja" ist die Funktion "Benutzer Freigaben" aktiviert.
 :end
 
 :shares_included_disks_help:
-This setting defines the set of array disks which are *included* in User Shares.
-Unchecking all disks will allow **all** array disks to be included.
+Diese Einstellung definiert die Liste von Array Datenträger, die in Freigaben *verwendet* werden.
+Wenn Sie alle Datenträger deaktivieren, können **alle** Array Dateinträger verwendet werden.
 :end
 
 :shares_excluded_disks_help:
-This setting defines the set of array disk which are *excluded* from User Shares.
-Uncheck all disks in order to not exclude any disks
+Definiert die Liste der *ausgeschlossenen* Datenträger dieser Freigabe.
+Deaktivieren Sie alle Datenträger um keinen Datenträger auszuschließen.
 
-**Note:** Each separate User Share also includes its own set of Included and Excluded
-disks which represent a subset of the Included/Excluded disks defined here.
+**Hinweis:** Jede Freigabe enthält eine Liste von eingeschlossenen und ausgeschlossenen
+Datenträger, die einen Teil der hier definierten ein-/ausgeschlossenen Datenträger darstellen.
 :end
 
 :shares_tunable_hard_links_help:
-If set to Yes then support the link() operation.
+Wenn JA, wird link() unterstützt.
 
-If set to No then hard links are not supported.
+Wenn Nein, werden Hardlinks nicht unterstützt.
 
-Notes:
+Anmerkung:
 
-* Setting to Yes may cause problems for older media and dvd/bluray players accessing shares using NFS.
-* No matter how this is set, the **mover** will still properly handle any detected hard links.
+* Die Einstellung "Ja" kann Probleme bei ältere Medien und DVD-/Blu-ray-Player verursachen wenn mittels NFS darauf zugegriffen wird.
+* Unabhängig von der Einstellung verarbeitet der **Mover** alle erkannten Hardlinks ordnungsgemäß.
 :end
 
 :shares_tunable_direct_io_help:
-**Experimental**: If set to Yes then mount User Share file system with FUSE *direct_io* mount option.
-This will increase write performance but might possibly decrease read performance.
+**Experimentell**: Falls Ja gewählt wurde wird das Freigabedateisystem mit der Option FUSE *direct_io* eingebunden.
+Dies erhöht die Schreibleistung, kann jedoch möglicherweise die Leseleistung verringern.
 
-*Auto* selects No.
+*Auto* wählt Nein.
 :end
 
 :syslog_local_server_help:
-Let the server act as a central syslog server and collect syslog messages from other systems.
-The server can listen on UDP, TCP or both with a selectable port number.
+Der Server wird als Syslogserver verwendet und kann andere Syslog-Nachrichten empfangen.
+Der Server kann auf UDP, TCP oder beiden Protokollen auf Nachrichten mit einem definierten Port warten.
 
-Syslog information is stored per IP address. That is every system gets its own syslog file.
+Syslog-Informationen werden pro IP-Adresse gespeichert, jedes System erhält eine eigene Syslog-Datei.
 :end
 
 :syslog_local_folder_help:
-Select the share folder where the syslogs will be stored.
-It is recommended that you use a share located on the cache drive to prevent array disk spinups.
+Wählen Sie den Freigabeordner aus, in dem die Syslogs gespeichert werden sollen.
+Es wird empfohlen, eine Freigabe auf dem Cache Datenträger zu verwenden, um ein Hochfahren der Array Datenträger zu vermeiden.
 :end
 
 :syslog_local_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+Standardmäßig ist die Protokoll Rotation deaktiviert und erstellt eine einzelne Protokoll Datei mit unbegrenzter Größe.
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+Aktivieren Sie die  Protokoll Rotation, um die Größe der Protokoll Datei zu begrenzen und die Anzahl der Dateien anzugeben, die im Rotationsschema behalten werden sollen.
 :end
 
 :syslog_local_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+Gibt die maximale Protokoll-Größe an. Bei Überschreitung erfolgt die Protokoll Rotation.
 :end
 
 :syslog_local_file_number_help:
-Specifies the number of additional LOG files to keep in the rotation scheme.
+Definiert die Anzahl der zusätzlichen Protokoll-Dateien, die im Rotationsschema behalten werden sollen.
 :end
 
 :syslog_remote_server_help:
-Enter a name or IP address of a remote syslog server.
-This will send a copy of the syslog messages to the designated server.
+Geben Sie einen Namen oder eine IP-Adresse eines Remote-Syslog-Servers ein.
+Dadurch wird eine Kopie der Syslog-Benachrichtigungen an den angegebenen Server gesendet.
 :end
 
 :syslog_mirror_flash_help:
-This setting is NO by default and must be used with care to avoid unnecessary wear and tear of the USB device.
+Diese Einstellung ist standardmäßig auf NEIN eingestellt und mit Vorsicht zu behandeln um einen vorzeitigen Verschleis vom USB Flash Gerät zu vermeiden.
 
-Change this setting to YES when troubleshooting is required and it is not possible to get the regular diagnostics information.
-A mirror of the syslog file is stored in the **logs** folder of the flash device.
+Ändern Sie diese Einstellung auf JA, wenn eine Fehlerbehebung erforderlich ist und die Diagnoseinformationen auf normalem Weg nicht abgerufen werden können.
+Ein Kopie der Syslog-Datei wird im Ordner **logs** des USB Flash Geräts gespeichert.
 :end
 
 :confirm_reboot_help:
-Choose if rebooting or powering down the server needs a confirmation checkbox.
+Auswählen ob vor dem Herunterfahren oder Neustarten des Servers eine Bestätigung angezeigt werden soll
 :end
 
 :confirm_array_stop_help:
-Choose if stopping the array needs a confirmation checkbox.
+Auswählen ob vor dem Stoppen des Arrays eine Bestätigung angezeigt werden soll
 :end
 
 :display_settings_help:
-The display settings below determine how items are displayed on screen. Use these settings to tweak the visual effects to your likings.
+Diese Einstellung bestimmt wie Elemente auf dem Bildschirm angezeigt werden. Kann benutzt werden um Visuelle Effekte nach Ihren Wünschen anzupassen.
 
-You can experiment with these settings as desired, they only affect visual properties.
+Mit diesen Einstellungen kann beliebig Experimentiert werden da diese nur einfluss auf die visuelle Darstellung haben.
 :end
 
 :display_font_size_help:
-This is a per device setting
+Dies ist eine Gerätespezifische Einstellung
 :end
 
 :display_wwn_device_id_help:
-World Wide Name (WWN) is a unique identifier used for SAS attached devices.
+World Wide Name (WWN) ist die Eindeutige Kennung für Datenträger die mittels SAS angeschlossen sind.
 
-Select *Disabled* to suppress the appending of WWN to the device identification
+Wenn *Deaktiviert* wird der WWN nicht an die Datenträgeridentifikation angehängt
 
-Select "Automatic" to append WWN to the device identification in case of SAS devices
+Wenn "Automatisch" wird der WWN an die Datenträgeridentifikation angehängt
 :end
 
 :display_custom_text_color_help:
-Overrule the default text color in the header. This can be used to match the text color with a background image.
+Überschreibt die Standardfarbe in der Kopfzeile. Kann verwendet werden um die Textfarbe mit dem Hintergrundbild abzugleichen.
 :end
 
 :display_custom_background_color_help:
-Overrule the default background color in the header. This can be used to match the background color with a custom text color.
+Überschreibt die Standardfarbe in der Kopfzeile. Kann verwendet werden um die Hintergrundfarbe mit einer Textfarbe abzugleichen.
 :end
 
 :display_custom_banner_help:
-Image will be scaled to 1920x90 pixels. The maximum image file upload size is 512 kB (524,288 bytes).
+Das Bild wird auf 1920x90 Pixel skaliert. Die maximale Größe zum Hochladen der Bilddatei beträgt 512 kB (524,288 bytes).
 :end
 
 :display_temperature_unit_help:
-Selects the temperature unit for the disk temperature thresholds. Changing the unit will adjust the existing value in the disk temperature thresholds as appropriate.
+Wählt die Temperatureinheit für den Datenträgertemperaturschwellenwert aus. Wenn die Einheit geändert wird der Wert für den Schwellenwert dementsprechend angepasst.
 
-Make sure any newly entered values represent the selected temperature unit.
+Stellen Sie sicher das alle neu eingegebenen Werte den neu gewählten Einheiten entsprechen.
 :end
 
 :vms_enable_help:
-Stopping the VM Manager will first attempt to shutdown all running VMs. After 60 seconds, any remaining VM instances will be terminated.
+Wenn Sie den VM Manager stoppen, wird zunächst versucht alle laufenden VMs herunterzufahren. Nach 60 Sekunden wird bei allen verbleibenden VMs das beenden erzwungen.
 :end
 
 :vms_libvirt_volume_help:
-This is the libvirt volume.
+Dies ist das libvirt Volumen.
 :end
 
 :vms_libvirt_vdisk_size_help:
-If the system needs to create a new libvirt image file, this is the default size to use specified in GB.
-To resize an existing image file, specify the new size here. Next time the Libvirt service is started the file (and file system) will increased to the new size (but never decreased).
+Wenn das System eine neue Libvirt-Abbilddatei erstellen muss, ist dies die zu verwendende Standardgröße, in GB angegeben.
+Um die Größe einer vorhandenen Imagedatei zu ändern, geben Sie hier die neue Größe an. Wenn der Libvirt-Dienst das nächste Mal gestartet wird, wird die Datei (und das Dateisystem) auf die neue Größe erweitert (verkleinern nicht möglich).
 :end
 
 :vms_libvirt_location_help:
-You must specify an image file for Libvirt. The system will automatically create this file when the Libvirt service is first started.
+Sie müssen eine Abilddatei für Libvirt angeben. Das System erstellt diese Datei automatisch, wenn der Libvirt-Dienst zum ersten Mal gestartet wird.
 :end
 
 :vms_libvirt_storage_help:
-Specify a user share that contains all your VM subdirectories with vdisks
+Geben Sie eine Freigabe an, die alle Ihre VM-Unterverzeichnisse mit vDisks enthält
 :end
 
 :vms_libvirt_iso_storage_help:
-Specify a user share that contains all your installation media for operating systems
+Geben Sie eine Freigabe an, die Ihre Installationsmedien für Betriebssysteme enthält
 :end
 
 :vms_virtio_driver_help:
-Specify the virtual CD-ROM (ISO) that contains the VirtIO Windows drivers as provided by the Fedora Project.
-Download the latest ISO from here: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
+Geben Sie das virtuelle CD-ROM-Abbild (ISO) an, das die vom Fedora-Projekt bereitgestellten VirtIO Windows-Treiber enthält.
+Laden Sie die neueste ISO von hier: <a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads" target="_blank">fedoraproject.org</a>
 
-When installing Windows, you will reach a step where no disk devices will be found. There is an option to browse for drivers on that screen.
-Click browse and locate the additional CD-ROM in the menu. Inside there will be various folders for the different versions of Windows.
-Open the folder for the version of Windows you are installing and then select the AMD64 subfolder inside (even if you are on an Intel system, select AMD64).
-Three drivers will be found. Select them all, click next, and the vDisks you have assigned will appear.
+Bei der Installation von Windows erreichen Sie einen Schritt, bei dem keine Festplattengeräte gefunden werden, auf diesem Bildschirm können Sie nach Treibern suchen.
+Klicken Sie auf Durchsuchen und auf das zusätzliche CD-ROM Laufwerk. In Verzeichnis des CD-ROM Laufwerks befinden sich Ordner für die verschiedensten Windows-Versionen.
+Öffenen Sie den Ordner für Ihre Windows Installation und dann den darin enthaltenen AMD64 Unterordner aus (auch wenn Sie ein Intel Basierendes System besitzen).
+Drei Treiber werden danach gefunden, wählen Sie alle aus und klicken Sie auf Weiter und die zugewiesene(n) vDisk(s) wird/werden angezeigt.
 :end
 
 :vms_network_bridge_help:
-Select the name of the network bridge you wish to use as default for your VMs,
-the setting 'virbr0' will let libvirt create a virtual bridge that utilizes NAT (network address translation)
-and act as a DHCP server to hand out IP addresses to virtual machines directly.
-More optional selections are present when virtual bridges are created under network settings.
+Wählen Sie den Namen der Netzwerkbrücke aus, die Sie standardmäßig für Ihre VMs verwenden möchten,
+mit der Einstellung 'virbr0' kann libvirt eine virtuelle Brücke erstellen, die NAT (Network Address Translation) verwendet
+und als DHCP-Server fungiert, um die IP-Adressen direkt an die VM zu übergeben.
+Weitere Auswahlmöglichkeiten sind vorhanden, wenn virtuelle Bridges unter Netzwerkeinstellungen erstellt werden.
 
-NOTE: You can also specify a network bridge on a per-VM basis.
+HINWEIS: Es kann für jede VM eine eigene Netzwerkbrücke angelegt werden.
 :end
 
 :vms_host_shutdown_help:
-When shutting down the server, this defines the action to take upon running VMs. If *Hibernate VMs* is chosen,
-the VM will be instructed to hibernate (if supported) otherwise it will attempt a VM shutdown.
+Legt fest welche Aktion beim Herunterfahren des Servers für die VMs durchgeführt werden soll. Wenn *Ruhezustand* gewählt ist,
+wird die VM angewiesen in den Ruhezustand zu gehen (falls Unterstützt) andernfalls wird versucht die VM herunterzufahren.
 :end
 
 :vms_shutdown_timeout_help:
-When shutting down the server, this defines how long to wait in seconds for *graceful* VM shutdown before forcing shutdown to continue.
-NOTE: It's recommended to shut down guest VMs from within the VM.
+Legt fest wie lange beim Herunterfahren des Servers auf das *ordnungsgemäße* Herunterfahren der VM gewartet wird bevor das beenden erzwungen wird.
+HINWEIS: Es wird empfohlen Gast VMs innerhalb der VM herunterzufahren.
 :end
 
 :vms_acs_override_help:
-*PCIe ACS override* allows various hardware components to expose themselves as isolated devices.
-Typically it is sufficient to isolate *Downstream* ports.
-A hardware component may need the setting *Multi-function* or *Both* to further isolate different hardware functions.<br>
-A reboot is required for changes to this setting to take affect.
+*PCIe ACS erzwingen* erlaubt es Hardwarekomponenten sich als isolierte Geräte erkennen zu geben.
+In Normalfall reicht es aus *Downstream* Ports zu isolieren.
+Eine Hardwarekomponente kann aber auch *Multi-Function* oder *Beide* benötigen um verschiedene Hardwarefunktionen zu isolieren.<br>
+Ein Neustart ist erforderlich um die Einstellung zu übernehmen.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**WARNUNG: Die Verwendung dieser Einstellung kann bei bestimmten Hardwarekonfigurationen zu Datenverlust/beschädigung führen.**
+Bitte [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) für weitere Informationen besuchen.
 :end
 
 :vms_vfio_interupts_help:
-If your system doesn't support interrupt remapping, these can be enabled by allowing unsafe interrupts.<br>
-A reboot will be required for changes to this setting to take affect.
+Wenn Ihr System die Neuzuordnung von Interrupts nicht unterstützt, können Sie diese aktivieren indem unsichere Interrupts zugelassen werden.<br>
+Ein Neustart ist erforderlich um die Einstellung zu übernehmen.
 
-**Warning: use of this setting could cause possible data corruption with certain hardware configurations.**
-Please visit the [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) for more information.
+**WARNUNG: Die Verwendung dieser Einstellung kann bei bestimmten Hardwarekonfigurationen zu Datenverlust/beschädigung führen.**
+Bitte [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm) für weitere Informationen besuchen.
 :end
 
 :vms_libvirt_log_help:
-View the log for libvirt: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+Protokoll für libvirt anzeigen: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
 :end
 
 :vms_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+**Scrub** führt den Befehl *btrfs scrub* aus, um die Integrität des Dateisystems zu überprüfen.
+Falls eine Reparatur erforderlich ist, wählen Sie *Korrigiere Dateisystemfehler* aus und starten Sie einen zweiten Durchlauf; dies erlaubt *btrfs scrub* das Dateisystem zu Reparieren.
 :end
 
 :vms_cancel_help:
-**Cancel* will cancel the Scrub operation in progress.
+**Abbrechen* bricht den laufenden Scrub Vorgang ab.
 :end
 
 :eth_interface_description_help:
-Use this optional field to provide addditional information about the purpose of the connection.
+Verwenden Sie diese Feld um zusätzliche Informationen zur Schnittstelle einzugeben, Optional.
 :end
 
 :eth_mac_address_help:
-This is the hardware address of the interface.
-When tagging is enabled all VLANs on this interface will share the same hardware address.
+Gibt die Hardwareadresse der Schnittstellte an.
+Wenn Tagging aktiviert ist, haben alle VLANs auf dieser Schnittstelle dieselbe Hardwareadresse.
 :end
 
 :eth_enable_bonding_help:
-Bonding is a feature that combines multiple physical Ethernet interfaces into a single *bonded* interface named **bond0**.
-This can be used to improve the connection redundancy and/or throughput of the system.
-Different bonding modes are supported (see below), but some modes require proper switch support.
+Bonding ist eine Funktion, die mehrere Ethernet-Schnittstellen zu einer einzigen *Bonded* Schnittstelle mit dem Namen **bond0** zusammenfügt.
+Dies kann verwendet werden, um die Verbindungsredundanz und/oder den Durchsatz des Systems zu erhöhen.
+Es werden verschiedene Verbindungsmodi unterstützt (siehe unten), einige Modi erfordern jedoch die Unterstützung vom Netzwerkswitch.
 :end
 
 :eth_bonding_mode_help:
-**Mode 0 (balance-rr)**<br>
-This mode transmits packets in a sequential order from the first available slave through the last.
-If two real interfaces are slaves in the bond and two packets arrive destined out of the bonded interface the first will be transmitted on the first slave and the second frame will be transmitted on the second slave.
-The third packet will be sent on the first and so on. This provides load balancing and fault tolerance.
+**Modus 0 (balance-rr)**<br>
+Dieser Modus überträgt Pakete in einer sequentiellen Reihenfolge vom ersten verfügbaren Slave bis zum letzten.
+Wenn zwei Schnittstellen im Bond zu den Slaves gehören und zwei Pakete aus der Bonded Schnittstelle kommen, wird das erste auf dem ersten Slave und der zweite Frame auf dem zweiten Slave übertragen. Das dritte Paket wird am ersten gesendet und so weiter.
+Dies bietet Lastausgleich und Fehlertoleranz.
 
-**Mode 1 (active-backup) - default**<br>
-This mode places one of the interfaces into a backup state and will only make it active if the link is lost by the active interface.
-Only one slave in the bond is active at an instance of time. A different slave becomes active only when the active slave fails.
-This mode provides fault tolerance.
+**Modus 1 (active-backup) - standard**<br>
+Dieser Modus versetzt eine der Schnittstellen in einen Ausfallsicherungsstatus und aktiviert sie nur, wenn die Verbindung durch die aktive Schnittstelle verloren geht.
+Es ist jeweils nur ein Slave im Bond aktiv. Ein anderer Slave wird erst aktiv, wenn der aktive Slave ausfällt.
+Dieser Modus bietet Fehlertoleranz.
 
-**Mode 2 (balance-xor)**<br>
-This mode transmits packets based on an XOR formula. Source MAC address is XOR'd with destination MAC address modula slave count.
-This selects the same slave for each destination MAC address and provides load balancing and fault tolerance.
+**Modus 2 (balance-xor)**<br>
+Dieser Modus überträgt Pakete basierend einer XOR-Formel. Die Quell-MAC-Adresse wird mit der Slave-Anzahl des Ziel-MAC-Adressmoduls XOR-verknüpft.
+Dies wählt für jede Ziel-MAC-Adresse denselben Slave aus und bietet Lastausgleich und Fehlertoleranz.
 
-**Mode 3 (broadcast)**<br>
-This mode transmits everything on all slave interfaces. This mode is least used (only for specific purpose) and provides only fault tolerance.
+**Modus 3 (broadcast)**<br>
+Dieser Modus überträgt alles auf allen Slave-Schnittstellen. Dieser Modus wird am wenigsten verwendet (nur für bestimmte Zwecke) und bietet nur Fehlertoleranz.
 
-**Mode 4 (802.3ad)**<br>
-This mode is known as *Dynamic Link Aggregation*. It creates aggregation groups that share the same speed and duplex settings.
-It requires a switch that supports IEEE 802.3ad dynamic link.
-Slave selection for outgoing traffic is done according to the transmit hash policy, which may be changed from the default simple XOR policy via the xmit_hash_policy option.
-Note that not all transmit policies may be 802.3ad compliant, particularly inregards to the packet mis-ordering requirements of section 43.2.4 of the 802.3ad standard.
-Different peer implementations will have varying tolerances for noncompliance.
+**Modus 4 (802.3ad)**<br>
+Dieser Modus wird als *Dynamic Link Aggregation* bezeichnet. Es werden Aggregationsgruppen erstellt, die dieselben Geschwindigkeits- und Duplexeinstellungen verwenden.
+Ein Switch der die dynamische IEEE 802.3ad-Verbindung unterstützt ist erforderlich.
+Die Slave-Auswahl für ausgehenden Datenverkehr erfolgt gemäß der Übertragungs-Hash-Richtlinie, die über die Option xmit_hash_policy von der Standard Einfachen-XOR-Richtlinie geändert werden kann.
+Beachten Sie dass möglicherweise nicht alle Übertragungsrichtlinien 802.3ad-kompatibel sind insbesondere im Hinblick auf die Anforderungen an die Paktanforderungen in Abschnitt 43.2.4 des 802.3ad-Standards.
+Unterschiedliche Implementierungen haben unterschiedliche Toleranzen für Nichteinhaltung.
 
-**Mode 5 (balance-tlb)**<br>
-This mode is called *Adaptive transmit load balancing*. The outgoing traffic is distributed according to the current load and queue on each slave interface.
-Incoming traffic is received by the current slave.
+**Modus 5 (balance-tlb)**<br>
+Dieser Modus wird als *Adaptiver Sendelastausgleich* bezeichnet. Der ausgehende Verkehr wird entsprechend der aktuellen Last und Warteschlange auf jeder Slave-Schnittstelle verteilt.
+Eingehender Verkehr wird vom aktuellen Slave empfangen.
 
-**Mode 6 (balance-alb)**<br>
-This mode is called *Adaptive load balancing*. This includes balance-tlb + receive load balancing (rlb) for IPV4 traffic.
-The receive load balancing is achieved by ARP negotiation.
-The bonding driver intercepts the ARP Replies sent by the server on their way out and overwrites the src hw address with the unique hw address of one of the slaves in the bond
-such that different clients use different hw addresses for the server.
+**Modus 6 (balance-alb)**<br>
+Dieser Modus wird als *Adaptiver Lastausgleich* bezeichnet. Dies beinhaltet balance-tlb + Receive Load Balancing (rlb) für IPV4-Verkehr.
+Der Empfangslastausgleich wird durch ARP-Aushandlung erreicht.
+Der Bindungstreiber fängt die vom Server auf dem Weg nach draußen gesendeten ARP-Antworten ab und überschreibt die src-hw-Adresse mit der eindeutigen hw-Adresse eines der Slaves im Bond
+sodass verschiedene Clients unterschiedliche hw-Adressen für den Server verwenden.
 
-*Mode 1 (active-backup) is the recommended setting. Other modes allow you to set up a specific environment, but may require proper switch support.
-Choosing a unsupported mode can result in a disrupted communication.*
+*Modus 1 (active-backup) ist die empfohlene Einstellung. Andere Modi erlauben es Ihnen die Einstellungen an bestimmte Umgebungen anzupassen, erfordern jedoch dementsprechende Netzwerk Switches.
+Die Auswahl eines nicht unterstützten Modus kann zu einer Unterbrechung der Netzwerkommunikation führen.*
 :end
 
 :eth_bonding_members_help:
-Select which interfaces are member of the *bonded* interface. By default eth0 is a member, while other interfaces are optional.
+Wählen Sie welche Schnittstellen zu den *Bonded* Schnittstellen gehören. Standardmäßig gehört eth0 zu den Bonded Schnittstellen, andere Schnittstellen sind optional.
 :end
 
 :eth_enable_bridging_help:
-Bridging is a feature which creates a virtual bridge and allows VMs and Docker containers to communicate directly with the physical Ethernet port.
-Both bonding and bridging can be combined to let VMs or containers communicate over a *bonded* interface.
+Bridged ist eine Funktion, die eine virtuelle Bridge erstellt und es VMs und Docker Containern ermöglicht direkt mit dem Ethernet-Port zu kommunizieren.
+Bonding und Bridging können kombiniert werden, damit VMs oder Container über eine *Bonded* Schnittstelle kommunizieren können.
 :end
 
 :eth_bridging_members_help:
-Select which interfaces are member of the *bridged* interface. By default eth0 is a member, while other interfaces are optional.
+Wählen Sie Welche Schnittstellen zu den *Bridged* Schnittstellen gehören. Standardmäßig gehört eth0 zu den Bridged Schnittstellen, andere Schnittstellen sind optional.
 :end
 
 :eth_network_protocol_help:
-Select which protocol(s) are used. By default IPv4 only is used.<br>
-When both IPv4 and IPv6 is selected, each protocol can be configured independently.
+Die zu verwendenden Protokolle auswählen. Standardmäßig wird IPv4 verwendet.<br>
+Wenn IPv4 und IPv6 gewählt wurden können beide Protokolle unabhängig von einander Konfiguriert werden.
 :end
 
 :eth_ipv4_address_assignment_help:
-The following settings are possible:
+Die folgenden Einstellungen sind möglich:
 
-*Automatic* - the server will attempt to obtain a IPv4 address from the local DHCP server<br>
-*Static* - the IPv4 address is manually set for this interface<br>
-*None* - no IPv4 address is assigned to the interface (only available for VLANs)
+*Automatisch* - Der Server versucht, eine IPv4-Adresse vom DHCP-Server oder vom Router Advertisement (RA) zu erhalten<br>
+*Statisch* - Die IPv4-Adresse wird für diese Schnittstelle manuell festgelegt<br>
+*Keine* - Der Schnittstelle ist keine IPv4-Adresse zugewiesen (nur für VLANs gültig)
 :end
 
 :eth_ipv4_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address and mask of the system.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv4-Adresse Ihres Servers an.
 :end
 
 :eth_ipv4_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address of your router.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv4-Adresse Ihres Routers an.
 :end
 
 :eth_ipv4_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv4 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Bei *Automatisch* verwendet der Server die IPv4-DNS-Server die vom DHCP Server zurückgegeben werden.<br>
+Bei *Statisch* können Sie Ihre eigne Liste von DNS-Server eingeben.
 
-This is useful in Active Directory configurations where you need to set the first DNS Server entry to the IP address of your AD Domain server.
+Dies ist bei Active Directory-Konfigurationen hilfreich, in denen der erste DNS-Servereintrag auf die IP-Adresse Ihres AD Domain-Servers festgelegt werden muss.
 :end
 
 :eth_ipv4_dns_server_help:
-This is the primary IPv4 DNS server to use. Enter a IPv4 address.
+Gibt den primären IPv4-DNS-Server an. IPv4-Adresse eingeben.
 
-Note: for *Active Directory* you **must** ensure this is set to the IP address of your AD Domain server.
+Hinweis: Wenn *Active Directory* verwendet wird **muss** dies die Adresse des AD Domain Server sein.
 :end
 
 :eth_ipv4_dns_server2_help:
-This is the IPv4 DNS server to use when IPv4 DNS server 1 is down.
+Gibt den IPv4-DNS-Server an der verwendet werden soll wenn der IPv4-DNS-Server 1 nicht verfügbar ist.
 :end
 
 :eth_ipv4_dns_server3_help:
-This is the IPv4 DNS server to use when IPv4 DNS servers 1 and 2 are both down.
+Gibt den IPv4-DNS-Server an der verwendet werden soll wenn der IPv4-DNS-Server 1 und 2 nicht verfügbar sind.
 :end
 
 :eth_ipv6_address_assignment_help:
-The following settings are possible:
+Die folgenden Einstellungen sind möglich:
 
-*Automatic* - the server will attempt to obtain a IPv6 address from the local DHCP server or Router Advertisement (RA)<br>
-*Static* - the IPv6 address is manually set for this interface<br>
-*None* - no IPv6 address is assigned to the interface (only available for VLANs)
+*Automatisch* - Der Server versucht, eine IPv6-Adresse vom DHCP-Server oder vom Router Advertisement (RA) zu erhalten<br>
+*Statisch* - Die IPv6-Adresse wird für diese Schnittstelle manuell festgelegt<br>
+*Keine* - Der Schnittstelle ist keine IPv6-Adresse zugewiesen (nur für VLANs gültig)
 :end
 
 :eth_ipv6_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of the system.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv6-Adresse Ihres Servers an.
 :end
 
 :eth_ipv6_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of your router.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv6-Adresse Ihres Routers an.
 :end
 
 :eth_ipv6_privacy_extensions_help:
-Enable or disable the generation of a random IPv6 interface identifier according to RFC4941. This is similar to the temporary IPv6 address generation on Windows machines.
+Aktivieren oder Deaktiveren Sie die Generierung einer zufälligen IPv6 Schnittstellenkennung gemäß RFC4941. Dies ähnelt der temporären IPv6-Adressgenerierung auf Windows.
 :end
 
 :eth_ipv6_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv6 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Bei *Automatisch* verwendet der Server die IPv6-DNS-Server die vom DHCP Server zurückgegeben werden.<br>
+Bei *Statisch* können Sie Ihre eigne Liste von DNS-Server eingeben.
 :end
 
 :eth_ipv6_dns_server_help:
-This is the primary IPv6 DNS server to use. Enter a IPv6 address.
+Gibt den primären IPv6-DNS-Server an. IPv6-Adresse eingeben.
 :end
 
 :eth_ipv6_dns_server2_help:
-This is the IPv6 DNS server to use when IPv6 DNS server 1 is down.
+Gibt den IPv6-DNS-Server an der verwendet werden soll wenn der IPv6-DNS-Server 1 nicht verfügbar ist.
 :end
 
 :eth_ipv6_dns_server3_help:
-This is the IPv6 DNS server to use when IPv6 DNS servers 1 and 2 are both down.
+Gibt den IPv6-DNS-Server an der verwendet werden soll wenn der IPv6-DNS-Server 1 und 2 nicht verfügbar sind.
 :end
 
 :eth_desired_mtu_help:
-This is the MTU size to use on the physical Ethernet interface.
-If left blank, the MTU will automatically be determined (by default 1500 bytes).
+Gibt die MTU Größe an die für die Schnittstelle verwendet werden soll.
+Falls leer wird die MTU automatisch ermittelt (standartmäßig 1500 bytes).
 :end
 
 :eth_enable_vlans_help:
-By default no VLANs are configured.<br>
-Enabling VLANs extends the number of logical connections over the same physical connection.
+Standardmäßig sind keine VLANs definiert.<br>
+Durch das Aktivieren von VLANs wird die Anzahl der logischen Verbindungen über dieselbe physische Verbindung erweitert.
 
-Note: your router and switch must support VLANs too when this feature is used.
+Hinweis: Ihr Router und/oder Switch muss VLANs unterstützen, wenn diese Funktion aktiviert wird.
 :end
 
 :eth_vlan_number_help:
-Give each VLAN a unique identifier. Numbers range from 1 to 4095.
+Jedem VLAN eine eindeutige Kennung zuweisen. Gültig sind Zahlen von 1 bis 4095.
 :end
 
 :eth_network_rules_help:
-The interface assignment rules can be changed here and might be necessary to set the preferred interface for managing Unraid - *use with care, usually there is no need to change*.
+Schnittstellenzuweisungsregeln können hier geändert werden um die bevorzugte Verwaltungsschnittstelle von Unraid festzulegen *Bitte Vorsicht bei Änderungen, normalerweise ist keine Änderung erforderlich*.
 
-**eth0** is the main interface used to manage the Unraid system. The other interfaces are optional and may be used as desired.
-Every interface must be uniquely identified by its MAC (hardware) address.
+**eth0** ist die Hauptschnittstelle zur Verwaltung von Unraid. Die anderen Schnittstellen sind optional und können nach Wunsch verwendet werden.
+Jede Schnittstelle muss durch ihre MAC-Adresse (Hardware) eindeutig identifiziert werden.
 
-The interface assignment is stored on the flash device under */config/network-rules.cfg*. This file can be viewed with any editor, but it is recommended to make changes via the webGUI only.<br>
-Deleting the file *network-rules.cfg* from the flash device will restore automatic interface assignment after a system reboot.
+Die Schnittstellenzuweisung wird auf dem USB Flash Gerät unter */config/network-rules.cfg* gespeichert. Diese Datei kann in einem Texteditor geöffnet werden, jedoch wird empfohlen Änderunge nur in der WebGUI durchzuführen.<br>
+Wenn die Datei *network-rules.cfg* vom USB Flash Gerät gelöscht wird die Konfiguration beim nächsten Neustart zurückgesetzt und neu erstellt.
 :end
 
 :eth_routing_table_help:
-Enter a valid IPv4 route in the format *nnn.nnn.nnn.nnn/xx*, e.g. *192.168.1.0/24*<br>
-or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
+Geben Sie eine gültige IPv4-Route im Format *nnn.nnn.nnn.nnn/xx* ein, zB: *192.168.1.0/24*<br>
+oder eine gültige IPv6-Route im Format *nnnn:nnnn:nnnn::nnnn/xxx* ein, zB: *fe80::3ad8:2fff:fe25:9709/64*
 
-Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
+Wählen Sie das Gateway aus der Dropdown-Liste aus oder geben Sie eine gültige IPv4/IPv6-Adresse als Gateway-Wert ein.
 
-The metric value is optional, it defaults to 1. Use it to select the prefered gateway when more than one entry of the same route exist.
+Der Metrikwert ist optional und standardmäßig 1. Wählen Sie damit das bevorzugte Gateway aus, falls mehr als ein Eintrag derselben Route vorhanden ist.
 :end
 
 :apc_ups_daemon_help:
-Set to 'Yes' to enable apcupsd and start the daemon, set to 'No' to disable apcupsd and stop the daemon.
+'Ja' aktiviert apcupsd und Startet den Hintergrunddienst, 'Nein' deaktiviert apcupsd und stoppt den Hintergrunddienst.
 :end
 
 :apc_ups_cable_help:
-Defines the type of cable connecting the UPS to your computer.Possible generic choices for 'cable' are:
+Definiert den Kabeltyp mit dem die USV mit dem Server verbunden ist. Mögliche Arten für 'Kabel' sind:
 
-+ USB, Simple, Smart, Ether, or Custom to specify a special cable.
++ USB, Einfach, Smart, Ether, oder Benutzerdefiniert um ein spezielles Kabel anzugeben.
 :end
 
 :apc_ups_custom_cable_help:
-Specify a special cable by model number, only applicable when *UPS cable* is set to Custom.
+Spezielles Kabel anhand der Modellnummer angeben, nur berücksichtigt wenn *USV Kabel* auf Benutzerdefiniert gesetzt ist.
 
 + 940-0119A, 940-0127A, 940-0128A, 940-0020B
 + 940-0020C, 940-0023A, 940-0024B, 940-0024C
@@ -1726,109 +1726,109 @@ Specify a special cable by model number, only applicable when *UPS cable* is set
 :end
 
 :apc_ups_type_help:
-Define a *UPS type*, which corresponds to the type of UPS you have (see the Description for more details).
+Definieren Sie einen *USV Typ* welcher Ihrer USV entspricht (weitere Informationen finden Sie in der Beschreibung).
 
-+ **USB** - most new UPSes are USB
-+ **APCsmart** - newer serial character device, appropriate for SmartUPS models using a serial cable (not USB)
-+ **Net** - network link to a master apcupsd through apcupsd's Network Information Server. This is used if the UPS powering your computer is connected to a different computer for monitoring
-+ **SNMP** - SNMP network link to an SNMP-enabled UPS device
-+ **Dumb** - old serial character device for use with simple-signaling UPSes
-+ **PCnet** - PowerChute Network Shutdown protocol which can be used as an alternative to SNMP with the AP9617 family of smart slot cards
-+ **ModBus** - serial device for use with newest SmartUPS models supporting the MODBUS protocol
++ **USB** - die meisten neuen USVs sind USB
++ **APCsmart** - neueres Gerät mit serieller anbindung, geeignet für SmartUPS Modelle mit seriellem Kabel (nicht USB)
++ **Net** - Netzwerkverbindung zu einem Master-apcupsd über den Netzwerk Informations Server apcupsd . Dies wird verwendet, wenn die USV, die den Server mit Strom versorgt, zur Überwachung an einen anderen Computer angeschlossen ist
++ **SNMP** - SNMP Netzwerkverbindung zu einer SNMP-fähigen USV
++ **Dumb** - alte serielles USV, zur Verwendung mit USVs mit einfacher Zeichen Signalisierung
++ **PCnet** - PowerChute Network Shutdown Protokoll das als Alternative zu SNMP mit der Smart-Slot-Karte-Familie AP9617 verwendet werden kann
++ **ModBus** - serielle USV zur Verwendung mit den neuesten SmartUPS-Modellen, die das MODBUS-Protokoll unterstützen
 :end
 
 :apc_ups_device_help:
-Enter the *device* which correspondes to your situation, only applicable when *UPS type* is not set to USB.
+Das *Gerät* wählen welches Ihren Umständen entspricht, nur anwendbar wenn der *USV Typ* nicht USB ist.
 
 + **apcsmart** - /dev/tty**
-+ **net** - hostname:port. Hostname is the IP address of the NIS server. The deafult port is 3551
-+ **snmp** - hostname:port:vendor:community. Hostname is the ip address or hostname of the UPS on the network. Vendor can be can be "APC" or "APC_NOTRAP". "APC_NOTRAP" will disable SNMP trap catching; you usually want "APC". Port is usually 161. Community is usually "private"
++ **net** - Hostname:Port. Hostname ist die IP Adresse vom NIS Server. Standardport ist 3551
++ **snmp** - Hostname:Port:Hersteller:Community. Hostname ist die IP Adresse oder der Hostname von der USV im Netzwerk. Hersteller kann "APC" oder "APC_NOTRAP" sein. "APC_NOTRAP" deaktiviert das Abfragen von SNMP-Traps; Normalerweise "APC". Standardport ist 161. Community ist normalerweise "private"
 + **dumb** - /dev/tty**
-+ **pcnet** - ipaddr:username:passphrase:port. ipaddr is the IP address of the UPS management card. username and passphrase are the credentials for which the card has been configured. port is the port number on which to listen for messages from the UPS, normally 3052. If this parameter is empty or missing, the default of 3052 will be used
++ **pcnet** - ipaddr:Benutzername:Passphrase:Port. ipaddr ist die IP Adresse der USV Management Karte. Benutzername und Passphrase sind die Anmeldeinformationen der Karte. Port ist die Portnummer an der auf Nachrichten von der Karte gewartet werden sollen, normalerweise 3052. Wenn dieser Parameter fehl wird er Standardport 3052 benutzt.
 + **modbus** - /dev/tty**
 :end
 
 :apc_battery_level_help:
-If during a power failure, the remaining battery percentage (as reported by the UPS) is below or equal to *Battery level*, apcupsd will initiate a system shutdown.
+Wenn während eines Stromausfalls der verbleibende Akkuprozentsatz (der von der USV gemeldet wird) unter oder gleich *Akkuladung* liegt, leitet apcupsd ein Herunterfahren des Servers ein.
 :end
 
 :apc_runtime_left_help:
-If during a power failure, the remaining runtime in minutes (as calculated internally by the UPS) is below or equal to this field, apcupsd, will initiate a system shutdown.
+Wenn während eines Stromausfalls die verbleibende Laufzeit in Minuten (der von der USV intern berechnet wird) unter oder gleich diesem Feld liegt, löst apcupsd ein Herunterfahren des Servers aus.
 :end
 
 :apc_battery_time_help:
-If during a power failure, the UPS has run on batteries for *time-out* many seconds or longer; apcupsd will initiate a system shutdown. A value of zero disables this timer.
+Wenn bei einem Stromausfall, der Server mittels Akku von der USV mit Strom versorgt wird leitet apcupsd nach einem in Sekunden angegebenem *Timeout* das Herunterfahren ein. Ein Wert von Null deaktiviert das Herunterfahren.
 
-If you have a Smart UPS, you will most likely want to disable this timer by setting it to zero.
-That way, your UPS will continue on batteries until either the % charge remaining drops to or below *Battery level* or the remaining battery runtime drops to or below *minutes*.
+Wenn Sie eine Smarte USV besitzen, sollte dieser Timer mittels dem Wert Null deaktiviert werden.
+Auf diese Weise wird die USV den Server so lange mit Strom versorgen bis entweder die pronzentuale Ladung auf oder unter die *Akkuladung* oder die verbleibende Batterielaufzeit unter *Minuten* fällt.
 
-Of course - when testing - setting this to 60 causes a quick system shutdown if you pull the power plug.
-If you have an older dumb UPS, you will want to set this to less than the time you know you can run on batteries.
+Wenn der Wert beim Testen auf 60 gesetzt wird und der Netzstecker gezogen wird, wird das Herunterfahren möglicherweise schnell ausgelöst.
+Wenn Sie eine Alte/Dumme USV besitzen, sollten Sie einen geringeren Wert, von dem Sie wissen das Sie den Server mittels Akku betreiben können, festlegen.
 :end
 
 :apc_note_help:
-**Note:** *Battery level*, *Runtime left*, and *Time on battery* work in conjunction, so the first that occurs will cause the initiation of a shutdown.
+**Hinweis:** *Akkuladung*, *Verbleibende Laufzeit*, und *Zeit auf Akku* hängen zusammen, sodass beim ersten Unterschreiten einer Grenze das Herunterfahren des Servers ausgelöst wird.
 :end
 
 :apc_killups_help:
-Set to *Yes* to turn off the power to the UPS after a shutdown.
+Bei *Ja* wird die USV nach dem Herunterfahren vom Server ebenso heruntergefahren.
 :end
 
 :parity_check_scheduled_help:
-By default no parity check is scheduled. Select here the desired schedule. This can be one of the preset schedules for daily, weekly, monthly, yearly or a custom schedule.
+Standardmäßig wird ist kein Intervall für den Paritätscheck ausgewählt. Hier den gewünschten Intervall setzen, dieser kann entweder mittels Vorlage für täglich, wöchentlich, monatlich, jährlich oder benutzerdefiniert festgelegt werden.
 :end
 
 :parity_day_of_the_week_help:
-When a **weekly** or **custom** schedule is selected then choose here the preferred *day of the week*, in the other schedules this setting is not used and unavailable.
+Wenn ein **wöchentlicher** oder **benutzerdefinierter** gewählt wurde, hier den *Tag der Woche* auswählen, in den anderen Intervallen wird diese Einstellung nicht verwendet und ist nicht verfügbar.
 :end
 
 :parity_week_of_the_month_help:
-When a **monthly** or **yearly** schedule is selected then choose here the preferred *day of the month*.
-When a **custom** schedule is selected then choose here the preferred *week of the month*, in the other schedules this setting is not used and unavailable.
+Wenn ein **monatlicher** oder **jährlicher** Check gewählt wurde, hier den *Tag des Monats* auswählen.
+Wenn ein **benutzerdefinierter** Check gewählt wurde, hier die *Woche des Monats* auswählen, in den anderen Intervallen wird diese Einstellung nicht verwendet und ist nicht verfügbar.
 :end
 
 :parity_time_of_the_day_help:
-Choose the desired *time of the day* to start the schedule. Time granularity is given in half hour periods.
+Wählen Sie *die Uhrzeit des Tages* an dem der Check gestartet werden soll. Die Zeit kann halbstündlich ausgewählt werden.
 :end
 
 :parity_month_of_the_year_help:
-When a **yearly** or **custom** schedule is selected then choose here the preferred *month of the year*, in the other schedules this setting is not used and unavailable.
+Wenn ein **jährlicher** oder **benutzerdefinierter** Check gewählt wurde, hier das *Monat des Jahres* auswählen, in den anderen Intervallen wird diese Einstellung nicht verwendet und ist nicht verfügbar.
 :end
 
 :parity_write_corrections_help:
-Choose here whether any parity errors found during the check, need to be corrected on the parity disk or not.
+Wählen Sie, ob während der Paritätsprüfung gefundene Paritätsfehler korrigiert werden sollen.
 :end
 
 :mover_schedule_help:
-Choose a mover schedule ranging from hourly, daily, weekly and monthly.
+Wählen Sie ein Intervall wann der Mover gestartet werden soll entweder stündliche, täglich, wöchentlich oder monatlich.
 
-The interval determines how fast the mover will activated, it runs in the background.
+Das Intervall bestimmt wie schnell der Mover aktiviert wird, läuft im Hintergrund.
 :end
 
 :mover_day_of_the_week_help:
-Choose a day when the weekly schedule is selected. Otherwise disabled.
+Einen Tag auswählen andem das Täglich Intervall ausgeführt wird. Falls leer, deaktiviert.
 :end
 
 :mover_day_of_the_month_help:
-Choose a date when the monthly schedule is selected. Otherwise disabled.
+Ein Datum auswählen andem das Monatliche Intervall ausgeführt wird. Falls leer, deaktiviert.
 :end
 
 :mover_time_of_the_day_help:
-When an hourly schedule is selected this will set the interval in hours. An interval always starts on the whole hour (minute 0).
+Wenn Stündlich gewählt wurde wird das Intervall in Stunden festgelegt. Das Intervall beginnt immer zur vollen Stunde (Minute 0).
 
-For the other schedules choose here the time of the day the mover should start.
+Für ein anderes Intervall bitte die Tageszeit angeben zu der der Mover gestarten werden soll.
 :end
 
 :mover_logging_help:
-Write mover messages to the syslog file.
+Schreibe die Mover Benachrichtigungen in die syslog Datei.
 :end
 
 :notifications_display_help:
-In *Detailed* view all notifications will be displayed on screen as soon as they arrive.<br>
-Notifications can be acknowledged individually or all in once.
+In der *Detail* Ansicht werden alle Benachrichtigungen sofort am Bildschirm angezeigt.<br>
+Benachrichtigungen können einzeln oder alle gleichzeitig bestätigt werden.
 
-In *Summarized* view notifications will be counted only and the number of unread notifications is shown in the menu header per category.<br>
-Click on the counters to either acknowledge or view the unread notifications.
+In der *Zusammengefassten* Ansicht werden Benachrichtigungen gezählt und die Zahl der ungelesenen Benachrichtigungen werden in der Menüleiste pro Kategorie angezeigt.<br>
+Klicken Sie auf den Zähler um die ungelesenen Benachrichtigungen anzuzeigen oder zu bestätigen.
 :end
 
 :notifications_date_format_help:
@@ -1836,7 +1836,7 @@ Wählen Sie das gewünschte Datumsformat das bei den Benachrichtigungen verwende
 :end
 
 :notifications_time_format_help:
-Select the desired time format which is used in the notifications archive. Recommended is 24 hours, which makes the date/time column sortable in a sensible way.
+Wählen Sie das gewünschte Zeitformat das bei den Benachrichtigungen verwendet werden soll. Es wird empfohlen das 24 Stunden format zu wählen, da dies eine Sortierung nach Datum und Uhrzeit vereinfacht.
 :end
 
 :notifications_display_position_help:
