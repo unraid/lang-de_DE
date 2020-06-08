@@ -1635,89 +1635,89 @@ This is the IPv4 DNS server to use when IPv4 DNS servers 1 and 2 are both down.
 :end
 
 :eth_ipv6_address_assignment_help:
-The following settings are possible:
+Die folgenden Einstellungen sind möglich:
 
-*Automatic* - the server will attempt to obtain a IPv6 address from the local DHCP server or Router Advertisement (RA)<br>
-*Static* - the IPv6 address is manually set for this interface<br>
-*None* - no IPv6 address is assigned to the interface (only available for VLANs)
+*Automatisch* - Der Server versucht, eine IPv6-Adresse vom DHCP-Server oder vom Router Advertisement (RA) zu erhalten<br>
+*Statisch* - Die IPv6-Adresse wird für diese Schnittstelle manuell festgelegt<br>
+*Keine* - Der Schnittstelle ist keine IPv6-Adresse zugewiesen (nur für VLANs gültig)
 :end
 
 :eth_ipv6_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of the system.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv6-Adresse Ihres Servers an.
 :end
 
 :eth_ipv6_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv6 address of your router.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv6-Adresse Ihres Routers an.
 :end
 
 :eth_ipv6_privacy_extensions_help:
-Enable or disable the generation of a random IPv6 interface identifier according to RFC4941. This is similar to the temporary IPv6 address generation on Windows machines.
+Aktivieren oder Deaktiveren Sie die Generierung einer zufälligen IPv6 Schnittstellenkennung gemäß RFC4941. Dies ähnelt der temporären IPv6-Adressgenerierung auf Windows.
 :end
 
 :eth_ipv6_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv6 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Bei *Automatisch* verwendet der Server die IPv6-DNS-Server die von der automatischen Zuweisung angegeben werden.<br>
+Bei *Statisch* können Sie Ihre eigne Liste von DNS-Server eingeben.
 :end
 
 :eth_ipv6_dns_server_help:
-This is the primary IPv6 DNS server to use. Enter a IPv6 address.
+Gibt den primären IPv6-DNS-Server an. IPv6-Adresse eingeben.
 :end
 
 :eth_ipv6_dns_server2_help:
-This is the IPv6 DNS server to use when IPv6 DNS server 1 is down.
+Gibt den IPv6-DNS-Server an der verwendet werden soll wenn der IPv6-DNS-Server 1 nicht verfügbar ist.
 :end
 
 :eth_ipv6_dns_server3_help:
-This is the IPv6 DNS server to use when IPv6 DNS servers 1 and 2 are both down.
+Gibt den IPv6-DNS-Server an der verwendet werden soll wenn der IPv6-DNS-Server 1 und 2 nicht verfügbar sind.
 :end
 
 :eth_desired_mtu_help:
-This is the MTU size to use on the physical Ethernet interface.
-If left blank, the MTU will automatically be determined (by default 1500 bytes).
+Gibt die MTU Größe an die für die Schnittstelle verwendet werden soll.
+Falls leer wird die MTU automatisch ermittelt (standartmäßig 1500 bytes).
 :end
 
 :eth_enable_vlans_help:
-By default no VLANs are configured.<br>
-Enabling VLANs extends the number of logical connections over the same physical connection.
+Standardmäßig sind keine VLANs definiert.<br>
+Durch das Aktivieren von VLANs wird die Anzahl der logischen Verbindungen über dieselbe physische Verbindung erweitert.
 
-Note: your router and switch must support VLANs too when this feature is used.
+Hinweis: Ihr Router und/oder Switch muss VLANs unterstützen, wenn diese Funktion aktiviert wird.
 :end
 
 :eth_vlan_number_help:
-Give each VLAN a unique identifier. Numbers range from 1 to 4095.
+Jedem VLAN eine eindeutige Kennung zuweisen. Gültig sind Zahlen von 1 bis 4095.
 :end
 
 :eth_network_rules_help:
-The interface assignment rules can be changed here and might be necessary to set the preferred interface for managing Unraid - *use with care, usually there is no need to change*.
+Schnittstellenzuweisungsregeln können hier geändert werden um die bevorzugte Verwaltungsschnittstelle von Unraid festzulegen *Bitte Vorsicht bei Änderungen, normalerweise ist keine Änderung erforderlich*.
 
-**eth0** is the main interface used to manage the Unraid system. The other interfaces are optional and may be used as desired.
-Every interface must be uniquely identified by its MAC (hardware) address.
+**eth0** ist die Hauptschnittstelle zur Verwaltung von Unraid. Die anderen Schnittstellen sind optional und können nach Wunsch verwendet werden.
+Jede Schnittstelle muss durch ihre MAC-Adresse (Hardware) eindeutig identifiziert werden.
 
-The interface assignment is stored on the flash device under */config/network-rules.cfg*. This file can be viewed with any editor, but it is recommended to make changes via the webGUI only.<br>
-Deleting the file *network-rules.cfg* from the flash device will restore automatic interface assignment after a system reboot.
+Die Schnittstellenzuweisung wird auf dem USB Flash Gerät unter */config/network-rules.cfg* gespeichert. Diese Datei kann in einem Texteditor geöffnet werden, jedoch wird empfohlen Änderunge nur in der WebGUI durchzuführen.<br>
+Wenn die Datei *network-rules.cfg* vom USB Flash Gerät gelöscht wird die Konfiguration beim nächsten Neustart zurückgesetzt und neu erstellt.
 :end
 
 :eth_routing_table_help:
-Enter a valid IPv4 route in the format *nnn.nnn.nnn.nnn/xx*, e.g. *192.168.1.0/24*<br>
-or enter a valid IPv6 route in the format *nnnn:nnnn:nnnn::nnnn/xxx*, e.g. *fe80::3ad8:2fff:fe25:9709/64*
+Geben Sie eine gültige IPv4-Route im Format *nnn.nnn.nnn.nnn/xx* ein, zB: *192.168.1.0/24*<br>
+oder eine gültige IPv6-Route im Format *nnnn:nnnn:nnnn::nnnn/xxx* ein, zB: *fe80::3ad8:2fff:fe25:9709/64*
 
-Select the gateway from the dropdown list or enter a valid IPv4/IPv6 address as gateway value.
+Wählen Sie das Gateway aus der Dropdown-Liste aus oder geben Sie eine gültige IPv4/IPv6-Adresse als Gateway-Wert ein.
 
-The metric value is optional, it defaults to 1. Use it to select the prefered gateway when more than one entry of the same route exist.
+Der Metrikwert ist optional und standardmäßig 1. Wählen Sie damit das bevorzugte Gateway aus, falls mehr als ein Eintrag derselben Route vorhanden ist.
 :end
 
 :apc_ups_daemon_help:
-Set to 'Yes' to enable apcupsd and start the daemon, set to 'No' to disable apcupsd and stop the daemon.
+'Ja' aktiviert apcupsd und Startet den Hintergrunddienst, 'Nein' deaktiviert apcupsd und stoppt den Hintergrunddienst.
 :end
 
 :apc_ups_cable_help:
-Defines the type of cable connecting the UPS to your computer.Possible generic choices for 'cable' are:
+Definiert den Kabeltyp mit dem die USV mit dem Server verbunden ist. Mögliche Arten für 'Kabel' sind:
 
-+ USB, Simple, Smart, Ether, or Custom to specify a special cable.
++ USB, Einfach, Smart, Ether, oder Benutzerdefiniert um ein spezielles Kabel anzugeben.
 :end
 
 :apc_ups_custom_cable_help:
-Specify a special cable by model number, only applicable when *UPS cable* is set to Custom.
+Spezielles Kabel anhand der Modellnummer angeben, nur berücksichtigt wenn *USV Kabel* auf Benutzerdefiniert gesetzt ist.
 
 + 940-0119A, 940-0127A, 940-0128A, 940-0020B
 + 940-0020C, 940-0023A, 940-0024B, 940-0024C
@@ -1726,109 +1726,109 @@ Specify a special cable by model number, only applicable when *UPS cable* is set
 :end
 
 :apc_ups_type_help:
-Define a *UPS type*, which corresponds to the type of UPS you have (see the Description for more details).
+Definieren Sie einen *USV Typ* welcher Ihrer USV entspricht (weitere Informationen finden Sie in der Beschreibung).
 
-+ **USB** - most new UPSes are USB
-+ **APCsmart** - newer serial character device, appropriate for SmartUPS models using a serial cable (not USB)
-+ **Net** - network link to a master apcupsd through apcupsd's Network Information Server. This is used if the UPS powering your computer is connected to a different computer for monitoring
-+ **SNMP** - SNMP network link to an SNMP-enabled UPS device
-+ **Dumb** - old serial character device for use with simple-signaling UPSes
-+ **PCnet** - PowerChute Network Shutdown protocol which can be used as an alternative to SNMP with the AP9617 family of smart slot cards
-+ **ModBus** - serial device for use with newest SmartUPS models supporting the MODBUS protocol
++ **USB** - die meisten neuen USVs sind USB
++ **APCsmart** - neueres Gerät mit serieller anbindung, geeignet für SmartUPS Modelle mit seriellem Kabel (nicht USB)
++ **Net** - Netzwerkverbindung zu einem Master-apcupsd über den Netzwerk Informations Server apcupsd . Dies wird verwendet, wenn die USV, die den Server mit Strom versorgt, zur Überwachung an einen anderen Computer angeschlossen ist
++ **SNMP** - SNMP Netzwerkverbindung zu einer SNMP-fähigen USV
++ **Dumb** - alte serielles USV, zur Verwendung mit USVs mit einfacher Zeichen Signalisierung
++ **PCnet** - PowerChute Network Shutdown Protokoll das als Alternative zu SNMP mit der Smart-Slot-Karte-Familie AP9617 verwendet werden kann
++ **ModBus** - serielle USV zur Verwendung mit den neuesten SmartUPS-Modellen, die das MODBUS-Protokoll unterstützen
 :end
 
 :apc_ups_device_help:
-Enter the *device* which correspondes to your situation, only applicable when *UPS type* is not set to USB.
+Das *Gerät* wählen welches Ihren Umständen entspricht, nur anwendbar wenn der *USV Typ* nicht USB ist.
 
 + **apcsmart** - /dev/tty**
-+ **net** - hostname:port. Hostname is the IP address of the NIS server. The deafult port is 3551
-+ **snmp** - hostname:port:vendor:community. Hostname is the ip address or hostname of the UPS on the network. Vendor can be can be "APC" or "APC_NOTRAP". "APC_NOTRAP" will disable SNMP trap catching; you usually want "APC". Port is usually 161. Community is usually "private"
++ **net** - Hostname:Port. Hostname ist die IP Adresse vom NIS Server. Standardport ist 3551
++ **snmp** - Hostname:Port:Hersteller:Community. Hostname ist die IP Adresse oder der Hostname von der USV im Netzwerk. Hersteller kann "APC" oder "APC_NOTRAP" sein. "APC_NOTRAP" deaktiviert das Abfragen von SNMP-Traps; Normalerweise "APC". Standardport ist 161. Community ist normalerweise "private"
 + **dumb** - /dev/tty**
-+ **pcnet** - ipaddr:username:passphrase:port. ipaddr is the IP address of the UPS management card. username and passphrase are the credentials for which the card has been configured. port is the port number on which to listen for messages from the UPS, normally 3052. If this parameter is empty or missing, the default of 3052 will be used
++ **pcnet** - ipaddr:Benutzername:Passphrase:Port. ipaddr ist die IP Adresse der USV Management Karte. Benutzername und Passphrase sind die Anmeldeinformationen der Karte. Port ist die Portnummer an der auf Nachrichten von der Karte gewartet werden sollen, normalerweise 3052. Wenn dieser Parameter fehl wird er Standardport 3052 benutzt.
 + **modbus** - /dev/tty**
 :end
 
 :apc_battery_level_help:
-If during a power failure, the remaining battery percentage (as reported by the UPS) is below or equal to *Battery level*, apcupsd will initiate a system shutdown.
+Wenn während eines Stromausfalls der verbleibende Akkuprozentsatz (der von der USV gemeldet wird) unter oder gleich *Akkuladung* liegt, leitet apcupsd ein Herunterfahren des Servers ein.
 :end
 
 :apc_runtime_left_help:
-If during a power failure, the remaining runtime in minutes (as calculated internally by the UPS) is below or equal to this field, apcupsd, will initiate a system shutdown.
+Wenn während eines Stromausfalls die verbleibende Laufzeit in Minuten (der von der USV intern berechnet wird) unter oder gleich diesem Feld liegt, löst apcupsd ein Herunterfahren des Servers aus.
 :end
 
 :apc_battery_time_help:
-If during a power failure, the UPS has run on batteries for *time-out* many seconds or longer; apcupsd will initiate a system shutdown. A value of zero disables this timer.
+Wenn bei einem Stromausfall, der Server mittels Akku von der USV mit Strom versorgt wird leitet apcupsd nach einem in Sekunden angegebenem *Timeout* das Herunterfahren ein. Ein Wert von Null deaktiviert das Herunterfahren.
 
-If you have a Smart UPS, you will most likely want to disable this timer by setting it to zero.
-That way, your UPS will continue on batteries until either the % charge remaining drops to or below *Battery level* or the remaining battery runtime drops to or below *minutes*.
+Wenn Sie eine Smarte USV besitzen, sollte dieser Timer mittels dem Wert Null deaktiviert werden.
+Auf diese Weise wird die USV den Server so lange mit Strom versorgen bis entweder die pronzentuale Ladung auf oder unter die *Akkuladung* oder die verbleibende Batterielaufzeit unter *Minuten* fällt.
 
-Of course - when testing - setting this to 60 causes a quick system shutdown if you pull the power plug.
-If you have an older dumb UPS, you will want to set this to less than the time you know you can run on batteries.
+Wenn der Wert beim Testen auf 60 gesetzt wird und der Netzstecker gezogen wird, wird das Herunterfahren möglicherweise schnell ausgelöst.
+Wenn Sie eine Alte/Dumme USV besitzen, sollten Sie einen geringeren Wert, von dem Sie wissen das Sie den Server mittels Akku betreiben können, festlegen.
 :end
 
 :apc_note_help:
-**Note:** *Battery level*, *Runtime left*, and *Time on battery* work in conjunction, so the first that occurs will cause the initiation of a shutdown.
+**Hinweis:** *Akkuladung*, *Verbleibende Laufzeit*, und *Zeit auf Akku* hängen zusammen, sodass beim ersten Unterschreiten einer Grenze das Herunterfahren des Servers ausgelöst wird.
 :end
 
 :apc_killups_help:
-Set to *Yes* to turn off the power to the UPS after a shutdown.
+Bei *Ja* wird die USV nach dem Herunterfahren vom Server ebenso heruntergefahren.
 :end
 
 :parity_check_scheduled_help:
-By default no parity check is scheduled. Select here the desired schedule. This can be one of the preset schedules for daily, weekly, monthly, yearly or a custom schedule.
+Standardmäßig wird ist kein Intervall für den Paritätscheck ausgewählt. Hier den gewünschten Intervall setzen, dieser kann entweder mittels Vorlage für täglich, wöchentlich, monatlich, jährlich oder benutzerdefiniert festgelegt werden.
 :end
 
 :parity_day_of_the_week_help:
-When a **weekly** or **custom** schedule is selected then choose here the preferred *day of the week*, in the other schedules this setting is not used and unavailable.
+Wenn ein **wöchentlicher** oder **benutzerdefinierter** gewählt wurde, hier den *Tag der Woche* auswählen, in den anderen Intervallen wird diese Einstellung nicht verwendet und ist nicht verfügbar.
 :end
 
 :parity_week_of_the_month_help:
-When a **monthly** or **yearly** schedule is selected then choose here the preferred *day of the month*.
-When a **custom** schedule is selected then choose here the preferred *week of the month*, in the other schedules this setting is not used and unavailable.
+Wenn ein **monatlicher** oder **jährlicher** Check gewählt wurde, hier den *Tag des Monats* auswählen.
+Wenn ein **benutzerdefinierter** Check gewählt wurde, hier die *Woche des Monats* auswählen, in den anderen Intervallen wird diese Einstellung nicht verwendet und ist nicht verfügbar.
 :end
 
 :parity_time_of_the_day_help:
-Choose the desired *time of the day* to start the schedule. Time granularity is given in half hour periods.
+Wählen Sie *die Uhrzeit des Tages* an dem der Check gestartet werden soll. Die Zeit kann halbstündlich ausgewählt werden.
 :end
 
 :parity_month_of_the_year_help:
-When a **yearly** or **custom** schedule is selected then choose here the preferred *month of the year*, in the other schedules this setting is not used and unavailable.
+Wenn ein **jährlicher** oder **benutzerdefinierter** Check gewählt wurde, hier das *Monat des Jahres* auswählen, in den anderen Intervallen wird diese Einstellung nicht verwendet und ist nicht verfügbar.
 :end
 
 :parity_write_corrections_help:
-Choose here whether any parity errors found during the check, need to be corrected on the parity disk or not.
+Wählen Sie, ob während der Paritätsprüfung gefundene Paritätsfehler korrigiert werden sollen.
 :end
 
 :mover_schedule_help:
-Choose a mover schedule ranging from hourly, daily, weekly and monthly.
+Wählen Sie ein Intervall wann der Mover gestartet werden soll entweder stündliche, täglich, wöchentlich oder monatlich.
 
-The interval determines how fast the mover will activated, it runs in the background.
+Das Intervall bestimmt wie schnell der Mover aktiviert wird, läuft im Hintergrund.
 :end
 
 :mover_day_of_the_week_help:
-Choose a day when the weekly schedule is selected. Otherwise disabled.
+Einen Tag auswählen andem das Täglich Intervall ausgeführt wird. Falls leer, deaktiviert.
 :end
 
 :mover_day_of_the_month_help:
-Choose a date when the monthly schedule is selected. Otherwise disabled.
+Ein Datum auswählen andem das Monatliche Intervall ausgeführt wird. Falls leer, deaktiviert.
 :end
 
 :mover_time_of_the_day_help:
-When an hourly schedule is selected this will set the interval in hours. An interval always starts on the whole hour (minute 0).
+Wenn Stündlich gewählt wurde wird das Intervall in Stunden festgelegt. Das Intervall beginnt immer zur vollen Stunde (Minute 0).
 
-For the other schedules choose here the time of the day the mover should start.
+Für ein anderes Intervall bitte die Tageszeit angeben zu der der Mover gestarten werden soll.
 :end
 
 :mover_logging_help:
-Write mover messages to the syslog file.
+Schreibe die Mover Benachrichtigungen in die syslog Datei.
 :end
 
 :notifications_display_help:
-In *Detailed* view all notifications will be displayed on screen as soon as they arrive.<br>
-Notifications can be acknowledged individually or all in once.
+In der *Detail* Ansicht werden alle Benachrichtigungen sofort am Bildschirm angezeigt.<br>
+Benachrichtigungen können einzeln oder alle gleichzeitig bestätigt werden.
 
-In *Summarized* view notifications will be counted only and the number of unread notifications is shown in the menu header per category.<br>
-Click on the counters to either acknowledge or view the unread notifications.
+In der *Zusammengefassten* Ansicht werden Benachrichtigungen gezählt und die Zahl der ungelesenen Benachrichtigungen werden in der Menüleiste pro Kategorie angezeigt.<br>
+Klicken Sie auf den Zähler um die ungelesenen Benachrichtigungen anzuzeigen oder zu bestätigen.
 :end
 
 :notifications_date_format_help:
@@ -1836,7 +1836,7 @@ Wählen Sie das gewünschte Datumsformat das bei den Benachrichtigungen verwende
 :end
 
 :notifications_time_format_help:
-Select the desired time format which is used in the notifications archive. Recommended is 24 hours, which makes the date/time column sortable in a sensible way.
+Wählen Sie das gewünschte Zeitformat das bei den Benachrichtigungen verwendet werden soll. Es wird empfohlen das 24 Stunden format zu wählen, da dies eine Sortierung nach Datum und Uhrzeit vereinfacht.
 :end
 
 :notifications_display_position_help:
