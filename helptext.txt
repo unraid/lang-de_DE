@@ -671,350 +671,350 @@ per Benutzer vergben.
 :end
 
 :smb_secure_access_help:
-*Read settings from* is used to preset the SMB User Access settings of the current selected share with the settings of an existing share.
+*Lese Einstellungen von* wird verwendet, um die SMB-Benutzerzugriffseinstellungen der aktuell ausgewählten Freigabe mit den Einstellungen einer vorhandenen Freigabe voreinzustellen.
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+Wählen Sie den gewünschten Freigabenamen und klicken Sie auf **Lesen** um die SMB-Sicherheitseinstellungen von der ausgewählten Quelle zu kopieren.
 
-*Write settings to* is used to copy the SMB User Access settings of the current share to one or more other existing shares.
+*Schreibe Einstellungen zu* wird verwendet, um die SMB-Benutzerzugangseinstellungen der aktuellen Freigabe in eine oder mehrere andere bestehende Freigaben zu kopieren.
 
-Select the desired destinations and press **Write** to copy the SMB User access settings to the selected shares.
+Wählen Sie die gewünschten Ziele und klicken Sie auf **Schreiben** um die Einstellungen für den SMB-Benutzerzugriff auf die ausgewählten Freigaben zu kopieren.
 :end
 
 :smb_private_access_help:
-*Read settings from* is used to preset the SMB User Access settings of the current selected share with the settings of an existing share.
+*Lese Einstellungen von* wird verwendet, um die SMB-Benutzerzugriffseinstellungen der aktuell ausgewählten Freigabe mit den Einstellungen einer vorhandenen Freigabe voreinzustellen.
 
-Select the desired share name and press **Read** to copy the SMB security settings from the selected source.
+Wählen Sie den gewünschten Freigabenamen und klicken Sie auf **Lesen**, um die SMB-Sicherheitseinstellungen von der ausgewählten Quelle zu kopieren.
 
-*Write settings to* is used to copy the SMB User Access settings of the current share to one or more other existing shares.
+*Schreibe Einstellungen zu* wird verwendet, um die SMB-Benutzerzugangseinstellungen der aktuellen Freigabe in eine oder mehrere andere bestehende Freigaben zu kopieren.
 
-Select the desired destinations and press **Write** to copy the SMB User access settings to the selected shares.
+Wählen Sie die gewünschten Ziele und klicken Sie auf **Schreiben** um die Einstellungen für den SMB-Benutzerzugriff auf die ausgewählten Freigaben zu kopieren.
 :end
 
 :nfs_security_help:
-*Read settings from* is used to preset the NFS security settings of the current selected share with the settings of an existing share.
+*Lese Einstellungen von* wird verwendet, um die NFS-Sicherheitseinstellungen der aktuell ausgewählten Freigabe mit den Einstellungen einer vorhandenen Freigabe voreinzustellen.
 
-Select the desired share name and press **Read** to copy the NFS security settings from the selected source.
+Wählen Sie den gewünschten Freigabenamen und klicken Sie auf **Lesen**, um die NFS-Sicherheitseinstellungen von der ausgewählten Quelle zu kopieren.
 
-*Write settings to* is used to copy the NFS security settings of the current selected share to one or more other existing shares.
+*Schreibe Einstellungen zu* wird verwendet, um die NFS-Sicherheitseinstellungen der aktuell ausgewählten Freigabe in eine oder mehrere andere vorhandene Freigaben zu kopieren.
 
-Select the desired destinations and press **Write** to copy the NFS security settings to the selected shares.
+Wählen Sie die gewünschten Ziele aus und drücken Sie **Schreiben**, um die NFS-Sicherheitseinstellungen auf die ausgewählten Freigaben zu kopieren.
 :end
 
 :user_add_username_help:
-Usernames may be up to 40 characters long and must start with a **lower case letter** or an underscore,
-followed by **lower case letters**, digits, underscores, or dashes. They can end with a dollar sign.
+Benutzernamen dürfen bis zu 40 Zeichen lang sein und müssen mit einem **Kleinbuchstaben** oder einem Unterstrich beginnen,
+gefolgt von **Kleinbuchstaben**, Ziffern, Unterstrichen oder Bindestrichen. Sie können mit einem Dollarzeichen enden.
 :end
 
 :user_add_description_help:
-Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
+Bis zu 64 Zeichen. Die Zeichen Kaufmanns-Und (&amp;) Anführungszeichen (&quot;) and Doppelpunkt (:) sind nicht erlaubt.
 :end
 
 :user_add_custom_image_help:
-The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 95 kB (97,280 bytes).
+Das Bild wird auf eine Größe von 48x48 Pixel skaliert. Die maximale Größe der hochgeladenen Imagedatei beträgt 95 kB (97.280 Bytes).
 :end
 
 :user_password_help:
-Up to 128 characters.
+Bis zu 128 Zeichen.
 :end
 
 :user_edit_description_help:
-Up to 64 characters. The characters ampersand (&amp;) quote (&quot;) and colon (:) are not allowed.
+Bis zu 64 Zeichen. Die Zeichen Kaufmanns-Und (&amp;) Anführungszeichen (&quot;) and Doppelpunkt (:) sind nicht erlaubt.
 :end
 
 :user_edit_custom_image_help:
-The image will be scaled to 48x48 pixels in size. The maximum image file upload size is 512 kB (524,288 bytes).
+Das Bild wird auf eine Größe von 48x48 Pixel skaliert. Die maximale Größe der hochgeladenen Imagedatei beträgt 512 kB (524,288 bytes).
 :end
 
 :cpu_vms_help:
-This page gives a total view of the current CPU pinning assignments for VMs.<br>
-It also allows to modify these assignments.
+Diese Seite zeigt einen Gesamtüberblick über die aktuellen CPU-Zuweisungen für die VMs.<br>
+Sie erlaubt auch, die Zuweisungen zu ändern.
 
-Running VMs are **stopped first** and restarted after the modification.<br>
-Stopped VMs are instantly modified and new assignments become active when the VM is started.
+Laufende VMs werden **zunächst gestoppt** und nach der Änderung neu gestartet.<br>
+Angehaltene VMs werden sofort geändert und die neuen Zuweisungen werden aktiv, wenn die VM gestartet wird.
 
-When ***Apply*** is pressed a scan is performed to find the changes, subsequently only VMs which have changes are modified in parallel.
+Wenn auf ***Anwenden*** geklickt wird, wird ein Scan durchgeführt, um ausstehende Änderungen zu erfassen. Anschließend werden nur VMs bei denen Änderungen anstehen, parallel geändert.
 
-*Important: Please wait until all updates are finished before leaving this page*.
+*Wichtig: Bitte warten Sie, bis alle Aktualisierungen abgeschlossen sind, bevor Sie diese Seite verlassen.*.
 :end
 
 :cpu_pinning_help:
-This page gives a total view of the current CPU pinning assignments for Docker containers.<br>
-It also allows to modify these assignments.
+Diese Seite zeigt einen Gesamtüberblick über die aktuellen CPU-Zuweisungen für die Docker-Container.<br>
+Sie erlaubt auch, diese Zuweisungen zu ändern.
 
-Running containers are **stopped first** and restarted after the modification.<br>
-Stopped containers are instantly modified and new assignments become active when the user manually starts the container.
+Laufende Container werden **zunächst gestoppt** und nach der Änderung neu gestartet.<br>
+Angehaltene Container werden sofort geändert und die neuen Zuweisungen werden aktiv, wenn der Container manuell gestartet wird.
 
-When ***Apply*** is pressed a scan is performed to find the changes, subsequently containers which have changes are modified in parallel.
+Wenn auf ***Anwenden*** geklickt wird, wird ein Scan durchgeführt, um ausstehende Änderungen zu erfassen. Anschließend werden Container bei denen Änderungen anstehen, parallel geändert.
 
-*Important: Please wait until all updates are finished before leaving this page*.
+*Wichtig: Bitte warten Sie, bis alle Aktualisierungen abgeschlossen sind, bevor Sie diese Seite verlassen*.
 
-By default NO cores are selected for a Docker container, which means it uses all available cores.<br>
-Do not select **ALL** cores for containers, just select **NO** cores if you want unrestricted core use.
+Standardmäßig werden für einen Docker-Container KEINE Kerne ausgewählt. Dies bedeuted dass er alle verfügbaren Kerne verwendet.<br>
+Wählen Sie **KEINE** Kerne für Container die **ALLE** Kerne benutzen sollen, wenn Sie eine uneingeschränkte Kernnutzung wünschen.
 
-Do not select cores for containers which are *isolated*.
-By design a container will only use a single core (the lowest numbered core) when multiple isolated cores are selected.<br>
-Usually this is not what a user wants when selecting multiple cores.
+Wählen Sie keine Kerne für Container, die *isoliert* sind.
+Falls dies nicht beachtet wird, benutzt ein Container nur einen einzigen Kern sollten mehrere isolierte Kerne ausgewählt werden (den Kern mit der niedrigsten Nummerierung).<br>
+Gewöhnlich ist dies nicht das was gewünscht wird mehrere Kerne ausgewählt werden.
 :end
 
 :cpu_isolation_help:
-CPU isolation allows the user to specify CPU cores that are to be explicitly reserved for assignment (to VMs or Docker containers).
+Die CPU-Isolierung ermöglicht es dem Benutzer, CPU-Kerne anzugeben, die explizit für die Zuweisung (an VMs oder Docker-Container) reserviert werden sollen.
 
-This is incredibly important for gaming VMs to run smoothly because even if you manually pin your Docker containers to not overlap with your gaming VM,
-the host OS can still utilize those same cores as the guest VM needs for things like returning responses for the webGui, running a parity check, btrfs operations, etc.
+Dies ist für den reibungslosen Betrieb von Spiele-VMs unglaublich wichtig, denn selbst wenn Sie Ihre Docker-Container manuell so Zuweisen, dass sie sich nicht mit Ihrer Spiele-VM überlappen,
+kann das Host-Betriebssystem immer noch dieselben Kerne nutzen, die die Gast-VM für Dinge wie die Rückgabe von Antworten für die webGui, die Durchführung einer Paritätsprüfung, btrfs-Operationen usw. benötigt.
 :end
 
 :timezone_help:
-Select your applicable time zone from the drop-down list.
+Wählen Sie Ihre Zeitzone aus der Dropdown-Liste aus.
 :end
 
 :use_ntp_help:
-Select 'Yes' to use Network Time Protocol to keep your server time accurate.
-We **highly** recommend the use of a network time server, especially if you plan on using Active Directory.
+Wählen Sie 'Ja', um das Netzwerk Zeit Protokoll (NTP) zu verwenden, damit die Serverzeit genau bleibt.
+Wir empfehlen **dringlich** die Verwendung eines Netzwerk-Zeitservers, insbesondere wenn Sie vorhaben, Active Directory zu verwenden.
 
-Note: if using `pool.ntp.org` time servers, please also refer to [their documentation](http://www.pool.ntp.org/en/use.html).
+Hinweis: Wenn Sie `pool.ntp.org'-Zeitserver verwenden, lesen Sie bitte auch [deren Dokumentation](http://www.pool.ntp.org/en/use.html).
 :end
 
 :ntp_server1_help:
-This is the primary NTP server to use.  Enter a FQDN or an IP address.
+Der primär NTP-Server. Geben Sie einen FQDN oder eine IP-Adresse ein.
 :end
 
 :ntp_server2_help:
-This is the alternate NTP server to use if NTP Server 1 is down.
+Der alternative NTP-Server, der verwendet wird, wenn NTP-Server 1 ausgefällt.
 :end
 
 :ntp_server3_help:
-This is the alternate NTP Server to use if NTP Servers 1 and 2 are both down.
+Der alternative NTP-Server, der zu verwenden ist, wenn NTP-Server 1 und 2 ausgefallen.
 :end
 
 :ntp_server4_help:
-This is the alternate NTP Server to use if NTP Servers 1, 2, and 3 are all down.
+Der alternative NTP-Server, der zu verwenden ist, wenn die NTP-Server 1, 2 und 3 ausfallen.
 :end
 
 :current_time_help:
-Enter the current time-of-day.  Use format YYYY-MM-DD HH:MM:SS. Greyed out when using NTP.
+Geben Sie die aktuelle Tageszeit ein. Benutzen Sie das Format YYYY-MM-DD HH:MM:SS. Bei Verwendung von NTP ausgegraut.
 :end
 
 :disk_enable_autostart_help:
-If set to 'Yes' then if the device configuration is correct upon server start-up,
-the array will be automatically Started and shares exported.<br>
-If set to 'No' then you must Start the array yourself.
+Wenn 'Ja', wird das Array automatisch gestartet und die Freigaben exportiert,
+wenn die Gerätekonfiguration beim Serverstart korrekt ist.<br>
+Wenn 'Nein', muss das Array manuell  gestarten werden.
 :end
 
 :disk_spindown_delay_help:
-This setting defines the 'default' time-out for spinning hard drives down after a period
-of no I/O activity.  You may override the default value for an individual disk on the Disk Settings
-page for that disk.
+Definiert das "Standard"-Timeout für das Herunterfahren von Festplatten nach einem Zeitraum
+ohne E/A-Aktivität. Sie können den Standardwert für eine einzelne Platte auf der Seite Datenträgereinstellungen
+für diese Platte außer Kraft setzen.
 :end
 
 :disk_spinup_groups_help:
-If set to 'Yes' then the [Spinup Groups](/Help) feature is enabled.
+Wenn 'Ja', dann ist die [Spinup Groups](/Help) Funktion aktiv.
 :end
 
 :disk_default_partition_format_help:
-Defines the type of partition layout to create when formatting hard drives 2TB in size and
-smaller **only**. (All devices larger then 2TB are always set up with GPT partition tables.)
+Definiert die Art des Partitionslayouts, das beim Formatieren von Festplatten mit einer Größe von **nur** 2 TB und kleiner
+erstellt werden soll. (Alle Geräte größer als 2TB werden immer mit GPT-Partitionstabellen formatiert)
 
-**MBR: unaligned** setting will create MBR-style partition table, where the single
-partition 1 will start in the **63rd sector** from the start of the disk.  This is the *traditional*
-setting for virtually all MBR-style partition tables.
+**MBR: unaligned** Diese Einstellung erstellt eine Partitionstabelle im MBR-Stil, wobei
+die einzelne Partition 1 im **63. Sektor** vom Anfang der Platte an beginnt.  Dies ist die *traditionelle*
+Einstellung für praktisch alle Partitionstabellen im MBR-Stil.
 
-**MBR: 4K-aligned** setting will create an MBR-style partition table, where the single
-partition 1 will start in the **64th sector** from the start of the disk. Since the sector size is 512 bytes,
-this will *align* the start of partition 1 on a 4K-byte boundry.  This is required for proper
-support of so-called *Advanced Format* drives.
+**MBR: 4K-aligned** Diese Einstellung erstellt eine Partitionstabelle im MBR-Stil, wobei 
+die einzelne Partition 1 im **64. Sektor** vom Anfang der Platte an beginnt. Da die Sektorgröße 512 Bytes beträgt,
+wird der Anfang von Partition 1 auf einer 4K-Byte-Grenze *eingerichtet*.  Dies ist erforderlich für eine korrekte
+Unterstützung von sogenannten *Advanced Format*-Laufwerken.
 
-Unless you have a specific requirement do not change this setting from the default **MBR: 4K-aligned**.
+Ändern Sie diese Einstellung nicht von der Standardeinstellung, es sei denn, Sie haben eine spezielle Anforderung jenseits des **MBR: 4K-aligned** Standards.
 :end
 
 :disk_default_file_system_help:
-Defines the default file system type to create when an *unmountable* array device is formatted.
+Definiert das Standarddateisystemformat, der erstellt wird, wenn ein *nicht einhängbarer* Array-Datenträger formatiert wird.
 
-The default file system type for a single or multi-device cache is always Btrfs.
+Das Standarddateisystemformat für einen Einzel- oder Mehrgeräte-Cache ist immer Btrfs.
 :end
 
 :disk_shutdown_timeout_help:
-When shutting down the server, this defines how long to wait in seconds for *graceful* shutdown before forcing
-shutdown to continue.
+Definiert wie lange auf das *saubere* Herunterfahren gewartet wird bevor das Herunterfahren erzwungen wird,
+wenn ein manuelles Heruntergefahren des Servers ausgelöst wird.
 :end
 
 :disk_tunable_poll_attributes_help:
-This defines the disk SMART polling interval, in seconds.  A value of 0 disables SMART polling (not recommended).
+Definiert das SMART-Abfrageintervall der Festplatte in Sekunden. Ein Wert von 0 deaktiviert die SMART-Abfrage (nicht empfohlen).
 :end
 
 :disk_tunable_enable_ncq_help:
-If set to **No** then *Native Command Queuing* is disabled for all array devices that support NCQ.
+Wenn **Nein**, wird das *Native Command Queuing* für alle Array-Datenträger, die NCQ unterstützen, deaktiviert.
 
-**Auto** leaves the setting for each device as-is.
+**Auto** lässt die Einstellung für jeden Datenträger so, wie sie ist.
 
-Note: You must reboot after selecting Auto for setting to take effect.
+Hinweis: Nach der Auswahl von Auto müssen Sie neu starten, damit die Einstellung aktiv wird.
 :end
 
 :disk_tunable_nr_requests_help:
-This defines the `nr_requests` device driver setting for all array devices.
+Dies definiert die `nr_requests` Gerätetreibereinstellung für alle Array-Datenträger.
 
-**Auto** leaves the setting for each device as-is.
+**Auto** lässt die Einstellung für jede Datenträger wie sie gerade ist.
 
-Note: if you set to blank and click Apply, the setting is restored to its default, and you must reboot for setting to take effect.
+Hinweis: Wenn diese Einstellung leer gelassen wird und auf Übernehmen geklickt wird, wird die Einstellung auf den Standardwert zurückgesetzt. Nach der Auswahl von Auto müssen Sie neu starten, damit die Einstellung aktiv wird.
 :end
 
 :disk_tunable_scheduler_help:
-Selects which kernel I/O scheduler to use for all array devices.
+Legt fest welcher Kernel-E/A-Planung für alle Array-Datenträger verwendet werden soll.
 
-**Auto** leaves the setting for each device as-is (mq-deadline).
+**Auto** lässt die Einstellung für jedes Gerät wie sie gerade ist (mq-deadline).
 
-Note: You must reboot after selecting Auto for setting to take effect.
+Hinweis: Nach der Auswahl von Auto müssen Sie neu starten, damit die Einstellung aktiv wird.
 :end
 
 :disk_tunable_md_num_stripes_help:
-This is the size of the *stripe pool* in number of *stripes*.  A *stripe* refers to a data structure that facilitates parallel 4K read/write
-operations necessary for a parity-protected array.
+Legt die Größe des *stripe pool* in Anzahl von *stripes* fest. Ein *stripe* bezieht sich auf eine Datenstruktur, die parallele
+4K-Lese-/Schreiboperationen ermöglicht, die für ein paritätsgeschütztes Array erforderlich sind.
 
-Note: if you set to blank and click Apply, the setting is restored to its default, and will take effect after reboot.
+Hinweis: Wenn diese Einstellung leer gelassen wird und auf Übernehmen geklickt wird, wird die Einstellung auf den Standardwert zurückgesetzt und nach einem Neustart aktiv.
 :end
 
 :disk_tunable_md_queue_limit_help:
-This is a number in [1..100] which is the maximum steady-load percentage of the stripe pool permitted to be in use.
+Eine Zahl von [1..100], die den maximalen prozentualen Gewichtsanteil des Stripe-Pools angibt, der verwendet werden darf.
 
-Note: if you set to blank and click Apply, the setting is restored to its default.
+Hinweis: Wenn diese Einstellung leer gelassen wird und auf Übernehmen geklickt wird, wird die Einstellung auf den Standardwert zurückgesetzt und nach einem Neustart aktiv.
 :end
 
 :disk_tunable_md_sync_limit_help:
-This is a number in [0..100] which is the maximum percentage of the stripe pool allocated for parity sync/check in the presence of other I/O.
+Eine Zahl von [0..100],  die den maximalen prozentualen Gewichtsanteil des Stripe-Pools angibt, der für die Paritätssynchronisierung/Prüfung bei Vorhandensein anderer E/A zugewiesen wird.
 
-Note: if you set to blank and click Apply, the setting is restored to its default.
+Hinweis: Wenn diese Einstellung leer gelassen wird und auf Übernehmen geklickt wird, wird die Einstellung auf den Standardwert zurückgesetzt und nach einem Neustart aktiv.
 :end
 
 :disk_tunable_md_write_method_help:
-Selects the method to employ when writing to enabled disk in parity protected array.
+Wählt die Methode, die beim Schreiben auf einen aktivierte Datenträger in einem Paritätsgeschützten Array verwendet werden soll.
 
-*Auto* selects `read/modify/write`.
+*Auto* wählt `read/modify/write`.
 :end
 
 :disk_default_warning_utilization_help:
-*Warning disk utilization* sets the default warning threshold for all hard disks utilization. Exceeding this threshold will result in a warning notification.
+*Datenträgerauslastungs Warnung* legt die Standard-Warnschwelle für die Auslastung aller Datenträger fest. Das Überschreiten dieser Schwelle führt zu einer Warnmeldung.
 
-When the warning threshold is set equal or greater than the critical threshold, there will be only critical notifications (warnings are not existing).
+Wenn die Warnschwelle gleich oder größer als die kritische Schwelle gesetzt wird, gibt es nur kritische Benachrichtigungen (Warnungen sind nicht vorhanden).
 
-A value of zero will disable the warning threshold (including notifications).
+Ein Wert von Null deaktiviert die Warnschwelle (einschließlich Benachrichtigungen).
 :end
 
 :disk_default_critical_utilization_help:
-*Critical disk utilization* sets the default critical threshold for all hard disks utilization. Exceeding this threshold will result in an alert notification.
+*Kritische Datenträgerauslastung* legt die kritische Standard-Schwelle für die Auslastung aller Datenträger fest. Das Überschreiten dieser Schwelle führt zu einer Kritischen Warnmeldung.
 
-A value of zero will disable the critical threshold (including notifications).
+Ein Wert von Null deaktiviert die kritische Warnschwelle (einschließlich Benachrichtigungen).
 :end
 
 :disk_default_warning_temperature_help:
-*Warning disk temperature* sets the default warning threshold for all hard disks temperature. Exceeding this threshold will result in a warning notification.
+*Datenträgertemperatur Warnung* legt die Standard-Warnschwelle für die Temperatur aller Datenträger fest. Das Überschreiten dieser Schwelle führt zu einer Warnmeldung.
 
-A value of zero will disable the warning threshold (including notifications).
+Ein Wert von Null deaktiviert die Warnschwelle (einschließlich Benachrichtigungen).
 :end
 
 :disk_default_critical_temperature_help:
-*Critical disk temperature* sets the default critical threshold for all hard disks temperature. Exceeding this threshold will result in an alert notification.
+*Kritische Datenträgertemperatur* legt die kritische Standardschwelle für die Temperatur aller Festplatten fest. Das Überschreiten dieser Schwelle führt zu einer Kritischen Warnmeldung.
 
-A value of zero will disable the critical threshold (including notifications).
+Ein Wert von Null deaktiviert die kritische Warnschwelle (einschließlich Benachrichtigungen).
 :end
 
 :disk_default_smart_notification_help:
-SMART notifications are generated on either an increasing RAW value of the attribute, or a decreasing NORMALIZED value which reaches a predefined threshold set by the manufacturer.
+SMART-Benachrichtigungen werden entweder bei einem steigenden ROH-Wert des Attributs oder bei einem sinkenden NORMALISIERTEN Wert, der einen vordefinierten, vom Hersteller festgelegten Schwellenwert erreicht, generiert.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+In diesem Abschnitt werden die globalen Einstellungen für alle Datenträger festgelegt. Es ist möglich, Einstellungen für einzelne Platten vorzunehmen.
 :end
 
 :disk_default_smart_tolerance_help:
-A tolerance level may be given to prevent that small changes result in a notification. Setting a too high tolerance level may result in critical changes without a notification.
+Eine Toleranzgrenze kann angegeben werden, um zu verhindern, dass kleine Änderungen zu einer Benachrichtigung führen. Die Einstellung eines zu hohen Toleranzniveaus kann zu kritischen Änderungen ohne Benachrichtigung führen.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+In diesem Abschnitt werden die globalen Einstellungen für alle Datenträger festgelegt. Es ist möglich, Einstellungen für einzelne Platten vorzunehmen.
 :end
 
 :disk_default_smart_controller_help:
-By default automatic controller selection is done by smartctl to read the SMART information. Certain controllers however need specific settings for smartctl to work.
-Use this setting to select your controller type and fill-in the specific disk index and device name for your situation. Use the manufacturer's documentation to find the relevant information.
+Standardmäßig erfolgt die automatische Controllerauswahl durch smartctl, um die SMART-Informationen zu lesen. Bestimmte Controller benötigen jedoch spezifische Einstellungen, damit smartctl funktioniert.
+Diese Einstellung verwenden, um Ihren Controller-Typ auszuwählen und den spezifischen Datenträgerindex und Gerätenamen an Ihre Bedürfnisse anzupassen. Verwenden Sie die Dokumentation des Herstellers, um die relevanten Informationen zu finden.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+In diesem Abschnitt werden die globalen Einstellungen für alle Datenträger festgelegt. Es ist möglich, Einstellungen für einzelne Platten vorzunehmen.
 :end
 
 :disk_default_smart_attribute_help:
-The user can enable or disable notifications for the given SMART attributes. It is recommended to keep the default, which is ALL selected attributes,
-when certain attributes are not present on your hard disk or do not provide the correct information, these may be excluded.
-In addition custom SMART attributes can be entered to generate notifications. Be careful in this selection,
-it may cause an avalance of notifcations if inappropriate SMART attributes are chosen.
+Der Benutzer kann Benachrichtigungen für die gegebenen SMART-Attribute aktivieren oder deaktivieren. Es wird empfohlen, den Standard beizubehalten, d.h. ALLE ausgewählten Attribute,
+wenn bestimmte Attribute auf Ihrer Festplatte nicht vorhanden sind oder keine richtige Informationen liefern, können diese ausgeschlossen werden.
+Zusätzlich können benutzerdefinierte SMART-Attribute eingegeben werden, um Benachrichtigungen zu generieren.  Bitte bei der 
+Auswahl vorsichtig sein, dies kann zu einer Flut von Benachrichtigungen führen, wenn ungeeignete SMART-Attribute gewählt werden.
 
-This section is used to set the global settings for all disks. It is possible to adjust settings for individual disks.
+In diesem Abschnitt werden die globalen Einstellungen für alle Datenträger festgelegt. Es ist möglich, Einstellungen für einzelne Platten vorzunehmen.
 :end
 
 :docker_repositories_help:
-Use this field to add template repositories.
-Docker templates are used to facilitate the creation and re-creation of Docker containers.  Please setup one per line.
+Verwenden Sie dieses Feld, um benutzerdefinierte Vorlagen-Repositorys hinzuzufügen.
+Docker-Vorlagen werden verwendet, um die Erstellung und Neuerstellung von Docker-Containern zu erleichtern. Eine pro Zeile.
 
-For a list of popular community-supported repositories, visit here: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
+Eine Liste der von der Community unterstützten populären Repositorys finden Sie hier: <a href="http://lime-technology.com/forum/index.php?topic=37958.0" target="_blank">http://lime-technology.com/forum/index.php?topic=37958.0</a>
 :end
 
 :docker_enable_help:
-Before you can start the Docker service for the first time, please specify an image file for Docker to install to.
+Bevor Sie den Docker-Dienst zum ersten Mal starten können, geben Sie bitte eine Abbilddatei an, in welche die Docker installiert werden sollen.
 
-Once started, Docker will always automatically start after the array has been started.
+Einmal gestartet, wird Docker immer automatisch gestartet, nachdem das Array hochgefahren ist.
 :end
 
 :docker_vdisk_size_help:
-If the system needs to create a new docker image file, this is the default size to use specified in GB.
+Wenn das System eine neue Docker-Abbilddatei erstellen muss, ist dies die zu verwendende Standardgröße, in GB angegeben.
 
-To resize an existing image file, specify the new size here. Next time the Docker service is started the file (and file system) will increased to the new size (but never decreased).
+Um die Größe einer vorhandenen Imagedatei zu ändern, geben Sie hier die neue Größe an. Wenn der Docker-Dienst das nächste Mal gestartet wird, wird die Datei (und das Dateisystem) auf die neue Größe erweitert (verkleinern nicht möglich).
 :end
 
 :docker_vdisk_location_help:
-You must specify an image file for Docker. The system will automatically create this file when the Docker service is first started.
+Sie müssen eine Abbilddatei für Docker angeben. Das System legt diese Datei automatisch an, wenn der Docker-Dienst zum ersten Mal gestartet wird.
 
-The image file name must have the extension .img, If not the input is not accepted and marked red.
+Der Name der Abbilddatei muss die Erweiterung .img haben. Wenn nicht, wird die Eingabe nicht akzeptiert und rot markiert.
 
-It is recommended to create this image file outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+Es wird empfohlen, diese Abbilddatei außerhalb des Arrays, z.B. im Cache Pool, zu erstellen. Für beste Leistung werden SSD-Datenträger empfohlen.
 :end
 
 :docker_appdata_location_help:
-You can specify a folder to automatically generate and store subfolders containing configuration files for each Docker app (via the /config mapped volume).
+Sie können einen Ordner angeben, um automatisch Unterordner mit Konfigurationsdateien für jede Docker-Anwendung zu erzeugen und zu speichern (in dem im /config zugewiesene Volumen).
 
-The folder's path must end with a trailing slash (/) character. If not the input is not accepted and marked red.
+Der Pfad des Ordners muss mit einem abschließenden Schrägstrich (/) enden. Wenn nicht, wird die Eingabe nicht akzeptiert und rot markiert.
 
-It is recommended to create this folder outside the array, e.g. on the Cache pool. For best performance SSD devices are preferred.
+Es wird empfohlen, diese Abbilddatei außerhalb des Arrays, z.B. im Cache Pool, zu erstellen. Für beste Leistung werden SSD-Geräte empfohlen.
 
-Only used when adding new Docker apps. Editing existing Docker apps will not be affected by this setting.
+Wird nur beim Hinzufügen neuer Docker-Anwendungen verwendet. Die Bearbeitung bestehender Docker-Anwendungen wird von dieser Einstellung nicht beeinflusst.
 :end
 
 :docker_log_rotation_help:
-By default LOG rotation is disabled and will create a single LOG file of unlimited size.
+Standardmäßig ist die LOG-Rotation deaktiviert und erzeugt eine einzige LOG-Datei von unbegrenzter Größe.
 
-Enable LOG rotation to limit the size of the LOG file and specify the number of files to keep in the rotation scheme.
+Aktivieren Sie die LOG-Rotation, um die Größe der LOG-Datei zu begrenzen und die Anzahl der Dateien festzulegen, die im Rotationsschema beibehalten werden soll.
 :end
 
 :docker_log_file_size_help:
-Specifies the maximum LOG size. When exceeded LOG rotation will occur.
+Gibt die maximale LOG-Größe an. Bei Überschreitung erfolgt eine LOG-Rotation.
 :end
 
 :docker_log_file_number_help:
-Specifies the number of LOG files when LOG rotation is done.
+Gibt die Anzahl der LOG-Dateien an, bei der durchführung der LOG-Rotation.
 :end
 
 :docker_authoring_mode_help:
-If set to **Yes**, when creating/editing containers the interface will be present with some extra fields related to template authoring.
+Wenn **Ja**, werden der Schnittstelle beim Erstellen/Bearbeiten von Containern einige zusätzliche Felder für das Erstellen von Vorlagen hinzugefügt.
 :end
 
 :docker_custom_network_access_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+Ermöglicht die direkte Kommunikation zwischen dem Host und Containern über ein benutzerdefiniertes (macvlan)Netzwerk.<br>
+Dies ist standardmäßig deaktiviert.
 :end
 
 :docker_user_defined_network_help:
-User created networks are networks created by the user outside of the GUI.<br>
-By default user created networks are removed from Docker. This is done to prevent potential conflicts with the automatic generation of custom networks.
+Vom Benutzer erstellte Netzwerke sind Netzwerke, die vom Benutzer außerhalb der GUI erstellt wurden.<br>
+Standardmäßig werden vom Benutzer erstellte Netzwerke aus Docker entfernt. Dies geschieht, um potenzielle Konflikte mit der automatischen Generierung benutzerdefinierter Netzwerke zu verhindern.
 
-Change this setting to preserve user defined networks, but it is the responsibility of the user to ensure these entries work correctly and are conflict free.
+Ändern Sie diese Einstellung, um benutzerdefinierte Netzwerke zu aktivieren, es liegt in der Verantwortung des Benutzers, sicherzustellen, dass diese Einträge korrekt funktionieren und konfliktfrei sind.
 :end
 
 :docker_include_interface_vlan_ipv4_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+Einschließen (Standard) oder Ausschließen der oben genannten Schnittstellen oder VLANs als benutzerdefiniertes Netzwerk für Docker.
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+Geben Sie den Pool-Bereich innerhalb jedes zugewiesenen Subnetzes ein, der für DHCPv4-Zuweisungen durch Docker verwendet wird. zB. 192.168.1.128/25
 :end
 
 :docker_exclude_interface_vlan_ipv4_help:
@@ -1832,7 +1832,7 @@ Click on the counters to either acknowledge or view the unread notifications.
 :end
 
 :notifications_date_format_help:
-Select the desired date format which is used in the notifications archive. Recommended is YYYY-MM-DD, which makes the date/time column sortable in a sensible way.
+Wählen Sie das gewünschte Datumsformat das bei den Benachrichtigungen verwendet werden soll. Es wird empfohlen YYYY-MM-DD, da dies eine Sortierung nach Datum und Uhrzeit vereinfacht.
 :end
 
 :notifications_time_format_help:
@@ -1840,234 +1840,234 @@ Select the desired time format which is used in the notifications archive. Recom
 :end
 
 :notifications_display_position_help:
-Choose the position of where notifications appear on screen. Multiple notifications are stacked, bottom-to-top or top-to-bottom depending on the selected placement.
+Wählen Sie die Position an der die Benachrichtigung am Bildschirm angezeigt werden soll. Mehrere Benachrichtigungen werden gestapelt, von unten nach oben oder von oben nach unten je nach ausgewählter Position.
 :end
 
 :notifications_store_flash_help:
-By default notifications are stored on RAM disk, which will get lost upon system reboot.
-Notifications may be stored permanently on the flash drive under folder '/boot/config/plugins/dynamix' instead.
+Benachrichtigungen werden standardmäßig im RAM abgelegt, welche nach einem Neustart/Herunterfahren verloren gehen.
+Benachrichtigungen können stattdessen auch in dem Verzeichnis '/boot/config/plugins/dynamix' gespeichert werden.
 :end
 
 :notifications_system_help:
-By default the notifications system is disabled. Enable it here to start receiving notifications.
-The following sections give more options about which and what type of notifications will be sent.
+Das Benachrichtungssystem ist standardmäßig deaktiviert. Bitte hier aktivieren um Benachrichtigungen zu erhalten.
+Im folgenden Abschnitt finden Sie weiter Optionen welche und welche Art von Benachrichtigungen gesendet werden.
 :end
 
 :notifications_os_update_help:
-Start a periodic verification and notify the user when a new version of the Unraid OS system is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+Startet eine regelmäßige Prüfung ob eine Aktualisierung für Unraid OS verfügbar ist und benachrichtigt den Benutzer.
+Benutzen Sie die Auswahlfelder unterhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.
 :end
 
 :notifications_plugins_update_help:
-Start a periodic verification and notify the user when a new version of one or more of the installed plugins is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+Startet eine regelmäßige Prüfung ob Aktualisierungen für ein oder mehrere installierte Plugins verfügbar sind und benachrichtigt den Benutzer.
+Benutzen Sie die Auswahlfelder unterhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.
 :end
 
 :notifications_docker_update_help:
-Start a periodic verification and notify the user when a new version of one or more of the installed dockers is detected.
-Use the checkboxes below to select how notifications need to be given; by browser, by email and/or by custom agent.
+Startet eine regelmäßige Prüfung ob Aktualisierungen für einen oder mehrere installierte Docker verfügbar sind und benachrichtigt den Benutzer.
+Benutzen Sie die Auswahlfelder unterhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.
 :end
 
 :notifications_array_status_help:
-Start a periodic array health check (preventive maintenance) and notify the user the result of this check.
+Startet eine regelmäßigen Paritätsüberprüfung (vorbeugende Wartung) und benachrichtigt den Benutzer über das Ergebnis.
 :end
 
 :notifications_agent_selection_help:
-Use the checkboxes above to select what and how notifications need to be given; by browser, by email and/or by a service.<br>
-<b>Tip:</b> you can use custom notification agents; just add them to "/boot/config/plugins/dynamix/notification/agents" directory and check 'Agents'.
+Benutzen Sie die Auswahlfelder oberhalb um Festzulegen wie Sie Benachrichtigungen erhalten wollen; Browser, Mail und/oder von einem Dienst.<br>
+<b>Tip:</b> Sie können auch Benutzerdefinierte Dienste nutzen; Fügen Sie sie dem Verzeichnis "/boot/config/plugins/dynamix/notification/agents" hinzu und aktivieren 'Dienste'.
 :end
 
 :notifications_classification_help:
-Notifications are classified as:
+Arten der Benachichtigungen:
 
-*notice* - these are informative notifications and do not indicate a problem situation, e.g. a new version is available<br>
-*warning* - these are attentive notifications and may indicate future problems, e.g. a hard disk is hotter than usual<br>
-*alert* - these are serious notifications and require immediate attention, e.g. a failing hard disk<br>
+*Hinweis* - Informative Benachrichtigungen die keinen Fehler melden, zB: Neue Unraid Verison verfügbar<br>
+*Warnung* - Weisen auf eventuelle auftrende Fehler hin, zB: Ein Datenträger ist heiß<br>
+*Alarm* - Weisen auf schwerwiegende Fehler hin, zB: Einen defekten Datenträger<br>
 
 Choose for each classification how you want to be notified.
 :end
 
 :smtp_preset_service_help:
-Select a preset service to set the basic service settings.
+Wählen Sie eine Vorlage um die grundlegenden Einstellungen zu übernehmen.
 :end
 
 :smtp_email_address_help:
-Email address of your mail account. This address is used as sender of the notifications.
+E-Mail Adresse vom Absender. Diese Adresse wird zum senden der Benachrichtigungen versendet.
 :end
 
 :smtp_recipients_help:
-Recipients of status and error notifications. Specify one or more email addresses, separate multiple email addresses with a space.
+Empfänger der Status- und Fehlermeldungen. Eine oder mehrere Mailadressen eingeben, mehrere Mailadressen durch ein Leerzeichen trennen.
 :end
 
 :smtp_priority_help:
-Set email header with high importance, when there is a problem with unRaid.
+Definiert den E-Mail Header mit hoher Wichtigkeit falls ein Problem mit Unraid auftritt.
 :end
 
 :smtp_subject_prefix_help:
-Set a prefix for easy recognition of Unraid messages.
+Legen Sie eine Präfix fest um Unraid Nachrichten einfach zu erkennen.
 :end
 
 :smtp_mail_server_help:
-Specify the name of the email server. Use the preset service selection to have this filled-in automatically.
+Definiert den Namen des E-Mail Servers. Benutzen Sie die Vorlagen um diese automatisch auszufüllen.
 :end
 
 :smtp_mail_server_port_help:
-Specify the port of the email server. Use the preset service selection to have this filled-in automatically.
+Definiert den Port des E-Mail Servers. Benutzen Sie die Vorlagen um diese automatisch auszufüllen.
 :end
 
 :smtp_use_ssl_tls_help:
-Specifies whether to use SSL/TLS to talk to the SMTP server.
+Definiert ob SSL/TLS für die Kommunikation mit dem SMTP Server erforderlich ist.
 :end
 
 :smtp_use_starttls_help:
-Specifies whether to use STARTTLS before starting SSL negotiation - See RFC 2487.
+Definiert ob STARTTLS vor dem Starten der SSL Aushandlung verwendet werden soll - Siehe RFC 2487.
 :end
 
 :smtp_define_tls_cert_help:
-Select only when you have a certificate which required for communication.
+Nur Auswählen wenn ein Zertifikat für die Komminikation erforderlich ist.
 :end
 
 :smtp_tls_cert_location_help:
-The file name of an RSA certificate to use for TLS - as required.
+Der Dateiname vom RSA Zertifikat das bei Bedarf für TLS verwendet werden soll.
 :end
 
 :smtp_authentication_method_help:
-Select the correct authentication method for your email server. Use test to verify that access is working properly.
+Wählen Sie die Authentifizierungsmethode für Ihren E-Mail Server. Benutzen Sie Test um zu Prüfen ob ein Zugriff auf den E-Mail Server möglich ist.
 :end
 
 :smtp_username_password_help:
-Enter the username and password to login to your email account. Be aware that the password is stored unencrypted in the email configuration file.
+Bitte den Benutzernamen und das Passwort eingeben um sich bei Ihrem E-Mail Konto anzumelden. Bitte Beachten das das Passwort des E-Mail Kontos unverschlüsselt in der Konfigurationsdatei gespeichert wird.
 :end
 
 :plugin_install_help:
-To download and install a plugin, enter the plg file URL and click **Install**. A window will open
-that displays install progress. Do not close this window until install has completed. You may also specify
-the local file name of an extension.
+Um ein Plugin herunterzuladen und zu installieren, die URL der plg Datei eingeben und **Installieren** klicken.
+Ein neues Fenster zeigt den Installationsfortschritt an. Bitte das Fenster erst nach beendeter Installation
+schließen. Es ist auch möglich eine lokale Datei auszuwählen.
 :end
 
 :plugin_error_help:
-These plugins were not installed because of some kind of installation error.  You should delete these
-plugins and then **reboot** your server.*
+Diese Plugins wurde aufgrund eines Installationsfehlers nicht installiert. Bitte die Plugins löschen und
+den Server **neu starten**.*
 :end
 
 :plugin_stale_help:
-These plugins were not installed because newer code already exists.  It is safe to simply delete these.
+Diese Plugins wurden nicht installiert, da bereits neuerer Code vorhanden ist. Sie können das alte bedenkenlos löschen.
 :end
 
 :docker_client_general_help:
-Templates are a quicker way to setting up Docker Containers on your Unraid server.  There are two types of templates:
+Vorlagen sind ein schneller Weg Docker Container auf Ihrem Unraid Server zu installieren. Es gibt zwei Arten von Vrolagen:
 
-**Default templates**<br>
-When valid repositories are added to your Docker Repositories page, they will appear in a section on this drop down for you to choose (master categorized by author, then by application template).
-After selecting a default template, the page will populate with new information about the application in the Description field, and will typically provide instructions for how to setup the container.
-Select a default template when it is the first time you are configuring this application.
+**Standard Vorlagen**<br>
+Wenn gültige Repositorys zu der Docker Repositoris Seite hinzugefügt werden, erscheinen diese hier im Drop-Down Menü zur Auswahl (Nach Author und dann nach Anwendungsvorlage sortiert).
+Nach Auswahl einer Vorlage, zeigt die Seite Informationen zur Anwendung und zeigt eine Anleitung zur Installation des Containers.
+Wählen Sie eine Standardvorlage wenn Sie diese Anwendung zum ersten mal Konfigurieren.
 
-**User-defined templates**<br>
-Once you've added an application to your system through a Default template,
-the settings you specified are saved to your USB flash device to make it easy to rebuild your applications in the event an upgrade were to fail or if another issue occurred.
-To rebuild, simply select the previously loaded application from the User-defined list and all the settings for the container will appear populated from your previous setup.
-Clicking create will redownload the necessary files for the application and should restore you to a working state.
-To delete a User-defined template, select it from the list above and click the red X to the right of it.
+**Benutzer-Vorlagen**<br>
+Wenn Sie eine Anweundung mittels einer Standard Vorlage hinzugefügt haben,
+werden die angegebenen Einstellungen auf den USB Flash Speicher geschrieben um eine Neuinstallation im Fall eines Fehlers zu vereinfachen.
+Zur Neuinstallation, die bereits angelegte Anwendung aus der Benutzer-Vorlagen Liste auswählen und alle vorherigen Einstellungen werden automatisch ausgefüllt.
+Klick auf Erstellen lädt alle erforderlichen Dateien herunter und sollte der Container sollte wieder lauffähig sein.
+Um eine Benutzer-Vorlage zu löschen, auf das rote X rechts davon klicken.
 :end
 
 :docker_client_name_help:
-Give the container a name or leave it as default.
+Containername oder leer lassen für den Standardnamen.
 :end
 
 :docker_client_overview_help:
-A description for the application container.  Supports basic HTML mark-up.
+Beschreibung des Containers. Unterstütz standard HTML Markup Formatierung.
 :end
 
 :docker_client_repository_help:
-The repository for the application on the Docker Registry.  Format of authorname/appname.
-Optionally you can add a : after appname and request a specific version for the container image.
+Das Repository in der Docker Registry. Format Authorname/Anwendungsname.
+Optional kann ein : hinter dem Anwendungsnamen für eine spezifische Version hinzugefügt werden.
 :end
 
 :docker_client_support_thread_help:
-Link to a support thread on Lime-Technology's forum.
+Link zum Hilfe Thread im Lime-Technology Forum.
 :end
 
 :docker_client_project_page_help:
-Link to the project page (eg: www.plex.tv)
+Link zur Projekt Seite (zB: www.plex.tv)
 :end
 
 :docker_client_donation_text_help:
-Text to appear on Donation Links Within The Apps Tab
+Dieser Text wird im Abschnitt Apps unter Spenden angezeigt
 :end
 
 :docker_client_donation_link_help:
-Link to the donation page.  If using donation's, both the image and link must be set
+Link zur Spenden Seite.  Wenn Spenden benutzt werden muss das Symbol sowie der Link gesetzt sein
 :end
 
 :docker_client_hub_url_help:
-The path to the container's repository location on the Docker Hub.
+Der Pfad zum Containerepository auf Docker Hub.
 :end
 
 :docker_client_template_url_help:
-This URL is used to keep the template updated.
+Diese URL wird verwendet um die Vorlage aktuell zu halten.
 :end
 
 :docker_client_icon_url_help:
-Link to the icon image for your application (only displayed on dashboard if Show Dashboard apps under Display Settings is set to Icons).
+Link zum Anwendungs Symbol (wird nur im Dashboard angezeigt wenn Dashboard-Apps Symbole anzeigen unter den Anzeigeeinstellungen ausgewählt ist).
 :end
 
 :docker_client_webui_help:
-When you click on an application icon from the Docker Containers page, the WebUI option will link to the path in this field.
-Use [IP] to identify the IP of your host and [PORT:####] replacing the #'s for your port.
+Klick auf das Anwendungssymbol auf der Docker Container Seite verknüpft den WebUI Eintrag mit dem in diesem Feld angegeben Pfad.
+Benutzen Sie [IP] um die Host IP zu ermitteln und [PORT:####] um den Port zu setzen, statt #### den Port einsetzen.
 :end
 
 :docker_extra_parameters_help:
-If you wish to append additional commands to your Docker container at run-time, you can specify them here.<br>
-For all possible Docker run-time commands, see here: <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
+Zusätzliche Befehle die beim Containerstart ausgeführt werden sollen hier eingeben.<br>
+Für mögliche Docker start Befehle diesen Link besuchen: <a href="https://docs.docker.com/reference/run/" target="_blank">https://docs.docker.com/reference/run/</a>
 :end
 
 :docker_post_arguments_help:
-If you wish to append additional arguments AFTER the container definition, you can specify them here.
-The content of this field is container specific.
+Zusätzliche Argumente NACH der Containerdefinition hinzufügen hier eingeben.
+Der Inhalt ist Containerspezifisch.
 :end
 
 :docker_cpu_pinning_help:
-Checking a CPU core(s) will limit the container to run on the selected cores only. Selecting no cores lets the container run on all available cores (default)
+Wenn nur einer oder mehrere CPU Kern(e) ausgewählt wird hat der Container nur auf die/den gewählten Kern(e) zugriff. Wenn keine Zuweisung erfolgt hat der Container Zugriff auf alle verfügbaren Kerne (Standard)
 :end
 
 :docker_fixed_ip_help:
-If the Bridge type is selected, the application’s network access will be restricted to only communicating on the ports specified in the port mappings section.
-If the Host type is selected, the application will be given access to communicate using any port on the host that isn’t already mapped to another in-use application/service.
-Generally speaking, it is recommended to leave this setting to its default value as specified per application template.
+Falls der Netzwerkmodus Brücke gewählt wurde, ist die Netzwerkkommunikation der Anwendung nur auf die im Abschnitt Portzuordnung angegeben Ports beschränkt.
+Falls der Netzwerkmodus Host gewählt wurde, erhält die Anwendung Zugriff auf die jeweiligen Ports des Hosts, der nicht bereits von einer anderen Anwendung/Dienst belegt ist.
+Allgemein wird empfohlen den Standardwert der in der Vorlage ausgewählt ist nicht zu ändern.
 
-IMPORTANT NOTE:  If adjusting port mappings, do not modify the settings for the Container port as only the Host port can be adjusted.
+WICHTIGER HINWEIS:  Wenn die Ports geändert werden bitte beachten das nur die Host-Ports geändert werden können und die Container-Ports unveränderbar sind.
 :end
 
 :docker_privileged_help:
-For containers that require the use of host-device access directly or need full exposure to host capabilities, this option will need to be selected.
-For more information, see this link: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
+Muss für Container gewählt werden die direkten Zugriff auf das Hostgerät bzw. Hostfunktionen benötigen um richtig zu funktionieren.
+Für mehr Informationen bitte folgenden Link besuchen: <a href="https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities" target="_blank">https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities</a>
 :end
 
 ; sysdevs help - added May 18, 2020
 :sysdevs_iommu_groups_help:
-This displays a list of IOMMU groups available on your system along with the output of the `lspci` command for each IOMMU group.  The numeric identifiers are used to configure PCI pass-through.
+Listet alle IOMMU Gruppen die im System verfügbar sind auf, mittels `lspci` werden zugehörige Informatinen zu den IOMMU Gruppen angezeigt.  Die Identifikationszahlen werden zur Konfiguration von PCI Passthrough verwendet.
 
-Devices you select will be bound to the vfio-pci driver at boot, which makes them available for assignment to a virtual machine, and also prevents the Linux kernel from automatically binding them to any present host driver.
+Geräte die hier ausgewählt werden werden dem VIFO-PCI Treiber beim Booten zugeordnet, dies ermöglicht eine Zuordnung zu einer VM, und verbietet dem Kernel den Treiber automatisch auf dem Host System zu laden.
 
-**Note that selecting a device will bind not only the specified device(s), but *all* other devices in the same IOMMU group as well.**
+**Hinweis: Die Auswahl eines Geräts ordnet eventuell nicht nur dieses Gerät zu, sondern gilt für *alle* anderen Geräte in der IOMMU Gruppe in der sich das Gerät befindet.**
 
-&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;This symbol indicates the device is currently bound to the vfio-pci driver.
+&nbsp;<i class="fa fa-circle orb green-orb middle"></i>&nbsp;Dieses Symbol zeigt an das das Gerät aktuell dem VIFO-PCI Treiber zugeordner ist.
 
-&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;This symbol indicates the device supports FLR (Function Level Reset).
+&nbsp;<i class="fa fa-retweet grey-orb middle"></i>&nbsp;&nbsp;&nbsp;Dieses Symbol zeigt an das FLR (Function Level Reset) unterstützt wird.
 
-<input type="checkbox" value="" disabled>&nbsp;&nbsp;If a checkbox is greyed out it means the device is in use by Unraid and can not be passed through.
+<input type="checkbox" value="" disabled>&nbsp;&nbsp;Falls ein Auswahlfeld ausgegraut ist wir dieses Gerät von Unraid verwendet und kann somit nicht zur VM durchgereicht werden.
 :end
 
 :sysdevs_thread_pairings_help:
-This displays a list of CPU thread pairings.
+Zeigt eine Liste der CPU-Thread Gruppierungen an.
 :end
 
 :sysdevs_usb_devices_help:
-This displays the output of the `lsusb` command.  The numeric identifiers are used to configure PCI pass-through.
+Zeigt die Ausgabe von `lsusb` an.  Die Identifikationszahlen werden zur Konfiguration von PCI Passthrough verwendet.
 :end
 
 :sysdevs_scsi_devices_help:
-This displays the output of the `lsscsi` command.  The numeric identifiers are used to configure PCI pass-through.
+Zeigt die Ausgabe von `lsscsi` an. Die Identifikationszahlen werden zur Konfiguration von PCI Passthrough verwendet.
 
-Note that linux groups ATA, SATA and SAS devices with true SCSI devices.
+Hinweis: Linux gruppiert ATA, SATA und SAS Geräte mit SCSI Geräten.
 :end
