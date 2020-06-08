@@ -1541,97 +1541,97 @@ Different bonding modes are supported (see below), but some modes require proper
 :end
 
 :eth_bonding_mode_help:
-**Mode 0 (balance-rr)**<br>
-This mode transmits packets in a sequential order from the first available slave through the last.
-If two real interfaces are slaves in the bond and two packets arrive destined out of the bonded interface the first will be transmitted on the first slave and the second frame will be transmitted on the second slave.
-The third packet will be sent on the first and so on. This provides load balancing and fault tolerance.
+**Modus 0 (balance-rr)**<br>
+Dieser Modus überträgt Pakete in einer sequentiellen Reihenfolge vom ersten verfügbaren Slave bis zum letzten.
+Wenn zwei Schnittstellen im Bond zu den Slaves gehören und zwei Pakete aus der Bonded Schnittstelle kommen, wird das erste auf dem ersten Slave und der zweite Frame auf dem zweiten Slave übertragen. Das dritte Paket wird am ersten gesendet und so weiter.
+Dies bietet Lastausgleich und Fehlertoleranz.
 
-**Mode 1 (active-backup) - default**<br>
-This mode places one of the interfaces into a backup state and will only make it active if the link is lost by the active interface.
-Only one slave in the bond is active at an instance of time. A different slave becomes active only when the active slave fails.
-This mode provides fault tolerance.
+**Modus 1 (active-backup) - standard**<br>
+Dieser Modus versetzt eine der Schnittstellen in einen Ausfallsicherungsstatus und aktiviert sie nur, wenn die Verbindung durch die aktive Schnittstelle verloren geht.
+Es ist jeweils nur ein Slave im Bond aktiv. Ein anderer Slave wird erst aktiv, wenn der aktive Slave ausfällt.
+Dieser Modus bietet Fehlertoleranz.
 
-**Mode 2 (balance-xor)**<br>
-This mode transmits packets based on an XOR formula. Source MAC address is XOR'd with destination MAC address modula slave count.
-This selects the same slave for each destination MAC address and provides load balancing and fault tolerance.
+**Modus 2 (balance-xor)**<br>
+Dieser Modus überträgt Pakete basierend einer XOR-Formel. Die Quell-MAC-Adresse wird mit der Slave-Anzahl des Ziel-MAC-Adressmoduls XOR-verknüpft.
+Dies wählt für jede Ziel-MAC-Adresse denselben Slave aus und bietet Lastausgleich und Fehlertoleranz.
 
-**Mode 3 (broadcast)**<br>
-This mode transmits everything on all slave interfaces. This mode is least used (only for specific purpose) and provides only fault tolerance.
+**Modus 3 (broadcast)**<br>
+Dieser Modus überträgt alles auf allen Slave-Schnittstellen. Dieser Modus wird am wenigsten verwendet (nur für bestimmte Zwecke) und bietet nur Fehlertoleranz.
 
-**Mode 4 (802.3ad)**<br>
-This mode is known as *Dynamic Link Aggregation*. It creates aggregation groups that share the same speed and duplex settings.
-It requires a switch that supports IEEE 802.3ad dynamic link.
-Slave selection for outgoing traffic is done according to the transmit hash policy, which may be changed from the default simple XOR policy via the xmit_hash_policy option.
-Note that not all transmit policies may be 802.3ad compliant, particularly inregards to the packet mis-ordering requirements of section 43.2.4 of the 802.3ad standard.
-Different peer implementations will have varying tolerances for noncompliance.
+**Modus 4 (802.3ad)**<br>
+Dieser Modus wird als *Dynamic Link Aggregation* bezeichnet. Es werden Aggregationsgruppen erstellt, die dieselben Geschwindigkeits- und Duplexeinstellungen verwenden.
+Ein Switch der die dynamische IEEE 802.3ad-Verbindung unterstützt ist erforderlich.
+Die Slave-Auswahl für ausgehenden Datenverkehr erfolgt gemäß der Übertragungs-Hash-Richtlinie, die über die Option xmit_hash_policy von der Standard Einfachen-XOR-Richtlinie geändert werden kann.
+Beachten Sie dass möglicherweise nicht alle Übertragungsrichtlinien 802.3ad-kompatibel sind insbesondere im Hinblick auf die Anforderungen an die Paktanforderungen in Abschnitt 43.2.4 des 802.3ad-Standards.
+Unterschiedliche Implementierungen haben unterschiedliche Toleranzen für Nichteinhaltung.
 
-**Mode 5 (balance-tlb)**<br>
-This mode is called *Adaptive transmit load balancing*. The outgoing traffic is distributed according to the current load and queue on each slave interface.
-Incoming traffic is received by the current slave.
+**Modus 5 (balance-tlb)**<br>
+Dieser Modus wird als *Adaptiver Sendelastausgleich* bezeichnet. Der ausgehende Verkehr wird entsprechend der aktuellen Last und Warteschlange auf jeder Slave-Schnittstelle verteilt.
+Eingehender Verkehr wird vom aktuellen Slave empfangen.
 
-**Mode 6 (balance-alb)**<br>
-This mode is called *Adaptive load balancing*. This includes balance-tlb + receive load balancing (rlb) for IPV4 traffic.
-The receive load balancing is achieved by ARP negotiation.
-The bonding driver intercepts the ARP Replies sent by the server on their way out and overwrites the src hw address with the unique hw address of one of the slaves in the bond
-such that different clients use different hw addresses for the server.
+**Modus 6 (balance-alb)**<br>
+Dieser Modus wird als *Adaptiver Lastausgleich* bezeichnet. Dies beinhaltet balance-tlb + Receive Load Balancing (rlb) für IPV4-Verkehr.
+Der Empfangslastausgleich wird durch ARP-Aushandlung erreicht.
+Der Bindungstreiber fängt die vom Server auf dem Weg nach draußen gesendeten ARP-Antworten ab und überschreibt die src-hw-Adresse mit der eindeutigen hw-Adresse eines der Slaves im Bond
+sodass verschiedene Clients unterschiedliche hw-Adressen für den Server verwenden.
 
-*Mode 1 (active-backup) is the recommended setting. Other modes allow you to set up a specific environment, but may require proper switch support.
+*Modus 1 (active-backup) ist die empfohlene Einstellung. Other modes allow you to set up a specific environment, but may require proper switch support.
 Choosing a unsupported mode can result in a disrupted communication.*
 :end
 
 :eth_bonding_members_help:
-Select which interfaces are member of the *bonded* interface. By default eth0 is a member, while other interfaces are optional.
+Wählen Sie welche Schnittstellen zu den *Bonded* Schnittstellen gehören. Standardmäßig gehört eth0 zu den Bonded Schnittstellen, andere Schnittstellen sind optional.
 :end
 
 :eth_enable_bridging_help:
-Bridging is a feature which creates a virtual bridge and allows VMs and Docker containers to communicate directly with the physical Ethernet port.
-Both bonding and bridging can be combined to let VMs or containers communicate over a *bonded* interface.
+Bridged ist eine Funktion, die eine virtuelle Bridge erstellt und es VMs und Docker Containern ermöglicht direkt mit dem Ethernet-Port zu kommunizieren.
+Bonding und Bridging können kombiniert werden, damit VMs oder Container über eine *Bonded* Schnittstelle kommunizieren können.
 :end
 
 :eth_bridging_members_help:
-Select which interfaces are member of the *bridged* interface. By default eth0 is a member, while other interfaces are optional.
+Wählen Sie Welche Schnittstellen zu den *Bridged* Schnittstellen gehören. Standardmäßig gehört eth0 zu den Bridged Schnittstellen, andere Schnittstellen sind optional.
 :end
 
 :eth_network_protocol_help:
-Select which protocol(s) are used. By default IPv4 only is used.<br>
-When both IPv4 and IPv6 is selected, each protocol can be configured independently.
+Die zu verwendenden Protokolle auswählen. Standardmäßig wird IPv4 verwendet.<br>
+Wenn IPv4 und IPv6 gewählt wurden können beide Protokolle unabhängig von einander Konfiguriert werden.
 :end
 
 :eth_ipv4_address_assignment_help:
-The following settings are possible:
+Die folgenden Einstellungen sind möglich:
 
-*Automatic* - the server will attempt to obtain a IPv4 address from the local DHCP server<br>
-*Static* - the IPv4 address is manually set for this interface<br>
-*None* - no IPv4 address is assigned to the interface (only available for VLANs)
+*Automatisch* - Der Server versucht, eine IPv4-Adresse vom DHCP-Server oder vom Router Advertisement (RA) zu erhalten<br>
+*Statisch* - Die IPv4-Adresse wird für diese Schnittstelle manuell festgelegt<br>
+*Keine* - Der Schnittstelle ist keine IPv4-Adresse zugewiesen (nur für VLANs gültig)
 :end
 
 :eth_ipv4_address_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address and mask of the system.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv4-Adresse Ihres Servers an.
 :end
 
 :eth_ipv4_default_gateway_help:
-Greyed out when using automatic IP assignment. Otherwise specify here the IPv4 address of your router.
+Ausgegraut wenn die automatische IP-Zuweisung aktiv ist, andernfalls geben Sie hier die IPv4-Adresse Ihres Routers an.
 :end
 
 :eth_ipv4_dns_server_assignment_help:
-If set to *Automatic* the server will use IPv4 DNS server(s) returned by the local automatic assignment.<br>
-If set to *Static* you may enter your own list.
+Bei *Automatisch* verwendet der Server die IPv4-DNS-Server die vom DHCP Server zurückgegeben werden.<br>
+Bei *Statisch* können Sie Ihre eigne Liste von DNS-Server eingeben.
 
-This is useful in Active Directory configurations where you need to set the first DNS Server entry to the IP address of your AD Domain server.
+Dies ist bei Active Directory-Konfigurationen hilfreich, in denen der erste DNS-Servereintrag auf die IP-Adresse Ihres AD Domain-Servers festgelegt werden muss.
 :end
 
 :eth_ipv4_dns_server_help:
-This is the primary IPv4 DNS server to use. Enter a IPv4 address.
+Gibt den primären IPv4-DNS-Server an. IPv4-Adresse eingeben.
 
-Note: for *Active Directory* you **must** ensure this is set to the IP address of your AD Domain server.
+Hinweis: Wenn *Active Directory* verwendet wird **muss** dies die Adresse des AD Domain Server sein.
 :end
 
 :eth_ipv4_dns_server2_help:
-This is the IPv4 DNS server to use when IPv4 DNS server 1 is down.
+Gibt den IPv4-DNS-Server an der verwendet werden soll wenn der IPv4-DNS-Server 1 nicht verfügbar ist.
 :end
 
 :eth_ipv4_dns_server3_help:
-This is the IPv4 DNS server to use when IPv4 DNS servers 1 and 2 are both down.
+Gibt den IPv4-DNS-Server an der verwendet werden soll wenn der IPv4-DNS-Server 1 und 2 nicht verfügbar sind.
 :end
 
 :eth_ipv6_address_assignment_help:
@@ -1655,7 +1655,7 @@ Aktivieren oder Deaktiveren Sie die Generierung einer zufälligen IPv6 Schnittst
 :end
 
 :eth_ipv6_dns_server_assignment_help:
-Bei *Automatisch* verwendet der Server die IPv6-DNS-Server die von der automatischen Zuweisung angegeben werden.<br>
+Bei *Automatisch* verwendet der Server die IPv6-DNS-Server die vom DHCP Server zurückgegeben werden.<br>
 Bei *Statisch* können Sie Ihre eigne Liste von DNS-Server eingeben.
 :end
 
