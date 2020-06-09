@@ -1018,309 +1018,308 @@ Geben Sie den Pool-Bereich innerhalb jedes zugewiesenen Subnetzes ein, der für 
 :end
 
 :docker_exclude_interface_vlan_ipv4_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+Schließt Benutzerdefiniertes Netzwerk für Docker ein oder aus (standard).
 
-Enter the pool range within each allocated subnet which is used for DHCPv4 assignments by Docker. E.g. 192.168.1.128/25
+Geben Sie den Poolbereich in jedem zugewiesenen Subnetz ein, das von Docker für DHCPv4-Zuweisungen verwendet wird.  zB: 192.168.1.128/25
 :end
 
 :docker_include_interface_vlan_ipv6_help:
-Include (default) or exclude the above interfaces or VLANs as custom network for Docker.
+Schließt Benutzerdefinierte Schnittstellen und VLANs für Docker ein (standard) oder aus.
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+Geben Sie den Poolbereich in jedem zugewiesenen Subnetz ein, das von Docker für DHCPv6-Zuweisungen verwendet wird.  zB: 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_exclude_interface_vlan_ipv6_help:
-Include or exclude (default) the above interfaces or VLANs as custom network for Docker.
+Schließt Benutzerdefinierte Schnittstellen und VLANs für Docker ein oder aus (standard).
 
-Enter the pool range within each allocated subnet which is used for DHCPv6 assignments by Docker. E.g. 2a02:abcd:9ef5:100:1::/72
+Geben Sie den Poolbereich in jedem zugewiesenen Subnetz ein, das von Docker für DHCPv6-Zuweisungen verwendet wird.  zB: 2a02:abcd:9ef5:100:1::/72
 :end
 
 :docker_version_help:
-This is the active Docker version.
+Dies ist die Aktuell verwendete Docker Version.
 :end
 
 :docker_vdisk_location_active_help:
-This is the location of the Docker image.
+Dies ist der Speicherort des Docker Abbilds.
 :end
 
 :docker_appdata_location_active_help:
-This is the storage location for Docker containers.
+Dies ist der Speicherort der Benutzerdateien für Docker.
 :end
 
 :docker_log_rotation_active_help:
-By default a single unlimited LOG file is created. Otherwise LOG file size and number of files are limited when LOG rotation is enabled.
+Standardmäßig wird eine Protokolldatei ohne Größenbegrenzung erstellt. Falls die Protokoll Rotation aktiv ist wird die Anzahl und die Größe der Protokolldatei begrenzt.
 :end
 
 :docker_custom_network_active_help:
-Allows direct communication between the host and containers using a custom (macvlan) network.<br>
-By default this is prohibited.
+Ermöglicht die direkte Kommunikation zwischen dem Host und den Containern über ein benutzerdefiniertes (Macvlan-) Netzwerk.<br>
+Standardmäßig ist dies verboten.
 :end
 
 :docker_user_defined_network_active_help:
-Shows whether networks created outside of the GUI are removed or preserved for Docker. When preserved *user defined networks* become available in the *Network type* dropdown list of containers.
+Zeigt an ob Netzwerke die außerhalb der GUI für Docker verwendet werden oder nicht. Wenn diese verwendet werden wird *Benutzerdefinierte Netzwerke* im Drop-Down *Netzwerk Typ* verfügbar.
 :end
 
 :docker_scrub_help:
-**Scrub** runs the *btrfs scrub* program to check file system integrity.
+**Scrub** führt den Befehl *btrfs scrub* aus um das Dateisystem zu überprüfen.
 
-If repair is needed you should check the *Correct file system errors* and run a second Scrub pass; this will permit *btrfs scrub* to fix the file system.
+Wenn eine Reparatur erforderlich ist, die Option *Dateisystemfehler korrigieren* auswählen und einen zweiten Scrub-Durchlauf starten. Dies ermöglicht *btrfs scrub* das Dateisystem zu reparieren.
 :end
 
 :docker_cancel_help:
-**Cancel** will cancel the Scrub operation in progress.
+**Abbrechen** bricht den laufenden Scrub-Vorgang ab.
 :end
 
 :id_server_name_help:
-The network identity of your server.  Also known as *hostname* or *short hostname*. Windows networking
-refers to this as the *NetBIOS name* and must be 15 characters or less in length.
-Use only alphanumeric characters (that is, "A-Z", "a-z", and "0-9"), dashes ("-"), and dots (".");
-and, the first and last characters must be alphanumeric.
+Die Netzwerkidentität Ihres Servers. Auch bekannt als *Hostname* oder *kurzer Hostname*. Ein Windows-Netzwerk
+bezeichnet dies als *NetBIOS-Namen* und darf maximal 15 Zeichen lang sein.
+Verwenden Sie nur alphanumerische Zeichen (dh: "A-Z", "a-z" und "0-9"), Bindestriche ("-") und Punkte ("."),
+das erste und das letzte Zeichen müssen alphanumerisch sein.
 :end
 
 :id_description_help:
-This is a text field that is seen next to a server when listed within Network or File Explorer
-(Windows), or Finder (macOS).
+Wird als Textfeld neben einem Server im Netzwerk-/Dateiexplorer (Windows) oder
+im Finder (macOS) angezeigt.
 :end
 
 :id_model_help:
-This is the server model number.
+Zeigt die Servermodellnummer an.
 :end
 
 :mgmt_start_page_help:
-Select the page which is opened first when entering the GUI. By default the *Main* page is selected.
+Wählt die Seite aus, die beim Aufrufen der GUI geöffnet wird. Standardmäßig ist die Seite *Main* ausgewählt.
 :end
 
 :mgmt_use_telnet_help:
-By default TELNET access is enabled. TELNET is an insecure type of CLI access however,
-and it is highly recommended to use SSH access instead and disable TELNET access.
+Standardmäßig ist der TELNET-Zugriff aktiviert. TELNET ist jedoch eine unsichere Art des Kommandozeilenzugriffs
+es wird empfohlen, stattdessen den SSH-Zugriff zu verwenden und den TELNET-Zugriff zu deaktivieren.
 :end
 
 :mgmt_telnet_port_help:
-Enter the TELNET port, default port is 23.
+Geben Sie den TELNET-Port ein, der Standardport ist 23.
 :end
 
 :mgmt_use_ssh_help:
-SSH is enabled by default and offers a secure way of CLI access. Upon system startup SSH keys are automatically generated
-if not yet existing, and stored on the flash device in the folder */config/ssh*.
+SSH ist standardmäßig aktiviert und bietet eine sichere Art des Kommandozeilenzugriffs. Falls am System keine SSH
+Schlüssel existieren werden diese beim Starten des Servers generiert und in */config/ssh* gespeichert.
 :end
 
 :mgmt_ssh_port_help:
-Enter the SSH port, default port is 22.
+Geben Sie den SSH-Port ein, der Standardport ist 22.
 :end
 
 :mgmt_use_upnp_help:
-Enable (default) or disable the UPnP function on the server. This function allows automatic forwarding of ports on the router, only applicable when UPnP is enabled on the router itself.
+Aktivieren (standard) oder deaktivieren Sie die UPnP-Funktion auf dem Server. Diese Funktion ermöglicht die automatische Weiterleitung von Ports am Router. Dies funktioniert nur, wenn UPnP am Router selbst die Funktion aktiviert ist.
 :end
 
 :mgmt_use_ssl_tls_help:
-Determines how the webGUI responds to HTTP and/or HTTPS protocol.
+Legt fest, wie das Webinterface auf HTTP und/oder HTTPS Anfragen reagiert.
 
-Select **No** to disable HTTPS
+Bei **Nein** ist HTTPS deaktiviert
 
-Select **Yes** to enable HTTPS and redirect HTTP to HTTPS. If a Let's Encrypt SSL certificate has not
-been provisioned, then an automatically generated self-signed SSL certificate will be used.
+Bei **Ja** wird HTTPS aktiviert und leitet jeglichen HTTP Verkehr zu HTTPS um. Wenn kein Let's Encrypt SSL-
+Zertifikat bereitgestellt wurde wird ein selbstsigniertes SSL-Zertifikt erstellt und verwendet.
 
-Select **Auto** if you are using or plan to use a Let's Encrypt SSL certificate provisioned
-by Lime Technology. Before the certificate is provisioned, the webGUI remains
-in http-mode. After provisioning, the webGUI automatically switches to https-mode. In addition
-two background processes are enabled:
+Bei **Auto** wird ein von Lime Technology bereitgestelltes Let's Encrypt Zertifikat verwendet
+Bis das Zertifikit ausgestellt wurde bleibt das Webinterface im HTTP Modus, wenn das Zertifikat
+ausgestellt wurde wechselt das Webinterface zum HTTPS Modus. Zusätzlich werden zwei Prozesse im
+Hintergrund aktiviert und ausgeführt:
 
-- *updatedns* - This starts 30 seconds after server reboot has completed and contacts the Lime Technology
-DNS service to register the servers local IP address. Thereafter it wakes up every 10 minutes in case
-the local IP address has changed again.
+- *updatedns* - Startet 30 Sekunden nach dem Serverstart und verbindet sich mit dem Lime Technology
+DNS Dienst um die IP Adresse des Servers zu registrieren. Danach wird dieser Dienst in Abständen von 10 Minuten
+ausgeführt um zu Prüfen ob sich die IP Adresse geändert hat und ggf. zu Aktualisieren.
 
-- *renewcert* - This starts 60 seconds after server reboot has completed and contacts the Lime Technology
-certificate renewal service to determine if your Let's Encrypt SSL certificate needs to be renewed.
-Thereafter it wakes up every 24 hours. If within 30 days of expiration, a new certificate is automatically
-provisioned and downloaded to your server.
+- *renewcert* - Startet 60 Sekunden nach dem Serverstart und verbindet sich mit dem Lime Technology
+Zertifikats erneuerungs Dienst und Prüft ob das Let's Encrypt SSL noch gültig ist und erneuert es wenn nötig.
+Danach wir dieser Dienst in Abständen von 24 Stunden ausgeführt. 30 Tagen vor Ablauf des Zertifikats wird
+ein neues Zertifikat beantragt und auf den Server heruntergeladen und installiert.
 
-Note: After provisioning a Let's Encrypt SSL certificate you may turn off the *updatedns* and *newcert*
-background processes by changing this field to **Yes**.
+Hinweis: Nach ausstellung des Let's Encrypt SSL Zertifikates können Sie *updatedns* und *newcert* durch 
+ändern dieses Feldes zu **Ja** deaktivieren.
 
-**nginx certificate handling details**
+**Informationen zur Handhabung des nginx Zertifikats**
 
-The nginx startup script looks for a SSL certificate on the USB boot flash in this order:<br>
+Das Nginx-Startskript sucht in folgender Reihenfolge nach einem SSL-Zertifikat auf dem USB Flash Bootgerät:<br>
 `config/ssl/certs/certificate_bundle.pem`<br>
 `config/ssl/certs/<server-name>_unraid_bundle.pem`
 
-If neither file exists, a self-signed SSL certificate is automatically created and stored in<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem`<br>
+Wenn keine der Dateien vorhanden ist, wird automatisch ein selbstsigniertes SSL-Zertifikat erstellt und in<br>
+`config/ssl/certs/<server-name>_unraid_bundle.pem` gespeichert<br>
 
-Provisioning a Let's Encrypt certificate writes the certificate to<br>
-`config/ssl/certs/certificate_bundle.pem`<br>
+Durch das Bereitstellen eines Let's Encrypt-Zertifikats wird das Zertifikat in<br>
+`config/ssl/certs/certificate_bundle.pem` gespeichert<br>
 
-**nginx stapling support**
+**nginx Stapling Unterstützung**
 
-Whether nginx enables OCSP Staping is determined by which certificate is in use:<br>
-`config/ssl/certs/certificate_bundle.pem` => Yes<br>
-`config/ssl/certs/<server-name>_unraid_bundle.pem` => No
+Ob OCSP Staping verfügbar ist hängt von dem verwendetem Zertifikat ab:<br>
+`config/ssl/certs/certificate_bundle.pem` => Ja<br>
+`config/ssl/certs/<server-name>_unraid_bundle.pem` => Nein
 :end
 
 :mgmt_http_port_help:
-Enter the HTTP port, default port is 80.
+Geben Sie den HTTP Port ein, der Standardport ist 80.
 :end
 
 :mgmt_https_port_help:
-Enter the HTTPS port, default port is 443.
+Geben Sie den HTTPS Port ein, der Standardport ist 443.
 :end
 
 :mgmt_local_tld_help:
-Enter your local Top Level Domain. May be blank.
+Geben Sie Ihre Top Level Domain an. Darf leer sein.
 :end
 
 :mgmt_certificate_expiration_help:
-**Provision** may be used to allocate a *free* SSL Certficiate from [Let's Encrypt](https://letsencrypt.org/) and
-then upload to your server. Note: We **highly** recommend using a static IP address in this case.
+**Bereitstellen** wird verwendet um ein *kostenloses* SSL Zertifikat von [Let's Encrypt](https://letsencrypt.org/)
+bereitzustellen und hochzuladen. Hinweis: Es wird **dringend** empfohlen eine Statische IP Adresse zu verwenden.
 
-**Update DNS** may be used to manually initiate updating the DNS A-record of your server FQDN on unraid.net. Note
-that DNS propagation change could take anywhere from 1 minute to several hours (we set TTL to 60 seconds).
+**DNS Update** wird verwendet um den DNS A-Eintrag Ihres Server-FQDN auf unraid.net manuell zu aktualisieren.
+Hinweis: Die änderung der DNS-Aktualisierung kann zwischen Minuten und Stunden dauern (unser TTL ist auf 60 Sekunden eingestellt).
 
-Note: **Provision** may fail if your router or upstream DNS server has
-[DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) enabled. DNS rebinding
-protection prevents DNS from resolving a private IP network range. DNS rebinding protection is meant as
-a security feature on a local LAN which includes legacy devices with buggy/insecure "web" interfaces.
+Hinweis: **Bereitstellen** funktioniert nicht wenn auf Ihrem Router oder Upstream-DNS-Server folgende Funktionen aktiv sind:
+[DNS rebinding protection](https://en.wikipedia.org/wiki/DNS_rebinding) DNS rebinding
+protection verbietet dass DNS einen privaten Netzwerkbereich auflöst. DNS rebinding protection wird vor allem
+als Sicherheitsfeature für ältere Geräte im LAN verwendet die fehlerhaft/unsichere "web" Schnittstellen verbaut haben.
 
-One source of DNS rebinding protection could be your ISP DNS server. In this case the problem may be solved by
-switching to a different DNS server such as Google's public DNS.
+Ihr ISP-DNS Anbieter hat womöglich DNS rebinding protection aktiviert. In diesem Fall kann durch wechseln auf
+einen öffentlichen DNS-Servers wie zB von Google das Problem umgangen werden.
 
-More commonly, DNS rebinding protection could be enabled in your router. Most consumer routers do not implement DNS
-rebinding protection; but, if they do, a configuration setting should be available to turn it off.
+Normalerweise kann DNS rebinding protection im Router aktiviert werden. Die meisten Handelsüblichen Router
+implementieren keine DNS rebinding protection; wenn Sie die Option in Ihrem Router haben, bitte deaktivieren.
 
-Higher end routers usually do enable DNS rebinding protection however. Typically there are ways of turning it off
-entirely or selectively based on domain. Examples:
+High-End Router haben die DNS rebinding protection standarmäßig aktiviert. Im Normalfall kann diese Funktion
+aber komplett ausgeschaltet werden oder basieren auf einer Domäne ausgenommen werden. Beispiele:
 
-**DD-WRT:** If you are using "dnsmasq" with DNS rebinding protection enabled, you can add this line to your router
-configuration file:
+**DD-WRT:** Wenn Sie "dnsmasq" mit DNS rebinding protection verwenden, können Sie folgende Zeile zu Ihrer
+Konfigurationsdatei hinzufügen:
 
 `rebind-domain-ok=/unraid.net/`
 
-**pfSense:** If you are using pfSense internal DNS resolver service, you can add these Custom Option lines:
+**pfSense:** Wenn Sie den internen pfSense DNS-Auflösungs Dienst verwenden, können Sie folgende Zeilen hinzufügen:
 
 `server:`<br>
 `private-domain: "unraid.net"`
 
-**Ubiquiti USG router:** you can add this configuration line:
+**Ubiquiti USG Router:** können Sie diese Zeile hinzufügen:
 
 `set service dns forwarding options rebind-domain-ok=/unraid.net/`
 
-**OpenDNS:** Go to Settings -> Security and *remove* the checkbox next to
- "Suspicious Responses - Block internal IP addresses". It is an all-or-nothing setting.
+**OpenDNS:** Einstellungen -> Sicherheit und *entfernen* Sie das Auswahlfeld
+ "Verdächtige Antworten - Blockiere Interne IP Adressesn. Entweder alles Blocken oder Nichts.
 
-When all else fails, you can create an entry in your PC's *hosts* file to override external DNS and
-directly resolve your servers unraid.net FQDN to its local IP address.
+Wenn nichts davon funktioniert, können Sie auf Ihrem PC die *hosts* Datei bearbeite um externe DNS-Anfragen zu überschreiben und direkt Aufzulösen, setzen Sie die unraid.net FQDN zu der lokale IP Adresse von Ihrem Server.
 :end
 
 :ftp_server_help:
-Enable or disable the FTP server daemon. By default the FTP server is enabled.
-This setting is not saved, i.e. upon system reboot it will revert to its default setting.
+Aktivieren oder deaktivieren Sie den FTP Hintergrunddienst. Standardmäßig ist der FTP Server aktiviert.
+Diese Einstellung wird nicht dauerhaft gespeichert und wird zB bei einem Neustart auf den Standardwer zurückgesetzt.
 :end
 
 :ftp_users_help:
-Enter the user names (separated by spaces) permitted to access the server using FTP.
-To disallow any user access, clear this setting.
+Geben Sie die Benutzernamen ein die auf den FTP Server zugreifen dürfen (durch Leerzeichen getrennt).
+Um alle Benutzer zu sperren bitte das Feld leer lassen.
 
-**Note:** do not enter user name `root` since this may cause problems in the future.
+**Hinweis:** den Benutzer `root` bitte nicht hinzufügen um Probleme zu vermeiden.
 :end
 
 :ftp_overview_help:
-### Overview
+### Übersicht
 
-Unraid includes the popular `vsftpd` FTP server.  The configuration of `vsftp` is currently very
-simple: **All** user names entered above are permitted to access the server via FTP and will have
-*full read/write/delete access* to the entire server, so use with caution.
+Unraid enthätlt den beliebten `vsftpd` FTP Server.  Die Konfiguration von `vsftp` ist aktuell sehr einfach:
+**Alle** oben eingegebenen Benutzernamen dürfen auf den FTP Server zugreifen und haben
+*follen lese/schreib/lösch Zugriff* zum gesamten Server, daher bitte mit Vorsicht benutzen.
 :end
 
 :smb_enable_help:
-Select 'Yes (Workgroup)' to enable SMB (Windows Networking) protocol support. This
-also enables Windows host discovery.
+Wenn 'Ja (Arbeitsgruppe)' wird das SMB Protokoll (Windows Networking) aktiviert. Dies
+Aktiviert auch die Windows-Hosterkennung.
 
-Select 'Yes (Active Directory)' to enable Active Directory integration.
+Wenn 'Ja (Active Directory)' wird die Active Directory Integration aktiviert.
 :end
 
 :smb_hide_files_help:
-If set to 'Yes' then files starting with a '.' (dot) will appear as *hidden files* and normally
-will not appear in Windows folder lists unless you have "Show hidden files, folders, and drives" enabled
-in Windows Folder Options.
+Wenn 'Ja' werden alle Dateien mit anfänglichem '.' (Punkt) als *versteckte Dateien* angezeigt und werden
+normalerweise in Windows nicht angezeigt, es sei denn Sie haben "Versteckte Dateien- und Ordner anzeigen"
+in den Windows Ordneransichtseinstellungen aktiviert.
 
-If set to 'No' then dot files will appear in folder lists the same as any other file.
+Wenn 'Nein' werden Dateien mit anfänglichem Punkt, genau wie andere Dateien, in der Ordneransicht angezeigt.
 :end
 
 :smb_enhanced_macos_help:
-When set to 'Yes' provides enhanced compatibility with Apple SMB clients, resulting, for example, in faster
-Finder browsing, and ability to export Time Machine shares.  This may cause some issues with Windows clients, however.
-Please also refer to the [VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit).
+Wenn 'Ja' wird die Kompatibilität mit Apple SMB verbessert, zeigt sich zum Beispiel wenn die Freigabe im Finder
+durchsucht wird, und der funktion Time Machine Freigaben zu exportieren. Kann zu Problemen mit Windows führen.
+Für weiter Informationen bitte [VFS_FRUIT MAN PAGE](https://www.mankier.com/8/vfs_fruit) besuchen.
 :end
 
 :smb_enable_netbios_help:
-Select 'Yes' to enable NetBIOS.  If enabled, SMBv1 protocol will also be recognized.  If disabled,
-clients must use SMBv2 or higher.
+Wenn 'Ja' wird NetBIOS aktiviert. Wenn aktiviert, wird auch das SMBv1 Protokoll erkannt. Wenn deaktiviert,
+müssen Clienten SMBv2 oder höher Unterstützen.
 :end
 
 :smb_enable_wsd_help:
-Select 'Yes' to enable WSD (WS-Discovery).  The only reason to turn this off is when you are running an
-old LAN setup based on SMBv1.
+Wenn 'Ja' wird WSD (WS-Discovery) aktiviert. Sollte nur deaktiviert werden wenn sie ein LAN Netzwerk basierend
+auf dem SMBv1 Protokoll verwenden.
 :end
 
 :smb_wsd_options_help:
-This is a command line options string passed to the WSD daemon upon startup. Leave this field blank unless
-instructed by support to put something here.
+Wird beim Starten des WSD Hintergrundienstes zu den Startoptionen hinzugefügt. Dieses Feld bitte leer lassen außer
+Sie wurden vom Support angewiesen dieses Feld zu befüllen.
 :end
 
 :smb_extra_conf_help:
-Use this page to make changes to your `smb-extra.conf` file.  Samba will need
-to be restarted in order for changes to take effect.
+Auf dieser Seite können Sie Änderungen an der Datei `smb-extra.conf` druchführen.  Samba muss neu gestartet
+werden um die Änderungen zu Übernehmen.
 :end
 
 :smb_extra_button_help:
-Click the **Apply** button to commit the current edits.  Click **Reset** to
-undo any changes you make (before Saving). Click **Done** to exit this page.
+Klick auf **Übernehmen** übernimmt die durchgeführten Änderungen. Klick auf **Reset** setzt die durchgeführten
+Änderungen zurück (vor dem Speichern). Klick auf **Fertig** um diese Seite zu verlassen.
 :end
 
 :smb_workgroup_help:
-Enter your local network Workgroup name. Usually this is "WORKGROUP".
+Legt den lokalen Arbeitsgruppennamen fest. Normalerweise "ARBEITSGRUPPE".
 :end
 
 :smb_local_master_help:
-If set to 'Yes' then the server will fully participate in browser elections, and in the absense
-of other servers, will usually become the local Master Browser.
+Wenn 'Ja' nimt der Server an der Wahl zum Lokalen Master teil, wenn keine anderen Server verfügbar
+sind wird dieser Server zum Lokalen Master und sendet Updates an die Clienten.
 :end
 
 :nfs_enable_help:
-Select 'Yes' to enable the NFS protocol.
+Wenn 'Ja wird das NFS Protokoll aktiviert.
 :end
 
 :nfs_tunable_fuse_remember_help:
-When NFS is enabled, this Tunable may be used to alleviate or solve instances of "NFS Stale File Handles"
-you might encounter with your NFS client.
+Wenn NFS aktiviert ist, kann Tunable verwendet werden um "NFS Stale File Handles" zu verringen oder zu lösen
+die mit dem NFS Clienten auftreten können.
 
-In essence, (fuse_remember) tells an internal subsystem (named "fuse") how long to "remember" or "cache"
-file and directory information associated with user shares.  When an NFS client attempts to access a file
-(or directory) on the server, and that file (or directory) name is not cached, then you could encounter
-"stale file handle".
+Im Wesentlichen teilt (fuse_remember) einem internen Subsystem (genannt "fuse") wie lange Informationen zu
+Freigaben "gespeicherte" oder "zwischengespeicherte" werden sollen. Wenn ein NFS Client versuchet auf eine Datei
+(oder Verzeichnis) am Server zuzugreifen und der Datei- (oder Verzeichnis-) Name nicht zwischengespeichert ist
+kann es zu einem "stale file handle" führen.
 
-The numeric value of this tunable is the number of seconds to cache file/directory name entries,
-where the default value of 330 indicates 5 1/2 minutes.  There are two special values you may also set
-this to:
+Der Numerische Wert von Tunable bestimmt die Zeit in Sekunden wie lange der Datei-/Verzeichnisname
+zwischengespeichert soll, der Standardwert 330 bedeuted 5 1/2 Minuten. Es gibt außerdem zwei weitere vordefinierte 
+Werte die festgelegt werden können:
 
-* 0 which means, do not cache file/directory names at all, and
-* -1 which means cache file/directory names forever (or until array is stopped)
+* 0 speichert keine Datei-/Verzeichnisnamen, und
+* -1 die Datei-/Verzeichnisnamen werden für immer zwischengespeichert (bis das Array gestoppt wird)
 
-A value of 0 would be appropriate if you are enabling NFS but only plan to use it for disk shares,
-not user shares.
+Ein Wert von 0 wird ist Sinnvoll wenn die NFS Freigabe zum Freigeben von Datenträgern benutzt
+wird und nicht für Benutzer Freigaben benutzt wird.
 
-A value of -1 would be appropriate if no other timeout seems to solve the "stale file handle" on
-your client.  Be aware that setting a value of -1 will cause the memory footprint to grow by approximately
-108 bytes per file/directory name cached.  Depending how much RAM is installed in your server and how many
-files/directories you access via NFS this may or may not lead to out-of-memory conditions.
+Ein Wert von -1 ist Sinnvoll wenn bei keinem anderen Wert das "stale file handle" vermiden werden kann auf dem
+NFS Client. Bitte unbedingt beachten das der Wert -1 pro Datei-/Verzeichnisnamen ca. 108 bytes Arbeitsspeicher
+zum Zwischenspeichern benötigt. Abhängig vom installierten Arbeitsspeicher und den Datei-/Verzeichnisnamen
+die Sie mittels NFS aufrufen kann dies unter Umständen eventuell zu keinem freien Arbeitsspeicher führen.
 :end
 
 :shares_enable_disk_help:
-If set to No, disk shares are unconditionally not exported.
+Wenn *Nein* wird keine Datenträgerfreigabe exportiert.
 
-If set to Yes, disk shares may be exported.  **WARNING:** Do not copy data from a disk share to a user share
-unless you *know* what you are doing.  This may result in the loss of data and is not supported.
+Wenn *Ja* werden Datenträgerfreigaben exportiert. **WARNUNG:** Kopieren Sie keine Daten von einer Datenträgerfreigabe auf eine Benutzerfreigabe es sei denn, Sie *wissen* was Sie tun.
+Dies Kann zu Datenverlust führen und wir nicht unterstützt.
 
-If set to Auto, only disk shares not participating in User Shares may be exported.
+Wenn *Auto* werden nur Datenträgerfreigaben exportiert die nicht mit Benutzerfreigaben in verbindung stehen.
 :end
 
 :shares_enable_shares_help:
