@@ -1,4 +1,4 @@
-also remove image=auch Abbild entfernen
+also remove image=Abbild auch entfernen
 Apply=Anwenden
 Are you sure=Sind Sie sicher?
 Cancel=Abbrechen
