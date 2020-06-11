@@ -818,7 +818,7 @@ erstellt werden soll. (Alle Geräte größer als 2TB werden immer mit GPT-Partit
 die einzelne Partition 1 im **63. Sektor** vom Anfang der Platte an beginnt.  Dies ist die *traditionelle*
 Einstellung für praktisch alle Partitionstabellen im MBR-Stil.
 
-**MBR: 4K-aligned** Diese Einstellung erstellt eine Partitionstabelle im MBR-Stil, wobei 
+**MBR: 4K-aligned** Diese Einstellung erstellt eine Partitionstabelle im MBR-Stil, wobei
 die einzelne Partition 1 im **64. Sektor** vom Anfang der Platte an beginnt. Da die Sektorgröße 512 Bytes beträgt,
 wird der Anfang von Partition 1 auf einer 4K-Byte-Grenze *eingerichtet*.  Dies ist erforderlich für eine korrekte
 Unterstützung von sogenannten *Advanced Format*-Laufwerken.
@@ -938,7 +938,7 @@ In diesem Abschnitt werden die globalen Einstellungen für alle Datenträger fes
 :disk_default_smart_attribute_help:
 Der Benutzer kann Benachrichtigungen für die gegebenen SMART-Attribute aktivieren oder deaktivieren. Es wird empfohlen, den Standard beizubehalten, d.h. ALLE ausgewählten Attribute,
 wenn bestimmte Attribute auf Ihrer Festplatte nicht vorhanden sind oder keine richtige Informationen liefern, können diese ausgeschlossen werden.
-Zusätzlich können benutzerdefinierte SMART-Attribute eingegeben werden, um Benachrichtigungen zu generieren.  Bitte bei der 
+Zusätzlich können benutzerdefinierte SMART-Attribute eingegeben werden, um Benachrichtigungen zu generieren.  Bitte bei der
 Auswahl vorsichtig sein, dies kann zu einer Flut von Benachrichtigungen führen, wenn ungeeignete SMART-Attribute gewählt werden.
 
 In diesem Abschnitt werden die globalen Einstellungen für alle Datenträger festgelegt. Es ist möglich, Einstellungen für einzelne Platten vorzunehmen.
@@ -1134,7 +1134,7 @@ Zertifikats erneuerungs Dienst und Prüft ob das Let's Encrypt SSL noch gültig 
 Danach wir dieser Dienst in Abständen von 24 Stunden ausgeführt. 30 Tagen vor Ablauf des Zertifikats wird
 ein neues Zertifikat beantragt und auf den Server heruntergeladen und installiert.
 
-Hinweis: Nach ausstellung des Let's Encrypt SSL Zertifikates können Sie *updatedns* und *newcert* durch 
+Hinweis: Nach ausstellung des Let's Encrypt SSL Zertifikates können Sie *updatedns* und *newcert* durch
 ändern dieses Feldes zu **Ja** deaktivieren.
 
 **Informationen zur Handhabung des nginx Zertifikats**
@@ -1298,7 +1298,7 @@ Freigaben "gespeicherte" oder "zwischengespeicherte" werden sollen. Wenn ein NFS
 kann es zu einem "stale file handle" führen.
 
 Der Numerische Wert von Tunable bestimmt die Zeit in Sekunden wie lange der Datei-/Verzeichnisname
-zwischengespeichert soll, der Standardwert 330 bedeuted 5 1/2 Minuten. Es gibt außerdem zwei weitere vordefinierte 
+zwischengespeichert soll, der Standardwert 330 bedeuted 5 1/2 Minuten. Es gibt außerdem zwei weitere vordefinierte
 Werte die festgelegt werden können:
 
 * 0 speichert keine Datei-/Verzeichnisnamen, und
@@ -1891,7 +1891,7 @@ Wählen Sie eine Vorlage um die grundlegenden Einstellungen zu übernehmen.
 :end
 
 :smtp_email_address_help:
-E-Mail Adresse vom Absender. Diese Adresse wird zum senden der Benachrichtigungen versendet.
+E-Mail-Adresse vom Absender. Diese Adresse wird zum senden der Benachrichtigungen versendet.
 :end
 
 :smtp_recipients_help:

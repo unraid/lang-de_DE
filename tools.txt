@@ -29,7 +29,7 @@ Diagnostics=Diagnose
 Disks=Datenträger
 Display Settings=Darstellungseinstellungen
 End-User License Agreement=Endbenutzer-Lizenzvereinbarung
-Enter URL of language pack XML file=URL für das XML-Sparachpaket eingeben
+Enter URL of language pack XML file=URL für das XML-Sprachpaket eingeben
 Error accessing your physical USB Flash boot device=Fehler beim Zugriff auf das USB Bootgerät
 EULA=EULA
 Event=Ereignis
@@ -88,13 +88,13 @@ System Devices=Systemgeräte
 System Update Check=System Update Check
 Text=Text
 Thank you for choosing Unraid OS=Vielen Dank, dass Sie sich für Unraid OS entschieden haben
-Thank you for registering USB Flash GUID=Vielen Dank für die Registrierung von der USB Flash GUID
+Thank you for registering USB Flash GUID=Vielen Dank für die Registrierung der USB Flash GUID
 Thank you for trying Unraid OS=Vielen Dank, dass Sie Unraid OS testen
 The registered GUID does not match the USB Flash boot device GUID=Die registrierte GUID stimmt nicht mit dem USB Flash Bootgerät überein
 There is a physical problem accessing your USB Flash boot device=Es besteht ein Problem beim Zugriff auf Ihr USB Flash Bootgerät
 this may take several minutes=dies kann mehrere Minuten dauern
 This release has been withdrawn for use with Trial keys=Diese Version wurde für die Verwendung mit Probelizenzen zurückgezogen
-This server has %s attached storage device=Dieser Server hat %s angeschlossenes Datenträger
+This server has %s attached storage device=Dieser Server hat %s angeschlossene Datenträger
 This server has %s attached storage devices=Dieser Server hat %s angeschlossene Datenträger
 This utility is used for troubleshooting purposes=Dieses Dienstprogramm dient zur Fehlerbehebung
 This will delete all notification files=Dies löscht alle Benachrichtigungsdateien
@@ -103,7 +103,7 @@ Time=Zeit
 To install a registration key, paste the key file URL in the box below and click Install Key=Um eine Registrierungslizenz zu installieren, die Lizenz URL in die Zeile unten einfügen und auf **Lizenz Installieren** klicken
 to select your language=um Ihre Sprache auszuwählen
 To support more storage devices as your server grows, click Upgrade Key below=Klicke unten auf *Lizenz Upgraden* um ein Lizenz-Upgrade zu erwerben die mehr Datenträger untestützt
-Trial key expires on=***Probelizenz*** läuft aus am
+Trial key expires on=***Probelizenz*** läuft ab am
 Trial=Probe
 Update OS=OS aktualisieren
 Upgrade Key=Lizenz-Upgraden
@@ -296,10 +296,10 @@ Wenn Sie eine Ersatzlizenz früher benötigen, bitte den [Support Kontaktieren](
 
 :registration_9_plug:
 Diese USB Flash Bootgerät GUID ist *gesperrt*. Sie haben möglicherweise Ihrer Lizenz auf ein neus USB Bootgerät übertragen
-und Sie verwenden derzeit Ihr altes USB Bootgerät um den Server zu starten.
+und Sie verwenden derzeit Ihr altes USB Bootgerät, um den Server zu starten.
 
 Ein USB Flash Gerät kann auch *gesperrt* werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
 Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens üblich).
 
-Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
+Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 :end

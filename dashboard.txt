@@ -1,4 +1,4 @@
-%s used of %s %s %%=%s verwendet von %s (%s %%)
+%s used of %s %s %%=%s von %s verwendet (%s %%)
 ---=---
 Active tunnels=Aktive Tunnel
 Activity=Aktivität
@@ -58,9 +58,9 @@ Mode of operation=Detaillierte Einstellungen
 Next check scheduled on %s=Nächste Prüfung für **%s** geplant
 No docker containers defined=Keine Docker Container definiert
 No running docker containers=Keine gestarteten Docker Container
-No running virtual machines=Keine laufenden Virtuellen Maschinen
+No running virtual machines=Keine laufenden virtuellen Maschinen
 No shares present=Keine Freigaben definiert
-No virtual machines defined=Keine Virtuellen Maschinen definiert
+No virtual machines defined=Keine virtuellen Maschinen definiert
 Nominal power=Nennleistung
 not received=nicht erhalten
 Outbound=Ausgehend
