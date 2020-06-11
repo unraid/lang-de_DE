@@ -1,4 +1,4 @@
-%s An update is available=%s: Ein Update ist Verfügbar
+%s An update is available=%s: Eine Aktualisierung ist verfügbar
 anonymous=anonym
 Author=Autor
 Check For Updates=Suche nach Aktualisierungen
@@ -7,7 +7,7 @@ DOWNGRADE TO VERSION=DOWNGRADE AUF VERSION
 Enter URL of remote plugin file or local plugin file=Geben Sie die URL des Plugins ein oder wähle Sie ein lokales Plugin aus
 ERROR=FEHLER
 Install Plugin=Plugin installieren
-install=Installieren
+install=installieren
 Installed Plugins=Installierte Plugins
 Installing Update=Installiere Aktualisierung
 need check=benötigt Prüfung
