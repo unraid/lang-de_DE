@@ -52,3 +52,6 @@ Spinning up all drives=Alle Datenträger werden angefahren
 Starting services=Starte Dienste
 Stopping services=Beende Dienste
 Unmounting disks=Datenträger werden ausgehängt
+Autostart disabled=
+Missing encryption key=
+Opening encrypted volumes=
