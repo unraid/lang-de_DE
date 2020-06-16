@@ -167,7 +167,8 @@ und Konfigurationsdateien werden gesammelt:
 + *SMART Bericht*
   <br>Ein SMART Bericht von jedem individuellen Datenträger, der sich im System befindet.
 + *Docker*
-  <br>*docker.log*, *libvirtd.log* und *libvirt/qemu/\*.log* Dateien.
+  <br>*docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* und *vfio-pci* Dateien.
+  
 :end
 
 :diagnostics_3_plug:
