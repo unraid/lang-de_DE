@@ -319,7 +319,7 @@ Install Language Pack=Sprachpaket installieren
 Remove Language Pack=Sprachpaket entfernen
 Update Language Pack=Sprachpaket aktualisieren
 Installed Version=Installierte Version
-A note about translations=Ein Hinweis zu den Übersetzungen
+A note about translations=Hinweis zu den Übersetzungen
 
 ; Help Text
 This chooses how to sort the results=Diese Auswahl bestimmt die Sortierreihenfolge
