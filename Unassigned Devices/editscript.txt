@@ -1,5 +1,5 @@
 Default Script=Standard Skript
-Edit Script=Skript editieren
+Edit Script=Skript bearbeiten
 Enter Script File Name=Skript Dateinamen eingeben
 Enter and Edit the Script that runs when a udev or operator event occurs=Skript anlegen das ausgeführt wird, wenn eine udev-oder operator Ereignis eintritt.
 Load the default script=Standard Skript laden
@@ -8,7 +8,7 @@ Run in background=Im Hintergrund ausführen
 Save your changes and save to Script File=Speichert die Änderungen der Skriptdatei
 Save=Speichern
 Script content=Skript Inhalt
-Turn on to run Script File in the background=Führ das Skript als Hintergrundprozess aus
+Turn on to run Script File in the background=Führt das Skript als Hintergrundprozess aus
 Undo your changes since last Save=Änderungen seit letztem Speichern verwerfen
 ;
 ; Help
@@ -18,12 +18,12 @@ Undo your changes since last Save=Änderungen seit letztem Speichern verwerfen
 :end
 
 :ud_edit_script_run_background_plug:
-> Aktivieren Sie 'Im Hintergrund ausführen' damit das Skript als Hintergrundprozess ausgeführt wird. Dies kann verursachen das die Unassigned Devices Benutzeroberfläche nicht reagiert, wenn das Skript direkt über die Benutzeroberfläche gestartet wird.
+>Aktivieren Sie 'Im Hintergrund ausführen' damit das Skript als Hintergrundprozess ausgeführt wird. Dies kann verursachen das die Unassigned Devices Benutzeroberfläche nicht reagiert, wenn das Skript direkt über die Benutzeroberfläche gestartet wird.
 :end
 
 :ud_edit_script_buttons_plug:
 > Klick auf **Speichern** speichert die Änderungen.  Klick auf **Reset** um die Änderungen (vor dem Speichern) zu verwerfen. Klick auf **Fertig** um die Seite zu verlassen.
 >
 > Klick auf **Standard Script** um das Standard Script zu laden und zu bearbeiten.
-> Sie müssen tortzdem auf **Speichern** klicken um die Änderungen zu übernehmen.
+> Sie müssen trotzdem auf **Speichern** klicken um die Änderungen zu übernehmen.
 :end

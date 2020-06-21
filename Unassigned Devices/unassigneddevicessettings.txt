@@ -2,7 +2,7 @@ Add=Hinzufügen
 Auto Mount USB Devices=USB Datenträger automatisch einhängen
 Change Disk UUID=Datenträger UUID ändern
 Change UUID=UUID ändern
-Change the disk UUID=Die Datenträger UUID ändern
+Change the disk UUID=Datenträger UUID ändern
 Common Script=Gemeinsames Skript
 Common Settings=Gemeinsame Einstellungen
 Destructive Mode=Partitionierungs Modus
@@ -24,7 +24,7 @@ Set Password=Passwort setzen
 Set the disk Password=Datenträgerpasswort setzen
 Spin down disks=Datenträger herunterfahren
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Unassigned Devices Plus plugin muss installiert sein um den Partitionierungs Modus zu aktivieren
-to SMB share config=zu SMB Freigabe konfiguration
+to SMB share config=zu SMB Freigabe konfiguratio
 Unassigned Devices=Unassigned Devices
 
 ; Help
