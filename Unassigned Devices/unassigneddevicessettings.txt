@@ -27,58 +27,58 @@ The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=
 to SMB share config=zu SMB Freigabe konfiguratio
 Unassigned Devices=Unassigned Devices
 
-; Help
+; Hilfe
 ;
 :ud_settings_plus_plug:
-> **Note:** The 'Unassigned Devices Plus' plugin must be installed in order to mount HFS+ and exFAT disk formats, and enable desctrctive mode.
+> **Hinweise:** Das Plugin 'Unassigned Devices Plus' muss installiert sein um Datenträger die mit HFS+ und exFAT formatiert sind Einzughängen und der Partitionierungs Modus muss aktiviert sein.
 :end
 
 :ud_settings_common_script_plug:
-> If set, this script will run before the device script.  The action is in the environment variable **$ACTION**. Be sure you reference all commands with their full path.
+> Wenn aktiviert wird das Globale Skript vor dem Benutzer Skript ausgeführt. Wird in der Umgebungsvariable **$ACTION** gesetzt. Stellen Sie sicher, dass alle Befehle mit ihrem vollständigen Pfad referenzieren sind.
 :end
 
 :ud_settings_destructive_plug:
-> If enabled, this will allow you to erase and format partitions using Unassigned Devices. This cannot be enabled unless the 'Unassigned Devices Plus' plugin is installed.
+> Wenn aktiviert können Partitionen gelöscht und Datenträger mit Unassigned Devices Formatiert werden. Kann nur aktivert werden wenn das Plugin 'Unassigned Devices Plus' installiert ist.
 :end
 
 :ud_settings_mount_usb_devices_plug:
-> When set to **Yes**, will auto mount a new USB device and share it without user intervention.
+> Wenn **Ja**, wird jeder neue USB Datenträger automatisch Eingebunden ohne das eine Benutzereingabe erfolgen muss.
 :end
 
 :ud_settings_discard_plug:
-> Mount SSDs that support discard with 'discard' option.  If you are using the SSD Trim Settings to do a periodic trim of SSDs you can set this to **No**.
+>SSDs die Discard unterstützen mit der 'discard' Option Einbinden. Wenn Sie SSD Trim verwenden um ein reglemäßiges Trimming der SSD auszuführen können Sie diese Einstellung auf **Nein** setzen.
 :end
 
 :ud_settings_spin_down_plug:
-> Set to **Yes** to set a 15 minute disk spin down timer.  Set to **No** to keep disks spun up.
+> Wenn **Ja** wird der Datenträger nach 15 Minuten heruntergefahren. Wenn **Nein** werden die Datenträger nie heruntergefahren.
 :end
 
 :ud_settings_force_smb_plug:
-> Normally a SMB remote share will be mounted with the highest version of SMB that the remote server will support.  When set to **Yes**, all SMB remote shares will be forced to mount with SMB v1.  Some remote shares will give errors when mounted with SMB v2.  SMB v1 has security issues and should not be used unless absolutely necessary.  This cannot be enabled if NetBIOS is disabled.
+> Normalerweise wird eine Entfernte SMB Freigabe mit der neuesten Version von SMB Eingebunden die der Server unterstützt. Wenn **Ja**, wird bei alle Entferneten SMB Freigaben SMB v1 erzwungen. Manche Entfernet Freigaben geben einen Fehler aus wenn diese mit SMB v2 Eingebunden werden. SMB v1 weißt Sicherheitsrisikos auf und sollte nur falls wirklich erforderlich verwendet werden. Kann nicht aktiviert werden wenn NetBIOS deaktiviert ist.
 :end
 
 :ud_settings_smb_security_plug:
-> Set the user level of SMB Security.
+> SMB Sicherheitseinstellungen pro Benutzer.
 >
-> + Set to **Yes** to enable SMB Security on SMB shares.  Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **Hidden** to enable SMB Security on SMB shares that will not be visible.  Set access by user to allow access and whether or not the user can write to the share.
-> + Set to **No** will share devices, SMB/NFS, and iso Mounts Public with read and write access.
+> + Wenn **Ja** wird die SMB Sicherheit bei allen Freigaben aktiviert. Bestimmt welcher Benutzer Nur Lese oder Lese-/Schreibzugriff bzw. keinen Zugriff hat.
+> + Wenn **Versteckt**  wird die SMB Sicherheit bei Freigaben aktiviert und werden die Freigaben werden verborgen. Bestimmt welcher Benutzer Nur Lese oder Lese-/Schreibzugriff bzw. keinen Zugriff hat.
+> + Wenn **Nein** wird die SMB Sicherheit deaktiviert. SMB/NFS und ISO Freigaben werden Öffenlich mit Lese-/Schreibzugriff freigegeben.
 :end
 
 :ud_settings_force_user_plug:
-> There are times when permissions on SMB shares aren't handled as expected.  Turning this feature on can help with those permissions.
-> This applies to all devices mounted with Unassigned Devices.
-> The down side is that it overrides Linux group permissions.  If you are unsure about whether or not this is necessary, leave it enabled.
+> Es kann passieren das Berechtigungen bei SMB Freigaben nicht richtig behandelt werden. Aktivieren diese Einstellung kann unter solchen Umständen helfen.
+> Dies betrifft alle Datenträger die mit Unassigned Devices Eingebunden sind.
+> Zum Nachteil werden Linux Gruppenberechtigungen überschrieben. Wenn Sie unsicher sind ob diese Einstellung notwendig ist, lassen Sie diese aktiviert.
 :end
 
 :ud_settings_nfs_shares_plug:
-> Set to **Yes** to export NFS shares.  Shares are exported Public with read and write access or Private with the rule you set.  Access is controlled with permission settings on files and folders.
+> Wenn **Ja** werden NFS Freigaben exportiert. Freigaben werden mit Öffentlichem Lese-/Schreibzugriff oder als Private Freigaben mit den Einstellungen die von Ihnen gesetzt wurden exportiert. Der Zugriff wird mit Berechtigungseinstellungen für Dateien und Ordner gesteuert.
 :end
 
 :ud_settings_disk_pass_plug:
-> Select the disk that you want to set a Password.  This is the password for this disk only and does not affect the array password/passphrase.  Leave password blank to use the array password/passphrase.
+> Wählen Sie den Datenträger für den ein Kennwort festgelegt werden soll. Das Kennwort ist nur für diesen Datenträger und hat keinen Einfluss auf das Array Passwort/Passphrase. Leer lassen um das Array Passwort/Passphrase zu verwenden.
 :end
 
 :ud_settings_change_uuid_plug:
-> Select the disk that you want to change the UUID.  This is useful when a disk has been removed from the array and has the same UUID as an array disk.  Drive must be unmounted to change the UUID.
+> Wählen Sie den Datenträger von dem Sie die UUID ändern möchten. Nützlich, wenn ein Datenträger aus dem Array entfernt wurde und dieselbe UUID wie ein Array Datenträger hat. Der Datenträger muss nicht gemountet sein, um die UUID zu ändern.
 :end
