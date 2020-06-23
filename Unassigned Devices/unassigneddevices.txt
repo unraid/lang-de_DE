@@ -18,7 +18,7 @@ Click to change ISO File Mount Point - Press Enter to save=Klicken um ISO Datei 
 Click to change Remote SMBNFS Mount Point - Press Enter to save=Klicken um Entfernten SMB/NFS Einhängeort zu ändern - Enter zum speichern drücken
 Click to select ISO file=Klicken um ISO Datei auszuwählen
 Click to view partitionsmount points=Klicken um Partitions Einhängeort anzuzeigen
-Complete=Fertig
+Complete=Vollständig
 Disk Log Information=Datenträger Protokoll
 Domain=Domain
 Edit Device Script=Datenträger Skript bearbeiten
@@ -99,69 +99,69 @@ View ISO File Script Log=Zeige ISO Datei Skript Protokoll
 View Remote SMBNFS Script Log=Zeige entfernte SMB/NFS Skript Protokoll
 You will need to enter credentials for Windows 10 shares just to list them=Sie müssen Anmeldeinformationen angeben um Windows 10 Freigaben anzuzeigen
 
-; Help
+; Hilfe
 ;
 :unassigned_devices_general_help_plug:
-> Unassigned Devices is called UD for short
+> Unassigned Devices Kurzform lautet UD
 >
-> Hover your mouse over an any active area on the UD page and a tool tip will show you what clicking that area does.
-> You can mount USB devices, sata drives, Remote SMB/NFS shares, and ISO Files with UD.
+> Bewegen Sie die Maus über einen Bereich auf der UD-Seite und ein Tooltip zeigt Ihnen, was Klicken auf diesen Bereich bewirkt
+> Sie können USB-, SATA-Datenträger, Entfernte SMB/NFS Freigaben und ISO Dateien mit UD einbinden.
 >
-> Any devices with the auto mount switch on will be mounted when the array is started.
-> All drives and SMB/NFS Mounts are unmounted when the array is stopped on the 'stopping_svcs' event.
+> Alle Datenträger mit aktiviertem Auto-Mount werden beim Starten des Arrays eingebunden.
+> Alle Datenträger und Entferneten SMB/NFS Freigaben werden beim Stoppen des Arrays ausgebunden - 'stopping_svcs' Event.
 >
-> If you want to share your drive, you can turn on the Share switch.
+> Wenn Sie den Datenträger Freigeben wollen bitte Freigeben aktivieren.
 >
-> The default for Remote SMB shares is Public read/write access.
-> Enable SMB Security by user in the Unassigned Devices Settings.
+> SMB Freigaben werden Standardmäßig mit Öffentlichem Zugriff und mit Lese-/Schreibrechten freigegeben.
+> Aktivieren Sie die SMB Sicherheit für Benutzer in den Unassigned Devices Einstellungen.
 >
-> NFS shares are exported and access is read/write.
-> The export of NFS devices is enabled in the Unassigned Devices settings.
+> NFS Freigaben werden Standardmäßig exportiert mit Lese-/Schreibrechten.
+> Das Exportieren von NFS Freigaben wird ein den Unassigned Devices Einstellungen konfiguriert.
 >
-> You can also enable a common script that will be executed on every disk mount.
-> In order to share any UD device, sharing needs to be enabled in the UD Settings and the switch turned on to share the particular device.
+> Sie können auch ein Skript erstellen, das auf bei jedem Einhängen vom Datenträger ausgeführt wird.
+> Um einen UD-Datenträger freizugeben, muss die Freigabe in den UD-Einstellungen aktiv sein und Freigabe aktiviert werden, um das jeweilige Gerät freizugeben
 >
-> SMB/NFS remove shares and ISO mounts are always shared.
-> After entering a mount point, press &lt;Enter&gt; to save the change.
+> Entfernte SMB/NFS Freigaben und ISO Dateien werden immer Freigegeben.
+> Nach Eingabe eines Einbindeorts, &lt;Enter&gt; drücken um die Änderungen zu speichern.
 >
-> Additional options are available when you click on the device identification.
-> When the disk is unmounted, the mount name of the device can be changed.
-> A disk can be formatted and an fsck run to check the disk.
+> Weitere Optionen sind mit einem Klick auf die Datenträgerindentifikation verfügbar.
+> Der Einbindename kann geändert werden wenn der Datenträger Ausgehängt ist.
+> Ein Datenträger kann formatiert und ein fsck ausgeführt werden, um die Festplatte zu überprüfen.
 >
-> **The 'Settings->Unassigned Devices' security settings for SMB and NFS must be set correctly for SMB and NFS sharing to work properly.**
+> **Die Sicherheitseinstellungen für SMB und NFS müssen in 'Einstellungen->Unassigned Devices' richtig konfiguriert werden damit die SMB- und NFS-Freigabe funktioniert.**
 >
-> **If the mount button is grayed out for a SMB/NFS remote share, the remote server is not responding to a ping. The remote share server must respond to a ping or UD will consider it off-line.**
+> **Wenn der Knopf für SMB/NFS ausgegraut ist reagiert der Server nicht auf die Ping Anfrage. Der Server muss auf Ping Anfragen reagieren andernfalls wird UD die Freigabe als Offline anzeigen.**
 >
-> UD has a destructive mode that allows deleting disk partitions and formatting disks.
+> UD verfügt über einen Partitionierungs Modus, der partitionierung und formatieren eines Datenträgers erlaubt.
 >
-> If Destructive Mode is not turned on in the UD Settings, you WILL NOT be able to format a disk or remove partitions.
-> Go the the 'Settings->Unassigned Devices' to set the destructive mode.
+> Wenn der Partitionierungs Modus in den UD Einstellungen nicht aktiviert ist, können KEINE Partitionen gelöscht werden bzw. ist eine Formatierung von Datenträgern nicht möglich.
+> Gehen Sie zu 'Einstellungen->Unassigned Devices' um den Partitionierungs Modus zu aktivieren.
 >
-> To format a disk:
+> Zum Formatieren eines Datenträgers:
 >
-> + Destructive mode must be enabled.
-> + Disk must have all partitions removed. Unmount disk, click on the serial number, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
-> + If the disk has been precelared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
+> + Muss der Partitionierungs Modus aktiviert werden.
+> + Alle Partitionen müssen vom Datetnräger gelöscht sein. Datenträger auswerfen, auf die Seriennummer klicken und auf alle <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> Symbole klicken um die Partitionen zu löschen.
+> + Wenn der Datenträger Precleared wurde und einen grauen 'Formatieren' Knopf anzeigt, auf das <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> Symbol klicken, danach auf <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> Symbol klicken um die Preclear-Status-Datei zu löschen.
 >
-> **Note: A disk partitioned in UD is compatible with the array disk partitioning and can be added to the array. Supported file formats are XFS and BTRFS.**
+> **Hinweis: Ein mit UD Partitionierter Datenträger ist mit dem Array Kompatibel und kann diesem hinzugefügt werden. Unterstützte  Dateisystemformate sind XFS und BTRFS.**
 >
-> Encrypted Disks:
+> Verschlüsselte Datenträger:
 >
-> + Any disk formatted in UD that is encrypted will use the array password/passphrase and can be incorporated into the array.
-> + Any disk that was not encrypted in UD can be mounted by setting a per disk passord set in UD settings.
+> + Jeder mit UD Formatierte und Verschlüsselte Datenträger benutzt das Array Passwort/Passphrase und kann dem Array hinzugefügt werden.
+> + Jeder Datenträger der nicht mit UD Verschlüsselt wurde, kann Eingebunden werden wenn in den UD Einstellungen das Passwort pro Datenträger eingegeben wird.
 >
-> UD includes scripts that are used for mounting and unmounting devices and SMB/NFS mounts. These scripts can be used from the command line or in scripts as necessary.
+> UD enthält Skripte die für das Ein-/Aushängen von SMB/NFS Freigaben benötigt werden. Diese Skripte können bei Bedarf von der Kommandozeile oder in anderen Skripten verwendet werden.
 >
-> Unassigned devices script:
+> Unassigned Devices Dienst Skripte:
 >
-> + '/usr/local/sbin/rc.unassigned mount auto' - all devices and SMB/NFS mounts set to auto mount will be mounted.
-> + '/usr/local/sbin/rc.unassigned umount auto' - all devices and SMB/NFS mounts set to auto mount will be unmounted.
-> + '/usr/local/sbin/rc.unassigned umount all' - all devices and SMB/NFS mounts are unmounted in preparation for shutting down the array.
-> + '/usr/local/sbin/rc.unassigned mount /dev/sdX' - mount device sdX where 'X' is the device designator.
-> + '/usr/local/sbin/rc.unassigned umount /dev/sdX' - unmount device sdX where 'X' is the device designator. You can use this command in a UD script to unmount the device when the script has completed.
-> + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - used at the end of the 'ADD' case of a script so the 'Running...' indicator will be updated.
+> + '/usr/local/sbin/rc.unassigned mount auto' - alle Datenträger und SMB/NFS Freigaben bei denen Auto Mount aktiviert ist werden Eingebunden.
+> + '/usr/local/sbin/rc.unassigned umount auto' - alle Datenträger und SMB/NFS Freigaben bei denen Auto Mount aktiviert ist werden Ausghängt.
+> + '/usr/local/sbin/rc.unassigned umount all' - alle Datenträger und SMB/NFS Freigaben werden bei der Vorbereitung zum Herunterfahren Ausgehängt.
+> + '/usr/local/sbin/rc.unassigned mount /dev/sdX' - Datenträger sdX Einhängen, wobei 'X' für die Datenträgerbezeichnung steht.
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX' - Datenträger sdX Aushängen, wobei 'X' für die Datenträgerbezeichnung steht. Sie können diesen Befehl in einem UD Skript benutzen um den Datenträger Auszuhängen wenn das Skript beendet wurde.
+> + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - wird am Ende eines 'ADD' Vorgangs im Skript verwendet um die 'Läuft...' Anzeige zu aktualisieren.
 >
-> Switch the 'Complete' button to change the web page to just show hardware devices. Switch the 'Simple' switch to switch back to the full web display.
+> Auf 'Vollständig' klicken um nur die Datenträger anzuzeigen. Auf 'Einfach' klicken um zurück zur Vollständigen Ansicht zurückzukehren.
 >
-> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+> Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
