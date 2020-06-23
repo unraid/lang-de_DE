@@ -7,7 +7,7 @@ This option enables another button on the cards and popups which will allow you 
 Enable additional search results from dockerHub=Weitere Suchergebnisse von DockerHub aktivieren
 This setting enables CA to retrieve additional search results from dockerHub Note that docker must be enabled for this to be operational=Diese Einstellung erlaubt CA weitere Suchergebnisse von DockerHub zu empfangen Hinweis Der Docker Dienst muss hierfür aktiviert sein
 Allow CA to send any emergency notifications=CA erlauben Notfall Benachrichtigungen zu senden
-This setting allows CA to periodically scan your system and alert you to the presence of=
+This setting allows CA to periodically scan your system and alert you to the presence of=Diese Einstellung erlaubt CA Ihr System regelmäßig zu scannen und Sie auf folgendes hinzuweisen
 1 Known malware and security vulnerabilities within applications=1 Malware und Sicherheitslücke in Anwendung
 2 Critical security vulnerabilities within Unraid OS=2 Kritische Sicherheitslücke in Unraid
 3 Any installed applications which may seriously hinder the operation of your server=3 Installierte Anwendungen welche deinen Server vom ordnungsgemäßen Betrieb hindern
