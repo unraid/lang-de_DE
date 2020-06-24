@@ -44,8 +44,8 @@ Leave blank to use the array passwordpassphrase=Freilassen um die Array Password
 Load Shares=Lade Freigaben
 Log=Protokoll
 missing=fehlend
-Mount=Einbinden
-Mounting=Einbinden
+Mount=Einhängen
+Mounting=Einhängen
 NFS Shares=NFS Freigabe
 Next=Weiter
 No Remote SMBNFS or ISO File Shares configured=Keine entfernten SMB/NFS oder ISO Datei Freigaben eingerichtet
@@ -70,7 +70,7 @@ Search For Servers=Suche nach Servern
 Search for Servers, or enter the Server nameIP address manually=Suche nach Servern oder ServernamenIP Adresse manuell eingeben
 Search for Shares or enter the Share name manually=Suche nach Freigaben oder Freigabenamen manuell eingeben
 Searching=Suche
-Serial Number Mountpoint=Seriennummer Einbindeort
+Serial Number Mountpoint=Seriennummer Einhängeort
 share for=freigeben für
 Simple=Einfach
 Source=Quelle
@@ -105,7 +105,7 @@ You will need to enter credentials for Windows 10 shares just to list them=Sie m
 > Unassigned Devices Kurzform lautet UD
 >
 > Bewegen Sie die Maus über einen Bereich auf der UD-Seite und ein Tooltip zeigt Ihnen, was Klicken auf diesen Bereich bewirkt
-> Sie können USB-, SATA-Datenträger, Entfernte SMB/NFS Freigaben und ISO Dateien mit UD einbinden.
+> Sie können USB-, SATA-Datenträger, Entfernte SMB/NFS Freigaben und ISO Dateien mit UD einhängen.
 >
 > Alle Datenträger mit aktiviertem Auto-Mount werden beim Starten des Arrays eingebunden.
 > Alle Datenträger und Entferneten SMB/NFS Freigaben werden beim Stoppen des Arrays ausgebunden - 'stopping_svcs' Event.
@@ -122,10 +122,10 @@ You will need to enter credentials for Windows 10 shares just to list them=Sie m
 > Um einen UD-Datenträger freizugeben, muss die Freigabe in den UD-Einstellungen aktiv sein und Freigabe aktiviert werden, um das jeweilige Gerät freizugeben
 >
 > Entfernte SMB/NFS Freigaben und ISO Dateien werden immer Freigegeben.
-> Nach Eingabe eines Einbindeorts, &lt;Enter&gt; drücken um die Änderungen zu speichern.
+> Nach Eingabe eines Einhängeorts, &lt;Enter&gt; drücken um die Änderungen zu speichern.
 >
 > Weitere Optionen sind mit einem Klick auf die Datenträgerindentifikation verfügbar.
-> Der Einbindename kann geändert werden wenn der Datenträger Ausgehängt ist.
+> Der Einhängename kann geändert werden wenn der Datenträger Ausgehängt ist.
 > Ein Datenträger kann formatiert und ein fsck ausgeführt werden, um die Festplatte zu überprüfen.
 >
 > **Die Sicherheitseinstellungen für SMB und NFS müssen in 'Einstellungen->Unassigned Devices' richtig konfiguriert werden damit die SMB- und NFS-Freigabe funktioniert.**
