@@ -66,6 +66,7 @@ Run with CORRECT flag=Mit Parameter CORRECT ausführen
 Running=Läuft
 SMART Attributes on=SMART Attribute von
 SMB Shares=SMB Freigaben
+Script=Skript
 Search For Servers=Suche nach Servern
 Search for Servers, or enter the Server nameIP address manually=Suche nach Servern oder ServernamenIP Adresse manuell eingeben
 Search for Shares or enter the Share name manually=Suche nach Freigaben oder Freigabenamen manuell eingeben
