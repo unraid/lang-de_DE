@@ -260,8 +260,8 @@ Note not all authors keep up to date on change logs=Beachte, dass nicht alle Aut
 Note not all maintainers keep up to date on change logs=Beachte, dass nicht alle Betreuer das Changelog regelmäßig aktualisieren
 ;the following if using a space you MUST use nbsp but keep it down to one word if at all possible
 Donate=Spende
-Currently Installed Version=Aktuelle nbsp installierte nbsp Version
-Install The Update=Update nbsp installieren
+Currently Installed Version=Aktuell installierte Version
+Install The Update=Update installieren
 ; as in you have the latest version already installed
 Latest Version=Aktuellste Version
 Multi Language Support=Mehrsprachenunterstützung
