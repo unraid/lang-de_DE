@@ -1,35 +1,35 @@
-File Activity=
-File Activity Logging=
-Start File Activity=
-Stop File Activity Logging=
-Clear the File Activity log=
-Refresh log=
-Enable File Activity Logging=
-Enable for Unassigned Devices=
-Enable for Cache=
+File Activity=Datei Aktivitäten
+File Activity Logging=Protokolliere Datei Aktivitäten
+Start File Activity=Starte Datei Aktivitäten
+Stop File Activity Logging=Start Datei Aktivitäten Protokollierung
+Clear the File Activity log=Lösche Datei Aktivitäten Protokoll
+Refresh log=Protokoll aktualisieren
+Enable File Activity Logging=Datei Aktivitäten Protokolliereung aktivieren
+Enable for Unassigned Devices=Für Unassigned Devices aktivieren
+Enable for Cache=Für Cache aktivieren
 ;
 ; Help
 ;
 :file_activity_loggging_plug:
-> File Activity Logging:
+> Datei Aktivitäten Protokollierung:
 >
-> File read/write/modify activity is monitored and logged on the array using inotify and is displayed by disk, UD disks, and cache.
-> You need to start the File Activity in order to log the disk activity.
-> File Activity is intended to be running for short periods so you can check disk activity.
-> A server with a lot of file activity can fill the log space.
-> The 'appdata' directory is excluded.
+> Das Lesen, Schreiben & Ändern von Dateien am Array wird mithilfe von inotify protokolliert und wird nach Datenträger, UD-Datenträger und Cache angezeigt.
+> Sie müssen den Dienst Datei Aktivitäten starten um die Aktivitäten am Datenträger zu protokollieren.
+> Der Dienst Datei Aktivitäten sollte nur für kurze Zeit ausgeführt werden, um die Aktivitäten am Datenträger überprüfen zu können.
+> Ein Server mit viel Dateiaktivität kann schnell zu einer großen Logdatei führen bzw. den Speicherplatz im Log verzeichnis aufbrauchen.
+> Der Ordner 'appdata' ist exkludiert.
 >
-> Note: File Activity logging is stopped if the array is stopped.
+> Hinweis: Der Dienst Datei Aktivitäten wird beendet wenn das Array gestoppt wird.
 :end
 
 :file_activity_enable_logging_plug:
-> Set to 'Yes' to enable File Activity logging when the server is started.
+> Wenn 'Ja' wird der Dienst Datei Aktivitäten beim Serverstart aktiviert.
 :end
 
 :file_activity_enable_ud_plug:
-> Set to 'Yes' to enable File Activity logging for Unassigned Devices if the Unassigned Devices plugin is installed.
+> Wenn 'Ja' wird der Dienst Datei Aktivitäten für Unassigned Devices aktiviert, falls das Plugin Unassigned Devices installiert ist.
 :end
 
 :file_activity_eenable_cache_plug:
-> Set to 'Yes' to enable File Activity logging for the Cache Disk(s).
+> Wenn 'Ja' wird der Dienst Datei Aktivitäten für Cache Datenträger aktiviert.
 :end
