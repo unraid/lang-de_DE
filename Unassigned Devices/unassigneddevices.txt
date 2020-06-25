@@ -51,6 +51,7 @@ Next=Weiter
 No Remote SMBNFS or ISO File Shares configured=Keine entfernten SMB/NFS oder ISO Datei Freigaben eingerichtet
 No Unassigned Disks available=Keine nicht zugewiesenen Datenträger vorhanden
 Note=Hinweis
+Open=Geöffnete
 Partition and Format Disk=Partitioniere und Formatiere Datenträger
 Pass Thru=Passthrough
 Password=Passwort
