@@ -1,0 +1,104 @@
+Recycle Bin=Papierkorb
+Deleted Files=Gelöschte Dateien
+Stop the Recycle Bin=Papierkorb deaktivieren
+Restart the Recycle Bin=Papierkorb neu starten
+Start the Recycle Bin=Papierkorb aktivieren
+Recycle Bin Total Size=Gesamtgröße des Papierkorbs
+Remove Aged Files=Alte Dateien löschen
+Remove aged files from the Recycle Bin=Alte Dateien vom Papierkorb löschen
+Empty All Trash=Papierkorb leeren
+Remove all files from the Recycle Bin=Alle Dateien im Papierkorb löschen
+Refresh the Recycle Bin page=Papierkorbseite aktualisieren
+Enable Recycle Bin for Deleted Files=Papierkorb für gelöschte Dateien aktivieren
+Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund aktualisieren
+Enable on Unassigned Devices for Deleted Files=Papierkorb für Unassigned Devices Datenträger aktivieren
+Recycle Bin parameters=Papierkorb Parameter
+Excluded Files=Exkludierte Dateien
+Excluded Shares=Exkludierte Freigaben
+Age Days=Ablauftage für Dateien
+Remove Aged Files on Schedule=Intervall zum Löschen alter Dateien
+Remove Aged Files Notification=Benachrichtige vom Löschen alter Dateien
+Log Deleted Files=Protokolliere gelöschte Dateien
+Empty=Leer
+Array is stopped=Array gestoppt
+SMB Share=SMB Freigabe
+Share Type=Freigabetyp
+Trash Size=Papierkorb Größe
+Empty Trash=Papierkorb leeren
+Array=Array
+Browse the Share Recycle Bin=Freigabe Papierkorb durchsuchen
+Empty the=Leere den
+Recycle Bin=Papierkorb
+Deleted Files Log=Gelöschte Dateien Protokoll
+Recycle Bin Log=Papierkorb Protokoll
+The deleted files will show in the log as unlinked files=
+Click on the Clear button to clear the log=Klick auf Löschen, um Protokolldatei zu löschen
+Clear the log=Protokolldatei löschen
+;
+; Help
+;
+Note=Hinweis
+Starting and stopping the Recycle Bin can cause SMB shares to go offline for a short period=Aktivieren/Deaktivieren des Papierkorbs kann die SMB Freigaben kurzzeitig als Offline anzeigen
+These actions apply to all shares=Diese Einstellungen gelten für alle Freigaben
+Click on=Klick auf
+Remove Aged Files=Entferne alte Dateien
+to remove deleted files older than the Age Days setting=um Dateien zu löschen die älter als die Einstellung Ablauftage für Dateien sind
+Empty All Trash=Alle Papierkörbe leeren
+to remove all deleted files=um alle Dateien zu löschen
+
+:recycle_bin_enable_plug:
+> Wenn 'Ja' wird der Papierkorb für gelöschte Dateien beim Serverstart aktiviert.
+:end
+
+:recycle_bin_background_plug:
+> Wenn 'Ja' wird die Größe des Papierkorbs im Minutentakt im Hintergrund aktualisiert. Dies kann das Aufrufen der Papierkorbeinstellungen/Freigabe Seite beschleunigen. Beim Zugriff auf den Papierkorb kann dadurch ein hochfahren des Datenträgers verhindert werden.
+:end
+
+:recycle_bin_ud_plug:
+> Wenn 'Ja' wird der Papierkorb für Datenträger, die mit Unassigned Devices Eingehängt sind aktiviert, wenn das Plugin Unassigned Devices installiert ist. SMB/NFS und ISO Datei Freigaben sind ausgeschlossen. Aktivieren Sie den Papierkorb am Entferneten Server falls es sich um einen Unraid Server handelt.
+:end
+
+:recycle_bin_parameters_plug:
+> Weitere Parameter für den Papierkorb. Im Folgenden finden Sie Optionen, mit denen die Dateistruktur der gelöschten Dateien gesteuern werden können.
+> Die Parameter in eine Liste OHNE Trennzeichen wie Punkt und Komma eingeben.
+> Die Reihenfolge der Parameter wirkt sich auf die Dateistruktur im Papierkorb aus.
+> Falls Leer, werden alle gelöschten Dateien ohne Pfadinformationen in den Papierkorb verschoben.
+>
+> Tipp: Benutzen Sie '/' für mehr Kontrolle der Verzeichnisstruktur im Papierkorb.
+> Zum Beispiel '%m/%S' sortiert die gelöschten Dateien nach Computernamen, der die Datei gelöscht hat, und nach der Struktur des Freigabenamens.
+>
+> + '%S' Samba Freigabenamen (in Unraid auch Freigabename genannt), zB: Storage
+> + '%P' Voller User Freigabepfad, zB: /mnt/user/Storage, /mnt/disk1, /mnt/disks/unassigned_device, /flash
+> + '%u' Benutzername des aktuellen Dienstes, falls vorhanden
+> + '%m' Computernamen des Benutzers der die Datei gelöscht hat
+:end
+
+:recycle_bin_excluded_files_plug:
+> Liste der Dateien die vom Papierkorb exkludiert werden sollen, durch Komma getrennt.  Wildcards '*' und '?' sind erlaubt.
+:end
+
+:recycle_bin_excluded_shares_plug:
+> Liste der Freigaben die vom Papierkorb exkludiert werden sollen, durch Komma getrennt. Diese Liste darf Unassigned Devices Freigaben enthalten. Beim Freigabenamen muss Groß-/Kleinschreibung beachtet werden.
+>
+> Die exkludierte Freigabe kann einen Teil eines Freigabenamens enthalten und schließt alle Freigaben mit dem exkludiertem Freigabetext im tatsächlichen Freigabenamen aus. Wenn ein gezielter Exkludierung gewünscht ist bitte den genauen Freigabenamen eingeben.
+>
+> Zum Beispiel: 'Squidbait' (ohne Anführungszeichen) schließt alle Freigaben die vom Ransom Ware Plugin erstellt worden sind aus.
+>
+> Hinweis: Das Exkludieren von nur eine Freigabe verhindert das gelöschte Dateien in den Ordner .Recycle.Bin in der Freigabe gespeichert werden. Bereits vorhandene Dateien in .Recycle.Bin werden trotzdem bei Gesmate Größe und im Reiter 'Freigaben' angezeigt.
+:end
+
+:recycle_bin_age_day_plug:
+> Alle Dateien, die älter als die gewählte Zahl von Tagen sind, werden im gewählten Intervall entfernt oder mit einem Klich auf 'Entferne alte Dateien' sofort.
+:end
+
+:recycle_bin_remove_age_files_plug:
+> Das gewünschte Intervall zum Löschen alter Dateien wählen. Stündlich wird zur vollen Stunde ausgeführt. Täglich wird täglich um 03:00 Uhr ausgeführt. Wöchentlich wird jeden Sonntag um 03:00 Uhr ausgeführt.
+:end
+
+:recycle_bin_age_files_notification_plug:
+> Wenn "Ja" wird eine Benachrichtigung gesendet wenn die geplante Hintergrundaufgabe zum löschen ausgeführt wird.
+:end
+
+:recycle_bin_log_deleted_files_plug:
+> Wenn "Ja" werden die gelöschten Dateien Protokolliert.
+:end
