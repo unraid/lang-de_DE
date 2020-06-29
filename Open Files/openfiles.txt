@@ -18,5 +18,5 @@ Cannot get list of open files=Fehler beim Laden der Liste der offenen Dateien
 > Klick auf 'Kill', um den Vorgang zu stoppen der die Dateien geöffnet hält.
 > Ein Dialogfeld wird geöffnet, in dem der Fortschritt des Abbrechens des Prozesses angezeigt wird.
 >
-> Klicken Sie auf "Programm", "Prozess ID" oder "Dateiname und Pfad", um die Sortierreihenfolge zu ändern.
+> Klick auf "Programm", "Prozess ID" oder "Dateiname und Pfad", um die Sortierreihenfolge zu ändern.
 :end
