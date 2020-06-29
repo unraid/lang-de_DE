@@ -1,0 +1,162 @@
+Configuration=Einstellungen
+Colors=Farben
+Syslog Colors=Syslog Farben
+Custom Match=Benutzerdefinierte Übereinstimmung
+Custom Syslog Match Strings=Benutzerdefinierte Syslog Übereinstimmung
+Syslog Filter=Syslog Filter
+Syslog Configuration=Syslog Einstellungen
+Syslog Filter Strings=Syslog Filterzeichenfolge
+Show All Lines in Log=Alle Zeilen im Protokoll anzeigen
+Number of Lines to Display=Zahl der Anzuzeigenden Zeilen
+Enable Error Highlighting=Aktiviere Fehler Hervorhebung
+Enable Minor Issues Highlighting=Aktiviere Leichte Fehler Hervorhebung
+Enable Lime Tech Highlighting=Aktiviere Lime Tech Hervorhebung
+Enable Array Highlighting=Aktiviere Array Hervorhebung
+Enable System Highlighting=Aktiviere System Hervorhebung
+Enable File System Highlighting=Aktiviere Dateisystem Hervorhebung
+Enable Drive Related Highlighting=Aktiviere Datenträgerbezogene Hervorhebung
+Enable Network Highlighting=Aktiviere Netzwerk Hervorhebung
+Enable Login Highlighting=Aktiviere Anmelde Hervorhebung
+Enable emhttp Highlighting=Aktiviere emhttp Hervorhebung
+Enable Other Highlighting=Aktiviere Andere Hervorhebung
+Color Selection Chart=Farbauswahl Liste
+Error Highlight Color=Fehler Hervorhebungsfarbe
+Minor Issues Highlight Color=Leichte Fehler Hervorhebungsfarbe
+Lime Tech Highlight Color=Lime Tech Hervorhebungsfarbe
+Array Highlight Color=Array Hervorhebungsfarbe
+System Highlight Color=System Hervorhebungsfarbe
+File System Highlight Color=Dateisystem Hervorhebungsfarbe
+Drive Related Highlight Color=Datenträgerbezogene Hervorhebungsfarbe
+Network Highlight Color=Netzwerk Hervorhebungsfarbe
+Login Highlight Color=Anmelde Hervorhebungsfarbe
+emhttp Highlight Color=emhttp Hervorhebungsfarbe
+Other Highlight Color=Andere Hervorhebungsfarbe
+;
+; Help
+;
+:enhanced_syslog_show_all_lines_plug:
+> Wenn 'Ja' werden alle Zeilen im Erweiterten System Protkoll angezeigt. Wenn 'Nein' werden nur die Hervorgehobenen Zeilen angezeigt.
+:end
+
+:enhanced_log_number_of_lines_plug:
+> Zahl der anzuzeigenden Zeilen. Standard 1000 Zeilen.
+:end
+
+:enhanced_log_enable_error_plug:
+> Set to 'Yes' to enable 'Errors' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_minor_plug:
+> Set to 'Yes' to enable 'Minor Issues' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_limetch_plug:
+> Set to 'Yes' to enable 'Lime Tech' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_array_plug:
+> Set to 'Yes' to enable 'Array' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_system_plug:
+> Set to 'Yes' to enable 'System' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_file_system_plug:
+> Set to 'Yes' to enable 'File System' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_drive_plug:
+> Set to 'Yes' to enable 'Drive Related' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_network_plug:
+> Set to 'Yes' to enable 'Network' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_login_plug:
+> Set to 'Yes' to enable 'Login' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_emhttp_plug:
+> Set to 'Yes' to enable 'emhttp' highlighting in the enhanced log.
+:end
+
+:enhanced_log_enable_other_plug:
+> Set to 'Yes' to enable 'Other' highlighting in the enhanced log.
+:end
+
+:enhancd_log_default_plug:
+> 'Default' resets the Configuration and Colors.  Click 'Apply' to save your changes.  Click 'Done' when you are finished with your changes.
+:end
+
+:enhanced_log_color_error_plug:
+> Color to use for 'Error' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_minor_plug:
+> Color to use for 'Minor Issues' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_limetech_plug:
+> Color to use for 'Lime Tech' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_array_plug:
+> Color to use for 'Array' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_system_plug:
+> Color to use for 'System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_file_system_plug:
+> Color to use for 'File System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_drive_plug:
+> Color to use for 'Drive Related' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_network_plug:
+> Color to use for 'Network' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_login_plug:
+> Color to use for 'Login' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_emhttp_plug:
+> Color to use for 'emhttp' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_color_other_plug:
+> Color to use for 'Other' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+:end
+
+:enhanced_log_custom_plug:
+> Enter any custom events you want highlighted in the log.  Any custom events you enter will be processed after the built in events.
+> The events are entered as: "search string", "event"
+> Case is ignored in the search string and wild cards are allowed.
+> Examples:
+> "found.*chip" will match any string with 'found' and 'chip' with any text in between,
+> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'. 
+> The search string and event are quoted, and each line contains one match string and event combination.  Errors in the strings can cause php errors.
+> Events are: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
+:end
+
+:enhanced_log_custom_buttons_plug:
+> Click the **Apply** button to save your custom events.  Click **Reset** to
+> undo any changes you make before you have saved the custom events. Click **Done** to exit this page.
+:end
+
+:enhanced_log_filter_plug:
+> You can filter out log entries to keep your Syslog from being overwhelmed with debig or redundant log entries.  You should only filter out log entries that you know are unnecessary or redundant.
+> Because the Syslog is very important for debugging issues, don't filter out entries unnecessarily.
+> Enter the log strings you want to filtered from the Syslog.  Each entry is on a separate line with leading and trailing quotes.
+:end
+
+:enhanced_log_filter_buttons_plug:
+> Click the **Apply** button to Apply the Syslog filter. Click **Reset** to
+> undo any changes you make before you have saved the Syslog filter. Click **Done** to exit this page.
+:end

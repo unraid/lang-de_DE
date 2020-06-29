@@ -31,7 +31,7 @@ Empty the=Leere den
 Recycle Bin=Papierkorb
 Deleted Files Log=Gelöschte Dateien Protokoll
 Recycle Bin Log=Papierkorb Protokoll
-The deleted files will show in the log as unlinked files=
+The deleted files will show in the log as unlinked files=Die gelöschten Dateien werden im Protokoll als nicht verknüpfte Dateien angezeigt
 Click on the Clear button to clear the log=Klick auf Löschen, um Protokolldatei zu löschen
 Clear the log=Protokolldatei löschen
 ;
