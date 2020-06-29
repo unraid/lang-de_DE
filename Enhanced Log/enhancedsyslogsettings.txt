@@ -1,10 +1,10 @@
-Configuration=Einstellung
+Configuration=Einstellungen
 Colors=Farben
 Syslog Colors=Syslog Farben
 Custom Match=Benutzerdefinierte Übereinstimmung
 Custom Syslog Match Strings=Benutzerdefinierte Syslog Übereinstimmung
 Syslog Filter=Syslog Filter
-Syslog Configuration=Syslog Einstellung
+Syslog Configuration=Syslog Einstellungen
 Syslog Filter Strings=Syslog Filterzeichenfolge
 Show All Lines in Log=Alle Zeilen im Protokoll anzeigen
 Number of Lines to Display=Zahl der Anzuzeigenden Zeilen
