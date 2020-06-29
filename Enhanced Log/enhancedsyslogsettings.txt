@@ -35,11 +35,11 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 ; Help
 ;
 :enhanced_syslog_show_all_lines_plug:
-> Set to 'Yes' to show all lines in the enhanced log.  Set to 'No' to show only highlighted lines.
+> Wenn 'Ja' werden alle Zeilen im Erweiterten System Protkoll angezeigt. Wenn 'Nein' werden nur die Hervorgehobenen Zeilen angezeigt.
 :end
 
 :enhanced_log_number_of_lines_plug:
-> Number of lines to display in the Enhanced Syslog.  Default is 1000.
+> Zahl der anzuzeigenden Zeilen. Standard 1000 Zeilen.
 :end
 
 :enhanced_log_enable_error_plug:
