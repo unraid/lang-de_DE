@@ -33,6 +33,7 @@ Default Value=Standardwert
 Device=Gerät
 Display=Anzeigen
 DNS=DNS
+Docker Containers=
 Docker Hub URL=Docker Hub URL
 Docker Service failed to start=Docker Dienst konnte nicht gestartet werden
 Donation Link=Spendenlink
