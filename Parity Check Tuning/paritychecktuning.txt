@@ -1,12 +1,12 @@
 ; Translation text for the Parity Check Tuning plugin
 
 ; Page file prompts
-Run scheduled Parity Checks in increments=Run scheduled Parity Checks in increments TR
-You require a parity disk present to be able to use these options=
-Restart Parity Checks when array starts=
-NOT IMPLEMENTED=
-Increment frequency=
-Run scheduled Parity Checks in increments=
+Run scheduled Parity Checks in increments=Geplante Paritätsprüfung Inkrementell ausführen
+You require a parity disk present to be able to use these options=Sie benötigen einen Paritätsdatenträger um diese Options zu benutzen
+Restart Parity Checks when array starts=Paritätsprüfung neustarten wenn das Array startet
+NOT IMPLEMENTED=NICHT IMPLEMENTIERT
+Increment frequency=Inkrementfrequenz
+Run scheduled Parity Checks in increments=Geplante Paritätsprüfung Inkrementell ausführen
 Increment resume time=
 Increment pause time=
 Use increments for unscheduled Parity Checks=
@@ -23,29 +23,29 @@ Requires Unraid 67 or later=Requires Unraid 6.7 or late
 ParityRead-Check History=Parity/Read-Check History=
 Click to show parity-check history=
 unknown action %s=unknown action: %s
-Elapsed Time=
+Elapsed Time=Vergangene Zeit
 Increments=
 
 ; Notifications
-completed=
-Pause=
-Paused=
-Resume=
-Resumed=
-Drives cooled down=
-Scheduled pause=
-array stopping so progress will be lost=
+completed=fertiggestellt
+Pause=Pause
+Paused=Unterbrochen
+Resume=Fortsetzen
+Resumed=Fortgesetzt
+Drives cooled down=Datenträger abgekühlt
+Scheduled pause=Geplante Pause
+array stopping so progress will be lost=Array stoppt Fortschritt geht verloren
 Correcting Parity Check=
 NonCorrecting Parity Check=Non-Correcting Parity Check
 
 ; Syslog messages (with debug logging disabled)
-ERROR=
-Array not started so no action taken=
-as drives now cooled down=
-Following drives overheated=
+ERROR=FEHLER
+Array not started so no action taken=Ausführen nicht möglich, Array nicht gestartet
+as drives now cooled down=wenn Datenträger aubgekühlt ist
+Following drives overheated=Folgende Datenträger überhitzt
 Only able to start a Read-Check due to number of disabled drives=
-%s Cancelled=
-Unrecognised option %s=ERROR: Unrecognised option %s
+%s Cancelled=%s Abgebrochen
+Unrecognised option %s=FEHLER: Unbekannter Parameter %s
 
 ; Syslog messages (with debug logging enabled)
 ; (probably not worth translating these as they are mainly of use to the plugin developer)
