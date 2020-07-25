@@ -55,6 +55,7 @@ Missing Language=Fehlende Sprache
 Network Settings=Netzwerkeinstellungen
 New Config=Neue Konfiguration
 New Permissions=Neue Berechtigungen
+No notifications present=
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere Dateiinhalte sind im Hardwareprofil enthalten
 normal=normal
 Only ZIP files are allowed=Nur ZIP Dateien erlaubt
