@@ -67,6 +67,7 @@ Do not use user share names=Keine Netzwerkfreigabenamen benutzen
 Download SMART report=Download SMART Bericht
 Dual parity valid requires ALL disks in their original slots=*Doppelte Parität* erfordert **ALLE** Datenträger in den ursprünglichen Slots
 Elapsed time=Verstrichene Zeit
+Enable user share assignment=
 encrypted=verschlüsselt
 Encryption input=Verschlüsselungseingabe
 Encryption status=Verschlüsselungsstatus
