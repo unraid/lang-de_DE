@@ -32,7 +32,7 @@ Plugin Note=Plugin Hinweis
 
 ; Multi Install
 Install Plugin Applications=Plugin installieren
-Select all on page=
+Select all on page=Alle auf der Seite auswählen
 
 ; Searches
 Search=Suche
