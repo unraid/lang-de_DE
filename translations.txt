@@ -425,7 +425,7 @@ SettingsManagementAccessUnraidnet=Einstellungen > Zugangskonfiguration • Unrai
 Trial key expires at %s=Testlizenz läuft um %s ab
 Trial expires in %s=Testphase läuft ab in %s
 Trial key expired at %s=Testlizenz am %s abgelaufen
-Trial expired %s ago=Testlizent seit %s abgelaufen
+Trial expired %s=Testlizent seit %s abgelaufen
 Server up since %s=Server online seit %s
 Uptime %s=Betriebszeit %s
 My Servers=My Servers
@@ -460,7 +460,7 @@ You have %s remaining on your Trial key=Deine Testlizenz ist noch **%s** gültig
 Trial Expired=Testzeit Abgelaufen
 Your Trial has expired=Deine Testversion ist abgelaufen
 To continue using Unraid OS you may purchase a license key=Um Unraid OS weiter verwenden zu können bitte eine Lizenz kaufen
-You have used all your Trial extensions=Es wurden bereits alle Testlizenzverlängerungen aufgebraucht
+You have used all your Trial extensions=Es wurden bereits alle Testlizenzverlängerungen aufgebraucht.
 Alternately, you may request a Trial extension=Alternativ, kannst du deine Testlizenz verlängern
 Basic=Basic
 Plus=Plus
@@ -605,3 +605,19 @@ Registration key management=Lizenzschlüssel Verwaltung
 Download any registration key linked to your account Upgrade keys to higher editions=Lade einen belibegen Lizenschlüssel von deinem Konto herunter. Aktualisiere deine Lizenz auf eine höhere Edition.
 Page Not Found=Seite nicht gefunden
 Page Not Allowed=Seite nicht erlaubt
+
+; DateTime
+
+year=Jahr
+years=Jahre
+month=Monat
+months=Monate
+day=Tag
+days=Tage
+hour=Stunde
+hours=Stunden
+minute=Minute
+minutes=Minuten
+second=Sekunde
+seconds=Sekunden
+ago=vor
