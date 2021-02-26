@@ -51,7 +51,7 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 :end
 
 :enhanced_log_enable_limetch_plug:
-> Auf 'Ja' setzen um die 'Lime Tech' Hervorhebung im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung  von 'Lime Tech' im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_array_plug:
@@ -67,23 +67,23 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 :end
 
 :enhanced_log_enable_drive_plug:
-> Auf 'Ja' setzen um die Hervorhebung von Meldungen in Bezug auf 'Datenträger' im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'Datenträger' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_network_plug:
-> Set to 'Yes' to enable 'Network' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Netzwerk' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_login_plug:
-> Set to 'Yes' to enable 'Login' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Login' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Set to 'Yes' to enable 'emhttp' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'emhttp' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_other_plug:
-> Set to 'Yes' to enable 'Other' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'weiteren' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhancd_log_default_plug:
