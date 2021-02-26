@@ -35,7 +35,7 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 ; Help
 ;
 :enhanced_syslog_show_all_lines_plug:
-> Wenn 'Ja' werden alle Zeilen im Erweiterten System Protkoll angezeigt. Wenn 'Nein' werden nur die Hervorgehobenen Zeilen angezeigt.
+> Wenn 'Ja' werden alle Zeilen im Erweiterten Systemprotkoll angezeigt. Wenn 'Nein' werden nur die Hervorgehobenen Zeilen angezeigt.
 :end
 
 :enhanced_log_number_of_lines_plug:
@@ -43,47 +43,47 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 :end
 
 :enhanced_log_enable_error_plug:
-> Set to 'Yes' to enable 'Errors' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Fehlern' im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_minor_plug:
-> Set to 'Yes' to enable 'Minor Issues' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'kleinen Unzulänglichkeiten' im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_limetch_plug:
-> Set to 'Yes' to enable 'Lime Tech' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung  von 'Lime Tech' im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_array_plug:
-> Set to 'Yes' to enable 'Array' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Array' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_system_plug:
-> Set to 'Yes' to enable 'System' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'System' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_file_system_plug:
-> Set to 'Yes' to enable 'File System' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Datei-System' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_drive_plug:
-> Set to 'Yes' to enable 'Drive Related' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Datenträger' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_network_plug:
-> Set to 'Yes' to enable 'Network' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Netzwerk' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_login_plug:
-> Set to 'Yes' to enable 'Login' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'Login' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Set to 'Yes' to enable 'emhttp' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'emhttp' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_other_plug:
-> Set to 'Yes' to enable 'Other' highlighting in the enhanced log.
+> Auf 'Ja' setzen um die Hervorhebung von 'weiteren' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhancd_log_default_plug:
