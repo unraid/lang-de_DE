@@ -87,76 +87,77 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 :end
 
 :enhancd_log_default_plug:
-> 'Default' resets the Configuration and Colors.  Click 'Apply' to save your changes.  Click 'Done' when you are finished with your changes.
+> 'Standard' setzt die Konfiguration und die Farben zurück. Klick auf 'Übernehmen' um die Änderungen zu speichern.  Klick auf 'Abschließen' wenn du mit deinen Änderungen fertig bist.
 :end
 
 :enhanced_log_color_error_plug:
-> Color to use for 'Error' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Fehler'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_minor_plug:
-> Color to use for 'Minor Issues' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'kleine Unzulänglichkeiten'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_limetech_plug:
-> Color to use for 'Lime Tech' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Lime Tech'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_array_plug:
-> Color to use for 'Array' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Array'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_system_plug:
-> Color to use for 'System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'System'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem a '#'.
 :end
 
 :enhanced_log_color_file_system_plug:
-> Color to use for 'File System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Dateisystem'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem a '#'.
 :end
 
 :enhanced_log_color_drive_plug:
-> Color to use for 'Drive Related' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Datenträger'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_network_plug:
-> Color to use for 'Network' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Netzwerk'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_login_plug:
-> Color to use for 'Login' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Login'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_emhttp_plug:
-> Color to use for 'emhttp' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'emhttp'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_other_plug:
-> Color to use for 'Other' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Weitere'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_custom_plug:
-> Enter any custom events you want highlighted in the log.  Any custom events you enter will be processed after the built in events.
-> The events are entered as: "search string", "event"
-> Case is ignored in the search string and wild cards are allowed.
-> Examples:
-> "found.*chip" will match any string with 'found' and 'chip' with any text in between,
-> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'. 
-> The search string and event are quoted, and each line contains one match string and event combination.  Errors in the strings can cause php errors.
-> Events are: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
+> Gib ein benutzerdefiniertes Ereignis ein welches du im Protokoll hervorheben willst.  Jedes benutzerdefiniertes Ereignis wird im Anschluss an die systemintegrierten Ereignisse angewendet.
+> Der Syntax für benutzerdefinierte Ereignisse ist: "zu suchende Zeichnefolge", "Ereignis"
+> Groß-/Kleinschreibung wird ignioriert, Platzhalter sind erlaubt.
+> Beispiele:
+> "found.*chip" wird jede Zeichenfolge finden, die 'found' und 'chip' enthält mit beliebigem Text dazwischen,
+> "(spinup|spindown)" wird jede Zeichenfolge finden, die entweder 'spinup' oder 'spindown' enthält.
+> Die zu suchende Zeichnefolge und das Ereignis stehen in Anführungszeichen und jede Zeile enthält eine Kombination von Treffer und Ereignis. Fehler in den zu suchenden Zeichnefolgen können PHP Fehler verursachen.
+> Ereignisse sind: "error", "minor issues", "lime tech", "array", "system", "Dateisystem", "drive related", "network", "login", "emhttp", "other".
 :end
 
 :enhanced_log_custom_buttons_plug:
-> Click the **Apply** button to save your custom events.  Click **Reset** to
-> undo any changes you make before you have saved the custom events. Click **Done** to exit this page.
+> Klick auf **Übernehmen** um die benutzerdefinierten Ereignisse zu speichern. Klick auf **Abbrechen** um
+> jegliche Änderungen zurückzusetzen, die vorher gemacht wurden und in den benutzerdefinierten Ereignisse gespeichert wurden.
+> Klick auf **Fertig** um diese Seite zu verlassen.
 :end
 
 :enhanced_log_filter_plug:
-> You can filter out log entries to keep your Syslog from being overwhelmed with debig or redundant log entries.  You should only filter out log entries that you know are unnecessary or redundant.
-> Because the Syslog is very important for debugging issues, don't filter out entries unnecessarily.
-> Enter the log strings you want to filtered from the Syslog.  Each entry is on a separate line with leading and trailing quotes.
+> Protokolleinträge können gefiltert werden um das Syslog von zu vielen debug oder doppelten Einträgen zu befreien.  Es sollten nur Einträge herausgefiltert werden, die mit Sicherheit nicht benötigt werden!
+> Da das Syslog sehr wichtig bei der Fehlersuche ist, sollte das Herausfiltern von Einträgen mit Bedacht und nur bei gesichert unnötigen Ereignissen vorgenommen werden.
+> Gib die Protokolleinträge an, die herausgefiltert werden sollen.  Jeder Eintrag ist ein einer eigenen Zeile innerhalb von Anführungszeichen.
 :end
 
 :enhanced_log_filter_buttons_plug:
-> Click the **Apply** button to Apply the Syslog filter. Click **Reset** to
-> undo any changes you make before you have saved the Syslog filter. Click **Done** to exit this page.
+> Klick auf **Übernehmen** um den Syslog-Filter anzuwenden. Klick auf Abbrechen um
+> jegliche Änderungen zurückzusetzen, die vorher gemacht wurden. Klick auf **Fertig** um diese Seite zu verlassen.
 :end
