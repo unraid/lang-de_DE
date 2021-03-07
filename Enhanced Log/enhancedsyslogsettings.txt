@@ -8,29 +8,29 @@ Syslog Configuration=Syslog Einstellungen
 Syslog Filter Strings=Syslog Filterzeichenfolge
 Show All Lines in Log=Alle Zeilen im Protokoll anzeigen
 Number of Lines to Display=Zahl der Anzuzeigenden Zeilen
-Enable Error Highlighting=Aktiviere Fehler Hervorhebung
-Enable Minor Issues Highlighting=Aktiviere Leichte Fehler Hervorhebung
-Enable Lime Tech Highlighting=Aktiviere Lime Tech Hervorhebung
-Enable Array Highlighting=Aktiviere Array Hervorhebung
-Enable System Highlighting=Aktiviere System Hervorhebung
-Enable File System Highlighting=Aktiviere Dateisystem Hervorhebung
-Enable Drive Related Highlighting=Aktiviere Datenträgerbezogene Hervorhebung
-Enable Network Highlighting=Aktiviere Netzwerk Hervorhebung
-Enable Login Highlighting=Aktiviere Anmelde Hervorhebung
-Enable emhttp Highlighting=Aktiviere emhttp Hervorhebung
-Enable Other Highlighting=Aktiviere Andere Hervorhebung
+Enable Error Highlighting=Aktiviere die Hervorhebung von Fehlermeldungen
+Enable Minor Issues Highlighting=Aktiviere die Hervorhebung nicht kritischer Fehlermeldungen
+Enable Lime Tech Highlighting=Aktiviere die Hervorhebung von Lime Tech Meldungen
+Enable Array Highlighting=Aktiviere die Hervorhebung von Array-Meldungen
+Enable System Highlighting=Aktiviere die Hervorhebung von System-Meldungen
+Enable File System Highlighting=Aktiviere die Hervorhebung von Dateisystem-Meldungen
+Enable Drive Related Highlighting=Aktiviere die Hervorhebung von Datenträger-Meldungen
+Enable Network Highlighting=Aktiviere die Hervorhebung von Netzwerk-Meldungen
+Enable Login Highlighting=Aktiviere die Hervorhebung von Anmelde-Meldungen
+Enable emhttp Highlighting=Aktiviere die Hervorhebung von emhttp-Meldungen
+Enable Other Highlighting=Aktiviere die Hervorhebung anderer Meldungen
 Color Selection Chart=Farbauswahl Liste
-Error Highlight Color=Fehler Hervorhebungsfarbe
-Minor Issues Highlight Color=Leichte Fehler Hervorhebungsfarbe
-Lime Tech Highlight Color=Lime Tech Hervorhebungsfarbe
-Array Highlight Color=Array Hervorhebungsfarbe
-System Highlight Color=System Hervorhebungsfarbe
-File System Highlight Color=Dateisystem Hervorhebungsfarbe
-Drive Related Highlight Color=Datenträgerbezogene Hervorhebungsfarbe
-Network Highlight Color=Netzwerk Hervorhebungsfarbe
-Login Highlight Color=Anmelde Hervorhebungsfarbe
-emhttp Highlight Color=emhttp Hervorhebungsfarbe
-Other Highlight Color=Andere Hervorhebungsfarbe
+Error Highlight Color=Hervorhebungsfarbe für Fehlermeldungen
+Minor Issues Highlight Color=Hervorhebungsfarbe für nicht kritischer Fehler-Meldungen
+Lime Tech Highlight Color=Hervorhebungsfarbe für Lime Tech Meldungen
+Array Highlight Color=Hervorhebungsfarbe für Lime Tech-Meldungen
+System Highlight Color=Hervorhebungsfarbe für System-Meldungen
+File System Highlight Color=Hervorhebungsfarbe für Dateisystem-Meldungen
+Drive Related Highlight Color=Hervorhebungsfarbe für Datenträger-Meldungen
+Network Highlight Color=Hervorhebungsfarbe für Netzwerk-Meldungen
+Login Highlight Color=Hervorhebungsfarbe für Anmelde-Meldungen
+emhttp Highlight Color=Hervorhebungsfarbe für emhttp Meldungen
+Other Highlight Color=Hervorhebungsfarbe für andere Meldungen
 ;
 ; Help
 ;
@@ -43,11 +43,11 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 :end
 
 :enhanced_log_enable_error_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'Fehlern' im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'error' (Fehler) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_minor_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'kleinen Unzulänglichkeiten' im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'minor issues' (nicht kritischer Fehler) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_limetch_plug:
@@ -55,108 +55,109 @@ Other Highlight Color=Andere Hervorhebungsfarbe
 :end
 
 :enhanced_log_enable_array_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'Array' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'array' (Array) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_system_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'System' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'system' (system) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_file_system_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'Datei-System' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'file system' (Datei-System) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_drive_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'Datenträger' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'drive related' (Datenträger) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_network_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'Netzwerk' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'network' (Netzwerk) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_login_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'Login' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'login' (Anmeldung) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'emhttp' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'emhttp' im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhanced_log_enable_other_plug:
-> Auf 'Ja' setzen um die Hervorhebung von 'weiteren' Meldungen im Erweiterten Systemprotkoll zu aktivieren.
+> Auf 'Ja' setzen um die Hervorhebung von 'other' (andere) im Erweiterten Systemprotkoll zu aktivieren.
 :end
 
 :enhancd_log_default_plug:
-> 'Default' resets the Configuration and Colors.  Click 'Apply' to save your changes.  Click 'Done' when you are finished with your changes.
+> 'Standard' setzt die Konfiguration und die Farben zurück. Klick auf 'Übernehmen' um die Änderungen zu speichern.  Klick auf 'Abschließen' wenn du mit deinen Änderungen fertig bist.
 :end
 
 :enhanced_log_color_error_plug:
-> Color to use for 'Error' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Fehler'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_minor_plug:
-> Color to use for 'Minor Issues' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'minor issues' (nicht kritische Fehler).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_limetech_plug:
-> Color to use for 'Lime Tech' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'Lime Tech'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_array_plug:
-> Color to use for 'Array' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'array' (Array).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_system_plug:
-> Color to use for 'System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'system' (System).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem a '#'.
 :end
 
 :enhanced_log_color_file_system_plug:
-> Color to use for 'File System' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'file system' (Dateisystem).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem a '#'.
 :end
 
 :enhanced_log_color_drive_plug:
-> Color to use for 'Drive Related' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'drive related' (Datenträger).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_network_plug:
-> Color to use for 'Network' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'network' (Netzwerk).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_login_plug:
-> Color to use for 'Login' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'login' (Anmeldung).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_emhttp_plug:
-> Color to use for 'emhttp' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'emhttp'.  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_color_other_plug:
-> Color to use for 'Other' highlighting.  You can use the color name or number.  The color number begins with a '#'.
+> Zu verwendende Farbe für die Hervorhebung von 'other' (andere).  Es kann der Name der Farbe oder der Farbcode verwendet werden.  Der Farbcode beginnt mit einem '#'.
 :end
 
 :enhanced_log_custom_plug:
-> Enter any custom events you want highlighted in the log.  Any custom events you enter will be processed after the built in events.
-> The events are entered as: "search string", "event"
-> Case is ignored in the search string and wild cards are allowed.
-> Examples:
-> "found.*chip" will match any string with 'found' and 'chip' with any text in between,
-> "(spinup|spindown)" will match any string with either 'spinup' or 'spindown'. 
-> The search string and event are quoted, and each line contains one match string and event combination.  Errors in the strings can cause php errors.
-> Events are: "error", "minor issues", "lime tech", "array", "system", "file system", "drive related", "network", "login", "emhttp", "other".
+> Gib ein benutzerdefiniertes Ereignis ein welches du im Protokoll hervorheben willst.  Jedes benutzerdefiniertes Ereignis wird im Anschluss an die systemintegrierten Ereignisse angewendet.
+> Der Syntax für benutzerdefinierte Ereignisse ist: "zu suchende Zeichnefolge", "Ereignis"
+> Groß-/Kleinschreibung wird ignioriert, Platzhalter sind erlaubt.
+> Beispiele:
+> "found.*chip" wird jede Zeichenfolge finden, die 'found' und 'chip' enthält mit beliebigem Text dazwischen,
+> "(spinup|spindown)" wird jede Zeichenfolge finden, die entweder 'spinup' oder 'spindown' enthält.
+> Die zu suchende Zeichnefolge und das Ereignis stehen in Anführungszeichen und jede Zeile enthält eine Kombination von Treffer und Ereignis. Fehler in den zu suchenden Zeichnefolgen können PHP Fehler verursachen.
+> Ereignisse sind: "error" (Fehler), "minor issues" (nicht kritische Fehler), "lime tech", "array", "system", "file system" (Dateissystem), "drive related" (Datenträger), "network" (Netzwerk), "login" (Anmeldung), "emhttp", "other" (andere).
 :end
 
 :enhanced_log_custom_buttons_plug:
-> Click the **Apply** button to save your custom events.  Click **Reset** to
-> undo any changes you make before you have saved the custom events. Click **Done** to exit this page.
+> Klick auf **Übernehmen** um die benutzerdefinierten Ereignisse zu speichern. Klick auf **Abbrechen** um
+> jegliche Änderungen zurückzusetzen, die vorher gemacht wurden und in den benutzerdefinierten Ereignisse gespeichert wurden.
+> Klick auf **Fertig** um diese Seite zu verlassen.
 :end
 
 :enhanced_log_filter_plug:
-> You can filter out log entries to keep your Syslog from being overwhelmed with debig or redundant log entries.  You should only filter out log entries that you know are unnecessary or redundant.
-> Because the Syslog is very important for debugging issues, don't filter out entries unnecessarily.
-> Enter the log strings you want to filtered from the Syslog.  Each entry is on a separate line with leading and trailing quotes.
+> Protokolleinträge können gefiltert werden um das Syslog von zu vielen debug oder doppelten Einträgen zu befreien.  Es sollten nur Einträge herausgefiltert werden, die mit Sicherheit nicht benötigt werden!
+> Da das Syslog sehr wichtig bei der Fehlersuche ist, sollte das Herausfiltern von Einträgen mit Bedacht und nur bei gesichert unnötigen Ereignissen vorgenommen werden.
+> Gib die Protokolleinträge an, die herausgefiltert werden sollen.  Jeder Eintrag ist ein einer eigenen Zeile innerhalb von Anführungszeichen.
 :end
 
 :enhanced_log_filter_buttons_plug:
-> Click the **Apply** button to Apply the Syslog filter. Click **Reset** to
-> undo any changes you make before you have saved the Syslog filter. Click **Done** to exit this page.
+> Klick auf **Übernehmen** um den Syslog-Filter anzuwenden. Klick auf Abbrechen um
+> jegliche Änderungen zurückzusetzen, die vorher gemacht wurden. Klick auf **Fertig** um diese Seite zu verlassen.
 :end

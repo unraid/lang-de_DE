@@ -1,5 +1,5 @@
 :main_array_devices_help:
-**Färbiger Status Indikator** Bedeutung des Farbindikators am Anfang jeder Zeile von *Array Datenträger*:
+**Farbiger Status Indikator** Bedeutung des Farbindikators am Anfang jeder Zeile von *Array Datenträger*:
 
 <i class='fa fa-circle orb green-orb'></i>Normal Betrieb, Datenträger ist aktiv.
 
@@ -431,14 +431,14 @@ Wenn der freie Speicherplatz unter diesen Wert fällt und neue Dateien kopiert w
 
 Erlaubt Größeneinheiten sind:
 
-**KB** = 1,000<br>
-**MB** = 1,000,000<br>
-**GB** = 1,000,000,000<br>
-**TB** = 1,000,000,000,000<br>
-**K** = 1,024 (ie, 2^10)<br>
-**M** = 1,048,576 (ie, 2^20)<br>
-**G** = 1,073,741,824 (ie, 2^30)<br>
-**T** = 1,099,511,627,776 (ie, 2^40)<br>
+**KB** = 1.000<br>
+**MB** = 1.000.000<br>
+**GB** = 1.000.000.000<br>
+**TB** = 1.000.000.000.000<br>
+**K** = 1.024 (ie, 2^10)<br>
+**M** = 1.048.576 (ie, 2^20)<br>
+**G** = 1.073.741.824 (ie, 2^30)<br>
+**T** = 1.099.511.627.776 (ie, 2^40)<br>
 
 Wenn keine Größeneinheiten angegeben wird, wird standardmäßig der 1024-byte Block angenommen.
 :end
