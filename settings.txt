@@ -509,5 +509,5 @@ Your hardware does not have Intel VT-x or AMD-V capability=Die eingesetzte Hardw
 Your Lets Encrypt SSL Certificate has been provisioned and a DNS record for local IP address=Das Lets Encrypt SSL Zertifikat und ein DNS Eintrag für die lokale IP wurde bereitgestellt
 Your Lets Encrypt SSL Certificate has been renewed=Das Lets Encrypt SSL Zertifikat wurde erneuert
 Your local IP address=Ihre Lokale IP-Adresse
-Your router or DNS server has DNS rebinding protection enabled, preventing=Der Router oder der DNS-Server hat "DNS rebinding protection" aktiviert, dies verhindert
+Your router or DNS server has DNS rebinding protection enabled, preventing=Der Router oder der DNS-Server hat &quot;DNS rebinding protection&quot; aktiviert, dies verhindert
 YYYY-MM-DD=YYYY-MM-DD
