@@ -2070,3 +2070,31 @@ Zeigt die Ausgabe von `lsscsi` an. Die Identifikationszahlen werden zur Konfigur
 
 Hinweis: Linux gruppiert ATA, SATA und SAS Geräte mit SCSI Geräten.
 :end
+
+; unraid.net help - added March 11, 2021
+:unraidnet_wanpanel_help:
+Der WAN-Netzwerkport ist die externe TCP-Portnummer, die auf Ihrem Router für NAT / Port eingerichtet wurde. 
+Leiten Sie den Datenverkehr vom Internet an diesen weiter Der SSL-Netzwerkport des unRAID-Servers für sicheren Webverkehr
+:end
+
+:unraidnet_inactivespanel_help:
+Klicken Sie auf Aktivieren, um ein lokales Git-Repo für Ihr lokales USB-Flash-Startgerät einzurichten und eine Verbindung zu einer dedizierten Fernbedienung auf unraid.net herzustellen, die an diesen Server gebunden ist.
+:end
+
+:unraidnet_changespanel_help:
+Der Status "Nicht auf dem neuesten Stand" zeigt an, dass lokale Dateien im Vergleich zur Fernbedienung auf unraid.net geändert wurden.
+
+Klicken Sie auf Aktualisieren, um Änderungen auf den Remote-Server zu übertragen.
+
+Klicken Sie auf Änderungen, um zu sehen, was sich geändert hat.
+:end
+
+:unraidnet_uptodatepanel_help:
+Der Status "auf dem neusten Stand" zeigt an, dass Ihre lokale Konfiguration mit der auf der unraid.net-Fernbedienung gespeicherten übereinstimmt.
+:end
+
+:unraidnet_activepanel_help:
+Klicken Sie auf Deaktivieren, um die Kommunikation mit Ihrer Fernbedienung auf unraid.net zu unterbrechen.
+
+Klicken Sie auf Neu initialisieren, um den gesamten Änderungsverlauf sowohl auf dem lokalen als auch auf dem unraid.net-Remoteserver zu löschen.
+:end
