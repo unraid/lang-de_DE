@@ -20,9 +20,9 @@ Resume an array operation at=
 Send notifications for temperature related Pause or Resume=
 Parity Check Tuning debug logging=
 Requires Unraid 67 or later=Requires Unraid 6.7 or late
-ParityRead-Check History=Parity/Read-Check History=
-Click to show parity-check history=
-unknown action %s=unknown action: %s
+ParityRead-Check History=Parity/Read-Check History=Bisherige Paritäts Prüfungen
+Click to show parity-check history=Klicke um Paritätsprüfungs Verlauf anzuzeigen
+unknown action %s=unbekannte Aktion: %s
 Elapsed Time=Vergangene Zeit
 Increments=
 
@@ -35,8 +35,8 @@ Resumed=Fortgesetzt
 Drives cooled down=Datenträger abgekühlt
 Scheduled pause=Geplante Pause
 array stopping so progress will be lost=Array stoppt Fortschritt geht verloren
-Correcting Parity Check=
-NonCorrecting Parity Check=Non-Correcting Parity Check
+Correcting Parity Check=Parity Prüfung mit Fehlerverbesserung
+NonCorrecting Parity Check=Parity Prüfung ohne Fehlerverbesserung
 
 ; Syslog messages (with debug logging disabled)
 ERROR=FEHLER
@@ -50,28 +50,28 @@ Unrecognised option %s=FEHLER: Unbekannter Parameter %s
 ; Syslog messages (with debug logging enabled)
 ; (probably not worth translating these as they are mainly of use to the plugin developer)
 
-No action specified=
-No cron events for this plugin are needed=
-created cron entries for running increments=
-created cron entry for monitoring disk temperatures=
-Array operation paused but not for temperature related reason=
+No action specified=Keine Aktion gewählt
+No cron events for this plugin are needed=Für dieses Plugin werden keine Cron Einträge benötigt
+created cron entries for running increments=Nötige Cron Einträge würden hinzugefügt
+created cron entry for monitoring disk temperatures= Cron Eintrag zur Überwachung der Datenträgertemperaturen wurde hinzugefügt
+Array operation paused but not for temperature related reason=Array Vorgang pausiert - nicht aus temperaturbedingten Gründen
 detected that mdcmd had been called from %s with command %s=
-%s appears to be a regular scheduled check=
-to resume %s=
-to pause %s=
-option not currently recognised=
-No array operation currently in progress=
-Parity check appears to be paused=
-Unscheduled array operation in progress=
-Temperature monitoring switched off=
-drives=
-hot=
-warm=
-cool=
+%s appears to be a regular scheduled check=%s scheint eine geplante Prüfung zu sein
+to resume %s=zum Fortsetzen %s
+to pause %s= um zu pausieren %s
+option not currently recognised=Vorgang wurde nicht erkannt
+No array operation currently in progress=Es wird kein Array Vorgang ausgeführt
+Parity check appears to be paused=Paritätsüberprüfung scheint pausiert zu sein
+Unscheduled array operation in progress=Ungeplanter Array Vorgang wird ausgeführt
+Temperature monitoring switched off=Temperaturüberwachung deaktiviert
+drives=Datenträger
+hot=heiß
+warm=warm
+cool=kalt
 with all drives below temperature threshold for a Pause=
-already running=
-Resume request=
-Pause request=
+already running=wird bereits ausgeführt
+Resume request=Vorgang fortgesetzt
+Pause request=Vorgang pausiert
 Pause of=
 Detected that array has not yet been started=
 Detected that array has just been started=
