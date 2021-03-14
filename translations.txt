@@ -623,3 +623,12 @@ minutes=Minuten
 second=Sekunde
 seconds=Sekunden
 ago=vor
+
+; New entries - 2021-03-14
+Cache=
+NFS=
+Please try a different browser=
+SMB=
+Sorry, this feature is not supported by MSIEEdge=Sorry, this feature is not supported by MSIE/Edge
+Unsupported Feature=
+Click a button and your flash is automatically backed up to Unraidnet, enabling easy recovery in the event of a device failure Never self-managehost your flash backups again=Click a button and your flash is automatically backed up to Unraid.net, enabling easy recovery in the event of a device failure. Never self-manage/host your flash backups again!

@@ -305,3 +305,11 @@ Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens ü
 
 Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 :end
+
+; New entries - 2021-03-14
+Delete all notifications=
+Downloading=
+Install Language=
+please configure=
+Uploaded=
+PCI Devices No IOMMU Groups Available=PCI Devices (No IOMMU Groups Available)

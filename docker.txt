@@ -129,3 +129,7 @@ Web=Web
 WebUI=WebUI
 Writable=Beschreibbar
 Start Container After Install = Container nach Installation starten
+
+; New entries - 2021-03-14
+Drivers=
+Reset sorting=

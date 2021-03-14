@@ -101,3 +101,6 @@ User count %s with %s unprotected=%s Benutzer davon %s ungeschützt
 utilization warning=Kapazitätswarnung
 View Running Processes=Laufende Prozesse anzeigen
 Virtual Machines=Virtuelle Maschinen
+
+; New entries - 2021-03-14
+Temp=
