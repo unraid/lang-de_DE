@@ -254,7 +254,7 @@ Another browser tab or device has updated the displayed templates Some actions a
 Reinstall default=Neuinstallation (standard)
 WebUI=WebUI
 Reinstall=Neuinstallieren
-Install=Intallieren
+Install=Installieren
 Project=Projekt
 Install Using The Templates Default Tag=Instalieren mit den standard Vorgaben der Vorlage
 Moderator Comments=Moderator Kommentare
