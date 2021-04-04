@@ -24,7 +24,7 @@ Set Password=Passwort setzen
 Set the disk Password=Datenträgerpasswort setzen
 Spin down disks=Datenträger herunterfahren
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Unassigned Devices Plus plugin muss installiert sein um den Partitionierungs Modus zu aktivieren
-to SMB share config=zu SMB Freigabe konfiguratio
+to SMB share config=zu SMB Freigabe Konfiguration
 Unassigned Devices=Unassigned Devices
 
 ; Hilfe
