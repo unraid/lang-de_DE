@@ -294,24 +294,24 @@ You may not add new disks and also remove existing disks=Keine neuen Datenträge
 your server=Ihr Server
 
 ; New entries - 2021-03-14
-completed=
-Erase=
-Erase Device Content=
-Existing content is permanently lost=
-Invalid, missing or expired=
-SMART controller type=
-SMART notification tolerance level=
-SMART self-test in progress=
+completed=abgeschlossen
+Erase=Löschen
+Erase Device Content=Lösche Datenträger Inhalt
+Existing content is permanently lost=Existierender Inhalt ist unwiederbringlich gelöscht
+Invalid, missing or expired=Ungültig, fehlend oder abgelaufen
+SMART controller type=SMART Controller Typ
+SMART notification tolerance level=SMART Benachrichtigungslevel
+SMART self-test in progress=SMART Selbsttest läuft
 This Unraid OS release has been withdrawn and may no longer be used Please=This Unraid OS release has been withdrawn and may no longer be used. Please
-This will ERASE ALL device content=
-This will ERASE content of ALL devices in the pool=
-To confirm your action type %s=To confirm your action type: %s
+This will ERASE ALL device content=Dies wird den gesammten Datenträger Inhalt LÖSCHEN
+This will ERASE content of ALL devices in the pool=Dies wird den Inhalt aller Datenträger im Pool LÖSCHEN
+To confirm your action type %s=Zum bestätigen eintippen: %s
 
 ; New entries - 2021-03-14
-auto=
+auto=auto
 Click on FLASH above this message=Click on **FLASH** above this message
-Convert to raid1c3 mode=
-Convert to raid1c4 mode=
-Flash device is set as public share=
-Please change share SMB security=
-See %s Settings=
+Convert to raid1c3 mode=Konvertieren zu Raid1c3 Modus
+Convert to raid1c4 mode=Konvertieren zu Raid1c4 Modus
+Flash device is set as public share=Flash Laufwerk ist als öffentliche Freigabe eingestellt
+Please change share SMB security=Bitte SMB Sicherheitseinstellungen ändern
+See %s Settings=Bitte %s Einstellungen prüfen
