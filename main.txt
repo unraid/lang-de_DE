@@ -297,21 +297,21 @@ your server=Ihr Server
 completed=abgeschlossen
 Erase=Löschen
 Erase Device Content=Lösche Datenträger Inhalt
-Existing content is permanently lost=Existierender Inhalt ist unwiederbringlich gelöscht
+Existing content is permanently lost=Existierende Daten werden unwiderruflich gelöscht
 Invalid, missing or expired=Ungültig, fehlend oder abgelaufen
 SMART controller type=SMART Controller Typ
 SMART notification tolerance level=SMART Benachrichtigungslevel
 SMART self-test in progress=SMART Selbsttest läuft
 This Unraid OS release has been withdrawn and may no longer be used Please=This Unraid OS release has been withdrawn and may no longer be used. Please
-This will ERASE ALL device content=Dies wird den gesammten Datenträger Inhalt LÖSCHEN
-This will ERASE content of ALL devices in the pool=Dies wird den Inhalt aller Datenträger im Pool LÖSCHEN
-To confirm your action type %s=Zum bestätigen eintippen: %s
+This will ERASE ALL device content=Dies LÖSCHT ALLE Daten am Datenträger
+This will ERASE content of ALL devices in the pool=Dies LÖSCHT ALLE Daten auf ALLEN Datenträger in diesem Pool
+To confirm your action type %s=Zum Bestätigen: %s eingeben
 
 ; New entries - 2021-03-14
 auto=auto
 Click on FLASH above this message=Click on **FLASH** above this message
 Convert to raid1c3 mode=Konvertieren zu Raid1c3 Modus
 Convert to raid1c4 mode=Konvertieren zu Raid1c4 Modus
-Flash device is set as public share=Flash Laufwerk ist als öffentliche Freigabe eingestellt
+Flash device is set as public share=Flash Laufwerk ist öffentlich Freigegeben
 Please change share SMB security=Bitte SMB Sicherheitseinstellungen ändern
 See %s Settings=Bitte %s Einstellungen prüfen
