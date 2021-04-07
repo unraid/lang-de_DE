@@ -304,7 +304,7 @@ SMART notification tolerance level=SMART Benachrichtigungslevel
 SMART self-test in progress=SMART Selbsttest läuft
 This Unraid OS release has been withdrawn and may no longer be used Please=This Unraid OS release has been withdrawn and may no longer be used. Please
 This will ERASE ALL device content=Dies LÖSCHT ALLE Daten am Datenträger
-This will ERASE content of ALL devices in the pool=Dies LÖSCHT ALLE Daten auf ALLEN Datenträger in diesem Pool
+This will ERASE content of ALL devices in the pool=Dies LÖSCHT ALLE Daten auf ALLEN Datenträgern in diesem Pool
 To confirm your action type %s=Zum Bestätigen: %s eingeben
 
 ; New entries - 2021-03-14
