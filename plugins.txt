@@ -29,4 +29,4 @@ Upgrade=Aktualisieren
 View Release Notes=Zeige Veröffentlichungshinweise
 
 ; New entries - 2021-03-14
-No plugins installed=
+No plugins installed=Keine Plugins installiert
