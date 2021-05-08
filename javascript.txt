@@ -55,3 +55,10 @@ Unmounting disks=Datenträger werden ausgehängt
 Autostart disabled=Autostart deaktiviert
 Missing encryption key=Fehlender Verschlüsselungsschlüssel
 Opening encrypted volumes=Entsperre Verschlüsselte Volumen
+
+; New entries (5) - 2021-05-08
+Container Path=
+Container Port=
+Container Variable=
+Container Label=
+Container Device=

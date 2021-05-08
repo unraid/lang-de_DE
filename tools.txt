@@ -306,16 +306,14 @@ Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens ü
 Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 :end
 
-; New entries - 2021-03-14
+; New entries (11) - 2021-03-14
+Array slots=Array slots
 Delete all notifications=Lösche alle Benachrichtigungen
 Downloading=Herunterladen
 Install Language=Installiere Sprache
 please configure=bitte konfigurieren
-Uploaded=Hochgeladen
-PCI Devices No IOMMU Groups Available=PCI Devices (Keine IOMMU Gruppen verfügbar)
-
-; New entries - 2021-03-14
-Array slots=Array slots
 Pool slots=Pool slots
+Uploaded=Hochgeladen
 VFIO-PCI Log=VFIO-PCI Log
 View VFIO-PCI Log=VFIO-PCI Log ansehen
+PCI Devices No IOMMU Groups Available=PCI Devices (Keine IOMMU Gruppen verfügbar)

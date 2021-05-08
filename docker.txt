@@ -130,9 +130,7 @@ WebUI=WebUI
 Writable=Beschreibbar
 Start Container After Install = Container nach Installation starten
 
-; New entries - 2021-03-14
+; New entries (3) - 2021-03-14
 Drivers=Treiber
 Reset sorting=Sortierung zurücksetzen
-
-; New entries - 2021-03-14
 Total size=Gesamtgröße
