@@ -30,3 +30,7 @@ View Release Notes=Zeige Veröffentlichungshinweise
 
 ; New entries (1) - 2021-03-14
 No plugins installed=Keine Plugins installiert
+
+; New entries (2) - 2021-05-09
+Checking connectivty=
+No response, aborting=
