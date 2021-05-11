@@ -460,7 +460,6 @@ Wenn keine Größeneinheiten angegeben wird, wird standardmäßig der 1024-byte 
 **Spezielle Freigabeeinstellungen:**
 
 + SMB Freigaben in *Kursiv* zeigen versteckte Nutzer-Freigaben.
-+ AFP Freigaben in *Kursiv* zeigen Time-Machine Nutzer-Freigaben.
 + NFS besetzt keine speziellen Berechtigungen für Nutzer-Freigaben.
 :end
 
@@ -481,7 +480,6 @@ Wenn keine Größeneinheiten angegeben wird, wird standardmäßig der 1024-byte 
 **Spezielle Freigabeeinstellungen:**
 
 + SMB Freigaben in *Kursiv* zeigen versteckte Datenträger-Freigaben.
-+ AFP Freigaben in *Kursiv* zeigen Time-Machine Datenträger-Freigaben.
 + NFS besetzt keine speziellen Berechtigungen für Datenträger-Freigaben.
 :end
 
