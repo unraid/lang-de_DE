@@ -111,3 +111,7 @@ Only PNG images are allowed=Only PNG images are allowed!
 
 ; New entries (1) - 2021-05-15
 SMART health-check failed=
+
+; New entries (2) - 2021-05-20
+Click to toggle CPU chart=
+Network traffic=
