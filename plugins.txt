@@ -32,8 +32,8 @@ View Release Notes=Zeige Veröffentlichungshinweise
 No plugins installed=Keine Plugins installiert
 
 ; New entries (2) - 2021-05-09
-Checking connectivty=Verbindungen werden geprüft
-No response, aborting=Keine Reaktion, abbrechen
+Checking connectivty=Verbindung wird geprüft
+No response, aborting=Keine Antwort, Abbruch
 
 ; New entries (1) - 2021-05-10
 checking=prüfe
