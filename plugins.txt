@@ -44,5 +44,5 @@ Remove Plugin=Entferne Plugin
 Update Plugin=Aktualisiere Plugin
 
 ; New entries (2) - 2021-05-15
-Plugin File Install Errors=Plugin Dateinstallationsfehler
+Plugin File Install Errors=Plugin Installationsfehler
 Plugin History=Plugin Historie
