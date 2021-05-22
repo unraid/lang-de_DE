@@ -106,11 +106,11 @@ Virtual Machines=Virtuelle Maschinen
 Temp=TEMP
 
 ; New entries (2) - 2021-05-08
-%s ago=% vorher
+%s ago=%s vorher
 Only PNG images are allowed=Es sind nur PNG Bilder erlaubt.
 
 ; New entries (1) - 2021-05-15
-SMART health-check failed=SMART Gesundheitsüberprüfung fehlgeschlagen
+SMART health-check failed=SMART Health-Check fehlgeschlagen
 
 ; New entries (2) - 2021-05-20
 Click to toggle CPU chart=Klicken um die CPU Anzeige umzuschalten
