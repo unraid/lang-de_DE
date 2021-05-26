@@ -32,17 +32,17 @@ View Release Notes=Zeige Veröffentlichungshinweise
 No plugins installed=Keine Plugins installiert
 
 ; New entries (2) - 2021-05-09
-Checking connectivty=
-No response, aborting=
+Checking connectivty=Verbindung wird geprüft
+No response, aborting=Keine Antwort, Abbruch
 
 ; New entries (1) - 2021-05-10
-checking=
+checking=prüfe
 
 ; New entries (3) - 2021-05-10
-Delete Plugin=
-Remove Plugin=
-Update Plugin=
+Delete Plugin=Lösche Plugin
+Remove Plugin=Entferne Plugin
+Update Plugin=Aktualisiere Plugin
 
 ; New entries (2) - 2021-05-15
-Plugin File Install Errors=
-Plugin History=
+Plugin File Install Errors=Plugin Installationsfehler
+Plugin History=Plugin Historie
