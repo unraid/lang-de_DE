@@ -699,3 +699,7 @@ View Local Config=
 View Peer Config=
 VPN tunneled access=
 WireGuard Configuration=
+
+; New entries (2) - 2021-05-31
+Set password=
+User root=User 'root'
