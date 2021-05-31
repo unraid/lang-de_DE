@@ -115,3 +115,10 @@ SMART health-check failed=SMART Health-Check fehlgeschlagen
 ; New entries (2) - 2021-05-20
 Click to toggle CPU chart=Klicken um die CPU Anzeige umzuschalten
 Network traffic=Netzwerk Verkehr
+
+; New entries (5) - 2021-05-31
+10 s=
+30 s=
+1 m=
+2 m=
+Select time frame=
