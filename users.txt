@@ -19,11 +19,11 @@ User %s has been deleted=Benutzer %s gelöscht
 User name=Benutzername
 
 ; New entries (8) - 2021-05-31
-Click Add User to create a user for remote shares access=Click **Add User** to create a user for remote shares access
-Invalid Key=
-Management Access=
-No users are defined=
-Save=
-Shares Access=
-SSH authorized keys=
-Syntax of the key is incorrect=
+Click Add User to create a user for remote shares access=Klicke auf **Benutzer hinzufügen** um einen Benutzer für den Fernzugriff zu erstellen
+Invalid Key=Ungültiger Schlüssel
+Management Access=Managment Zugriff
+No users are defined=Keine Benutzer difiniert
+Save=Speichern
+Shares Access=Freigaben-Zugriff
+SSH authorized keys=SSH authorisierte Schlüssel
+Syntax of the key is incorrect=Der Schlüssel-Syntax ist nicht korrekt
