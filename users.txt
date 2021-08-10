@@ -19,10 +19,10 @@ User %s has been deleted=Benutzer %s gelöscht
 User name=Benutzername
 
 ; New entries (8) - 2021-05-31
-Click Add User to create a user for remote shares access=Klicke auf **Benutzer hinzufügen** um einen Benutzer für den Fernzugriff zu erstellen
+Click Add User to create a user for remote shares access=Klicke auf **Benutzer hinzufügen** um einen Benutzer für den Fernzugriff auf Freigaben hinzuzufügen
 Invalid Key=Ungültiger Schlüssel
 Management Access=Managment Zugriff
-No users are defined=Keine Benutzer difiniert
+No users are defined=Keine Benutzer definiert
 Save=Speichern
 Shares Access=Freigaben-Zugriff
 SSH authorized keys=SSH authorisierte Schlüssel
