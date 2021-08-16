@@ -117,8 +117,8 @@ Click to toggle CPU chart=Klicken um die CPU Anzeige umzuschalten
 Network traffic=Netzwerk Verkehr
 
 ; New entries (5) - 2021-05-31
-10 s=
-30 s=
-1 m=
-2 m=
-Select time frame=
+10 s=10 s
+30 s=30 s
+1 m=1 m
+2 m=2 m
+Select time frame=Wähle Zeitfenster

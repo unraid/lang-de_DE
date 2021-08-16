@@ -315,3 +315,8 @@ To confirm your action type %s=Zum Bestätigen: %s eingeben
 
 ; New entries (1) - 2021-05-08
 This Unraid OS release has been withdrawn and may no longer be used Please=This Unraid OS release has been withdrawn and may no longer be used. Please
+
+; New entries (3) - 2021-07-11
+enter disk index and device name as applicable to your controller=
+next device=
+previous device=
