@@ -504,7 +504,7 @@ Opens new HTTPS window to %s=Öffnet ein neues HTTPS Fenster zu %s
 Page Not Allowed=Seite nicht erlaubt
 Page Not Found=Seite nicht gefunden
 Paste or Enter code=Schlüssel einfügen oder eingeben
-Please check Settings > Network=
+Please check Settings > Network=Bitte überprüfe Einstellungen > Netzwerk
 Please confirm closure=Bitte Abmeldung bestätigen
 Please keep this window open=Bitte Fenster geöffnet lassen
 Please refresh the page to ensure you load your latest configuration=
@@ -627,24 +627,12 @@ While we strive to respond to all requests as quickly as possible please allow f
 You have an open pop-up=Sie haben ein offenes Pop-Up
 You may purchase a license key corresponding to this USB Flash device to continue using this installation=Bitte eine passende Lizenz für dieses USB Bootgerät kaufen damit diese Installation weiter benutzt werden kann
 Your flash drive is corrupted or offline=Das USB Bootgerät ist beschädigt oder offline
-Please copy the correct key file to the config directory on your USB Flash boot device or choose Purchase Key or Replace Key=Please copy the correct key file to the */config* directory on your USB Flash boot device or choose Purchase Key or Replace Key
-Please copy the correct key file to the config directory on your USB Flash boot device or choose Purchase Key=Please copy the correct key file to the */config* directory on your USB Flash boot device or choose Purchase Key
-Please try a different USB Flash device=
-Post your diagnostics in the forum for help=
-See also here=
-The key file should be located in the config directory on your USB Flash boot device=The key file should be located in the */config* directory on your USB Flash boot device
-This can occur as a result of transferring your license key to a replacement USB Flash device, and you are currently booted from your old USB Flash device=
-Upgrade keys to higher editions=
-While we strive to respond to all requests as quickly as possible please allow for up to 3 business days for a response=
-You have an open pop-up=
-You may purchase a license key corresponding to this USB Flash device to continue using this installation=
-Your flash drive is corrupted or offline=
 
 ; New entries (11) - 2021-05-09
 Blacklisted USB Flash GUID=Gesperrte USB-Flash-GUID
-complete=
+complete=Abgeschlossen
 Copying=Kopieren
-object=
+object=Objekt
 Password=Passwort
 Purchase Key=Schlüssel kaufen
 Subject=Betreff
@@ -667,31 +655,31 @@ Successfully logged out=Erfolgreich ausgeloggt
 The Unraid OS webgui requires JavaScript=Unraid OS WebGUI benötigt JavaScript
 Too many invalid login attempts=Zu viele fehlgeschlagene Login-Versuche
 Unable to set password=Passwort kann nicht gesetzt werden
-Username not changeable=Username ist nicht änderbar
+Username not changeable=Benutzername ist nicht änderbar
 Your browser has JavaScript disabled=Javascript ist in deinem Browser deaktiviert
 
 ; New entries (1) - 2021-06-12
 Docs=
 
 ; New entries (1) - 2021-06-12
-Username=
+Username=Benutzername
 
 ; My Servers Wan IP Check - 2021-06-30
-Remark your WAN IPv4 is %s=Remark: your WAN IPv4 is **%s**
-Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unraid's WAN IPv4 **%1s** does not match your client's WAN IPv4 **%2s**
-This may indicate a complex network that will not work with this Remote Access solution=
-Ignore this message if you are currently connected via Remote Access or VPN=
+Remark your WAN IPv4 is %s=Anmerkung: Deine WAN IPv4 ist **%s**
+Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Anmerkung: Die WAN IPv4 **%1s** von Unraid stimmt nicht mit der WAN IPv4 **%2s** des Clients überein
+This may indicate a complex network that will not work with this Remote Access solution=Dies könnte auf ein komplexes Netzwerk hinweisen, das nicht mit dieser Fernzugriffslösung funktionieren wird
+Ignore this message if you are currently connected via Remote Access or VPN=Ignoriere diese Nachricht, wenn du derzeit über Fernzugriff oder VPN verbunden bist
 
 ; New entries (4) - 2021-07-11
-Browser cookie support required for Unraid OS webgui=
-Password confirmation does not match=
-Please also ensure you have cookies enabled=
-Please set a password for the root user account=
+Browser cookie support required for Unraid OS webgui=Unraid OS WebGUI benötigt Browser-Unterstützung für Cookies
+Password confirmation does not match=Passwort Wiederholung stimmt nicht überein
+Please also ensure you have cookies enabled=Bitte stelle auch sicher, dass Cookies aktiviert sind
+Please set a password for the root user account=Bitte lege ein Passwort für den root-Benutzeraccount fest
 
 ; New entries (6) - 2021-07-11
-Copied key url=
-Copy Key URL=
-Get quick real-time info on the status of your servers such as storage, container, and VM usage=
-Please copy the Key URL before closing this window=
-To manually install the key paste the key file url into the Key file URL field on the webGUI Registration page and then click Install Key=
-Unable to copy=
+Copied key url=Lizenzschlüssel URL kopiert
+Copy Key URL=Lizenzschlüssel URL kopieren
+Get quick real-time info on the status of your servers such as storage, container, and VM usage=Bekomme kurze Echtzeit-Informationen über den Status deiner Server, wie Speicher-, Container- und VM-Auslastung
+Please copy the Key URL before closing this window=Bitte kopiere die Lizenzschlüssel URL, bevor du dieses Fenster schließt
+To manually install the key paste the key file url into the Key file URL field on the webGUI Registration page and then click Install Key=Um den Lizenzschlüssel manuell zu installieren, füge die Lizenzschlüssel-Datei URL in das Lizenzschlüssel-Datei URL Feld auf der WebGUI Registrierungsseite ein und klicke auf Schlüssel installieren
+Unable to copy=Kopieren fehlgeschlagen
