@@ -669,20 +669,6 @@ Too many invalid login attempts=Zu viele fehlgeschlagene Login-Versuche
 Unable to set password=Passwort kann nicht gesetzt werden
 Username not changeable=Username ist nicht änderbar
 Your browser has JavaScript disabled=Javascript ist in deinem Browser deaktiviert
-Hide Password=
-Invalid Username or Password=
-Max password length is 128 characters=
-Password recovery=
-Please enable it=
-root requires a password=
-Set Password=
-Show Password=
-Successfully logged out=
-The Unraid OS webgui requires JavaScript=
-Too many invalid login attempts=
-Unable to set password=
-Username not changeable=
-Your browser has JavaScript disabled=
 
 ; New entries (1) - 2021-06-12
 Docs=
