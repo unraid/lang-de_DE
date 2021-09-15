@@ -702,19 +702,19 @@ WireGuard Configuration=WireGuard Konfiguration
 
 ; New entries (2) - 2021-05-31
 Set password=Setze Passwort
-User root=User 'root'
+User root=Benutzer 'root'
 
 ; New entries (2) - 2021-06-12
-Manage password=
-Restore default image=
+Manage password=Passwort verwalten
+Restore default image=Standard-Abbild wiederherstellen
 
 ; New entries (6) - 2021-07-02
-CA-signed certificate file=
+CA-signed certificate file=CA-signierte Zertifikats-Datei
 Certificate subject=
 DNS Propagation is PENDING=
 DNS Rebinding Protection is ENABLED=
-Manage=
-Not present=
+Manage=Verwalten
+Not present=Nicht vorhanden 
 
 ; New entries (1) - 2021-07-11
 Unraidnet account status=Unraid.net account status
