@@ -495,12 +495,12 @@ Opens new HTTPS window to %s=Öffnet ein neues HTTPS Fenster zu %s
 Page Not Allowed=Seite nicht erlaubt
 Page Not Found=Seite nicht gefunden
 Paste or Enter code=Schlüssel einfügen oder eingeben
-Please check Settings > Network=
+Please check Settings > Network=Bitte überprüfe Einstellungen > Netzwerkeinstellungen
 Please confirm closure=Bitte Abmeldung bestätigen
 Please keep this window open=Bitte Fenster geöffnet lassen
-Please refresh the page to ensure you load your latest configuration=
+Please refresh the page to ensure you load your latest configuration=Bitte aktualisiere die Seite um sicherzustellen, dass du deine aktuelle Konfiguration lädst
 Please remove all key files except the one you want to replace from the config directory on your USB Flash boot device=Please remove all key files except the one you want to replace from the */config* directory on your USB Flash boot device
-Please sign in with your Unraidnet forum account=Please sign in with your Unraid.net forum account
+Please sign in with your Unraidnet forum account=Bitte melde dich mit deinem Unraid.net Forum Account an
 Please try a different browser=Bitte versuchen Sie einen anderen Browser
 Please wait a moment and reload the page=Bitte einen Moment warten und die Seite neu laden
 Pop-up=Pop-up
@@ -621,9 +621,9 @@ The key file should be located in the config directory on your USB Flash boot de
 
 ; New entries (11) - 2021-05-09
 Blacklisted USB Flash GUID=Gesperrte USB-Flash-GUID
-complete=
+complete=abgeschlossen
 Copying=Kopieren
-object=
+object=Objekt
 Password=Passwort
 Purchase Key=Schlüssel kaufen
 Subject=Betreff
@@ -653,24 +653,24 @@ Your browser has JavaScript disabled=Javascript ist in deinem Browser deaktivier
 Docs=
 
 ; New entries (1) - 2021-06-12
-Username=
+Username=Benutzername
 
 ; My Servers Wan IP Check - 2021-06-30
-Remark your WAN IPv4 is %s=Remark: your WAN IPv4 is **%s**
-Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Remark: Unraid's WAN IPv4 **%1s** does not match your client's WAN IPv4 **%2s**
-This may indicate a complex network that will not work with this Remote Access solution=
-Ignore this message if you are currently connected via Remote Access or VPN=
+Remark your WAN IPv4 is %s=Anmerkung: Deine WAN IPv4 ist **%s**
+Remark Unraids WAN IPv4 %1s does not match your clients WAN IPv4 %2s=Anmerkung: Die WAN IPv4 **%1s** von Unraid stimmt nicht mit der WAN IPv4 **%2s** des Clients überein
+This may indicate a complex network that will not work with this Remote Access solution=Dies könnte auf ein komplexes Netzwerk hinweisen, das nicht mit dieser Fernzugriffslösung funktionieren wird
+Ignore this message if you are currently connected via Remote Access or VPN=Ignoriere diese Nachricht, wenn du derzeit über Fernzugriff oder VPN verbunden bist
 
 ; New entries (4) - 2021-07-11
-Browser cookie support required for Unraid OS webgui=
-Password confirmation does not match=
-Please also ensure you have cookies enabled=
-Please set a password for the root user account=
+Browser cookie support required for Unraid OS webgui=Unraid OS WebGUI benötigt Browser-Unterstützung für Cookies
+Password confirmation does not match=Passwort Wiederholung stimmt nicht überein
+Please also ensure you have cookies enabled=Bitte stelle auch sicher, dass Cookies aktiviert sind
+Please set a password for the root user account=Bitte lege ein Passwort für den root-Benutzeraccount fest
 
 ; New entries (6) - 2021-07-11
-Copied key url=
-Copy Key URL=
-Get quick real-time info on the status of your servers such as storage, container, and VM usage=
-Please copy the Key URL before closing this window=
-To manually install the key paste the key file url into the Key file URL field on the webGUI Registration page and then click Install Key=
-Unable to copy=
+Copied key url=Lizenzschlüssel URL kopiert
+Copy Key URL=Lizenzschlüssel URL kopieren
+Get quick real-time info on the status of your servers such as storage, container, and VM usage=Bekomme kurze Echtzeit-Informationen über den Status deiner Server, wie Speicher-, Container- und VM-Auslastung
+Please copy the Key URL before closing this window=Bitte kopiere die Lizenzschlüssel URL, bevor du dieses Fenster schließt
+To manually install the key paste the key file url into the Key file URL field on the webGUI Registration page and then click Install Key=Um den Lizenzschlüssel manuell zu installieren, füge die Lizenzschlüssel-Datei URL in das Lizenzschlüssel-Datei URL Feld auf der WebGUI Registrierungsseite ein und klicke auf Schlüssel installieren
+Unable to copy=Kopieren fehlgeschlagen
