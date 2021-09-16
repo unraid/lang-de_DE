@@ -136,4 +136,4 @@ Reset sorting=Sortierung zurücksetzen
 Total size=Gesamtgröße
 
 ; New entries (1) - 2021-06-12
-Crypto Currency=
+Crypto Currency=Kryprowährung
