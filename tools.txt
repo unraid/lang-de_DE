@@ -103,7 +103,6 @@ This will update folder file permissions=Aktualisiert Ordner- & Dateieberechtigu
 Time=Zeit
 To install a registration key, paste the key file URL in the box below and click Install Key=Um eine Registrierungslizenz zu installieren, die Lizenz URL in die Zeile unten einfügen und auf **Lizenz Installieren** klicken
 to select your language=um Ihre Sprache auszuwählen
-To support more storage devices as your server grows, click Upgrade Key below=Klicke unten auf *Lizenz Upgraden* um ein Lizenz-Upgrade zu erwerben die mehr Datenträger untestützt
 Trial key expires on=***Probelizenz*** läuft ab am
 Trial=Probe
 Update OS=OS aktualisieren

@@ -60,6 +60,5 @@ Time Machine volume size limit=Time Machine Volumengröße
 Unknown encryption state=Unbekannter Verschlüsselungsstatus
 Use cache pool for new filesdirectories=Benutze den Cache-Pool (für neue Dateien/Verzeichnisse)
 User Shares=Benutzerfreigaben
-Volume dbpath=Volume dbpath
 Write=Schreiben
 You cannot use the following within share names=Sie können folgendes nicht im Freigabenamen verwenden

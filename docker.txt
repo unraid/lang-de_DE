@@ -36,8 +36,6 @@ DNS=DNS
 Docker Containers=Docker Container
 Docker Hub URL=Docker Hub URL
 Docker Service failed to start=Docker Dienst konnte nicht gestartet werden
-Donation Link=Spendenlink
-Donation Text=Spendentext
 Downloaders=Download Tools
 Edit Configuration=Konfiguration bearbeiten
 Exited=Beendet
@@ -58,7 +56,6 @@ Icon URL=Symbol URL
 Image ID=Abbild ID
 Key=Schlüssel
 Label=Bezeichnung
-latest=latest
 Management=Management
 MediaApp=Media-App
 MediaServer=Media-Server
@@ -109,7 +106,6 @@ Successfully removed container=Der Container wurde erfolgreich entfernt
 Successfully removed orphan image=Das verwaiste Abbild wurde erfolgreich entfernt
 Successfully stopped container=Der Container wurde erfolgreich beendet
 Support Thread=Hilfe Thread
-Template repositories=Vorlagen Quelle
 Template URL=Vorlagen URL
 Template=Vorlage
 The command failed=Der Befehl ist fehlgeschlagen
@@ -137,3 +133,7 @@ Total size=Gesamtgröße
 
 ; New entries (1) - 2021-06-12
 Crypto Currency=
+
+; New entries (2) - 2021-09-18
+Additional Requirements=
+None Listed=
