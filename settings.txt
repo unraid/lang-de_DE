@@ -708,8 +708,8 @@ Not present=Nicht vorhanden
 Unraidnet account status=Unraid.net account status
 
 ; New entries (5) - 2021-09-18
-Docker custom network type=
+Docker custom network type=Docker benutzerdefinierter Netzwerktyp
 FTP Server=
 ipvlan=
 macvlan=
-Your local IP address %s has been updated for unraidnet=Your local IP address %s has been updated for unraid.net
+Your local IP address %s has been updated for unraidnet=Deine Lokale IP-Adresse %s wurde für unraid.net aktualisiert
