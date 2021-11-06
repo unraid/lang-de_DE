@@ -311,3 +311,5 @@ This Unraid OS release has been withdrawn and may no longer be used Please=Diese
 enter disk index and device name as applicable to your controller=
 next device=Nächstes Gerät
 previous device=Vorheriges Gerät
+; New entries (1) - 2021-11-06
+If this is a new array, move the largest disk into the parity slot=If this is a new array, move the largest disk into the *parity* slot
