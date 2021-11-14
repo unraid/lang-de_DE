@@ -161,7 +161,8 @@ Diese Anwendung wird zur Fehlerbehebung verwendet. Es sammelt alle Hardwareinfor
 Anschließend kann die Datei Limetech gesendet werden bzw. im Forum verwendet werden.
 
 Dies hilft anderen sich schnell einen Überblick über Ihr System zu verschaffen und Hilfe zu Leisten. Die folgenden Informations-
-und Konfigurationsdateien werden gesammelt::end
+und Konfigurationsdateien werden gesammelt:
+:end
 
 :diagnostics_2_plug:
 + */config*
@@ -192,7 +193,8 @@ miteinbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *
 und/oder System Protokollen speichern könnten.*
 
 *Benutzen Sie* **Diagnose anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum gepostet werden. In privater Kommunikation
-mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*:end
+mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
+:end
 
 :newconfig_plug:
 Dies ist eine Anwendung, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
@@ -205,7 +207,8 @@ basierend auf der neuen Konfiguration erwünscht ist.
 Standardmäßig  werden **keine** Datenträger zugewiesen.
 
 **BENUTZEN SIE DIESE ANWENDUNG NICHT UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN DA DIES NICHT FUNKTIONIERT** - dies
-hat die gegenteilige Wirkung. Es macht es **unmöglich**, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Sie wurden gewarnt!:end
+hat die gegenteilige Wirkung. Es macht es **unmöglich**, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Sie wurden gewarnt!
+:end
 
 :newperms_1_plug:
 Diese Aktion ist einmalig notwendig, falls sie von einer Unraid Server Version von vor 5.0 auf Unraid Version 5.0 oder
@@ -266,7 +269,8 @@ An diesem Punkt können Sie entweder eine Lizenz erwerben oder eine *Probelizenz
 :registration_4_plug:
 Um Unraid OS weiterhin benutzen zu können, können Sie eine Lizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
 
-Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie uns bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.:end
+Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie uns bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
+:end
 
 :registration_5_plug:
 Es ist nicht möglich, eine *Probelizenz* mit einer existierenden Unraid OS Installation zu verwenden.
@@ -288,7 +292,8 @@ Falls dies eine *Probeinstallation* war, können Sie eine Lizenz erwerben.
 :registration_7_plug:
 *Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät erlaubt.
 
-Um weiterhin diese Installation mit diesem USB Flash Gerät zu verwenden, können Sie eine Lizenz erwerben.:end
+Um weiterhin diese Installation mit diesem USB Flash Gerät zu verwenden, können Sie eine Lizenz erwerben.
+:end
 
 :registration_8_plug:
 Die Lizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
