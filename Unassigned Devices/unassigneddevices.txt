@@ -13,12 +13,15 @@ Choose ISO File=ISO Datei auswählen
 Choose Server=Server auswählen
 Choose Share=Freigabe auswählen
 Click on Icon to Choose Protocol=Auf Symbol klicken um das Protokoll auszuwählen
-Click to Change Device Mount Point - Press Enter to save=Klicken um Datenträger Einhängeort zu ändern - Enter zum speichern drücken
-Click to change ISO File Mount Point - Press Enter to save=Klicken um ISO Datei Einhängeort zu ändern - Enter zum speichern drücken
-Click to change Remote SMBNFS Mount Point - Press Enter to save=Klicken um Entfernten SMB/NFS Einhängeort zu ändern - Enter zum speichern drücken
+Change Disk Mount Point=
+Change ISO File Mount Point=
+Change SMBNFS Mount Point=
+Changing the Mount Point will also change the disk label=
 Click to select ISO file=Klicken um ISO Datei auszuwählen
-Click to view partitionsmount points=Klicken um Partitions Einhängeort anzuzeigen
+Click to view/hide partitions and mount points=
 Complete=Vollständig
+Disks=
+Disk Label=
 Disk Log Information=Datenträger Protokoll
 Domain=Domain
 Edit Device Script=Datenträger Skript bearbeiten
@@ -32,40 +35,45 @@ Execute Script as udev simulating a device being installed=Das Skript als udev a
 Fail=Gescheitert
 file share for=Freigabe für
 File System Check=Dateisystemprüfung
+File System Scrub=
 Format=Formatieren
 Formatting=Formatiere
 Free=Frei
 from disk=von Datenträger
 Historical Devices=Letzte Datenträger
+ISO File is=
 ISO File Shares=ISO Datei Freigaben
 Identification=Identifikation
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Falls ein Datenträgerpasswort verwendet wird bitte das Password in den UD Einstellungen eingeben damit der Datenträger eingebeunden werden kann
 Leave blank to use the array passwordpassphrase=Freilassen um die Array Passwordpassphrase zu verwenden
 Load Shares=Lade Freigaben
+Loading=
 Log=Protokoll
-missing=fehlend
 Mount=Einhängen
 Mounting=Einhängen
 NFS Shares=NFS Freigaben
 Next=Weiter
 No Remote SMBNFS or ISO File Shares configured=Keine entfernten SMB/NFS oder ISO Datei Freigaben eingerichtet
 No Unassigned Disks available=Keine nicht zugewiesenen Datenträger vorhanden
+not installed=
 Note=Hinweis
 Open=Geöffnet
 Partition and Format Disk=Partitioniere und Formatiere Datenträger
 Pass Thru=Passthrough
 Password=Passwort
 Read only=Nur Lesen
+Refresh Disks and Configuration=
 Remember your password It cannot be recovered=Passwort bitte merken, kann nicht wiederhergestellt werden.
+Remote Share is=
+Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=
 Remove Device configuration=Datenträgerkonfiguration entfernen
 Remove ISO File Share=ISO Datei Freigabe entfernen
 Remove Partition=Partition entfernen
 Remove Remote SMBNFS Share=Entfernte SMB/NFS Freigabe entfernen
 Remove partition=Partition entfernen
-Rescan Disks=Datenträger erneut suchen
 Run with CORRECT flag=Mit Parameter CORRECT ausführen
 Running=Läuft
-SMART Attributes on=SMART Attribute von
+Shares=
 SMB Shares=SMB Freigaben
 Script=Skript
 Search For Servers=Suche nach Servern
@@ -76,22 +84,17 @@ Serial Number Mountpoint=Seriennummer Einhängeort
 share for=freigeben für
 Simple=Einfach
 Source=Quelle
+SSD cannot be spun down=
 Success=Erfolg
-Switch Display Mode=Anzeigemodus umschalten
+Show Historical Devices=
+Show SMB/NFS/ISO Shares=
+Show Disk Devices=
 This will remove the ISO file share for=Dies entfernt die ISO Datei Freigabe für
 This will remove the remote=Dies entfernt die Entfernte
 This will remove the saved configuration of=Dies entfernt die gespeicherte Konfiguration für
 This will remove the=Dies entfernt die
 to confirm=zum Bestätigen
 to format=zum Formatieren
-Turn on to Mount Device Read only=Einschalten um den Datenträger als nur Lesen einzuhängen
-Turn on to Mount Device when Array is Started=Einschalten um Datenträger einzuhängen wenn Array gestartet ist
-Turn on to Mount ISO File when Array is Started=Einschalten um ISO Datei einzuhängen wenn das Array gestartet ist
-Turn on to Mount Remote SMBNFS Share when Array is Started=Einschalten um entfernte SMB/NFS einzuhängen wenn das Array gestartet ist
-Turn on to Share Device with SMB andor NFS=Einschalten um Datenträger mit SMB undoder NFS Freizugeben
-Turn on to Share Remote Mount with SMB andor NFS=Einschalten um entfernte Freigabe mit SMB undoder NFS Freizugeben
-Turn on to mark this Device as passed through to a VM or Docker=Einschalten um den Datenträger als Passtrough Gerät für VM oder Docker anzuzeigen
-Unassigned Devices Settings=Unassigned Devices Einstellungen
 Unmount=Aushängen
 Unmounting=Aushängen
 Used=Benutzt
@@ -99,10 +102,30 @@ Username=Benutzername
 View Device Script Log=Zeige Datenträger Skript Protokoll
 View ISO File Script Log=Zeige ISO Datei Skript Protokoll
 View Remote SMBNFS Script Log=Zeige entfernte SMB/NFS Skript Protokoll
+You must enable the Destructive Mode in UD Settings before you can Format this disk=
+WARNING: Do NOT use a remote share local mount in a Docker container or VM for critical data=
+You WILL have problems if you do=
 You will need to enter credentials for Windows 10 shares just to list them=Sie müssen Anmeldeinformationen angeben um Windows 10 Freigaben anzuzeigen
 
-; Hilfe
+; Help
 ;
+:unassgned_devices_switches_plug:
+> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+>
+> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+>
+> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+>
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to refresh disks and configuration.
+>
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
+>
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to refresh disks and configuration.
+> Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
+:end
+
 :unassigned_devices_general_help_plug:
 > Unassigned Devices Kurzform lautet UD
 >
@@ -166,4 +189,11 @@ You will need to enter credentials for Windows 10 shares just to list them=Sie m
 > Auf 'Vollständig' klicken um nur die Datenträger anzuzeigen. Auf 'Einfach' klicken um zurück zur Vollständigen Ansicht zurückzukehren.
 >
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
+> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed. A disk can be formatted and an fsck run to check the disk.
+> + Disk must have all partitions removed. Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
+> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
+> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed. A disk can be formatted and an fsck run to check the disk.
+> + Disk must have all partitions removed. Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
+> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
 :end
+

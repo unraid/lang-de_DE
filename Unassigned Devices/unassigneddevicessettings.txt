@@ -6,15 +6,18 @@ Change the disk UUID=Datenträger UUID ändern
 Common Script=Gemeinsames Skript
 Common Settings=Gemeinsame Einstellungen
 Destructive Mode=Partitionierungs Modus
+Disk spin down is managed by Unraid=
 Enable NFS export=NFS Export einschalten
 Enable SMB Security=SMB Sicherheit einschalten
 Enter Disk Password=Datenträgerpasswort eingeben
 Force all SMB remote shares to SMB v1=Für alle entfernten SMB Freigaben SMB v1 erzwingen
+Legacy Mount Point Compatibility=
 Mount SSDs with discard option=SSD mit Discard Option einhängen
 must be enabled in SMB Settings to enable SMB v1=muss in den SMB Einstellungen gewählt werden um SMB v1 zu aktivieren
 NFS Security=NFS Sicherheit
 NFS Settings=NFS Einstellungen
 NFS must be enabled to enable NFS Export=NFS muss aktiviert sein um NFS Export zu aktivieren
+NFS Version to use when Mounting Remote Shares=
 Rule=Regel
 SMB Security=SMB Sicherheit
 Select Disk to change UUID=Datenträger wählen um UUID zu ändern
@@ -22,12 +25,14 @@ Select Disk=Datenträger wählen
 Set Encrypted Disk Password=Verschlüsselungspasswort setzen
 Set Password=Passwort setzen
 Set the disk Password=Datenträgerpasswort setzen
+Specify SMB Version when Mounting Remote Shares=
 Spin down disks=Datenträger herunterfahren
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Unassigned Devices Plus plugin muss installiert sein um den Partitionierungs Modus zu aktivieren
 to SMB share config=zu SMB Freigabe Konfiguration
 Unassigned Devices=Unassigned Devices
+Unraid 6.10 is required for NFSv4 support=
 
-; Hilfe
+; Help
 ;
 :ud_settings_plus_plug:
 > **Hinweise:** Das Plugin 'Unassigned Devices Plus' muss installiert sein um Datenträger die mit HFS+ und exFAT formatiert sind Einzughängen und der Partitionierungs Modus muss aktiviert sein.
@@ -53,8 +58,29 @@ Unassigned Devices=Unassigned Devices
 > Wenn **Ja** wird der Datenträger nach 15 Minuten heruntergefahren. Wenn **Nein** werden die Datenträger nie heruntergefahren.
 :end
 
-:ud_settings_force_smb_plug:
-> Normalerweise wird eine Entfernte SMB Freigabe mit der neuesten Version von SMB Eingebunden die der Server unterstützt. Wenn **Ja**, wird bei alle Entferneten SMB Freigaben SMB v1 erzwungen. Manche Entfernet Freigaben geben einen Fehler aus wenn diese mit SMB v2 Eingebunden werden. SMB v1 weißt Sicherheitsrisikos auf und sollte nur falls wirklich erforderlich verwendet werden. Kann nicht aktiviert werden wenn NetBIOS deaktiviert ist.
+:ud_settings_symlinks_plug:
+> Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
+>
+> This is for backwards compatibility of VM and Docker Container mappings to the /mnt/disks/ mount point.
+> You are encouraged to change your mappings to the /mnt/remotes/ mount point.
+>
+> If you do not need the backwards compatibility, leave it set to **No**.
+:end
+
+:ud_settings_specify_smb_vers_plug:
+> Set to **No** for Unassigned Devices to first try to mount remote shares by not setting the SMB version when mounting.
+>
+> Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
+>
+> Some remote servers need to have the version specified.
+:end
+
+:ud_settings_specify_nfs_vers_plug:
+> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+>
+> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
+>
+> All NFS remote shares will be mounted with the specified version.
 :end
 
 :ud_settings_smb_security_plug:
@@ -63,6 +89,16 @@ Unassigned Devices=Unassigned Devices
 > + Wenn **Ja** wird die SMB Sicherheit bei allen Freigaben aktiviert. Bestimmt welcher Benutzer Nur Lese oder Lese-/Schreibzugriff bzw. keinen Zugriff hat.
 > + Wenn **Versteckt**  wird die SMB Sicherheit bei Freigaben aktiviert und werden die Freigaben werden verborgen. Bestimmt welcher Benutzer Nur Lese oder Lese-/Schreibzugriff bzw. keinen Zugriff hat.
 > + Wenn **Nein** wird die SMB Sicherheit deaktiviert. SMB/NFS und ISO Freigaben werden Öffenlich mit Lese-/Schreibzugriff freigegeben.
+:end
+
+:ud_settings_case_sensitive_plug:
+> Controls whether filenames are case-sensitive.
+>
+> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFSVFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+>
+> A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case. This will speed very large directory access, but some Windows applications may not function properly with this setting. For example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+>
+> A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case. In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case. This ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
 :end
 
 :ud_settings_force_user_plug:

@@ -1,12 +1,12 @@
 File Activity=Datei Aktivitäten
-File Activity Logging=Protokolliere Datei Aktivitäten
+File Activity Monitoring=
 Start File Activity=Starte Datei Aktivitäten
-Stop File Activity Logging=Start Datei Aktivitäten Protokollierung
+Stop File Activity Monitoring=
 Clear the File Activity log=Lösche Datei Aktivitäten Protokoll
 Refresh log=Protokoll aktualisieren
-Enable File Activity Logging=Datei Aktivitäten Protokolliereung aktivieren
+Enable File Activity Monitoring=
 Enable for Unassigned Devices=Für Unassigned Devices aktivieren
-Enable for Cache=Für Cache aktivieren
+Enable for Cache and Pool=
 ;
 ; Help
 ;
@@ -30,6 +30,10 @@ Enable for Cache=Für Cache aktivieren
 > Wenn 'Ja' wird der Dienst Datei Aktivitäten für Unassigned Devices aktiviert, falls das Plugin Unassigned Devices installiert ist.
 :end
 
-:file_activity_eenable_cache_plug:
-> Wenn 'Ja' wird der Dienst Datei Aktivitäten für Cache Datenträger aktiviert.
+:file_activity_enable_cache_plug:
+> Set to **Yes** to enable File Activity monitoring for the Cache and Pool Disks.  Pool disks only apply in Unraid 6.9.
+:end
+
+:file_activity_log_by_plug:
+	> Set to **Disk** to log disk activity.  Set to **Share** to log share activity.
 :end

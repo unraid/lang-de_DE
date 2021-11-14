@@ -4,7 +4,6 @@ The Tips below are suggestions, workarounds for known problems, and potential fi
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Es wird empfohlen, Unraid auf die neueste Stabile Version zu aktualisieren, um die neuesten Funktionen, Fehlerbehebungen und Sicherheitsupdates zu erhalten
 Support for older versions of Unraid is being phased out=Die Unterstützung für ältere Versionen von Unraid wird eingestellt
 Many plugins are no longer compatible with older Unraid versons=Viele Plugins sind nicht mehr mit älteren Unraid Versionen kompatibel
-All versions=Alle Versionen
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Installieren Sie das Plugin Fix Common Problems und beheben Sie Unraid Konfigurationsprobleme
 Use the Update Assistant that is part of the Fix Common Problems plugin=Verwenden Sie den Update Assistenten, der Teil des Plugins Fix Common Problems ist
 This will identify potential problems to be solved before you upgrade the Unraid OS=Dadurch werden Probleme identifiziert, die gelöst werden müssen, bevor Sie Unraid OS aktualisieren
@@ -17,6 +16,8 @@ Some have reported faster and more consistent network performance by making chan
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Bei Intel-Prozessoren kann es vorkommen dass angezeigt wird das alle CPUs ständig mit voller Geschwindigkeit laufen
 Read this=Dies lesen
 for information on the issue=für Inforamtionen zum Problem
+If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=
+It is recommended you use the 'Performance' Governor for best performance and power savings=
 It is recommended to use the pstate driver on Intel processors if you want the most performance=Auf Systemen mit Intel-Prozessoren wird empfohlen den pstate-Treiber zu verwenden, wenn die höchste Leistung erzielt werden soll
 Note=Hinweis
 You can check CPU frequencies on the command line with=Sie können die CPU-Frequenzen in der Befehlszeile mit folgendem Befehl überprüfen
@@ -51,7 +52,6 @@ Max Watches=Maximale Überwachungen
 CPU Scaling Governor=CPU Skalierungs Regler
 Enable Intel TurboAMD Performance Boost=Aktiviere Intel Turbo/AMD Performance Boost
 Time to set=Zeit Einstellen
-Disable FTP Server=Deaktiviere FTP Server
 Enable syslog Archiving=syslog Speicherung aktivieren
 Number of syslogs to Archive=Anzahl der syslogs die gespeichert werden sollen
 Processes to kill before Array is Stopped=Folgende Prozesse Beenden bevor Array gestoppt wird
@@ -115,6 +115,8 @@ Governor=Regler
 >
 > Set the 'vm.dirty_background_ratio' as a percentage of total RAM memory.
 > The default setting of 10% is recommended in most cases.  If you have a media streaming or gaming VM, use a value of 2%.  If you experience OOM errors, it is recommended you set this to 1%.
+> For streaming and gaming VMs, set the values low in the single digits.  Recommended values are: vm.dirty_background_ratio=2% and vm.dirty_ratio=3%.
+> For streaming and gaming VMs, set the values low in the single digits.  Recommended values are: vm.dirty_background_ratio=2% and vm.dirty_ratio=3%.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
@@ -152,10 +154,6 @@ Governor=Regler
 
 :tips_tweaks_cpu_state_plug:
 > Enter the time you want to set the governor to "Power Save" for Intel Pstate or "On Demand" in 24 hour format hh:mm.
-:end
-
-:tips_tweaks_ftp_plug:
-> Set to 'Yes' to disable the FTP Server.  You will have to reboot to enable it again once you select 'No'.
 :end
 
 :tips_tweaks_syslog_archive_plug:

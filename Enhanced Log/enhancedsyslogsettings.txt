@@ -136,7 +136,7 @@ Other Highlight Color=Hervorhebungsfarbe für andere Meldungen
 
 :enhanced_log_custom_plug:
 > Gib ein benutzerdefiniertes Ereignis ein welches du im Protokoll hervorheben willst.  Jedes benutzerdefiniertes Ereignis wird im Anschluss an die systemintegrierten Ereignisse angewendet.
-> Der Syntax für benutzerdefinierte Ereignisse ist: "zu suchende Zeichnefolge", "Ereignis"
+> Der Syntax für benutzerdefinierte Ereignisse ist: "zu suchende Zeichnefolge", "Ereignis" 
 > Groß-/Kleinschreibung wird ignioriert, Platzhalter sind erlaubt.
 > Beispiele:
 > "found.*chip" wird jede Zeichenfolge finden, die 'found' und 'chip' enthält mit beliebigem Text dazwischen,
