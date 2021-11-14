@@ -121,9 +121,6 @@ You will need to enter credentials for Windows 10 shares just to list them=Sie m
 > Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
 >
 > You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
-> Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to refresh disks and configuration.
-> Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
 :end
 
 :unassigned_devices_general_help_plug:
@@ -189,11 +186,4 @@ You will need to enter credentials for Windows 10 shares just to list them=Sie m
 > Auf 'Vollständig' klicken um nur die Datenträger anzuzeigen. Auf 'Einfach' klicken um zurück zur Vollständigen Ansicht zurückzukehren.
 >
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
-> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed. A disk can be formatted and an fsck run to check the disk.
-> + Disk must have all partitions removed. Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
-> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
-> Additional options are available when you click on the <i style='color:black;font-weight:bold;' class="fa fa-plus-square"></i> icon by device identification. When the disk is unmounted, the mount point of the device can be changed. The disk label will also be changed. A disk can be formatted and an fsck run to check the disk.
-> + Disk must have all partitions removed. Unmount disk, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, and click on all <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icons to delete partitions.
-> + If the disk has been precleared and shows a grayed 'Format' button, click on the <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> icon, then click on the <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> icon to delete the preclear status file.
 :end
-
