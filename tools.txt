@@ -10,8 +10,10 @@ Are you sure=Sind Sie sicher
 Array has been Reset=Array wurde **zurückgesetzt**
 Array must be Started to change permissions=Array muss **gestartet** sein, um Berechtigungen zu ändern
 Array must be Stopped to change=Zum ändern muss das Array **gestoppt** sein:
+Array slots=Array slots
 Array=Array
 Author=Autor
+Beta=
 Blacklisted USB Flash GUID=Gesperrte USB Flash GUID
 Branch=Zweig
 By using this software, you agree with our=Mit der Nutzung dieser Software stimmen Sie folgendem zu:
@@ -23,11 +25,13 @@ collecting diagnostic information this may take several minutes=Sammeln von Diag
 Component=Komponente
 Credits=Namensnennungen
 Data slots=Daten Slots
+Delete all notifications=Lösche alle Benachrichtigungen
 Delete notification=Benachrichtigung löschen
 Developer=Entwickler
 Diagnostics=Diagnose
 Disks=Datenträger
 Display Settings=Darstellungseinstellungen
+Downloading=Herunterladen
 End-User License Agreement=Endbenutzer-Lizenzvereinbarung
 Enter URL of language pack XML file=URL für das XML-Sprachpaket eingeben
 Error accessing your physical USB Flash boot device=Fehler beim Zugriff auf das USB Bootgerät
@@ -42,6 +46,7 @@ Hide Details=Details Ausblenden
 If you do not receive an email, please check your spam or junk-email folder=Falls Sie keine Email erhalten haben, bitte den Spam- oder Junk-Email Ordner überprüfen
 Importance=Wichtigkeit
 Important=Wichtig
+Install Language=Installiere Sprache
 Install=Installieren
 Installed languages=Installierte Sprachen
 Invalid Trial Installation=Invalide *Probeinstallation*
@@ -55,6 +60,7 @@ Missing Language=Fehlende Sprache
 Network Settings=Netzwerkeinstellungen
 New Config=Neue Konfiguration
 New Permissions=Neue Berechtigungen
+Next=
 No notifications present=Keine Benachrichtigungen vorhanden
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere Dateiinhalte sind im Hardwareprofil enthalten
 normal=normal
@@ -62,8 +68,10 @@ Only ZIP files are allowed=Nur ZIP Dateien erlaubt
 Page Map=Seitenverzeichnis
 Parity slots=Parität Slots
 Please check your=Bitte prüfen Sie Ihre
+please configure=bitte konfigurieren
 Please select a language before proceeding=Bitte vor dem Fortfahren eine Sprache auswählen
 Please=Bitte
+Pool slots=Pool slots
 Preserve current assignments=Aktuelle Zuweisungen speichern
 previous=vorherig
 Privacy Policy=Datenschutzerklärung
@@ -84,6 +92,7 @@ Select language file=Sprachdatei auswählen
 Select language=Sprache auswählen
 Show Details=Details anzeigen
 slots=Slots
+Stable=
 Subject=Betreff
 System Devices=Systemgeräte
 System Update Check=System Update Check
@@ -107,6 +116,7 @@ Trial key expires on=***Probelizenz*** läuft ab am
 Trial=Probe
 Update OS=OS aktualisieren
 Upgrade Key=Lizenz-Upgraden
+Uploaded=Hochgeladen
 uploading hardware information=Hardware Informationen hochladen
 Uploading=Hochladen von
 Use this to develop language packs=Verwenden, um Sprachpakete zu entwickeln
@@ -114,6 +124,8 @@ Use this to install official language packs=Verwenden, um offizielle Sprachpaket
 User Shares=Benutzerfreigaben
 User=Benutzer
 Vars=Vars
+VFIO-PCI Log=VFIO-PCI Log
+View VFIO-PCI Log=VFIO-PCI Log ansehen
 warning=Warnung
 webGUI=WebGUI
 When received, please paste the URL into the Key file URL box and=Wenn Sie die <i>Lizenzdatei</i> erhalten haben bitte die URL in die Zeile einfügen und
@@ -134,6 +146,7 @@ In use by Unraid=Wird von Unraid benutzt
 Kernel driver in use vfio-pci=Benutzter Kernel Treiber: vfio-pci
 No changes=Keine Änderungen
 PCI Devices and IOMMU Groups=PCI Geräte und IOMMU Gruppen
+PCI Devices No IOMMU Groups Available=PCI Devices (Keine IOMMU Gruppen verfügbar)
 Reboot to take effect=Neustarten um zu Übernehmen
 SCSI Devices=SCSI Geräte
 The below list doesnt not reflect the way IOMMU would naturally group devices=Die untenstehende Liste spiegelt nicht die Art und Weise wider, wie IOMMU Geräte standardmäßig gruppiert sind
@@ -149,6 +162,7 @@ Anschließend kann die Datei Limetech gesendet werden bzw. im Forum verwendet we
 
 Dies hilft anderen sich schnell einen Überblick über Ihr System zu verschaffen und Hilfe zu Leisten. Die folgenden Informations-
 und Konfigurationsdateien werden gesammelt:
+
 :end
 
 :diagnostics_2_plug:
@@ -168,7 +182,6 @@ und Konfigurationsdateien werden gesammelt:
   <br>Ein SMART Bericht von jedem individuellen Datenträger, der sich im System befindet.
 + *Docker*
   <br>*docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* und *vfio-pci* Dateien.
-
 :end
 
 :diagnostics_3_plug:
@@ -182,6 +195,9 @@ und/oder System Protokollen speichern könnten.*
 
 *Benutzen Sie* **Diagnose anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum gepostet werden. In privater Kommunikation
 mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
+
+
+
 :end
 
 :newconfig_plug:
@@ -196,6 +212,9 @@ Standardmäßig  werden **keine** Datenträger zugewiesen.
 
 **BENUTZEN SIE DIESE ANWENDUNG NICHT UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN DA DIES NICHT FUNKTIONIERT** - dies
 hat die gegenteilige Wirkung. Es macht es **unmöglich**, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Sie wurden gewarnt!
+
+
+
 :end
 
 :newperms_1_plug:
@@ -209,6 +228,8 @@ Nicht-Active Directory Integration zurückgewechselt wird.
 
 Diese Anwendung startet einen Hintergrundprozess, welches auf jedem Array- und Cachedatenträger sowie ausgewählter
 Benutzerfreigaben und Verzeichnissen den Eigentümer zu * nobody/users* (d.h. UID/GID gleich 99/100) ändert und setzt folgende Berechtigungen:
+
+
 :end
 
 :newperms_2_plug:
@@ -220,6 +241,8 @@ Für Dateien mit lese/schreib Berechtigungen:
 
 Für schreibgeschützte Dateien:
   -r--r--r--
+
+
 :end
 
 :newperms_3_plug:
@@ -229,6 +252,8 @@ Das Schließen des Fensters beendet den Hintergrundprozess - bitte nicht schlie�
 in Anspruch nehmen, je nachdem wieviele Dateien vorhanden sind.
 
 Beachten Sie, dass dieses Tool die Docker Container möglicherweise negativ beeinflussen kann, wenn die appdata Freigabe vom diesem Tool miteinbezogen wird.
+
+
 :end
 
 :registration_1_plug:
@@ -239,6 +264,8 @@ Lizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bit
 eines bekannten Herstellers von mindestens 1GB.
 
 Hinweis: USB Speicherkartenlesegeräte sind generell **nicht** unterstützt, da bei den meisten keine einzigartige Seriennummer vorhanden ist.
+
+
 :end
 
 :registration_2_plug:
@@ -252,12 +279,15 @@ Ihre *Probelizenz* beinhaltet alle Funktionalitäten und Datenträgerunterstütz
 Nachdem die *Probelizenz* abgelaufen ist, funktioniert der Server **normal**, bis das Array das **gestoppt** wird.
 
 An diesem Punkt können Sie entweder eine Lizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
+
+
 :end
 
 :registration_4_plug:
 Um Unraid OS weiterhin benutzen zu können, können Sie eine Lizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
 
 Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie uns bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
+
 :end
 
 :registration_5_plug:
@@ -266,6 +296,8 @@ Es ist nicht möglich, eine *Probelizenz* mit einer existierenden Unraid OS Inst
 Es ist möglich, eine Lizenz für das aktuell verwendete USB Flash Gerät zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
 
 Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
+
+
 :end
 
 :registration_6_plug:
@@ -275,12 +307,15 @@ Es scheint als fehle Ihre Lizenzdatei oder sie ist beschädigt. Die Lizenzdatei 
 Falls Sie kein Backup Ihrer Lizenzdatei haben, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
 Falls dies eine *Probeinstallation* war, können Sie eine Lizenz erwerben.
+
+
 :end
 
 :registration_7_plug:
 *Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät erlaubt.
 
 Um weiterhin diese Installation mit diesem USB Flash Gerät zu verwenden, können Sie eine Lizenz erwerben.
+
 :end
 
 :registration_8_plug:
@@ -293,6 +328,8 @@ Eine Originallizenz kann jederzeit ersetzt werden. Danach kann eine Ersatzlizenz
 Wenn Sie eine Ersatzlizenz früher benötigen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
 **Hinweis:** Das Ersetzen einer Lizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft *gesperrt* wird.
+
+
 :end
 
 :registration_9_plug:
@@ -303,23 +340,8 @@ Ein USB Flash Gerät kann auch *gesperrt* werden, wenn es keine Seriennummer gib
 Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens üblich).
 
 Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
+
+
 :end
 
-; New entries (11) - 2021-03-14
-Array slots=Array slots
-Delete all notifications=Lösche alle Benachrichtigungen
-Downloading=Herunterladen
-Install Language=Installiere Sprache
-please configure=bitte konfigurieren
-Pool slots=Pool slots
-Uploaded=Hochgeladen
-VFIO-PCI Log=VFIO-PCI Log
-View VFIO-PCI Log=VFIO-PCI Log ansehen
-PCI Devices No IOMMU Groups Available=PCI Devices (Keine IOMMU Gruppen verfügbar)
-
-; New entries (2) - 2021-05-10
-Next=
-Stable=
-
-; New entries (1) - 2021-05-20
-Beta=
+; Note: November 14, 2021 - 3 missing translations

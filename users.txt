@@ -1,29 +1,27 @@
 Add User=Benutzer hinzufügen
 Add=hinzufügen
+Click Add User to create a user for remote shares access=Klicke auf **Benutzer hinzufügen** um einen Benutzer für den Fernzugriff auf Freigaben hinzuzufügen
 Click to select PNG file=Klicken um PNG auszuwählen
 Custom image=Benutzerdefiniertes Bild
 Description=Beschreibung
 Do not use reserved names=Keine reservierten Namen verwenden
 Drag-n-drop a PNG file or click the image at the left=PNG Drag-n-Drop oder links auf das Bild klicken
 Edit User=Benutzer bearbeiten
+Invalid Key=Ungültiger Schlüssel
 Invalid user name=Ungültiger Benutzername
+Management Access=Managment Zugriff
+No users are defined=Keine Benutzer definiert
 Only PNG images are allowed=Nur PNG Bilder erlaubt
 Password too long=Passwort zu lang
 Password=Passwort
 Restore default image=Standardbild wiederherstellen
 Retype password=Passwort wiederholen
+Save=Speichern
+Shares Access=Freigaben-Zugriff
 Show Hide password=Passwort ein-/ausblenden
+SSH authorized keys=SSH authorisierte Schlüssel
+Syntax of the key is incorrect=Der Schlüssel-Syntax ist nicht korrekt
 Use a password up to 128 characters=Passwort mit bis zu 128 Zeichen
 Use only lowercase letters, digits, underscores and dashes=Nur Kleinbuchstaben, Ziffern, Unterstriche und Bindestriche erlaubt
 User %s has been deleted=Benutzer %s gelöscht
 User name=Benutzername
-
-; New entries (8) - 2021-05-31
-Click Add User to create a user for remote shares access=Klicke auf **Benutzer hinzufügen** um einen Benutzer für den Fernzugriff auf Freigaben hinzuzufügen
-Invalid Key=Ungültiger Schlüssel
-Management Access=Managment Zugriff
-No users are defined=Keine Benutzer definiert
-Save=Speichern
-Shares Access=Freigaben-Zugriff
-SSH authorized keys=SSH authorisierte Schlüssel
-Syntax of the key is incorrect=Der Schlüssel-Syntax ist nicht korrekt

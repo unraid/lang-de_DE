@@ -2,6 +2,7 @@ Access Mode=Zugriffsrechte
 Add another Path, Port, Variable, Label or Device=Weiteren Pfad, Port, Variable oder Bezeichnung hinzufügen
 Add Configuration=Konfiguration hinzufügen
 Add=Hinzufügen
+Additional Requirements=
 Always=Immer
 App to Host=App zu Host
 Application=Anwendung
@@ -29,6 +30,7 @@ Container=Container
 CPU Memory load=Prozessor/Speicher Auslastung
 CPU Pinning=CPU Zuweisung
 Created=Erstellt
+Crypto Currency=Kryprowährung
 Default Value=Standardwert
 Device=Gerät
 Display=Anzeigen
@@ -37,6 +39,7 @@ Docker Containers=Docker Container
 Docker Hub URL=Docker Hub URL
 Docker Service failed to start=Docker Dienst konnte nicht gestartet werden
 Downloaders=Download Tools
+Drivers=Treiber
 Edit Configuration=Konfiguration bearbeiten
 Exited=Beendet
 Extra Parameters=Extra Parameter
@@ -64,6 +67,7 @@ Missing parameters=Fehlende Parameter
 Music=Musik
 Network Type=Netzwerktyp
 No Docker containers installed=Keine Docker Container installiert
+None Listed=
 of=von
 orphan image=verwaistes Abbild
 Other=Andere
@@ -79,6 +83,7 @@ Productivity=Produktivität
 Project Page=Projektseite
 Proxy=Proxy
 Pulling image=Abbild holen
+Read Me First=
 Read Only - Shared=Nur Lesen - geteilt
 Read Only - Slave=Nur Lesen - sekundär
 Read Only=Nur Lesen
@@ -91,6 +96,7 @@ Removing container=Container wird entfernt
 Removing orphan image=verwaistes Abbild wird entfernt
 Repository=Quelle
 Required=Erforderlich
+Reset sorting=Sortierung zurücksetzen
 Resume All=Alle fortsetzen
 Save=Speichern
 Select a template=Vorlage auswählen
@@ -111,6 +117,7 @@ Template=Vorlage
 The command failed=Der Befehl ist fehlgeschlagen
 The command finished successfully=Der Befehl wurde erfolgreich ausgeführt
 TOTAL DATA PULLED=GEHOLTE DATENMENGE
+Total size=Gesamtgröße
 Unknown action=Unbekannte Aktion
 Update All=Alle Aktualisieren
 update ready=Bereit zum Aktualisieren
@@ -125,17 +132,4 @@ Web=Web
 WebUI=WebUI
 Writable=Beschreibbar
 
-; New entries (3) - 2021-03-14
-Drivers=Treiber
-Reset sorting=Sortierung zurücksetzen
-Total size=Gesamtgröße
-
-; New entries (1) - 2021-06-12
-Crypto Currency=Kryprowährung
-
-; New entries (2) - 2021-09-18
-Additional Requirements=
-None Listed=
-
-; New entries (1) - 2021-11-07
-Read Me First=
+; Note: November 14, 2021 - 3 missing translations

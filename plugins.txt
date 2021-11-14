@@ -2,22 +2,30 @@
 anonymous=anonym
 Author=Autor
 Check For Updates=Suche nach Aktualisierungen
+Checking connectivty=Verbindung wird geprüft
+checking=prüfe
 Click here to install version %s=Klicke hier, um Version %s zu installieren
+Delete Plugin=Lösche Plugin
 DOWNGRADE TO VERSION=DOWNGRADE AUF VERSION
 Enter URL of remote plugin file or local plugin file=URL des Plugins eingeben oder eine lokale Plugin Datei auswählen
 ERROR=FEHLER
 Install Plugin=Plugin installieren
-install=installieren
 Install=Installieren
+install=installieren
 Installed Plugins=Installierte Plugins
 Installing Update=Installiere Aktualisierung
 need check=benötigt Prüfung
 Next=Nächster
+No plugins installed=Keine Plugins installiert
 No release notes available=Keine Veröffentlichungshinweise vorhanden
+No response, aborting=Keine Antwort, Abbruch
 Plugin File=Plugin Datei
+Plugin File Install Errors=Plugin Installationsfehler
+Plugin History=Plugin Historie
 Plugin Update Check=Prüfe auf Plugin-Aktualisierung(en)
 Plugin=Plugin
 Release Notes=Veröffentlichungshinweise
+Remove Plugin=Entferne Plugin
 remove=entfernen
 Select local plugin file=Wählen Sie eine lokale Plugin Datei
 Stable=stabil
@@ -25,24 +33,6 @@ STALE=VERALTET
 Support Thread=Hilfe-Foreneintrag
 Uninstall=Deinstallieren
 Update All Plugins=Aktualisiere alle Plugins
+Update Plugin=Aktualisiere Plugin
 Upgrade=Aktualisieren
 View Release Notes=Zeige Veröffentlichungshinweise
-
-; New entries (1) - 2021-03-14
-No plugins installed=Keine Plugins installiert
-
-; New entries (2) - 2021-05-09
-Checking connectivty=Verbindung wird geprüft
-No response, aborting=Keine Antwort, Abbruch
-
-; New entries (1) - 2021-05-10
-checking=prüfe
-
-; New entries (3) - 2021-05-10
-Delete Plugin=Lösche Plugin
-Remove Plugin=Entferne Plugin
-Update Plugin=Aktualisiere Plugin
-
-; New entries (2) - 2021-05-15
-Plugin File Install Errors=Plugin Installationsfehler
-Plugin History=Plugin Historie
