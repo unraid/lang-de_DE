@@ -51,7 +51,7 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 
 :recycle_bin_enable_plug:
 > Wenn 'Ja' wird der Papierkorb für gelöschte Dateien beim Serverstart aktiviert.
-> To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
+>
 > To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
 :end
 
