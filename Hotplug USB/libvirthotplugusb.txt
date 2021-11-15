@@ -20,3 +20,5 @@ No USB devices=Kein USB Gerät gewählt
 :libvirt_hot_plug:
 > Wählen Sie die VM für das USB-Gerät das angeschlossen/getrennt werden soll und das USB-Gerät für die ausgewählte VM.
 :end
+
+; Note: November 15, 2021 - 1 missing translations

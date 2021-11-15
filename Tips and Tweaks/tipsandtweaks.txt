@@ -169,3 +169,5 @@ Governor=Regler
 > Note: Be careful with the processes you kill here.  You could lose data!
 :end
 
+
+; Note: November 15, 2021 - 2 missing translations

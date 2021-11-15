@@ -187,3 +187,5 @@ You will need to enter credentials for Windows 10 shares just to list them=Sie m
 >
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
+
+; Note: November 15, 2021 - 22 missing translations

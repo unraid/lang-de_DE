@@ -250,7 +250,7 @@ Method used to specify start and stop points=
 :parity_tune_frequency_plug:
 > The frequency at which parity check increments should be run.<br><br>In normal operation it is expected that the <strong>Daily</strong> option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up <strong>Custom</strong> schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility
 >In normal operation it is expected that the **Daily** option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up **Custom** schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility.   
-> The frequency at which parity check increments should be run.<br><br>In normal operation it is expected that the <strong>Daily</strong> option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up <strong>Custom</strong> schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility
+>In normal operation it is expected that the **Daily** option will be the one that most users will want to use so this is the default.   To support any user looking for other frequencies there is the option to set up **Custom** schedules which will allow for more complicated schedules for the Pause and Resume times.  When you use this option you are given the option to specify the time as used by the Linux <a href="https://en.wikipedia.org/wiki/Cron#Overview"  target="_blank">crontab</a> utility.   
 :end
 
 :parity_tune_manual_plug:
@@ -404,3 +404,5 @@ Method used to specify start and stop points=
 > that extracts entries from the syslog that have shown any sectors for which any parity
 > sector is displayed and whether the it was being corrected or is a parity error.
 :end
+
+; Note: November 15, 2021 - 142 missing translations

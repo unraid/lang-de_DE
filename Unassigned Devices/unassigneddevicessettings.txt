@@ -118,3 +118,5 @@ Unraid 6.10 is required for NFSv4 support=
 :ud_settings_change_uuid_plug:
 > Wählen Sie den Datenträger von dem Sie die UUID ändern möchten. Nützlich, wenn ein Datenträger aus dem Array entfernt wurde und dieselbe UUID wie ein Array Datenträger hat. Der Datenträger muss nicht gemountet sein, um die UUID zu ändern.
 :end
+
+; Note: November 15, 2021 - 5 missing translations
