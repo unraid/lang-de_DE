@@ -307,4 +307,14 @@ xfs_repair status=xfs_repair Status
 You may not add new disks and also remove existing disks=Keine neuen Datenträger hinzufügen oder entfernen
 your server=Ihr Server
 
-; Note: November 15, 2021 - 1 missing translations
+; Sleep plugin translations
+Check this=
+for more information=
+Make sure your server supports S3 sleep=
+Sleep will immediately put the server in sleep mode=**Sleep** will immediately put the server in sleep mode
+Sleeping=
+System in sleep mode=
+This will put the system in sleep mode=
+wiki entry=
+
+; Note: November 16, 2021 - 9 missing translations

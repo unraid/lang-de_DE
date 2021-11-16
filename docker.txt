@@ -132,4 +132,4 @@ Web=Web
 WebUI=WebUI
 Writable=Beschreibbar
 
-; Note: November 15, 2021 - 3 missing translations
+; Note: November 16, 2021 - 3 missing translations
