@@ -74,7 +74,6 @@ Dual parity valid requires ALL disks in their original slots=*Doppelte Parität*
 Elapsed time=Verstrichene Zeit
 Enable user share assignment=Zuweisung von Benutzerfreigaben aktivieren
 enter disk index and device name as applicable to your controller=
-Erase=Löschen
 Erase Device Content=Lösche Datenträger Inhalt
 encrypted=verschlüsselt
 Encryption input=Verschlüsselungseingabe
