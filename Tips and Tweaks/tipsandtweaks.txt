@@ -170,4 +170,4 @@ Governor=Regler
 :end
 
 
-; Note: November 15, 2021 - 2 missing translations
+; Note: December 16, 2021 - 2 missing translations
