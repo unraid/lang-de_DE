@@ -707,3 +707,8 @@ Your Unraid Server is reachable from the internet=Ihr Unraid Server ist über da
 YYYY-MM-DD=YYYY-MM-DD
 
 ; Note: November 16, 2021 - 9 missing translations
+
+; New entries (3) - 2021-12-16
+Accumulation duration=
+Accumulation frequency=
+Cumulative parity check=
