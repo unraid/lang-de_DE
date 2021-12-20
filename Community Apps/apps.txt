@@ -40,8 +40,8 @@ Click Here To Get More Results From DockerHub=Klick hier um zusätzliche Ergebni
 No Matching Applications Found=Keine passenden Anwendungen gefunden
 
 ; Repository Related
-%s removed as favourite repository=%s als bevorzugtes Verzeichnis entfernt
-%s set as favourite repository=%s als bevorzugtes Verzeichnis hinzugefügt
+%s removed as favourite repository=%s als bevorzugte Quelle entfernt
+%s set as favourite repository=%s als bevorzugte Quelle hinzugefügt
 Click to remove favourite repository=
 Click to set %s as favourite repository=
 Search for apps in repository=
@@ -50,8 +50,8 @@ Go to the forum page=Gehe zum Forumsbeitrag
 Go to the webpage=Gehe zur Homepage
 Go to reddit=Gehe zu reddit
 Go to facebook=Gehe zu Facebook
-Go to discord=Dehe zu Discord
-Go to forum profile=Gehe zum Forums Profil
+Go to discord=Gehe zu Discord
+Go to forum profile=Gehe zum Forum Profil
 Show Profile=Profil anzeigen
 SHOW MORE=ZEIGE MEHR
 SHOW LESS=ZEIGE WENIGER
@@ -71,7 +71,7 @@ Reddit=Reddit
 Twitter=Twitter
 Discord=Discord
 Search Apps=Apps durchsuchen
-Registry=Verzeichnis
+Registry=Quelle
 Details=Details
 Added=Hinzugefügt
 ; Install Plugin title of openbox
