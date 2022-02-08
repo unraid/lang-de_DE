@@ -1,5 +1,6 @@
 A format is NEVER part of a data recovery or disk rebuild process and if done in such circumstances will normally lead to loss of all data on the disks being formatted=Eine Formatierung ist ** NIE ** Teil einer Datenwiederherstellung oder Datenträger wiederherstellung, sollte dies unter solchen Umständen geschehen gehen die Daten auf dem zu Formatierenden Laufwerk verloren
 Aborted=Abgebrochen
+Action=
 Add=Hinzufügen
 Add Pool=Pool hinzufügen
 All existing data on this device will be OVERWRITTEN when array is Started=Alle vorhandenen Daten auf dem Datenträger werden ÜBERSCHRIEBEN wenn das Array gestartet wird
@@ -55,6 +56,7 @@ Critical disk utilization threshold=Kritische Datenträgerauslastung
 Current operation %s on %s=Aktuelle Aufgabe %s auf **%s**
 Current position=Aktuelle Position
 Custom attributes use comma to separate numbers=Benutzerdefinierte Attribute (durch Komma getrennte Zahlen)
+Data-Rebuild in progress=
 Date of purchase=Kaufdatum
 Date=Datum
 Delete Pool=Lösche Pool
@@ -153,6 +155,7 @@ Parity-Check in progress=Paritätsprüfung läuft
 Parity Operation History=
 ParityRead-Check History=Parität/Lese-Prüfungs Verlauf
 Parity-SyncData-Rebuild in progress=Parität-Sync/Datenwiederherstellung läuft
+Parity-Sync in progress=
 Partition format=Partitionsformat
 Partition size=Partitonsgröße
 Passed=Bestanden
@@ -340,4 +343,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: February 8, 2022 - 27 missing translations
+; Note: February 8, 2022 - 30 missing translations
