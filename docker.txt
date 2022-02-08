@@ -131,5 +131,3 @@ Was this container created using this plugin=Wurde dieser Container mit diesem P
 Web=Web
 WebUI=WebUI
 Writable=Beschreibbar
-
-; Note: November 16, 2021 - 3 missing translations

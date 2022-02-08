@@ -136,5 +136,3 @@ Wasnt able to stop the process=Prozess konnte nicht angehalten werden
 Windows 7XP=Windows 7/XP
 Windows 82012, newer Linux distros=Windows 8/2012, neuere Linux Distributionen
 XML View=XML Ansicht
-
-; Note: November 16, 2021 - 4 missing translations

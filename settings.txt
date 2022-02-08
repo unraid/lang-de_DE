@@ -3,6 +3,8 @@
 12 hours=12 Stunden
 24 hours=24 Stunden
 8023ad=802.3ad
+Accumulation duration=
+Accumulation frequency=
 Activate=aktivieren Sie
 Activated=Aktiviert
 Activating=Aktivieren
@@ -110,6 +112,7 @@ CPU Pinning Docker=CPU Zuweisung Docker
 CPU Pinning VM=CPU Zuweisung VM
 CPU Pinning=CPU Zuweisung
 CRAM-MD5=CRAM-MD5
+Cumulative parity check=
 Current date and time=Aktuelles Datum und Uhrzeit
 Custom attributes use comma to separate numbers=Benutzerdefinierte Attribute (Komma als Trennzeichen der Zahlen verwenden)
 Custom banner=Benutzerdefiniertes Banner
@@ -706,9 +709,4 @@ Your server has been registered=Ihr Server wurde registriert
 Your Unraid Server is reachable from the internet=Ihr Unraid Server ist über das Internet erreichbar
 YYYY-MM-DD=YYYY-MM-DD
 
-; Note: November 16, 2021 - 9 missing translations
-
-; New entries (3) - 2021-12-16
-Accumulation duration=
-Accumulation frequency=
-Cumulative parity check=
+; Note: February 8, 2022 - 12 missing translations
