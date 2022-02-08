@@ -47,6 +47,8 @@ Yes, update it=Ja, aktualisieren
 Yes=Ja
 
 ; footer messages
+Array Copying=
+Array Clearing=
 Array Starting=Array startet
 Array Stopping=Array wird beendet
 Mounting disks=Datenträger werden eingehängt
@@ -64,3 +66,5 @@ Container Port=Container Port
 Container Variable=Container Variable
 Container Label=Container Bezeichnung
 Container Device=Container Gerät
+
+; Note: February 8, 2022 - 2 missing translations
