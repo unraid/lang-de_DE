@@ -46,6 +46,7 @@ ISO File is=
 ISO File Shares=ISO Datei Freigaben
 Identification=Identifikation
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Falls ein Datenträgerpasswort verwendet wird bitte das Password in den UD Einstellungen eingeben damit der Datenträger eingebeunden werden kann
+Device=
 Leave blank to use the array passwordpassphrase=Freilassen um die Array Passwordpassphrase zu verwenden
 Load Shares=Lade Freigaben
 Loading=
@@ -198,4 +199,4 @@ You will need to enter credentials for Windows shares just to list them=
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
 
-; Note: January 8, 2022 - 39 missing translations
+; Note: February 19, 2022 - 40 missing translations
