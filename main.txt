@@ -67,6 +67,7 @@ Device is part of a pool=Datenträger ist Teil eines Pools
 Device locked unknown error=Datenträger gesperrt unbekannter Fehler
 Device locked wrong encryption key=Datenträger gesperrt: falscher Verschlüsselungsschlüssel
 Device to be encrypted=Datenträger zu Verschlüsseln
+Disable Spin down delay to run a SMART extended self-test=Disable **Spin down delay** to run a SMART extended self-test
 Disk in parity slot is not biggest=Paritätsdatenträger ist nicht der Größte
 Disk Log Information=Datenträgerprotokoll
 Disk-Clear in progress=
@@ -346,4 +347,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: February 21, 2022 - 33 missing translations
+; Note: February 25, 2022 - 34 missing translations
