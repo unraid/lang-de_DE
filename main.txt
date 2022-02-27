@@ -258,6 +258,7 @@ Unmountable Missing encryption key=nicht mountbar: Fehlender Verschlüsselungssc
 Unmountable No file system=nicht mountbar: Kein Dateisystem
 Unmountable No pool uuid=nicht mountbar: Keine Pool UUID
 Unmountable not btrfs pool=nicht mountbar: Kein btrfs Pool
+Unmountable Unsupported or no file system=Unmountable: Unsupported or no file system
 Unmountable Volume not encrypted=nicht mountbar: Volume nicht verschlüsselt
 Unmounted=nicht gemounted
 Upgrading diskswapping parity=Aktualisierung Datenträger/Datenträgertausch Parität
@@ -347,4 +348,4 @@ System in sleep mode=
 This will put the system in sleep mode=
 wiki entry=
 
-; Note: February 25, 2022 - 34 missing translations
+; Note: February 27, 2022 - 34 missing translations

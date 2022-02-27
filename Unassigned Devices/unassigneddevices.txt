@@ -199,4 +199,4 @@ You will need to enter credentials for Windows shares just to list them=
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
 
-; Note: February 25, 2022 - 40 missing translations
+; Note: February 27, 2022 - 40 missing translations
