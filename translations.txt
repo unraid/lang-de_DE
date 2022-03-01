@@ -790,4 +790,4 @@ Updating=
 year=Jahr
 years=Jahre
 
-; Note: February 27, 2022 - 113 missing translations
+; Note: March 1, 2022 - 113 missing translations

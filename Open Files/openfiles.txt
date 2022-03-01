@@ -21,4 +21,4 @@ Cannot get list of open files=Fehler beim Laden der Liste der offenen Dateien
 > Klick auf "Programm", "Prozess ID" oder "Dateiname und Pfad", um die Sortierreihenfolge zu ändern.
 :end
 
-; Note: February 27, 2022 - 1 missing translations
+; Note: March 1, 2022 - 1 missing translations

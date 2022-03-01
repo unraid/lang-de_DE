@@ -2,6 +2,7 @@ Click the 'Default' button to select the default Device Script File=
 Default=
 Delete Device Script File=
 Device Script content=
+Disable Mount=
 Disk Name=
 Edit Device Script=
 Enter Device Script File Name=
@@ -63,4 +64,4 @@ background task. This can keep the Unassigned Devices UI from hanging when the D
 > You still need to click **Save** in order to commit the change.
 :end
 
-; Note: February 27, 2022 - 24 missing translations
+; Note: March 1, 2022 - 25 missing translations
