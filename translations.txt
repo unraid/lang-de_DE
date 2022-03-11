@@ -274,6 +274,7 @@ Plugins=Plugins
 Plus=Plus
 prefix_IEC=Ki Mi Gi Ti Pi Ei Zi Yi
 prefix_SI=K M G T P E Z Y
+Press ANY KEY to close this window=
 Private=Privat
 Pro=Pro
 Proceed=Fortfahren
@@ -790,4 +791,4 @@ Updating=
 year=Jahr
 years=Jahre
 
-; Note: March 1, 2022 - 113 missing translations
+; Note: March 11, 2022 - 114 missing translations
