@@ -317,4 +317,4 @@ Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens ü
 Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 :end
 
-; Note: March 11, 2022 - 3 missing translations
+; Note: March 13, 2022 - 3 missing translations

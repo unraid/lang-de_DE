@@ -43,6 +43,7 @@ Hyper-V=Hyper-V
 i440fx will work for most=i440fx funktionieren bei den meisten
 Icon=Symbol
 Initial=Anfänglicher
+Invalid storage path=
 Invalid VM to edit=Editieren dieser VM ungültig
 ISO storage path doesnt exist=Pfad zum ISO Speicherort existiert nicht
 ISO storage path doesnt exist, please create the user share or empty folder first=ISO storage path doesn't exist, please create the user share (or empty folder) first
@@ -136,3 +137,5 @@ Wasnt able to stop the process=Prozess konnte nicht angehalten werden
 Windows 7XP=Windows 7/XP
 Windows 82012, newer Linux distros=Windows 8/2012, neuere Linux Distributionen
 XML View=XML Ansicht
+
+; Note: March 13, 2022 - 1 missing translations
