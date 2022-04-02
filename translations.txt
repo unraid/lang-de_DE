@@ -806,4 +806,4 @@ Updating=
 year=Jahr
 years=Jahre
 
-; Note: March 18, 2022 - 125 missing translations
+; Note: April 2, 2022 - 125 missing translations
