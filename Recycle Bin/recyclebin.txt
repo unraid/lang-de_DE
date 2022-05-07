@@ -55,7 +55,6 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > To hide the Recycle Bin folder, set 'Hide Dot Files to 'Yes' in the SMB settings <a href='/Settings/SMB'>here</a>.
 :end
 
-
 :recycle_bin_background_plug:
 > Wenn 'Ja' wird die Größe des Papierkorbs im Minutentakt im Hintergrund aktualisiert. Dies kann das Aufrufen der Papierkorbeinstellungen/Freigabe Seite beschleunigen. Beim Zugriff auf den Papierkorb kann dadurch ein hochfahren des Datenträgers verhindert werden.
 :end
@@ -124,4 +123,4 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Click on the 'Clear' button to clear the log.
 :end
 
-; Note: April 2, 2022 - 4 missing translations
+; Note: May 7, 2022 - 4 missing translations

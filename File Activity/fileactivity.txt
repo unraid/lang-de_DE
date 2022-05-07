@@ -38,4 +38,4 @@ Enable for Cache and Pool Disks=
 	> Set to **Disk** to log disk activity.  Set to **Share** to log share activity.
 :end
 
-; Note: April 2, 2022 - 4 missing translations
+; Note: May 7, 2022 - 4 missing translations
