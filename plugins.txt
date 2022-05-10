@@ -2,7 +2,7 @@
 anonymous=anonym
 Author=Autor
 Check For Updates=Suche nach Aktualisierungen
-Checking connectivty=Verbindung wird geprüft
+Checking connectivity=Verbindung wird geprüft
 checking=prüfe
 Click here to install version %s=Klicke hier, um Version %s zu installieren
 Delete Plugin=Lösche Plugin
