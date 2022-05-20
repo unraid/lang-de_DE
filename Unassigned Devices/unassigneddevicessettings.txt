@@ -55,10 +55,6 @@ Use only when directed for support=
 >SSDs die Discard unterstützen mit der 'discard' Option einhängen. Wenn Sie SSD Trim verwenden um ein reglemäßiges Trimming der SSD auszuführen können Sie diese Einstellung auf **Nein** setzen.
 :end
 
-:ud_settings_spin_down_plug:
-> Wenn **Ja** wird der Datenträger nach 15 Minuten heruntergefahren. Wenn **Nein** werden die Datenträger nie heruntergefahren.
-:end
-
 :ud_settings_symlinks_plug:
 > Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
 >
@@ -130,4 +126,4 @@ Use only when directed for support=
 > Wählen Sie den Datenträger von dem Sie die UUID ändern möchten. Nützlich, wenn ein Datenträger aus dem Array entfernt wurde und dieselbe UUID wie ein Array Datenträger hat. Der Datenträger muss nicht gemountet sein, um die UUID zu ändern.
 :end
 
-; Note: May 7, 2022 - 10 missing translations
+; Note: May 20, 2022 - 10 missing translations
