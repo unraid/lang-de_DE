@@ -123,4 +123,4 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Click on the 'Clear' button to clear the log.
 :end
 
-; Note: May 20, 2022 - 4 missing translations
+; Note: May 26, 2022 - 4 missing translations

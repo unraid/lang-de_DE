@@ -21,4 +21,4 @@ No USB devices=Kein USB Gerät gewählt
 > Wählen Sie die VM für das USB-Gerät das angeschlossen/getrennt werden soll und das USB-Gerät für die ausgewählte VM.
 :end
 
-; Note: May 20, 2022 - 1 missing translations
+; Note: May 26, 2022 - 1 missing translations

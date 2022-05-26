@@ -126,4 +126,4 @@ Use only when directed for support=
 > Wählen Sie den Datenträger von dem Sie die UUID ändern möchten. Nützlich, wenn ein Datenträger aus dem Array entfernt wurde und dieselbe UUID wie ein Array Datenträger hat. Der Datenträger muss nicht gemountet sein, um die UUID zu ändern.
 :end
 
-; Note: May 20, 2022 - 10 missing translations
+; Note: May 26, 2022 - 10 missing translations
