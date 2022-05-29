@@ -1510,7 +1510,7 @@ Bitte [Lime Technology forums](https://forums.unraid.net/forum/51-vm-engine-kvm)
 :end
 
 :vms_libvirt_log_help:
-Protokoll für libvirt anzeigen: <a id="openlog" title="/var/log/libvirt/libvirtd.log" href="#" onclick="openWindow('/webGui/scripts/tail_log&arg1=libvirt/libvirtd.log','_(Libvirt Log)_',600,900);">/var/log/libvirt/libvirtd.log</a>
+Protokoll für libvirt anzeigen: <a onclick="openTerminal('log','libvirt','libvirt/libvirtd.log')">View libvirtd.log</a>
 :end
 
 :vms_scrub_help:
