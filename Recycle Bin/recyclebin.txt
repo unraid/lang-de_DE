@@ -15,6 +15,7 @@ Excluded Files=Exkludierte Dateien
 Excluded Shares=Exkludierte Freigaben
 Log Deleted Files=Protokolliere gelöschte Dateien
 Recycle Bin=Papierkorb
+Recycle Bin is empty=
 Recycle Bin Log=Papierkorb Protokoll
 Recycle Bin parameters=Papierkorb Parameter
 Recycle Bin permissions=
@@ -123,4 +124,4 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Click on the 'Clear' button to clear the log.
 :end
 
-; Note: May 26, 2022 - 4 missing translations
+; Note: May 29, 2022 - 5 missing translations

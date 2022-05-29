@@ -64,4 +64,4 @@ background task. This can keep the Unassigned Devices UI from hanging when the D
 > You still need to click **Save** in order to commit the change.
 :end
 
-; Note: May 26, 2022 - 25 missing translations
+; Note: May 29, 2022 - 25 missing translations

@@ -77,6 +77,7 @@ Partition and Format Disk=Partitioniere und Formatiere Datenträger
 Pass Thru=Passthrough
 Password=Passwort
 Read only=Nur Lesen
+Reboot=
 Refresh Disks and Configuration=
 Remember your password It cannot be recovered=Passwort bitte merken, kann nicht wiederhergestellt werden.
 Remote Share is=
@@ -213,4 +214,4 @@ You will need to enter credentials to list the shares=
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
 
-; Note: May 26, 2022 - 54 missing translations
+; Note: May 29, 2022 - 55 missing translations
