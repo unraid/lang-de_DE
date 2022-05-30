@@ -218,4 +218,4 @@ You will need to enter credentials to list the shares=
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
 
-; Note: May 30, 2022 - 60 missing translations
+; Note: May 30, 2022 - 59 missing translations
