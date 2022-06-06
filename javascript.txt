@@ -52,9 +52,14 @@ Array Clearing=
 Array Starting=Array startet
 Array Stopping=Array wird beendet
 Mounting disks=Datenträger werden eingehängt
+Retry unmounting user shares=Retry unmounting user share(s)
 Spinning up all drives=Alle Datenträger werden angefahren
+Stale configuration=
 Starting services=Starte Dienste
 Stopping services=Beende Dienste
+Starting Recycle Bin=
+Stopping Recycle Bin=
+Sync filesystems=
 Unmounting disks=Datenträger werden ausgehängt
 Autostart disabled=Autostart deaktiviert
 Missing encryption key=Fehlender Verschlüsselungsschlüssel
@@ -67,4 +72,4 @@ Container Variable=Container Variable
 Container Label=Container Bezeichnung
 Container Device=Container Gerät
 
-; Note: May 29, 2022 - 2 missing translations
+; Note: June 6, 2022 - 7 missing translations
