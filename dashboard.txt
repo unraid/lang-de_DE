@@ -70,6 +70,7 @@ Nominal power=Nennleistung
 not received=nicht erhalten
 Only PNG images are allowed=Es sind nur PNG Bilder erlaubt.
 Outbound=Ausgehend
+Output voltage=
 Overall Load=Gesamtauslastung
 Parity disk not present=Paritätsdatenträger nicht vorhanden
 Parity disks not present=Paritätsdatenträger nicht vorhanden
@@ -110,3 +111,5 @@ User count %s with %s unprotected=%s Benutzer davon %s ungeschützt
 utilization warning=Kapazitätswarnung
 View Running Processes=Laufende Prozesse anzeigen
 Virtual Machines=Virtuelle Maschinen
+
+; Note: September 16, 2022 - 1 missing translations
