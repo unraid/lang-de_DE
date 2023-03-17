@@ -1,10 +1,12 @@
 After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Nach einem Neustart von dem nicht mehr reagierendem Server können Sie das gespeicherte Protokoll mit dem Syslog-Viewer anzeigen lassen
 Check the=Besuchen Sie
+Available User Watches=
 Click on Help for more information=Klick auf Hilfe für mehr Informationen
 Correct any problems that are identified before doing any tweaking=Bitte alle gefunden Probleme beheben, bevor Sie Änderungen vornehmen
 Current Disk Cache Settings=Aktuelle Datenträger Cache Einstellungen
 Current Inotify Settings=Aktuelle Inotify Einstellungen
 Current NIC settings=Aktuelle NIC Einstellungen
+Current User Watches=
 Disable NIC Flow Control=NIC Flow Control Deaktivieren
 Disable NIC Offload=NIC Offload Deaktivieren
 Disk Cache=Datenträger Cache
@@ -34,7 +36,8 @@ Make changes slowly=Änderungen langsam vornehmen
 Make one change at a time and verify if it improves your situation=Änderungen bitte einzeln vornehmen und überprüfen ob die Leistung verbessert wurde
 Making changes here can briefly interrupt your network operation=Eine Änderungen kann Ihre Netzwerkverbindung kurz unterbrechen
 Many plugins are no longer compatible with older Unraid versons=Viele Plugins sind nicht mehr mit älteren Unraid Versionen kompatibel
-Max Watches=Maximale Überwachungen
+Max SMB Open Files=
+Max User Watches=
 NIC Offload=NIC Offload
 NIC Rx Buffer=NIC Rx Puffer
 NIC Tx Buffer=NIC Tx Puffer
@@ -66,6 +69,7 @@ Tips=Tipps
 Tips and Tweaks wiki=Tipps & Tweaks Wiki
 Tweaks=Tweaks
 Use the Update Assistant that is part of the Fix Common Problems plugin=Verwenden Sie den Update Assistenten, der Teil des Plugins Fix Common Problems ist
+Version 6.11.4 and later=
 You can check CPU frequencies on the command line with=Sie können die CPU-Frequenzen in der Befehlszeile mit folgendem Befehl überprüfen
 You may actually cause more problems than you solve if there are problems with your Unraid configuration=Sie können mehr Probleme verursachen als Sie lösen, wenn es Probleme mit Ihrer Unraid Konfiguration gibt
 
@@ -129,6 +133,12 @@ You may actually cause more problems than you solve if there are problems with y
 > The default is 524288.
 :end
 
+:tips_tweaks_max_files_plug:
+> This value is used by samba to set the maximum number of open files allowed in SMB shares.
+>
+> The default is 40960 and the allowed range is 40960 to 65535.
+:end
+
 :tips_tweaks_cpu_governor_plug:
 > Select the CPU Scaling Governor you want to use.
 >
@@ -187,4 +197,4 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 
-; Note: September 16, 2022 - 7 missing translations
+; Note: March 17, 2023 - 12 missing translations

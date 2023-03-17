@@ -1,7 +1,7 @@
 Add ISO File Share=ISO Freigabe hinzufügen
 Add Remote SMB=
 Add Root Share=
-An XFS or BTRFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=Eine in UD partitionierte XFS- oder BTRFS-Festplatte ist mit der Array-Datenträgerpartitionierung kompatibel und kann dem Array hinzugefügt werden
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=
 Any data on this disk will be lost=Alle Daten auf dem Datenträger werden gelöscht
 Are you sure=Sind Sie sicher
 Auto mount=Auto Mount
@@ -49,9 +49,11 @@ from disk=von Datenträger
 Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=
 Historical=
 Historical Devices=Letzte Datenträger
+Historical Device is=
 Identification=Identifikation
 If this disk was pre-cleared, you will remove the pre-clear signature=
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=
+is offline=
 ISO File is=
 ISO File Shares=ISO Datei Freigaben
 If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Falls ein Datenträgerpasswort verwendet wird bitte das Password in den UD Einstellungen eingeben damit der Datenträger eingebeunden werden kann
@@ -63,16 +65,18 @@ Log=Protokoll
 Mount=Einhängen
 Mount Point=
 Mounting=Einhängen
+Next=Weiter
 NFS Mount Point=
 NFS or ISO File Shares configured=
 NFS Script=
+NFS Script Log=
 NFS Share=
 NFS Shares=NFS Freigaben
-Next=Weiter
 No Remote SMB=
 No Unassigned Disks available=Keine nicht zugewiesenen Datenträger vorhanden
 not installed=
 Note=Hinweis
+offilne=
 You must enable NFS in Settings->NFS to mount NFS shares=
 You must enable SMB in Settings->SMB to mount SMB shares=
 Open=Geöffnet
@@ -126,31 +130,15 @@ Username=Benutzername
 View Device Script Log=Zeige Datenträger Skript Protokoll
 View ISO File Script Log=Zeige ISO Datei Skript Protokoll
 View Remote SMB=
+WARNING=
 When you copy files between shares in the Root Share, the files may not end up on the expected disks=
-NFS Script Log=
+Working=
 You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=
 You must enable NFS in Settings->NFS to mount NFS shares=
 You must enable SMB in Settings->SMB to mount SMB shares=
 You must enable the Destructive Mode in UD Settings before you can Format this disk=
-WARNING=
 You WILL have problems if you do=
 You will need to enter credentials to list the shares=
-
-; Help
-;
-:unassgned_devices_switches_plug:
-> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
->
-> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
->
-> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
->
-> Click on the <i style='color:black;font-weight:bold;' class="fa fa-refresh"></i> icon to refresh disks and configuration.
->
-> Click on the <i style='color:black;font-weight:bold;' class="fa fa-gear"></i> icon to go to the UD Settings.
->
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator. Applies to version 6.9 RC2 and later only.
-:end
 
 :unassigned_devices_general_help_plug:
 > Unassigned Devices Kurzform lautet UD
@@ -217,4 +205,4 @@ You will need to enter credentials to list the shares=
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
 
-; Note: June 6, 2022 - 59 missing translations
+; Note: March 17, 2023 - 64 missing translations
