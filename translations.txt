@@ -528,7 +528,7 @@ Display Name or Email Address=Name oder Email Adresse anzeigen
 Display Name=Namen anzeigen
 Displaying last known server data=Letzte bekannten Serverdaten anzeigen
 Do not have an account=Nicht Registriert?
-Download any registration key linked to your account=Lade einen beliebigen Lizenschlüssel von deinem Konto herunter.
+Download any registration key linked to your account=Lade einen beliebigen Lizenschlüssel von deinem Konto herunter
 Email Address=Email Adresse
 Expand your servers capabilities=Erweitere deinen Server
 Extend Trial=Testzeitraum verlängern
@@ -844,7 +844,7 @@ Enhance your Unraid experience with these My Servers BETA features=Enhance your 
 Enhance your Unraid experience with these<br> My Servers BETA features=Enhance your Unraid experience with these<br class=\hidden sm:block\/> My Servers (BETA) features
 Executes `unraid-api start`; no terminal needed=
 For best results, use one of these urls=
-Get started by installing the plugin=
+Get started by installing the plugin=Beginne jetzt mit der Installation des Plugins
 Go to My Servers Dashboard=
 Important=
 Install Plugin=
