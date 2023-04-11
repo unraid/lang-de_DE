@@ -35,8 +35,9 @@ STALE=VERALTET
 Support Thread=Hilfe-Foreneintrag
 Uninstall=Deinstallieren
 Update All Plugins=Aktualisiere alle Plugins
+Update Incompatible=
 Update Plugin=Aktualisiere Plugin
 Upgrade=Aktualisieren
 View Release Notes=Zeige Veröffentlichungshinweise
 
-; Note: March 17, 2023 - 2 missing translations
+; Note: April 11, 2023 - 3 missing translations

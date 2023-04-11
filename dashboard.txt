@@ -94,6 +94,7 @@ Parity disks not present=Paritätsdatenträger nicht vorhanden
 Parity has not been checked yet=Parität wurde noch nicht geprüft
 Parity Information=
 Parity is degraded=Parität herabgestuft
+Pool=
 Power Status=
 Power=Leistung
 Processor Information=
@@ -141,4 +142,4 @@ VPN Connections=
 Warnings=
 ZFS=
 
-; Note: March 17, 2023 - 29 missing translations
+; Note: April 11, 2023 - 30 missing translations
