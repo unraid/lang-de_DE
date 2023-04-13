@@ -47,23 +47,23 @@ Yes, update it=Ja, aktualisieren
 Yes=Ja
 
 ; footer messages
-Array Copying=
-Array Clearing=
+Array Copying=Array wird kopiert
+Array Clearing=Array wird gelöscht
 Array Starting=Array startet
 Array Stopping=Array wird beendet
 Mounting disks=Datenträger werden eingehängt
-Retry unmounting user shares=Retry unmounting user share(s)
+Retry unmounting user shares=Aushängen von Benutzerfreigaben erneut versuchen
 Spinning up all drives=Alle Datenträger werden angefahren
-Stale configuration=
+Stale configuration=Veraltete Konfiguration
 Starting services=Starte Dienste
 Stopping services=Beende Dienste
-Starting Recycle Bin=
-Stopping Recycle Bin=
-Sync filesystems=
+Starting Recycle Bin=Papierkorb starten
+Stopping Recycle Bin=Papierkorb stoppen
+Sync filesystems=Dateisysteme synchronisieren
 Unmounting disks=Datenträger werden ausgehängt
 Autostart disabled=Autostart deaktiviert
 Missing encryption key=Fehlender Verschlüsselungsschlüssel
-Opening encrypted volumes=Entsperre Verschlüsselte Volumen
+Opening encrypted volumes=Entsperre verschlüsselte Volumen
 
 ; docker variables
 Container Path=Container Pfad
