@@ -367,8 +367,8 @@ zfs=ZFS
 
 ; Sleep plugin translations
 Check this=Hier
-for more information=erhalten Sie weitere Informationen
-Make sure your server supports S3 sleep=Stellen Sie sicher, dass dein Server den S3-Ruhezustand unterstützt
+for more information=findest du weitere Informationen
+Make sure your server supports S3 sleep=Stelle sicher, dass dein Server den S3-Ruhezustand unterstützt
 Sleep will immediately put the server in sleep mode=**Ruhezustand** versetzt den Server sofort in den Ruhezustand
 Sleeping=Schläft
 System in sleep mode=System im Ruhezustand
