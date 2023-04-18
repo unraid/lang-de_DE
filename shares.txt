@@ -72,4 +72,4 @@ User Shares=Benutzerfreigaben
 Write=Schreiben
 You cannot use the following within share names=Sie können folgendes nicht im Freigabenamen verwenden
 
-; Note: April 18, 2023 - 9 missing translations
+; Note: April 18, 2023 - 8 missing translations
