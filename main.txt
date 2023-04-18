@@ -374,5 +374,3 @@ Sleeping=Schläft
 System in sleep mode=System im Ruhezustand
 This will put the system in sleep mode=Dadurch wird das System in den Ruhezustand versetzt
 wiki entry=Wiki-Eintrag
-
-; Note: April 11, 2023 - 63 missing translations

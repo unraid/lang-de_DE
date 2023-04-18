@@ -790,7 +790,7 @@ In order to activate Flash Backup there must be at least 1GB of free space on yo
 Local T2FA requires a myunraidnet certificate=Lokale T2FA erfordert ein *.myunraidnet-Zertifikat
 Local T2FA requires Unraid 610 or higher and a myunraidnet certificate=Lokale T2FA erfordert Unraid 6.10 oder höher und ein *.myunraidnet-Zertifikat
 Local T2FA requires Unraid 610 or higher=Lokale T2FA erfordert Unraid 6.10 oder höher
-Local T2FA requires Use SSLTLS to be Auto and a myunraidnet certificate=Lokale T2FA erfordert ein *.myunraidnet-Zertifikat und "SSL/TLS verwenden" muss auf "Auto" stehen 
+Local T2FA requires Use SSLTLS to be Auto and a myunraidnet certificate=Lokale T2FA erfordert ein *.myunraidnet-Zertifikat und "SSL/TLS verwenden" muss auf "Auto" stehen
 Local T2FA requires Use SSLTLS to be Auto and Unraid 610 or higher=Lokale T2FA erfordert Unraid 6.10 oder höher und "SSL/TLS verwenden" muss auf "Auto" stehen
 Local T2FA requires Use SSLTLS to be Auto, Unraid 610 or higher, and a myunraidnet certificate=Lokale T2FA erfordert ein *.myunraidnet-Zertifikat, Unraid 6.10 oder höher und "SSL/TLS verwenden" muss auf "Auto" stehen
 Local T2FA requires Use SSLTLS to be Auto=Für lokale T2FA muss "SSL/TLS verwenden" auf "Auto" stehen
@@ -808,5 +808,3 @@ to the Unraid server at=Zum Unraid-Server unter
 Transient errors in this log can be ignored unless you are having issues=Vorübergehende Fehler in diesem Protokoll können ignoriert werden, es sei denn, du hast Probleme
 Unraid API extra origins=Unraid-API Extra Origins
 View Flash Backup Error Log=Flash-Backup-Fehlerprotokoll anzeigen
-
-; Note: April 11, 2023 - 85 missing translations

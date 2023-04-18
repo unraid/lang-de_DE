@@ -39,5 +39,3 @@ Update Incompatible=Aktualisierung inkompatibel
 Update Plugin=Aktualisiere Plugin
 Upgrade=Upgrade
 View Release Notes=Zeige Veröffentlichungshinweise
-
-; Note: April 11, 2023 - 3 missing translations
