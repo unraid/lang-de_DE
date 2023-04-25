@@ -141,5 +141,3 @@ Virtual Machines=Virtuelle Maschinen
 VPN Connections=VPN-Verbindungen
 Warnings=Warnungen
 ZFS=ZFS
-
-; Note: April 11, 2023 - 30 missing translations
