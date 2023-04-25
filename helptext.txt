@@ -3,7 +3,7 @@
 
 <i class='fa fa-circle orb green-orb'></i>Normalbetrieb, Datenträger ist aktiv.
 
-<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (Spun-down).
+<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (heruntergefahren).
 
 <i class='fa fa-warning orb yellow-orb'></i>Datenträgerinhalt emuliert.
 
@@ -70,7 +70,7 @@ Die minimale Anzahl der Array Slots beträgt 2, Sie müssen mindestens einen Dat
 
 <i class='fa fa-circle orb green-orb'></i>Normal Betrieb, Datenträger ist aktiv.
 
-<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (spun-down).
+<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (heruntergefahren).
 
 <i class='fa fa-square orb blue-orb'></i>Neuer Datenträger.
 
@@ -515,20 +515,20 @@ Beliebiger Text, maximal 256 Zeichen.
 :share_edit_allocation_method_help:
 Diese Einstellung bestimmt wie und auf welchen Datenträgern Unraid neue Dateien/Verzeichnisse erstellt:
 
-**High-Water**
-Benutzt den ersten Datenträger der noch genug Speicherplatz unter der *High-Water Grenze* besitzt. Die
-*High-Water Grenze* wird durch das größte Datenlaufwerk geteilt durch zwei festgelegt. Wenn kein Datenträger
-Speicherplatz über der *High-Water Grenze* zur Verfügung hat wird die *High-Water Grenze* durch zwei geteilt und erneut geprüft.
+**Hochwasser**
+Benutzt den ersten Datenträger der noch genug Speicherplatz unter der *Hochwasser Grenze* besitzt. Die
+*Hochwasser Grenze* wird durch das größte Datenlaufwerk geteilt durch zwei festgelegt. Wenn kein Datenträger
+Speicherplatz über der *Hochwasser Grenze* zur Verfügung hat wird die *Hochwasser Grenze* durch zwei geteilt und erneut geprüft.
 
-Das Ziel von **High-Water** ist möglichst viele Daten auf jeden Datenträger zu schreiben (um die Anlaufvorgänge der
+Das Ziel von **Hochwasser** ist möglichst viele Daten auf jeden Datenträger zu schreiben (um die Anlaufvorgänge der
 Datenträger zu minimieren) und gleichzeitig die Datenträgerauslastung von allen Datenträgern auf gleichem
 Niveaus zu halten (um Daten gleichmäßig auf dem Array zu verteilen).
 
-**Fill-Up**
+**Auffüllen**
 Benutzt den ersten Datenträger der noch freien Speicherplatz über der **Minimale freier Speicherplatz**
 Einstellung hat.
 
-**Most-Free**
+**Am meisten Frei**
 Benutzt den Datenträger der am meisten freien Speicherplatz hat.
 :end
 
@@ -542,25 +542,25 @@ Einheiten in KB, MB, GB und TB angeben, zB. 10MB.
 :share_edit_split_level_help:
 Gibt an ob ein Verzeichnis über mehrere Datenträger aufgeteilt werden darf.
 
-**Jedes Verzeichnis automatisch Splitten falls erforderlich**
+**Jedes Verzeichnis automatisch aufteilen falls erforderlich**
 Wenn eine neue Datei oder ein neues Unterverzeichnis in einer Freigabe erstellt wird, wählt Unraid OS zuerst den Datenträger
 anhand der Konfigurierten *Zuweisungsmethode* aus.  Wenn das übergeordnete Verzeichnis mit der neu zu erstellenden Datei
 oder Verzeichnis nicht auf dem Datenträger existiert, erstellt Unraid zuerst alle erforderlichen übergeordneten Verzeichnisse
 und anschließend die neue Datei bzw. das neue Unterverzeichnis.
 
-**Hauptverzeichnis automatisch Splitten falls erforderlich**
+**Hauptverzeichnis automatisch aufteilen falls erforderlich**
 Wenn eine neue Datei oder ein Unterverzeichnis im Hauptverzeichnis der Freigabe erstellt wird und das Unterverzeichnis
 auf dem Datenträger des Hauptverzeichnisses nicht vorhanden ist, wird zuerst das Unterverzeichnis erstellt.
 Wenn eine neue Datei oder ein Unterverzeichnis im zweiten oder weiteren Unterverzeichnissen einer Freigabe erstellt wird, wird
 die neu zu erstellende Datei oder Verzeichnis auf dem selben Datenträger wie das Hauptverzeichnis erstellt.
 
-**Verzeichnis nach "N" Ebenen Splitten falls erforderlich**
+**Verzeichnis nach "N" Ebenen aufteilen falls erforderlich**
 Ähnlich wie oberhalb: Wenn eine neue Datei oder ein Unterverzeichnis erstellt wird und das übergeordnete Verzeichnis auf Ebene
 "N" befindet und auf dem ausgewählten Datenträger nicht vorahnden ist, erstellt Unraid alle übergeordneten Verzeichnisse. Wenn
 das übergeordnete Verzeichnis der neuen Datei oder Verzeichnis sich nach der Ebene "N" befindet, dann wird die neue Datei oder
 Verzeichnis auf dem selben Datenträger erstellt auf dem sich das übergeordnete Verzeichnis befindet.
 
-**Manuell: Verzeichnisse nicht automatisch Splitten**
+**Manuell: Verzeichnisse nicht automatisch aufteilen**
 Wenn eine neue Datei oder ein Unterverzeichnis auf deinem Datenträger erstellt werden muss erstellt Unraid das Verzeichnis
 nur auf dem Datenträger auf denen das Hauptverzeichnis vorhanden ist.
 :end
