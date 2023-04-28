@@ -1,12 +1,7 @@
 File Activity=Datei Aktivitäten
-File Activity Monitoring=
 Start File Activity=Starte Datei Aktivitäten
-Stop File Activity Monitoring=
 Clear the File Activity log=Lösche Datei Aktivitäten Protokoll
-Refresh Page=
-Enable File Activity Monitoring=
 Enable for Unassigned Devices=Für Unassigned Devices aktivieren
-Enable for Cache and Pool Disks=
 ;
 ; Help
 ;
@@ -35,4 +30,9 @@ Enable for Cache and Pool Disks=
 :end
 
 
-; Note: April 11, 2023 - 5 missing translations
+; Note: April 28, 2023 - 5 missing translations
+File Activity Monitoring=
+Stop File Activity Monitoring=
+Refresh Page=
+Enable File Activity Monitoring=
+Enable for Cache and Pool Disks=

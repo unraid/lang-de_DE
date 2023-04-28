@@ -3,38 +3,25 @@ Auto Mount USB Devices=USB Datenträger automatisch einhängen
 Change Disk UUID=Datenträger UUID ändern
 Change UUID=UUID ändern
 Change the disk UUID=Datenträger UUID ändern
-Command times=
 Common Script=Gemeinsames Skript
 Common Settings=Gemeinsame Einstellungen
 Destructive Mode=Partitionierungs Modus
-Disk spin down is managed by Unraid=
 Enable NFS export=NFS Export einschalten
 Enable SMB Security=SMB Sicherheit einschalten
 Enter Disk Password=Datenträgerpasswort eingeben
-Enter Pool Mount Point=
-Legacy Mount Point Compatibility=
 Mount SSDs with discard option=SSD mit Discard Option einhängen
 NFS Security=NFS Sicherheit
 NFS Settings=NFS Einstellungen
-NFS must be enabled in Settings->NFS to enable NFS Export=
-NFS Version to use when Mounting Remote Shares=
-Refresh and Update=
 Rule=Regel
 SMB Security=SMB Sicherheit
 Select Disk=Datenträger wählen
 Set Encrypted Disk Password=Verschlüsselungspasswort setzen
 Set Password=Passwort setzen
-Set Pool Mount Point=
-Set the Pool Mount Point for this disk=
 Set the disk Password=Datenträgerpasswort setzen
-Specify SMB Version when Mounting Remote Shares=
 Spin down disks=Datenträger herunterfahren
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Unassigned Devices Plus plugin muss installiert sein um den Partitionierungs Modus zu aktivieren
 to SMB share config=zu SMB Freigabe Konfiguration
-Udev and Hotplug=
 Unassigned Devices=Unassigned Devices
-Unraid 6.10 or later is required for NFSv4 support=
-Use only when directed for support=
 
 ; Help
 ;
@@ -129,4 +116,17 @@ Use only when directed for support=
 > Wählen Sie den Datenträger von dem Sie die UUID ändern möchten. Nützlich, wenn ein Datenträger aus dem Array entfernt wurde und dieselbe UUID wie ein Array Datenträger hat. Der Datenträger muss nicht gemountet sein, um die UUID zu ändern.
 :end
 
-; Note: April 11, 2023 - 13 missing translations
+; Note: April 28, 2023 - 13 missing translations
+Command times=
+Disk spin down is managed by Unraid=
+Enter Pool Mount Point=
+Legacy Mount Point Compatibility=
+NFS must be enabled in Settings->NFS to enable NFS Export=
+NFS Version to use when Mounting Remote Shares=
+Refresh and Update=
+Set Pool Mount Point=
+Set the Pool Mount Point for this disk=
+Specify SMB Version when Mounting Remote Shares=
+Udev and Hotplug=
+Unraid 6.10 or later is required for NFSv4 support=
+Use only when directed for support=

@@ -8,17 +8,12 @@ Empty=Leer
 Empty the=Leere den
 Empty All Trash=Alle Papierkörbe leeren
 Empty Trash=Papierkorb leeren
-Enable on Unassigned Devices=
-Enable Recycle Bin=
-Excluded Directories=
 Excluded Files=Exkludierte Dateien
 Excluded Shares=Exkludierte Freigaben
 Log Deleted Files=Protokolliere gelöschte Dateien
 Recycle Bin=Papierkorb
-Recycle Bin is empty=
 Recycle Bin Log=Papierkorb Protokoll
 Recycle Bin parameters=Papierkorb Parameter
-Recycle Bin permissions=
 Recycle Bin Total Size=Gesamtgröße des Papierkorbs
 Refresh the Recycle Bin page=Papierkorbseite aktualisieren
 Remove Aged Files=Entferne alte Dateien
@@ -124,4 +119,9 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Click on the 'Clear' button to clear the log.
 :end
 
-; Note: June 6, 2022 - 5 missing translations
+; Note: April 28, 2023 - 5 missing translations
+Enable on Unassigned Devices=
+Enable Recycle Bin=
+Excluded Directories=
+Recycle Bin is empty=
+Recycle Bin permissions=
