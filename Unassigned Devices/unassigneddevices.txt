@@ -57,7 +57,6 @@ Search For Servers=Suche nach Servern
 Search for Servers, or enter the Server nameIP address manually=Suche nach Servern oder ServernamenIP Adresse manuell eingeben
 Search for Shares or enter the Share name manually=Suche nach Freigaben oder Freigabenamen manuell eingeben
 Searching=Suche
-Serial Number Mount Point=Serial Number (Mount Point)
 share for=freigeben für
 Simple=Einfach
 SMB Shares=SMB Freigaben
@@ -141,7 +140,7 @@ View ISO File Script Log=Zeige ISO Datei Skript Protokoll
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
 
-; Note: April 28, 2023 - 66 missing translations
+; Note: April 29, 2023 - 67 missing translations
 Add Remote SMB=
 Add Root Share=
 An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=
@@ -187,6 +186,7 @@ Remote Share is=
 Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=
 Remove Remote SMB=
 Select the Mount Point to Root Share=
+Serial Number Mount Point=Serial Number (Mount Point)
 Shares=
 Share Type=
 SSD cannot be spun down=
