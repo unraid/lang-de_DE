@@ -454,7 +454,7 @@ Please use a high quality name brand device at least 1GB in size min 4GB recomme
 
 ; Dynamix.system.button plugin
 Array busy=Array beschäftigt
-Buttons=Schaltflächen
+Buttons=Buttons
 Parity operation or mover is running=Paritätsvorgang oder Mover läuft gerade
 preparing for reboot=Bereite Neustart vor
 preparing for shutdown=Bereite Herunterfahren vor
@@ -505,7 +505,7 @@ Browser will self destruct in %s=Browser schließt sich in
 bye bye 👋=Tschüss 👋
 Cannot access your USB Flash boot device=Kein Zugriff auf den USB-Boot-Datenträger möglich
 Cannot validate Unraid Trial key=Keine Überprüfung der Unraid-Probelizenz möglich
-Click a button and your flash is automatically backed up to Unraidnet enabling easy recovery in the event of a device failure=Klicke auf eine Schaltfläche und dein Flash-Datenträger wird automatisch auf Unraid.net gesichert, sodass bei einem Datenträgerausfall eine einfache Wiederherstellung möglich ist
+Click a button and your flash is automatically backed up to Unraidnet enabling easy recovery in the event of a device failure=Klicke auf einen Button und dein Flash-Datenträger wird automatisch auf Unraid.net gesichert, sodass bei einem Datenträgerausfall eine einfache Wiederherstellung möglich ist
 Close %s=%s schließen
 Close Details=Details schließen
 Close dropdown=Auswahlliste schließen
@@ -610,7 +610,7 @@ Dynamic Remote Access=Dynamischer Fernzugriff
 See also here=Siehe auch hier
 Server Offline=Server offline
 Server up since %s=Server läuft seit %s
-Settings > Management Access • Unraidnet=Einstellungen > Zugangsverwaltung • Unraid.net
+Settings > Management Access • Unraidnet=Einstellungen > Verwaltungszugriff • Unraid.net
 Shut Down=Herunterfahren
 Sign in or sign up to get started=Anmelden oder Registrieren, um loszulegen
 Sign In to Purchase Key=Anmelden, um eine Lizenz zu erwerben
@@ -899,8 +899,8 @@ Thank you for choosing Unraid OS and Connect=Danke, dass du dich für Unraid OS 
 Thank you installing Connect=Danke für die Installation von Connect
 The Connect plugin install is incomplete=Die Connect-Installation ist unvollständig
 This will register your server with Connect <sup>BETA</sup>=Dadurch wird dein Server bei Connect <sup>BETA</sup> registriert
-To support more storage devices as your server grows click the Open Dropdown button=Für die Unterstützung weiterer Datenträger, wenn dein Server wächst, klicke auf die Schaltfläche *Auswahlliste öffnen*
-To support more storage devices as your server grows click the Open Dropdown button=Für die Unterstützung weiterer Datenträger, wenn dein Server wächst, klicke auf die Schaltfläche *Auswahlliste öffnen*
+To support more storage devices as your server grows click the Open Dropdown button=Für die Unterstützung weiterer Datenträger, wenn dein Server wächst, klicke auf den Button *Auswahlliste öffnen*
+To support more storage devices as your server grows click the Open Dropdown button=Für die Unterstützung weiterer Datenträger, wenn dein Server wächst, klicke auf den Button *Auswahlliste öffnen*
 To support more storage devices as your server grows click Upgrade Key=Für die Unterstützung weiterer Datenträger, wenn dein Server wächst, klicke auf Lizenz upgraden
 Transparent 2FA Token timed out=Transparenter 2FA-Token abgelaufen
 Your current url %s is not in the list of allowed origins for this server=Deine aktuelle URL **%s** ist nicht in der Liste der erlaubten Ursprünge für diesen Server

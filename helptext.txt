@@ -515,20 +515,20 @@ Beliebiger Text, maximal 256 Zeichen.
 :share_edit_allocation_method_help:
 Diese Einstellung bestimmt wie und auf welchen Datenträgern Unraid neue Dateien/Verzeichnisse erstellt:
 
-**Hochwasser**
-Benutzt den ersten Datenträger der noch genug Speicherplatz unter der *Hochwasser Grenze* besitzt. Die
-*Hochwasser Grenze* wird durch das größte Datenlaufwerk geteilt durch zwei festgelegt. Wenn kein Datenträger
-Speicherplatz über der *Hochwasser Grenze* zur Verfügung hat wird die *Hochwasser Grenze* durch zwei geteilt und erneut geprüft.
+**High-Water**
+Benutzt den ersten Datenträger der noch genug Speicherplatz unter der *High-Water Grenze* besitzt. Die
+*High-Water Grenze* wird durch das größte Datenlaufwerk geteilt durch zwei festgelegt. Wenn kein Datenträger
+Speicherplatz über der *High-Water Grenze* zur Verfügung hat wird die *High-Water Grenze* durch zwei geteilt und erneut geprüft.
 
-Das Ziel von **Hochwasser** ist möglichst viele Daten auf jeden Datenträger zu schreiben (um die Anlaufvorgänge der
+Das Ziel von **High-Water** ist möglichst viele Daten auf jeden Datenträger zu schreiben (um die Anlaufvorgänge der
 Datenträger zu minimieren) und gleichzeitig die Datenträgerauslastung von allen Datenträgern auf gleichem
 Niveaus zu halten (um Daten gleichmäßig auf dem Array zu verteilen).
 
-**Auffüllen**
+**Fill-Up**
 Benutzt den ersten Datenträger der noch freien Speicherplatz über der **Minimale freier Speicherplatz**
 Einstellung hat.
 
-**Am meisten Frei**
+**Most-Free**
 Benutzt den Datenträger der am meisten freien Speicherplatz hat.
 :end
 
