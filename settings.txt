@@ -65,6 +65,7 @@ Bonding members of=Teilnehmer der Netzwerkkartenbündelung
 Bonding mode=Netzwerkkartenbündelungs-Modus
 boost=erhöhen
 Both=Beide
+Both Web Virt-Manager Remote Viewer=Both Web & Virt-Manager Remote Viewer
 bottom-left=unten links
 bottom-right=unten rechts
 Bridging members of=Teilnehmer der Netzwerkkartenbrücke
@@ -808,3 +809,8 @@ to the Unraid server at=Zum Unraid-Server unter
 Transient errors in this log can be ignored unless you are having issues=Vorübergehende Fehler in diesem Protokoll können ignoriert werden, es sei denn, du hast Probleme
 Unraid API extra origins=Unraid-API Extra Origins
 View Flash Backup Error Log=Flash-Backup-Fehlerprotokoll anzeigen
+
+; Note: April 28, 2023 - 3 missing translations
+Console Options=
+Virt-Manager Remote Viewer=
+Web interface=

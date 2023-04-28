@@ -72,4 +72,19 @@ User Shares=Benutzerfreigaben
 Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
 
-; Note: April 18, 2023 - 8 missing translations
+; Note: April 28, 2023 - 15 missing translations
+Calculated free space value=
+Clean Up=
+CLEAN UP=
+Exclusive access=
+Mover action=
+Mover transfers files from Primary storage to Secondary storage=
+Mover transfers files from Secondary storage to Primary storage=
+No unused share configurations present=
+Not used=
+Primary storage to Secondary storage=
+Remove unused share configurations=
+Removed share configurations=
+Secondary storage to Primary storage=
+Secondary storage=
+Storage=
