@@ -73,11 +73,11 @@ Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
 
 ; Note: April 28, 2023 - 8 missing translations
-Clean Up=
-CLEAN UP=
-No unused share configurations present=
-Primary storage %s=
-Primary storage to Secondary storage=
-Remove unused share configurations=
-Removed share configurations=
-Secondary storage to Primary storage=
+Clean Up=Aufräumen
+CLEAN UP=AUFRÄUMEN
+No unused share configurations present=Keine ungenutzten Freigabe-Konfigurationen vorhanden
+Primary storage %s=Primärer Speicher %s
+Primary storage to Secondary storage=Vom primärer Speicher zum sekundären Speicher
+Remove unused share configurations=Ungenutzte Freigabe-Konfigurationen entfernen
+Removed share configurations=Ungenutzte Freigabe-Konfigurationen entfernt
+Secondary storage to Primary storage=Vom primären Speicher zum sekundären Speicher
