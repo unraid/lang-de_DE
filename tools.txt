@@ -1,39 +1,47 @@
-A registration replacement key has been created for USB Flash GUID=Eine Ersatzregistrierungslizenz wurde für die USB Flash GUID erstellt
+A registration replacement key has been created for USB Flash GUID=Eine Ersatz-Registrierungslizenz wurde für die USB-Flash-GUID erstellt
 About=Über
+Alert Message=Alarmnachricht
 alert=Alarm
-An email has been sent to=Eine Email wurde gesendet an
+Alerts=Alarme
+All Categories=Alle Kategorien
+An email has been sent to=Eine E-Mail wurde gesendet an
 and=und
-Anonymize diagnostics=Diagnose anonymisieren
+Anonymize diagnostics=Diagnosedaten anonymisieren
 Anytime=Jederzeit
 Archived Notifications=Archivierte Benachrichtigungen
-Are you sure=Sind Sie sicher
-Array has been Reset=Array wurde **zurückgesetzt**
-Array must be Started to change permissions=Array muss **gestartet** sein, um Berechtigungen zu ändern
-Array must be Stopped to change=Zum ändern muss das Array **gestoppt** sein:
-Array slots=Array slots
+Are you sure=Bist du sicher
+Array has been Reset=Das Array wurde **zurückgesetzt**
+Array must be Started to change permissions=Das Array muss **gestartet** sein, um Berechtigungen zu ändern
+Array must be Stopped to change=Zum Ändern muss das Array **gestoppt** sein
+Array slots=Array-Slots
 Array=Array
 Author=Autor
-Blacklisted USB Flash GUID=Gesperrte USB Flash GUID
+Beta=Beta
+Blacklisted USB Flash GUID=Gesperrte USB-Flash-GUID
 Branch=Zweig
-By using this software, you agree with our=Mit der Nutzung dieser Software stimmen Sie folgendem zu:
-Cache slots=Cache Slots
-Cannot connect to key-server=Es konnte keine Verbindung zum Key-Server hergestellt werden
-Check for Updates=Auf Aktualisierungen Prüfen
-click Install Key=Klicke <i>Lizenz Installieren</i>
-collecting diagnostic information this may take several minutes=Sammeln von Diagnose Informationen (dies kann mehrere Minuten dauern)
+By using this software, you agree with our=Mit der Nutzung dieser Software stimmst du folgendem zu:
+Cache slots=Cache-Slots
+Cannot connect to key-server=Es konnte keine Verbindung zum Lizenz-Server hergestellt werden
+Check for Updates=Auf Aktualisierungen prüfen
+Clear Log=Protokoll leeren
+click Install Key=Klicke <i>Lizenz installieren</i>
+collecting diagnostic information this may take several minutes=Sammeln von Diagnose-Informationen (dies kann mehrere Minuten dauern)
 Component=Komponente
 Credits=Namensnennungen
-Data slots=Daten Slots
+Data slots=Daten-Slots
 Delete all notifications=Lösche alle Benachrichtigungen
 Delete notification=Benachrichtigung löschen
+Deprecated Only=Nur veraltete
 Developer=Entwickler
-Diagnostics=Diagnose
+Diagnostics=Diagnosedaten
 Disks=Datenträger
-Display Settings=Darstellungseinstellungen
+Display Settings=Anzeigeeinstellungen
 Downloading=Herunterladen
 End-User License Agreement=Endbenutzer-Lizenzvereinbarung
-Enter URL of language pack XML file=URL für das XML-Sprachpaket eingeben
-Error accessing your physical USB Flash boot device=Fehler beim Zugriff auf das USB Bootgerät
+Enter URL of language pack XML file=URL der XML-Datei des Sprachpakets eingeben
+Error accessing your physical USB Flash boot device=Fehler beim Zugriff auf den USB-Boot-Datenträger
+Error reporting level=Stufe für Fehlermeldungen
+Errors Only=Nur Fehler
 EULA=EULA
 Event=Ereignis
 Expiration=Ablauf
@@ -41,190 +49,205 @@ Extend=Verlängern
 extended=verlängert
 Get Trial Key=Probelizenz beantragen
 Hardware Profile=Hardwareprofil
-Hide Details=Details Ausblenden
-If you do not receive an email, please check your spam or junk-email folder=Falls Sie keine Email erhalten haben, bitte den Spam- oder Junk-Email Ordner überprüfen
+Hide Details=Details ausblenden
+If you do not receive an email, please check your spam or junk-email folder=Falls du keine E-Mail erhalten hast, prüfe bitte deinen Spam- oder Junk-E-Mail-Ordner
 Importance=Wichtigkeit
 Important=Wichtig
-Install Language=Installiere Sprache
+Install Language=Sprache installieren
 Install=Installieren
 Installed languages=Installierte Sprachen
-Invalid Trial Installation=Invalide *Probeinstallation*
-It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=Sammelt alle Systemhardwareinformationen, alle Seriennummern werden entfernen und verschlüsselt zu LimeTech hochladen
-Key file URL=Lizenzdatei URL
+Invalid Trial Installation=Ungültige *Probeinstallation*
+It will collect all of the system hardware information, remove any serial numbers, and securely upload it to LimeTech=Es werden alle Informationen über die Systemhardware gesammelt, alle Seriennummern entfernt und verschlüsselt zu LimeTech hochgeladen
+Key file URL=URL der Lizenzdatei
 Language support added=Sprache hinzugefügt
 Language support deleted=Sprache entfernt
 Language=Sprache
+Log file cleared=Protokolldatei erstellt
+Log size=Protokoll-Größe
+LOG size=PROTOKOLL-Größe
 Missing Key File=Fehlende Lizenzdatei
 Missing Language=Fehlende Sprache
 Network Settings=Netzwerkeinstellungen
 New Config=Neue Konfiguration
 New Permissions=Neue Berechtigungen
+Next=Weiter
+No filter=Keine Filter
 No notifications present=Keine Benachrichtigungen vorhanden
 No personal information such as user names, passwords, or any other file contents is included in the hardware profile=Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere Dateiinhalte sind im Hardwareprofil enthalten
-normal=normal
-Only ZIP files are allowed=Nur ZIP Dateien erlaubt
+normal=Normal
+Notices Only=Nur Notizen
+Notices=Notizen
+Only ZIP files are allowed=Nur ZIP-Dateien erlaubt
 Page Map=Seitenverzeichnis
-Parity slots=Parität Slots
-Please check your=Bitte prüfen Sie Ihre
-please configure=bitte konfigurieren
-Please select a language before proceeding=Bitte vor dem Fortfahren eine Sprache auswählen
+Parity slots=Parität-Slots
+PHP Info=PHP-Info
+PHP Information=PHP-Information
+PHP Log File=PHP_Protokolldatei
+PHP Settings=PHP-Einstellungen
+Please check your=Bitte überprüfe deine
+please configure=Bitte konfigurieren
+Please provide diagnostics when experiencing problems=Bitte stelle bei Problemen Diagnosedaten zur Verfügung
+Please select a language before proceeding=Bitte wähle eine Sprache aus, bevor du fortfährst
 Please=Bitte
-Pool slots=Pool slots
-Preserve current assignments=Aktuelle Zuweisungen speichern
-previous=vorherig
+Pool slots=Pool-Slots
+Post these in the forums=Veröffentliche diese im Forum
+Preserve current assignments=Aktuelle Zuweisungen beibehalten
+previous=Vorherige
 Privacy Policy=Datenschutzerklärung
 Processes=Prozesse
-Purchase Key=Lizenz Erwerben
+Purchase Key=Lizenz erwerben
 Registered GUID=Registrierte GUID
 Registered on=Registriert am
-Registered to=Registriert bei
-registering USB Flash GUID=USB Flash GUID registrieren
+Registered to=Registriert für
+registering USB Flash GUID=Registriere USB-Flash-GUID
 Release has been withdrawn=Version wurde zurückgezogen
 Remove the installed language=Installierte Sprache entfernen
 Replaceable=Ersetzbar
-Request Extension=Verlängerung Beantragen
-Request Trial Extension=Lizenzverlängerung Beantragen
+Request Extension=Verlängerung beantragen
+Request Trial Extension=Verlängerung des Probezeitraums beantragen
 Restore=Wiederherstellen
 See=Siehe
 Select language file=Sprachdatei auswählen
 Select language=Sprache auswählen
 Show Details=Details anzeigen
+Show errors on screen=Fehler auf dem Bildschirm anzeigen
 slots=Slots
+Stable=Stabil
 Subject=Betreff
 System Devices=Systemgeräte
-System Update Check=System Update Check
+System Update Check=Systemaktualisierungsprüfung
 Text=Text
-Thank you for choosing Unraid OS=Vielen Dank, dass Sie sich für Unraid OS entschieden haben
-Thank you for registering USB Flash GUID=Vielen Dank für die Registrierung der USB Flash GUID
-Thank you for trying Unraid OS=Vielen Dank, dass Sie Unraid OS testen
-The registered GUID does not match the USB Flash boot device GUID=Die registrierte GUID stimmt nicht mit dem USB Flash Bootgerät überein
-There is a physical problem accessing your USB Flash boot device=Es besteht ein Problem beim Zugriff auf Ihr USB Flash Bootgerät
-this may take several minutes=dies kann mehrere Minuten dauern
+Thank you for choosing Unraid OS=Vielen Dank, dass du dich für Unraid-OS entschieden hast
+Thank you for registering USB Flash GUID=Vielen Dank für die Registrierung der USB-Flash-GUID
+Thank you for trying Unraid OS=Vielen Dank, dass du Unraid-OS testest
+The registered GUID does not match the USB Flash boot device GUID=Die registrierte GUID stimmt nicht mit der des USB-Boot-Datenträgers überein
+There is a physical problem accessing your USB Flash boot device=Es gibt ein technisches Problem beim Zugriff auf den USB-Boot-Datenträger
+this may take several minutes=Dies kann mehrere Minuten dauern
 This release has been withdrawn for use with Trial keys=Diese Version wurde für die Verwendung mit Probelizenzen zurückgezogen
-This server has %s attached storage device=Dieser Server hat %s angeschlossene Datenträger
+This server has %s attached storage device=Dieser Server hat %s angeschlossenen Datenträger
 This server has %s attached storage devices=Dieser Server hat %s angeschlossene Datenträger
-This utility is used for troubleshooting purposes=Dieses Dienstprogramm dient zur Fehlerbehebung
-This will delete all notification files=Dies löscht alle Benachrichtigungsdateien
-This will update folder file permissions=Aktualisiert Ordner- & Dateieberechtigungen
+This utility is used for troubleshooting purposes=Dieses Dienstprogramm wird zur Fehlersuche verwendet
+This will delete all notification files=Hiermit werden alle Benachrichtigungsdateien gelöscht
+This will delete the selected notification files=Hiermit werden die ausgewählten Benachrichtigungsdateien gelöscht
+This will update folder file permissions=Hiermit werden Ordner- & Dateiberechtigungen aktualisiert
 Time=Zeit
-To install a registration key, paste the key file URL in the box below and click Install Key=Um eine Registrierungslizenz zu installieren, die Lizenz URL in die Zeile unten einfügen und auf **Lizenz Installieren** klicken
-to select your language=um Ihre Sprache auszuwählen
+To install a registration key, paste the key file URL in the box below and click Install Key=Um einen Lizenzschlüssel zu installieren, die Lizenzdatei-URL in die Zeile unten einfügen und auf **Lizenz installieren** klicken
+to select your language=um dein Sprache auszuwählen
 Trial key expires on=***Probelizenz*** läuft ab am
-Trial=Probe
+Trial=Probelizenz
 Update OS=OS aktualisieren
-Upgrade Key=Lizenz-Upgraden
+Upgrade Key=Lizenz upgraden
 Uploaded=Hochgeladen
-uploading hardware information=Hardware Informationen hochladen
+uploading hardware information=Hardware Informationen werden hochgeladen
 Uploading=Hochladen von
 Use this to develop language packs=Verwenden, um Sprachpakete zu entwickeln
 Use this to install official language packs=Verwenden, um offizielle Sprachpakete zu installieren
 User Shares=Benutzerfreigaben
 User=Benutzer
 Vars=Vars
-VFIO-PCI Log=VFIO-PCI Log
-View VFIO-PCI Log=VFIO-PCI Log ansehen
+VFIO-PCI Log=VFIO-PCI-Protokoll
+View Log=Protokoll anzeigen
+View VFIO-PCI Log=VFIO-PCI-Protokoll anzeigen
 warning=Warnung
+Warnings Only=Nur Warnungen
+Warnings=Warnungen
 webGUI=WebGUI
-When received, please paste the URL into the Key file URL box and=Wenn Sie die <i>Lizenzdatei</i> erhalten haben bitte die URL in die Zeile einfügen und
+When received, please paste the URL into the Key file URL box and=Wenn du die <i>Lizenzdatei</i> erhalten hast, bitte die URL in die Zeile einfügen und
 Wrong File Extension=Falsche Dateierweiterung
-You havent sent Limetech your hardware profile yet=Sie haben Limetech Ihr Hardwareprofil noch nicht gesendet
-Your hardware profile was last submitted on=Ihr Hardwareprofil wurde zuletzt übermittelt am
-Your Trial key has expired=Ihre *Probelizenz* ist abgelaufen
-Your Trial key requires an internet connection=Ihre *Probelizenz* benötigt eine Internetverbindung
+You havent sent Limetech your hardware profile yet=Du hast Limetech noch nicht dein Hardwareprofil gesendet
+Your hardware profile was last submitted on=Dein Hardwareprofil wurde zuletzt übermittelt am
+Your Trial key has expired=Deine *Probelizenz* ist abgelaufen
+Your Trial key requires an internet connection=Deine *Probelizenz* benötigt eine Internetverbindung
 
 ; Sysdevs text - added May 18, 2020
-A reboot is required to apply changes=Zum Übernehmen der Einstellungen ist ein Neustart erforderlich
+A reboot is required to apply changes=Zum Übernehmen der Änderungen ist ein Neustart erforderlich
 ALERT=ALARM
-Bind selected to VFIO at Boot=Wird beim Booten an VFIO gebunden
-CPU Thread Pairings=CPU Thread Verknüpfungen
+Bind selected to VFIO at Boot=Auswahl beim Booten an VFIO binden
+CPU Thread Pairings=CPU-Thread-Verknüpfungen
 Changes saved=Änderungen gespeichert
-Function Level Reset FLR supported=Function Level Reset (FLR) unterstützt
-In use by Unraid=Wird von Unraid benutzt
-Kernel driver in use vfio-pci=Benutzter Kernel Treiber: vfio-pci
+Function Level Reset FLR supported=Function Level Reset (FLR) wird unterstützt
+In use by Unraid=Wird von Unraid verwendet
+Kernel driver in use vfio-pci=Verwendeter Kernel-Treiber: vfio-pci
 No changes=Keine Änderungen
-PCI Devices and IOMMU Groups=PCI Geräte und IOMMU Gruppen
-PCI Devices No IOMMU Groups Available=PCI Devices (Keine IOMMU Gruppen verfügbar)
-Reboot to take effect=Neustarten um zu Übernehmen
-SCSI Devices=SCSI Geräte
-The below list doesnt not reflect the way IOMMU would naturally group devices=Die untenstehende Liste spiegelt nicht die Art und Weise wider, wie IOMMU Geräte standardmäßig gruppiert sind
-This controller is bound to vfio, connected USB devices are not visible=Dieser Controller ist an vfio gebunden, angeschlossene USB Geräte sind nicht sichtbar
+PCI Devices and IOMMU Groups=PCI-Geräte und IOMMU-Gruppen
+PCI Devices No IOMMU Groups Available=PCI-Geräte (keine IOMMU-Gruppen verfügbar)
+Reboot to take effect=Neustarten zum Übernehmen
+SCSI Devices=SCSI-Geräte
+The below list doesnt not reflect the way IOMMU would naturally group devices=Die untenstehende Liste spiegelt nicht die Art und Weise wider, wie IOMMU Geräte normalerweise gruppieren würde
+This controller is bound to vfio, connected USB devices are not visible=Dieser Controller ist an vfio gebunden, angeschlossene USB-Geräte sind nicht sichtbar
 This controller is bound to vfio, connected drives are not visible=Dieser Controller ist an vfio gebunden, angeschlossene Datenträger sind nicht sichtbar
-To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Um die Standard IOMMU Gruppen für Ihre Hardware anzuzeigen, muss auf der [VM Manager] Seite die **PCIe ACS erzwingen** Einstellung auf **Deaktiviert** gesetzt werden
-USB Devices=USB Geräte
-Your system has booted with the PCIe ACS Override setting enabled=Das System wurde mit der PCIe ACS erzwingen Einstellung gestartet
+To see natural IOMMU groups for your hardware, go to the VM Manager page and set the PCIe ACS override setting to Disabled=Um die Standard IOMMU-Gruppen für deine Hardware anzuzeigen, muss auf der [VM Manager] Seite die **PCIe-ACS erzwingen** Einstellung auf **Deaktiviert** gesetzt werden
+USB Devices=USB-Geräte
+Your system has booted with the PCIe ACS Override setting enabled=Das System wurde mit der PCIe-ACS erzwingen Einstellung gestartet
 
 :diagnostics_1_plug:
-Diese Anwendung wird zur Fehlerbehebung verwendet. Es sammelt alle Hardwareinformationen und Konfigurationsdateien und packt diese Dateien als ZIP Datei, die lokal gespeichert werden kann.
-Anschließend kann die Datei Limetech gesendet werden bzw. im Forum verwendet werden.
+Dieses Dienstprogramm dient der Fehlersuche. Es sammelt alle Systeminformationen und Konfigurationsdateien und packt diese Dateien als ZIP-Datei, die lokal gespeichert werden kann.
+Anschließend kann diese Datei an Limetech gesendet bzw. im Forum verwendet werden.
 
-Dies hilft anderen sich schnell einen Überblick über Ihr System zu verschaffen und Hilfe zu Leisten. Die folgenden Informations-
+Dies hilft anderen sich schnell einen Überblick über dein System zu verschaffen und Hilfe zu leisten. Die folgenden Informations-
 und Konfigurationsdateien werden gesammelt:
 :end
 
 :diagnostics_2_plug:
 + */config*
-  <br>alle *\*.cfg Dateien*, die *go* Datei und die *super.dat* Datei. Diese sind Konfigurationsdateien.
+  <br>Alle *\*.cfg Dateien*, die *go*-Datei und die *super.dat*-Datei. Dies sind Konfigurationsdateien.
 + */config/shares*
-  <br>alle *\*.cfg* Dateien. Diese sind die Benutzer Freigabeeinstellungsdateien.
+  <br>Alle *\*.cfg* Dateien. Dies sind Einstellungsdateien für die Benutzerfreigaben.
 + *Syslog Datei(en)*
-  <br>Aktuelle *syslog* Datei und alle vorherig existierenden *syslog* Dateien.
+  <br>Aktuelle *syslog*-Datei und alle bereits vorhandenen *syslog*-Dateien.
 + *System*
-  <br>Die Ausgabe folgender Befehle:
+  <br>Die Ausgabe folgender Befehle speichern:
   <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
   <br>Anzeige der IOMMU Gruppen.
-  <br>Anzeige der Kommandozeile Parameter (z.B. PCIE ACS erzwingen, PCI stubbing, etc).
-  <br>System Variablen.
-+ *SMART Bericht*
-  <br>Ein SMART Bericht von jedem individuellen Datenträger, der sich im System befindet.
+  <br>Anzeige der Kommandozeilenparameter (z.B. PCIe-ACS erzwingen, PCI stubbing, etc).
+  <br>System-Variablen.
++ *SMART-Berichte*
+  <br>Einen SMART-Bericht von jedem einzelnen Datenträger, der sich im System befindet.
 + *Docker*
-  <br>*docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* und *vfio-pci* Dateien.
+  <br>Die Dateien *docker.log*, *libvirtd.log*, *libvirt/qemu/\*.log* und *vfio-pci*.
 :end
 
 :diagnostics_3_plug:
-Ein Klick auf **Download** wird den Prozess starten und weist den Browser an, die ZIP Datei lokal zu speichern.
+Ein Klick auf **Download** wird den Prozess starten und weist dann deinen Browser an, die ZIP-Datei lokal zu speichern.
 
-*Keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte werden von Unraid
-miteinbezogen; Servername, IP Adresse und andere Benutzerfreigaben* **werden** *jedoch* *miteinbezogen.*
+*Unraid-OS speichert keine persönlichen Informationen wie Benutzernamen, Passwörter oder andere nicht oben aufgelisteten Dateiinhalte;
+Dein Servername, IP-Adresse und Benutzerfreigabenamen* **werden** *jedoch miteinbezogen.*
 
-*Beachten Sie, dass Plugins von Drittanbietern **möglicherweise** persönliche Informationen in pluginspezifischen Konfigurationsdateien
-und/oder System Protokollen speichern könnten.*
+*Beachte, dass Plugins von Drittanbietern **möglicherweise** persönliche Informationen in Plugin-spezifischen Konfigurationsdateien
+und/oder System-Protokollen speichern könnten.*
 
-*Benutzen Sie* **Diagnose anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum gepostet werden. In privater Kommunikation
-mit Limetech ist es empfohlen, diese Einstellung abzuwählen und alle Informationen unverändert zu erfassen.*
+*Benutze* **Diagnosedaten anonymisieren** *, wenn die Diagnosedateien in einem öffentlichen Forum veröffentlicht werden. In privater Kommunikation mit Limetech wird empfohlen, diese Einstellung zu deaktivieren und alle Informationen unverändert zu erfassen.*
 :end
 
 :newconfig_plug:
-Dies ist eine Anwendung, um die Array Datenträger Konfiguration zurückzusetzen, sodass alle Datenträger
-als "Neue" Datenträger erscheinen, als wäre dies ein neuer Server.
+Mit diesem Dienstprogramm kann die Konfiguration der Array-Datenträger zurückgesetzt werden, sodass alle Datenträger
+als "neue" Datenträger erscheinen, als würde es sich um einen neuer Server handeln.
 
-Nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und eine Paritätsdatenwiederherstellung
+Das ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und eine Paritätsdaten-Wiederherstellung
 basierend auf der neuen Konfiguration erwünscht ist.
 
-*'Aktuelle Zuordnung speichern'* benutzen, um die gewählten Datenträgerslots zu behalten, ***nachdem*** das Array zurückgesetzt wurde.
-Standardmäßig  werden **keine** Datenträger zugewiesen.
+*'Aktuelle Zuweisungen beibehalten'* benutzen, um die gewählten Datenträgerslots zuzuweisen, ***nachdem*** das Array zurückgesetzt wurde. Standardmäßig  werden **keine** Datenträger zugewiesen.
 
-**BENUTZEN SIE DIESE ANWENDUNG NICHT UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN DA DIES NICHT FUNKTIONIERT** - dies
-hat die gegenteilige Wirkung. Es macht es **unmöglich**, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Sie wurden gewarnt!
+**BENUTZE DIESES DIENSTPROGRAMM NICHT, UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN** - Es wird das Gegenteil bewirken
+und macht es ***unmöglich***, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Du wurdest gewarnt!
 :end
 
 :newperms_1_plug:
-Diese Aktion ist einmalig notwendig, falls sie von einer Unraid Server Version von vor 5.0 auf Unraid Version 5.0 oder
-höher aktualisieren.
-Wählen Sie **ALLE DATENTRÄGER** aus falls diese einmalige Aktion ausgeführt wird.
+Diese Aktion ist einmalig notwendig, falls du von einer Unraid-Version vor 5.0 auf Unraid 5.0 oder höher aktualisierst.
+Wähle **ALLE DATENTRÄGER** aus, wenn du diese einmalige Aktion ausführst.
 
-Diese Anwendung ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
-und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer
-Nicht-Active Directory Integration zurückgewechselt wird.
+Dieses Dienstprogramm ist auch nützlich, um die Standardberechtigungen/-eigentümer von Dateien
+und Verzeichnissen wiederherzustellen, wenn von einer Active Directory zu einer Nicht-Active-Directory-Integration zurück gewechselt wird.
 
-Diese Anwendung startet einen Hintergrundprozess, welches auf jedem Array- und Cachedatenträger sowie ausgewählter
-Benutzerfreigaben und Verzeichnissen den Eigentümer zu * nobody/users* (d.h. UID/GID gleich 99/100) ändert und setzt folgende Berechtigungen:
+Dieses Dienstprogramm startet einen Hintergrundprozess, welches auf jedem Array- und Cache-Datenträger sowie ausgewählter
+Benutzerfreigaben den Eigentümer zu *nobody/users* (d.h. UID/GID auf 99/100) ändert und folgende Berechtigungen setzt:
 :end
 
 :newperms_2_plug:
 Für Verzeichnisse:
   drwxrwxrwx
 
-Für Dateien mit lese/schreib Berechtigungen:
+Für Dateien mit Lese/Schreib-Berechtigungen:
   -rw-rw-rw-
 
 Für schreibgeschützte Dateien:
@@ -232,12 +255,11 @@ Für schreibgeschützte Dateien:
 :end
 
 :newperms_3_plug:
-Klick auf **Start** öffnet ein neues Fenster und startet den Hintergrundprozess.
+Ein Klick auf **Start** öffnet ein weiteres Fenster und startet den Hintergrundprozess.
 
-Das Schließen des Fensters beendet den Hintergrundprozess - bitte nicht schließen. Der Prozess kann eine lange Zeit
-in Anspruch nehmen, je nachdem wieviele Dateien vorhanden sind.
+Wird das Fenster vor dem Abschluss geschlossen, bricht der Hintergrundprozess ab - also mache das nicht. Der Prozess kann eine lange Zeit in Anspruch nehmen, je nachdem wie viele Dateien vorhanden sind.
 
-Beachten Sie, dass dieses Tool die Docker Container möglicherweise negativ beeinflussen kann, wenn die appdata Freigabe vom diesem Tool miteinbezogen wird.
+Beachte, dass sich dieses Tool möglicherweise negativ auf alle Docker-Container auswirken kann, wenn du die appdata-Freigabe miteinbeziehst.
 :end
 
 :registration_1_plug:
