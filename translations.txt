@@ -668,7 +668,6 @@ Didnt get code=Lizenzschlüssel nicht bekommen?
 Display Name or Email Address=Name oder E-Mail-Adresse anzeigen
 Display Name=Namen anzeigen
 Displaying last known server data=Letzte bekannten Serverdaten anzeigen
-DNS issue, unable to resolve wanip4unraidnet=DNS issue, unable to resolve wanip4.unraid.net
 Do not have an account=Hast du kein Konto?
 Download any registration key linked to your account=Lade einen beliebigen Lizenzschlüssel, der mit deinem Konto verknüpft ist
 Download latest backup from Go to Connect before signing out=Lade die aktuellste Sicherung von Go to Connect vor dem Abmelden herunter
@@ -907,17 +906,16 @@ Your Unraid registration key is ineligible for replacement as it has been replac
 Your Unraid registration key is ineligible for replacement as it is blacklisted=Dein Unraid-Lizenzschlüssel kann nicht ersetzt werden, da er auf der Sperrliste steht
 Your USB Flash GUID and other relevant server data will also be sent=Die GUID deines USB-Boot-Datenträgers und andere relevante Serverdaten werden ebenfalls gesendet
 
-; Note: April 28, 2023 - 14 missing translations
+; Note: April 29, 2023 - 13 missing translations
 Array Clearing=
 Array Copying=
 Auto redirecting in %s=
 Connected=
 Disconnected=
+DNS issue, unable to resolve wanip4unraidnet=DNS issue, unable to resolve wanip4.unraid.net
 Download latest backup from Connect Dashboard before signing out=
 Download unraid-api Logs=
-Go to My Servers Dashboard=
 Installing Connect beta=Installing Connect (beta)
-Please access this server via the My Servers Dashboard=
 Please wait…=
 Removing Connect plugin…=
 Restarting…=

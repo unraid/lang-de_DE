@@ -65,7 +65,6 @@ Bonding members of=Teilnehmer der Netzwerkkartenbündelung
 Bonding mode=Netzwerkkartenbündelungs-Modus
 boost=erhöhen
 Both=Beide
-Both Web Virt-Manager Remote Viewer=Both Web & Virt-Manager Remote Viewer
 bottom-left=unten links
 bottom-right=unten rechts
 Bridging members of=Teilnehmer der Netzwerkkartenbrücke
@@ -803,14 +802,15 @@ Remote T2FA requires Remote Access to be enabled and Unraid 610 or higher=Entfer
 Remote T2FA requires Remote Access to be enabled, Unraid 610 or higher, and a myunraidnet certificate=Entfernte T2FA erfordert die Aktivierung des Fernzugriffs, Unraid 6.10 oder höher und ein *.myunraid.net-Zertifikat
 Remote T2FA requires Remote Access to be enabled=Entfernte T2FA erfordert die Aktivierung des Fernzugriffs
 Remote T2FA requires Unraid 610 or higher and a myunraidnet certificate=Entfernte T2FA erfordert Unraid 6.10 oder höher und ein *.myunraid.net-Zertifikat
-Remote T2FA requires Unraid 610 or higher=Remote T2FA requires Unraid 6.10 or higher
 The Unraid server is unreachable from outside your network Be sure you have configured your router to forward port=Der Unraid-Server ist von außerhalb deines Netzwerks nicht zu erreichen. Stelle sicher, dass dein Router so konfiguriert ist, dass er folgenden Port weiterleitet
 to the Unraid server at=Zum Unraid-Server unter
 Transient errors in this log can be ignored unless you are having issues=Vorübergehende Fehler in diesem Protokoll können ignoriert werden, es sei denn, du hast Probleme
 Unraid API extra origins=Unraid-API Extra Origins
 View Flash Backup Error Log=Flash-Backup-Fehlerprotokoll anzeigen
 
-; Note: April 28, 2023 - 3 missing translations
+; Note: April 29, 2023 - 5 missing translations
+Both Web Virt-Manager Remote Viewer=Both Web & Virt-Manager Remote Viewer
 Console Options=
 Virt-Manager Remote Viewer=
 Web interface=
+Remote T2FA requires Unraid 610 or higher=Remote T2FA requires Unraid 6.10 or higher
