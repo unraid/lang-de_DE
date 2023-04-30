@@ -375,4 +375,4 @@ This will put the system in sleep mode=Dadurch wird das System in den Ruhezustan
 wiki entry=Wiki-Eintrag
 
 ; Note: April 29, 2023 - 1 missing translations
-If this is a new array, move the largest disk into the parity slot=Falls es sich um ein neues Array handelt, benutze die größte Platte für den *Parität-Slot*.
+If this is a new array, move the largest disk into the parity slot=Falls es sich um ein neues Array handelt, benutze den größten Datenträger für den *Parität-Slot*.
