@@ -193,8 +193,8 @@ und Konfigurationsdateien werden gesammelt:
   <br>Alle *\*.cfg Dateien*, die *go*-Datei und die *super.dat*-Datei. Dies sind Konfigurationsdateien.
 + */config/shares*
   <br>Alle *\*.cfg* Dateien. Dies sind Einstellungsdateien für die Benutzerfreigaben.
-+ *Syslog Datei(en)*
-  <br>Aktuelle *syslog*-Datei und alle bereits vorhandenen *syslog*-Dateien.
++ *Systemprotokoll-Datei(en)*
+  <br>Aktuelle *Systemprotokoll*-Datei und alle bereits vorhandenen *Systemprotokoll*-Dateien.
 + *System*
   <br>Die Ausgabe folgender Befehle speichern:
   <br>lsscsi, lspci, lsusb, free, lsof, ps, ethtool & ifconfig.
