@@ -269,69 +269,69 @@ installiert wurde. Eine *Probelizenz* beinhaltet alle Funktionalitäten einer *P
 Lizenzen sind an der Seriennummer des USB Flash Bootgeräts (GUID) gebunden. Bitte benutzen Sie ein hochwertiges Gerät
 eines bekannten Herstellers von mindestens 1GB.
 
-Hinweis: USB Speicherkartenlesegeräte sind generell **nicht** unterstützt, da bei den meisten keine einzigartige Seriennummer vorhanden ist.
+Hinweis: USB-Speicherkartenlesegeräte sind generell **nicht** unterstützt, da die meisten keine einzigartige Seriennummer besitzen.
 :end
 
 :registration_2_plug:
-+ Bitte stellen Sie sicher, dass Ihre [Serverzeit][DateTime] richtig eingestellt ist, Tolleranz 5 Minuten.
-+ Bitte stellen Sie sicher, dass ein [DNS Server](DateTime) gesetzt ist.
++ Bitte stelle sicher, dass deine [Serverzeit][DateTime] richtig eingestellt ist, die Toleranz beträgt 5 Minuten.
++ Bitte stelle sicher, dass ein [DNS Server](DateTime) gesetzt ist.
 :end
 
 :registration_3_plug:
-Ihre *Probelizenz* beinhaltet alle Funktionalitäten und Datenträgerunterstützungen einer *Pro* Lizenz.
+Deine *Probelizenz* beinhaltet alle Funktionalitäten und Datenträgerunterstützungen einer *Pro* Lizenz.
 
-Nachdem die *Probelizenz* abgelaufen ist, funktioniert der Server **normal**, bis das Array das **gestoppt** wird.
+Nachdem die *Probelizenz* abgelaufen ist, funktioniert der Server **normal**, bis das Array **gestoppt** wird.
 
-An diesem Punkt können Sie entweder eine Lizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
+An diesem Punkt kannst du entweder eine Lizenz erwerben oder eine *Probelizenzverlängerung* beantragen.
 :end
 
 :registration_4_plug:
-Um Unraid OS weiterhin benutzen zu können, können Sie eine Lizenz erwerben. Alternativ können Sie eine *Probelizenzverlängerung* beantragen.
+Um Unraid OS weiterhin benutzen zu können, kannst du eine Lizenz erwerben. Alternativ kannst du eine *Probelizenzverlängerung* beantragen.
 
-Die meisten *Probelizenz* Verlängerungsanträge werden sofort bearbeitet, aber bitte erlauben Sie uns bis zu einem Werktag, um Ihren *Probe* Verlängerungslizenz zu erhalten.
+Die meisten *Probelizenz*-Verlängerungsanträge werden sofort bearbeitet, aber es kann bis zu einem Werktag dauern, bis die Verlängerung deiner *Probelizenz* zugestellt wird.
 :end
 
 :registration_5_plug:
 Es ist nicht möglich, eine *Probelizenz* mit einer existierenden Unraid OS Installation zu verwenden.
 
-Es ist möglich, eine Lizenz für das aktuell verwendete USB Flash Gerät zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
+Es ist möglich, eine Lizenz für den aktuell verwendeten USB-Boot-Datenträger zu erwerben, um die vorhandene Installation weiterhin verwenden zu können.
 
 Für weitere Informationen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 :end
 
 :registration_6_plug:
-Es scheint als fehle Ihre Lizenzdatei oder sie ist beschädigt. Die Lizenzdatei sollte in dem Verzeichnis
-[config](/Registration/Browse?dir&#61;/boot/config) auf Ihrem USB Flash Bootgerät zu finden sein.
+Es scheint, als fehle deine Lizenzdatei oder sie ist beschädigt. Die Lizenzdatei sollte im Verzeichnis
+[config](/Registration/Browse?dir&#61;/boot/config) auf deinem USB-Boot-Datenträger zu finden sein.
 
-Falls Sie kein Backup Ihrer Lizenzdatei haben, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
+Falls du keine Sicherung deiner Lizenzdatei hast, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-Falls dies eine *Probeinstallation* war, können Sie eine Lizenz erwerben.
+Falls dies eine *Probeinstallation* war, kannst du eine Lizenz erwerben.
 :end
 
 :registration_7_plug:
-*Probeinstallationen* sind nur mit dem ursprünglich registrierten USB Flash Gerät erlaubt.
+*Probeinstallationen* sind nur mit dem ursprünglich registrierten USB-Boot-Datenträger erlaubt.
 
-Um weiterhin diese Installation mit diesem USB Flash Gerät zu verwenden, können Sie eine Lizenz erwerben.
+Um weiterhin diese Installation mit diesem USB Flash Gerät zu verwenden, kannst du eine Lizenz erwerben.
 :end
 
 :registration_8_plug:
-Die Lizenzdatei stimmt nicht mit dem USB Flash Bootgerät überein.
-Bitte kopieren Sie die korrekte Lizenzdatei in das Verzeichnis [config](/Registration/Browse?dir&#61;/boot/config)
-auf Ihrem USB Flash Bootgerät. Falls Sie kein Backup Ihrer Lizenzdatei haben, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
+Die Lizenzdatei stimmt nicht mit dem USB-Boot-Datenträger überein.
+Bitte kopiere die korrekte Lizenzdatei in das Verzeichnis [config](/Registration/Browse?dir&#61;/boot/config)
+auf deinem USB-Boot-Datenträger. Falls du keine Sicherung deiner Lizenzdatei hast, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
 
-Falls Sie Ihre Lizenz mit einer neuen Lizenz für dieses neue USB Flash Gerät ersetzen wollen, klicken Sie unten auf Lizenz Ersetzen.
+Falls du deine Lizenz mit einer neuen Lizenz für diesen neuen USB-Boot-Datenträger ersetzen willst, klicke unten auf Lizenz ersetzen.
 Eine Originallizenz kann jederzeit ersetzt werden. Danach kann eine Ersatzlizenz erst nach Ablauf eines Jahres erneut ersetzt werden.
-Wenn Sie eine Ersatzlizenz früher benötigen, bitte den [Support Kontaktieren](https://lime-technology.com/contact).
+Wenn du eine Ersatzlizenz früher benötigst, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 
-**Hinweis:** Das Ersetzen einer Lizenz führt dazu, dass die vorherige USB Flash GUID dauerhaft *gesperrt* wird.
+**Hinweis:** Das Ersetzen einer Lizenz führt dazu, dass die vorherige USB-Datenträger GUID dauerhaft *gesperrt* wird.
 :end
 
 :registration_9_plug:
-Diese USB Flash Bootgerät GUID ist *gesperrt*. Sie haben möglicherweise Ihrer Lizenz auf ein neus USB Bootgerät übertragen
-und Sie verwenden derzeit Ihr altes USB Bootgerät, um den Server zu starten.
+Diese USB-Datenträger-GUID ist *gesperrt*. Du hast möglicherweise deine Lizenz auf einen neuen USB-Boot-Datenträger übertragen
+und verwendest derzeit deinen alten USB-Datenträger, um den Server zu starten.
 
-Ein USB Flash Gerät kann auch *gesperrt* werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
-Seriennummer nicht einmalig ist (dies ist bei USB Kartenlesegeräten meistens üblich).
+Ein USB-Datenträger kann auch *gesperrt* werden, wenn es keine Seriennummer gibt oder wenn wir feststellen, dass die
+Seriennummer nicht einmalig ist (dies ist bei USB-Kartenlesern üblich).
 
 Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 :end
