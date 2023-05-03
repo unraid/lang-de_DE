@@ -1,38 +1,38 @@
-File Activity=Datei Aktivitäten
-Start File Activity=Starte Datei Aktivitäten
-Clear the File Activity log=Lösche Datei Aktivitäten Protokoll
-Enable for Unassigned Devices=Für Unassigned Devices aktivieren
+File Activity=Datei-Aktivitäten
+Start File Activity=Datei-Aktivitäten-Dienst starten
+Clear the File Activity log=Datei-Aktivitäten-Protokoll löschen
+Enable for Unassigned Devices=Für nicht zugewiesene Datenträger aktivieren
 ;
 ; Help
 ;
 :file_activity_loggging_plug:
-> Datei Aktivitäten Protokollierung:
+> Überwachung von Datei-Aktivitäten:
 >
-> Das Lesen, Schreiben & Ändern von Dateien am Array wird mithilfe von inotify protokolliert und wird nach Datenträger, UD-Datenträger und Cache angezeigt.
-> Sie müssen den Dienst Datei Aktivitäten starten um die Aktivitäten am Datenträger zu protokollieren.
-> Der Dienst Datei Aktivitäten sollte nur für kurze Zeit ausgeführt werden, um die Aktivitäten am Datenträger überprüfen zu können.
-> Ein Server mit viel Dateiaktivität kann schnell zu einer großen Logdatei führen bzw. den Speicherplatz im Log verzeichnis aufbrauchen.
-> Der Ordner 'appdata' ist exkludiert.
+> Das Lesen, Schreiben & Ändern von Dateien wird mithilfe von inotify auf dem Array überwacht und nach Datenträger, Freigabe, nicht zugewiesene Datenträger und Cache sortiert angezeigt.
+> Du musst den Datei-Aktivitäten-Dienst starten, um Datenträgern-Aktivitäten zu protokollieren.
+> Der Datei-Aktivitäten-Dienst sollte nur für kurze Zeit ausgeführt werden, damit du die Datenträger-Aktivitäten überprüfen kannst
+> Ein Server mit viel Dateiaktivität kann schnell zu einer großen Protokolldatei führen bzw. den Speicherplatz im Protokoll-Verzeichnis aufbrauchen.
+> Die Verzeichnisse "appdata", "Syslogs" und "System" sind ausgeschlossen.
 >
-> Hinweis: Der Dienst Datei Aktivitäten wird beendet wenn das Array gestoppt wird.
+> Hinweis: Der Datei-Aktivitäten-Dienst wird beendet, sobald das Array gestoppt wird und wird wieder gestartet, wenn das Array startet, falls dies aktiviert ist.
 :end
 
 :file_activity_enable_logging_plug:
-> Wenn 'Ja' wird der Dienst Datei Aktivitäten beim Serverstart aktiviert.
+> Auf **Ja** stellen, um die Überwachung von Dateiaktivitäten beim Serverstart zu aktivieren.
 :end
 
 :file_activity_enable_ud_plug:
-> Wenn 'Ja' wird der Dienst Datei Aktivitäten für Unassigned Devices aktiviert, falls das Plugin Unassigned Devices installiert ist.
+> Auf **Ja** stellen, um die Überwachung von Dateiaktivitäten auf nicht zugewiesenen Datenträgern zu aktivieren, falls das Plugin "Unassigned Devices" installiert ist.
 :end
 
 :file_activity_enable_cache_plug:
-> Set to **Yes** to enable File Activity monitoring for the Cache and Pool Disks.  Pool disks only apply in Unraid 6.9.
+> Auf **Ja** stellen, um die Überwachung von Dateiaktivitäten auf Cache- und Pool-Datenträgern zu aktivieren. Gilt für Pool-Datenträger nur mit Unraid 6.9
 :end
 
 
 ; Note: April 28, 2023 - 5 missing translations
-File Activity Monitoring=
-Stop File Activity Monitoring=
-Refresh Page=
-Enable File Activity Monitoring=
-Enable for Cache and Pool Disks=
+File Activity Monitoring=Datei-Aktivitätenüberwachung
+Stop File Activity Monitoring=Datei-Aktivitätenüberwachung stoppen
+Refresh Page=Seite aktualisieren
+Enable File Activity Monitoring=Datei-Aktivitätenüberwachung aktivieren
+Enable for Cache and Pool Disks=Für Cache- und Pool-Datenträger aktivieren
