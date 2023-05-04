@@ -811,6 +811,6 @@ View Flash Backup Error Log=Fehlerprotokoll der Flash-Sicherung anzeigen
 ; Note: April 28, 2023 - 3 missing translations
 Both Web Virt-Manager Remote Viewer=Both Web & Virt-Manager Remote Viewer
 Console Options=Konsolen-Optionen
-Virt-Manager Remote Viewer=Fernansicht der Virt-Verwaltung
+Virt-Manager Remote Viewer=Virt-Manager Fernansicht
 Web interface=Webinterface
-Remote T2FA requires Unraid 610 or higher=Entfernte T2FA erfordert Unraid 6.10 oder höher
+Remote T2FA requires Unraid 610 or higher=T2FA für Fernzugriff erfordert Unraid 6.10 oder höher
