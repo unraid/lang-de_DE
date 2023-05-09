@@ -10,12 +10,14 @@ This setting allows CA to periodically scan your system and alert you to the pre
 3 Any installed applications which may seriously hinder the operation of your server=3 Installierte Anwendungen welche deinen Server vom ordnungsgemäßen Betrieb hindern
 Support Thread=Hilfe-Thread
 
-; Note: April 28, 2023 - 9 missing translations
+; Note: May 10, 2023 - 11 missing translations
 Allow install of second instance=
 Automatically open the sidebar=
 Allows CA to automatically open the sidebar for more information when hovering over an application's icon=
 Allow CA to check for updates to applications=
 This setting enables CA to check for updates to applications Note that Community Applications will always check for updates to itself=
+Disable Mouse Wheel Page Changes=
+This setting disables using left or right on a mouse wheel to change the page=
 Save CA debugging information=
 Only enable this when advised to from the author of Community Applications=
 Enable developer mode=
