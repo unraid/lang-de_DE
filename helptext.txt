@@ -1356,14 +1356,14 @@ Dies erhöht die Schreibleistung, kann jedoch möglicherweise die Leseleistung v
 :end
 
 :syslog_local_server_help:
-Der Server wird als Syslog-Server verwendet und kann andere Syslog-Nachrichten empfangen.
+Der Server wird als Systemprotokoll-Server verwendet und kann andere Systemprotokoll-Nachrichten empfangen.
 Der Server kann auf UDP, TCP oder beiden Protokollen auf Nachrichten mit einem definierten Port warten.
 
-Syslog-Informationen werden pro IP-Adresse gespeichert, jedes System erhält eine eigene Syslog-Datei.
+Systemprotokoll-Informationen werden pro IP-Adresse gespeichert, jedes System erhält eine eigene Systemprotokoll-Datei.
 :end
 
 :syslog_local_folder_help:
-Wählen Sie den Freigabeordner aus, in dem die Syslogs gespeichert werden sollen.
+Wählen Sie den Freigabeordner aus, in dem die Systemprotokolle gespeichert werden sollen.
 Es wird empfohlen, eine Freigabe auf dem Cache Datenträger zu verwenden, um ein Hochfahren der Array Datenträger zu vermeiden.
 :end
 
@@ -1382,15 +1382,15 @@ Definiert die Anzahl der zusätzlichen Protokoll-Dateien, die im Rotationsschema
 :end
 
 :syslog_remote_server_help:
-Geben Sie einen Namen oder eine IP-Adresse eines Remote-Syslog-Servers ein.
-Dadurch wird eine Kopie der Syslog-Benachrichtigungen an den angegebenen Server gesendet.
+Geben Sie einen Namen oder eine IP-Adresse eines Remote-Systemprotokoll-Servers ein.
+Dadurch wird eine Kopie der Systemprotokoll-Benachrichtigungen an den angegebenen Server gesendet.
 :end
 
 :syslog_mirror_flash_help:
 Diese Einstellung ist standardmäßig auf NEIN eingestellt und mit Vorsicht zu behandeln um einen vorzeitigen Verschleiß vom USB-Flashmedium zu vermeiden.
 
 Ändern Sie diese Einstellung auf JA, wenn eine Fehlerbehebung erforderlich ist und die Diagnoseinformationen auf normalem Weg nicht abgerufen werden können.
-Ein Kopie der Syslog-Datei wird im Ordner **logs** des USB Flash Geräts gespeichert.
+Ein Kopie der Systemprotokoll-Datei wird im Ordner **logs** des USB Flash Geräts gespeichert.
 :end
 
 :confirm_reboot_help:
@@ -1809,7 +1809,7 @@ Für ein anderes Intervall bitte die Tageszeit angeben zu der der Mover gestarte
 :end
 
 :mover_logging_help:
-Schreibe die Mover Benachrichtigungen in die syslog Datei.
+Schreibe die Mover Benachrichtigungen in die Systemprotokoll-Datei.
 :end
 
 :notifications_display_help:

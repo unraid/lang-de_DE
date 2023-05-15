@@ -1,24 +1,24 @@
-Kill Process=Prozess Beenden
-Process ID=Prozess ID
+Kill Process=Prozess beenden
+Process ID=Prozess-ID
 Open Files=Geöffnete Dateien
-Files that may prevent shutdown=Dateien die ein Herunterfahren möglicherweise verhindern
+Files that may prevent shutdown=Dateien, die das Herunterfahren möglicherweise verhindern
 File Name and Path=Dateiname und Pfad
 An entry for bash means you have a terminal session open with the working directory on the array=Ein Bash-Eintrag bedeutet, dass eine Terminalsitzung mit dem Arbeitsverzeichnis auf dem Array geöffnet ist
-If smbd is listed, it means that another computer has a samba share mounted=Ein smbd-Eintrag bedeutet, dass auf einem anderen Computer eine Samba-Freigabe geöffnet ist
-Files open by Samba usually wont prevent array shutdown=Geöffnete Dateien von Samba verhindern normalerweise nicht das Herunterfahren
-No open files=Keine Geöffneten Dateien
+If smbd is listed, it means that another computer has a samba share mounted=Ein smbd-Eintrag bedeutet, dass auf einem anderen Computer eine Samba-Freigabe verbunden ist
+Files open by Samba usually wont prevent array shutdown=Geöffnete Dateien über Samba verhindern normalerweise nicht das Herunterfahren
+No open files=Keine geöffneten Dateien
 Kill=Beenden
 Command timed out=Zeitüberschreitung des Befehls
-Cannot get list of open files=Fehler beim Laden der Liste der offenen Dateien
+Cannot get list of open files=Fehler beim Laden der Liste der geöffneten Dateien
 ;
 ; Help
 ;
 :open_files_help_plug:
-> Klick auf 'Kill', um den Vorgang zu stoppen der die Dateien geöffnet hält.
-> Ein Dialogfeld wird geöffnet, in dem der Fortschritt des Abbrechens des Prozesses angezeigt wird.
+> Klicke auf **Beenden**, um den Prozess zu stoppen, der die Dateien geöffnet hält.
+> Es wird ein Fenster geöffnet, in dem der Fortschritt des Abbrechens des Prozesses angezeigt wird.
 >
-> Klick auf "Programm", "Prozess ID" oder "Dateiname und Pfad", um die Sortierreihenfolge zu ändern.
+> Klicke auf **Prozess*, **Prozess-ID**, **Dateien, die das Herunterfahren möglicherweise verhindern** oder "Dateiname", um die Sortierreihenfolge zu ändern.
 :end
 
 ; Note: April 28, 2023 - 1 missing translations
-Process=
+Process=Prozess
