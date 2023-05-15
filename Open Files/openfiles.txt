@@ -1,3 +1,4 @@
+Process=Prozess
 Kill Process=Prozess beenden
 Process ID=Prozess-ID
 Open Files=Geöffnete Dateien
@@ -19,6 +20,3 @@ Cannot get list of open files=Fehler beim Laden der Liste der geöffneten Dateie
 >
 > Klicke auf **Prozess*, **Prozess-ID**, **Dateien, die das Herunterfahren möglicherweise verhindern** oder "Dateiname", um die Sortierreihenfolge zu ändern.
 :end
-
-; Note: April 28, 2023 - 1 missing translations
-Process=Prozess

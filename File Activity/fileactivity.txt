@@ -1,7 +1,12 @@
 File Activity=Datei-Aktivitäten
+File Activity Monitoring=Datei-Aktivitätenüberwachung
 Start File Activity=Datei-Aktivitäten-Dienst starten
+Stop File Activity Monitoring=Datei-Aktivitätenüberwachung stoppen
 Clear the File Activity log=Datei-Aktivitäten-Protokoll löschen
+Refresh Page=Seite aktualisieren
+Enable File Activity Monitoring=Datei-Aktivitätenüberwachung aktivieren
 Enable for Unassigned Devices=Für nicht zugewiesene Datenträger aktivieren
+Enable for Cache and Pool Disks=Für Cache- und Pool-Datenträger aktivieren
 ;
 ; Help
 ;
@@ -29,10 +34,3 @@ Enable for Unassigned Devices=Für nicht zugewiesene Datenträger aktivieren
 > Auf **Ja** stellen, um die Überwachung von Dateiaktivitäten auf Cache- und Pool-Datenträgern zu aktivieren. Gilt für Pool-Datenträger nur mit Unraid 6.9
 :end
 
-
-; Note: April 28, 2023 - 5 missing translations
-File Activity Monitoring=Datei-Aktivitätenüberwachung
-Stop File Activity Monitoring=Datei-Aktivitätenüberwachung stoppen
-Refresh Page=Seite aktualisieren
-Enable File Activity Monitoring=Datei-Aktivitätenüberwachung aktivieren
-Enable for Cache and Pool Disks=Für Cache- und Pool-Datenträger aktivieren
