@@ -40,7 +40,7 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Klicke auf das <strong>Durchsuchen</strong>-Symbol, um die gelöschten Dateien in dieser Freigabe zu durchsuchen.
 > Klicken Sie auf den <strong>Leeren</strong>-Button, um die gelöschten Dateien zu entfernen.
 >
-> Freigaben von nicht zugewiesene Datenträger werden nur angezeigt, wenn der Papierkorb für nicht zugewiesene Datenträger aktiviert ist und es nicht zugewiesene Geräte gibt, die eingehängt und freigegeben sind und Papierkorb-Inhalte enthalten.
+> Freigaben von nicht zugewiesene Datenträgern werden nur angezeigt, wenn der Papierkorb für nicht zugewiesene Datenträger aktiviert ist und es nicht zugewiesene Geräte gibt, die eingehängt und freigegeben sind und Papierkorb-Inhalte enthalten.
 >
 > Klicke auf die Spalten "SMB-Freigabe", "Freigabetyp" oder "Papierkorbgröße" in der Kopfzeile der Tabelle und der Inhalt wird sortiert. Bei der "Papierkorbgröße" handelt es sich um eine alphanumerische und nicht um eine numerische Sortierung.
 :end
