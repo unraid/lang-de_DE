@@ -40,7 +40,7 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Klicke auf das <strong>Durchsuchen</strong>-Symbol, um die gelöschten Dateien in dieser Freigabe zu durchsuchen.
 > Klicken Sie auf den <strong>Leeren</strong>-Button, um die gelöschten Dateien zu entfernen.
 >
-> Freigaben von nicht zugewiesene Datenträgern werden nur angezeigt, wenn der Papierkorb für nicht zugewiesene Datenträger aktiviert ist und es nicht zugewiesene Geräte gibt, die eingehängt und freigegeben sind und Papierkorb-Inhalte enthalten.
+> Freigaben von nicht zugewiesene Datenträgern werden nur angezeigt, wenn der Papierkorb für nicht zugewiesene Datenträger aktiviert ist und es nicht zugewiesene Datenträger gibt, die eingehängt und freigegeben sind und Papierkorb-Inhalte enthalten.
 >
 > Klicke auf die Spalten "SMB-Freigabe", "Freigabetyp" oder "Papierkorbgröße" in der Kopfzeile der Tabelle und der Inhalt wird sortiert. Bei der "Papierkorbgröße" handelt es sich um eine alphanumerische und nicht um eine numerische Sortierung.
 :end
@@ -83,11 +83,11 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 :end
 
 :recycle_bin_excluded_dirs_plug:
-> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Um ein bestimmtes Freigabeverzeichnis anzugeben, verwende 'Freigabe/Verzeichnis'. Nicht zugewiesene Geräte werden auf die gleiche Weise mit 'Einhängeverzeichnis/Verzeichnis' angegeben. Platzhalter '*' und '?' sind erlaubt.
+> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Um ein bestimmtes Freigabeverzeichnis anzugeben, verwende 'Freigabe/Verzeichnis'. Nicht zugewiesene Datenträger werden auf die gleiche Weise mit 'Einhängeverzeichnis/Verzeichnis' angegeben. Platzhalter '*' und '?' sind erlaubt.
 :end
 
 :recycle_bin_excluded_shares_plug:
-> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Diese Liste kann Freigaben für nicht zugewiesene Geräte enthalten. Beim Freigabenamen wird zwischen Groß- und Kleinschreibung unterschieden.
+> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Diese Liste kann Freigaben für nicht zugewiesene Datenträger enthalten. Beim Freigabenamen wird zwischen Groß- und Kleinschreibung unterschieden.
 >
 > Die ausgeschlossene Freigabe kann einen Teil des Freigabenamens enthalten und schließt alle Freigaben aus, die den Text der ausgeschlossenen Freigabe im eigentlichen Freigabenamen enthalten. Wenn du eine exakte Übereinstimmung wünscht, verwende den vollständigen Freigabenamen.
 >
@@ -120,7 +120,7 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 :end
 
 ; Note: April 28, 2023 - 5 missing translations
-Enable on Unassigned Devices=Auf nicht zugewiesenen Geräten aktivieren
+Enable on Unassigned Devices=Auf nicht zugewiesenen Datenträgern aktivieren
 Enable Recycle Bin=Papierkorb aktivieren
 Excluded Directories=Ausgeschlossene Verzeichnisse
 Recycle Bin is empty=Der Papierkorb ist leer
