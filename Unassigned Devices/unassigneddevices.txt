@@ -54,6 +54,7 @@ Historical Device is=
 Identification=Identifikation
 If this disk was pre-cleared, you will remove the pre-clear signature=
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=
+Invalid Configuration - Remove and Re-add=
 is offline=
 ISO File is=
 ISO File Shares=ISO Datei Freigaben
@@ -75,8 +76,10 @@ NFS Share=
 NFS Shares=NFS Freigaben
 No Remote SMB=
 No Unassigned Disks available=Keine nicht zugewiesenen Datenträger vorhanden
+Not Enabled=
 not installed=
 Note=Hinweis
+Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=
 offilne=
 You must enable NFS in Settings->NFS to mount NFS shares=
 You must enable SMB in Settings->SMB to mount SMB shares=
@@ -127,6 +130,8 @@ Use caution when gathering shares into one Root Share=
 Used=Benutzt
 User and Pool Shares=
 User Shares=
+User and Pool Shares will include all files in User Shares, Cache and Pool Devices=
+User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=
 Username=Benutzername
 View Device Script Log=Zeige Datenträger Skript Protokoll
 View ISO File Script Log=Zeige ISO Datei Skript Protokoll
@@ -141,6 +146,7 @@ You must enable the Destructive Mode in UD Settings before you can Format this d
 You WILL have problems if you do=
 You will need to enter credentials to list the shares=
 ZFS Pool Name=
+ZFS Volume=
 
 :unassigned_devices_general_help_plug:
 > Unassigned Devices Kurzform lautet UD
@@ -207,4 +213,4 @@ ZFS Pool Name=
 > Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
 :end
 
-; Note: April 29, 2023 - 67 missing translations
+; Note: June 18, 2023 - 73 missing translations
