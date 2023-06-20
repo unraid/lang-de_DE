@@ -1,210 +1,200 @@
-Add ISO File Share=ISO Freigabe hinzufügen
-Add Remote SMB=
-Add Root Share=
-An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=
-Any data on this disk will be lost=Alle Daten auf dem Datenträger werden gelöscht
-Are you sure=Sind Sie sicher
-Auto mount=Auto Mount
+Add ISO File Share=ISO-Dateifreigabe hinzufügen
+Add Remote SMB=Entfernte SMB-Freigabe hinzufügen
+Add Root Share=Root-Freigabe hinzufügen
+An XFS, BTRFS, or ZFS disk partitioned in UD is compatible with the array disk partitioning and can be added to the array=Ein XFS-, BTRFS- oder ZFS-Datenträger, der in Unassigned Devices partitioniert wurde, ist mit der Datenträgerpartitionierung des Arrays kompatibel und kann zum Array hinzugefügt werden
+Any data on this disk will be lost=Alle Daten auf diesem Datenträger werden gelöscht
+Are you sure=Bist du sicher
+Auto mount=Auto-Einhängen
 Back=Zurück
 Browse Disk Share=Datenträgerfreigabe durchsuchen
-Browse ISO File Share=ISO Freigabe durchsuchen
-Browse Remote SMB=
+Browse ISO File Share=ISO-Dateifreigabe durchsuchen
+Browse Remote SMB=Entfernte SMB-Freigabe durchsuchen
 Choose File System Format=Dateisystemformat auswählen
-Choose ISO File=ISO Datei auswählen
+Choose ISO File=ISO-Datei auswählen
 Choose Server=Server auswählen
 Choose Share=Freigabe auswählen
-Click on Icon to Choose Protocol=Auf Symbol klicken um das Protokoll auszuwählen
-Change Disk Mount Point=
-Change ISO File Mount Point=
-Change Remote Share Mount Point=
-Change SMB=
-Changing the Mount Point will also change the disk label=
-Clear=
-Click to select ISO file=Klicken um ISO Datei auszuwählen
-Click to view/hide partitions and mount points=
+Click on Icon to Choose Protocol=Auf das Symbol klicken, um das Protokoll auszuwählen
+Change Disk Mount Point=Einhängepunkt des Datenträgers ändern
+Change ISO File Mount Point=Einhängepunkt der ISO-Datei ändern
+Change Remote Share Mount Point=Einhängepunkt der entfernten Freigabe ändern
+Change SMB=SMB-Freigabe ändern
+Changing the Mount Point will also change the disk label=Das Ändern des Einhängepunkts ändert auch die Bezeichnung des Datenträgers
+Clear=Leeren
+Click to select ISO file=Klicken, um die ISO-Datei auszuwählen
+Click to view/hide partitions and mount points=Klicken, zum Anzeigen/Verstecken von Partitionen und Einhängepunkten
 Complete=Vollständig
-Device=
-Disks=
-Disk Label=
-Disk Log Information=Datenträger Protokoll
-Disk Sharing must be disabled to add a Root Share=
-Do NOT use a remote share local mount in a Docker container or VM for critical data=
-Do not put files or folders into the /mnt/rootshare/ folder=
+Device=Gerät
+Disks=Datenträger
+Disk Label=Datenträger-Bezeichnung
+Disk Log Information=Datenträger-Protokollinformationen
+Disk Sharing must be disabled to add a Root Share=Datenträgerfreigaben müssen deaktiviert sein, um eine Root-Freigabe hinzuzufügen
+Do NOT use a remote share local mount in a Docker container or VM for critical data=Verwende KEINEN lokalen Einhängepunkt einer entfernten Freigabe in einem Docker-Container oder VM für kritische Daten
+Do not put files or folders into the /mnt/rootshare/ folder=Lege keine Dateien oder Ordner im Ordner /mnt/rootshare/ ab
 Domain=Domain
-Edit Device Script=Datenträger Skript bearbeiten
-Edit ISO File Script=ISO Datei Skript bearbeiten
-Edit Remote SMB=
-Enter the Domain for the share if on a Domain=Domainnamen eingeben falls sich dieser in einer Domain befindet
-Enter the Password if the share is password protected=Passwort eingeben falls die Freigabe Passwortgeschützt ist
-Enter the Username if the share is password protected=Benutzernamen eingeben falls die Freigabe Passwortgeschützt ist
-Enter the password to use for this disk=Passwort für diesen Datenträger eingeben
-Execute Script as udev simulating a device being installed=Das Skript als udev ausführen, damit ein anschluss eines Datenträger simuliert wird
-Fail=Gescheitert
-file share for=Freigabe für
+Edit Device Script=Datenträger-Skript bearbeiten
+Edit ISO File Script=ISO-Datei-Skript bearbeiten
+Edit Remote SMB=Entfernte SMB-Freigabe bearbeiten
+Enter the Domain for the share if on a Domain=Den Domainnamen der Freigabe eingeben, falls sich dieser in einer Domain befindet
+Enter the Password if the share is password protected=Das Passwort eingeben, falls die Freigabe passwortgeschützt ist
+Enter the Username if the share is password protected=Den Benutzernamen eingeben, falls die Freigabe passwortgeschützt ist
+Enter the password to use for this disk=Das Passwort für diesen Datenträger eingeben
+Execute Script as udev simulating a device being installed=Das Skript als udev ausführen, damit der Anschluss eines Datenträgers simuliert wird
+Fail=Fehlgeschlagen
+file share for=Dateifreigabe für
 File System Check=Dateisystemprüfung
-File System Scrub=
+File System Scrub=Datensystem-Scrub
 Format=Formatieren
 Formatting=Formatiere
 Free=Frei
-from disk=von Datenträger
-Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=
-Historical=
-Historical Devices=Letzte Datenträger
-Historical Device is=
+from disk=Von Datenträger
+Go to Settings->Global Share Settings and set Enable Disk Shares to Auto or Off=Gehe zu Einstellungen->Globale Freigabeeinstellungen and stelle "Datenträger-Freigaben aktivieren" auf Auto oder Aus
+Historical=Vorherig
+Historical Devices=Vorherige Datenträger
+Historical Device is=Vorheriger Datenträger ist
 Identification=Identifikation
-If this disk was pre-cleared, you will remove the pre-clear signature=
-If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=
-is offline=
-ISO File is=
-ISO File Shares=ISO Datei Freigaben
-If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Falls ein Datenträgerpasswort verwendet wird bitte das Password in den UD Einstellungen eingeben damit der Datenträger eingebeunden werden kann
-Device=
-Leave blank to use the array passwordpassphrase=Freilassen um die Array Passwordpassphrase zu verwenden
-Load Shares=Lade Freigaben
-Loading=
+If this disk was pre-cleared, you will remove the pre-clear signature=Wenn der Datenträger zuvor per Pre-Clear gelöscht wurde, entfernst du damit die Pre-Clear-Signatur
+If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=Wenn du den Datenträger zum Array hinzufügst und die Pre-Clear-Signatur entfernt wird, führt Unraid den langwierigen Löschprozess des Datenträgers erneut durch
+is offline=Ist Offline
+ISO File is=ISO-Datei ist
+ISO File Shares=ISO-Dateifreigaben
+If using a disk password be sure to enter the password for this disk in UD Settings so it can be mounted=Falls ein Datenträgerpasswort verwendet wird, gib das Password dieses Datenträgers in den UD-Einstellungen ein, damit er eingehängt werden kann
+Device=Gerät
+Leave blank to use the array passwordpassphrase=Leer lassen, um die Passwort-Passphrase des Arrays zu verwenden
+Load Shares=Freigaben laden
+Loading=Lade
 Log=Protokoll
 Mount=Einhängen
-Mount Point=
+Mount Point=Einhängepunkt
 Mounting=Einhängen
 Next=Weiter
-NFS Mount Point=
-NFS or ISO File Shares configured=
-NFS Script=
-NFS Script Log=
-NFS Share=
-NFS Shares=NFS Freigaben
-No Remote SMB=
-No Unassigned Disks available=Keine nicht zugewiesenen Datenträger vorhanden
-not installed=
+NFS Mount Point=NFS Einhängepunkt
+NFS or ISO File Shares configured=NFS- oder ISO-Dateifreigabe
+NFS Script=NFS-Skript
+NFS Script Log=NFS-Skriptprotokoll
+NFS Share=NFS-Freigabe
+NFS Shares=NFS-Freigaben
+No Remote SMB=Keine entfernte SMB-Freigabe
+No Unassigned Disks available=Keine nicht zugewiesenen Datenträger verfügbar
+not installed=Nicht installiert
 Note=Hinweis
-offilne=
-You must enable NFS in Settings->NFS to mount NFS shares=
-You must enable SMB in Settings->SMB to mount SMB shares=
+offilne=Offline
+You must enable NFS in Settings->NFS to mount NFS shares=Du musst NFS unter Einstellungen->NFS aktivieren, um NFS-Freigaben einzuhängen
+You must enable SMB in Settings->SMB to mount SMB shares=Du musst SMB unter Einstellungen->SMB aktivieren, um SMB-Freigaben einzuhängen
 Open=Geöffnet
-Partition and Format Disk=Partitioniere und Formatiere Datenträger
-Pass Thru=Passthrough
+Partition and Format Disk=Datenträger partitionieren und formatieren
 Password=Passwort
 Read only=Nur Lesen
-Reboot=
-Refresh Disks and Configuration=
-Remember your password It cannot be recovered=Passwort bitte merken, kann nicht wiederhergestellt werden.
-Remote Share is=
-Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=
+Reboot=Neustarten
+Refresh Disks and Configuration=Datenträger und Konfiguration aktualisieren
+Remember your password It cannot be recovered=Merke dir dein Passwort, es kann nicht wiederhergestellt werden
+Remote Share is=Entfernte Freigabe ist
+Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=Das Einbinden von entfernten Freigaben hängt von einer stabilen und zuverlässigen Netzwerkverbindung ab und das ist schwer zu realisieren
 Remove Device configuration=Datenträgerkonfiguration entfernen
-Remove ISO File Share=ISO Datei Freigabe entfernen
+Remove ISO File Share=ISO-Dateifreigabe entfernen
 Remove Partition=Partition entfernen
-Remove Remote SMB=
+Remove Remote SMB=Entfernte SMB-Freigabe entfernen
 Remove partition=Partition entfernen
 Running=Läuft
 Script=Skript
-Search For Servers=Suche nach Servern
-Search for Servers, or enter the Server nameIP address manually=Suche nach Servern oder ServernamenIP Adresse manuell eingeben
-Search for Shares or enter the Share name manually=Suche nach Freigaben oder Freigabenamen manuell eingeben
+Search For Servers=Nach Servern suchen
+Search for Servers, or enter the Server nameIP address manually=Nach Servern suchen oder den Servernamen/IP-Adresse manuell eingeben
+Search for Shares or enter the Share name manually=Nach Freigaben suchen oder den Freigabenamen manuell eingeben
 Searching=Suche
-Select the Mount Point to Root Share=
-Serial Number Mount Point=Serial Number (Mount Point)
-Shares=
-Share Type=
-share for=freigeben für
+Select the Mount Point to Root Share=Wähle den Einhängepunkt der Root-Freigabe aus
+Serial Number Mount Point=Seriennummer (Einhängepunkt)
+Shares=Freigaben
+Share Type=Freigabetyp
+share for=Freigeben für
 Simple=Einfach
-SMB Shares=SMB Freigaben
+SMB Shares=SMB-Freigaben
 Source=Quelle
-SSD cannot be spun down=
+SSD cannot be spun down=SSD kann nicht heruntergefahren werden
 Success=Erfolg
-Show Historical Devices=
-Show SMB/NFS/ISO Shares=
-Show Disk Devices=
-This is a way to gather Unraid shares into one Root Share=
-This will remove the ISO file share for=Dies entfernt die ISO Datei Freigabe für
-This will remove the remote=Dies entfernt die Entfernte
+Show Historical Devices=Vorherige Datenträger anzeigen
+Show SMB/NFS/ISO Shares=SMB/NFS/ISO-Freigaben anzeigen
+Show Disk Devices=Datenträger anzeigen
+This is a way to gather Unraid shares into one Root Share=Auf diese Weise können Unraid-Freigaben in einer Root-Freigabe zusammengefasst werden
+This will remove the ISO file share for=Dies entfernt die ISO-Dateifreigabe für
+This will remove the remote=Dies entfernt die entfernte
 This will remove the saved configuration of=Dies entfernt die gespeicherte Konfiguration für
 This will remove the=Dies entfernt die
-to confirm=zum Bestätigen
-to format=zum Formatieren
+to confirm=Zum Bestätigen
+to format=Zum Formatieren
 Unmount=Aushängen
 Unmounting=Aushängen
-Use caution when gathering shares into one Root Share=
+Use caution when gathering shares into one Root Share=Sei vorsichtig, wenn du Freigaben in einer Root-Freigabe zusammenfasst
 Used=Benutzt
-User and Pool Shares=
-User Shares=
+User and Pool Shares=Benutzer- und Pool-Freigaben
+User Shares=Benutzerfreigaben
 Username=Benutzername
-View Device Script Log=Zeige Datenträger Skript Protokoll
-View ISO File Script Log=Zeige ISO Datei Skript Protokoll
-View Remote SMB=
-WARNING=
-When you copy files between shares in the Root Share, the files may not end up on the expected disks=
-Working=
-You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=
-You must enable NFS in Settings->NFS to mount NFS shares=
-You must enable SMB in Settings->SMB to mount SMB shares=
-You must enable the Destructive Mode in UD Settings before you can Format this disk=
-You WILL have problems if you do=
-You will need to enter credentials to list the shares=
-ZFS Pool Name=
+View Device Script Log=Datenträger-Skriptprotokoll anzeigen
+View ISO File Script Log=ISO-Datei-Skriptprotokoll anzeigen
+View Remote SMB=entfernte SMB-Freigabe anzeigen
+WARNING=WARNUNG
+When you copy files between shares in the Root Share, the files may not end up on the expected disks=Wenn du Dateien zwischen Freigaben innerhalb der Root-Freigabe kopierst, landen die Dateien möglicherweise nicht auf den erwarteten Datenträgern
+Working=Funktioniert
+You can also subject yourself to security issues like ransomware by exposing all your shares in one Root Share=Du kannst dich selbst Sicherheitsproblemen wie Ransomeware aussetzten, wenn du alle deine Freigaben in einer Root-Freigabe zugänglich machst
+You must enable NFS in Settings->NFS to mount NFS shares=Du musst NFS unter Einstellungen->NFS aktivieren, um NFS-Freigaben einzuhängen
+You must enable SMB in Settings->SMB to mount SMB shares=Du musst SMB unter Einstellungen->SMB aktivieren, um SMB-Freigaben einzuhängen
+You must enable the Destructive Mode in UD Settings before you can Format this disk=>Du musst den destruktiven Modus in den UD-Einstellungen aktivieren, bevor du diesen Datenträger formatieren kannst
+You WILL have problems if you do=Du WIRST Probleme bekommen, wenn du das dust
+You will need to enter credentials to list the shares=Du musst Zugangsdaten eingeben, um die Freigaben anzuzeigen
+ZFS Pool Name=ZFS-Poolname
 
 :unassigned_devices_general_help_plug:
-> Unassigned Devices Kurzform lautet UD
+> **Unassigned Devices wird kurz UD genannt**
 >
-> Bewegen Sie die Maus über einen Bereich auf der UD-Seite und ein Tooltip zeigt Ihnen, was Klicken auf diesen Bereich bewirkt
-> Sie können USB-, SATA-Datenträger, Entfernte SMB/NFS Freigaben und ISO Dateien mit UD einhängen.
+> Wenn du den Mauszeiger über einen aktiven Bereich auf der UD Seite bewegst, zeigt dir ein Tooltip, was du tun kannst, wenn du auf diesen Bereich klickst.
+> Du kannst USB-Geräte, SATA-Datenträger, entfernte SMB/NFS-Freigaben und ISO-Dateien mit UD einbinden. Alle Geräte mit aktiviertem Auto-Einhängen werden beim Starten des Arrays eingehängt. Alle Datenträger und SMB/NFS-Einbindungen werden ausgehängt, wenn das Array mit dem Ereignis "stopping_svcs" gestoppt wird.
+> Wenn du deinen Datenträger freigeben möchtest, kannst du den Schalter "Freigabe" aktivieren. Die Standardeinstellung für entfernte SMB-Freigaben ist öffentlicher Lese-/Schreibzugriff. Aktiviere SMB-Sicherheit je nach Benutzer in den Unassigned Devices Einstellungen. NFS-Freigaben werden exportiert und der Zugriff erfolgt lesend/schreibend. Der Export von NFS-Geräten wird in den Unassigned Devices Einstellungen aktiviert. Du kannst auch ein allgemeines Skript aktivieren, das bei jedem Einhängen eines Datenträgers ausgeführt wird. Um einen UD-Datenträger freizugeben, muss die Freigabe in den UD-Einstellungen aktiviert und der Schalter zur Freigabe des jeweiligen Datenträgers eingeschaltet werden. Entfernte SMB/NFS-Freigaben und ISO-Einbindungen werden immer freigegeben.
+> Nachdem du einen Einhängepunkt angegeben hast, drücke &lt;Enter&gt;, um die Änderung zu speichern.
 >
-> Alle Datenträger mit aktiviertem Auto-Mount werden beim Starten des Arrays eingebunden.
-> Alle Datenträger und Entferneten SMB/NFS Freigaben werden beim Stoppen des Arrays ausgebunden - 'stopping_svcs' Event.
+> Zusätzliche Optionen sind verfügbar, wenn du auf das <i style='color:black;font-weight:bold;' class="fa-plus-square"></i>-Symbol bei der Datenträger-Identifikation klickst. Wenn der Datenträger ausgehängt wird, kann der Einhängepunkt des Geräts geändert werden. Die Datenträger-Bezeichnung wird ebenfalls geändert. Ein Datenträger kann formatiert und mit fsck überprüft werden.
 >
-> Wenn Sie den Datenträger Freigeben wollen bitte Freigeben aktivieren.
+> Die Sicherheitseinstellungen für SMB und NFS unter "Einstellungen->Unassigned Devices" müssen korrekt eingestellt sein, damit die SMB- und NFS-Freigabe ordnungsgemäß funktioniert.
 >
-> SMB Freigaben werden Standardmäßig mit Öffentlichem Zugriff und mit Lese-/Schreibrechten freigegeben.
-> Aktivieren Sie die SMB Sicherheit für Benutzer in den Unassigned Devices Einstellungen.
+> Wenn der Einhängen-Button für eine SMB/NFS-Fernfreigabe ausgegraut ist, reagiert der entfernte Server nicht auf einen Ping. Der entfernte Freigabeserver muss auf einen Ping reagieren, sonst wird er von UD als offline betrachtet.
 >
-> NFS Freigaben werden Standardmäßig exportiert mit Lese-/Schreibrechten.
-> Das Exportieren von NFS Freigaben wird ein den Unassigned Devices Einstellungen konfiguriert.
+> Der Button "Root-Freigabe hinzufügen" ist deaktiviert, wenn "Datenträger-Freigaben aktivieren" aktiviert ist und zuvor hinzugefügte Root-Freigaben werden nicht aktiviert.
 >
-> Sie können auch ein Skript erstellen, das auf bei jedem Einhängen vom Datenträger ausgeführt wird.
-> Um einen UD-Datenträger freizugeben, muss die Freigabe in den UD-Einstellungen aktiv sein und Freigabe aktiviert werden, um das jeweilige Gerät freizugeben
->
-> Entfernte SMB/NFS Freigaben und ISO Dateien werden immer Freigegeben.
-> Nach Eingabe eines Einhängeorts, &lt;Enter&gt; drücken um die Änderungen zu speichern.
->
-> Weitere Optionen sind mit einem Klick auf die Datenträgerindentifikation verfügbar.
-> Der Einhängename kann geändert werden wenn der Datenträger Ausgehängt ist.
-> Ein Datenträger kann formatiert und ein fsck ausgeführt werden, um die Festplatte zu überprüfen.
->
-> **Die Sicherheitseinstellungen für SMB und NFS müssen in 'Einstellungen->Unassigned Devices' richtig konfiguriert werden damit die SMB- und NFS-Freigabe funktioniert.**
->
-> **Wenn der Knopf für SMB/NFS ausgegraut ist reagiert der Server nicht auf die Ping Anfrage. Der Server muss auf Ping Anfragen reagieren andernfalls wird UD die Freigabe als Offline anzeigen.**
->
-> UD verfügt über einen Partitionierungs Modus, der partitionierung und formatieren eines Datenträgers erlaubt.
->
-> Wenn der Partitionierungs Modus in den UD Einstellungen nicht aktiviert ist, können KEINE Partitionen gelöscht werden bzw. ist eine Formatierung von Datenträgern nicht möglich.
-> Gehen Sie zu 'Einstellungen->Unassigned Devices' um den Partitionierungs Modus zu aktivieren.
+> UD verfügt über einen destruktiven Modus, der das Löschen von Festplattenpartitionen und das Formatieren von Festplatten ermöglicht. Wenn der destruktive Modus in den UD-Einstellungen nicht aktiviert ist, kannst du KEINE Festplatten formatieren oder Partitionen löschen. Gehe zu 'Einstellungen->Unassigned Devices', um den destruktiven Modus zu aktivieren.
 >
 > Zum Formatieren eines Datenträgers:
 >
-> + Muss der Partitionierungs Modus aktiviert werden.
-> + Alle Partitionen müssen vom Datetnräger gelöscht sein. Datenträger auswerfen, auf die Seriennummer klicken und auf alle <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> Symbole klicken um die Partitionen zu löschen.
-> + Wenn der Datenträger Precleared wurde und einen grauen 'Formatieren' Knopf anzeigt, auf das <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i> Symbol klicken, danach auf <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i> Symbol klicken um die Preclear-Status-Datei zu löschen.
+> + Muss der Destruktive Modus aktiviert sein.
+> + Alle Partitionen müssen vom Datenträger gelöscht sein. Datenträger auswerfen, auf das <i style='color:black;font-weight:bold;' class='fa-plus-square'></i>-Symbol klicken und auf alle <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i>-Symbole klicken, um die Partitionen zu löschen.
+> + Wenn der Datenträger per Pre-Clear gelöscht wurde und einen grauen "Formatieren"-Button anzeigt, klicke auf das <i style='color:black;font-weight:bold;' class='fa fa-plus-square'></i>-Symbol und danach auf das <i style='color:red;font-weight:bold;' class='fa fa-remove hdd'></i>-Symbol, um die Preclear-Status-Datei zu löschen.
 >
-> **Hinweis: Ein mit UD Partitionierter Datenträger ist mit dem Array Kompatibel und kann diesem hinzugefügt werden. Unterstützte  Dateisystemformate sind XFS und BTRFS.**
+> **Hinweis: Ein in UD partitionierter Datenträger ist mit der Festplattenpartitionierung des Arrays kompatibel und kann dem Array hinzugefügt werden.  Unterstützte Dateisystemformate sind XFS, XFS verschlüsselt, BTRFS, BTRFS verschlüsselt, ZFS und ZFS verschlüsselt.**
 >
 > Verschlüsselte Datenträger:
 >
-> + Jeder mit UD Formatierte und Verschlüsselte Datenträger benutzt das Array Passwort/Passphrase und kann dem Array hinzugefügt werden.
-> + Jeder Datenträger der nicht mit UD Verschlüsselt wurde, kann Eingebunden werden wenn in den UD Einstellungen das Passwort pro Datenträger eingegeben wird.
+> + Jeder in UD formatierte Datenträger, der verschlüsselt ist, verwendet das Array-Passwort/Passphrase und kann in das Array integriert werden. Du kannst auch ein eindeutiges Passwort beim Formatieren festlegen. Wenn du beim Formatieren ein Passwort für den Datenträger festlegst, musst du unter Unassigned Devices->Einstellungen ein Datenträgerpasswort für diesen Datenträger eingeben.
+> + Jeder Datenträger, der nicht mit dem Array-Passwort/Passphrase verschlüsselt wurde, kann eingehängt werden, indem unter Unassigned Devices->Einstellungen ein Passort pro Datenträger festgelegt wird.
 >
-> UD enthält Skripte die für das Ein-/Aushängen von SMB/NFS Freigaben benötigt werden. Diese Skripte können bei Bedarf von der Kommandozeile oder in anderen Skripten verwendet werden.
 >
-> Unassigned Devices Dienst Skripte:
+> Unassigned Devices Skripte:
 >
-> + '/usr/local/sbin/rc.unassigned mount auto' - alle Datenträger und SMB/NFS Freigaben bei denen Auto Mount aktiviert ist werden Eingebunden.
-> + '/usr/local/sbin/rc.unassigned umount auto' - alle Datenträger und SMB/NFS Freigaben bei denen Auto Mount aktiviert ist werden Ausghängt.
-> + '/usr/local/sbin/rc.unassigned umount all' - alle Datenträger und SMB/NFS Freigaben werden bei der Vorbereitung zum Herunterfahren Ausgehängt.
-> + '/usr/local/sbin/rc.unassigned mount /dev/sdX' - Datenträger sdX Einhängen, wobei 'X' für die Datenträgerbezeichnung steht.
-> + '/usr/local/sbin/rc.unassigned umount /dev/sdX' - Datenträger sdX Aushängen, wobei 'X' für die Datenträgerbezeichnung steht. Sie können diesen Befehl in einem UD Skript benutzen um den Datenträger Auszuhängen wenn das Skript beendet wurde.
-> + '/usr/local/sbin/rc.unassigned refresh /dev/sdX' - wird am Ende eines 'ADD' Vorgangs im Skript verwendet um die 'Läuft...' Anzeige zu aktualisieren.
+> UD enthält Skripte, die für das Ein-/Aushängen von Datenträgern und SMB/NFS-Freigaben benötigt werden. Diese Skripte können bei Bedarf von der Kommandozeile oder in eigenen Skripten verwendet werden.
 >
-> Auf 'Vollständig' klicken um nur die Datenträger anzuzeigen. Auf 'Einfach' klicken um zurück zur Vollständigen Ansicht zurückzukehren.
+> + '/usr/local/sbin/rc.unassigned mount autodevices' - Alle Geräte, die auf Auto-Einhängen gestellt sind, werden eingehängt.
+> + '/usr/local/sbin/rc.unassigned mount autoshares' - Alle SMB/NFS-Freigaben, die auf Auto-Einhängen gestellt sind, werden eingehängt.
+> + '/usr/local/sbin/rc.unassigned umount auto' - Alle Datenträger und SMB/NFS-Freigaben, die auf Auto-Einhängen gestellt sind, werden eingehängt.
+> + '/usr/local/sbin/rc.unassigned umount all' - Alle Datenträger und SMB/NFS-Freigaben werden bei der Vorbereitung zum Herunterfahren ausgehängt.
+> + '/usr/local/sbin/rc.unassigned mount /dev/sdX or devX' - Datenträger einhängen.
+> + '/usr/local/sbin/rc.unassigned mount name=diskname' - Datenträger über Datenträgernamen einhängen.
+> + '/usr/local/sbin/rc.unassigned umount /dev/sdX or devX' - Datenträger aushängen. Du kannst diesen Befehl in einem UD-Skript verwenden, um den Datenträger auszuhängen, wenn das Skript beendet ist.
+> + '/usr/local/sbin/rc.unassigned umount name=diskname' - Datenträger über Datenträgernamen aushängen.
+> + '/usr/local/sbin/rc.unassigned spindown /dev/sdX or devX' - Datenträger herunterfahren.
+> + '/usr/local/sbin/rc.unassigned spindown name=diskname' - Datenträger über Datenträgernamen herunterfahren.
+> + '/usr/local/sbin/rc.unassigned detach /dev/sdX or devX' - Einen USB-Datenträger trennen. Du kannst diesen Befehl in einem UD-Skript verwenden, um den Datenträger zu trennen, wenn das Skript beendet ist.
+> + '/usr/local/sbin/rc.unassigned attach serial - Einen USB-Datenträger verbinden. Du kannst diesen Befehl in einem Skript verwenden, um den Datenträger zu verbinden.
+> + '/usr/local/sbin/rc.unassigned mount source' - Wobei "source" die SMB/NFS-Quelle ist.
+> + '/usr/local/sbin/rc.unassigned umount source' - Wobei "source" die SMB/NFS-Quelle ist.
 >
-> Klick auf das Symbol <i class="fa fa-gear"></i> um zu den UD Einstellungen zu gelangen.
+> Hinweis: /dev/sdX, wobei 'X' die Datenträger-Bezeichnung ist. devX ist der Datenträgername auf der UD-Seite.  Wenn der Datenträgername "Dev 1" lautet, dann verwende dev1 als den Datenträger, der heruntergefahren werden soll. Die Verwendung von "name=diskname" ist nützlich, wenn du ein Benutzerskript verwendest, das UD-Aktionen auf einem Datenträger durchführen muss.
+>
+> Sei vorsichtig bei der Verwendung der Bezeichnungen /dev/sdX oder devX, da diese sich nach einem Neustart ändern können. Verwende am besten die im UD-Skript übergebenen Werte für sdX (DEVICE) und devX (UD_DEVICE).
 :end
 
 ; Note: April 29, 2023 - 67 missing translations
