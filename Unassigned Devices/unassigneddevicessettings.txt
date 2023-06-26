@@ -2,7 +2,7 @@ Add=Hinzufügen
 Auto Mount USB Devices=USB-Datenträger automatisch einhängen
 Change Disk UUID=Datenträger-UUID ändern
 Change UUID=UUID ändern
-Change the disk UUID=Datenträger-UUID ändern
+Change Disk UUID=Datenträger-UUID ändern
 Common Script=Allgemeines Skript
 Common Settings=Allgemeine Einstellungen
 Destructive Mode=Destruktiver Modus
@@ -13,7 +13,6 @@ Mount SSDs with discard option=SSD mit "Discard"-Option einhängen
 NFS Security=NFS-Sicherheit
 NFS Settings=NFS-Einstellungen
 Rule=Regel
-SMB Security=SMB-Sicherheit
 Select Disk=Datenträger auswählen
 Set Encrypted Disk Password=Passwort für verschlüsselten Datenträger festlegen
 Set Password=Passwort festlegen
@@ -26,107 +25,125 @@ Unassigned Devices=Unassigned Devices
 ; Help
 ;
 :ud_settings_plus_plug:
-> **Hinweise:** Das Plugin 'Unassigned Devices Plus' muss installiert sein um Datenträger die mit HFS+ und exFAT formatiert sind Einzughängen und der Partitionierungs Modus muss aktiviert sein.
+d> **Hinweise:** Das Plugin "Unassigned Devices Plus" muss installiert sein, um mit HFS+ und exFAT formatierte Datenträger einzughängen und den destruktiven Modus aktivieren zu können.
 :end
 
 :ud_settings_common_script_plug:
-> Wenn aktiviert wird das Globale Skript vor dem Benutzer Skript ausgeführt. Wird in der Umgebungsvariable **$ACTION** gesetzt. Stellen Sie sicher, dass alle Befehle mit ihrem vollständigen Pfad referenzieren sind.
+> Falls aktiviert, wird dieses Skript vor dem Datenträgerskript ausgeführt. Die Aktion steht in der Umgebungsvariablen **$ACTION**. Achte darauf, dass du alle Befehle mit ihrem vollständigen Pfad angibst.
 :end
 
 :ud_settings_destructive_plug:
-> Wenn aktiviert können Partitionen gelöscht und Datenträger mit Unassigned Devices Formatiert werden. Kann nur aktivert werden wenn das Plugin 'Unassigned Devices Plus' installiert ist.
+> Falls diese Option aktiviert ist, kannst du Partitionen mit Unassigned Devices löschen und formatieren. Diese Funktion kann nur aktiviert werden, wenn das Plugin "Unassigned Devices Plus" installiert ist.
 :end
 
 :ud_settings_mount_usb_devices_plug:
-> Wenn **Ja**, wird jeder neue USB Datenträger automatisch Eingebunden ohne das eine Benutzereingabe erfolgen muss.
+> Wenn diese Option auf **Ja** gestellt ist, wird ein neuer USB-Datenträger automatisch eingehängt und ohne Benutzereingriff freigegeben.
 :end
 
 :ud_settings_discard_plug:
->SSDs die Discard unterstützen mit der 'discard' Option einhängen. Wenn Sie SSD Trim verwenden um ein reglemäßiges Trimming der SSD auszuführen können Sie diese Einstellung auf **Nein** setzen.
+>SSDs, die "Discard" unterstützen, mit der Option "discard" einhängen. Wenn du die SSD-TRIM-Einstellungen verwendest, um ein regelmäßiges Trimming der SSD durchzuführen, kannst du diese Option auf **Nein** stellen.
 :end
 
 :ud_settings_symlinks_plug:
-> Set to **Yes** to create symlinks for /mnt/remotes/ at /mnt/disks/.
+> Stelle diese Option auf **Ja**, um Symlinks für /mnt/remotes/ auf /mnt/disks/ zu erstellen.
 >
-> This is for backwards compatibility of VM and Docker Container mappings to the /mnt/disks/ mount point.
-> You are encouraged to change your mappings to the /mnt/remotes/ mount point.
+> Dies dient der Abwärtskompatibilität von VM- und Docker-Container-Zuordnungen zum Einhängepunkt /mnt/disks/.
+> Es wird empfohlen, deine Zuordnungen auf dem Einhängepunkt /mnt/remotes/ zu ändern.
 >
-> If you do not need the backwards compatibility, leave it set to **No**.
+> Wenn du keine Abwärtskompatibilität benötigst, lass diese Option auf **Nein** gestellt.
+:end
+
+:ud_settings_remote_share_wait_plug:
+> Dies ist die Zeit in Sekunden, die gewartet werden soll, bevor entfernte Freigaben eingehängt werden, wenn das Array zum ersten Mal gestartet wird.
+>
 :end
 
 :ud_settings_specify_smb_vers_plug:
-> Set to **No** for Unassigned Devices to first try to mount remote shares by not setting the SMB version when mounting.
+> Auf **Nein** stellen, damit Unassigned Devices zuerst versucht entfernte Freigaben einzuhängen, indem es die SMB-Version beim Einhängen nicht festlegt.
 >
-> Set to **Yes** for Unassigned Devices to only mount SMB remote shares specifying the SMB version.
+> Auf **Ja** stellen, damit Unassigned Devices entfernte SMB-Freigaben nur mit Angabe der SMB-Version einhängt.
 >
-> Some remote servers need to have the version specified.
+> Bei einigen entfernten Servern muss die Version mit angegeben werden.
 :end
 
 :ud_settings_debug_level_plug:
-> Setting a Debug Log Level adds additional logging in specific areas of UD for troubleshooting.
+> Durch das Festlegen einer Debug-Protokollierungsstufe wird eine zusätzliche Protokollierung in bestimmten Bereichen von UD zur Fehlersuche hinzugefügt.
 >
-> Set to **None** to turn off debug logging.
+> Auf **Keine** stellen, um die Debug-Protokollierung abzuschalten.
 >
-> Set the Debug Log Level to a numeric value to debug a specific area of UD.
+> Stelle die Debug-Protokollierungsstufe auf einen numerischen Wert, um einen bestimmten Bereich von UD zu debuggen.
 >
-> **Note:** Don't leave the Debug Log Level on for extended periods of time.  It can add a lot of log messages to the syslog.
+> **Hinweis:** Lasse die Debug-Protokollierungsstufe nicht über einen längeren Zeitraum aktiviert. Dies kann zu einer großen Anzahl von Protokolleinträgen im Systemprotokoll führen.
 :end
 
 :ud_settings_specify_nfs_vers_plug:
-> Set to **NFSv3** to mount all NFS Remote Shares with NFSv3.
+> Auf **NFSv3** stellen, um alle entfernten NFS-Freigaben mit NFSv3 einzuhängen.
 >
-> Set to **NFSv4** to mount all NFS Remote Shares with NFSv4.
+> Auf **NFSv4** stellen, um alle entfernten NFS-Freigaben mit NFSv4 einzuhängen.
 >
-> All NFS remote shares will be mounted with the specified version.
+> Alle entfernten NFS-Freigaben werden mit der angegebenen Version eingehängt.
 :end
 
 :ud_settings_smb_security_plug:
-> SMB Sicherheitseinstellungen pro Benutzer.
+> Die Benutzerebene für SMB-Freigaben festlegen
 >
-> + Wenn **Ja** wird die SMB Sicherheit bei allen Freigaben aktiviert. Bestimmt welcher Benutzer Nur Lese oder Lese-/Schreibzugriff bzw. keinen Zugriff hat.
-> + Wenn **Versteckt**  wird die SMB Sicherheit bei Freigaben aktiviert und werden die Freigaben werden verborgen. Bestimmt welcher Benutzer Nur Lese oder Lese-/Schreibzugriff bzw. keinen Zugriff hat.
-> + Wenn **Nein** wird die SMB Sicherheit deaktiviert. SMB/NFS und ISO Freigaben werden Öffenlich mit Lese-/Schreibzugriff freigegeben.
+> + Auf **Deaktiviert** stellen, um SMB-Freigaben zu deaktivieren.
+> + Auf **Öffentlich** stellen, damit Datenträger, entfernte SMB/NFS-Freigaben und ISO-Einbindungen öffentlich mit Lese- und Schreibzugriff freigegeben werden.
+> + Auf **Privat** stellen, um SMB-Sicherheit auf SMB-Freigaben zu aktivieren. Stelle den Zugriff nach Benutzer ein, um den Zugriff zu erlauben und um festzulegen, ob der Benutzer auf die Freigabe schreiben darf oder nicht.
+> + Auf **Privat versteckt** stellen, um SMB-Sicherheit für SMB-Freigaben zu aktivieren, die nicht sichtbar sein sollen. Stelle den Zugriff nach Benutzer ein, um den Zugriff zu erlauben und um festzulegen, ob der Benutzer auf die Freigabe schreiben darf oder nicht.
 :end
 
 :ud_settings_case_sensitive_plug:
-> Controls whether filenames are case-sensitive.
+> Steuert, ob bei Dateinamen zwischen Groß- und Kleinschreibung unterschieden wird.
 >
-> The default setting of **Auto** allows clients that support case sensitive filenames (Linux CIFSVFS) to tell the Samba server on a per-packet basis that they wish to access the file system in a case-sensitive manner (to support UNIX case sensitive semantics). No Windows system supports case-sensitive filenames so setting this option to auto is the same as setting it to No for them; however, the case of filenames passed by a Windows client will be preserved. This setting can result in reduced performance with very large directories because Samba must do a filename search and match on passed names.
+> Die Standardeinstellung **Auto** ermöglicht es Clients, die Groß-/Kleinschreibung bei Dateinamen unterstützen (Linux CIFSVFS), dem Samba-Server auf einer paketweisen Basis mitzuteilen, dass sie auf das Dateisystem unter Berücksichtigung der Groß-/Kleinschreibung zugreifen möchten (um die Semantik der Groß-/Kleinschreibung von UNIX zu unterstützen). Kein Windows-System unterstützt die Unterscheidung von Groß- und Kleinschreibung bei Dateinamen, so dass das Festlegen dieser Option auf auto für diese dasselbe bedeutet wie Nein; allerdings wird die Groß- und Kleinschreibung von Dateinamen, die von einem Windows-Client übergeben werden, beibehalten. Diese Einstellung kann bei sehr großen Verzeichnissen zu Leistungseinbußen führen, da Samba eine Dateinamensuche und -übereinstimmung bei übergebenen Namen durchführen muss.
 >
-> A setting of **Yes** means that files are created with the case that the client passes, and only accessible using this same case. This will speed very large directory access, but some Windows applications may not function properly with this setting. For example, if "MyFile" is created but a Windows app attempts to open "MYFILE" (which is permitted in Windows), it will not be found.
+Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Groß-/Kleinschreibung erstellt werden und nur mit dieser zugänglich sind. Dadurch wird der Zugriff auf sehr große Verzeichnisse beschleunigt, aber einige Windows-Anwendungen funktionieren mit dieser Einstellung möglicherweise nicht richtig. Wenn zum Beispiel "MeineDatei" erstellt wird, aber eine Windows-Anwendung versucht, "MEINEDATEI" zu öffnen (was in Windows erlaubt ist), wird sie nicht gefunden.
 >
-> A value of **Forced lower** is special: the case of all incoming client filenames, not just new filenames, will be set to lower-case. In other words, no matter what mixed case name is created on the Windows side, it will be stored and accessed in all lower-case. This ensures all Windows apps will properly find any file regardless of case, but case will not be preserved in folder listings.
+> Die Option **Erzwungene Kleinschreibung** ist eine Besonderheit: Die Groß-/Kleinschreibung aller eingehenden Client-Dateinamen, nicht nur neuer Dateinamen, wird auf Kleinbuchstaben gestellt. Mit anderen Worten: Egal, welcher Name mit gemischter Großschreibung auf der Windows-Seite erstellt wird, er wird in Kleinbuchstaben gespeichert und aufgerufen. Dadurch wird sichergestellt, dass alle Windows-Anwendungen jede Datei unabhängig von der Groß- und Kleinschreibung finden, aber die Groß- und Kleinschreibung wird in Ordnerauflistungen nicht beibehalten.
 :end
 
 :ud_settings_force_user_plug:
-> Es kann passieren das Berechtigungen bei SMB Freigaben nicht richtig behandelt werden. Aktivieren diese Einstellung kann unter solchen Umständen helfen.
-> Dies betrifft alle Datenträger die mit Unassigned Devices Eingebunden sind.
-> Zum Nachteil werden Linux Gruppenberechtigungen überschrieben. Wenn Sie unsicher sind ob diese Einstellung notwendig ist, lassen Sie diese aktiviert.
+> Es kann vorkommen, dass die Berechtigungen auf SMB-Freigaben nicht wie erwartet gehandhabt werden. Das Einschalten dieser Funktion kann bei diesen Berechtigungen helfen.
+> Dies gilt für alle Datenträger, die über Unassigned Devices eingehängt sind.
+> Der Nachteil ist, dass dies die Linux-Gruppenberechtigungen außer Kraft setzt. Wenn du dir nicht sicher bist, ob dies notwendig ist, lass es deaktiviert.
+:end
+
+:ud_settings_nfs_security_plug:
+> Auf **Ja** stellen, um nicht zugewiesene Datenträger mit NFS-Freigabe zu exportieren. Freigaben werden öffentlich mit Lese- und Schreibzugriff oder privat mit der von dir festgelegten Regel exportiert. Der Zugriff wird durch Berechtigungseinstellungen für Dateien und Ordner gesteuert.
 :end
 
 :ud_settings_nfs_shares_plug:
-> Wenn **Ja** werden NFS Freigaben exportiert. Freigaben werden mit Öffentlichem Lese-/Schreibzugriff oder als Private Freigaben mit den Einstellungen die von Ihnen gesetzt wurden exportiert. Der Zugriff wird mit Berechtigungseinstellungen für Dateien und Ordner gesteuert.
+> **Hinweis:** Die normale von UD verwendete Regel lautet '*(sec=sys,rw,insecure,anongid=100,anonuid=99,all_squash)'.
 :end
 
 :ud_settings_disk_pass_plug:
-> Wählen Sie den Datenträger für den ein Kennwort festgelegt werden soll. Das Kennwort ist nur für diesen Datenträger und hat keinen Einfluss auf das Array Passwort/Passphrase. Leer lassen um das Array Passwort/Passphrase zu verwenden.
+> Wähle den Datenträger aus, für den du ein Passwort festlegen möchtest. Dieses Passwort gilt nur für diesen Datenträger und hat keinen Einfluss auf das Array-Passwort/Passphrase. Lasse das Passwort leer, um das Array-Passwort/Passphrase für mit luks verschlüsselte Datenträger zu verwenden.
 :end
 
 :ud_settings_change_uuid_plug:
-> Wählen Sie den Datenträger von dem Sie die UUID ändern möchten. Nützlich, wenn ein Datenträger aus dem Array entfernt wurde und dieselbe UUID wie ein Array Datenträger hat. Der Datenträger muss nicht gemountet sein, um die UUID zu ändern.
+> Wähle den Datenträger aus, dessen UUID du ändern möchtest. Dies ist nützlich, wenn ein XFS-formatierter Datenträger aus dem Array entfernt wurde und die gleiche UUID wie ein Array-Datenträger hat. Der Datenträger muss ausgehängt sein, um die UUID zu ändern.
+>
+> **Hinweis:** Ändere nicht die UUID eines Datenträgers aus einem Pool.
 :end
 
-; Note: April 28, 2023 - 13 missing translations
-Command times=
-Disk spin down is managed by Unraid=
-Enter Pool Mount Point=
-Legacy Mount Point Compatibility=
-NFS must be enabled in Settings->NFS to enable NFS Export=
-NFS Version to use when Mounting Remote Shares=
-Refresh and Update=
-Set Pool Mount Point=
-Set the Pool Mount Point for this disk=
-Specify SMB Version when Mounting Remote Shares=
-Udev and Hotplug=
-Unraid 6.10 or later is required for NFSv4 support=
-Use only when directed for support=
+; Note: June 18, 2023 - 19 missing translations
+Command times=Befehlszeiten
+Disabled=Deaktiviert
+Disk spin down is managed by Unraid=Das Herunterfahren von Datenträgern wird durch Unraid geregelt
+Enter Pool Mount Point=Pool-Einhängepunkt eingeben
+Legacy Mount Point Compatibility=Kompatibilität von herkömmlichen Einhängepunkten
+NFS must be enabled in Settings->NFS to enable NFS Export=NFS muss unter Einstellungen->NFS aktiviert sein, um NFS-Exporte zu aktivieren
+NFS Version to use when Mounting Remote Shares=Die zu verwendende NFS-Version beim Einhängen entfernter Freigaben
+Public=Öffentlich
+Private=Privat
+Private Hidden=Privat versteckt
+Refresh and Update=Neu laden und aktualisieren
+Remote Share Mount Wait Time=Wartezeit zum Einhängen einer entfernten Freigabe
+SMB Settings=SMB-Einstellungen
+Set Pool Mount Point=Pool-Einhängepunkt festlegen
+Set the Pool Mount Point for this disk=Pool-Einhängepunkt für diesen Datenträger festlegen
+Specify SMB Version when Mounting Remote Shares=SMB-Version beim Einhängen entfernter Freigaben festlegen
+Udev and Hotplug=Udev und Hotplug
+Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 oder höher ist für die Unterstützung von NFSv4 erforderlich
+Use only when directed for support because the messages can flood the log=Nur für Support-Zwecke verwenden, da die Meldungen das Protokoll überfluten können

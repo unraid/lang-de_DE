@@ -54,6 +54,7 @@ Historical Device is=Vorheriger Datenträger ist
 Identification=Identifikation
 If this disk was pre-cleared, you will remove the pre-clear signature=Wenn der Datenträger zuvor per Pre-Clear gelöscht wurde, entfernst du damit die Pre-Clear-Signatur
 If you add the disk to the array and the pre-clear signature is removed, Unraid will go through the lengthy process of clearing the disk again=Wenn du den Datenträger zum Array hinzufügst und die Pre-Clear-Signatur entfernt wird, führt Unraid den langwierigen Löschprozess des Datenträgers erneut durch
+Invalid Configuration - Remove and Re-add=Ungültige Konfiguration - Entfernen und neu hinzufügen
 is offline=Ist Offline
 ISO File is=ISO-Datei ist
 ISO File Shares=ISO-Dateifreigaben
@@ -67,7 +68,7 @@ Mount=Einhängen
 Mount Point=Einhängepunkt
 Mounting=Einhängen
 Next=Weiter
-NFS Mount Point=NFS Einhängepunkt
+NFS Mount Point=NFS-Einhängepunkt
 NFS or ISO File Shares configured=NFS- oder ISO-Dateifreigabe
 NFS Script=NFS-Skript
 NFS Script Log=NFS-Skriptprotokoll
@@ -75,8 +76,10 @@ NFS Share=NFS-Freigabe
 NFS Shares=NFS-Freigaben
 No Remote SMB=Keine entfernte SMB-Freigabe
 No Unassigned Disks available=Keine nicht zugewiesenen Datenträger verfügbar
+Not Enabled=Nicht aktiviert
 not installed=Nicht installiert
 Note=Hinweis
+Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=Hinweis: Bei Benutzerfreigaben werden die Dateien auf Cache- und Pool-Datenträgern nicht in der Root-Freigabe angezeigt
 offilne=Offline
 You must enable NFS in Settings->NFS to mount NFS shares=Du musst NFS unter Einstellungen->NFS aktivieren, um NFS-Freigaben einzuhängen
 You must enable SMB in Settings->SMB to mount SMB shares=Du musst SMB unter Einstellungen->SMB aktivieren, um SMB-Freigaben einzuhängen
@@ -85,7 +88,7 @@ Partition and Format Disk=Datenträger partitionieren und formatieren
 Password=Passwort
 Read only=Nur Lesen
 Reboot=Neustarten
-Refresh Disks and Configuration=Datenträger und Konfiguration aktualisieren
+Refresh Disks and Configuration=Datenträger und Konfiguration neu laden
 Remember your password It cannot be recovered=Merke dir dein Passwort, es kann nicht wiederhergestellt werden
 Remote Share is=Entfernte Freigabe ist
 Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=Das Einbinden von entfernten Freigaben hängt von einer stabilen und zuverlässigen Netzwerkverbindung ab und das ist schwer zu realisieren
@@ -126,6 +129,8 @@ Use caution when gathering shares into one Root Share=Sei vorsichtig, wenn du Fr
 Used=Benutzt
 User and Pool Shares=Benutzer- und Pool-Freigaben
 User Shares=Benutzerfreigaben
+User and Pool Shares will include all files in User Shares, Cache and Pool Devices=Benutzer- und Pool-Freigaben umfassen alle Dateien in Benutzerfreigaben, Cache- und Pool-Datenträgern
+User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=Benutzerfreigaben ermöglichen den Zugriff auf Benutzerfreigaben, aber die Root-Freigabe enthält keine Dateien von Cache- und Pool-Datenträgern
 Username=Benutzername
 View Device Script Log=Datenträger-Skriptprotokoll anzeigen
 View ISO File Script Log=ISO-Datei-Skriptprotokoll anzeigen
@@ -140,6 +145,7 @@ You must enable the Destructive Mode in UD Settings before you can Format this d
 You WILL have problems if you do=Du WIRST Probleme bekommen, wenn du das dust
 You will need to enter credentials to list the shares=Du musst Zugangsdaten eingeben, um die Freigaben anzuzeigen
 ZFS Pool Name=ZFS-Poolname
+ZFS Volume=ZFS-Volumen
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices wird kurz UD genannt**
@@ -197,4 +203,4 @@ ZFS Pool Name=ZFS-Poolname
 > Sei vorsichtig bei der Verwendung der Bezeichnungen /dev/sdX oder devX, da diese sich nach einem Neustart ändern können. Verwende am besten die im UD-Skript übergebenen Werte für sdX (DEVICE) und devX (UD_DEVICE).
 :end
 
-; Note: April 29, 2023 - 67 missing translations
+; Note: June 18, 2023 - 73 missing translations

@@ -75,7 +75,7 @@ Sector Numbers=Sektornummern
 Show Sector Numbers=Sektornummern anzeigen
 Start Check=Prüfung starten
 Start point for check=Startpunkt für die Prüfung
-Write Corrections to Parity=Korrekturen zur Parität schreiben
+Write Corrections to Parity=Korrekturen auf Parität schreiben
 
 ; PHP file messages
 
@@ -104,7 +104,7 @@ Start a correcting parity check=Eine korrigierende Paritätsprüfung starten
 Start a parity check with scheduled settings=Eine korrigierende Paritätsprüfung mit geplanten Einstellungen starten
 Starting Shutdown=Starte mit dem Herunterfahren
 Unclean shutdown detected=Unsauberes Herunterfahren erkannt
-Unknown action=Unbekannter Vorgang
+Unknown action=Unbekannte Aktion
 Unrecognized option=Nicht berücksichtigte Option
 Usage=Benutzung
 where action is one of=Wobei die Aktion eine der folgenden ist
@@ -285,9 +285,9 @@ Method used to specify start and stop points=Methode zur Angabe von Start- und E
 :end
 
 :parity_tune_notify_plug:
-> Wenn du diese Option auf <strong>Ja</strong> setzt, erhältst du jedes Mal eine Benachrichtigung, wenn das Plugin einen Array-Vorgang unterbricht oder wieder aufnimmt.<br>Wenn du solche Benachrichtigungen nicht erhalten möchtest, lasse diese Option auf <strong>Nein</strong> gesetzt.<br>Die Benachrichtigung wird als Nachricht der Kategorie <strong>Hinweis</strong> an die Ziele gesendet, die unter <a href="Settings/Notifications">Einstellungen->Benachrichtigungs-Einstellungen festgelegt wurden.
->Die Benachrichtigung wird als Nachricht der Kategorie **Hinweis** an die unter *<a href="Settings/Notifications">Einstellungen->Benachrichtigungs-Einstellungen</a>* angegebenen Ziele gesendet.
->Die Benachrichtigung wird als Nachricht der Kategorie **Hinweis** an die unter *<a href="Settings/Notifications">Einstellungen->Benachrichtigungs-Einstellungen</a>* angegebenen Ziele gesendet.
+> Wenn du diese Option auf <strong>Ja</strong> setzt, erhältst du jedes Mal eine Benachrichtigung, wenn das Plugin einen Array-Vorgang unterbricht oder wieder aufnimmt.<br>Wenn du solche Benachrichtigungen nicht erhalten möchtest, lasse diese Option auf <strong>Nein</strong> gesetzt.<br>Die Benachrichtigung wird als Nachricht der Kategorie <strong>Hinweis</strong> an die Ziele gesendet, die unter <a href="Settings/Notifications">Einstellungen->Benachrichtigungseinstellungen festgelegt wurden.
+>Die Benachrichtigung wird als Nachricht der Kategorie **Hinweis** an die unter *<a href="Settings/Notifications">Einstellungen->Benachrichtigungseinstellungen</a>* angegebenen Ziele gesendet.
+>Die Benachrichtigung wird als Nachricht der Kategorie **Hinweis** an die unter *<a href="Settings/Notifications">Einstellungen->Benachrichtigungseinstellungen</a>* angegebenen Ziele gesendet.
 :end
 
 :parity_tune_allops_plug:
@@ -308,101 +308,101 @@ Method used to specify start and stop points=Methode zur Angabe von Start- und E
 :end
 
 :parity_tune_warn_plug:
-> This value indicates how close to the value set for the Warning Disk Temperature Threshold a disks temperature is allowed to reach before a **pause** of a running array operation is triggered.<br>You normally want a small positive value to trigger the pause before Unraid gets around to sending you a notification that the temperature warning threshold has been reached for a disk.<br><br>If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.<br><br>If there is no active array operation then no action will be taken even if disk temperatures exceed the specified threshold.<br><br> If there is no running array operation then no action will be taken
+> Dieser Wert gibt an, wie nahe die Datenträgertemperatur an den Schwellenwert für hohe Datenträgertemperatur kommen darf, bevor ein laufender Array-Vorgang **pausiert** wird.<br>Üblicherweise ist das ein kleiner positiven Wert, um die Pause auszulösen, bevor Unraid dir eine Benachrichtigung schickt, dass die hohe Temperaturschwelle für einen Datenträger erreicht wurde.<br><br>Wenn für einen einzelnen Datenträger ein bestimmter Schwellenwert definiert wurde, wird dieser Wert verwendet. Ist dies nicht der Fall, wird die globale Einstellung verwendet.<br><br>Wenn kein aktiver Array-Vorgang stattfindet, werden keine Maßnahmen ergriffen, selbst wenn die Datenträgertemperaturen den angegebenen Schwellenwert überschreiten.<br><br> Wenn kein Array-Vorgang läuft, werden keine Maßnahmen ergriffen
 :end
 
 :parity_tune_low_plug:
-> This value indicates how much below the warning the temperature threshold of a drive must reach before a **resume** of an array operation is issued.<br>You need to get a good balance between array operations being resumed too soon (and thus quickly reaching the level to initiate another pause) and wasting a lot of time.<br><br>If a disk ever gets spun down the temperature is not readily available so it will be assumed that this criteria has been met<br><br>If there is no paused array operation then no action will be taken
+> Dieser Wert gibt an, wie weit unter den Schwellwert für hohe Datenträgertemperatur die Temperatur fallen muss, bevor der Array-Vorgang **fortgesetzt** wird.<br>Du musst einen guten Kompromiss finden, um zu verhindern, dass Array-Vorgänge zu früh wieder fortgesetzt werden (und damit wieder schnell das Stadium erreicht wird, das eine weitere Pause auslöst) und viel Zeit verschwendet wird.<br><br>Wenn ein Datenträger jemals heruntergefahren wird, ist die Temperatur nicht unmittelbar verfügbar, so dass davon ausgegangen wird, dass dieses Kriterium erfüllt ist.<br><br>Wenn es keinen pausierten Array-Vorgang gibt, wird keine Aktion durchgeführt.
 :end
 
 :parity_tune_temp_notify_plug:
-> Setting this option to <strong>Yes</strong> means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to <strong>No</strong>.    The notifcation is sent as a <strong>Notice</strong> category message to the targets specified under <a href="Settings/Notifications">Settings->Notification Settings
-> Setting this option to **Yes** means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to **No**.    The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
-> Setting this option to **Yes** means that you will be sent a notification every time the plugin Pauses or Resumes an array operation due to the temperature of your drives.<br>If you would rather not get such notifications then leave this option set to **No**.    The notification is sent as a **Notice** category message to the targets specified under *<a href="Settings/Notifications">Settings->Notification Settings</a>*.
+> Wenn du diese Option auf <strong>Ja</strong> stellst, erhältst du jedes Mal eine Benachrichtigung, wenn das Plugin einen Array-Vorgang aufgrund der Temperatur deiner Datenträger pausierst oder wieder fortsetzt.<br>Wenn du lieber keine dieser Benachrichtigungen erhalten möchtest, stelle diese Option auf <strong>Nein</strong>. Die Benachrichtigung wird als Nachricht der Kategorie <strong>Hinweis</strong> an die in den <a href="Settings/Notifications">Einstellungen->Benachrichtigungseinstellungen angegebenen Ziele gesendet.
+> Wenn du diese Option auf <strong>Ja</strong> stellst, erhältst du jedes Mal eine Benachrichtigung, wenn das Plugin einen Array-Vorgang aufgrund der Temperatur deiner Datenträger pausierst oder wieder fortsetzt.<br>Wenn du lieber keine dieser Benachrichtigungen erhalten möchtest, stelle diese Option auf <strong>Nein</strong>. Die Benachrichtigung wird als Nachricht der Kategorie <strong>Hinweis</strong> an die in den *<a href="Settings/Notifications">Einstellungen->Benachrichtigungseinstellungen</a>* angegebenen Ziele gesendet.
+> Wenn du diese Option auf <strong>Ja</strong> stellst, erhältst du jedes Mal eine Benachrichtigung, wenn das Plugin einen Array-Vorgang aufgrund der Temperatur deiner Datenträger pausierst oder wieder fortsetzt.<br>Wenn du lieber keine dieser Benachrichtigungen erhalten möchtest, stelle diese Option auf <strong>Nein</strong>. Die Benachrichtigung wird als Nachricht der Kategorie <strong>Hinweis</strong> an die in den *<a href="Settings/Notifications">Einstellungen->Benachrichtigungseinstellungen</a>* angegebenen Ziele gesendet.
 :end
 
 :parity_tune_shutdown_plug:
-> If set to **Yes** then automatically start a tidy shutdown of the server if any disk in the array or a cache pool reach the defined temperature threshold.
-> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
+> Wenn die Option auf **Ja** gestellt ist, wird automatisch ein geordnetes Herunterfahren des Servers eingeleitet, wenn ein Datenträger im Array oder ein Cache-Pool den festgelegten Temperaturschwellenwert erreicht.
+> Die Temperaturen werden anhand der Schwellenwerte überprüft, die für **kritische** Datenträgertemperaturen festgelegt wurden. Wenn für einen einzelnen Datenträger eine kritische Temperatur definiert wurde (festlegbar durch Klicken auf den Datenträger im Start-Reiter), wird dieser Wert verwendet. Falls nicht, werden die globalen Einstellungen (*<a href="Settings/DisplaySettings">Einstellungen->Anzeigeeinstellungen</a>) verwendet.
 >
->This option intended to be triggered if for some reason the system's cooling system is insufficient or if it has failed in some way. The idea is that you want to do a tidy shutdown before the disks become damaged due to overheating badly.   The shutdown that is triggered is functionally the same as would be the case of pressing the Shutdown button on the Main page of the unRaid GUI.  If notifications are enabled then you are sent one to indicate that this has happened.
+>Diese Option soll ausgelöst werden, wenn das Kühlsystem des Systems aus irgendeinem Grund unzureichend ist oder auf irgendeine Weise versagt hat. Der Gedanke dahinter ist, dass ein geordnetes Herunterfahren sinnvoll ist, bevor die Datenträger durch eine starke Überhitzung beschädigt werden. Der ausgelöste Prozess des Herunterfahrens, ist funktional derselbe wie das Drücken des Herunterfahren-Buttons auf der Startseite der unRaid-GUI. Wenn Benachrichtigungen aktiviert sind, erhältst du eine Benachrichtigung, dass dies stattgefunden hat.
 >
->When the server is started up again after such a shutdown then when the array is started you will be notified that a temperature related shutdown happened in case you were not aware of the reason.
+>Wenn der Server nach einem solchen Herunterfahren wieder hochgefahren wird, wirst du beim Starten des Arrays darüber informiert, dass eine temperaturbedingte Abschaltung stattgefunden hat, falls dir der Grund dafür nicht bekannt war.
 >
->**CAUTION:**  If the array is stopped while an array operation is incomplete then the progress so far is lost and it can only be restarted from the beginning.
-> The temperatures are checked against the thresholds set for the **Critical** disk temperature levels. If a Critical temperature has been defined for an individual drive (accessed by clicking on the drive in the Main tab) then this is the value used.  If not the global setting (*<a href="Settings/DisplaySettings">Settings->Display Settings</a>) will be used.
+>**ACHTUNG:** Wenn das Array gestoppt wird, während ein Array-Vorgang noch nicht abgeschlossen ist, geht der bisherige Fortschritt verloren und es kann nur von Anfang an neu gestartet werden.
+> Die Temperaturen werden anhand der Schwellenwerte überprüft, die für **kritische** Datenträgertemperaturen festgelegt wurden. Wenn für einen einzelnen Datenträger eine kritische Temperatur definiert wurde (festlegbar durch Klicken auf den Datenträger im Start-Reiter), wird dieser Wert verwendet. Falls nicht, werden die globalen Einstellungen (*<a href="Settings/DisplaySettings">Einstellungen->Anzeigeeinstellungen</a>) verwendet.
 :end
 
 :parity_tune_critical_plug:
-> This value indicates how close to the value set for the Critical Disk Temperature Threshold a disks temperature is allowed to reach before a shutdown of the server is triggered.
-> You may want a small positive value to trigger the pause before unRaid gets around to sending you a notification that the temperature critical threshold has been reached for a disk.
+> Dieser Wert gibt an, wie nahe die Datenträgertemperatur an den Schwellenwert für kritische Datenträgertemperatur kommen darf, bevor ein Herunterfahren des Servers ausgelöst wird.
+> Üblicherweise ist das ein kleiner positiven Wert, um die Pause auszulösen, bevor Unraid dir eine Benachrichtigung schickt, dass die kritische Temperaturschwelle für einen Datenträger erreicht wurde.
 >
->If an explicit threshold has been defined for an individual drive then this is the value used.  If not the global setting will be used.
+>Wenn für einen einzelnen Datenträger ein bestimmter Schwellenwert definiert wurde, wird dieser Wert verwendet. Ist dies nicht der Fall, wird die globale Einstellung verwendet.
 :end
 
 :parity_tune_logging_plug:
-> Control the level of detail in entries.  The level of detail can be increased to help with debugging any problems using this plugin might encounter.
+> Lege den Detailgrad der Einträge fest. Der Detailgrad kann erhöht werden, um die Fehlersuche bei Problemen zu erleichtern, die bei der Verwendung dieses Plugins auftreten können.
 >
->Messages by this plugin are identified by the fact that they are shown as coming from  
+>Meldungen von diesem Plugin sind daran zu erkennen, dass sie als vom
 >* **Parity Check Tuning**  
 >* **Parity Problems Assistant**  
->depending on which part of the plugin generated the messages
+>kommend angezeigt werden, je nachdem, welcher Teil des Plugins die Meldungen erzeugt hat
 >
->With the **Basic** option set these will only be a small number of messages indicating that this plugin has taken some action.
+>Mit **Basic** werden nur wenige Meldungen angezeigt, die darauf hinweisen, dass das Plugin eine Aktion durchgeführt hat.
 >
->Setting this option to **Debug** will result in additional entries being written to the syslog that give more information on what is happening when this plugin is running. They show how some of the internal operation of how the plugin is functioning. These additional entries are identified by the fact that they will have the word **DEBUG** added to the start of messages.  Some users (particularly those who have not used this plugin before) may like to use it to see more detail on how this plugin operates, but it is not expected that this option will be left enabled in normal running.
+>Wenn du diese Option auf **Debug** stellst, werden zusätzliche Einträge in das Systemprotokoll geschrieben, die mehr Informationen darüber liefern, was passiert, wenn dieses Plugin läuft. Sie zeigen, wie einige der internen Vorgänge des Plugins funktionieren. Diese zusätzlichen Einträge sind daran zu erkennen, dass das Wort **DEBUG** am Anfang der Meldung steht. Einige Benutzer (insbesondere diejenigen, die dieses Plugin noch nicht verwendet haben) möchten vielleicht mehr Details über die Funktionsweise des Plugins sehen, aber es wird nicht erwartet, dass diese Option im normalen Betrieb aktiviert bleibt.
 >
->Finally there is an additional setting of **Testing** that is only intended for use by the developer but is left here for convenience.  It will write even more verbose messages to the syslog but these are not likely to be interesting (or even meaningful) to the average user.  These messages will have the word **TESTING** added to the start of messages. You should only run this level of logging if you have been asked to as it can quickly fill up your syslog if you are not careful.
+>Schließlich gibt es noch die zusätzliche Einstellung **Testing**, die nur für den Entwickler gedacht ist, hier aber der Einfachheit halber so belassen wird.  Hiermit werden noch mehr ausführliche Meldungen in das Systemprotokoll geschrieben, die aber für den durchschnittlichen Benutzer wahrscheinlich nicht interessant (oder sogar aussagekräftig) sind. Diese Meldungen werden mit dem Wort **TESTING** am Anfang der Meldungen versehen. Du solltest diese Protokollierungsstufe nur verwenden, wenn du dazu aufgefordert wirst, da sie dein Systemprotokoll schnell füllen kann, wenn du nicht vorsichtig bist.
 >
->Feedback is welcome as to whether it is worth introducing any intermediate option that outputs information type messages on the plugin's activity, while omitting some of the lower level detail that is aimed at diagnosing any problems that might be encountered while the plugin is running. 
+>Wir freuen uns über Rückmeldungen, ob es sich lohnen würde, eine Zwischenoption einzuführen, die Informationsmeldungen über die Aktivität des Plugins ausgibt, während einige Details der tieferen Ebene weggelassen werden, die der Diagnose von Problemen dienen, die während der Ausführung des Plugins auftreten könnten.
 >
->If you have Testing mode set for the logging then you can choose where you want log messages to be recorded.  The default is the standard system syslog and this is the inly option allowed in Basic mode.  The syslog is held in RAM so does not cause excessive writes to the flash drive. 
->To facilitate with debugging problems then in Testing mode you can log the messages to the flash drive either instead of the syslog or in addition to the syslog. The resulting parityTuning.log file will be stored in the plugin's folder on the flash drive and providing this file to the developer will help with diagnosing any unexpected behaviour you encounter.
+>Wenn du den Testmodus für die Protokollierung aktiviert hast, kannst du wählen, wo die Protokollmeldungen gespeichert werden sollen. Die Standardeinstellung ist der Standard für das Systemprotokoll und dies ist die einzig mögliche Option im Basismodus. Das Systemprotokoll wird im RAM gespeichert, so dass keine übermäßigen Schreibvorgänge auf dem Flash-Datenträger verursacht werden. 
+>Um die Fehlersuche zu erleichtern, kannst du im Testmodus die Meldungen auf dem Flash-Datenträger protokollieren, entweder anstelle des Systemprotokolls oder zusätzlich zum Systemprotokoll. Die daraus resultierende Datei parityTuning.log wird im Plugin-Ordner auf dem Flash-Datenträger gespeichert, und wenn du diese Datei dem Entwickler zur Verfügung stellst, hilft dies bei der Diagnose eines unerwarteten Verhaltens.
 :end
 
 :parityProblems_type_plug:
-> Select the way you want to specify the start and end points.
+> Wähle aus, wie du den Start- und Endpunkt festlegen möchtest.
 >
-> You are likely to want to use absolute sector numbers if there are ones that have previously been listed in the syslog as being an error.
-> Using absolute sector numbers tends to be more precise and lead to shorter tests but can be more effort to set up.
+> Du wirst wahrscheinlich absolute Sektornummern verwenden wollen, wenn es solche gibt, die zuvor im Systemprotokoll als Fehler angezeigt wurden.
+> Die Verwendung absoluter Sektornummern ist in der Regel präziser und führt zu kürzeren Tests, kann aber mehr Aufwand beim Einrichten bedeuten.
 >
-> The alternative is to use percentages.  When using percentages then the sector numbers these represent are calculated as percentages of the largest parity disk.
+> Die Alternative ist die Verwendung von Prozentsätzen. Bei der Verwendung von Prozentsätzen werden die Sektornummern, die diese darstellen, als Prozentsätze des größten Paritätsdatenträger berechnet.
 :end
 
 :parityProblems_start_plug:
-> Select where you want the check to be started from.  You can specify the start point as either a sector number or as a percentage of the size of the largest parity disk.
+> Wähle aus, ab welchem Punkt die Prüfung gestartet werden soll. Du kannst den Startpunkt entweder als Sektornummer oder als Prozentsatz der Größe des größten Paritätsdatenträger angeben.
 >
-> Specifying absolute sectors is likely to be of particular use when you have extracted the sector numbers from the *syslog* when the original parity check reported errors on those sectors. In a future version of this plugin the plugin may be enhanced to automatically extract such sectors from the *syslog* and give you a drop down list but this feature is not yet implemented.
+> Die Angabe absoluter Sektoren ist wahrscheinlich von besonderem Nutzen, wenn du die Sektornummern aus dem *Systemprotokoll* entnommen hast, als die ursprüngliche Paritätsprüfung Fehler in diesen Sektoren meldete. In einer zukünftigen Version dieses Plugins könnte das Plugin so erweitert werden, dass es solche Sektoren automatisch aus dem *Systemprotokoll* ausliest und dir eine Auswahlliste zur Verfügung stellst, aber diese Funktion ist noch nicht implementiert.
 >
-> In practice for technical reasons the check may start slightly earlier than the point you specify, but this will only be by a small amount.
+> In der Praxis kann es aus technischen Gründen vorkommen, dass die Prüfung etwas vor dem von dir angegebenen Punkt beginnt, aber nur mit einen kleinen Abstand.
 :end
 
 :parityProblems_end_plug:
-> Select where you want the check to be ended.  You can specify the start point as either a sector number or as a percentage of the size of the largest parity disk.
+> Wähle aus, ab welchem Punkt die Prüfung gestoppt werden soll. Du kannst den Endpunkt entweder als Sektornummer oder als Prozentsatz der Größe des größten Paritätsdatenträger angeben.
 >
-> In practice for technical reasons the check may end later than the point you specify as a check is only made once a minute to see if the end point has been reached.
+> In der Praxis kann es aus technischen Gründen vorkommen, dass die Prüfung etwas nach dem von dir angegebenen Punkt stoppt, da nur einmal pro Minute geprüft wird, ob der Endpunkt erreicht ist.
 :end
 
 :parityProblems_correct_plug:
-> Specify whether you want to attempt to update parity to correct any error found,
-> or just do a read test to see if any parity errors are reported.
+> Gib an, ob du versuchen willst, die Parität zu aktualisieren, um einen gefundenen Fehler zu korrigieren,
+> oder nur ein Lesetest durchführst, um zu sehen, ob Paritätsfehler gemeldet werden.
 :end
 
 :parityProblems_correct_plug:
-> Specify whether you want to attempt to update parity to correct any error found,
-> or just do a read test to see if any parity errors are reported.
+> Gib an, ob du versuchen willst, die Parität zu aktualisieren, um einen gefundenen Fehler zu korrigieren,
+> oder nur ein Lesetest durchführst, um zu sehen, ob Paritätsfehler gemeldet werden.
 :end
 
 :parityProblems_check_plug:
-> When you click on the option to **Start Check** then a partial check is initiated that
-> will cover the start and end points that you have specified.  It will be a correcting check 
-> if the option to **Write Corrections** is set to **Yes**, and a read-check otherwise.
+> Wenn du auf die Option **Prüfung starten** klickst, wird eine Teilprüfung veranlasst,
+> die die von dir angegebenen Start- und Endpunkte abdeckt. Es handelt sich um eine korrigierende Prüfung,
+> wenn die Option **Korrekturen schreiben** auf **Ja** gestellt ist, andernfalls handelt es sich um eine Leseprüfung.
 :end
 
 :parityProblems_sectors_plug:
-> When you click on the option to **Show Sector Numbers** then the a dialog will be shown
-> that extracts entries from the syslog that have shown any sectors for which any parity
-> sector is displayed and whether the it was being corrected or is a parity error.
+> Wenn du auf die Option **Sektornummern anzeigen** klickst, wird ein Dialogfeld angezeigt,
+> in dem Einträge aus dem Systemprotokoll ausgelesen werden, in denen Sektoren angezeigt werden, für die 
+> ein Paritätssektor angezeigt wird und in dem angegeben wird, ob dieser korrigiert wurde oder ein Paritätsfehler vorliegt.
 :end
 
 ; Note: April 29, 2023 - 144 missing translations
