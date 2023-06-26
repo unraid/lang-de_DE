@@ -58,6 +58,11 @@ d> **Hinweise:** Das Plugin "Unassigned Devices Plus" muss installiert sein, um 
 >
 :end
 
+:ud_settings_remote_share_wait_plug:
+> This is the time in seconds to wait before mounting remote shares when the array is first started.
+>
+:end
+
 :ud_settings_specify_smb_vers_plug:
 > Auf **Nein** stellen, damit Unassigned Devices zuerst versucht entfernte Freigaben einzuhängen, indem es die SMB-Version beim Einhängen nicht festlegt.
 >
@@ -111,6 +116,10 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 
 :ud_settings_nfs_security_plug:
 > Auf **Ja** stellen, um nicht zugewiesene Datenträger mit NFS-Freigabe zu exportieren. Freigaben werden öffentlich mit Lese- und Schreibzugriff oder privat mit der von dir festgelegten Regel exportiert. Der Zugriff wird durch Berechtigungseinstellungen für Dateien und Ordner gesteuert.
+:end
+
+:ud_settings_nfs_security_plug:
+> Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
 :end
 
 :ud_settings_nfs_shares_plug:
