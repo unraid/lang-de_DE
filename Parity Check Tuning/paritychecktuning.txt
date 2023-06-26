@@ -137,7 +137,7 @@ will be started=Wird gestartet
 A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week=Ein crontab-Eintrag sollte 5 durch Leerzeichen getrennte Werte enthalten, die die Minuten, die Stunde, den Tag des Monats, den Monat und den Wochentag angeben
 At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=Derzeit gibt es keinen Mechanismus, um das ständige Anwachsen dieser Datei zu verhindern, so dass es an dir liegt, dies manuell zu kontrollieren
 Are you sure you have not got these the wrong way around=Bist du sicher, dass du das nicht falsch herum gemacht hast?
-Before you can set this option to Yes you must first have enabled system notifications=Bevor du diese Option auf "Ja" setzen kannst, musst du zunächst die Systembenachrichtigungen aktivieren
+Before you can set this option to Yes you must first have enabled system notifications=Bevor du diese Option auf "Ja" stellen kannst, musst du zunächst die Systembenachrichtigungen aktivieren
 Click on the crontab link to get more details on valid formats=Klicke auf den Crontab-Link, um weitere Details zu gültigen Formaten zu erhalten
 Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=Der Debug-Modus kann häufig zusätzliche Protokolleinträge in der Systemprotokoll-Datei erzeugen. Lasse den Debug-Modus daher nicht aktiviert, wenn du nicht an diesen Informationen interessiert bist
 Debug mode is intended to give users a feel for when the plugin is active=Der Debug-Modus soll Benutzern ein Gefühl dafür vermitteln, wann das Plugin aktiv ist
@@ -256,7 +256,7 @@ Method used to specify start and stop points=Methode zur Angabe von Start- und E
 :parity_tune_manual_plug:
 > Sollen manuell gestartete Paritätsprüfungen auch in Inkrementen durchgeführt werden?
 >
-> Es ist sehr wahrscheinlich, dass du möchtest, dass eine solche Prüfung ohne Unterbrechung bis zum Ende durchgeführt wird. In diesem Fall solltest du diese Option auf **Nein** setzen.
+> Es ist sehr wahrscheinlich, dass du möchtest, dass eine solche Prüfung ohne Unterbrechung bis zum Ende durchgeführt wird. In diesem Fall solltest du diese Option auf **Nein** stellen
 > Wenn diese Option auf **Ja** gestellt ist und du eine Paritätsprüfung manuell von der Hauptseite aus startest und dann die Prüfung manuell pausierst, wird die Prüfung in Inkrementen zwischen den geplanten Zeiten durchgeführt, bis die Paritätsprüfung abgeschlossen ist.
 :end
 
