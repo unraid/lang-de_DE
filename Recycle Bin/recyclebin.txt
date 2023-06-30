@@ -15,7 +15,7 @@ Recycle Bin=Papierkorb
 Recycle Bin Log=Papierkorb-Protokoll
 Recycle Bin parameters=Papierkorb-Parameter
 Recycle Bin Total Size=Gesamtgröße des Papierkorbs
-Refresh the Recycle Bin page=Papierkorbseite aktualisieren
+Refresh the Recycle Bin page=Papierkorbseite neu laden
 Remove Aged Files=Alte Dateien entfernen
 Remove aged files from the Recycle Bin=Alte Dateien aus dem Papierkorb entfernen
 Remove Aged Files Notification=Benachrichtigung beim Entfernen alter Dateien
@@ -61,7 +61,7 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 
 :recycle_bin_parameters_plug:
 > Weitere Parameter für den Papierkorb. Im Folgenden findest du Optionen, mit denen du die Dateistruktur der gelöschten Dateien kontrollieren kannst.
-> Gebe die Parameter in eine Liste ohne Leerzeichen oder Kommas dazwischen ein.
+> Gib die Parameter in eine Liste ohne Leerzeichen oder Kommas dazwischen ein.
 > Die Reihenfolge der Parameter wirkt sich auf die Dateistruktur im Papierkorb aus.
 > Wenn du dieses Feld leer lässt, werden alle gelöschten Dateien ohne Pfadangaben im Papierkorb abgelegt.
 >

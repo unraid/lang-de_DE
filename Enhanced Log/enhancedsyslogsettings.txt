@@ -43,47 +43,47 @@ Other Highlight Color=Farbe für Hervorhebungen von anderen Meldungen
 :end
 
 :enhanced_log_enable_error_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Error** (Fehler) Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Error** (Fehler) Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_minor_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Minor Issues** (nicht kritischen Fehlern) im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Minor Issues** (nicht kritischen Fehlern) im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_limetch_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Lime Tech** Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Lime Tech** Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_array_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Array**-Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Array**-Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_system_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **System**-Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **System**-Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_file_system_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **File System** (Dateisystem) im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **File System** (Dateisystem) im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_drive_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Drive Related** (Datenträger) Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Drive Related** (Datenträger) Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_network_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Network** (Netzwerk) Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Network** (Netzwerk) Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_login_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Login** (Anmeldung) Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Login** (Anmeldung) Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_emhttp_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **emhttp**-Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **emhttp**-Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhanced_log_enable_other_plug:
-> Auf **Ja** setzen, um die Hervorhebung von **Other** (anderen) Meldungen im erweiterten Systemprotokoll zu aktivieren.
+> Auf **Ja** stellen, um die Hervorhebung von **Other** (anderen) Meldungen im erweiterten Systemprotokoll zu aktivieren.
 :end
 
 :enhancd_log_default_plug:

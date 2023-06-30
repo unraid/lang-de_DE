@@ -3,7 +3,7 @@
 30 qemu XHCI=3.0 (qemu XHCI)
 9p Mode=9p-Modus
 Allocation=Zuweisung
-and if using graphics device passthrough it too needs UEFI=und wenn Passthrough von der Grafikkarten verwendet wird, wird ebenso UEFI benötigt
+and if using graphics device passthrough it too needs UEFI=Und wenn die Durchleitung (Passthrough) von der Grafikkarten verwendet wird, wird ebenso UEFI benötigt
 Are you sure=Bist du sicher?
 Array must be started to view Virtual Machines=Das Array muss **gestartet** sein, um die Virtuelle Maschinen zu sehen
 Autostart=Autostart
