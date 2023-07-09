@@ -3,24 +3,43 @@ Auto Mount USB Devices=USB-Datenträger automatisch einhängen
 Change Disk UUID=Datenträger-UUID ändern
 Change UUID=UUID ändern
 Change Disk UUID=Datenträger-UUID ändern
+Command times=Befehlszeiten
 Common Script=Allgemeines Skript
 Common Settings=Allgemeine Einstellungen
 Destructive Mode=Destruktiver Modus
+Disabled=Deaktiviert
+Disk spin down is managed by Unraid=Das Herunterfahren von Datenträgern wird durch Unraid geregelt
 Enable NFS export=NFS-Export einschalten
 Enable SMB Security=SMB-Sicherheit aktivieren
 Enter Disk Password=Datenträgerpasswort eingeben
+Enter Pool Mount Point=Pool-Einhängepunkt eingeben
+Legacy Mount Point Compatibility=Kompatibilität von herkömmlichen Einhängepunkten
 Mount SSDs with discard option=SSD mit "Discard"-Option einhängen
 NFS Security=NFS-Sicherheit
 NFS Settings=NFS-Einstellungen
+NFS must be enabled in Settings->NFS to enable NFS Export=NFS muss unter Einstellungen->NFS aktiviert sein, um NFS-Exporte zu aktivieren
+NFS Version to use when Mounting Remote Shares=Die zu verwendende NFS-Version beim Einhängen entfernter Freigaben
+Public=Öffentlich
+Private=Privat
+Private Hidden=Privat versteckt
+Refresh and Update=Neu laden und aktualisieren
+Remote Share Mount Wait Time=Wartezeit zum Einhängen einer entfernten Freigabe
 Rule=Regel
+SMB Settings=SMB-Einstellungen
 Select Disk=Datenträger auswählen
 Set Encrypted Disk Password=Passwort für verschlüsselten Datenträger festlegen
 Set Password=Passwort festlegen
+Set Pool Mount Point=Pool-Einhängepunkt festlegen
+Set the Pool Mount Point for this disk=Pool-Einhängepunkt für diesen Datenträger festlegen
 Set the disk Password=Datenträgerpasswort festlegen
+Specify SMB Version when Mounting Remote Shares=SMB-Version beim Einhängen entfernter Freigaben festlegen
 Spin down disks=Datenträger herunterfahren
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Plugin "Unassigned Devices Plus" muss installiert sein, um den Destruktiven Modus zu aktivieren
 to SMB share config=zur SMB-Freigabekonfiguration
+Udev and Hotplug=Udev und Hotplug
 Unassigned Devices=Unassigned Devices
+Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 oder höher ist für die Unterstützung von NFSv4 erforderlich
+Use only when directed for support because the messages can flood the log=Nur für Support-Zwecke verwenden, da die Meldungen das Protokoll überfluten können
 
 ; Help
 ;
@@ -51,11 +70,6 @@ d> **Hinweise:** Das Plugin "Unassigned Devices Plus" muss installiert sein, um 
 > Es wird empfohlen, deine Zuordnungen auf dem Einhängepunkt /mnt/remotes/ zu ändern.
 >
 > Wenn du keine Abwärtskompatibilität benötigst, lass diese Option auf **Nein** gestellt.
-:end
-
-:ud_settings_remote_share_wait_plug:
-> Dies ist die Zeit in Sekunden, die gewartet werden soll, bevor entfernte Freigaben eingehängt werden, wenn das Array zum ersten Mal gestartet wird.
->
 :end
 
 :ud_settings_remote_share_wait_plug:
@@ -115,10 +129,6 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 :end
 
 :ud_settings_nfs_security_plug:
-> Auf **Ja** stellen, um nicht zugewiesene Datenträger mit NFS-Freigabe zu exportieren. Freigaben werden öffentlich mit Lese- und Schreibzugriff oder privat mit der von dir festgelegten Regel exportiert. Der Zugriff wird durch Berechtigungseinstellungen für Dateien und Ordner gesteuert.
-:end
-
-:ud_settings_nfs_security_plug:
 > Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
 :end
 
@@ -135,24 +145,3 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 >
 > **Hinweis:** Ändere nicht die UUID eines Datenträgers aus einem Pool.
 :end
-
-; Note: June 18, 2023 - 19 missing translations
-Command times=Befehlszeiten
-Disabled=Deaktiviert
-Disk spin down is managed by Unraid=Das Herunterfahren von Datenträgern wird durch Unraid geregelt
-Enter Pool Mount Point=Pool-Einhängepunkt eingeben
-Legacy Mount Point Compatibility=Kompatibilität von herkömmlichen Einhängepunkten
-NFS must be enabled in Settings->NFS to enable NFS Export=NFS muss unter Einstellungen->NFS aktiviert sein, um NFS-Exporte zu aktivieren
-NFS Version to use when Mounting Remote Shares=Die zu verwendende NFS-Version beim Einhängen entfernter Freigaben
-Public=Öffentlich
-Private=Privat
-Private Hidden=Privat versteckt
-Refresh and Update=Neu laden und aktualisieren
-Remote Share Mount Wait Time=Wartezeit zum Einhängen einer entfernten Freigabe
-SMB Settings=SMB-Einstellungen
-Set Pool Mount Point=Pool-Einhängepunkt festlegen
-Set the Pool Mount Point for this disk=Pool-Einhängepunkt für diesen Datenträger festlegen
-Specify SMB Version when Mounting Remote Shares=SMB-Version beim Einhängen entfernter Freigaben festlegen
-Udev and Hotplug=Udev und Hotplug
-Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 oder höher ist für die Unterstützung von NFSv4 erforderlich
-Use only when directed for support because the messages can flood the log=Nur für Support-Zwecke verwenden, da die Meldungen das Protokoll überfluten können

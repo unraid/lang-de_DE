@@ -1,3 +1,28 @@
+Click the 'Default' button to select the default Device Script File=Klick auf den "Standard"-Button, um die Standard-Datenträger-Skriptdatei auszuwählen
+Default=Standard
+Delete Device Script File=Datenträgerskript löschen
+Device Script content=Inhalt des Datenträgerskripts
+Disable Mount=Einhängen deaktivieren
+Disk Name=Datenträgername
+Edit Device Script=Datenträgerskript bearbeiten
+Enter Device Script File Name=Dateiname des Datenträgerskripts eingeben
+Enter and Edit the Device Script that runs when a udev or operator event occurs=Bearbeite oder gib das Datenträgerskript an, das beim Auftreten eines udev- oder operator-Ereignisses ausgeführt wird
+Enter the User Script that will be using this device=Gib das Datenträgerskript an, dass dieser Datenträger verwenden wird
+Load the default Device Script=Lade das Standard-Datenträgerskript
+Run in background=Im Hintergrund laufen lassen
+Mount Device Read only=Datenträger schreibgeschützt einhängen
+Mount Device when Plugged in or Array is Started=Datenträger einhängen, wenn es angeschlossen oder das Array gestartet ist
+Mount ISO File when Array is Started=ISO-Datei einhängen, wenn das Array gestartet ist
+Mount Remote SMB or NFS Share when Array is Started=Entfernte SMB- oder NFS_freigabe einhängen, wenn das Array gestartet ist
+Run Device Script File in the background=Datenträgerskript im Hintergrund laufen lassen
+Save your Device Script File changes=Deine Änderungen an der Datenträger-Skriptdatei speichern
+Save=Speichern
+Share Device with SMB and NFS=Datenträger über SMB und NFS freigeben
+Share Remote Mount with SMB and NFS=Entfernte Einbindung über SMB und NFS freigeben
+Mark this Device as passed through to a VM or Docker=Diesen Datenträger als an eine VM oder einen Docker-Container durchgeleitet (Passthrough) markieren
+Unassigned Devices Settings=Unassigned Devices Einstellungen
+Undo your changes since last Save=Deine Änderungen seit dem letzten Speichern rückgängig machen
+Volume=Volumen
 ;
 ; Help
 ;
@@ -35,30 +60,3 @@
 > Klick auf den **Standard**-Button, um ein Standard-Datenträger-Skript zu laden.
 > Du musst noch auf **Speichern** klicken, um die Änderung zu übernehmen.
 :end
-
-; Note: April 28, 2023 - 25 missing translations
-Click the 'Default' button to select the default Device Script File=Klick auf den "Standard"-Button, um die Standard-Datenträger-Skriptdatei auszuwählen
-Default=Standard
-Delete Device Script File=Datenträgerskript löschen
-Device Script content=Inhalt des Datenträgerskripts
-Disable Mount=Einhängen deaktivieren
-Disk Name=Datenträgername
-Edit Device Script=Datenträgerskript bearbeiten
-Enter Device Script File Name=Dateiname des Datenträgerskripts eingeben
-Enter and Edit the Device Script that runs when a udev or operator event occurs=Bearbeite oder gib das Datenträgerskript an, das beim Auftreten eines udev- oder operator-Ereignisses ausgeführt wird
-Enter the User Script that will be using this device=Gib das Datenträgerskript an, dass dieser Datenträger verwenden wird
-Load the default Device Script=Lade das Standard-Datenträgerskript
-Run in background=Im Hintergrund laufen lassen
-Mount Device Read only=Datenträger schreibgeschützt einhängen
-Mount Device when Plugged in or Array is Started=Datenträger einhängen, wenn es angeschlossen oder das Array gestartet ist
-Mount ISO File when Array is Started=ISO-Datei einhängen, wenn das Array gestartet ist
-Mount Remote SMB or NFS Share when Array is Started=Entfernte SMB- oder NFS_freigabe einhängen, wenn das Array gestartet ist
-Run Device Script File in the background=Datenträgerskript im Hintergrund laufen lassen
-Save your Device Script File changes=Deine Änderungen an der Datenträger-Skriptdatei speichern
-Save=Speichern
-Share Device with SMB and NFS=Datenträger über SMB und NFS freigeben
-Share Remote Mount with SMB and NFS=Entfernte Einbindung über SMB und NFS freigeben
-Mark this Device as passed through to a VM or Docker=Diesen Datenträger als an eine VM oder einen Docker-Container durchgeleitet (Passthrough) markieren
-Unassigned Devices Settings=Unassigned Devices Einstellungen
-Undo your changes since last Save=Deine Änderungen seit dem letzten Speichern rückgängig machen
-Volume=Volumen
