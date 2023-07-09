@@ -1,7 +1,7 @@
-Hide Deprecated Applications=Veraltete Anwendungen verstecken
-This setting hides deprecated applications from the list of available apps Deprecated apps will still however display within the installed and previous apps sections=Mit dieser Einstellung werden veraltete Anwendungen in der Liste verfügbarer Anwendungen versteckt. Sie werden jedoch weiterhin in den installierten und vorherigen Anwendungen angezeigt
-Hide Incompatible Applications=Inkompatible Anwendungen verstecken
-This setting will hide applications that are listed as being incompatible with your version of Unraid=Mit dieser Einstellung werden Anwendungen versteckt, die nicht mit deiner Version von Unraid kompatibel sind
+Hide Deprecated Applications=Veraltete Anwendungen ausblenden
+This setting hides deprecated applications from the list of available apps Deprecated apps will still however display within the installed and previous apps sections=Mit dieser Einstellung werden veraltete Anwendungen in der Liste verfügbarer Anwendungen ausgeblendet. Sie werden jedoch weiterhin in den installierten und vorherigen Anwendungen angezeigt
+Hide Incompatible Applications=Inkompatible Anwendungen ausblenden
+This setting will hide applications that are listed as being incompatible with your version of Unraid=Mit dieser Einstellung werden Anwendungen ausgeblendet, die nicht mit deiner Version von Unraid kompatibel sind
 Allow install of second instance=Installation einer zweiten Instanz erlauben
 This option enables another button on the cards and popups which will allow you to reinstall an installed application using its default template values This option can be confusing at times, and is only generally used if you wish to install and have an application running twice simultaneously=Diese Option aktiviert einen Button auf den Kacheln und Pop-ups, mit der eine bereits installierte Anwendung mit den Standardeinstellungen der Vorlage erneut installiert werden kann. Diese Option sollte nur aktiviert werden, wenn eine Anwendung mehrmals installiert werden soll
 Automatically open the sidebar=Seitenleiste automatisch einblenden

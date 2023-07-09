@@ -81,4 +81,4 @@ Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
 
 ; Note: July 9, 2023 - 1 missing translations
-Share name contains invalid characters for ZFS use=
+Share name contains invalid characters for ZFS use=Der Freigabename enthält ungültige Zeichen für die Verwendung mit ZFS
