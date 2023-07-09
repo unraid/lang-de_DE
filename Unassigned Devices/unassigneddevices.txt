@@ -203,4 +203,5 @@ ZFS Volume=ZFS-Volumen
 > Sei vorsichtig bei der Verwendung der Bezeichnungen /dev/sdX oder devX, da diese sich nach einem Neustart ändern können. Verwende am besten die im UD-Skript übergebenen Werte für sdX (DEVICE) und devX (UD_DEVICE).
 :end
 
-; Note: June 18, 2023 - 73 missing translations
+; Note: July 9, 2023 - 1 missing translations
+Pass Thru=

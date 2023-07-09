@@ -1,10 +1,12 @@
 After a reboot from a lockup or hung server, you can view the saved log using the Syslog viewer=Nach einem Neustart von einem blockierten oder nicht mehr reagierendem Server kannst du dir das gespeicherte Protokoll mit dem Systemprotokoll-Betrachter anzeigen lassen
 Check the=Besuche
+Available User Watches=Verfügbare Benutzer-Überwachungen
 Click on Help for more information=Klick auf Hilfe für mehr Informationen
 Correct any problems that are identified before doing any tweaking=Behebe alle gefundenen Probleme, bevor du Optimierungen vornimmst
 Current Disk Cache Settings=Aktuelle Datenträger-Cache-Einstellungen
 Current Inotify Settings=Aktuelle Inotify-Einstellungen
 Current NIC settings=Aktuelle NIC-Einstellungen
+Current User Watches=Derzeitige Benutzer-Überwachungen
 Disable NIC Flow Control=NIC-Flussteuerung deaktivieren
 Disable NIC Offload=NIC-Offload deaktivieren
 Disk Cache=Datenträger-Cache
@@ -25,22 +27,29 @@ If you are experiencing OOM errors, try adjusting the Disk Cache settings on the
 If you configure VLANs on Unraid, you should make Unraid the Master Browser=Wenn VLANs in Unraid konfiguriert sind, solltest du Unraid zum Master-Browser machen
 If you dont Unraid may not detect the Master Browser for all network interfaces correctly=Wenn du das nicht tust, erkennt Unraid den Master-Browser möglicherweise nicht an allen Netzwerkschnittstellen korrekt
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Bei Intel-Prozessoren kann es den Anschein haben, dass alle CPUs ständig mit voller Geschwindigkeit laufen
+If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Wenn du den 'Power Save'-CPU-Governor festlegst, kann es sein, dass deine Prozessoren fest auf 800 MHz laufen
 Install the Fix Common Problems plugin and resolve any Unraid configuration problems=Installiere das Plugin "Fix Common Problems" und behebe Unraid-Konfigurationsprobleme
 It is recommended that you update Unraid to the latest stable version to get the latest features, bug fixes, and security updates=Es wird empfohlen, Unraid auf die neueste stabile Version zu aktualisieren, um die neuesten Funktionen, Fehlerbehebungen und Sicherheitsaktualisierungen zu erhalten
 It is recommended to use the pstate driver on Intel processors if you want the most performance=Auf Systemen mit Intel-Prozessoren wird empfohlen den pstate-Treiber zu verwenden, wenn die höchste Leistung erzielt werden soll
+It is recommended you use the 'Performance' Governor for best performance and power savings=Es wird empfohlen, den "Performance"-Governor zu verwenden, um die beste Leistung und Energieeinsparung zu erzielen.
 Make changes slowly=Änderungen langsam vornehmen
 Make one change at a time and verify if it improves your situation=Nehme Änderungen einzeln vor und überprüfe, ob sich deine Leistung verbessert hat
 Making changes here can briefly interrupt your network operation=Durch Änderungen, die du hier vornimmst, kann deine Netzwerkverbindung kurz unterbrochen werden
 Many plugins are no longer compatible with older Unraid versons=Viele Plugins sind nicht mehr mit älteren Unraid-Versionen kompatibel
+Max SMB Open Files=Maximal geöffnete SMB-Dateien
+Max User Watches=Maximale Benutzer-Überwachungen
 NIC Offload=NIC-Offload
 NIC Rx Buffer=NIC Rx-Puffer
 NIC Tx Buffer=NIC Tx-Puffer
+Normal CPU Scaling Governor=Normaler CPU-Skalierung-Governor
 Note=Hinweis
 Number of syslogs to Archive=Anzahl der Systemprotokoll-Einträge, die archiviert werden sollen
 post=Senden
+Power Saving CPU Scaling Governor=Energiesparender CPU-Skalierung-Governor
 Processes to kill before Array is Stopped=Zu beendende Prozesse bevor das Array gestoppt wird
 Put the IP address of your server in the Remote syslog server field=Gib die IP-Adresse deines Servers in das Feld "Entfernter Systemprotokoll-Server" ein
 Read this=Lies das
+Schedule CPU Power Saving Mode=Zeitplan für den CPU-Energiesparmodus
 Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Einige Benutzer haben mit diesen vorgeschlagenen Einstellungen eine bessere Leistung bei Medien-Streaming- und Gaming-VMs berichtet
 Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Einige Benutzer meldeten eine stabilere und schnellere Netzwerkverbindung, nachdem sie Änderungen an den Netzwerkparametern im Reiter Optimierungen dieses Plugins vorgenommen haben
 Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=Einige dieser Einstellungen verbrauchen RAM und können dazu führen, dass Linux einige Prozesse beendet, um RAM freizugeben
@@ -54,10 +63,13 @@ There is a very cool feature in Unraid 6 and up that can be used to capture your
 This will identify potential problems to be solved before you upgrade the Unraid OS=Dadurch werden potenzielle Probleme identifiziert, die vor der Aktualisierung von Unraid OS gelöst werden müssen
 This will log all your server log enries to the Syslog Server and save the log to an array share=Dadurch werden alle deine Serverprotokoll-Einträge auf dem Systemprotokoll-Server protokolliert und das Protokoll auf einer Array-Freigabe gespeichert
 This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Dies scheint jetzt häufiger aufzutreten, da in Unraid große Mengen an Arbeitsspeicher installiert sind und die Standardeinstellungen für den Datenträger-Cache zu hoch sind
+Time to set Normal CPU Scaling=Zeitpunkt zum Einstellen der normalen CPU-Skalierung
+Time to set Power Saving CPU Scaling=Zeitpunkt zum Einstellen des energiesparenden CPU-Skalierung
 Tips=Tipps
 Tips and Tweaks wiki="Tipps & Tweaks" Wiki
 Tweaks=Optimierungen
 Use the Update Assistant that is part of the Fix Common Problems plugin=Verwende den Aktualisierungs-Assistenten, der Teil des Plugins "Fix Common Problems" ist
+Version 6.11.4 and later=Version 6.11.4 und höher
 You can check CPU frequencies on the command line with=Du kannst die CPU-Frequenzen in der Kommandozeile mit folgendem Befehl überprüfen
 You may actually cause more problems than you solve if there are problems with your Unraid configuration=Du verursachst möglicherweise mehr Probleme als du löst, wenn es Probleme mit deiner Unraid-Konfiguration gibt
 
@@ -184,17 +196,3 @@ You may actually cause more problems than you solve if there are problems with y
 > Hinweis: Sei vorsichtig mit den Prozessen, die du hier beendest. Du könntest Daten verlieren!
 :end
 
-
-; Note: April 28, 2023 - 12 missing translations
-Available User Watches=Verfügbare Benutzer-Überwachungen
-Current User Watches=Derzeitige Benutzer-Überwachungen
-If you set the 'Power Save' CPU Governor, you may see your processors stuck at 800 MHz=Wenn du den 'Power Save'-CPU-Governor festlegst, kann es sein, dass deine Prozessoren fest auf 800 MHz laufen
-It is recommended you use the 'Performance' Governor for best performance and power savings=Es wird empfohlen, den "Performance"-Governor zu verwenden, um die beste Leistung und Energieeinsparung zu erzielen.
-Max SMB Open Files=Maximal geöffnete SMB-Dateien
-Max User Watches=Maximale Benutzer-Überwachungen
-Normal CPU Scaling Governor=Normaler CPU-Skalierung-Governor
-Power Saving CPU Scaling Governor=Energiesparender CPU-Skalierung-Governor
-Schedule CPU Power Saving Mode=Zeitplan für den CPU-Energiesparmodus
-Time to set Normal CPU Scaling=Zeitpunkt zum Einstellen der normalen CPU-Skalierung
-Time to set Power Saving CPU Scaling=Zeitpunkt zum Einstellen des energiesparenden CPU-Skalierung
-Version 6.11.4 and later=Version 6.11.4 und höher

@@ -404,5 +404,3 @@ Method used to specify start and stop points=Methode zur Angabe von Start- und E
 > in dem Einträge aus dem Systemprotokoll ausgelesen werden, in denen Sektoren angezeigt werden, für die 
 > ein Paritätssektor angezeigt wird und in dem angegeben wird, ob dieser korrigiert wurde oder ein Paritätsfehler vorliegt.
 :end
-
-; Note: April 29, 2023 - 144 missing translations
