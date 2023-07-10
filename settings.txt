@@ -826,7 +826,7 @@ Interface Extra=Schnittstellen Extra
 Management Interface=Verwaltungsschnittstelle
 Permit exclusive shares=Exklusive Freigaben erlauben
 Questions See the documentation=Fragen? Siehe dazu <a href="https://wiki.unraid.net/Connect" target="_blank">die Dokumentation</a>.
-Remark to use the Dynamic - Manual Port Forward option for Remote Access please set Use SSLTLS to Strict in Management Access=Hinweis: Um die Option "Dynamisch - Manuelle Portweiterleitung" für den Fernzugriff zu verwenden, stelle bitte unter Verwaltungszugriff "SSL/TLS verwenden" auf "Stringent".
+Remark to use the Dynamic - Manual Port Forward option for Remote Access please set Use SSLTLS to Strict in Management Access=Hinweis: Um die Option "Dynamisch - Manuelle Portweiterleitung" für den Fernzugriff zu verwenden, stelle bitte unter Verwaltungszugriff "SSL/TLS verwenden" auf "Zwingend".
 Remark to use the UPnP options please set Use UPnP to Yes in Management Access=Hinweis: Um die UPnP-Optionen zu nutzen, stelle bitte unter Verwaltungszugriff "UPnP verwenden" auf "Ja".
 To test your manual port forward, temporarily configure Allow Remote Access as Always On - Manual Port Forward=Um die manuelle Portweiterleitung zu testen, stelle "Fernzugriff erlauben" vorübergehend auf "Immer eingeschaltet - Manuelle Portweiterleitung"
 Unraid Connect=Unraid Connect
