@@ -29,7 +29,7 @@ Release Notes=Veröffentlichungshinweise
 Remove Plugin=Plugin entfernen
 Remove Selected Plugins=Ausgewählte Plugins entfernen
 remove=Entfernen
-Select local plugin file=Wählen Sie eine lokale Plugin-Datei
+Select local plugin file=Wähle eine lokale Plugin-Datei
 Stable=Stabil
 STALE=VERALTET
 Support Thread=Hilfe-Forenbeitrag
@@ -41,4 +41,4 @@ Upgrade=Upgrade
 View Release Notes=Zeige Veröffentlichungshinweise
 
 ; Note: July 9, 2023 - 1 missing translations
-I have read the release notes=
+I have read the release notes=Ich habe die Veröffentlichungshinweise gelesen

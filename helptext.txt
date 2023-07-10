@@ -3,7 +3,7 @@
 
 <i class='fa fa-circle orb green-orb'></i>Normalbetrieb, Datenträger ist aktiv.
 
-<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (heruntergefahren).
+<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby-Modus (Heruntergefahren).
 
 <i class='fa fa-warning orb yellow-orb'></i>Datenträgerinhalt emuliert.
 
@@ -11,45 +11,44 @@
 
 <i class='fa fa-square orb blue-orb'></i>Neuer Datenträger.
 
-<i class='fa fa-square orb grey-orb'></i>Kein Datenträger, Slot leer.
+<i class='fa fa-square orb grey-orb'></i>Kein Datenträger vorhanden, Slot leer.
 
-**Identifikation** ist das *Kürzel*, das den Datenträger identifiziert. Das Kürzel
-enthält Modell-/Seriennummer, Linux Geräte-ID und die Datenträgergröße.
+**Identifikation** ist die *Signatur*, die den Datenträger eindeutig identifiziert. Die Signatur
+enthält die Modell- und Seriennummer, die Linux-Geräte-ID und die Datenträgergröße.
 
 **Temp.** (Temperatur) wird direkt vom Datenträger ausgelesen. Du kannst die anzuzeigenden Einheiten
-auf der Seite [Display Preferences](Settings/DisplaySettings) konfigurieren.  Es werden keine Temperaturen von Datenträgern im
-Standby-Modus ausgelesen, da diese ansonsten aufgeweckt werden müssen; anstelle dessen wird das `*` Symbol angezeigt. Das
-Symbol `*` steht ebenso für Datenträger (SSD/Flash-Medien), die keinen korrekten Temperaturwert zurückgeben bzw.
-manchmal den Wert `0` zurückgeben.
+in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfigurieren. Es werden keine Temperaturen von heruntergefahrenen
+Datenträgern ausgelesen, da diese dadurch in der Regel hochgefahren werden; stattdessen wird das "*"-Symbol angezeigt. Das
+Symbol "*" wird ebenso bei SSD- und Flash-Datenträgern angezeigt, die teilweise gültige Temperaturen aber auch manchmal den Wert "0" zurückgeben.
 
-**Größe, Benutzt, Frei** gibt die absolute Größe, benutzten und verbleibenden Speicher für Dateien an. Diese Einheiten
-werden ebenfalls auf der Seite [Display Preferences](Settings/DisplaySettings) konfiguriert. Der Wert
-wird nie Null sein, auch bei neuen/leeren Datenträgern, aufgrund von Dateisystem-Einträgen.
+**Größe, Benutzt, Frei** gibt die Gesamtgröße, den verwendeten und verbleibenden Speicher für Dateien an. Diese Einheiten
+werden ebenfalls in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfiguriert. Der belegte Speicherplatz ist
+aufgrund des Dateisystem-Overheads selbst bei einem leeren Datenträger nie Null.
 
-*Hinweis: Bei einem Cache-Pool mit mehreren Datenträgern gelten diese Daten für den gesamten Pool, wie von btrfs zurückgegeben.*
+*Hinweis: Bei einem Cache-Pool mit mehreren Datenträgern beziehen sich diese Daten auf den gesamten Pool, wie er von btrfs zurückgegeben wird.*
 
 **Gelesen, Geschrieben** zählt E/A-Anfragen, die vom E/A-Treiber an den Datenträger gesendet werden. Die Statistiken können
-jederzeit gelöscht werden, siehe Array-Status Abschnitt weiter unten.
+jederzeit gelöscht werden, siehe Array-Status-Abschnitt weiter unten.
 
 **Fehler** zählt *unkorrigierbare* Fehler, die vom Datenträger E/A-Treiber gemeldet werden.
 Fehlende Daten aufgrund unkorrigierbarer Fehler werden unmittelbar durch die Parität
-rekonstruiert (und wir versuchen, diese Daten in den/die fehlerhaften Sektor(en) zurückzuschreiben). Jeder nicht behebbare
+rekonstruiert (und es wird versucht, diese Daten in den/die fehlerhaften Sektor(en) zurückzuschreiben). Jeder nicht behebbare
 Schreibfehler führt zur *Deaktivierung* des Datenträgers.
 
-**FS** zeigt das Dateisystem an, das auf Partition 1 des Datenträgers erkannt wurde.
+**DS** zeigt das Dateisystem an, das auf Partition 1 des Datenträgers erkannt wurde.
 
-**Ansicht** zeigt ein Ordnersymbol an, das den Datenträger als *eingebunden* anzeigt. Klicke auf das Symbol,
+**Ansicht** zeigt ein Ordnersymbol an, das den Datenträger als *eingehängt* anzeigt. Klicke auf das Symbol,
 um das Dateisystem zu durchsuchen.
 
-Wenn "Zeige Array-Werte" auf der Seite [Display Preferences](Settings/DisplaySettings) aktiviert ist, wird in der
-Zeile **Gesamt** eine Übersicht der Datenträgerstatistik sowie der Durchschnittstemperaturen der Datenträger
+Wenn "Array-Gesamtwerte anzeigen" in den [Anzeigeeinstellungen](Settings/DisplaySettings) aktiviert ist, wird in der neuen
+Zeile **Gesamt** eine Übersicht der Datenträgerstatistik einschließlich der Durchschnittstemperatur der Datenträger
 angezeigt.
 
 Das Array muss gestoppt werden, um die Datenträgerzuordnung im Array zu ändern.
 
-Ein Unraid-Array besteht aus einem oder zwei Paritätsdatenträgern und einer beliebigen Anzahl von Datenlaufwerken. Die
-Datenlaufwerke sind nur für Nutzerdaten und der/die Paritätsdatenträger dient rein der Redundanz die zur
-Datenwiederherstellung nötig ist falls ein Datenlaufwerke ausfällt.
+Ein unRAID-Array besteht aus einem oder zwei Paritätsdatenträgern und einer beliebigen Anzahl von Speicher-Datenträgern. Die
+Speicher-Datenträgern werden ausschließlich zum Speichern von Benutzerdaten verwendet und die Paritätsdatenträger bieten die
+notwendige Redundanz für die Wiederherstellung bei Datenträgerausfällen.
 
 Da die Daten nicht über das Array verteilt sind, muss der größte Datenträger im Array der/die Paritätsdatenträger sein.
 Der Paritätsdatenträger sollte ebenso der mit der höchsten Leistung/Geschwindigkeit sein.
