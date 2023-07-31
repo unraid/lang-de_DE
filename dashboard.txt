@@ -57,7 +57,7 @@ Handshake=Handshake
 has=hat
 healthy=OK
 heat warning=Hitzewarnung
-Hide details=Details ausblenden
+Hide details=Verstecke Details
 in progress=wird ausgeführt
 Inactive tunnels=Inaktive Tunnel
 inactive=inaktiv
@@ -143,6 +143,6 @@ Warnings=Warnungen
 ZFS=ZFS
 
 ; Note: July 9, 2023 - 3 missing translations
-ShowHide All Content=Alle Inhalte ein/ausblenden
-ShowHide Content=Inhalt ein/ausblenden
-Tile Management=Kachelverwaltung
+ShowHide All Content=Show/Hide All Content
+ShowHide Content=Show/Hide Content
+Tile Management=
