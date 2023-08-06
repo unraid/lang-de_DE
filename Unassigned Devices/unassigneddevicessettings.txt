@@ -9,7 +9,7 @@ Common Settings=Allgemeine Einstellungen
 Destructive Mode=Destruktiver Modus
 Disabled=Deaktiviert
 Disk spin down is managed by Unraid=Das Herunterfahren von Datenträgern wird durch Unraid geregelt
-Enable NFS export=NFS-Export einschalten
+Enable NFS export=NFS-Export aktivieren
 Enable SMB Security=SMB-Sicherheit aktivieren
 Enter Disk Password=Datenträgerpasswort eingeben
 Enter Pool Mount Point=Pool-Einhängepunkt eingeben
@@ -129,7 +129,7 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 :end
 
 :ud_settings_nfs_security_plug:
-> Set to **Yes** to export Unassigned Devices with NFS sharing. Shares are exported Public with read and write access or Private with the rule you set. Access is controlled with permission settings on files and folders.
+> Auf **Ja** stellen, um nicht zugewiesene Datenträger mit einer NFS-Freigabe zu exportieren. Die Freigaben werden öffentlich mit Lese- und Schreibzugriff oder privat mit der von dir festgelegten Regel exportiert. Der Zugriff wird durch Berechtigungseinstellungen für Dateien und Ordner gesteuert.
 :end
 
 :ud_settings_nfs_shares_plug:

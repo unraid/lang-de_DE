@@ -43,7 +43,7 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 >
 > Die Freigaben mit Papierkorbinhalten werden zusammen mit der Größe des Papierkorbs der Freigabe angezeigt.
 > Klicke auf das <strong>Durchsuchen</strong>-Symbol, um die gelöschten Dateien in dieser Freigabe zu durchsuchen.
-> Klicken Sie auf den <strong>Leeren</strong>-Button, um die gelöschten Dateien zu entfernen.
+> Klicke auf den <strong>Leeren</strong>-Button, um die gelöschten Dateien zu entfernen.
 >
 > Freigaben von nicht zugewiesene Datenträgern werden nur angezeigt, wenn der Papierkorb für nicht zugewiesene Datenträger aktiviert ist und es nicht zugewiesene Datenträger gibt, die eingehängt und freigegeben sind und Papierkorb-Inhalte enthalten.
 >
