@@ -79,7 +79,6 @@ No Unassigned Disks available=Keine nicht zugewiesenen Datenträger verfügbar
 Not Enabled=Nicht aktiviert
 not installed=Nicht installiert
 Note=Hinweis
-Note: With User Shares, files on the Cache and Pool Devices will not show in the Root Share=Hinweis: Bei Benutzerfreigaben werden die Dateien auf Cache- und Pool-Datenträgern nicht in der Root-Freigabe angezeigt
 offilne=Offline
 You must enable NFS in Settings->NFS to mount NFS shares=Du musst NFS unter Einstellungen->NFS aktivieren, um NFS-Freigaben einzuhängen
 You must enable SMB in Settings->SMB to mount SMB shares=Du musst SMB unter Einstellungen->SMB aktivieren, um SMB-Freigaben einzuhängen
@@ -203,5 +202,6 @@ ZFS Volume=ZFS-Volumen
 > Sei vorsichtig bei der Verwendung der Bezeichnungen /dev/sdX oder devX, da diese sich nach einem Neustart ändern können. Verwende am besten die im UD-Skript übergebenen Werte für sdX (DEVICE) und devX (UD_DEVICE).
 :end
 
-; Note: July 9, 2023 - 1 missing translations
+; Note: August 8, 2023 - 2 missing translations
+Exclusive Share files will not be accessible in a Root Share=
 Pass Thru=
