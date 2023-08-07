@@ -61,6 +61,7 @@ Secondary storage=Sekundärer Speicher
 Select cache pool=Cache-Pool auswählen
 Set when adding new share only=Nur beim Hinzufügen einer neuer Freigabe festlegen
 Share contains data=Freigabe enthält Daten
+Share name contains invalid characters for ZFS use=Der Freigabename enthält ungültige Zeichen für die Verwendung mit ZFS
 Share is empty=Freigabe ist leer
 Share is outside the list of designated disks=Freigabe gehört nicht zur Liste der dafür ausgewählten Datenträger
 Share Settings=Freigabeeinstellungen
@@ -79,6 +80,3 @@ Use cache pool for new filesdirectories=Benutze den Cache-Pool (für neue Dateie
 User Shares=Benutzerfreigaben
 Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
-
-; Note: July 9, 2023 - 1 missing translations
-Share name contains invalid characters for ZFS use=Der Freigabename enthält ungültige Zeichen für die Verwendung mit ZFS

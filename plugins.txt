@@ -10,6 +10,7 @@ Delete Plugin=Plugin löschen
 DOWNGRADE TO VERSION=DOWNGRADE AUF VERSION
 Enter URL of remote plugin file or local plugin file=URL des Plugins eingeben oder eine lokale Plugin-Datei auswählen
 ERROR=FEHLER
+I have read the release notes=Ich habe die Veröffentlichungshinweise gelesen
 Install Plugin=Plugin installieren
 Install=Installieren
 install=installieren
@@ -39,6 +40,3 @@ Update Incompatible=Aktualisierung inkompatibel
 Update Plugin=Aktualisiere Plugin
 Upgrade=Upgrade
 View Release Notes=Zeige Veröffentlichungshinweise
-
-; Note: July 9, 2023 - 1 missing translations
-I have read the release notes=Ich habe die Veröffentlichungshinweise gelesen

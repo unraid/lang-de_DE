@@ -110,6 +110,8 @@ Share count %s with %s cache only and %s encrypted=%s Freigaben davon %s nur Cac
 Shares Information=Freigaben-Information
 Show details=Zeige Details
 Show Information=Zeige Informationen
+ShowHide All Content=Alle Inhalte ein/ausblenden
+ShowHide Content=Inhalt ein/ausblenden
 Shutdown the system=System herunterfahren
 SMART error=SMART-Fehler
 SMART health-check failed=SMART Health-Check fehlgeschlagen
@@ -125,6 +127,7 @@ This will reboot the system=Startet das System neu
 This will shutdown the system=Fährt das System herunter
 This will start the array=Startet das Array
 This will stop the array=Stoppt das Array
+Tile Management=Kachelverwaltung
 Transmit counters=Sendezähler
 Transmitted packets=Übertragene Pakete
 Unassigned Devices=Nicht zugewiesene Datenträger
@@ -141,8 +144,3 @@ Virtual Machines=Virtuelle Maschinen
 VPN Connections=VPN-Verbindungen
 Warnings=Warnungen
 ZFS=ZFS
-
-; Note: July 9, 2023 - 3 missing translations
-ShowHide All Content=Alle Inhalte ein/ausblenden
-ShowHide Content=Inhalt ein/ausblenden
-Tile Management=Kachelverwaltung
