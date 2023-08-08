@@ -17,10 +17,9 @@
 enthält die Modell- und Seriennummer, die Linux-Geräte-ID und die Datenträgergröße.
 
 **Temp.** (Temperatur) wird direkt vom Datenträger ausgelesen. Du kannst die anzuzeigenden Einheiten
-in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfigurieren. Es werden keine Temperaturen von
-heruntergefahrenen Datenträgern ausgelesen, da diese dadurch in der Regel hochgefahren werden; stattdessen
-wird das "*"-Symbol angezeigt. Das Symbol "*" wird ebenso bei SSD- und Flash-Datenträgern angezeigt,
-die teilweise gültige Temperaturen aber auch manchmal den Wert "0" zurückgeben.
+in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfigurieren. Es werden keine Temperaturen von heruntergefahrenen
+Datenträgern ausgelesen, da diese dadurch in der Regel hochgefahren werden; stattdessen wird das "*"-Symbol angezeigt. Das
+Symbol "*" wird ebenso bei SSD- und Flash-Datenträgern angezeigt, die teilweise gültige Temperaturen aber auch manchmal den Wert "0" zurückgeben.
 
 **Größe, Benutzt, Frei** gibt die Gesamtgröße, den verwendeten und verbleibenden Speicher für Dateien an. Diese Einheiten
 werden ebenfalls in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfiguriert. Der belegte Speicherplatz ist
@@ -51,13 +50,13 @@ Ein unRAID-Array besteht aus einem oder zwei Paritätsdatenträgern und einer be
 Speicher-Datenträgern werden ausschließlich zum Speichern von Benutzerdaten verwendet und die Paritätsdatenträger bieten die
 notwendige Redundanz für die Wiederherstellung bei Datenträgerausfällen.
 
-Da die Daten nicht über das Array verteilt sind, müssen die Paritäts-Datenträger gleich groß oder größer als der größte Datenträger sein.
+Da die Daten nicht über das Array verteilt sind, muss der größte Datenträger im Array der/die Paritätsdatenträger sein.
 Der Paritätsdatenträger sollte ebenso der mit der höchsten Leistung/Geschwindigkeit sein.
 
-Jeder Datenträger hat sein eigenes Dateisystem und kann als
-separate Freigabe exportiert werden.
+Jeder Datenträger hat sein eigenes Dateisystem und kann somit als
+separate Nutzer-Freigabe freigegeben werden.
 
-Klick auf den Datenträgernamen, um einzelne Datenträgereinstellungen zu konfigurieren und bestimmte Dienstprogramme zu starten.
+Klick auf den Datenträgernamen um Datenträgereinstellungen bzw. Tools aufzurufen.
 :end
 
 :main_slots_help:
@@ -1772,7 +1771,7 @@ Wenn ein **wöchentlicher** oder **benutzerdefinierter** gewählt wurde, hier de
 :end
 
 :parity_week_of_the_month_help:
-Wenn ein **monatlicher** oder **jährlicher** Check gewählt wurde, hier den *Tag im Monat* auswählen.
+Wenn ein **monatlicher** oder **jährlicher** Check gewählt wurde, hier den *Tag des Monats* auswählen.
 Wenn ein **benutzerdefinierter** Check gewählt wurde, hier die *Woche des Monats* auswählen, in den anderen Intervallen wird diese Einstellung nicht verwendet und ist nicht verfügbar.
 :end
 
