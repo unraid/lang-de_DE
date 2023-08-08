@@ -56,6 +56,10 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Um den Papierkorb-Ordner auszublenden, setze <a href='/Settings/SMB'>hier</a> in den SMB-Einstellungen "Dateien mit einem Punkt am Anfang (.datei) verstecken" auf "Ja".
 :end
 
+:recycle_bin_hide_folder_plug:
+> Set to **No** to show the Recycle Bin folder in user shares.  The SMB setting "Hide dot files" controls if hidden folders show in user shares.
+:end
+
 :recycle_bin_background_plug:
 > Setze diese Option auf **Ja**, damit die Größe des Papierkorbs alle fünf Minuten im Hintergrund aktualisiert wird. Dies kann das Aufrufen der Papierkorb-Einstellungen und Freigabe-Seiten beschleunigen und vermeidet das Hochfahren von Datenträgern beim Zugriff auf den Papierkorb. Die Aktualisierung der Papierkorbgröße kann bis zu fünf Minuten dauern, wenn diese Funktion aktiviert ist.
 :end

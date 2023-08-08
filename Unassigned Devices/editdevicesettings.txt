@@ -1,7 +1,6 @@
 Attach=Verbinden
 Attaching=Verbinde
 Automount=Auto-Einbinden
-Click the 'Default' button to select the default Device Script File=Klick auf den "Standard"-Button, um die Standard-Datenträger-Skriptdatei auszuwählen
 Default=Standard
 Delete Device Script File=Datenträger-Skriptdatei löschen
 Detach=Trennen
@@ -26,13 +25,13 @@ Passed Through=Durchgeleitet (Passthrough)
 Read Only=Schreibgeschützt
 Run Device Script File in the background=Datenträgerskript im Hintergrund laufen lassen
 Save your Device Script File changes=Deine Änderungen an der Datenträger-Skriptdatei speichern
-Save=Speichern
 Share Device with SMB and NFS=Datenträger über SMB und NFS freigeben
 Share Remote Mount with SMB and NFS=Entfernte Einbindung über SMB und NFS freigeben
 Unassigned Devices Settings=Unassigned Devices Einstellungen
 Undo your changes since last Save=Deine Änderungen seit dem letzten Speichern rückgängig machen
 User Script=Benutzerskript
 Volume=>Volumen
+
 ;
 ; Help
 ;
@@ -40,12 +39,16 @@ Volume=>Volumen
 > Wähle die Optionen für diesen Datenträger/Einhängepunkt. Diese Änderungen werden sofort vorgenommen. Du musst nicht auf **Speichern** klicken, um sie zu speichern.
 :end
 
-:ud_edit_script_attach_detach_plug:
-> Klick auf **Trennen**, um den Datenträger zu trennen. Der Datenträger wird dann unter vorherige Datenträger angezeigt und kann dort über die Datenträger-Einstellungen verbunden werden.
->
-> Klick auf **Verbinden**, um einen Datenträger zu verbinden, der getrennt wurde. Der Datenträger wird so behandelt, als wäre er gerade erst installiert worden und wird automatisch eingehängt, wenn "Auto-Einhängen" aktiviert ist. Es wird eine Weile dauern, bis das Gerät in UD angezeigt wird.
->
-> Klick auf **Fertig**, um die Seite zu verlassen.
+:ud_edit_script_detach_plug:
+> Click **Detach** to detach the device.  The device will then show in Historical Devices and can be Attached from the device settings there.
+:end
+
+:ud_edit_script_attach_plug:
+> Click **Attach** to attach a device that has been detached.  This will act like the device was just installed and will auto mount if 'Auto Mount' is on.  It will take a while for the device to show up in UD.
+:end
+
+:ud_edit_script_abort_plug:
+> Click **Abort** to abort the device script.
 :end
 
 :ud_disk_name_plug:
@@ -54,10 +57,6 @@ Volume=>Volumen
 > **Name:** Maximal 8 Zeichen, Leerzeichen werden in '_' umgewandelt, minimale Sonderzeichen sind erlaubt, Groß- und Kleinschreibung wird beachtet.
 >
 > **Hinweis:** Darf nicht "dev" als erstes Zeichen enthalten. Dies ist für die "devX"-Geräte reserviert.
-:end
-
-:ud_apfs_volume_plug:
-> Gib das einzuhängende Volume auf dieser apfs-Partition ein. Klicke auf **Speichern**, um diese Einstellung zu übernehmen.
 :end
 
 :ud_edit_script_choose_name_plug:
@@ -79,3 +78,20 @@ Volume=>Volumen
 > Klick auf **Speichern**, um die aktuellen Änderungen zu übernehmen.
 > Klick auf **Fertig**, um die Seite zu verlassen.
 :end
+
+; Note: August 8, 2023 - 15 missing translations
+Abort Device Script=
+Attach This Disk=
+Click to select file or click 'Default' button for the Device Script File=
+Detach This Disk=
+Disable Mount and Unmount Button=
+Disk Serial=
+Enter the User Script File Name=
+Enter the volume to mount on this apfs partition=
+Mount Point=
+Mount Remote Share Read only=
+Save your Device Script File=
+Show all partitions on this device by default=
+Show Partitions=
+Source=
+ZFS Volume=
