@@ -23,7 +23,7 @@ for information on the issue=Für Informationen zum Problem
 Go to Settings->Syslog Server and enable the Syslog Server=Gehe zu Einstellungen->Systemprotokoll-Server und aktiviere den Systemprotokoll-Server
 Governor=Governor
 Guide=Hilfestellung
-If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Wenn OOM-Fehler auftreten, passen Sie die Einstellungen für den Datenträger Cache auf der Seite Tweaks an
+If you are experiencing OOM errors, try adjusting the Disk Cache settings on the Tweaks page=Wenn OOM-Fehler auftreten, pass die Einstellungen für den Datenträger Cache auf der Seite Tweaks an
 If you configure VLANs on Unraid, you should make Unraid the Master Browser=Wenn VLANs in Unraid konfiguriert sind, solltest du Unraid zum Master-Browser machen
 If you dont Unraid may not detect the Master Browser for all network interfaces correctly=Wenn du das nicht tust, erkennt Unraid den Master-Browser möglicherweise nicht an allen Netzwerkschnittstellen korrekt
 If you have an Intel Processor, it may appear that all CPUs are constantly running at full speed=Bei Intel-Prozessoren kann es den Anschein haben, dass alle CPUs ständig mit voller Geschwindigkeit laufen
@@ -51,7 +51,7 @@ Put the IP address of your server in the Remote syslog server field=Gib die IP-A
 Read this=Lies das
 Schedule CPU Power Saving Mode=Zeitplan für den CPU-Energiesparmodus
 Some have reported better VM performance with media streaming and gaming VMs with the suggestions on this=Einige Benutzer haben mit diesen vorgeschlagenen Einstellungen eine bessere Leistung bei Medien-Streaming- und Gaming-VMs berichtet
-Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Einige Benutzer meldeten eine stabilere und schnellere Netzwerkverbindung, nachdem sie Änderungen an den Netzwerkparametern im Reiter Optimierungen dieses Plugins vorgenommen haben
+Some have reported faster and more consistent network performance by making changes in networking parameters on the Tweaks tab of this plugin=Einige Benutzer meldeten eine stabilere und schnellere Netzwerkverbindung, nachdem du Änderungen an den Netzwerkparametern im Reiter Optimierungen dieses Plugins vorgenommen hast
 Some of the settings will consume RAM and may end up causing Linux to terminate some processes to free up RAM=Einige dieser Einstellungen verbrauchen RAM und können dazu führen, dass Linux einige Prozesse beendet, um RAM freizugeben
 Some people are reporting OOM out of memory errors=Einige Personen berichten von OOM-Fehlern (Out Of Memory / Kein Arbeitsspeicher mehr)
 Support for older versions of Unraid is being phased out=Die Unterstützung für ältere Versionen von Unraid wird eingestellt
@@ -109,7 +109,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_nics_plug:
-> Gebe die NICs an, für die die oben genannten Einstellungen gelten sollen, getrennt durch Kommas. Wenn du mehrere NICs hast, die gebündelt sind, musst du alle angeben. 
+> Gib die NICs an, für die die oben genannten Einstellungen gelten sollen, getrennt durch Kommas. Wenn du mehrere NICs hast, die gebündelt sind, musst du alle angeben. 
 > Die Einstellungen für Flusssteuerung, TSO und NIC-Puffer werden auf diese NICs angewendet.
 :end
 
@@ -173,11 +173,11 @@ You may actually cause more problems than you solve if there are problems with y
 
 
 :tips_tweaks_cpu_state_plug:
-> Gebe die Zeit ein, zu der du den Governor auf "Power Save" für Intel Pstate oder "On Demand" im 24-Stunden-Format ss:mm einstellen möchtest.
+> Gib die Zeit ein, zu der du den Governor auf "Power Save" für Intel Pstate oder "On Demand" im 24-Stunden-Format ss:mm einstellen möchtest.
 :end
 
 :tips_tweaks_performance_plug:
->  Gebe die Zeit ein, zu der du den Governor auf "Performance" im 24-Stunden-Format ss:mm einstellen möchtest.
+> Gib die Zeit ein, zu der du den Governor auf "Performance" im 24-Stunden-Format ss:mm einstellen möchtest.
 :end
 
 
@@ -191,7 +191,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_kill_processes_plug:
-> Gebe die Namen der Prozesse ein, die vor dem Stoppen des Arrays beendet werden sollen, getrennt durch Kommas. Zum Beispiel "ssh" und "bash". Diese Prozesse können verhindern, dass die Array-Datenträger ausgehängt werden und Unraid beim Stoppen des Arrays hängen bleibt.
+> Gib die Namen der Prozesse ein, die vor dem Stoppen des Arrays beendet werden sollen, getrennt durch Kommas. Zum Beispiel "ssh" und "bash". Diese Prozesse können verhindern, dass die Array-Datenträger ausgehängt werden und Unraid beim Stoppen des Arrays hängen bleibt.
 >
 > Hinweis: Sei vorsichtig mit den Prozessen, die du hier beendest. Du könntest Daten verlieren!
 :end
