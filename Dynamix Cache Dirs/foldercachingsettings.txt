@@ -1,6 +1,6 @@
 Adaptive=Adaptiv
 Cache pressure of directories on system=Cache-Druck von Verzeichnissen auf dem System
-Check HELP for filter example=Sieh dir für ein Filterbeispiel die HILFE an 
+Check HELP for filter example=Sieh dir für ein Filterbeispiel die HILFE an
 Disk Idle Timer=Timer für Datenträger-Leerlauf
 Excluded folders=Ordner ausschließen
 Folder caching function=Ordner-Caching-Funktion
