@@ -18,7 +18,6 @@ Change Disk Mount Point=Einhängepunkt des Datenträgers ändern
 Change ISO File Mount Point=Einhängepunkt der ISO-Datei ändern
 Change Remote Share Mount Point=Einhängepunkt der entfernten Freigabe ändern
 Change SMB=SMB-Freigabe ändern
-Changing the Mount Point will also change the disk label=Das Ändern des Einhängepunkts ändert auch die Bezeichnung des Datenträgers
 Clear=Leeren
 Click to select ISO file=Klicken, um die ISO-Datei auszuwählen
 Click to view/hide partitions and mount points=Klicken, zum ein/ausblenden von Partitionen und Einhängepunkten
@@ -79,7 +78,6 @@ No Unassigned Disks available=Keine nicht zugewiesenen Datenträger verfügbar
 Not Enabled=Nicht aktiviert
 not installed=Nicht installiert
 Note=Hinweis
-offilne=Offline
 You must enable NFS in Settings->NFS to mount NFS shares=Du musst NFS unter Einstellungen->NFS aktivieren, um NFS-Freigaben einzuhängen
 You must enable SMB in Settings->SMB to mount SMB shares=Du musst SMB unter Einstellungen->SMB aktivieren, um SMB-Freigaben einzuhängen
 Open=Geöffnet
@@ -89,8 +87,6 @@ Read only=Nur Lesen
 Reboot=Neustarten
 Refresh Disks and Configuration=Datenträger und Konfiguration neu laden
 Remember your password It cannot be recovered=Merke dir dein Passwort, es kann nicht wiederhergestellt werden
-Remote Share is=Entfernte Freigabe ist
-Remote share mounts are dependent on a solid and reliable network connection and that is difficult to achieve=Das Einbinden von entfernten Freigaben hängt von einer stabilen und zuverlässigen Netzwerkverbindung ab und dies ist schwer zu realisieren
 Remove Device configuration=Datenträgerkonfiguration entfernen
 Remove ISO File Share=ISO-Dateifreigabe entfernen
 Remove Partition=Partition entfernen
@@ -117,7 +113,7 @@ Show SMB/NFS/ISO Shares=SMB/NFS/ISO-Freigaben anzeigen
 Show Disk Devices=Datenträger anzeigen
 This is a way to gather Unraid shares into one Root Share=Auf diese Weise können Unraid-Freigaben in einer Root-Freigabe zusammengefasst werden
 This will remove the ISO file share for=Dies entfernt die ISO-Dateifreigabe für
-This will remove the remote=Dies entfernt die entfernte
+This will remove the=Dies entfernt die
 This will remove the saved configuration of=Dies entfernt die gespeicherte Konfiguration für
 This will remove the=Dies entfernt die
 to confirm=Zum Bestätigen
@@ -202,6 +198,14 @@ ZFS Volume=ZFS-Volumen
 > Sei vorsichtig bei der Verwendung der Bezeichnungen /dev/sdX oder devX, da diese sich nach einem Neustart ändern können. Verwende am besten die im UD-Skript übergebenen Werte für sdX (DEVICE) und devX (UD_DEVICE).
 :end
 
-; Note: August 8, 2023 - 2 missing translations
+; Note: November 16, 2023 - 10 missing translations
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
+Enter the server name and it will be added to the local DNS names and will then resolve by name=
 Exclusive Share files will not be accessible in a Root Share=
+failed to=
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
+If shares do not show, check your credentials=
+offline=
 Pass Thru=
+Remote Server is=
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=
