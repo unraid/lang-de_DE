@@ -40,21 +40,21 @@ Volume=>Volumen
 :end
 
 :ud_edit_script_detach_plug:
-> Click **Detach** to detach the device.  The device will then show in Historical Devices and can be Attached from the device settings there.
+> Klick auf **Trennen**, um den Datenträger zu trennen. Der Datenträger wird dann unter vorherige Datenträger angezeigt und kann dort über die Datenträger-Einstellungen verbunden werden.
 :end
 
 :ud_edit_script_attach_plug:
-> Click **Attach** to attach a device that has been detached.  This will act like the device was just installed and will auto mount if 'Auto Mount' is on.  It will take a while for the device to show up in UD.
+> Klick auf **Verbinden**, um einen Datenträger zu verbinden, der getrennt wurde. Der Datenträger wird so behandelt, als wäre er gerade erst installiert worden und wird automatisch eingehängt, wenn "Auto-Einhängen" aktiviert ist. Es wird eine Weile dauern, bis das Gerät in UD angezeigt wird.
 :end
 
 :ud_edit_script_abort_plug:
-> Click **Abort** to abort the device script.
+> Klick auf **Abbrechen**, um die Ausführung des Datenträgerskripts abzubrechen.
 :end
 
 :ud_disk_name_plug:
 > Gib den Aliasnamen für diesen Datenträger ein. Dies ist der Name, um auf diesen Datenträger zu verweisen. Lässt du den Name leer, wird "devX" zugewiesen.
 >
-> **Name:** Maximal 8 Zeichen, Leerzeichen werden in '_' umgewandelt, minimale Sonderzeichen sind erlaubt, Groß- und Kleinschreibung wird beachtet.
+> **Name:** Maximal 8 Zeichen, Leerzeichen werden in "_" umgewandelt, minimale Sonderzeichen sind erlaubt, Groß- und Kleinschreibung wird beachtet.
 >
 > **Hinweis:** Darf nicht "dev" als erstes Zeichen enthalten. Dies ist für die "devX"-Geräte reserviert.
 :end
@@ -80,18 +80,18 @@ Volume=>Volumen
 :end
 
 ; Note: August 8, 2023 - 15 missing translations
-Abort Device Script=
-Attach This Disk=
-Click to select file or click 'Default' button for the Device Script File=
-Detach This Disk=
-Disable Mount and Unmount Button=
-Disk Serial=
-Enter the User Script File Name=
-Enter the volume to mount on this apfs partition=
-Mount Point=
-Mount Remote Share Read only=
-Save your Device Script File=
-Show all partitions on this device by default=
-Show Partitions=
-Source=
-ZFS Volume=
+Abort Device Script=Datenträgerskript abbrechen
+Attach This Disk=Diesen Datenträger verbinden
+Click to select file or click 'Default' button for the Device Script File=Klicken, um eine Datei auszuwählen oder klick auf den "Standard"-Button für die Datenträger-Skriptdatei
+Detach This Disk=Diesen Datenträger trennen
+Disable Mount and Unmount Button=Einhängen- und Aushängen-Button deaktivieren
+Disk Serial=Datenträger-Seriennummer
+Enter the User Script File Name=Gib den Dateinamen des Benutzerskripts ein
+Enter the volume to mount on this apfs partition=Gib das einzuhängende Volumen auf dieser apfs-Partition ein
+Mount Point=Einhängepunkt
+Mount Remote Share Read only=Entfernte Freigabe schreibgeschützt einhängen
+Save your Device Script File=Speicher deine Datenträger-Skriptdatei
+Show all partitions on this device by default=Standardmäßig alle Partitionen auf diesem Datenträger anzeigen
+Show Partitions=Partitionen anzeigen
+Source=Quelle
+ZFS Volume=ZFS-Volumen

@@ -7,6 +7,6 @@ Note: While there is some risk, if it is not possible to first mount the filesys
 Run with Correct flag=Mit Korrektur-Flag ausführen
 
 ; Note: November 16, 2023 - 3 missing translations
-Cannot determine file system on an encrypted disk=
-Executing file system check=
-Executing file system scrub=
+Cannot determine file system on an encrypted disk=Das Dateisystem auf einem verschlüsselten Datenträger kann nicht ermittelt werden
+Executing file system check=Führe Dateisystemprüfung aus
+Executing file system scrub=Führe Dateisystem-Scrub aus

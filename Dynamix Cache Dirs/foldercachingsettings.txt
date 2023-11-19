@@ -138,5 +138,5 @@ User defined options=Benutzerdefinierte Optionen
 >
 > <span class="strong orange-text">-a '-noleaf -name .Recycle.Bin -prune -o -name log -prune -o -name temp -prune -o -print'</span>
 >
-> Beachte, dass die einfachen Anführungszeichen um das Argument für -a wichtig sind. Doppelte Anführungszeichen funktionieren in der aktuellen Version nicht, daher ist es derzeit leider nicht möglich, mit '-name "*Old" -prune' zu filtern.
+> Beachte, dass die einfachen Anführungszeichen um das Argument für -a wichtig sind. Doppelte Anführungszeichen funktionieren in der aktuellen Version nicht, daher ist es derzeit leider nicht möglich, mit "-name "*Old" -prune" zu filtern.
 :end

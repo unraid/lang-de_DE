@@ -1,5 +1,5 @@
 :main_array_devices_help:
-**Farbiger Statusindikator** Bedeutung des Farbindikators am Anfang jeder Zeile vom *Array-Datenträger*:
+**Farbige Statusanzeige** Die Bedeutung der Farbkennzeichnung am Anfang jeder Zeile vom *Array-Datenträgern* ist folgende:
 
 <i class='fa fa-circle orb green-orb'></i>Normalbetrieb, Datenträger ist aktiv.
 
@@ -17,9 +17,10 @@
 enthält die Modell- und Seriennummer, die Linux-Geräte-ID und die Datenträgergröße.
 
 **Temp.** (Temperatur) wird direkt vom Datenträger ausgelesen. Du kannst die anzuzeigenden Einheiten
-in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfigurieren. Es werden keine Temperaturen von heruntergefahrenen
-Datenträgern ausgelesen, da diese dadurch in der Regel hochgefahren werden; stattdessen wird das "*"-Symbol angezeigt. Das
-Symbol "*" wird ebenso bei SSD- und Flash-Datenträgern angezeigt, die teilweise gültige Temperaturen aber auch manchmal den Wert "0" zurückgeben.
+in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfigurieren. Es werden keine Temperaturen von
+heruntergefahrenen Datenträgern ausgelesen, da diese dadurch in der Regel hochgefahren werden; stattdessen
+wird das "*"-Symbol angezeigt. Das Symbol "*" wird ebenso bei SSD- und Flash-Datenträgern angezeigt,
+die teilweise gültige Temperaturen aber auch manchmal den Wert "0" zurückgeben.
 
 **Größe, Benutzt, Frei** gibt die Gesamtgröße, den verwendeten und verbleibenden Speicher für Dateien an. Diese Einheiten
 werden ebenfalls in den [Anzeigeeinstellungen](Settings/DisplaySettings) konfiguriert. Der belegte Speicherplatz ist
@@ -50,253 +51,255 @@ Ein unRAID-Array besteht aus einem oder zwei Paritätsdatenträgern und einer be
 Speicher-Datenträgern werden ausschließlich zum Speichern von Benutzerdaten verwendet und die Paritätsdatenträger bieten die
 notwendige Redundanz für die Wiederherstellung bei Datenträgerausfällen.
 
-Da die Daten nicht über das Array verteilt sind, muss der größte Datenträger im Array der/die Paritätsdatenträger sein.
+Da die Daten nicht über das Array verteilt sind, müssen die Paritäts-Datenträger gleich groß oder größer als der größte Datenträger sein.
 Der Paritätsdatenträger sollte ebenso der mit der höchsten Leistung/Geschwindigkeit sein.
 
-Jeder Datenträger hat sein eigenes Dateisystem und kann somit als
-separate Nutzer-Freigabe freigegeben werden.
+Jeder Datenträger hat sein eigenes Dateisystem und kann als
+separate Freigabe exportiert werden.
 
-Klick auf den Datenträgernamen um Datenträgereinstellungen bzw. Tools aufzurufen.
+Klick auf den Datenträgernamen, um einzelne Datenträgereinstellungen zu konfigurieren und bestimmte Dienstprogramme zu starten.
 :end
 
 :main_slots_help:
-**Slots** wählen Sie die Nummer der anzuzeigenden Slots für die Array Datenträger.
-Die minimale Anzahl der Array Slots beträgt 2, Sie müssen mindestens einen Datenträger dem Array zuweisen.
+**Slots** Wähle die Anzahl der Datenträger-Slots in deinem Server, die für Array-Datenträger verwendet werden sollen.
+Die Mindestanzahl vom Array-Slots beträgt 2 und du musst mindestens einen Datenträger dem Array zuweisen.
 :end
 
 :cache_devices_help:
-**Farbige Status Anzeige** Bedeutung des Farbindikators am Anfang jeder Zeile von *Pool Datenträger*:
+**Farbige Statusanzeige** Die Bedeutung der Farbkennzeichnung am Anfang jeder Zeile von *Pool-Datenträgern* ist folgende:
 
-<i class='fa fa-circle orb green-orb'></i>Normal Betrieb, Datenträger ist aktiv.
+<i class='fa fa-circle orb green-orb'></i>Normalbetrieb, Datenträger ist aktiv.
 
-<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby (heruntergefahren).
+<i class='fa fa-circle orb grey-orb'></i>Datenträger im Standby-Modus (heruntergefahren).
 
 <i class='fa fa-square orb blue-orb'></i>Neuer Datenträger.
 
-<i class='fa fa-square orb grey-orb'></i>Kein Datenträger, Slot leer.
+<i class='fa fa-square orb grey-orb'></i>Kein Datenträger vorhanden, Slot leer.
 
-**Pool Datenträger** ist ein einzelner oder ein Pool aus mehreren Datenträgern, *außerhalb* des Unraid-Arrays. Kann für
-den Zugriff über eine Freigabe eingerichtet werden. Außerhalb des Arrays daher wesentlich höhere Schreibgeschwindigkeit.
+**Pool-Datenträger** sind ein einzelner oder ein Pool aus mehreren Datenträgern *außerhalb* des unRAID-Arrays. Diese können für den Netzwerkzugriff
+exportiert werden, genau wie wie ein Array-Datenträger. Da sie sich außerhalb des unRAID-Arrays befinden, ist die Schreibgeschwindigkeit wesentlich
+schneller.
 
 Es gibt zwei Möglichkeiten Pool-Datenträger zu konfigurieren:
 
-1. Als einzelnen Datenträger, oder
-2. Als aus mehreren bestehenden Datenträgern.
+1. Als ein einzelner Datenträger oder
+2. Als Pool mit mehreren Datenträgern.
 
-Wenn als einzelner Datenträger konfiguriert kann der Datenträger mit jedem unterstützen Dateisystem formatiert (btrfs, reiserfs,
-oder xfs) werden.  Diese Konfiguration ist die Performanteste jedoch auch die Riskanteste - wenn der Datenträger
-ausfällt sind möglicherweise alle Daten verloren.
+Wenn du den Datenträger als einzelnen Datenträger konfigurierst, kannst du ihn mit jedem unterstützten Dateisystem formatieren
+(btrfs, reiserfs oder xfs). Diese Konfiguration bietet die höchste Leistung, allerdings auf Kosten einer fehlenden
+Datensicherheit - wenn ein einzelner Pool-Datenträger ausfällt, können alle darauf befindlichen Daten verloren gehen.
 
-Wenn als aus mehreren bestehenden Datenträger konfiguriert, wird Unraid automatisch *btrfs-raid1* wählen (jeweils für Daten
-und Meta-Daten). Btrfs erlaubt es eine beliebige Anzahl von Datenträgern hinzuzufügen und garantiert das jede Datei auf zwei
+Bei der Konfiguration als Pool mit mehreren Datenträgern wählt Unraid OS automatisch das Format *btrfs-raid1* (sowohl für Daten als auch für Metadaten).
+Btrfs erlaubt es zum Pool eine beliebige Anzahl von Datenträgern hinzuzufügen und garantiert das jede Datei auf zwei
 verschiedenen Datenträger geschrieben wird. Der Pool kann somit einem einzelnen Datenträgerausfall wiederstehen.
 
-Wenn [User Shares](/Settings/ShareSettings) aktiviert sind, werden Benutzer-Freigaben am Array automatisch mit
-dem Cache-Pool verknüpft um die Schreibgeschwindigkeit zu erhöhen.
-Ein Spezieller Prozess namens *mover* kann für die Ausführung, in regelmäßigen
-Abständen, für die Übertragung vom Cache-Pool zum Array geplant werden.
+Wenn [Benutzerfreigaben](/Settings/ShareSettings) aktiviert sind, können Benutzerfreigaben so konfiguriert werden, dass sie automatisch den
+Pool-Datenträger verwenden, um die Schreibgeschwindigkeit zu erhöhen. Ein spezieller Hintergrundprozess namens *Mover* kann so eingerichtet werden,
+dass er regelmäßig ausgeführt wird, um die Dateien den Benutzerfreigaben vom Cache auf das Array zu verschieben.
 :end
 
 :cache_slots_help:
-**Slots** wählen Sie die Nummer der anzuzeigenden Slots für die Cache Datenträger.
+**Slots** Wähle die Anzahl der Datenträger-Slots in deinem Server, die für Array-Datenträger verwendet werden sollen.
 :end
 
 :boot_device_help:
-Die wichtigsten Konfigurationen werden am USB-Flash-Stick gespeichert; aus diesem Grund, muss dieser am Server
-angeschlossen bleiben. Klick auf [Flash](/Main/Flash?name=flash) um die GUID Registrierungs-Informationen
-anzuzeigen und um die Freigebe Einstellungen zu bearbeiten. Da der USB-Flash-Stick im FAT32 Dateisystem formatiert ist,
-kann er nur mit dem SMB Protokoll Freigegeben werden.
+Die wichtigsten Konfigurationen werden auf dem USB-Flashdatenträger gespeichert. Aus diesem Grund muss dieser am Server
+angeschlossen bleiben. Klick auf [Flash](/Main/Flash?name=flash), um die GUID und die Registrierungsinformationen
+anzuzeigen und die Exporteinstellungen zu konfigurieren. Da der USB-Flashdatenträger im FAT32-Dateisystem formatiert ist,
+kann er nur über das SMB-Protokoll exportiert werden.
 :end
 
 :array_status_help:
-**Farbige Status Anzeige** Bedeutung des Farbindikators von *Array*:
+**Farbige Statusanzeige** Die Bedeutung der Farbkennzeichnung des *Arrays* ist folgende:
 
-<i class='fa fa-circle orb green-orb'></i>Array ist gestartet und Parität ist gültig.
+<i class='fa fa-circle orb green-orb'></i>Das Array ist gestartet und die Parität ist gültig.
 
-<i class='fa fa-circle orb grey-orb'></i>Array ist gestoppt, Parität ist gültig.
+<i class='fa fa-circle orb grey-orb'></i>Das Array ist gestoppt und die Parität ist gültig.
 
-<i class='fa fa-warning orb yellow-orb'></i>Array ist gestartet und Parität ist ungültig.
+<i class='fa fa-warning orb yellow-orb'></i>Das Array ist gestartet aber die Parität ist ungültig.
 
-<i class='fa fa-warning orb grey-orb'></i>Array ist gestoppt, Parität ist ungültig.
+<i class='fa fa-warning orb grey-orb'></i>Das Array ist gestoppt, die Parität ist ungültig.
 
 :end
 
 :array_devices_help:
 #### Datenträger zuweisen
 
-Ein Unraid-Array besteht aus einem oder zwei Paritätsdatenträgern und einer beliebigen Anzahl von Datenlaufwerken. Die
-Datenlaufwerke sind nur für Nutzerdaten und der/die Paritätsdatenträger dient rein der Redundanz die zur
-Datenwiederherstellung nötig ist falls ein Datenlaufwerk ausfällt.
+Ein unRAID Datenträger-Array besteht aus einer beliebigen Anzahl von Speicher-Datenträgern und bis zu zwei Paritätsdatenträgern. Die
+Speicher-Datenträger werden ausschließlich für die Speicherung von Benutzerdaten verwendet während der/die Paritätsdatenträger die notwendige
+Redundanz für die Wiederherstellung bei einem Ausfall eines einzelnen oder zwei Datenträgern bietet.
 
-Beachten Sie, dass wen wir den Begriff *Datenträger* verwenden wenn wir uns auf einen Array-Datenträger beziehen. Wir
-verwenden auch manchmal *Festplatte* (oder unter Umständen *Laufwerk*) wenn wir uns auf einen Datenträger (HDD) beziehen.
-Dies liegt daran das in RAID Systemen ein Lesen/Schreiben auch bei einem fehlendem bzw. Deaktivieren Datenträger möglich
-ist! Darüber hinaus kann es Hilfreich sein zu Fragen "Welcher Datenträger wird als Parität verwendet?" oder "Welcher
-Datenträger entspricht disk2?".
-
-Wir brauchen daher eine Möglichkeit Datenträger dem Array zuzuteilen. Dies kann auf der Hauptseite wenn das Array
-gestoppt ist durchgeführt werden. Für jeden Array-Datenträger gibt es ein Drop-Down Feld in dem alle nicht zugewiesenen
-Datenträger angezeigt werden. Um einen Datenträger zuzuweisen, wählen Sie einfach einen Datenträger aus der Liste aus.
-Jedes mal wenn eine Zuweisung durchgeführt wurde aktualisiert das System eine Konfigurationsdatei um die Änderung zu speichern.
+Wir brauchen daher eine Möglichkeit Datenträger Array-Slots zuzuteilen. Dies geschieht hier auf der Start-Seite, wenn das Array
+gestoppt ist. Für jeden Array-Datenträger gibt es eine Auswahlliste in der alle nicht zugewiesenen
+Datenträger angezeigt werden. Um einen Datenträger zuzuweisen, wähle einfach einen Datenträger aus der Liste aus.
+Jedes Mal, wenn eine Datenträgerzuweisung vorgenommen wird, aktualisiert das System eine Konfigurationsdatei, um die Zuweisung zu erfassen.
 
 #### Anforderungen
 
-Anders als traditionelle RAID Systeme die Daten über mehrere Datenträger aufsplitten speichert der Unraid-Server
-die Daten individuell auf den Datenträgern. Folglich müssen bei allen Schreibvorgängen der Datenträger auf den
-eine Datei geschrieben wird und der Paritätsdatenträger aktiv sein. Aus diesen Gründen
+Im Gegensatz zu herkömmlichen RAID-Systemen, bei denen die Daten über alle Array-Datenträger verteilt sind, speichert ein
+Unraid-Server Dateien auf einzelnen Datenträgern. Folglich sind bei allen Schreibvorgängen sowohl der Datenträger,
+auf den die Datei geschrieben wird, als auch der/die Paritätsdatenträger beteiligt. Aus diesen Gründen,
 
-* muss der Paritätsdatenträger der größte oder größer als das größte Datenlaufwerk sein
+* muss der Paritätsdatenträger genauso groß oder größer sein als einer der Speicher-Datenträger
 
 und
 
-* sollte wenn möglich der schnellste/performanteste Datenträger sein.
+* sollte, wenn möglich, der/die Paritätsdatenträger der/die schnellste(n) deiner Datenträger sein.
 
-#### Allgemeine Richtlinien
+#### Richtlinien
 
-Diese Schritte sollen Ihnen bei der Erstellung eines Unraid Arrays helfen:
+Im Folgenden findest du die Schritte, die du bei der Planung deines unRAID-Datenträgerarrays befolgen solltest:
 
-1. Welcher Datenträger soll für die Parität benutzt werden und welche Datenträger sollen als Datenlaufwerk benutzt
-werden. Mit disk1, disk2, usw. beschriften. Notieren sie die Seriennummern der Datenträger,
-Sie werden sie später brauchen.
+1. Entscheide, welchen Datenträger du für die Parität und welche Datenträger du als Speicher-Datenträger1, 2 usw.
+verwenden willst und beschrifte diese auf eine Art und Weise. Notiere dir auch die Seriennummern aller Datenträger.
+Du wirst diese Informationen später benötigen.
 
-2. Bauen Sie die Datenträger in den Server ein und Starten Sie Unraid und navigieren Sie zur WebGUI. Sollte dies eine neue
-Installation sein wird die Hauptseite keine installierten Datenträger anzeigen. Dies heißt aber nicht das deine Datenträger
-nicht erkannt wurden, Sie wurden lediglich noch nicht zugewiesen.
+2. Schließe deine Datenträger an, fahre deinen Server hoch und rufe die WebGUI auf. Wenn es sich um ein neues System handelt,
+werden auf der Start-Seite keine angeschlossenen Datenträger angezeigt. Dies heißt aber nicht, dass das System deine Datenträger
+nicht erkannt hat. Es wurden lediglich noch keine zugewiesen.
 
-3. Nun brauchen Sie die Seriennummern aus Schritt 1. Wählen Sie für den Paritätsdatenträger und das Datenlaufwerk
-den Datenträger, basierend auf der Seriennummer, aus dem Drop-Down aus und weisen ihm den dementsprechenden Slot zu.
+3. Erinnerst du dich an die Seriennummern, die du in Schritt 1 notiert hast? Wähle für die Parität und jeden Speicher-Datenträger
+den richtigen Datenträger anhand seiner Seriennummer aus der Auswahlliste aus.
 
 #### Hot Plug
 
-Sie können die Datenträger ebenso mittels *Hot Plug* einsetzen wenn Ihre Hardware dies unterstützt. Wenn Sie zum
-Beispiel Festplatten Wechselrahmen benutzen können Sie diese im Laufenden Betrieb einsetzen wenn das Array gestoppt
-ist. Warten Sie einen kurzen Moment und Aktualisieren sie die Hauptseite von Unraid und der soeben eingesetzte Datenträger
-erscheint im Drop-Down.
+Du kannst Datenträger auch mittels *Hot Plug* an deinen Server anschließen, wenn deine Hardware dies unterstützt.
+Wenn du z.B. Datenträgerkäfige verwendest, kannst du diese einfach im laufenden Betrieb in deinen Server einsetzen,
+während das Array gestoppt ist. Aktualisiere die Start-Seite, damit neue, nicht zugewiesene Datenträger in den
+Auswahllisten für die Zuweisung erscheinen.
 
 #### Weiterführende Schritte
 
-Wenn Sie alle Datenträger zugewiesen haben bitte folgen sie dem Array Status Abschnitt
-und starten Sie das Array.
+Sobald du alle Datenträger zugewiesen hast, beachte bitte den Array-Status Abschnitt
+weiter unten und starten das Array.
 :end
 
 :encryption_help:
 #### Verschlüsselung
 
-Wenn das Array gestoppt ist kann ein neuer Verschlüsselungsschlüssel vergeben werden. Bitte beachten Sie wenn ein Datenträger
-bereits mit einem anderen Schlüssel verschlüsselt wurde das er mit einem neuen nicht starten wird. Die Änderung des Schlüssels
-von bereits verschlüsselten Datenträgern erfordert eine erneute Formatierung **dies löscht alle bereits vorhanden Daten!**
+Wenn das Array gestoppt ist, kann ein neuer Verschlüsselungsschlüssel vergeben werden. Bitte beachte, dass wenn ein
+Datenträger bereits mit einem anderen Schlüssel verschlüsselt wurde, er nur mit diesem Schlüssel gestartet werden kann.
+Die Änderung des Schlüssels von bereits verschlüsselten Datenträgern erfordert eine erneute Formatierung,
+**was zu einem dauerhaften Verlust aller auf diesen Datenträgern vorhandenen Daten führt**
 
 #### Passphrase
 
-Eine Passphrase besteht aus bis zu 512 Zeichen. Es wird empfohlen nur die 95 druckbaren Zeichen der 128 ersten Zeichen
-der [ASCII table](https://en.wikipedia.org/wiki/ASCII) zu benutzen, da diese immer die gleiche Binäre Bedeutung haben.
-Andere Zeichen können je nach System anders Codiert sein und könnten somit die Gültigkeit der Passphrase beeinträchtigen.
-Falls Sie eine längere Passphrase möchten oder Binäre Dateien inkludieren wollen, laden sie bitte ein Schlüssel-Datei hoch.
+Gib eine Passphrase aus bis zu 512 Zeichen ein. Es wird empfohlen nur die 95 druckbaren Zeichen der 128 ersten Zeichen
+der [ASCII-Tabelle](https://en.wikipedia.org/wiki/ASCII) zu benutzen, da diese immer die gleiche binäre Bedeutung haben.
+Andere Zeichen können je nach System eine andere Kodierung haben und deine Passphrase wird mit einer anderen Kodierung nicht funktionieren.
+Falls du eine längere Passphrase wünscht oder binäre Daten einbeziehen möchtest, lade bitte eine Schlüsseldatei hoch.
 
-Bitte [cryptsetup FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects)
-für die Definition einer *sicheren* Passphrase beachten.
+Bitte beachte die [Cryptsetup-FAQ](https://gitlab.com/cryptsetup/cryptsetup/wikis/FrequentlyAskedQuestions#5-security-aspects),
+um zu verstehen, was eine *sicheren* Passphrase ausmacht.
 
-**Prägen** Sie sich die Passphrase ein. **FALLS SIE VERLOREN WIRD, KANN DER VERSCHLÜSSELTE INHALT NICHT WIEDERHERGESTELLT WERDEN!**
+**Merke** dir diese die Passphrase. **FALLS SIE VERLOREN WIRD, KANN DER VERSCHLÜSSELTE INHALT NICHT WIEDERHERGESTELLT WERDEN!**
 
-#### Schlüssel-Datei
+#### Schlüsseldatei
 
-Wählen Sie eine Schlüsseldatei mit einem gespeicherten Schlüssel oder einer Binärdatei aus. Die maximale Größe beträgt 8M (8388608 byte).
+Wähle eine lokale Schlüsseldatei mit einem gespeicherten Verschlüsselungsschlüssel oder einer Binärdatei aus. Die maximale Größe beträgt 8M (8388608 Byte).
 
-**Sichere** unbedingt deine Schlüsseldatei. **FALLS SIE VERLOREN WIRD, KANN DER VERSCHLÜSSELTE INHALT NICHT WIEDERHERGESTELLT WERDEN!**
+**Sichere** unbedingt deine lokale Schlüsseldatei. **FALLS SIE VERLOREN WIRD, KANN DER VERSCHLÜSSELTE INHALT NICHT WIEDERHERGESTELLT WERDEN!**
 :end
 
 :info_warning_temp_help:
-*Datenträgertemperatur Warnung* setzt die Temperatur bei der eine Warnung ausgelöst wird fest. Das Überschreiten löst eine Benachrichtigungswarnung aus.
+*Hohe Datenträgertemperatur* legt den Schwellenwert für eine hohe Datenträgertemperatur dieses Datenträgers fest.
+Das Überschreiten dieses Schwellenwerts führt zu einer Warn-Benachrichtigung.
 
-Ein Wert von 0 deaktiviert die Warnung (inklusive der Benachrichtigung).
+Ein Wert von 0 deaktiviert den Schwellenwert für hohe Datenträgertemperatur (inklusive der Benachrichtigungen).
 :end
 
 :info_critical_temp_help:
-*Kritische Datenträgertemperatur Warnung* setzt die Temperatur bei der eine Kritische Warnung ausgelöst wird fest. Das Überschreiten löst eine Kritische Benachrichtigungswarnung aus.
+*Kritische Datenträgertemperatur* legt den Schwellenwert für eine kritische Datenträgertemperatur dieses Datenträgers fest.
+Das Überschreiten dieses Schwellenwerts führt zu einer Alarm-Benachrichtigung.
 
-Ein Wert von 0 deaktiviert die Kritische Datenträgertemperatur Warnung (inklusive der Benachrichtigung).
+Ein Wert von 0 deaktiviert den Schwellenwert für kritische Datenträgertemperatur (inklusive der Benachrichtigungen).
 :end
 
 :info_file_system_help:
-Gewünschter Dateisystemtyp. Das ändern des Dateisystem lässt eine Formatierung des Datenträger mit dem
-neu gewählten Dateisystem zu. Bitte Beachten **alle existierenden Dateien auf dem Datenträger werden gelöscht**.
+Wähle das gewünschte Dateisystem aus. Das Ändern des Dateisystems ermöglicht es dir diesen Datenträger mit dem
+neu gewählten Dateisystem neu zu formatieren. Bitte beachte, dass **alle vorhandenen Dateien auf dem Datenträger gelöscht werden**.
 :end
 
 :info_comments_help:
 Dieser Text erscheint im Feld *Kommentar* im Windows Explorer.
-Eingabe nach belieben möglich, maximal 256 Zeichen.
+Gib einen beliebigen Text mit bis zu 256 Zeichen ein.
 :end
 
 :info_warning_utilization_help:
-*Datenträger-Auslastungswarnung* setzt die Datenträger-Auslastungsgrenze bei der eine Warnung ausgelöst wird. Das Überschreiten löst eine Benachrichtigungswarnung aus.
+*Hohe Datenträgerauslastung* legt den Schwellenwert für eine hohe Datenträgerauslastung dieses Datenträgers fest.
+Das Überschreiten dieses Schwellenwerts führt zu einer Warn-Benachrichtigung.
 
-Wenn die Warngrenze größer/gleich der kritischen Warnung gesetzt wird, wird nur die kritische Warnung ausgelöst (es wird keine Warnung ausgelöst).
+Wenn der Schwellenwert für hohe eine Auslastung größer/gleich als der für eine kritische Auslastung festgelegt wird,
+wird es nur kritische Benachrichtigungen geben (eine für hohe Auslastung gibt es dann nicht).
 
-Ein Wert von 0 deaktiviert die Warnung (inklusive der Benachrichtigung).
+Ein Wert von 0 deaktiviert den Schwellenwert für kritische Datenträgerauslastung (inklusive der Benachrichtigung).
 :end
 
 :info_critical_utilization_help:
-*Kritische Datenträgerauslastung* setzt die Kritische Datenträger-Auslastungsgrenze. Das Überschreiten löst eine Kritische Benachrichtigungswarnung aus.
+*Kritische Datenträgerauslastung* legt den Schwellenwert für eine kritische Datenträgerauslastung dieses Datenträgers fest.
+Das Überschreiten dieses Schwellenwerts führt zu einer Alarm-Benachrichtigung.
 
-Ein Wert von 0 deaktiviert die Kritische Datenträger-Auslastungswarnung (inklusive der Benachrichtigung).
+Ein Wert von 0 deaktiviert den Schwellenwert für kritische Datenträgerauslastung (inklusive der Benachrichtigungen).
 :end
 
 :info_btrfs_balance_help:
-**Balance** löst ein *btrfs-Balance* aus das die Daten über alle Pool-Datenträger Restriped, zum Beispiel,
-um den Pool von raid1 zu raid0 zu konvertieren oder umgekehrt.
+**Balance** führt das Program *btrfs balance* aus, um die Daten über alle Pool-Datenträger neu zu verteilen. Zum Beispiel,
+um den Pool von raid1 zu raid0 oder umgekehrt zu konvertieren.
 
-Wenn ein *Full-Balance* ausgeführt wird, wird Grundsätzlich alles im Dateisystem neu geschrieben.
+Wenn ein *full balance* ausgeführt wird, wird grundsätzlich alles im Dateisystem neu geschrieben.
 
-Eine *mode conversion* wirkt sich auf die Datenbereiche von btrfs aus; Meta-Daten nutzen immer raid1 und werden falls nötig zu raid1 konvertiert im Zuge der Balance.
+Eine *mode conversion* wirkt sich auf die Datenbereiche von btrfs aus; Metadaten verwenden immer raid1 und werden bei Bedarf
+durch den Balance-Vorgang zu raid1 konvertiert.
 
-Dies kann eine lange Zeit dauern, abhängig von der Größe des Dateisystems und der Geschwindigkeit des Datenträgers.
+Dies kann einige Zeit dauern, abhängig von der Größe des Dateisystems und der Geschwindigkeit des Datenträgers.
 
-Unraid verwendet die Standardoptionen beim Erstellen eines Pools mit mehreren Geräten:
+Unraid OS verwendet diese Standardoptionen beim Erstellen eines Pools mit mehreren Datenträgern:
 
 `-dconvert=raid1 -mconvert=raid1`
 
-Eine ausführlichere Dokumentation zu btrfs-Balance finden Sie unter [Manpage](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
+Eine ausführlichere Dokumentation zu "btrfs balance" findest du im [btrfs Handbuch](https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-balance)
 
-*Hinweis: raid5 und raid6 sind von der Linux Community immer noch als **experimentell** eingestuft*
+*Hinweis: raid5 und raid6 werden von der Linux-Gemeinschaft allgemein noch als **experimentell** angesehen*
 :end
 
 :info_balance_cancel_help:
-**Abbruch** bricht den laufenden Balance-Vorgang ab.
+**Abbrechen** bricht den laufenden Balance-Vorgang ab.
 :end
 
 :info_btrfs_scrub_help:
-**Scrub** startet *btrfs scrub* welches alle Daten und Metadaten von den Datenträgern liest
-und die Prüfsummen vergleicht.
+**Scrub** führt das Program *btrfs scrub* aus, welches alle Daten- und Metadatenblöcke von allen Datenträgern liest
+und die Prüfsummen verifiziert.
 
-Wenn *Repariere defekte Blöcke* ausgewählt ist, repariert *btrfs scrub* alle defekten Blöcke falls eine korrekte Kopie vorhanden ist.
+Wenn *Beschädigte Blöcke reparieren* ausgewählt ist, repariert *btrfs scrub* alle defekten Blöcke, falls eine fehlerfreie Kopie vorhanden ist.
 :end
 
 :info_scrub_cancel_help:
-**Abbrechen** bricht den laufenden Scrub Vorgang ab.
+**Abbrechen** bricht den laufenden Scrub-Vorgang ab.
 :end
 
 :info_btrfs_check_help:
-**Prüfe** startet *btrfs check* um die Integrität des Dateisystems am Datenträger zu Prüfen.
+**Prüfen** führt das Programm *btrfs check* aus, um die Integrität des Dateisystems auf dem Datenträger zu überprüfen.
 
-Das Feld *Optionen* wird mit *--readonly* befüllt womit nur die Prüfung ausgeführt wird. Falls eine Reparatur erforderlich
-ist, ist ein zweiter Durchlauf mit der *Option* *--repair* erforderlich; dies erlaubt *btrfs check* das Dateisystem zu reparieren.
+Das Feld *Optionen* wird mit *--readonly* vor-ausgefüllt, womit nur eine Prüfung ausgeführt wird. Falls eine Reparatur erforderlich
+ist, solltest du einen zweiten Durchlauf mit der *Option* *--repair* durchführen; dies erlaubt *btrfs check*, das Dateisystem zu reparieren.
 
-Nach Start des Checks bitte die Seite Aktualisieren um den Status zu überwachen. Abhängig wie groß das Dateisystem
-ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **lange Zeit** dauern (Stunden).
-Es erfolgt nur eine minimale Ausgabe, jedoch kann anhand des Lese-/Schreibstatus auf der Hauptseite
-geprüft werden ob der Vorgang läuft.
+Nach Start einer Überprüfung solltest du die Seite neu laden, um den Fortschritt und den Status zu überwachen. Abhängig davon wie groß
+das Dateisystem ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **sehr lange** dauern (Stunden).
+Es erfolgt nur eine minimale Ausgabe, jedoch kann anhand des Lese-/Schreibstatus auf der Hauptseite geprüft werden ob der Vorgang läuft.
+Im Fenster werden nicht viele Informationen angezeigt, aber du kannst überprüfen, ob der Vorgang läuft, indem du den steigenden
+Lese-/Schreibzähler für den Datenträger auf der Start-Seite beobachtest.
 :end
 
 :info_check_cancel_help:
-**Abbruch** bricht den laufenden Check Vorgang ab.
+**Abbrechen** bricht den laufenden Prüfvorgang ab.
 :end
 
 :info_reiserfs_check_help:
-**Check** startet *reiserfsck* um die Intigrität des Dateisystems am Datenträger zu Prüfen.
+**Prüfen** führt das Programm *reiserfsck* aus, um die Integrität des Dateisystems auf dem Datenträger zu überprüfen.
 
-Das Feld *Optionen* kann mit Optionen zum reparieren des Dateisystems befüllt werden. Normalerweise wird der erste
-Check mit leerem *Optionen* Feld durchgeführt. Wenn der erste Check ausgeführt wurde und *reiserfsck* Probleme fand, müssen
-Sie einen zweiten Durchlauf starten, mit den vom ersten *reiserfsck* instruierten Optionen.
+Das Feld *Optionen* kann mit spezifischen Optionen ausgefüllt werden, um Probleme im Dateisystem zu beheben. Normalerweise wird
+die erste Überprüfung mit leerem *Optionen*-Feld durchgeführt. Wenn die erste Überprüfung abgeschlossen ist und *reiserfsck*
+Probleme findet, musst du einen zweiten Prüf-Durchlauf starten, mit einer der beim ersten *reiserfsck*-Durchlauf empfohlenen Option.
 
 Nach Start des Checks bitte die Seite aktualisieren, um den Status zu überwachen.  Abhängig wie groß das Dateisystem
 ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **lange Zeit** dauern (Stunden).
@@ -305,23 +308,23 @@ geprüft werden ob der Vorgang läuft.
 :end
 
 :info_reiserfs_cancel_help:
-**Abbruch** bricht den laufenden Check Vorgang ab.
+**Abbrechen** bricht den laufenden Prüfvorgang ab.
 :end
 
 :info_xfs_check_help:
-**Check** startet *xfs_repair* um die Integrität des Dateisystems am Datenträger zu Prüfen.
+**Prüfen** führt das Programm *xfs_repair* aus, um die Integrität des Dateisystems auf dem Datenträger zu überprüfen.
 
-Das Feld *Optionen* wird mit *-n* befüllt womit nur die Prüfung ausgeführt wird.  Falls eine Reparatur erforderlich
-ist, ist ein zweiter Durchlauf mit dem Feld *Optionen* leer durchzuführen; dies erlaubt *xfs_repair* das Dateisystem zu reparieren.
+Das Feld *Optionen* wird mit *-n* vor-ausgefüllt, womit nur eine Prüfung ausgeführt wird. Falls eine Reparatur erforderlich
+ist, solltest du einen zweiten Durchlauf mit leerem *Optionen*-Feld durchführen; dies erlaubt *xfs_repair*, das Dateisystem zu reparieren.
 
-Nach Start des Checks bitte die Seite aktualisieren um den Status zu überwachen.  Abhängig wie groß das Dateisystem
+Nach Start des Checks bitte die Seite aktualisieren, um den Status zu überwachen.  Abhängig wie groß das Dateisystem
 ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **lange Zeit** dauern (Stunden).
 Es erfolgt nur eine minimale Ausgabe, jedoch kann anhand des Lese-/Schreibstatus auf der Hauptseite
 geprüft werden ob der Vorgang läuft.
 :end
 
 :info_xfs_cancel_help:
-**Abbruch** bricht den laufenden Check Vorgang ab.
+**Abbrechen** bricht den laufenden Prüfvorgang ab.
 :end
 
 :info_smart_notifications_help:
@@ -2404,4 +2407,51 @@ This is particularly useful when you have created custom interfaces (e.g. tailsc
 Enter one or more interface names or IP addresses which will be excluded from the list of listening interfaces for local system services.
 
 This can be used to exclude dedicated local interfaces (e.g. p-t-p connections) or exclude dynamic interfaces (WireGuard tunnels) from using local system services.
+:end
+
+; New entries (1) - 2023-11-17
+
+:sysdrivers_intro_help:
+This page displays all the drivers available on this system. Filter the list according to whether the driver is Inuse or not, or search for a specific driver if desired.
+
+Any 3rd party driver installed by a plugin will have a support symbol next to it, click this to get support for the plugin.
+
+Click the edit button to add/modify/delete any modprobe.d config file in the config/modprobe.d directory on the flash drive.
+:end
+
+; New entries (6) - 2023-11-17
+
+:display_width_help:
+**Boxed** is the legacy setting which constrains the content width to maximum 1920 pixels
+
+**Unlimited** allows content to use all available width, which maybe useful on wide screens
+:end
+
+:vms_disable_help:
+Stop VMs from Autostarting\Starting when VM Manager starts or open is run from the gui to start, error message will be seen.
+:end
+
+:notifications_auto_close_help:
+Number of seconds before notifications are automatically closed in *Detailed* view.<br>
+A value of 0 disables automatic closure.
+:end
+
+:console_keyboard_help:
+Select your default keymap for the local console (not the web Terminal).
+:end
+
+:console_screen_help:
+**Default:** 'Default' will set the blank timeout to 15 minutes and powersave to 60 minutes.
+
+**Disabled:** 'Disabled' will disable the blank and powersave timeout.
+
+**All other values:** Will set the blank timout to the selected value and disable the powersave timeout.
+:end
+
+:console_bash_help:
+If set to 'Yes' the bash history will persist reboots, set to 'No' to disable.
+
+**ATTENTION:** The bash history will be written to the USB Boot device so this will introduce higher wear and tear!
+
+**Note:** Disabling and Enabling will remove the entire bash history.
 :end

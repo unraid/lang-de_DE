@@ -68,7 +68,7 @@ Mount Point=Einhängepunkt
 Mounting=Einhängen
 Next=Weiter
 NFS Mount Point=NFS-Einhängepunkt
-NFS or ISO File Shares configured=NFS- oder ISO-Dateifreigabe
+NFS or ISO File Shares configured=NFS- oder ISO-Dateifreigabe konfiguriert
 NFS Script=NFS-Skript
 NFS Script Log=NFS-Skriptprotokoll
 NFS Share=NFS-Freigabe
@@ -199,13 +199,13 @@ ZFS Volume=ZFS-Volumen
 :end
 
 ; Note: November 16, 2023 - 10 missing translations
-Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=
-Enter the server name and it will be added to the local DNS names and will then resolve by name=
-Exclusive Share files will not be accessible in a Root Share=
-failed to=
-If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=
-If shares do not show, check your credentials=
-offline=
-Pass Thru=
-Remote Server is=
-Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=
+Changing the Mount Point will also change the disk label on all disks and the pool name on a ZFS disk=Das Ändern des Einhängepunkts ändert auch die Datenträgerbezeichnung auf allen Datenträgern und den Poolnamen auf einem ZFS-Datenträger
+Enter the server name and it will be added to the local DNS names and will then resolve by name=Gebe den Servernamen ein. Er wird zu den lokalen DNS-Namen hinzugefügt und dann nach Namen aufgelöst
+Exclusive Share files will not be accessible in a Root Share=Auf Dateien einer exklusiven Freigabe kann in einer Root-Freigabe nicht zugegriffen werden
+failed to=Fehler bei
+If the IP address of the server shows in the list after searching, your DNS server is not resolving the name=Wenn die IP-Adresse des Servers nach der Suche in der Liste erscheint, löst dein DNS-Server den Namen nicht auf
+If shares do not show, check your credentials=Wenn die Freigaben nicht angezeigt werden, überprüfe deine Anmeldedaten
+offline=offline
+Pass Thru=Durchleitung (Passthrough)
+Remote Server is=Entfernter Server ist
+Remote share mounts are dependent on a solid and reliable network connection and that can be difficult to achieve=Entfernte Freigaben sind von einer stabilen und zuverlässigen Netzwerkverbindung abhängig, und das kann schwierig zu realisieren sein

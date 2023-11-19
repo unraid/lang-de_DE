@@ -80,7 +80,7 @@ Write Corrections to Parity=Korrekturen auf Parität schreiben
 ; PHP file messages
 
 Analyze results from an array operation=Ergebnisse eines Array-Vorgangs analysieren
-Array being shutdown due to drive overheating=Array wird wegen Überhitzung des Datenträgers heruntergefahren
+Array being shutdown due to drive overheating=Array wird wegen Überhitzung eines Datenträgers heruntergefahren
 Array operation will not be restarted=Array-Vorgang wird nicht neu gestartet
 Array operation restarted=Array-Vorgang wird neu gestartet
 Array shutdown=Herunterfahren des Arrays

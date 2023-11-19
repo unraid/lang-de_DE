@@ -36,7 +36,7 @@ Developer=Entwickler
 Diagnostics=Diagnosedaten
 Disks=Datenträger
 Display Settings=Anzeigeeinstellungen
-Downloading=Herunterladen
+Downloading=Wird heruntergeladen
 End-User License Agreement=Endbenutzer-Lizenzvereinbarung
 Enter URL of language pack XML file=URL der XML-Datei des Sprachpakets eingeben
 Error accessing your physical USB Flash boot device=Fehler beim Zugriff auf den USB-Boot-Datenträger
@@ -226,7 +226,7 @@ als "neue" Datenträger erscheinen, als würde es sich um einen neuer Server han
 Das ist nützlich, wenn mehrere Datenträger hinzugefügt oder entfernt wurden und eine Paritätsdaten-Wiederherstellung
 basierend auf der neuen Konfiguration erwünscht ist.
 
-*'Aktuelle Zuweisungen beibehalten'* verwenden, um die gewählten Datenträgerslots zuzuweisen, ***nachdem*** das Array zurückgesetzt wurde. Standardmäßig  werden **keine** Datenträger zugewiesen.
+*"Aktuelle Zuweisungen beibehalten"* verwenden, um die gewählten Datenträgerslots zuzuweisen, ***nachdem*** das Array zurückgesetzt wurde. Standardmäßig  werden **keine** Datenträger zugewiesen.
 
 **BENUTZE DIESES DIENSTPROGRAMM NICHT, UM EINEN FEHLERHAFTEN DATENTRÄGER ZU REPARIEREN** - Es wird das Gegenteil bewirken
 und macht es ***unmöglich***, die Daten eines fehlerhaften Datenträgers wiederherzustellen - Du wurdest gewarnt!

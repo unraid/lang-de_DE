@@ -87,60 +87,60 @@ Other Highlight Color=Farbe für Hervorhebungen von anderen Meldungen
 :end
 
 :enhancd_log_default_plug:
-> 'Standard' setzt die Konfiguration und die Farben zurück. Klicke auf **Übernehmen**, um die Änderungen zu speichern. Klicke auf **Fertig**, wenn du die Änderungen abgeschlossen hast.
+> "Standard" setzt die Konfiguration und die Farben zurück. Klicke auf **Übernehmen**, um die Änderungen zu speichern. Klicke auf **Fertig**, wenn du die Änderungen abgeschlossen hast.
 :end
 
 :enhanced_log_color_error_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Error** (Fehler) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Error** (Fehler) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_minor_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Minor Issues** (nicht kritischen Fehlern). Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Minor Issues** (nicht kritischen Fehlern). Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_limetech_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Lime Tech** Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Lime Tech** Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_array_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Array**-Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Array**-Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_system_plug:
-> Zu verwendende Farbe für die Hervorhebung von **System**-Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem a '#'.
+> Zu verwendende Farbe für die Hervorhebung von **System**-Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem a "#".
 :end
 
 :enhanced_log_color_file_system_plug:
-> Zu verwendende Farbe für die Hervorhebung von **File System** (Dateisystem) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem a '#'.
+> Zu verwendende Farbe für die Hervorhebung von **File System** (Dateisystem) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem a "#".
 :end
 
 :enhanced_log_color_drive_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Drive Related** (Datenträger) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Drive Related** (Datenträger) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_network_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Network** (Netzwerk). Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Network** (Netzwerk). Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_login_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Login** (Anmeldung) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Login** (Anmeldung) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_emhttp_plug:
-> Zu verwendende Farbe für die Hervorhebung von **emhttp**-Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **emhttp**-Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_color_other_plug:
-> Zu verwendende Farbe für die Hervorhebung von **Other** (anderen) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem '#'.
+> Zu verwendende Farbe für die Hervorhebung von **Other** (anderen) Meldungen. Es kann der Name der Farbe oder der Farbcode verwendet werden. Der Farbcode beginnt mit einem "#".
 :end
 
 :enhanced_log_custom_plug:
 > Gib ein benutzerdefiniertes Ereignis ein, welches du im Protokoll hervorheben willst. Jedes benutzerdefiniertes Ereignis wird im Anschluss an die System-internen Ereignisse angewendet.
 > Die Syntax für benutzerdefinierte Ereignisse ist: "Suchzeichenfolge", "Ereignis" 
-> Die Groß-/Kleinschreibung wird ignoriert, Platzhalter ('*') sind erlaubt.
+> Die Groß-/Kleinschreibung wird ignoriert, Platzhalter ("*") sind erlaubt.
 > Beispiele:
-> "found.*chip" wird jede Zeichenfolge finden, die 'found' und 'chip' enthält mit beliebigem Text dazwischen,
-> "(spinup|spindown)" wird jede Zeichenfolge finden, die entweder 'spinup' oder 'spindown' enthält.
+> "found.*chip" wird jede Zeichenfolge finden, die "found" und "chip" enthält mit beliebigem Text dazwischen,
+> "(spinup|spindown)" wird jede Zeichenfolge finden, die entweder "spinup" oder "spindown" enthält.
 > Die Suchzeichenfolge und das Ereignis stehen in Anführungszeichen und jede Zeile enthält eine Kombination von Treffer und Ereignis. Fehler in den Suchzeichenfolgen können PHP-Fehler verursachen.
 > Ereignisse sind: "error" (Fehler), "minor issues" (nicht kritische Fehler), "lime tech", "array", "system", "file system" (Dateisystem), "drive related" (Datenträger), "network" (Netzwerk), "login" (Anmeldung), "emhttp", "other" (andere).
 :end
