@@ -57,7 +57,7 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 :end
 
 :recycle_bin_hide_folder_plug:
-> Set to **No** to show the Recycle Bin folder in user shares.  The SMB setting "Hide dot files" controls if hidden folders show in user shares.
+> Auf **Nein** stellen, um den Papierkorb-Ordner in Benutzerfreigaben anzuzeigen. Die SMB-Einstellung "Punktdateien (.datei) ausblenden" steuert, ob versteckte Ordner in Benutzerfreigaben angezeigt werden.
 :end
 
 :recycle_bin_background_plug:
@@ -74,13 +74,13 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Die Reihenfolge der Parameter wirkt sich auf die Dateistruktur im Papierkorb aus.
 > Wenn du dieses Feld leer lässt, werden alle gelöschten Dateien ohne Pfadangaben im Papierkorb abgelegt.
 >
-> Tipp: Benutze '/' für mehr Kontrolle der Verzeichnisstruktur im Papierkorb.
-> Zum Beispiel sortiert '%m/%S' die gelöschten Dateien nach Rechnernamen, der die Datei gelöscht hat und dann nach der Struktur des Freigabenamens.
+> Tipp: Benutze "/" für mehr Kontrolle der Verzeichnisstruktur im Papierkorb.
+> Zum Beispiel sortiert "%m/%S" die gelöschten Dateien nach Rechnernamen, der die Datei gelöscht hat und dann nach der Struktur des Freigabenamens.
 >
-> + '%S' Samba-Freigabenamen (in Unraid auch Freigabename genannt), zB: Speicher
-> + '%P' Kompletter Pfad der Benutzerfreigabe, zB: /mnt/user/Speicher, /mnt/disk1, /mnt/disks/unassigned_device, /flash
-> + '%u' Benutzername des aktuellen Dienstes, falls vorhanden
-> + '%m' Computernamen des Benutzers, der die Datei gelöscht hat
+> + "%S" Samba-Freigabenamen (in Unraid auch Freigabename genannt), zB: Speicher
+> + "%P" Kompletter Pfad der Benutzerfreigabe, zB: /mnt/user/Speicher, /mnt/disk1, /mnt/disks/unassigned_device, /flash
+> + "%u" Benutzername des aktuellen Dienstes, falls vorhanden
+> + "%m" Computernamen des Benutzers, der die Datei gelöscht hat
 :end
 
 :recycle_bin_permissions_plug:
@@ -88,11 +88,11 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 :end
 
 :recycle_bin_excluded_files_plug:
-> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Platzhalter '*' und '?' sind erlaubt.
+> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Platzhalter "*" und "?" sind erlaubt.
 :end
 
 :recycle_bin_excluded_dirs_plug:
-> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Um ein bestimmtes Freigabeverzeichnis anzugeben, verwende 'Freigabe/Verzeichnis'. Nicht zugewiesene Datenträger werden auf die gleiche Weise mit 'Einhängeverzeichnis/Verzeichnis' angegeben. Platzhalter '*' und '?' sind erlaubt.
+> Durch Kommas getrennte Liste der Dateien, die vom Papierkorb ausgeschlossen werden sollen. Um ein bestimmtes Freigabeverzeichnis anzugeben, verwende "Freigabe/Verzeichnis". Nicht zugewiesene Datenträger werden auf die gleiche Weise mit "Einhängeverzeichnis/Verzeichnis" angegeben. Platzhalter "*" und "?" sind erlaubt.
 :end
 
 :recycle_bin_excluded_shares_plug:

@@ -147,5 +147,5 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 :end
 
 :ud_settings_zfs_upgrade_plug:
-> Select the disk that you want to upgrade to the latest ZFS version. Drive must be mounted to upgrade ZFS.
+> Wähle den Datenträger aus, den du auf die neueste ZFS-Version upgraden möchtest. Der Datenträger muss eingehängt sein, um auf ZFS zu upgraden.
 :end

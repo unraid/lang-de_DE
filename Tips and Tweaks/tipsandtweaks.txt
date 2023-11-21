@@ -86,7 +86,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_nic_flow_control_plug:
-> Stell diese Option auf 'Ja', um die NIC-Flusssteuerung zu deaktivieren. Die NIC-Flusssteuerung wurde ursprünglich eingeführt, um in
+> Stell diese Option auf "Ja", um die NIC-Flusssteuerung zu deaktivieren. Die NIC-Flusssteuerung wurde ursprünglich eingeführt, um in
 > Netzwerken mit Geräten unterschiedlicher Geschwindigkeit zu helfen. In den heutigen Netzen scheint dies nicht mehr notwendig zu sein.
 > Wenn du einen Managed-Switch verwendest, kann die Flusssteuerung im Normalfall am Switch ein- und ausgeschaltet werden.
 > Wenn du einen Consumer-Switch verwendest, hast du diese Möglichkeit der Steuerung nicht. Die Flussteuerung ist dafür bekannt, dass es 
@@ -94,7 +94,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_nic_offload_plug:
-> Auf 'Ja' stellen, um NIC-Offloads zu deaktivieren  Offloads wurden entwickelt, um einen Teil der Netzwerklast
+> Auf "Ja" stellen, um NIC-Offloads zu deaktivieren  Offloads wurden entwickelt, um einen Teil der Netzwerklast
 > von der CPU auf den NIC zu verlagern, um große Pakete zu verarbeiten. Dies sollte die CPU entlasten
 > und den Netzwerkdurchsatz erhöhen. Es ist bekannt, dass TSO-Offloads unter bestimmten Umständen Netzprobleme verursachen können.
 > Es wird empfohlen, NIC-Offloads zu deaktivieren, wenn du Netzwerkprobleme feststellst.
@@ -118,12 +118,12 @@ You may actually cause more problems than you solve if there are problems with y
 > Wenn über große Mengen an Arbeitsspeicher verfügst, ist ein kleinerer Wert besser.
 > Achtung: Erhöhe diese Werte nicht über die Standardeinstellungen hinaus, es sei denn, du hast eine USV, die Unraid zuverlässig herunterfährt.
 >
-> Lege die 'vm.dirty_background_ratio' als Prozentsatz des gesamten RAM-Speichers fest.
+> Lege die "vm.dirty_background_ratio" als Prozentsatz des gesamten RAM-Speichers fest.
 > Die Standardeinstellung von 10 % wird in den meisten Fällen empfohlen. Wenn du eine Medien-Streaming- oder Gaming-VM hast, verwende einen Wert von 2%. Wenn OOM-Fehler auftreten, wird empfohlen, diesen Wert auf 1% zu stellen.
 :end
 
 :tips_tweaks_dirty_ratio_plug:
-> Lege die 'vm.dirty_ratio' als Prozentsatz des gesamten RAM-Speichers fest.
+> Lege die "vm.dirty_ratio" als Prozentsatz des gesamten RAM-Speichers fest.
 > Ein zu hoher Wert kann dazu führen, dass Linux einige Prozesse beendet, um mehr Speicher zu schaffen. Die Standardeinstellung von 20 % wird in den meisten Fällen empfohlen. Wenn du eine Medien-Streaming- oder Gaming-VM hast, verwende einen Wert von 3%. Wenn OOM-Fehler auftreten, wird empfohlen, diesen Wert auf 2% zu stellen.
 :end
 
@@ -150,7 +150,7 @@ You may actually cause more problems than you solve if there are problems with y
 >
 > Du kannst nun den CPU-Governor mit dem rc.tweaks-Skript einstellen. Verwende den Befehl:
 > /usr/local/sbin/rc.tweaks set_governor 'governor'
-> Die 'governor'-Auswahlmöglichkeiten lauten: 'ondemand', 'performance', 'powersave', und 'conservative'.
+> Die "governor"-Auswahlmöglichkeiten lauten: "ondemand", "performance", "powersave", und "conservative".
 :end
 
 
