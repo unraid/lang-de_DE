@@ -1,36 +1,51 @@
+Abort Device Script=Datenträgerskript abbrechen
 Attach=Verbinden
+Attach This Disk=Diesen Datenträger verbinden
 Attaching=Verbinde
 Automount=Auto-Einbinden
+Click to select file or click 'Default' button for the Device Script File=Klicken, um eine Datei auszuwählen oder klick auf den "Standard"-Button für die Datenträger-Skriptdatei
 Default=Standard
 Delete Device Script File=Datenträger-Skriptdatei löschen
 Detach=Trennen
+Detach This Disk=Diesen Datenträger trennen
 Detaching=Trenne
 Device Script=Datenträgerskript
 Device Script content=Inhalt des Datenträgerskript
+Disable Mount and Unmount Button=Einhängen- und Aushängen-Button deaktivieren
 Disable Mount Button=Einhängen-Button deaktivieren
 Disk Name=Datenträgername
+Disk Serial=Datenträger-Seriennummer
 Edit Device Script=Datenträgerskript bearbeiten
 Enter Device Script File Name=Dateinamen des Datenträgerskripts eingeben
 Enter and Edit the Device Script that runs when a udev or operator event occurs=Bearbeite oder gib das Datenträgerskript an, das beim Auftreten eines udev- oder operator-Ereignisses ausgeführt wird
+Enter the User Script File Name=Gib den Dateinamen des Benutzerskripts ein
 Enter the User Script that will be using this device=Gib das Benutzerskript an, dass dieser Datenträger verwenden wird
+Enter the volume to mount on this apfs partition=Gib das einzuhängende Volumen auf dieser apfs-Partition ein
 Load the default Device Script=Lade das Standard-Datenträgerskript
 Run in background=Im Hintergrund laufen lassen
 Mark this Device as passed through to a VM or Docker=Diesen Datenträger an eine VM oder einen Docker-Container durchgeleitet (Passthrough) markieren
 Mount Device Read only=Datenträger schreibgeschützt einhängen
 Mount Device when Plugged in or Array is Started=Datenträger einhängen, wenn er angeschlossen oder das Array gestartet ist
 Mount ISO File when Array is Started=ISO-Datei einhängen, wenn das Array gestartet ist
+Mount Point=Einhängepunkt
+Mount Remote Share Read only=Entfernte Freigabe schreibgeschützt einhängen
 Mount Remote SMB or NFS Share when Array is Started=Entfernte SMB- oder NFS_freigabe einhängen, wenn das Array gestartet ist
 Note: Enable SMB Sharing or NFS Export in Unassigned Devices Settings to share this device=Hinweis: Aktiviere die SMB-Freigabe oder den NFS-Export in den Unassigned Devices Einstellungen, um diesen Datenträger freizugeben.
 Passed Through=Durchgeleitet (Passthrough)
 Read Only=Schreibgeschützt
 Run Device Script File in the background=Datenträgerskript im Hintergrund laufen lassen
+Save your Device Script File=Speicher deine Datenträger-Skriptdatei
 Save your Device Script File changes=Deine Änderungen an der Datenträger-Skriptdatei speichern
 Share Device with SMB and NFS=Datenträger über SMB und NFS freigeben
 Share Remote Mount with SMB and NFS=Entfernte Einbindung über SMB und NFS freigeben
+Show all partitions on this device by default=Standardmäßig alle Partitionen auf diesem Datenträger anzeigen
+Show Partitions=Partitionen anzeigen
+Source=Quelle
 Unassigned Devices Settings=Unassigned Devices Einstellungen
 Undo your changes since last Save=Deine Änderungen seit dem letzten Speichern rückgängig machen
 User Script=Benutzerskript
 Volume=>Volumen
+ZFS Volume=ZFS-Volumen
 
 ;
 ; Help
@@ -78,20 +93,3 @@ Volume=>Volumen
 > Klick auf **Speichern**, um die aktuellen Änderungen zu übernehmen.
 > Klick auf **Fertig**, um die Seite zu verlassen.
 :end
-
-; Note: August 8, 2023 - 15 missing translations
-Abort Device Script=Datenträgerskript abbrechen
-Attach This Disk=Diesen Datenträger verbinden
-Click to select file or click 'Default' button for the Device Script File=Klicken, um eine Datei auszuwählen oder klick auf den "Standard"-Button für die Datenträger-Skriptdatei
-Detach This Disk=Diesen Datenträger trennen
-Disable Mount and Unmount Button=Einhängen- und Aushängen-Button deaktivieren
-Disk Serial=Datenträger-Seriennummer
-Enter the User Script File Name=Gib den Dateinamen des Benutzerskripts ein
-Enter the volume to mount on this apfs partition=Gib das einzuhängende Volumen auf dieser apfs-Partition ein
-Mount Point=Einhängepunkt
-Mount Remote Share Read only=Entfernte Freigabe schreibgeschützt einhängen
-Save your Device Script File=Speicher deine Datenträger-Skriptdatei
-Show all partitions on this device by default=Standardmäßig alle Partitionen auf diesem Datenträger anzeigen
-Show Partitions=Partitionen anzeigen
-Source=Quelle
-ZFS Volume=ZFS-Volumen
