@@ -62,10 +62,10 @@ Date of purchase=Kaufdatum
 Date=Datum
 Delete Pool=Lösche Pool
 detected=Erkannt
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device encrypted and unlocked=Datenträger verschlüsselt und entsperrt
 Device encrypted=Datenträger verschlüsselt
-Device is missing disabled=Device is missing disabled=Device is missing disabled=Device is missing (disabled)
+Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=Datenträger ist Teil eines Pools
 Device locked unknown error=Datenträger gesperrt: Unbekannter Fehler
 Device locked wrong encryption key=Datenträger gesperrt: Falscher Verschlüsselungsschlüssel
