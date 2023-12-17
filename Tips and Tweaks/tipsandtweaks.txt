@@ -12,7 +12,6 @@ Disable NIC Offload=NIC-Offload deaktivieren
 Disk Cache=Datenträger-Cache
 Dont change the Disk Cache settings until you read and understand this=Änder die Datenträger-Cache-Einstellungen nicht, bevor du dies gelesen und verstanden hast
 Driver=Treiber
-Enable Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost aktivieren
 Enable syslog Archiving=Systemprotokoll-Archivierung aktivieren
 Ethernet NIC Rx Buffer=Ethernet-NIC Rx-Puffer
 Ethernet NIC Tx Buffer=Ethernet-NIC Tx-Puffer
@@ -139,6 +138,18 @@ You may actually cause more problems than you solve if there are problems with y
 > Der Standardwert ist 40960 und der zulässige Bereich geht von 40960 bis 65535.
 :end
 
+:tips_tweak_turbo_plug:
+> Stelle diese Option auf "Ja", um den Intel Turbo- oder AMD Performance Boost-Modus zu aktivieren.
+:end
+
+:tips_tweaks_turbo_state_off_plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost Off in 24 hour format hh:mm.
+:end
+
+:tips_tweaks_turbo_state_on_plug:
+> Enter the time you want to set Intel Turbo/AMD Performance Boost On in 24 hour format hh:mm.
+:end
+
 :tips_tweaks_cpu_governor_plug:
 > Wähle den CPU-Skalierungs-Governor, den du verwenden möchtest.
 >
@@ -196,3 +207,9 @@ You may actually cause more problems than you solve if there are problems with y
 > Hinweis: Sei vorsichtig mit den Prozessen, die du hier beendest. Du könntest Daten verlieren!
 :end
 
+
+; Note: December 17, 2023 - 4 missing translations
+Enable Intel TurboAMD Performance Boost=Enable Intel Turbo/AMD Performance Boost
+Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
+Time to set TurboPerformance Boost Off=Time to set Turbo/Performance Boost Off
+Time to set TurboPerformance Boost On=Time to set Turbo/Performance Boost On
