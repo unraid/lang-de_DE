@@ -1266,7 +1266,7 @@ A reboot will be required=Es wird ein Neustart erforderlich sein
 %s second=%s Sekunde
 %s seconds=%s Sekunden
 
-; Note: December 17, 2023 - 12 missing translations
+; Note: December 17, 2023 - 11 missing translations
 By default UEFI and Legacy boot mode are both enabled when GRUB is used to boot the machine=
 Data copied=
 Go to My Servers Dashboard=
