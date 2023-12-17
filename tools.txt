@@ -335,3 +335,21 @@ Seriennummer nicht einmalig ist (dies ist bei USB-Kartenlesern üblich).
 
 Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 :end
+
+; Note: December 17, 2023 - 16 missing translations
+Creating Flash backup=
+Creation error=
+Delete Modprobe config=
+Downgrade OS=
+Driver=
+Edit Modprobe config=
+Flash backup=
+Insufficient free disk space available=
+Modprobed config file=Modprobe.d config file
+Rebuild Modules=
+Remove custom modprobed configuration=Remove custom modprobe.d configuration?
+Save Modprobe config=
+Select View=
+State=
+Support page=
+System Drivers=
