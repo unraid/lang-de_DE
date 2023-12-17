@@ -62,10 +62,8 @@ Date of purchase=Kaufdatum
 Date=Datum
 Delete Pool=Lösche Pool
 detected=Erkannt
-Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device encrypted and unlocked=Datenträger verschlüsselt und entsperrt
 Device encrypted=Datenträger verschlüsselt
-Device is missing disabled=Device is missing (disabled)
 Device is part of a pool=Datenträger ist Teil eines Pools
 Device locked unknown error=Datenträger gesperrt: Unbekannter Fehler
 Device locked wrong encryption key=Datenträger gesperrt: Falscher Verschlüsselungsschlüssel
@@ -378,15 +376,17 @@ System in sleep mode=System im Ruhezustand
 This will put the system in sleep mode=Dadurch wird das System in den Ruhezustand versetzt
 wiki entry=Wiki-Eintrag
 
-; Note: December 17, 2023 - 17 missing translations
+; Note: December 17, 2023 - 19 missing translations
 Add Subpool=
 Add ZFS Subpool=
 cache - Cache Devices=
 Critical NVME temperature threshold=
 Critical SSD temperature threshold=
 dedup - Deduplication Tables=
+Device contents invalid, in standby mode spun-down=Device contents invalid, in standby mode (spun-down)
 Device contents invalid=
 Device is disabled=
+Device is missing disabled=Device is missing (disabled)
 logs - ZFS Intent Log=
 Missing pool disk=
 Power=
