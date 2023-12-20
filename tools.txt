@@ -337,19 +337,19 @@ Für weitere Informationen, bitte den [Support kontaktieren](https://lime-techno
 :end
 
 ; Note: December 17, 2023 - 16 missing translations
-Creating Flash backup=
-Creation error=
-Delete Modprobe config=
-Downgrade OS=
-Driver=
-Edit Modprobe config=
-Flash backup=
-Insufficient free disk space available=
-Modprobed config file=Modprobe.d config file
-Rebuild Modules=
-Remove custom modprobed configuration=Remove custom modprobe.d configuration?
-Save Modprobe config=
-Select View=
-State=
-Support page=
-System Drivers=
+Creating Flash backup=Erstelle Flash-Sicherung
+Creation error=Fehler bei der Erstellung
+Delete Modprobe config=Modprobe-Konfiguration löschen
+Downgrade OS=OS downgraden
+Driver=Treiber
+Edit Modprobe config=Modprobe-Konfiguration bearbeiten
+Flash backup=Flash-Sicherung
+Insufficient free disk space available=Nicht genügend freier Speicherplatz verfügbar
+Modprobed config file=Modprobe.d Konfigurationsdatei
+Rebuild Modules=Module erneut erstellen
+Remove custom modprobed configuration=Benutzerdefinierte modprobe.d-Konfiguration entfernen?
+Save Modprobe config=Modprobe-Konfiguration speichern
+Select View=Ansicht auswählen
+State=Status
+Support page=Hilfeseite
+System Drivers=Systemtreiber

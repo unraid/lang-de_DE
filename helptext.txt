@@ -317,10 +317,10 @@ geprüft werden ob der Vorgang läuft.
 Das Feld *Optionen* wird mit *-n* vor-ausgefüllt, womit nur eine Prüfung ausgeführt wird. Falls eine Reparatur erforderlich
 ist, solltest du einen zweiten Durchlauf mit leerem *Optionen*-Feld durchführen; dies erlaubt *xfs_repair*, das Dateisystem zu reparieren.
 
-Nach Start des Checks bitte die Seite aktualisieren, um den Status zu überwachen.  Abhängig wie groß das Dateisystem
+Nach Start des Checks solltest du die Seite aktualisieren, um den Status zu überwachen. Abhängig wie groß das Dateisystem
 ist und welche Fehler sich auf dem Datenträger befinden, kann der Vorgang **lange Zeit** dauern (Stunden).
-Es erfolgt nur eine minimale Ausgabe, jedoch kann anhand des Lese-/Schreibstatus auf der Hauptseite
-geprüft werden ob der Vorgang läuft.
+Es erfolgt nur eine minimale Ausgabe, jedoch kannst du anhand eines steigenden Lese-/Schreibzähler auf der Hauptseite
+prüfen, ob der Vorgang läuft.
 :end
 
 :info_xfs_cancel_help:
