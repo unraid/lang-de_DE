@@ -171,8 +171,3 @@ VPN Connections=VPN-Verbindungen
 W=W
 Warnings=Warnungen
 ZFS=ZFS
-
-; Note: December 25, 2023 - 3 missing translations
-Clock is unsynchronized with no NTP servers=
-Clock synchronized with %s NTP server=
-Clock synchronized with %s NTP servers=
