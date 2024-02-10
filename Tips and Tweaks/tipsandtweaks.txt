@@ -12,6 +12,7 @@ Disable NIC Offload=NIC-Offload deaktivieren
 Disk Cache=Datenträger-Cache
 Dont change the Disk Cache settings until you read and understand this=Änder die Datenträger-Cache-Einstellungen nicht, bevor du dies gelesen und verstanden hast
 Driver=Treiber
+Enable Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost aktivieren
 Enable syslog Archiving=Systemprotokoll-Archivierung aktivieren
 Ethernet NIC Rx Buffer=Ethernet-NIC Rx-Puffer
 Ethernet NIC Tx Buffer=Ethernet-NIC Tx-Puffer
@@ -64,6 +65,8 @@ This will log all your server log enries to the Syslog Server and save the log t
 This seems to be occurring more now because of the large amounts of memory being installed in Unraid and the default Disk Cache settings too high=Dies scheint jetzt häufiger aufzutreten, da in Unraid große Mengen an Arbeitsspeicher installiert sind und die Standardeinstellungen für den Datenträger-Cache zu hoch sind
 Time to set Normal CPU Scaling=Zeitpunkt zum Einstellen der normalen CPU-Skalierung
 Time to set Power Saving CPU Scaling=Zeitpunkt zum Einstellen des energiesparenden CPU-Skalierung
+Time to set TurboPerformance Boost Off=Zeitpunkt zum Ausschalten von Turbo/Performance Boost
+Time to set TurboPerformance Boost On=Zeitpunkt zum Einschalten von Turbo/Performance Boost
 Tips=Tipps
 Tips and Tweaks wiki="Tipps & Tweaks" Wiki
 Tweaks=Optimierungen
@@ -130,6 +133,12 @@ You may actually cause more problems than you solve if there are problems with y
 > Wenn inotify nicht gestartet werden kann, weil nicht genügend Benutzer-Überwachungen vorhanden sind, erhöhe die max_user_watches.
 >
 > Der Standardwert ist 524288.
+:end
+
+:tips_tweaks_max_instances_plug:
+> Dies ist die maximale Anzahl von inotify-Instanzen, die ein Benutzer erstellen kann.
+>
+> Der Standardwert ist 128.
 :end
 
 :tips_tweaks_max_files_plug:
@@ -208,8 +217,7 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 
-; Note: December 17, 2023 - 4 missing translations
-Enable Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost aktivieren
+; Note: February 10, 2024 - 3 missing translations
 Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
-Time to set TurboPerformance Boost Off=Zeitpunkt zum Ausschalten von Turbo/Performance Boost
-Time to set TurboPerformance Boost On=Zeitpunkt zum Einschalten von Turbo/Performance Boost
+Max User Instances=Maximale Benutzer-Instanzen
+Power Saving Settings=Energiespareinstellungen

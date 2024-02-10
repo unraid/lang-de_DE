@@ -1,4 +1,4 @@
-Add=Hinzufügen
+Add=Füge
 Auto Mount USB Devices=USB-Datenträger automatisch einhängen
 Change Disk UUID=Datenträger-UUID ändern
 Change UUID=UUID ändern
@@ -35,7 +35,7 @@ Set the disk Password=Datenträgerpasswort festlegen
 Specify SMB Version when Mounting Remote Shares=SMB-Version beim Einhängen entfernter Freigaben festlegen
 Spin down disks=Datenträger herunterfahren
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Plugin "Unassigned Devices Plus" muss installiert sein, um den Destruktiven Modus zu aktivieren
-to SMB share config=zur SMB-Freigabekonfiguration
+to SMB share config=zur SMB-Freigabekonfiguration hinzu
 Udev and Hotplug=Udev und Hotplug
 Unassigned Devices=Unassigned Devices
 Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 oder höher ist für die Unterstützung von NFSv4 erforderlich
