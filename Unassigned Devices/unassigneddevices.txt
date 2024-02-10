@@ -85,11 +85,11 @@ Not Enabled=Nicht aktiviert
 not installed=Nicht installiert
 Note=Hinweis
 offline=offline
+User Shares=Benutzerfreigaben
 You must enable NFS in Settings->NFS to mount NFS shares=Du musst NFS unter Einstellungen->NFS aktivieren, um NFS-Freigaben einzuhängen
 You must enable SMB in Settings->SMB to mount SMB shares=Du musst SMB unter Einstellungen->SMB aktivieren, um SMB-Freigaben einzuhängen
 Open=Geöffnet
 Partition and Format Disk=Datenträger partitionieren und formatieren
-Pass Thru=Durchleitung (Passthrough)
 Password=Passwort
 Read only=Nur Lesen
 Reboot=Neustarten
@@ -105,11 +105,8 @@ Remove partition=Partition entfernen
 Running=Läuft
 Script=Skript
 Search For Servers=Nach Servern suchen
-Search for Servers, or enter the Server nameIP address manually=Nach Servern suchen oder den Servernamen/IP-Adresse manuell eingeben
 Search for Shares or enter the Share name manually=Nach Freigaben suchen oder den Freigabenamen manuell eingeben
 Searching=Suche
-Select the Mount Point to Root Share=Wähle den Einhängepunkt der Root-Freigabe aus
-Serial Number Mount Point=Seriennummer (Einhängepunkt)
 Shares=Freigaben
 Share Type=Freigabetyp
 share for=Freigeben für
@@ -132,10 +129,7 @@ Unmount=Aushängen
 Unmounting=Aushängen
 Use caution when gathering shares into one Root Share=Sei vorsichtig, wenn du Freigaben in einer Root-Freigabe zusammenfasst
 Used=Benutzt
-User and Pool Shares=Benutzer- und Pool-Freigaben
 User Shares=Benutzerfreigaben
-User and Pool Shares will include all files in User Shares, Cache and Pool Devices=Benutzer- und Pool-Freigaben umfassen alle Dateien in Benutzerfreigaben, Cache- und Pool-Datenträgern
-User Shares will allow access to User Shares, but the Root Share will not include Cache and Pool Device files=Benutzerfreigaben ermöglichen den Zugriff auf Benutzerfreigaben, aber die Root-Freigabe enthält keine Dateien von Cache- und Pool-Datenträgern
 Username=Benutzername
 View Device Script Log=Datenträger-Skriptprotokoll anzeigen
 View ISO File Script Log=ISO-Datei-Skriptprotokoll anzeigen
@@ -151,6 +145,36 @@ You WILL have problems if you do=Du WIRST Probleme bekommen, wenn du das machst
 You will need to enter credentials to list the shares=Du musst Zugangsdaten eingeben, um die Freigaben anzuzeigen
 ZFS Pool Name=ZFS-Poolname
 ZFS Volume=ZFS-Volumen
+
+:unassgned_devices_switches_plug:
+> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+>
+> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+>
+> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+>
+> Click on the <i class="fa fa-refresh"></i> icon to refresh disks and configuration.
+>
+> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+>
+> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+>
+> Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration.  This is where you configure a device script and certain device characteristics.
+> 
+> Click on the <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> icon to display syslog entries specific to this disk device.
+>
+> **Mount Point icons:**
+>
+> When the <i class='fa fa-pencil'></i> icon shows next to the mount point it indicates the mount point can be changed when the mount point is clicked.
+>
+> When the <i class='fa fa-external-link'></i> icon shows next to the mount point it indicates the clicking on the mount point will browse the files on that partition.
+>
+> Click on the <i class="fa fa-align-left"></i> icon to display the device script log.  This is the log specific to the device script.
+>
+> Click on the <i class="fa fa-check"></i> icon to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
+>
+> Click on the <i class="fa fa-flash"></i> icon to run your device script as if it was hot plugged.  This only applies to disk devices.
+:end
 
 :unassigned_devices_general_help_plug:
 > **Unassigned Devices wird kurz UD genannt**
@@ -207,3 +231,21 @@ ZFS Volume=ZFS-Volumen
 >
 > Sei vorsichtig bei der Verwendung der Bezeichnungen /dev/sdX oder devX, da diese sich nach einem Neustart ändern können. Verwende am besten die im UD-Skript übergebenen Werte für sdX (DEVICE) und devX (UD_DEVICE).
 :end
+
+; Note: February 10, 2024 - 16 missing translations
+Encrypt CIFS Mount=
+User Shares without Pools=
+Partition=
+Passed=
+Passed Through=
+Pool=
+Preclear=
+Remote Shares=
+Search for Servers, or enter the Server name or IP address manually=
+Select the Root Share=
+Serial Number Mount Point=Serial Number (Mount Point)
+Unassigned Devices=
+Unassigned Disks=
+User Shares without Pools=
+User Shares - allow access to User Shares, including Cache and Pool files=
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=
