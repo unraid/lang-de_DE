@@ -136,9 +136,9 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_max_instances_plug:
-> This is maximum number of inotify instances that a user can create.
+> Dies ist die maximale Anzahl von inotify-Instanzen, die ein Benutzer erstellen kann.
 >
-> The default is 128.
+> Der Standardwert ist 128.
 :end
 
 :tips_tweaks_max_files_plug:
@@ -219,5 +219,5 @@ You may actually cause more problems than you solve if there are problems with y
 
 ; Note: February 10, 2024 - 3 missing translations
 Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
-Max User Instances=
-Power Saving Settings=
+Max User Instances=Maximale Benutzer-Instanzen
+Power Saving Settings=Energiespareinstellungen

@@ -94,4 +94,4 @@ ZFS Volume=ZFS-Volumen
 :end
 
 ; Note: February 10, 2024 - 1 missing translations
-Click to select file or click Default button for the Device Script File=
+Click to select file or click Default button for the Device Script File=Klick hier, um eine Datei auszuwählen oder klick auf den Standard-Button für die Datenträger-Skriptdatei.

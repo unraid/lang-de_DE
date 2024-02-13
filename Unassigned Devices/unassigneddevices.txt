@@ -147,33 +147,33 @@ ZFS Pool Name=ZFS-Poolname
 ZFS Volume=ZFS-Volumen
 
 :unassgned_devices_switches_plug:
-> Turn on the **Disks** switch to change the web page to show disk devices. Turn off the **Disks** switch to change the web page to hide disk devices.
+> Schalte den **Datenträger**-Schalter ein, damit auf der Website Datenträger angezeigt werden. Schalte den **Datenträger**-Schalter aus, damit auf der Website Datenträger ausgeblendet werden.
 >
-> Turn on the **Shares** switch to change the web page to show shares. Turn off the **Shares** switch to change the web page to hide shares.
+> Schalte den **Freigaben**-Schalter ein, damit auf der Website Freigaben angezeigt werden. Schalte den **Freigaben**-Schalter aus, damit auf der Website Freigaben ausgeblendet werden.
 >
-> Turn on the **Historical** switch to show Historical disk devices. Turn off **Historical** switch to switch back to not show Historical disk devices.
+> Schalte den **Vorherig**-Schalter ein, um vorherige Datenträger anzuzeigen. Schalte den **Vorherig**-Schalter aus, um die Anzeige von vorherigen Datenträgern wieder auszuschalten.
 >
-> Click on the <i class="fa fa-refresh"></i> icon to refresh disks and configuration.
+> Klick auf das <i class="fa fa-refresh"></i>-Symbol, um Datenträger und Konfiguration zu aktualisieren.
 >
-> Click on the <i class="fa fa-gear"></i> icon to go to the UD Settings.
+> Klick auf das <i class="fa fa-gear"></i>-Symbol, um die UD-Einstellungen aufzurufen.
 >
-> You can spin a disk up or down by clicking on the disk ball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>indicator.  Applies to version 6.9 RC2 and later only.
+> Du kannst einen Datenträger hoch- und herunterfahren, indem du auf die Datenträgerball <i class='fa fa-circle orb green-orb'></i>or <i class='fa fa-circle orb grey-orb'></i>-Kennzeichnung. Gilt nur für Version 6.9 RC2 und höher.
 >
-> Click on the <i class="fa fa-gears"></i> icon to go to the Device Settings configuration.  This is where you configure a device script and certain device characteristics.
+> Klick auf das <i class="fa fa-gears"></i>-Symbol, um die Datenträger-Einstellungen aufzurufen. Hier kannst du ein Datenträgerskript und bestimmte Datenträger-Eigenschaften konfigurieren.
 > 
-> Click on the <i class="icon-nvme"></i> or <i class="fa fa-hdd-o"></i> icon to display syslog entries specific to this disk device.
+> Klick auf das <i class="icon-nvme"></i>- oder <i class="fa fa-hdd-o"></i>-Symbol, um die für diesen Datenträger spezifischen Systemprotokoll-Einträge anzuzeigen.
 >
-> **Mount Point icons:**
+> **Symbole für Einhängepunkte:**
 >
-> When the <i class='fa fa-pencil'></i> icon shows next to the mount point it indicates the mount point can be changed when the mount point is clicked.
+> Wenn das <i class='fa fa-pencil'></i>-Symbol neben dem Einhängepunkt angezeigt wird, bedeutet dies, dass der Einhängepunkt geändert werden kann, wenn er angeklickt wird.
 >
-> When the <i class='fa fa-external-link'></i> icon shows next to the mount point it indicates the clicking on the mount point will browse the files on that partition.
+> Wenn das <i class='fa fa-external-link'></i>-Symbol neben dem Einhängepunkt angezeigt wird, bedeutet dies, dass mit einem Klick auf den Einhängepunkt die Dateien auf dieser Partition durchsucht werden können.
 >
-> Click on the <i class="fa fa-align-left"></i> icon to display the device script log.  This is the log specific to the device script.
+> Klick auf das <i class="fa fa-align-left"></i>-Symbol, um das Datenträger-Skriptprotokoll anzuzeigen. Dies ist das zugehörige Protokoll für das Datenträgerskript.
 >
-> Click on the <i class="fa fa-check"></i> icon to perform a file system check.  BTRFS and ZFS file systems need to be mounted to do a file check.  The file check on BTRFS and ZFS file systems is a scrub.
+> CKlick auf das <i class="fa fa-check"></i>-Symbol, um eine Dateisystemprüfung durchzuführen. BTRFS- und ZFS-Dateisysteme müssen eingehängt werden, um eine Dateiprüfung durchzuführen. Die Dateiprüfung auf BTRFS- und ZFS-Dateisystemen ist ein Scrub.
 >
-> Click on the <i class="fa fa-flash"></i> icon to run your device script as if it was hot plugged.  This only applies to disk devices.
+> Klick auf das <i class="fa fa-flash"></i>-Symbol, um dein Datenträgerskript so auszuführen, als ob der Datenträger im laufenden Betrieb angeschlossen wird. Dies gilt nur für Datenträger.
 :end
 
 :unassigned_devices_general_help_plug:
@@ -233,19 +233,19 @@ ZFS Volume=ZFS-Volumen
 :end
 
 ; Note: February 10, 2024 - 16 missing translations
-Encrypt CIFS Mount=
-User Shares without Pools=
-Partition=
-Passed=
-Passed Through=
-Pool=
-Preclear=
-Remote Shares=
-Search for Servers, or enter the Server name or IP address manually=
-Select the Root Share=
-Serial Number Mount Point=Serial Number (Mount Point)
-Unassigned Devices=
-Unassigned Disks=
-User Shares without Pools=
-User Shares - allow access to User Shares, including Cache and Pool files=
-User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=
+Encrypt CIFS Mount=CIFS-Mount verschlüsseln
+User Shares without Pools=Benutzerfreigaben ohne Pools
+Partition=Partition
+Passed=Weitergeleitet
+Passed Through=Durchgeleitet (Pass Through)
+Pool=Pool
+Preclear=Preclear
+Remote Shares=Entfernte Freigaben
+Search for Servers, or enter the Server name or IP address manually=Nach Servern suchen oder den Servernamen oder die IP-Adresse manuell eingeben
+Select the Root Share=Die Root-Freigabe auswählen
+Serial Number Mount Point=Seriennummer (Einhängepunkt)
+Unassigned Devices=Nicht zugewiesene Datenträger
+Unassigned Disks=Nicht zugewiesene Datenträger
+User Shares without Pools=Benutzerfreigaben ohne Pools
+User Shares - allow access to User Shares, including Cache and Pool files=Benutzerfreigaben - Zugriff auf Benutzerfreigaben erlauben, inklusive Cache- und Pool-Dateien
+User Shares without Pools - allow access to User Shares, but the Root Share will not include Cache and Pool files=Benutzerfreigaben ohne Pools - Zugriff auf Benutzerfreigaben erlauben aber die Root-Freigabe beinhaltet keine Cache- und Pool-Dateien

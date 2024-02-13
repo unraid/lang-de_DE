@@ -860,4 +860,4 @@ Unraid API extra origins=Unraid-API Extra Origins
 View Flash Backup Error Log=Fehlerprotokoll der Flash-Sicherung anzeigen
 
 ; Note: December 25, 2023 - 1 missing translations
-GRUB Configuration=
+GRUB Configuration=GRUB-Konfiguration

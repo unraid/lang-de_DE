@@ -20,5 +20,5 @@ Cannot get list of open files=Fehler beim Laden der Liste der geöffneten Dateie
 :end
 
 ; Note: February 10, 2024 - 2 missing translations
-Open=
-May prevent shutdown=
+Open=Öffnen
+May prevent shutdown=Kann das Herunterfahren verhindern

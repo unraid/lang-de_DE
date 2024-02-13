@@ -328,252 +328,255 @@ prüfen, ob der Vorgang läuft.
 :end
 
 :info_smart_notifications_help:
-SMART-Benachrichtigungen werden entweder für einen zunehmenden RAW-Wert des Attributs oder für einen abnehmenden NORMALISIERTEN Schwellenwert der vom Hersteller vorgegeben wird generiert.
+SMART-Benachrichtigungen werden entweder für einen zunehmenden RAW-Wert des Attributs oder für einen abnehmenden NORMALISIERTEN Schwellenwert generiert, der vom Hersteller vorgegeben wird.
 
-Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert, der den "Standard"-Wert überschreibt (siehe globale SMART-Einstellungen unter Datenträger-Einstellungen).
 :end
 
 :info_tolerance_level_help:
-Das Toleranzlevel verhindert das kleine Veränderungen eine Benachrichtigung auslösen. Falls dieser Wert zu hoch gesetzt wird kann es bei großen Veränderungen ebenfalls eine Benachrichtigung verhindern.
+Es kann eine Toleranzschwelle festgelegt werden, um zu verhindern, dass kleine Änderungen eine Benachrichtigung auslösen. Falls dieser Wert zu hoch festgelegt wird, kann zu kritischen Änderungen ohne eine Benachrichtigung kommen.
 
-Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert, der den "Standard"-Wert überschreibt (siehe globale SMART-Einstellungen unter Datenträger-Einstellungen).
 :end
 
 :info_controller_type_help:
-Standardmäßig wird die Controller-Auswahl von smartctl durchgeführt um die SMART-Informationen zu lesen. Bestimmte Controller benötigen jedoch spezielle Einstellungen damit smartctl funktioniert.
-Verwenden Sie diese Einstellung um Ihren Controllertyp auszuwählen und den spezifischen Festplattenindex und Gerätenamen an Ihre Gegebenheiten anzupassen. Verwenden Sie die Dokumentation des Herstellers um die relevanten Informationen zu finden.
+Standardmäßig wird die Controller-Auswahl von smartctl durchgeführt, um die SMART-Informationen zu lesen. Bestimmte Controller benötigen jedoch spezielle Einstellungen, damit smartctl funktioniert.
+Verwende diese Einstellung, um deinen Controller-Typ auszuwählen und den spezifischen Datenträger-Index und Namen an deine Gegebenheiten anzupassen. Verwende die Dokumentation des Herstellers, um die relevanten Informationen zu finden.
 
-Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert, der den "Standard"-Wert überschreibt (siehe globale SMART-Einstellungen unter Datenträger-Einstellungen).
 :end
 
 :info_attribute_notifications_help:
-Hier können Benachrichtigungen für die angegebenen SMART-Attribute aktivieren oder deaktivieren werden. Es wird empfohlen, die Standardeinstellung beizubehalten bei der es sich um ALLE ausgewählten Attribute handelt.
-Falls Ihr Datenträger Attribute nicht unterstützt/vorhanden sind oder falsch liefert können diese ausgeschlossen werden.
-Ebenso können benutzerdefinierte SMART-Attribute angegeben werden um Benachrichtigungen zu generieren. Bitte Vorsicht bei der
-Auswahl. Sollten falsche SMART-Attribute ausgewählt werden kann dies zu einer Vielzahl von Benachrichtigungen führen.
+Hier können Benachrichtigungen für die angegebenen SMART-Attribute aktivieren oder deaktivieren werden.
+Es wird empfohlen, die Standardeinstellung beizubehalten, also ALLE ausgewählten Attribute.
+Wenn bestimmte Attribute auf deinem Datenträger nicht vorhanden sind oder nicht die richtigen Informationen liefern, können diese ausgeschlossen werden.
+Ebenso können benutzerdefinierte SMART-Attribute angegeben werden, um Benachrichtigungen zu generieren. Bitte sei vorsichtig bei der Auswahl.
+Sollten ungeeignete SMART-Attribute ausgewählt werden, kann dies zu einer Vielzahl von Benachrichtigungen führen.
 
-Jeder Datenträger hat möglicherweise seinen eigenen Wert der den 'Standard' Wert überschreibt (siehe Globale SMART Einstellungen unter Datenträgereinstellungen).
+Jeder Datenträger hat möglicherweise seinen eigenen Wert, der den "Standard"-Wert überschreibt (siehe globale SMART-Einstellungen unter Datenträger-Einstellungen).
 :end
 
 :selftest_history_help:
-Klicke **Anzeigen** um den Verlauf der Selbsttest die auf dem Datenträger gespeichert sind anzuzeigen.
-Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
+Klicke auf **Anzeigen**, um den Selbsttest-Verlauf anzuzeigen, der auf dem Datenträger selbst gespeichert ist.
+Diese Funktion ist nur verfügbar, wenn der Datenträger aktiv ist.
 :end
 
 :selftest_error_log_help:
-Klicke **Anzeigen** um den gespeicherten Fehlerbericht der auf dem Datenträger gespeichert ist anzuzeigen.
-Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
+Klicke auf **Anzeigen**, um den Fehlerbericht anzuzeigen, der auf dem Datenträger selbst gespeichert ist.
+Diese Funktion ist nur verfügbar, wenn der Datenträger aktiv ist.
 :end
 
 :selftest_short_test_help:
-Startet einen *einfachen* SMART Selbsttest, die Voraussichtliche Dauer ist im Abschnitt *Funktionen* ersichtlich. Dauert üblicherweise ein paar Minuten.
+Startet einen *kurzen* SMART-Selbsttest. Die voraussichtliche Dauer ist im Abschnitt *Funktionen* ersichtlich. Dieser dauert üblicherweise ein paar Minuten.
 
-Wenn der Datenträger in den Standby Modus versetzt wird, wird jeglicher laufende Selbsttest abgebrochen.
-Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
+Wenn der Datenträger heruntergefahren wird, bricht das jeden laufenden Selbsttest ab.
+Diese Funktion ist nur verfügbar, wenn der Datenträger aktiv ist.
 :end
 
 :selftest_long_test_help:
-Startet einen *erweiterten* SMART Selbsttest, die Voraussichtliche Dauer ist im Abschnitt *Funktionen* ersichtlich. Dauert üblicherweise ein paar Stunden.
+Startet einen *erweiterten* SMART Selbsttest. Die voraussichtliche Dauer ist im Abschnitt *Funktionen* ersichtlich. Dieser dauert üblicherweise ein paar Stunden.
 
-Wenn der Datenträger in den Standby Modus versetzt wird, wird jeglicher laufende Selbsttest abgebrochen Es wird empfohlen den
-Spin-Down Timer zu deaktivieren um eine Unterbrechung zu verhindern.
+Wenn der Datenträger heruntergefahren wird, bricht das jeden laufenden Selbsttest ab. Es wird empfohlen, die Verzögerung beim Herunterfahren
+des Datenträgers auf "Nie" zu stellen, um eine Unterbrechung des Selbsttests zu verhindern.
 
-Diese Funktion ist nur verfügbar wenn der Datenträger aktiv ist.
+Diese Funktion ist nur verfügbar, wenn der Datenträger aktiv ist.
 :end
 
 :selftest_result_help:
-Wenn kein Selbsttest läuft wird das letzte Ergebnis hier angezeigt (wenn verfügbar).
-Andernfalls wird hier eine Fortschrittsanzeige (in Prozent) angezeigt wenn ein Test läuft.
+Wenn kein Test läuft wird hier das letzte Ergebnis des Selbsttest angezeigt (falls verfügbar).
+Andernfalls wird eine Fortschrittsanzeige (in Prozent) für einen laufenden Test angezeigt.
 :end
 
 :smart_attributes_help:
-Zeigt die Unterstützten SMART Attribute des Datenträgers. Für Detaillierte Informationen zu den einzelnen SMART Attributen bitte eine online Suche durchführen.
+Diese Liste zeigt die SMART-Attribute, die von diesem Datenträger unterstützt werden. Für weitere Informationen über jedes SMART-Attribut wird empfohlen, im Internet danach zu suchen.
 
-Attribute in *Orange* bedürfen Ihrer Aufmerksamkeit. **ROHWERTE** größer als Null zeigen eventuell einen bevorstehenden Datenträgerausfall an.
+Attribute in *orange* erfordern deine Aufmerksamkeit. Diese haben einen **Rohwert** größer als Null und können auf einen bevorstehenden Datenträgerausfall hinweisen.
 
-Besondere Aufmerksamkeit ist geboten wenn sich der Rohwert mit der Zeit erhöht. Im Zweifelsfall bitte einen Thread im Limetech-Forum erstellen.
+Besondere Aufmerksamkeit ist geboten, wenn sich der Rohwert mit der Zeit erhöht. Im Zweifelsfall solltest du im Limetech-Forum nach Hilfe suchen.
 :end
 
 :smart_capabilities_help:
-Zeigt die von diesem Datenträger unterstützten SMART-Funktionen.
+Diese Liste zeigt die SMART-Funktionen, die von diesem Datenträger unterstützt werden.
 
-Hier wird die voraussichtliche Dauer des einfachen und erweiterten SMART Test angezeigt.
+Hier wird die voraussichtliche Dauer des kurzen und erweiterten SMART-Selbsttest angezeigt.
 :end
 
 :smart_identity_help:
-Zeigt die SMART Identifizierungs-Informationen von diesem Datenträger
+Diese Liste zeigt die SMART-Identitätsinformationen dieses Datenträgers an
 :end
 
 :open_devices_help:
-Hierbei handelt es sich um Datenträger die im System installiert sind jedoch weder
-dem Array oder dem Cachepool zugeordnet sind.
+Hierbei handelt es sich um Datenträger die in deinem Server installiert sind, jedoch weder
+dem paritätsgeschützten Array oder dem Cache-Datenträgerpool zugeordnet sind.
 :end
 
 :flash_backup_help:
-Benutzen Sie *Flash Backup* um eine zip-Datei mit dem gesamten Inhalt des USB-Flash Datenträgers zu erstellen und lokal auf dem Computer zu speichern.
+Verwende *Flash-Sicherung*, um eine einzelne zip-Datei mit dem gesamten derzeitigen Inhalt des Flash-Datenträgers zu erstellen und lokal auf deinem Computer zu speichern.
 :end
 
 :syslinux_cfg_help:
-Auf dieser Seite kann die Datei `syslinux.cfg` bearbeitet werden.
-Der Server muss neu gestartet werden damit die Änderungen aktiv werden.
+Auf dieser Seite kannst du Änderungen an deiner "syslinux.cfg"-Datei vornehmen.
+Du musst deinen Server neu starten, damit diese Änderungen wirksam werden.
 :end
 
 :syslinux_button_help:
-Klick auf **Standard** um den Editor mit Werkseinstellungen aufzurufen.
-Sie müssen auf **Übernehmen* klicken um die neuen
-Einstellungen zu übernehmen.
+Klicke auf den **Standard**-Button, um das Editor-Fenster mit dem werkseitig voreingestellten Inhalt zu laden.
+Du musst noch auf **Anwenden* klicken, um die Änderungen zu übernehmen.
 
-Klick auf **Übernehmen** um die Einstellungen zu übernehmen.  Klick auf **Zurücksetzen**, um
-die Änderungen rückgängig zu machen (vor dem Speichern). Klick auf **Erledigt** um die Seite zu verlassen.
+Klicke auf den **Anwenden**-Button, um die aktuellen Änderungen zu übernehmen. Klicke auf **Zurücksetzen**, um
+alle Änderungen rückgängig zu machen (vor dem Speichern). Klicke auf **Fertig**, um diese Seite zu verlassen.
+:end
+
+:info_share_assignment_help:
+Der ausgewählte Pool ist für Benutzerfreigaben verfügbar.
 :end
 
 :info_free_space_help:
-Definiert eine "Untergrenze" für den mindestens verbleibenden Speicherplatz.
-Wenn der freie Speicherplatz unter diesen Wert fällt und neue Dateien kopiert werden wird die Fehlermeldung "nicht genügend freier Speicherplatz" angezeigt.
+Hiermit wird eine "Untergrenze" für den verbleibenden freien Speicherplatz auf dem Volume festgelegt.
+Wenn der freie Speicherplatz unter diesen Wert fällt, wird bei neuen Dateien, die über Benutzerfreigaben geschrieben werden, die Fehlermeldung "nicht genügend freier Speicherplatz" angezeigt.
 
-Erlaubt Größeneinheiten sind:
+Gib einen numerischen Wert mit einem der folgenden Einheit ein:
 
 **KB** = 1.000<br>
 **MB** = 1.000.000<br>
 **GB** = 1.000.000.000<br>
 **TB** = 1.000.000.000.000<br>
-**K** = 1.024 (ie, 2^10)<br>
-**M** = 1.048.576 (ie, 2^20)<br>
-**G** = 1.073.741.824 (ie, 2^30)<br>
-**T** = 1.099.511.627.776 (ie, 2^40)<br>
+**K** = 1.024 (d.h., 2^10)<br>
+**M** = 1.048.576 (d.h., 2^20)<br>
+**G** = 1.073.741.824 (d.h., 2^30)<br>
+**T** = 1.099.511.627.776 (d.h., 2^40)<br>
 
-Wenn keine Größeneinheiten angegeben wird, wird standardmäßig der 1024-byte Block angenommen.
+Wenn kein Einheit angegeben wird, wird eine Anzahl von 1024 Byte-Blöcken angenommen.
 :end
 
 :share_list_help:
-**Farbiger Statusindikator** Bedeutung des Farbindikators am Anfang jeder Zeile von *Nutzer-Freigaben*:
+**Farbiger Statusindikator** - Die Bedeutung des Farbindikators am Anfang jeder Zeile von *Benutzerfreigaben* ist wie folgt:
 
-<i class='fa fa-circle orb green-orb'></i>Alle Dateien befinden sich auf Ausfall-Geschützten Datenträgern.
+<i class='fa fa-circle orb green-orb'></i>Alle Dateien befinden sich auf einem ausfall-geschützten Speicher.
 
-<i class='fa fa-warning orb yellow-orb'></i>Einige oder alle Dateien befinden sich auf nicht Ausfall-Geschützten Datenträgern.
+<i class='fa fa-warning orb yellow-orb'></i>Einige oder alle Dateien befinden sich auf einem nicht ausfall-geschützten Speicher.
 
-**Freigabe-Einstellungen:**
+**Sicherheitsstufen:**
 
-+ '-' -- Netzwerk-Freigabe wird nicht exportiert und ist vom Netzwerk nicht erreichbar
-+ *Öffentlich* -- Alle Benutzer inklusive Gästen haben Lese-/Schreibrechte (Öffentlich Zugang)
-+ *Geschützt* -- Alle Benutzer inklusive Gästen haben Leserechte-/Schreibrechte wird per Benutzer vergeben (Limitierter Zugang)
-+ *Privat* -- Gäste haben keinen Zugriff, Lese-/Schreib- oder nur Leserechte wird per Benutzer vergeben (Geschlossener Zugang)
++ "-" -- Benutzerfreigabe wird nicht exportiert und ist vom Netzwerk nicht erreichbar
++ *Öffentlich* -- Alle Benutzer einschließlich Gäste haben vollen Lese-/Schreibzugriff (öffentlicher Zugriff)
++ *Geschützt* -- Alle Benutzer einschließlich Gäste haben Lesezugriff. Der Schreibzugriff wird pro Benutzer vergeben (eingeschränkter Zugriff)
++ *Privat* -- Überhaupt kein Gastzugriff, Lese-/Schreib- oder nur Lesezugriff wird pro Benutzer vergeben (geschlossener Zugriff)
 
-**Spezielle Freigabeeinstellungen:**
+**Spezielle Stufen:**
 
-+ SMB Freigaben in *Kursiv* zeigen versteckte Nutzer-Freigaben.
-+ NFS besetzt keine speziellen Berechtigungen für Nutzer-Freigaben.
++ Eine in *Kursivschrift* angezeigte SMB-Sicherheitsstufe weist auf exportierte versteckte Benutzerfreigaben hin.
++ NFS hat keine speziellen Stufen für Benutzerfreigaben.
 :end
 
 :disk_list_help:
-**Farbiger Statusindikator** Bedeutung des Farbindikators am Anfang jeder Zeile von *Datenträger-Freigaben*:
+**Farbiger Statusindikator** Die Bedeutung des Farbindikators am Anfang jeder Zeile von *Datenträger-Freigaben* ist wie folgt:
 
-<i class='fa fa-circle orb green-orb'></i>Gemounteter Datenträger unterliegt Redundanz/ist Geschützt.
+<i class='fa fa-circle orb green-orb'></i>Eingehängter Datenträger unterliegt Redundanz/ist Geschützt.
 
-<i class='fa fa-warning orb yellow-orb'></i>Gemounteter Datenträger unterliegt keiner Redundanz/ist Ungeschützt.
+<i class='fa fa-warning orb yellow-orb'></i>Eingehängter Datenträger unterliegt keiner Redundanz/ist Ungeschützt.
 
-**Sicherheitseinstellungen:**
+*Sicherheitsstufen:**
 
-+ '-' -- Datenträger-Freigabe wird nicht exportiert und ist vom Netzwerk nicht erreichbar
-+ *Öffentlich* -- Alle Benutzer inklusive Gästen haben Lese-/Schreibrechte (Öffentlich Zugang)
-+ *Geschützt* -- Alle Benutzer inklusive Gästen haben Leserechte, Schreibrechte wird per Benutzer vergeben (Limitierter Zugang)
-+ *Privat* -- Gäste haben keinen Zugriff, Lese-/Schreib- oder nur Leserechte wird per Benutzer vergeben (Geschlossener Zugang)
++ "-" -- Benutzerfreigabe wird nicht exportiert und ist vom Netzwerk nicht erreichbar
++ *Öffentlich* -- Alle Benutzer einschließlich Gäste haben vollen Lese-/Schreibzugriff (öffentlicher Zugriff)
++ *Geschützt* -- Alle Benutzer einschließlich Gäste haben Lesezugriff. Der Schreibzugriff wird pro Benutzer vergeben (eingeschränkter Zugriff)
++ *Privat* -- Überhaupt kein Gastzugriff, Lese-/Schreib- oder nur Lesezugriff wird pro Benutzer vergeben (geschlossener Zugriff)
 
-**Spezielle Freigabeeinstellungen:**
+**Spezielle Stufen:**
 
-+ SMB Freigaben in *Kursiv* zeigen versteckte Datenträger-Freigaben.
-+ NFS besetzt keine speziellen Berechtigungen für Datenträger-Freigaben.
++ Eine in *Kursivschrift* angezeigte SMB-Sicherheitsstufe weist auf exportierte versteckte Benutzerfreigaben hin.
++ NFS hat keine speziellen Stufen für Benutzerfreigaben.
 :end
 
 :share_edit_global1_help:
-Eine *Freigabe* auch *Nutzer-Freigabe*, ist der Name eines Ordners im Hauptverzeichnis auf einem Datenträger (Array
-oder Cache). Jede Freigabe kann für den Netzwerkzugriff konfiguriert werden. Wenn eine Freigabe durchsucht wird, wird die
-Zusammengesetzt Ansicht aller Dateien und Unterverzeichnisse für die Freigabe der Dateien auf allen Datenträgern angezeigt.
+Eine *Freigabe* auch *Benutzerfreigabe* genannt, ist der Name eines Ordners im Hauptverzeichnis auf einem Speicher-Volumen (Array-Datenträger
+oder Pools). Jede Freigabe kann für den Netzwerkzugriff exportiert werden. Beim Durchsuchen einer Freigabe wird die zusammengesetzte Ansicht
+aller Dateien und Unterverzeichnisse angezeigt, für die dieses Hauptverzeichnis auf jedem Speicher-Datenträger vorhanden ist.
 
-*Lese Einstellungen von* wird benutzt um die Einstellungen von einer Bestehenden Freigabe auf eine neue Freigabe zu übernehmen.
+Die Funktion *Einstellungen lesen von* wird verwendet, um die Einstellungen einer bestehenden Freigabe für eine neue Freigabe zu übernehmen.
 
-Den gewünschten Freigabenamen eingeben und auf **Lesen** klicken um die Einstellungen von der gewählten Freigabe zu übernehmen.
+Gib den gewünschten Freigabenamen ein und klicke auf **Lesen**, um die Einstellungen von der gewählten Quelle zu kopieren.
 :end
 
 :share_edit_global2_help:
-*Übernehme Einstellungen auf* wird benutzt um die Einstellungen auf einen oder mehreren existierenden Freigaben zu übernehmen.
+*Einstellungen kopieren zu* wird verwendet, um die Einstellungen der aktuellen Freigabe auf eine oder mehrere bestehende Freigaben zu kopieren.
 
-Die gewünschten Freigaben auswählen und **Schreiben** klicken um die Einstellungen auf die gewählten Freigaben zu übernehmen.
+Wähle die gewünschten Ziele aus und klicke auf **Kopieren**, um die Einstellungen auf die ausgewählten Freigaben zu kopieren.
 :end
 
 :share_edit_name_help:
-Der Freigabenamen kann maximal 40 Zeichen lang sein und unterliegt folgenden Einschränkungen:
+Der Freigabenamen kann maximal 40 Zeichen lang sein, Groß- und Kleinschreibung muss beachtet werden und unterliegt folgenden Einschränkungen:
 
-* darf keine Anführungszeichen (") oder einen der folgenden Zeichen enthalten: / \ * < > |
-* darf kein reservierter Freigabename sein zB: flash, cache, cache2, disk1, disk2,...
+* darf keine doppelten Anführungszeichen (") oder die folgenden Zeichen enthalten: / \ * < > |
+* darf keiner der reservierter Freigabename sein: flash, cache, cache2, .., disk1, disk2,...
 
-Wir empfehlen Ihnen keine Sonderzeichen zu verwenden.
+Wir empfehlen dir dringend es einfach zu halten und keine Sonderzeichen zu verwenden.
 :end
 
 :share_edit_comments_help:
-Beliebiger Text, maximal 256 Zeichen.
+Beliebiger Inhalt, maximal 256 Zeichen.
 :end
 
 :share_edit_allocation_method_help:
-Diese Einstellung bestimmt wie und auf welchen Datenträgern Unraid neue Dateien/Verzeichnisse erstellt:
+Diese Einstellung legt fest, wie Unraid OS den Datenträger auswählt, der beim Erstellen neuer Dateien oder Verzeichnisse verwenden werden soll:
 
 **High-Water**
-Benutzt den ersten Datenträger der noch genug Speicherplatz unter der *High-Water Grenze* besitzt. Die
-*High-Water Grenze* wird durch das größte Datenlaufwerk geteilt durch zwei festgelegt. Wenn kein Datenträger
-Speicherplatz über der *High-Water Grenze* zur Verfügung hat wird die *High-Water Grenze* durch zwei geteilt und erneut geprüft.
+Verwendet den ersten Datenträger, dessen freier Speicherplatz noch unter der *High-Water Grenze* liegt. Die
+*High-Water Grenze* wird durch den größten Speicher-Datenträger geteilt durch 2 festgelegt. Wenn auf keinem Datenträger
+Speicherplatz über der *High-Water Grenze* zur Verfügung steht, wird die *High-Water Grenze* durch 2 geteilt und erneut geprüft.
 
-Das Ziel von **High-Water** ist möglichst viele Daten auf jeden Datenträger zu schreiben (um die Anlaufvorgänge der
-Datenträger zu minimieren) und gleichzeitig die Datenträgerauslastung von allen Datenträgern auf gleichem
-Niveaus zu halten (um Daten gleichmäßig auf dem Array zu verteilen).
+Das Ziel von **High-Water** ist es, so viele Daten wie möglich auf jeden Datenträger zu schreiben (um zu reduzieren, wie oft ein Datenträger
+hochgefahren werden muss) und gleichzeitig die Auslastung von allen Datenträgern auf dem gleichem Niveau zu halten
+(um Daten gleichmäßig auf dem Array zu verteilen).
 
 **Fill-Up**
-Benutzt den ersten Datenträger der noch freien Speicherplatz über der **Minimale freier Speicherplatz**
-Einstellung hat.
+Verwendet den Datenträger, der noch freien Speicherplatz über der **Minimaler freier Speicherplatz** Einstellung hat.
 
 **Most-Free**
-Benutzt den Datenträger der am meisten freien Speicherplatz hat.
+Verwendet den Datenträger mit dem aktuell größten freien Speicherplatz.
 :end
 
 :share_edit_free_space_help:
-Der *Minimale freie Speicherplatz* der zum Schreiben, auf einem zur Freigabe gehörendem Datenträger, verfügbar sein muss.<br>
+Der *minimal freie Speicherplatz*, der zum Schreiben auf einem zur Freigabe gehörendem Datenträger verfügbar sein muss.<br>
 
-Wert, der gleich oder größer als die größte einzelne Datei ist, die Sie auf die Freigabe kopieren möchten.
-Einheiten in KB, MB, GB und TB angeben, zB. 10MB.
+Wähle einen Wert, der gleich oder größer als die größte einzelne Datei ist, die du auf die Freigabe kopieren willst.
+Gib ggf. Einheiten in KB, MB, GB und TB an, z.B. 10MB.
 :end
 
 :share_edit_split_level_help:
-Gibt an ob ein Verzeichnis über mehrere Datenträger aufgeteilt werden darf.
+Legt fest, ob ein Verzeichnis über mehrere Datenträger aufgeteilt werden darf.
 
 **Jedes Verzeichnis automatisch aufteilen falls erforderlich**
 Wenn eine neue Datei oder ein neues Unterverzeichnis in einer Freigabe erstellt wird, wählt Unraid OS zuerst den Datenträger
-anhand der Konfigurierten *Zuweisungsmethode* aus.  Wenn das übergeordnete Verzeichnis mit der neu zu erstellenden Datei
-oder Verzeichnis nicht auf dem Datenträger existiert, erstellt Unraid zuerst alle erforderlichen übergeordneten Verzeichnisse
-und anschließend die neue Datei bzw. das neue Unterverzeichnis.
+anhand der konfigurierten *Verteilungsmethode* aus. Wenn das übergeordnete Verzeichnis mit der neu zu erstellenden Datei
+oder Verzeichnis nicht auf dem Datenträger existiert, erstellt Unraid OS zuerst alle erforderlichen übergeordneten Verzeichnisse
+und anschließend die neue Datei oder das Unterverzeichnis.
 
 **Hauptverzeichnis automatisch aufteilen falls erforderlich**
-Wenn eine neue Datei oder ein Unterverzeichnis im Hauptverzeichnis der Freigabe erstellt wird und das Unterverzeichnis
+Wenn eine neue Datei oder ein Unterverzeichnis im Hauptverzeichnis der Freigabe erstellt wird und das erste Unterverzeichnis
 auf dem Datenträger des Hauptverzeichnisses nicht vorhanden ist, wird zuerst das Unterverzeichnis erstellt.
 Wenn eine neue Datei oder ein Unterverzeichnis im zweiten oder weiteren Unterverzeichnissen einer Freigabe erstellt wird, wird
 die neu zu erstellende Datei oder Verzeichnis auf dem selben Datenträger wie das Hauptverzeichnis erstellt.
 
 **Verzeichnis nach "N" Ebenen aufteilen falls erforderlich**
-Ähnlich wie oberhalb: Wenn eine neue Datei oder ein Unterverzeichnis erstellt wird und das übergeordnete Verzeichnis auf Ebene
-"N" befindet und auf dem ausgewählten Datenträger nicht vorahnden ist, erstellt Unraid alle übergeordneten Verzeichnisse. Wenn
+Ähnlich wie oberhalb: Wenn eine neue Datei oder ein Unterverzeichnis erstellt wird und sich das übergeordnete Verzeichnis auf Ebene
+"N" befindet und auf dem ausgewählten Datenträger nicht vorahnden ist, erstellt Unraid OS alle übergeordneten Verzeichnisse. Wenn
 das übergeordnete Verzeichnis der neuen Datei oder Verzeichnis sich nach der Ebene "N" befindet, dann wird die neue Datei oder
 Verzeichnis auf dem selben Datenträger erstellt auf dem sich das übergeordnete Verzeichnis befindet.
 
 **Manuell: Verzeichnisse nicht automatisch aufteilen**
-Wenn eine neue Datei oder ein Unterverzeichnis auf deinem Datenträger erstellt werden muss erstellt Unraid das Verzeichnis
-nur auf dem Datenträger auf denen das Hauptverzeichnis vorhanden ist.
+Wenn eine neue Datei oder ein Unterverzeichnis auf deinem Datenträger erstellt werden muss, erstellt Unraid OS das Verzeichnis
+nur auf dem Datenträger, auf denen das Hauptverzeichnis vorhanden ist.
 :end
 
 :share_edit_included_disks_help:
-Gibt an welcher Datenträger für die Freigabe verwendet werden darf, Standardmäßig werden alle Datenträger verwendet.
-Falls hier keine Auswahl erfolgt kann die Freigabe über *alle* Datenträger erweitert werden.
+Gib die Datenträger an, die für die Freigabe verwendet werden dürfen. Standardmäßig werden alle Datenträger einbezogen,
+d.h. wenn bestimmte Datenträger nicht ausgewählt werden, kann die Freigabe auf *alle* Array-Datenträger erweitert werden.
 :end
 
 :share_edit_excluded_disks_help:
-Gibt an welche Datenträger *nicht* von dieser Freigabe benutzt werden dürfen. Standardmäßig sind keine Datenträger ausgenommen.
+Gib die Datenträger an, die *nicht* von dieser Freigabe verwendet werden dürfen. Standardmäßig sind keine Datenträger ausgeschlossen.
 :end
 
 :share_edit_cache_pool_help:
