@@ -37,6 +37,7 @@ Make one change at a time and verify if it improves your situation=Nehme Änderu
 Making changes here can briefly interrupt your network operation=Durch Änderungen, die du hier vornimmst, kann deine Netzwerkverbindung kurz unterbrochen werden
 Many plugins are no longer compatible with older Unraid versons=Viele Plugins sind nicht mehr mit älteren Unraid-Versionen kompatibel
 Max SMB Open Files=Maximal geöffnete SMB-Dateien
+Max User Instances=Maximale Benutzer-Instanzen
 Max User Watches=Maximale Benutzer-Überwachungen
 NIC Offload=NIC-Offload
 NIC Rx Buffer=NIC Rx-Puffer
@@ -45,6 +46,7 @@ Normal CPU Scaling Governor=Normaler CPU-Skalierung-Governor
 Note=Hinweis
 Number of syslogs to Archive=Anzahl der Systemprotokoll-Einträge, die archiviert werden sollen
 post=Senden
+Power Saving Settings=Energiespareinstellungen
 Power Saving CPU Scaling Governor=Energiesparender CPU-Skalierung-Governor
 Processes to kill before Array is Stopped=Zu beendende Prozesse bevor das Array gestoppt wird
 Put the IP address of your server in the Remote syslog server field=Gib die IP-Adresse deines Servers in das Feld "Entfernter Systemprotokoll-Server" ein
@@ -127,6 +129,14 @@ You may actually cause more problems than you solve if there are problems with y
 :tips_tweaks_dirty_ratio_plug:
 > Lege die "vm.dirty_ratio" als Prozentsatz des gesamten RAM-Speichers fest.
 > Ein zu hoher Wert kann dazu führen, dass Linux einige Prozesse beendet, um mehr Speicher zu schaffen. Die Standardeinstellung von 20 % wird in den meisten Fällen empfohlen. Wenn du eine Medien-Streaming- oder Gaming-VM hast, verwende einen Wert von 3%. Wenn OOM-Fehler auftreten, wird empfohlen, diesen Wert auf 2% zu stellen.
+:end
+
+:tips_tweaks_writeback_plug:
+> The default is 200 centiseconds (2 seconds) to control how often the kernel checks for dirty data to flush in the background.
+:end
+
+:tips_tweaks_expire_plug:
+> The default is 1000 centiseconds (10 seconds) to specify how long data can stay dirty before it is considered for write-back.
 :end
 
 :tips_tweaks_max_watches_plug:
@@ -217,7 +227,5 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 
-; Note: February 10, 2024 - 3 missing translations
+; Note: December 8, 2024 - 1 missing translations
 Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
-Max User Instances=Maximale Benutzer-Instanzen
-Power Saving Settings=Energiespareinstellungen

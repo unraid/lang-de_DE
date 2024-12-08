@@ -25,13 +25,13 @@ Private Hidden=Privat versteckt
 Refresh and Update=Neu laden und aktualisieren
 Remote Share Mount Wait Time=Wartezeit zum Einhängen einer entfernten Freigabe
 Rule=Regel
-SMB Settings=SMB-Einstellungen
 Select Disk=Datenträger auswählen
 Set Encrypted Disk Password=Passwort für verschlüsselten Datenträger festlegen
 Set Password=Passwort festlegen
 Set Pool Mount Point=Pool-Einhängepunkt festlegen
 Set the Pool Mount Point for this disk=Pool-Einhängepunkt für diesen Datenträger festlegen
 Set the disk Password=Datenträgerpasswort festlegen
+SMB Settings=SMB-Einstellungen
 Specify SMB Version when Mounting Remote Shares=SMB-Version beim Einhängen entfernter Freigaben festlegen
 Spin down disks=Datenträger herunterfahren
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Plugin "Unassigned Devices Plus" muss installiert sein, um den Destruktiven Modus zu aktivieren
@@ -122,6 +122,14 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 > Die Option **Erzwungene Kleinschreibung** ist eine Besonderheit: Die Groß-/Kleinschreibung aller eingehenden Client-Dateinamen, nicht nur neuer Dateinamen, wird auf Kleinbuchstaben gestellt. Mit anderen Worten: Egal, welcher Name mit gemischter Großschreibung auf der Windows-Seite erstellt wird, er wird in Kleinbuchstaben gespeichert und aufgerufen. Dadurch wird sichergestellt, dass alle Windows-Anwendungen jede Datei unabhängig von der Groß- und Kleinschreibung finden, aber die Groß- und Kleinschreibung wird in Ordnerauflistungen nicht beibehalten.
 :end
 
+:ud_time_machine_plug:
+> Set to **Yes** to enable Time Machine settings on the SMB shares.
+:end
+
+:ud_time_machine_vol_size_plug:
+> This limits the reported volume size, preventing Time Machine from using the entire real disk space for backup. For example, setting this value to "1024" would limit the reported disk space to 1GB.
+:end
+
 :ud_settings_force_user_plug:
 > Es kann vorkommen, dass die Berechtigungen auf SMB-Freigaben nicht wie erwartet gehandhabt werden. Das Einschalten dieser Funktion kann bei diesen Berechtigungen helfen.
 > Dies gilt für alle Datenträger, die über Unassigned Devices eingehängt sind.
@@ -132,8 +140,8 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 > Auf **Ja** stellen, um nicht zugewiesene Datenträger mit einer NFS-Freigabe zu exportieren. Die Freigaben werden öffentlich mit Lese- und Schreibzugriff oder privat mit der von dir festgelegten Regel exportiert. Der Zugriff wird durch Berechtigungseinstellungen für Dateien und Ordner gesteuert.
 :end
 
-:ud_settings_nfs_shares_plug:
-> **Hinweis:** Die normale von UD verwendete Regel lautet '*(sec=sys,rw,insecure,anongid=100,anonuid=99,all_squash)'.
+:ud_settings_nfs_rules_plug:
+> **Note:** The normal rule used by UD is '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
 :end
 
 :ud_settings_disk_pass_plug:
@@ -149,3 +157,38 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 :ud_settings_zfs_upgrade_plug:
 > Wähle den Datenträger aus, den du auf die neueste ZFS-Version upgraden möchtest. Der Datenträger muss eingehängt sein, um auf ZFS zu upgraden.
 :end
+
+:ud_remote_server_test_plug:
+> Remote Servers need to have SMB and/or NFS enabled.  This will check that the SMB and/or NFS ports are open.  The 'showmount -e <server>' command on Unraid must also show NFS mounts available.
+> For SMB to be considered online, the Remote Server has to have the SMB port open.
+> For NFS to be considered online, the Remote Server has to have the NFS port open and the 'showmount -e' command has to show NFS shares.
+> There can be a case where the port is open and 'showmount -e' doesn't show NFS shares and NFS will not work.
+> If showmount does not return any NFS shares on a reachable remote server like a Synology, it generally means one of the following:
+> No NFS Shares Exported:
+> The server might not have any directories configured for NFS export. Check the NFS configuration on the Synology device and ensure that folders intended for NFS sharing are explicitly exported.
+> Access Restrictions:
+> NFS shares may be configured with IP-based access restrictions. Synology devices allow you to specify which IP addresses or networks can access each NFS share. If your IP address is not allowed, the NFS share will not appear in showmount output.
+> NFS Service Not Enabled:
+> The NFS service on the Synology might not be enabled. Verify this in the Synology DSM settings under Control Panel > File Services > NFS. Enable NFS if it is currently disabled.
+> Firewall or Network Configuration:
+> The Synology device may have firewall rules blocking the showmount request or the required RPC communication. Ensure that the firewall settings allow traffic on NFS-related ports (typically 2049 for NFS and 111 for RPC).
+> Synology Export Options:
+> The Synology NFS settings can sometimes require enabling Enable NFS at the top level and specifying Allow NFSv3 if you are using clients that expect NFSv3. Check Control Panel > File Services > NFS to ensure proper configuration.
+> By ensuring that NFS is enabled, configured with the correct permissions, and exported directories are allowed for your client IP, showmount should list the available exports.
+:end
+
+; Note: December 8, 2024 - 14 missing translations
+Case-sensitive names=
+Enable Time Machine=
+Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the Result text area=Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the **Result** text area
+See Help=
+SMB Sharing=
+Test=
+Testing=
+Test the Remote Server=
+This is a tool to help troubleshoot Remote Servers ability to serve SMB and NFS shares=
+Time Machine volume size limit=
+Upgrade ZFS Pool=
+Warning=
+Windows may require a valid User to be defined even for Public shares=
+Working=

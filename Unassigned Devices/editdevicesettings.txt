@@ -3,6 +3,7 @@ Attach=Verbinden
 Attach This Disk=Diesen Datenträger verbinden
 Attaching=Verbinde
 Automount=Auto-Einbinden
+Click to select file or click Default button for the Device Script File=Klick hier, um eine Datei auszuwählen oder klick auf den Standard-Button für die Datenträger-Skriptdatei.
 Default=Standard
 Delete Device Script File=Datenträger-Skriptdatei löschen
 Detach=Trennen
@@ -92,6 +93,3 @@ ZFS Volume=ZFS-Volumen
 > Klick auf **Speichern**, um die aktuellen Änderungen zu übernehmen.
 > Klick auf **Fertig**, um die Seite zu verlassen.
 :end
-
-; Note: February 10, 2024 - 1 missing translations
-Click to select file or click Default button for the Device Script File=Klick hier, um eine Datei auszuwählen oder klick auf den Standard-Button für die Datenträger-Skriptdatei.

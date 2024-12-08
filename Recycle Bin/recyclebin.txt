@@ -127,3 +127,8 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Die gelöschten Dateien werden im Protokoll als nicht verknüpfte Dateien angezeigt.
 > Klicke auf den "Leeren"-Button, um das Protokoll zu leeren.
 :end
+
+; Note: December 8, 2024 - 3 missing translations
+Enable Empty All Trash Button=
+Enable Empty Share Trash Button=
+Enable Remove Aged Files Button=
