@@ -226,5 +226,5 @@ wsport for virtual console=WS-Port für virtuelle Konsole
 XML View=XML-Ansicht
 
 ; Note: December 25, 2023 - 2 missing translations
-Description=Beschreibung
-Top Image=Oberstes Image
+Description=Description
+Top Image=Top Image

@@ -22,6 +22,9 @@ BIOS dated=BIOS Datum
 Check free space=Freien Speicherplatz überprüfen
 Click to toggle CPU chart=Klicken, um die CPU-Anzeige umzuschalten
 Click to toggle details=Klicken zum Details umschalten
+Clock is unsynchronized with no NTP servers=Uhr nicht synchronisiert mit keinen NTP-Servern
+Clock synchronized with %s NTP server=Uhr synchronisiert mit %s NTP-Server
+Clock synchronized with %s NTP servers=Uhr synchronisiert mit %s NTP-Servern
 Clone=Duplizieren
 Close Tile=Kachel schließen
 Completed=Abgeschlossen
@@ -172,7 +175,11 @@ W=W
 Warnings=Warnungen
 ZFS=ZFS
 
-; Note: December 25, 2023 - 3 missing translations
-Clock is unsynchronized with no NTP servers=Uhr nicht synchronisiert mit keinen NTP-Servern
-Clock synchronized with %s NTP server=Uhr synchronisiert mit %s NTP-Server
-Clock synchronized with %s NTP servers=Uhr synchronisiert mit %s NTP-Servern
+; Note: December 8, 2024 - 7 missing translations
+checking=
+emulated=
+heat warnings=
+invalid=
+SMART errors=
+synching=
+utilization warnings=

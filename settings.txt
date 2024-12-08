@@ -167,7 +167,6 @@ Default appdata storage location=Standard appdata-Speicherpfad
 Default critical disk temperature threshold=Standard-Schwellenwert für kritische Datenträgertemperatur
 Default critical disk utilization threshold=Standard-Schwellenwert für kritische Datenträgerauslastung
 Default critical SSD temperature threshold=Standard-Schwellenwert für kritische SSD-Temperatur
-Default file system=Standard Dateisystem
 Default ISO storage path=Standard ISO-Speicherpfad
 Default network bridge=Standard Netzwerkbrücke
 Default network source=Standard Netzwerkquelle
@@ -301,6 +300,7 @@ Generate Key=Schlüssel generieren
 Generate Keypair=Schlüsselpaar generieren
 Global Share Settings=Globale Freigabeeinstellungen
 Global SMART Settings=Globale SMART-Einstellungen
+GRUB Configuration=GRUB-Konfiguration
 Header custom background color=Eigene Kopfzeilen-Hintergrundfarbe
 Header custom meta text color=Eigene Kopfzeilen-Metatextfarbe
 Header custom secondary text color=Eigene Kopfzeilen-Sekundärtextfarbe
@@ -859,5 +859,6 @@ Transient errors in this log can be ignored unless you are having issues=Vorübe
 Unraid API extra origins=Unraid-API Extra Origins
 View Flash Backup Error Log=Fehlerprotokoll der Flash-Sicherung anzeigen
 
-; Note: December 25, 2023 - 1 missing translations
-GRUB Configuration=GRUB-Konfiguration
+; Note: December 8, 2024 - 2 missing translations
+Default file system for Array disks=
+Docker PID Limit=
