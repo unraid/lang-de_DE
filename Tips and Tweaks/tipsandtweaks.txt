@@ -132,11 +132,11 @@ You may actually cause more problems than you solve if there are problems with y
 :end
 
 :tips_tweaks_writeback_plug:
-> The default is 200 centiseconds (2 seconds) to control how often the kernel checks for dirty data to flush in the background.
+> Der Standardwert ist 200 Centisekunden (2 Sekunden), um zu kontrollieren, wie oft der Kernel nach unsauberen Daten sucht, die im Hintergrund gelöscht werden müssen.
 :end
 
 :tips_tweaks_expire_plug:
-> The default is 1000 centiseconds (10 seconds) to specify how long data can stay dirty before it is considered for write-back.
+> Der Standardwert ist 1000 Centisekunden (10 Sekunden), um festzulegen, wie lange Daten unsauber bleiben können, bevor sie für das Zurückschreiben in Betracht gezogen werden.
 :end
 
 :tips_tweaks_max_watches_plug:
@@ -228,4 +228,4 @@ You may actually cause more problems than you solve if there are problems with y
 
 
 ; Note: December 8, 2024 - 1 missing translations
-Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance Boost
+Intel TurboAMD Performance Boost=Intel Turbo/AMD Performance-Boost

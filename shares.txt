@@ -81,10 +81,10 @@ Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
 
 ; Note: December 8, 2024 - 7 missing translations
-Free Space will be calculated=
-is missing=
-it references storage that does not exist=
-Share is empty and is safe to delete=
-Share must be empty to be deleted=
-This share is invalid=
-Warning: Configured Pool=
+Free Space will be calculated=Freier Speicherplatz wird berechnet
+is missing=fehlt
+it references storage that does not exist=verweist auf einen Speicher, der nicht existiert
+Share is empty and is safe to delete=Freigabe ist leer und kann sicher gelöscht werden
+Share must be empty to be deleted=Freigabe muss leer sein, um gelöscht zu werden
+This share is invalid=Diese Freigabe ist ungültig
+Warning Configured Pool=Warnung: Konfigurierter Pool

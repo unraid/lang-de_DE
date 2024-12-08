@@ -860,5 +860,5 @@ Unraid API extra origins=Unraid-API Extra Origins
 View Flash Backup Error Log=Fehlerprotokoll der Flash-Sicherung anzeigen
 
 ; Note: December 8, 2024 - 2 missing translations
-Default file system for Array disks=
-Docker PID Limit=
+Default file system for Array disks=Standard-Dateisystem für Array-Datenträger
+Docker PID Limit=Docker PID-Limit

@@ -137,7 +137,7 @@ User defined options=Benutzerdefinierte Optionen
 :end
 
 ; Note: December 8, 2024 - 4 missing translations
-Memory available to the cache_dirs script increase if it dies=Memory available to the cache_dirs script (increase if it dies)
-Timeout during disk-idle period=
-Timeout during initial startup or less-idle period=
-Timeout when all directories have been cached=
+Memory available to the cache_dirs script increase if it dies=Dem cache_dirs-Skript zur Verfügung stehender Arbeitsspeicher (erhöhen, wenn es abstürzt)
+Timeout during disk-idle period=Timeout während der Datenträger-Leerlaufzeit
+Timeout during initial startup or less-idle period=Timeout während des ersten Hochfahrens oder außerhalb von Leerlaufzeiten
+Timeout when all directories have been cached=Timeout, wenn alle Verzeichnisse zwischengespeichert wurden

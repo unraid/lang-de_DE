@@ -129,6 +129,6 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 :end
 
 ; Note: December 8, 2024 - 3 missing translations
-Enable Empty All Trash Button=
-Enable Empty Share Trash Button=
-Enable Remove Aged Files Button=
+Enable Empty All Trash Button=Alle Papierkörbe leeren Button aktivieren
+Enable Empty Share Trash Button=Freigabe-Papierkorb leeren Button aktivieren
+Enable Remove Aged Files Button=Alte Dateien entfernen Button aktivieren
