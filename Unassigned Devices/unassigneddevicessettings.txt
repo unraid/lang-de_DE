@@ -123,11 +123,11 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 :end
 
 :ud_time_machine_plug:
-> Set to **Yes** to enable Time Machine settings on the SMB shares.
+> Auf **Ja** stellen, um Time Machine-Einstellungen auf den SMB-Freigaben zu aktivieren.
 :end
 
 :ud_time_machine_vol_size_plug:
-> This limits the reported volume size, preventing Time Machine from using the entire real disk space for backup. For example, setting this value to "1024" would limit the reported disk space to 1GB.
+> Dies begrenzt die gemeldete Volumengröße und verhindert, dass Time Machine den gesamten realen Speicherplatz des Datenträgers für die Sicherung verwendet. Wenn du diesen Wert beispielsweise auf „1024“ stellst, wird der gemeldete Datenträgerplatz auf 1 GB begrenzt.
 :end
 
 :ud_settings_force_user_plug:
@@ -141,7 +141,7 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 :end
 
 :ud_settings_nfs_rules_plug:
-> **Note:** The normal rule used by UD is '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
+> **Hinweis:** Die normale von UD verwendete Regel lautet '*(rw,sec=sys,insecure,anongid=100,anonuid=99,no_root_squash)'.
 :end
 
 :ud_settings_disk_pass_plug:
@@ -159,36 +159,39 @@ Die Einstellung **Ja** bewirkt, dass Dateien mit der vom Client übergebenen Gro
 :end
 
 :ud_remote_server_test_plug:
-> Remote Servers need to have SMB and/or NFS enabled.  This will check that the SMB and/or NFS ports are open.  The 'showmount -e <server>' command on Unraid must also show NFS mounts available.
-> For SMB to be considered online, the Remote Server has to have the SMB port open.
+> Bei entfernten Servern muss SMB und/oder NFS aktiviert sein. Dadurch wird überprüft, ob die SMB- und/oder NFS-Ports offen sind. Der Befehl „showmount -e <server>“ muss mit Unraid auch die verfügbaren NFS-Einhängepunkte anzeigen.
+> Damit SMB als online eingestuft wird, muss der entfernte Server den SMB-Port geöffnet haben.
 > For NFS to be considered online, the Remote Server has to have the NFS port open and the 'showmount -e' command has to show NFS shares.
-> There can be a case where the port is open and 'showmount -e' doesn't show NFS shares and NFS will not work.
-> If showmount does not return any NFS shares on a reachable remote server like a Synology, it generally means one of the following:
-> No NFS Shares Exported:
-> The server might not have any directories configured for NFS export. Check the NFS configuration on the Synology device and ensure that folders intended for NFS sharing are explicitly exported.
-> Access Restrictions:
-> NFS shares may be configured with IP-based access restrictions. Synology devices allow you to specify which IP addresses or networks can access each NFS share. If your IP address is not allowed, the NFS share will not appear in showmount output.
-> NFS Service Not Enabled:
-> The NFS service on the Synology might not be enabled. Verify this in the Synology DSM settings under Control Panel > File Services > NFS. Enable NFS if it is currently disabled.
-> Firewall or Network Configuration:
-> The Synology device may have firewall rules blocking the showmount request or the required RPC communication. Ensure that the firewall settings allow traffic on NFS-related ports (typically 2049 for NFS and 111 for RPC).
-> Synology Export Options:
+Damit NFS als online eingestuft wird, muss der entfernte Server den NFS-Port geöffnet haben und der Befehl „showmount -e <server>“ muss die NFS-Freigaben anzeigen.
+> Es kann der Fall eintreten, dass der Port offen ist und 'showmount -e' keine NFS-Freigaben anzeigt und NFS nicht funktioniert.
+> Wenn showmount keine NFS-Freigaben auf einem erreichbaren entfernten Server, wie z.B. einer Synology, anzeigt, bedeutet dies im Allgemeinen eines der folgenden Dinge:
+> Keine NFS-Freigaben exportiert:
+> Auf dem Server sind möglicherweise keine Verzeichnisse für den NFS-Export konfiguriert. Überprüfe die NFS-Konfiguration auf dem Synology-Gerät und stelle sicher, dass die für die NFS-Freigabe vorgesehenen Ordner explizit exportiert werden.
+> Zugangsbeschränkungen:
+> NFS-Freigaben können mit IP-basierten Zugriffsbeschränkungen konfiguriert werden. Mit Synology Geräten kannst du festlegen, welche IP-Adressen oder Netzwerke auf welche NFS-Freigabe zugreifen können. Wenn deine IP-Adresse nicht erlaubt ist, wird die NFS-Freigabe nicht in der showmount-Ausgabe angezeigt.
+> NFS-Dienst nicht aktiviert:
+> Der NFS-Dienst auf der Synology ist möglicherweise nicht aktiviert. Überprüfe dies in den Synology DSM-Einstellungen unter Systemsteuerung > Dateidienste > NFS. Aktiviere NFS, wenn es derzeit deaktiviert ist.
+> Firewall oder Netzwerkkonfiguration:
+> Auf dem Synology-Gerät sind möglicherweise Firewall-Regeln aktiv, die die Showmount-Anfrage oder die erforderliche RPC-Kommunikation blockieren. Stelle sicher, dass die Firewall-Einstellungen den Verkehr auf NFS-bezogenen Ports zulassen (normalerweise 2049 für NFS und 111 für RPC).
+> Synology Export-Optionen:
 > The Synology NFS settings can sometimes require enabling Enable NFS at the top level and specifying Allow NFSv3 if you are using clients that expect NFSv3. Check Control Panel > File Services > NFS to ensure proper configuration.
+Die NFS-Einstellungen von Synology können es manchmal erforderlich machen, NFS auf der obersten Ebene zu aktivieren und NFSv3 zuzulassen, wenn du Clients verwendest, die NFSv3 erwarten. Überprüfe dies unter Systemsteuerung > Dateidienste > NFS, um die richtige Konfiguration sicherzustellen.
 > By ensuring that NFS is enabled, configured with the correct permissions, and exported directories are allowed for your client IP, showmount should list the available exports.
+Wenn du sicherstellst, dass NFS aktiviert, mit den richtigen Berechtigungen konfiguriert ist und exportierte Verzeichnisse für deine Client-IP erlaubt sind, sollte showmount die verfügbaren Exporte auflisten.
 :end
 
 ; Note: December 8, 2024 - 14 missing translations
-Case-sensitive names=
-Enable Time Machine=
-Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the Result text area=Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the **Result** text area
-See Help=
-SMB Sharing=
-Test=
-Testing=
-Test the Remote Server=
-This is a tool to help troubleshoot Remote Servers ability to serve SMB and NFS shares=
-Time Machine volume size limit=
-Upgrade ZFS Pool=
-Warning=
-Windows may require a valid User to be defined even for Public shares=
-Working=
+Case-sensitive names=Groß- und Kleinschreibung bei Namen beachten
+Enable Time Machine=Time Machine aktivieren
+Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the Result text area=Gib den Namen oder die IP-Adresse des entfernten Servers ein und die Ergebnisse des Tests vom entfernten Servers werden im Textbereich **Ergebnis** angezeigt.
+See Help=Siehe Hilfe
+SMB Sharing=SMB-Freigabe
+Test=Test
+Testing=Teste
+Test the Remote Server=Den entfernten Server testen
+This is a tool to help troubleshoot Remote Servers ability to serve SMB and NFS shares=Dieses Tool hilft bei der Fehlersuche von entfernten Servern, die SMB- und NFS-Freigaben bereitstellen können.
+Time Machine volume size limit=Time Machine Volumen-Größenlimit
+Upgrade ZFS Pool=ZFS-Pool upgraden
+Warning=Warnung
+Windows may require a valid User to be defined even for Public shares=Windows kann verlangen, dass auch für öffentliche Freigaben ein gültiger Benutzer festgelegt wird
+Working=Arbeite

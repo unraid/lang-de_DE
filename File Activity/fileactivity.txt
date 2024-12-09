@@ -1,10 +1,10 @@
-File Activity=Datei-Aktivitäten
-File Activity Monitoring=Datei-Aktivitätenüberwachung
-Start File Activity=Datei-Aktivitäten-Dienst starten
-Stop File Activity Monitoring=Datei-Aktivitätenüberwachung stoppen
-Clear the File Activity log=Datei-Aktivitäten-Protokoll löschen
+File Activity=Dateiaktivitäten
+File Activity Monitoring=Dateiaktivitäten-Überwachung
+Start File Activity=Dateiaktivitäten-Dienst starten
+Stop File Activity Monitoring=Dateiaktivitäten-Überwachung stoppen
+Clear the File Activity log=Dateiaktivitäten-Protokoll löschen
 Refresh Page=Seite neu laden
-Enable File Activity Monitoring=Datei-Aktivitätenüberwachung aktivieren
+Enable File Activity Monitoring=Dateiaktivitäten-Überwachung aktivieren
 Enable for Unassigned Devices=Für nicht zugewiesene Datenträger aktivieren
 Enable for Cache and Pool Disks=Für Cache- und Pool-Datenträger aktivieren
 ;
@@ -35,8 +35,8 @@ Enable for Cache and Pool Disks=Für Cache- und Pool-Datenträger aktivieren
 :end
 
 :file_activity_display_events_plug:
-> This is the number of file events shown on disks and shares from the File Activity log for each share or disk.
+> Dies ist die Anzahl der Dateiereignisse, die auf Datenträgern und Freigaben aus dem Dateiaktivitäten-Protokoll für jede Freigabe oder jeden Datenträger angezeigt werden.
 :end
 
 ; Note: December 8, 2024 - 1 missing translations
-Display Events=
+Display Events=Ereignisse anzeigen

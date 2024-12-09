@@ -22,5 +22,5 @@ Cannot get list of open files=Fehler beim Laden der Liste der geöffneten Dateie
 :end
 
 ; Note: February 10, 2024 - 2 missing translations
-Enable Kill Button=
-Kill this Process holding files open=
+Enable Kill Button=Beenden-Button aktivieren
+Kill this Process holding files open=Diesen Prozess beenden, der Dateien offen hält

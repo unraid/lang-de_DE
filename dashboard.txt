@@ -176,10 +176,10 @@ Warnings=Warnungen
 ZFS=ZFS
 
 ; Note: December 8, 2024 - 7 missing translations
-checking=
-emulated=
-heat warnings=
-invalid=
-SMART errors=
-synching=
-utilization warnings=
+checking=Überprüfe
+emulated=Emuliert
+heat warnings=Hitzewarnung
+invalid=Ungültig
+SMART errors=SMART-Fehler
+synching=Synchronisiere
+utilization warnings=Kapazitätswarnung
