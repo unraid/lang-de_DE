@@ -173,10 +173,12 @@ Start All=Alle starten
 Start Cloned VM=Duplizierte VM starten
 Start VM after creation=VM nach dem Erstellen starten
 Stop All=Alle stoppen
+Template Name=
 Tickpolicy=Tick-Richtlinie
 Timer Source=Timer-Quelle
 Toggle VM autostart=VM-Autostart ein-/ausschalten
 Top Image=Oberstes Image
+Type Method=Type (Method)
 type of storage image=Datenträger-Imagetyp
 Unknown action=Unbekannte Aktion
 Unknown version=Unbekannte Version
@@ -227,7 +229,7 @@ Windows 82012, newer Linux distros=Windows 8/2012, neuere Linux-Distributionen
 wsport for virtual console=WS-Port für virtuelle Konsole
 XML View=XML-Ansicht
 
-; Note: December 28, 2024 - 57 missing translations
+; Note: December 28, 2024 - 53 missing translations
 CreateModify Template=Create/Modify Template
 CreateModify Template=Create/Modify Template
 CreateModify Template=Create/Modify Template
@@ -274,11 +276,7 @@ Snapshot Method=
 Snapshots being removed=
 SSD=
 SSD=
-Template Name="Template Name"
-Template Name="Template Name"
-Template Name="Template Name"
 Top Image=Top Image
-Type Method=Type (Method)
 Unchecked will use QEMU External Snapshot=
 VM Being removed=
 VM Usage Statisics=

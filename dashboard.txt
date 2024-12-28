@@ -120,6 +120,7 @@ Percent usage of Docker vdisk=Nutzungsanteil der Docker vdisk in Prozent
 Percent usage of flash usb device=Nutzungsanteil des USB-Datenträgers in Prozent
 Percent usage of LOG file system=Nutzungsanteil des Dateisystemprotokolls in Prozent
 Pool=Pool
+Popup Blocked=Popup Blocked.
 Power Status=Status der Stromversorgung
 Power=Stromversorgung
 Processor Information=Prozessorinformation
@@ -182,7 +183,7 @@ W=W
 Warnings=Warnungen
 ZFS=ZFS
 
-; Note: December 28, 2024 - 16 missing translations
+; Note: December 28, 2024 - 13 missing translations
 Clock is synchronized using NTP, time offset is %s %s=
 Clock is synchronized using PTP, time offset is %s %s=
 Clock is unsynchronized with no PTP servers=
@@ -192,7 +193,6 @@ device warnings=
 FS Native Snapshot=
 Memory dump=
 No VMs running=
-Popup Blocked=Popup Blocked.
 RX=
 TX=
 Unchecked will use QEMU External Snapshot=
