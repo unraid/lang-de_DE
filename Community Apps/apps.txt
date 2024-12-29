@@ -229,7 +229,7 @@ Check out these newly added applications from our awesome community=Sehe dir die
 Check out these up and coming apps=Sehe dir diese neuen Apps an
 These apps have the highest percentage of new installs=Diese Anwendungen haben den höchsten Anteil an Neuinstallationen
 An assortment of randomly chosen apps=Eine Auswahl zufällig ausgewählter Anwendungen
-Featured Applications=Ausgewählte Anwendungen
+Featured Applications=Vorgestellte Anwendungen
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
