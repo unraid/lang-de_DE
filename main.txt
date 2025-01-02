@@ -408,9 +408,9 @@ This will put the system in sleep mode=Dadurch wird das System in den Ruhezustan
 wiki entry=Wiki-Eintrag
 
 ; Note: December 28, 2024 - 6 missing translations
-cache - L2ARC=
-Ineligible to run this version of Unraid OS Please consider extending your=Ineligible to run this version of Unraid OS. Please consider extending your
-logs - Separate Intent Log SLOG=logs - Separate Intent Log (SLOG)
-No array devices have been assigned=
-No devices=
-special - Metadata storage=
+cache - L2ARC=Cache - L2ARC
+Ineligible to run this version of Unraid OS Please consider extending your=Diese Version von Unraid OS ist nicht berechtigt, ausgeführt zu werden. Bitte erwäge eine Erweiterung deiner
+logs - Separate Intent Log SLOG=Protokolle - Separates Absichtsprotokoll (SLOG)
+No array devices have been assigned=Es wurden keine Array-Datenträger zugewiesen
+No devices=Keine Datenträger
+special - Metadata storage=Spezial - Metadaten-Speicher

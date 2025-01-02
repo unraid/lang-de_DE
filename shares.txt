@@ -87,8 +87,8 @@ Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
 
 ; Note: December 28, 2024 - 5 missing translations
-It references storage that does not exist=
-There are no mountable array or pool disks - cannot add shares=
-Unknown cache usage=
-Unknown protection status=
-Warning: Configured Pool=
+It references storage that does not exist=Verweist auf Speicher, der nicht existiert
+There are no mountable array or pool disks - cannot add shares=Es gibt keine einhängbaren Array- oder Pool-Datenträger - Freigaben können nicht hinzugefügt werden
+Unknown cache usage=Unbekannte Cache-Nutzung
+Unknown protection status=Unbekannter Schutzstatus
+Warning: Configured Pool=Warnung: Konfigurierter Pool

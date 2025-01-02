@@ -150,10 +150,11 @@ This template is set up to run as Privileged This is a possible security risk an
 One or more ports used by this application are already in use by another service or app running on your server You will need to adjust the host ports accordingly on the template=Ein oder mehrere Ports, die von dieser Anwendung verwendet werden, werden bereits von einem anderen Dienst oder einer anderen Anwendung auf deinem Server verwendet. Du musst die Host-Ports in der Vorlage entsprechend anpassen
 Not Enough Memory=Nicht genügend Arbeitsspeicher
 Community Applications (and Unraid OS) have a minimum required installed memory of 4G CA cannot run without those mimimums being met=Community-Anwendungen (und Unraid OS) benötigen mindestens 4 GB Arbeitsspeicher, ohne den CA nicht läuft
-Installation already in progress=
-Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=
-%s is incompatible with your OS version Please update the OS to proceed=
-%s is incompatible with your OS version Either uninstall %s or update the OS=
+Installation already in progress=Installation läuft bereits
+Another plugin installation or update is already in progress and this one cannot start Wait until the current installation or update is completed and try again=Eine andere Plugin-Installation oder Aktualisierung ist bereits im Gange und diese kann nicht gestartet werden. Warte, bis die aktuelle Installation oder Aktualisierung abgeschlossen ist und versuche es erneut
+
+%s is incompatible with your OS version Please update the OS to proceed=%s ist mit deiner Betriebssystemversion nicht kompatibel. Bitte aktualisiere das Betriebssystem, um fortzufahren
+%s is incompatible with your OS version Either uninstall %s or update the OS=%s ist mit deiner Betriebssystemversion nicht kompatibel. Entweder deinstalliere %s oder aktualisiere das Betriebssystem
 
 ; CA Sections Keep the length reasonable
 Home=Startseite
@@ -169,7 +170,7 @@ Top Trending Apps=Top Trend-Apps
 Spotlight Apps=Spotlight-Apps
 All Apps=Alle Apps
 Statistics=Statistiken
-Credits=Namensnennungen
+Credits=Danksagungen
 Support=Hilfe
 VERSION=VERSION
 Change Log=Versionshinweise
@@ -228,7 +229,7 @@ Check out these newly added applications from our awesome community=Sehe dir die
 Check out these up and coming apps=Sehe dir diese neuen Apps an
 These apps have the highest percentage of new installs=Diese Anwendungen haben den höchsten Anteil an Neuinstallationen
 An assortment of randomly chosen apps=Eine Auswahl zufällig ausgewählter Anwendungen
-Featured Applications=
+Featured Applications=Vorgestellte Anwendungen
 
 ; Categories try not to be excessively long This is displayed on the left of CA screen
 
@@ -304,7 +305,7 @@ This application has additional requirements=Diese Anwendung hat zusätzliche An
 Additional Requirements=Zusätzliche Anforderungen
 Donate To Author=An Autor:in spenden
 Donate To Maintainer=Spende an Betreuer:in
-CLOSE=
+CLOSE=SCHLIEßEN
 Author=Autor:in
 Maintainer=Betreuer:in
 DockerHub=Docker Hub
