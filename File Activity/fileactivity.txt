@@ -1,3 +1,4 @@
+Display Events=Ereignisse anzeigen
 File Activity=Dateiaktivitäten
 File Activity Monitoring=Dateiaktivitäten-Überwachung
 Start File Activity=Dateiaktivitäten-Dienst starten
@@ -37,6 +38,3 @@ Enable for Cache and Pool Disks=Für Cache- und Pool-Datenträger aktivieren
 :file_activity_display_events_plug:
 > Dies ist die Anzahl der Dateiereignisse, die auf Datenträgern und Freigaben aus dem Dateiaktivitäten-Protokoll für jede Freigabe oder jeden Datenträger angezeigt werden.
 :end
-
-; Note: December 8, 2024 - 1 missing translations
-Display Events=Ereignisse anzeigen

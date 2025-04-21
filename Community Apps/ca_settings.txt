@@ -20,5 +20,8 @@ Enable developer mode=Entwickler-Modus aktivieren
 This unlocks some extra features within CA generally only used by developers Not recommended to enable=Hierdurch werden einige zusätzliche Funktionen innerhalb von CA freigeschaltet, die normalerweise nur von Entwicklern verwendet werden. Es wird nicht empfohlen, sie zu aktivieren
 Support Thread=Hilfe-Forenbeitrag
 
-; Note: December 8, 2024 - 1 missing translations
-Allow installation of multiple instances=Installation mehrerer Instanzen erlauben
+; Note: April 21, 2025 - 4 missing translations
+Allow install of second instance=
+Mouse wheel threshold=
+If you tilt the mouse wheel left or right, the browser returned value will change Set the threshold to the value returned Note that different browsers and operating systems may return different values=
+This is a global value for all devices If it causes issues, then disable Mouse Wheel Page Changes=

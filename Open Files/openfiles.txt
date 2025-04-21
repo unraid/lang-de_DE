@@ -1,5 +1,7 @@
+Enable Kill Button=Beenden-Button aktivieren
 Process=Prozess
 Kill Process=Prozess beenden
+Kill this Process holding files open=Diesen Prozess beenden, der Dateien offen hält
 Process ID=Prozess-ID
 Open=Öffnen
 May prevent shutdown=Kann das Herunterfahren verhindern
@@ -20,7 +22,3 @@ Cannot get list of open files=Fehler beim Laden der Liste der geöffneten Dateie
 >
 > Klicke auf **Prozess*, **Prozess-ID**, **Dateien, die das Herunterfahren möglicherweise verhindern** oder "Dateiname", um die Sortierreihenfolge zu ändern.
 :end
-
-; Note: February 10, 2024 - 2 missing translations
-Enable Kill Button=Beenden-Button aktivieren
-Kill this Process holding files open=Diesen Prozess beenden, der Dateien offen hält

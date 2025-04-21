@@ -1,5 +1,6 @@
 Add=Füge
 Auto Mount USB Devices=USB-Datenträger automatisch einhängen
+Case-sensitive names=Groß- und Kleinschreibung bei Namen beachten
 Change Disk UUID=Datenträger-UUID ändern
 Change UUID=UUID ändern
 Change Disk UUID=Datenträger-UUID ändern
@@ -11,7 +12,9 @@ Disabled=Deaktiviert
 Disk spin down is managed by Unraid=Das Herunterfahren von Datenträgern wird durch Unraid geregelt
 Enable NFS export=NFS-Export aktivieren
 Enable SMB Security=SMB-Sicherheit aktivieren
+Enable Time Machine=Time Machine aktivieren
 Enter Disk Password=Datenträgerpasswort eingeben
+Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the Result text area=Gib den Namen oder die IP-Adresse des entfernten Servers ein und die Ergebnisse des Tests vom entfernten Servers werden im Textbereich **Ergebnis** angezeigt.
 Enter Pool Mount Point=Pool-Einhängepunkt eingeben
 Legacy Mount Point Compatibility=Kompatibilität von herkömmlichen Einhängepunkten
 Mount SSDs with discard option=SSD mit "Discard"-Option einhängen
@@ -26,20 +29,31 @@ Refresh and Update=Neu laden und aktualisieren
 Remote Share Mount Wait Time=Wartezeit zum Einhängen einer entfernten Freigabe
 Rule=Regel
 Select Disk=Datenträger auswählen
+See Help=Siehe Hilfe
 Set Encrypted Disk Password=Passwort für verschlüsselten Datenträger festlegen
 Set Password=Passwort festlegen
 Set Pool Mount Point=Pool-Einhängepunkt festlegen
 Set the Pool Mount Point for this disk=Pool-Einhängepunkt für diesen Datenträger festlegen
 Set the disk Password=Datenträgerpasswort festlegen
 SMB Settings=SMB-Einstellungen
+SMB Sharing=SMB-Freigabe
 Specify SMB Version when Mounting Remote Shares=SMB-Version beim Einhängen entfernter Freigaben festlegen
 Spin down disks=Datenträger herunterfahren
+Test=Test
+Testing=Teste
+Test the Remote Server=Den entfernten Server testen
 The Unassigned Devices Plus plugin must be installed to enable Destructive Mode=Das Plugin "Unassigned Devices Plus" muss installiert sein, um den Destruktiven Modus zu aktivieren
+This is a tool to help troubleshoot Remote Servers ability to serve SMB and NFS shares=Dieses Tool hilft bei der Fehlersuche von entfernten Servern, die SMB- und NFS-Freigaben bereitstellen können.
+Time Machine volume size limit=Time Machine Volumen-Größenlimit
 to SMB share config=zur SMB-Freigabekonfiguration hinzu
 Udev and Hotplug=Udev und Hotplug
 Unassigned Devices=Unassigned Devices
 Unraid 6.10 or later is required for NFSv4 support=Unraid 6.10 oder höher ist für die Unterstützung von NFSv4 erforderlich
+Upgrade ZFS Pool=ZFS-Pool upgraden
 Use only when directed for support because the messages can flood the log=Nur für Support-Zwecke verwenden, da die Meldungen das Protokoll überfluten können
+Warning=Warnung
+Windows may require a valid User to be defined even for Public shares=Windows kann verlangen, dass auch für öffentliche Freigaben ein gültiger Benutzer festgelegt wird
+Working=Arbeite
 
 ; Help
 ;
@@ -179,19 +193,3 @@ Die NFS-Einstellungen von Synology können es manchmal erforderlich machen, NFS 
 > By ensuring that NFS is enabled, configured with the correct permissions, and exported directories are allowed for your client IP, showmount should list the available exports.
 Wenn du sicherstellst, dass NFS aktiviert, mit den richtigen Berechtigungen konfiguriert ist und exportierte Verzeichnisse für deine Client-IP erlaubt sind, sollte showmount die verfügbaren Exporte auflisten.
 :end
-
-; Note: December 8, 2024 - 14 missing translations
-Case-sensitive names=Groß- und Kleinschreibung bei Namen beachten
-Enable Time Machine=Time Machine aktivieren
-Enter the Remote Server name or IP address and the results from the Remote Server Test will show in the Result text area=Gib den Namen oder die IP-Adresse des entfernten Servers ein und die Ergebnisse des Tests vom entfernten Servers werden im Textbereich **Ergebnis** angezeigt.
-See Help=Siehe Hilfe
-SMB Sharing=SMB-Freigabe
-Test=Test
-Testing=Teste
-Test the Remote Server=Den entfernten Server testen
-This is a tool to help troubleshoot Remote Servers ability to serve SMB and NFS shares=Dieses Tool hilft bei der Fehlersuche von entfernten Servern, die SMB- und NFS-Freigaben bereitstellen können.
-Time Machine volume size limit=Time Machine Volumen-Größenlimit
-Upgrade ZFS Pool=ZFS-Pool upgraden
-Warning=Warnung
-Windows may require a valid User to be defined even for Public shares=Windows kann verlangen, dass auch für öffentliche Freigaben ein gültiger Benutzer festgelegt wird
-Working=Arbeite

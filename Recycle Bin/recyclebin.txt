@@ -8,8 +8,11 @@ Empty=Leeren
 Empty the=Leere den
 Empty All Trash=Alle Papierkörbe leeren
 Empty Trash=Papierkorb leeren
+Enable Empty All Trash Button=Alle Papierkörbe leeren Button aktivieren
+Enable Empty Share Trash Button=Freigabe-Papierkorb leeren Button aktivieren
 Enable on Unassigned Devices=Auf nicht zugewiesenen Datenträgern aktivieren
 Enable Recycle Bin=Papierkorb aktivieren
+Enable Remove Aged Files Button=Alte Dateien entfernen Button aktivieren
 Excluded Directories=Ausgeschlossene Verzeichnisse
 Excluded Files=Ausgeschlossene Dateien
 Excluded Shares=Ausgeschlossene Freigaben
@@ -127,8 +130,3 @@ Update Recycle Bin Size in Background=Größe des Papierkorbs im Hintergrund akt
 > Die gelöschten Dateien werden im Protokoll als nicht verknüpfte Dateien angezeigt.
 > Klicke auf den "Leeren"-Button, um das Protokoll zu leeren.
 :end
-
-; Note: December 8, 2024 - 3 missing translations
-Enable Empty All Trash Button=Alle Papierkörbe leeren Button aktivieren
-Enable Empty Share Trash Button=Freigabe-Papierkorb leeren Button aktivieren
-Enable Remove Aged Files Button=Alte Dateien entfernen Button aktivieren

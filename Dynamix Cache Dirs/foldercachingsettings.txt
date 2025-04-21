@@ -6,6 +6,7 @@ Folder caching function=Ordner-Caching-Funktion
 for adaptive depth=für adaptive Tiefe
 Important - check HELP if disks spin up=Wichtig - Sieh dir die HILFE an, wenn Datenträger hochfahren
 Included folders=Ordner einschließen
+Memory available to the cache_dirs script increase if it dies=Dem cache_dirs-Skript zur Verfügung stehender Arbeitsspeicher (erhöhen, wenn es abstürzt)
 Logging=Protokollieren
 Maximum interval between folder scans=Maximales Intervall zwischen den Ordnerprüfungen
 Maximum level depth=Maximale Ebenentiefe
@@ -13,6 +14,9 @@ Minimum interval between folder scans=Minimales Intervall zwischen den Ordnerpr�
 Minimum level depth=Minimale Ebenentiefe
 or see=oder siehe
 Run scan of each disk in a separate thread=Die Überprüfung jedes Datenträgers in einem separaten Thread durchführen
+Timeout during disk-idle period=Timeout während der Datenträger-Leerlaufzeit
+Timeout during initial startup or less-idle period=Timeout während des ersten Hochfahrens oder außerhalb von Leerlaufzeiten
+Timeout when all directories have been cached=Timeout, wenn alle Verzeichnisse zwischengespeichert wurden
 Scan user shares mntuser=Benutzerfreigaben überprüfen (/mnt/user)
 Suspend during Mover process=Aussetzen während des Mover-Prozesses
 unlimited=Unbegrenzt
@@ -135,9 +139,3 @@ User defined options=Benutzerdefinierte Optionen
 >
 > Beachte, dass die einfachen Anführungszeichen um das Argument für -a wichtig sind. Doppelte Anführungszeichen funktionieren in der aktuellen Version nicht, daher ist es derzeit leider nicht möglich, mit "-name "*Old" -prune" zu filtern.
 :end
-
-; Note: December 8, 2024 - 4 missing translations
-Memory available to the cache_dirs script increase if it dies=Dem cache_dirs-Skript zur Verfügung stehender Arbeitsspeicher (erhöhen, wenn es abstürzt)
-Timeout during disk-idle period=Timeout während der Datenträger-Leerlaufzeit
-Timeout during initial startup or less-idle period=Timeout während des ersten Hochfahrens oder außerhalb von Leerlaufzeiten
-Timeout when all directories have been cached=Timeout, wenn alle Verzeichnisse zwischengespeichert wurden
