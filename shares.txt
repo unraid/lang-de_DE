@@ -34,6 +34,7 @@ Invalid Characters=Ungültige Zeichen
 Invalid share name=Ungültiger Freigabename
 is missing=fehlt
 it references storage that does not exist=verweist auf einen Speicher, der nicht existiert
+It references storage that does not exist=Verweist auf Speicher, der nicht existiert
 Manual do not automatically split directories=Manuell: Verzeichnisse werden nicht aufgeteilt
 Minimum free space=Minimaler freier Speicherplatz
 Missing share name=Fehlender Freigabename
@@ -78,17 +79,17 @@ SSD=SSD
 Storage=Speicher
 There are no exportable disk shares=Es existieren keine zu exportierenden Datenträgerfreigaben
 There are no exportable user shares=Es existieren keine zu exportierenden Benutzerfreigaben
+There are no mountable array or pool disks - cannot add shares=Es gibt keine einhängbaren Array- oder Pool-Datenträger - Freigaben können nicht hinzugefügt werden
 This share is invalid=Diese Freigabe ist ungültig
 Time Machine volume size limit=Time Machine Volumengröße
+Unknown cache usage=Unbekannte Cache-Nutzung
 Unknown encryption state=Unbekannter Verschlüsselungsstatus
+Unknown protection status=Unbekannter Schutzstatus
 Use cache pool for new filesdirectories=Benutze den Cache-Pool (für neue Dateien/Verzeichnisse)
 User Shares=Benutzerfreigaben
+Warning: Configured Pool=Warnung: Konfigurierter Pool
 Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
 
-; Note: December 28, 2024 - 5 missing translations
-It references storage that does not exist=Verweist auf Speicher, der nicht existiert
-There are no mountable array or pool disks - cannot add shares=Es gibt keine einhängbaren Array- oder Pool-Datenträger - Freigaben können nicht hinzugefügt werden
-Unknown cache usage=Unbekannte Cache-Nutzung
-Unknown protection status=Unbekannter Schutzstatus
-Warning: Configured Pool=Warnung: Konfigurierter Pool
+; Note: April 21, 2025 - 1 missing translations
+There are no mounted array or pool disks - cannot add shares=

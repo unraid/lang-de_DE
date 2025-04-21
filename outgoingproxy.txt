@@ -1,3 +1,12 @@
+Enable Outgoing Proxy=Ausgehenden Proxy aktivieren
+Name=Name
+Optional=Optional
+Outgoing Proxy=Ausgehender Proxy
+Password=Passwort
+Please match the requested format=Bitte beachte das gewünschte Format
+Required=Erforderlich
+Select Proxy=Proxy auswählen
+User=Benutzer
 
 :outgoing_proxy_enable_plug:
 > Wähle den zu verwendenden Proxy aus. Es können nur Online-Proxys ausgewählt werden.
@@ -24,14 +33,3 @@
 > Ausgehender Proxy-Benutzername für diesen Proxy
 :end
 
-
-; Note: December 29, 2024 - 9 missing translations
-Enable Outgoing Proxy=Ausgehenden Proxy aktivieren
-Name=Name
-Optional=Optional
-Outgoing Proxy=Ausgehender Proxy
-Password=Passwort
-Please match the requested format=Bitte beachte das gewünschte Format
-Required=Erforderlich
-Select Proxy=Proxy auswählen
-User=Benutzer
