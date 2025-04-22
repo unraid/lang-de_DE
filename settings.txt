@@ -945,7 +945,7 @@ View Flash Backup Error Log=Fehlerprotokoll der Flash-Sicherung anzeigen
 
 ; Note: April 21, 2025 - 46 missing translations
 Add network=Netzwerk hinzufügen
-Allow realtime updates on inactive browsers=Echtzeit-Aktualisierungen bei interaktiven Browsern erlauben
+Allow realtime updates on inactive browsers=Echtzeit-Aktualisierungen bei inaktiven Browsern erlauben
 Allows the use of ethernet frames larger than 1500 bytes=Ermöglicht die Nutzung von Ethernet-Frames größer als 1500 Bytes
 Connect Remote Access=Fernzugriff verbinden
 Connect to WiFi network=Mit WiFi-Netzwerk verbinden

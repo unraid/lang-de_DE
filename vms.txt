@@ -266,7 +266,7 @@ wsport for virtual console=WS-Port für virtuelle Konsole
 XML View=XML-Ansicht
 
 ; Note: April 21, 2025 - 36 missing translations
-Configure the same IP address on the ipvtap interface=Dieselbe IP-Adresse für die ipvtab-Schnittstelle konfigurieren
+Configure the same IP address on the ipvtap interface=Dieselbe IP-Adresse für die ipvtap-Schnittstelle konfigurieren
 Configure the VM with a static IP address=Die VM mit einer statischen IP-Adresse konfigurieren
 Deselect All=Alles abwählen
 Displays and RAM=Bildschirm(e) und RAM
@@ -276,7 +276,7 @@ Export User Template=Benutzervorlage exportieren
 File exists=Datei existiert
 File exists=Datei existiert.
 File for import=Datei für Import
-File write failed=Datei schreiben fehlgeschlagen.
+File write failed=Schreiben der Datei fehlgeschlagen.
 GPU is primary adapter, vbios may be required=GPU ist der primäre Adapter, vbios kann erforderlich sein
 Graphics ROM Needed=Grafik-ROM erforderlich
 Import from file=Aus Datei importieren
