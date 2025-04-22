@@ -332,7 +332,7 @@ Warning disk utilization threshold=Schwellenwert für hohe Datenträgerauslastun
 Warning NVME temperature threshold=Schwellenwert für hohe NVME-Temperatur
 Warning SSD temperature threshold=Schwellenwert für hohe SSD-Temperatur
 WARNING=WARNUNG
-Warranty period=Garantizeitraum
+Warranty period=Garantiezeitraum
 While there is some risk, if it is not possible to first mount the filesystem to clear the log, zeroing it is the only option to try and repair the filesystem, and in most cases it results in little or no data loss=Es besteht zwar ein gewisses Risiko, aber wenn es nicht möglich ist, das Dateisystem einzuhängen, um das Protokoll zu löschen, ist die Null-Überschreibung die einzige Möglichkeit, das Dateisystem zu reparieren, und in den meisten Fällen führt dies zu keinem oder nur geringem Datenverlust.
 will activate a clean system power down=löst ein sauberes Herunterfahren aus
 will activate a clean system reset=löst einen sauberen Neustart aus
@@ -414,7 +414,7 @@ This will put the system in sleep mode=Dadurch wird das System in den Ruhezustan
 wiki entry=Wiki-Eintrag
 
 ; Note: April 21, 2025 - 4 missing translations
-loopback=
-not set=
-Rx=
-Tx=
+loopback=Loopback
+not set=nicht festgelegt
+Rx=Rx
+Tx=Tx
