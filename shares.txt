@@ -92,4 +92,4 @@ Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
 
 ; Note: April 21, 2025 - 1 missing translations
-There are no mounted array or pool disks - cannot add shares=
+There are no mounted array or pool disks - cannot add shares=Es gibt keine eingehängten Arrays oder Pool-Datenträger - Freigaben können nicht hinzugefügt werden

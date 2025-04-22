@@ -353,4 +353,4 @@ Für weitere Informationen, bitte den [Support kontaktieren](https://lime-techno
 :end
 
 ; Note: April 21, 2025 - 1 missing translations
-Log Viewer new=Log Viewer (new)
+Log Viewer new=Protokoll-Betrachter (Neu)

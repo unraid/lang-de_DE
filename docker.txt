@@ -156,6 +156,6 @@ WebUI=WebUI
 Writable=Beschreibbar
 
 ; Note: April 21, 2025 - 3 missing translations
-Container not found Try reloading this page to fix=Container not found. Try reloading this page to fix.
-Expired RenewDisable key expiry=Expired! Renew/Disable key expiry!
-For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=For security reasons, containers with Network Type "Host" should not have Tailscale enabled. Please disable Tailscale in this container or change the Network Type of the container.
+Container not found Try reloading this page to fix=Container nicht gefunden. Versuche die Seite neu zu laden, um das Problem zu beheben
+Expired RenewDisable key expiry=Abgelaufen! Schlüsselverfallsdatum erneuern/deaktivieren!
+For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=Aus Sicherheitsgründen sollte bei Containern mit dem Netzwerktyp „Host“ Tailscale nicht aktiviert sein. Bitte deaktiviere Tailscale für diesen Container oder ändere den Netzwerktyp des Containers.

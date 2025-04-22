@@ -21,7 +21,7 @@ This unlocks some extra features within CA generally only used by developers Not
 Support Thread=Hilfe-Forenbeitrag
 
 ; Note: April 21, 2025 - 4 missing translations
-Allow install of second instance=
-Mouse wheel threshold=
-If you tilt the mouse wheel left or right, the browser returned value will change Set the threshold to the value returned Note that different browsers and operating systems may return different values=
-This is a global value for all devices If it causes issues, then disable Mouse Wheel Page Changes=
+Allow install of second instance=Installation einer zweiten Instanz erlauben
+Mouse wheel threshold=Mausrad-Schwellenwert
+If you tilt the mouse wheel left or right, the browser returned value will change Set the threshold to the value returned Note that different browsers and operating systems may return different values=Wenn du das Mausrad nach links oder rechts bewegst, ändert sich der vom Browser zurückgegebene Wert. Setze den Schwellenwert auf den zurückgegebenen Wert. Beachte, dass verschiedene Browser und Betriebssysteme unterschiedliche Werte zurückgeben können
+This is a global value for all devices If it causes issues, then disable Mouse Wheel Page Changes=Dies ist ein globaler Wert für alle Geräte. Wenn dieser Probleme verursacht, deaktiviere den Wechsel der Seite per Mausrad
