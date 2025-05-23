@@ -199,4 +199,4 @@ Warnings=Warnungen
 ZFS=ZFS
 
 ; Note: April 21, 2025 - 1 missing translations
-Share count %s with %s public SMB and %s public NFS=Share count: %s with %s public SMB and %s public NFS
+Share count %s with %s public SMB and %s public NFS=Anzahl der Freigaben: %s mit %s öffentlichen SMB- und %s öffentlichen NFS-Freigaben
