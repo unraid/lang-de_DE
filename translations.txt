@@ -1268,6 +1268,6 @@ Open a bug report=Ein Fehlerticket öffnen
 %s years=%s Jahre
 
 ; Note: May 31, 2025 - 3 missing translations
-Alerts=
-Notices=
-Warnings=
+Alerts=Alarme
+Notices=Benachrichtigungen
+Warnings=Warnungen
