@@ -147,6 +147,7 @@ Select Case Model=Wähle das Gehäusemodell
 Select time frame=Wähle das Zeitfenster
 Services=Dienste
 Share count %s with %s cache only and %s encrypted=%s Freigaben davon %s nur Cache und %s verschlüsselt
+Share count %s with %s public SMB and %s public NFS=Anzahl der Freigaben: %s mit %s öffentlichen SMB- und %s öffentlichen NFS-Freigaben
 Shares Information=Freigaben-Information
 Show details=Zeige Details
 Show Information=Zeige Informationen
@@ -197,6 +198,3 @@ VPN Connections=VPN-Verbindungen
 W=W
 Warnings=Warnungen
 ZFS=ZFS
-
-; Note: April 21, 2025 - 1 missing translations
-Share count %s with %s public SMB and %s public NFS=Anzahl der Freigaben: %s mit %s öffentlichen SMB- und %s öffentlichen NFS-Freigaben

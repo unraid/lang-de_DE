@@ -2,6 +2,7 @@
 Alert Message=Alarmnachricht
 anonymous=Anonym
 Author=Autor
+cannot check=nicht überprüfbar
 Check For Updates=Nach Aktualisierungen suchen
 Checking connectivity=Verbindung wird geprüft
 checking=Prüfe
@@ -40,6 +41,3 @@ Update Incompatible=Aktualisierung inkompatibel
 Update Plugin=Aktualisiere Plugin
 Upgrade=Upgrade
 View Release Notes=Zeige Veröffentlichungshinweise
-
-; Note: April 21, 2025 - 1 missing translations
-cannot check=nicht überprüfbar

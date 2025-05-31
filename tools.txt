@@ -73,6 +73,7 @@ Language=Sprache
 Log file cleared=Protokolldatei erstellt
 Log size=Protokoll-Größe
 LOG size=PROTOKOLL-Größe
+Log Viewer new=Protokoll-Betrachter (Neu)
 Missing Key File=Fehlende Lizenzdatei
 Missing Language=Fehlende Sprache
 Modprobed config file=Modprobe.d Konfigurationsdatei
@@ -351,6 +352,3 @@ Seriennummer nicht einmalig ist (dies ist bei USB-Kartenlesern üblich).
 
 Für weitere Informationen, bitte den [Support kontaktieren](https://lime-technology.com/contact).
 :end
-
-; Note: April 21, 2025 - 1 missing translations
-Log Viewer new=Protokoll-Betrachter (Neu)

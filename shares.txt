@@ -80,6 +80,7 @@ Storage=Speicher
 There are no exportable disk shares=Es existieren keine zu exportierenden Datenträgerfreigaben
 There are no exportable user shares=Es existieren keine zu exportierenden Benutzerfreigaben
 There are no mountable array or pool disks - cannot add shares=Es gibt keine einhängbaren Array- oder Pool-Datenträger - Freigaben können nicht hinzugefügt werden
+There are no mounted array or pool disks - cannot add shares=Es gibt keine eingehängten Arrays oder Pool-Datenträger - Freigaben können nicht hinzugefügt werden
 This share is invalid=Diese Freigabe ist ungültig
 Time Machine volume size limit=Time Machine Volumengröße
 Unknown cache usage=Unbekannte Cache-Nutzung
@@ -90,6 +91,3 @@ User Shares=Benutzerfreigaben
 Warning: Configured Pool=Warnung: Konfigurierter Pool
 Write=Schreiben
 You cannot use the following within share names=Du kannst folgendes nicht im Freigabenamen verwenden
-
-; Note: April 21, 2025 - 1 missing translations
-There are no mounted array or pool disks - cannot add shares=Es gibt keine eingehängten Arrays oder Pool-Datenträger - Freigaben können nicht hinzugefügt werden

@@ -28,6 +28,7 @@ Connection Type=Protokoll
 Console shell command=Konsole
 Container ID=Container ID
 Container IP=Container-IP
+Container not found Try reloading this page to fix=Container nicht gefunden. Versuche die Seite neu zu laden, um das Problem zu beheben
 Container not running=Container läuft nicht
 Container Path=Container-Pfad
 Container Port=Container-Port
@@ -51,8 +52,10 @@ Edit Configuration=Konfiguration bearbeiten
 Error gathering Tailscale information from container=Fehler beim Sammeln von Tailscale-Informationen vom Container
 Exit Node=Exit-Knoten
 Exited=Beendet
+Expired RenewDisable key expiry=Abgelaufen! Schlüsselverfallsdatum erneuern/deaktivieren!
 Extra Parameters=Extra Parameter
 Fixed IP address=Statische IP-Adresse
+For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=Aus Sicherheitsgründen sollte bei Containern mit dem Netzwerktyp „Host“ Tailscale nicht aktiviert sein. Bitte deaktiviere Tailscale für diesen Container oder ändere den Netzwerktyp des Containers.
 force update=Aktualisierung erzwingen
 FTP=FTP
 Game Servers=Spiele-Server
@@ -154,8 +157,3 @@ Was this container created using this plugin=Wurde dieser Container mit diesem P
 Web=Web
 WebUI=WebUI
 Writable=Beschreibbar
-
-; Note: April 21, 2025 - 3 missing translations
-Container not found Try reloading this page to fix=Container nicht gefunden. Versuche die Seite neu zu laden, um das Problem zu beheben
-Expired RenewDisable key expiry=Abgelaufen! Schlüsselverfallsdatum erneuern/deaktivieren!
-For security reasons, containers with Network Type Host should not have Tailscale enabled Please disable Tailscale in this container or change the Network Type of the container=Aus Sicherheitsgründen sollte bei Containern mit dem Netzwerktyp „Host“ Tailscale nicht aktiviert sein. Bitte deaktiviere Tailscale für diesen Container oder ändere den Netzwerktyp des Containers.
