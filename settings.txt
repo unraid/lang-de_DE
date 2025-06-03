@@ -990,7 +990,7 @@ Unraid API extra origins=Unraid-API Extra Origins
 View Flash Backup Error Log=Fehlerprotokoll der Flash-Sicherung anzeigen
 
 ; Note: May 31, 2025 - 4 missing translations
-No encrypted disks found=
-Otherwise use the keyfile method for UTF8 input=Otherwise use the **keyfile** method for UTF8 input
-Printable Characters Only=
-Use ASCII characters from space to tilde=Use **ASCII** characters from space ' ' to tilde '~'
+No encrypted disks found=Keine verschlüsselten Datenträger gefunden
+Otherwise use the keyfile method for UTF8 input=Verwende ansonsten die **Schlüsseldatei**-Methode für UTF8-Eingaben
+Printable Characters Only=Nur druckbare Zeichen
+Use ASCII characters from space to tilde=Verwende **ASCII**-Zeichen vom Leerzeichen " " bis zur Tilde "~"

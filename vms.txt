@@ -64,9 +64,9 @@ ETA=voraussichtliche Fertigstellung
 Evdev Device=Evdev-Datenträger
 Export User Template=Benutzervorlage exportieren
 Extracting=Extrahieren
-File exists=Datei existiert.
+File exists=Datei existiert
 File for import=Datei für Import
-File write failed=Schreiben der Datei fehlgeschlagen.
+File write failed=Schreiben der Datei fehlgeschlagen
 Files being removed=Daten werden entfernt
 Folder to save the LibreELEC image to=Ordner, in dem das LibreELEC-Image gespeichert werden soll
 Folder to save the OpenELEC image to=Ordner, in dem das OpenELEC-Image gespeichert werden soll
@@ -298,8 +298,8 @@ wsport for virtual console=WS-Port für virtuelle Konsole
 XML View=XML-Ansicht
 
 ; Note: May 31, 2025 - 5 missing translations
-Disk capacity has to be greater than %s=
-Name contains invalid characters or does not start with an alphanumberic for a ZFS storage locationOnly these special characters are valid Underscore _ Hyphen - Colon Period=Name contains invalid characters or does not start with an alphanumberic for a ZFS storage location<br>Only these special characters are valid Underscore (_) Hyphen (-) Colon (:) Period (.)
-No IP, guest agent not installed=
-Not enough free space, need at least %s MB=
-Template file write failed=
+Disk capacity has to be greater than %s=Die Datenträgerkapazität muss größer als %s sein
+Name contains invalid characters or does not start with an alphanumberic for a ZFS storage locationOnly these special characters are valid Underscore _ Hyphen - Colon Period=Der Name beinhaltet ungültige Zeichen oder beginnt nicht mit einem alphanumerischem Zeichen für einen ZFS-Speicherpfad<br>Nur diese Sonderzeichen sind gültig: Unterstrich (_), Doppelpunkt (:) und Punkt (.)
+No IP, guest agent not installed=Keine IP, Gast-Agent ist nicht installiert
+Not enough free space, need at least %s MB=Nicht genügend freier Speicherplatz, es wird mindestens %s MB benötigt
+Template file write failed=Schreiben der Vorlagendatei fehlgeschlagen
